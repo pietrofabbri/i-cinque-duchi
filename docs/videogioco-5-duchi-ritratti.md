@@ -1,6 +1,6 @@
 ---
 titolo: I ritratti dei personaggi — dove vengono e perché sono dichiarati
-versione: 0.3
+versione: 0.4
 data: 2026-10-03
 autore: Buffy (per pietrofabbri)
 documenti collegati:
@@ -45,21 +45,22 @@ libero esiste» insegna più di un ritratto generato.
 |---|---|
 | schede di tappa | **213** |
 | persone distinte (il catalogo è per persona, non per tappa) | **201** |
-| con ritratto autentico, guardato a vista | **135** |
-| con emblema | **59** |
-| ancora da verificare, quindi **non** mostrate come ritratto | **7** |
-| giudizi a vista presi in tutto | 195: 145 accettati, 43 respinti, 7 aperti |
+| con ritratto autentico, guardato a vista e verificato | **141** |
+| con emblema | **60** |
+| ancora da verificare | **0** |
+| giudizi a vista presi in tutto | 195: 151 accettati, 44 respinti |
 | ritratti ancora da guardare a vista | **0** |
 | persone che compaiono in due anni e hanno un solo file | 12 |
 | misura | 48×54 px, come il ritratto di Borso |
 
 I numeri di questa tabella sono **calcolati**, non scritti: li stampa
-`sorgenti/art/verifica_immagini.py --enumero` e li confronta con i dati. Le 213
+`sorgenti/art/verifica_immagini.py --enumero` e li confronta con i dati. Le 201
 persone sono 213 schede perché 12 compaiono in due anni diversi e hanno un solo
 file: alfonso i d'este, alfonso ii d'este, biagio rossetti, carlo magno, dosso dossi, ercole ii d'este, isabella d'este, josquin des prez, leon battista alberti, leonardo da vinci, lucrezia borgia, ludovico ariosto. Indicizzando il catalogo per persona quel difetto sparisce da solo:
 prima la ricerca scaricava lo stesso file due volte e li contava due.
 
-Le licenze sono **tutte libere**, e il conto esce dai dati senza arrotondare: 97 pubblico dominio, 10 CC BY-SA 3.0, 9 CC BY-SA 4.0, 8 CC BY altri, 6 CC BY-SA 1.0/2.0, 3 CC0, 1 Attribution, 1 No restrictions — 135 in tutto, tutte sui 135 ritratti accettati. Le tessere d'emblema sono opere del progetto e non hanno licenza da dichiarare.
+Le licenze sono **tutte libere**, e il conto esce dai dati senza arrotondare: 98 pubblico dominio, 13 CC BY-SA 3.0, 10 CC BY-SA 4.0, 8 CC BY altri, 6 CC BY-SA 1.0/2.0, 3 CC0, 2 Attribution, 1 No restrictions
+— 141 in tutto, tutte sui 141 ritratti accettati.
 
 ## 3. La ricerca, e il suo difetto più importante
 
@@ -159,13 +160,60 @@ come una fotografia.
 
 | | |
 |---|---|
-| chiudere le **7** immagini ancora da verificare | sono le 7 in cui si vede un ritratto giusto di periodo ma non si può accertare di chi è: il metadato di Commons lo dice, e finché non lo si guarda restano aperte e a schermo c'è un emblema |
-| **disegnare** i 66 emblemi | le tessere esistono e sono un segnale dichiarato, ma non sono disegni: ogni emblema deve dire *perché* la persona non ha un volto qui |
+| **disegnare** i 60 emblemi | le tessere ci sono e sono un segnale dichiarato, ma non sono disegni: ogni emblema deve dire *perché* la persona non ha un volto qui, e quel perché sta nel catalogo, non nel riquadro |
+| cercare un ritratto vero della **beata Beatrice II d'Este** (`P11`) | **ricercato il 3 ottobre**: nessun ritratto esiste. Su Commons il nome porta a un dipinto con la Trinità e **tre santi** insieme nel suo monastero di Sant'Antonio in Polesine, e a una dozzina di «Beatrix»:Maria Beatrice, tutte del Sette-Ottocento. Una scena con tre figure non è un ritratto, per la stessa regola con cui sono state respinte quella di Alcuino e la stele di Hammurabi |
 | decidere se gli emblemi siano disegni o forme tipografiche | se sono forme, l'anno 1 (maurelio) resta l'unico con disegno |
 | ridare le 600 px di partenza | 300 px per le 19 fonti strette non bastano: si può solo rifare la ricerca su una fonte più grande |
 | rivedere la P80 | Renata Viganò potrebbe avere un ritratto sotto un'altra forma: la ricerca su Commons non ne ha trovato |
 
 ## 7. Il registro delle modifiche
+
+### v0.4 — 03/10/2026
+
+**Le 7 immagini rimaste aperte sono state chiuse.** Il metro è il confronto
+di tre fonti — nome del file, descrizione dell'uploader, categorie — e le tre
+devono dire la stessa cosa; se due dicono una cosa e la terza un'altra, l'immagine
+resta aperta e il conflitto si scrive. Lo strumento è
+`sorgenti/art/verifica_metadati.py`. Il conto: **151 accettate, 44 respinte,
+0 aperte**.
+
+**Una persona, non un'immagine, era sbagliata.** `P11` doveva essere la beata
+**Beatrice II d'Este**, la monaca di Sant'Antonio in Polesine, una degli Este che
+non governarono, morta nel 1372. Il file trovato è di Bartolomeo Veneto e le
+categorie dicono `Beatrice d'Este`: è la duchessa milanese del 1490, figlia di
+Ludovico il Moro. Due donne, due secoli, due dinastie; la somiglianza è solo nel
+nome, e la ricerca ha abboccato al nome. Respinta, e con lei si apre una voce nuova:
+**il ritratto vero della beata va cercato**, e non basta rilanciare la stessa
+ricerca, che ha già abboccato.
+
+**Il metadato ha corretto me, e va detto.** Su `P61` e `P62` avevo scritto che
+erano «la stessa formella fotografata da un'altra angolazione». Non lo sono: due
+formelle diverse dello stesso palazzo, entrambe di Gaetano Davia, una per il
+Bonati e una per il Foschini. Avevo ragione a non accettarle e ragione a non
+sapere perché; la lettura dell'immagine era sbagliata. Un metadato non è la
+verità — la descrizione la scrive chi ha caricato il file — ma quando confuta
+l'occhio bisogna dirlo, altrimenti il proprio registro dei difetti si aggiorna
+solo quando fa comodo.
+
+**Le altre cinque passano, con le riserve dichiarate.** Il monumento equestre è un
+ricomincio del Novecento del monumento quattrocentesco a Nicolò III e resta un
+monumento. Il ritratto di Borso è un dipinto del suo regno (1469-1471) con
+l'attribuzione al fratello Baldassarre dichiarata in categoria. Quello di Tito
+Strozzi è di Baldassarre d'Este, suo figlio. Il del Bonati e il del Foschini sono
+rilievi dell'Ottocento. L'Isabella di Castiglia è un dipinto del Prado del 1490,
+ma sul file il credito è incerto — l'uploader scrive tre provenienze diverse, una
+delle quali è «Unknown source» — quindi l'accettazione vale per il dipinto
+documentato, non per una provenienza.
+
+**Due controlli si sono rotti mentre chiudevo, ed è il merito del lavoro.** La
+prima versione di `prova_difetto_immagini.py` chiedeva una persona «aperta» per
+provare il difetto numero 4: chiudendole tutte, la prova morì con «nessuna
+persona». Una prova che funziona solo finché esiste un caso non è una prova del
+caso, è una prova del calendario: il caso ora **si costruisce**. E il catalogo,
+cambiando esito a quelle sei persone, lasciava le loro vecchie tessere d'emblema
+accanto a quelle nuove — sei file che nessuno usava e che il primo che li avesse
+aperti avrebbe trattati come ritratti respinti ancora validi. Gli orfani ora si
+cercano tutti, non solo i `ritratto_`.
 
 ### v0.3 — 2026-10-03
 

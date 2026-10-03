@@ -74,7 +74,14 @@ def main():
 
     ritratto = persona_di("ritratto")
     emblema = persona_di("emblema")
-    aperto = persona_di("da_verificare")
+
+    # Il terzo difetto ha bisogno di una persona **aperta**, e il 3 ottobre le
+    # aperte sono state chiuse tutte: la prima versione della prova chiedeva
+    # `persona_di("da_verificare")` e moriva con «nessuna persona». Una prova
+    # che funziona solo finche' esiste un caso, non e' una prova del caso: e' una
+    # prova del calendario. Il caso quindi **si costruisce**, partendo da un
+    # ritratto e togliendogli la decisione.
+    aperto = ritratto
 
     # difetto 1: il catalogo promette un file che non c'e'. E' successo davvero:
     # il catalogo sceglieva il primo codice in ordine e non quello che aveva
@@ -99,10 +106,18 @@ def main():
         cat["persone"][ritratto]["etichetta"] = None
     inietta("ritratto senza etichetta", d3)
 
-    # difetto 4: un aperto travestito da deciso
+    # difetto 4: un aperto che porta i dettagli nel campo di un deciso, cioe'
+    # sembra approvato a chi legge il dato. Il caso non deve dipendere da una
+    # persona reale che sia aperta in questo momento.
     def d4(cat):
         p = cat["persone"][aperto]
-        p["dettagli"] = p.get("dettagli_non_verificati")
+        p["esito"] = "da_verificare"
+        p["dettagli_non_verificati"] = p.pop("dettagli", None)
+        p["dettagli"] = p["dettagli_non_verificati"]
+        # anche l'etichetta sparisce: un aperto non e' un ritratto, e lasciare
+        # l'etichetta avrebbe fatto mordere il controllo sbagliato, che e' peggio
+        # di non far mordere niente: sembra che il difetto sia stato visto
+        p["etichetta"] = None
     inietta("aperto con i dettagli di un deciso", d4)
 
     # difetto 5: una tessera di ritratto che non e' un PNG

@@ -488,3 +488,63 @@ condizione: restano aperte, con il file da parte, e il gioco mostra un emblema.
 Un'immagine non verificata a schermo è il gioco che racconta una bugia con il
 volto di una persona vera.
 
+## 3septies. I metadati: sette immagini aperte, sei chiuse, una persona sbagliata
+
+Le 7 immagini rimaste `da_verificare` sono state chiuse leggendo i metadati di
+Commons, con il metro del **confronto di tre fonti**: il nome del file, la
+descrizione che l'uploader ha scritto e le categorie devono dire la stessa cosa.
+Se dicono la stessa cosa l'immagine passa; se due dicono una cosa e la terza
+un'altra resta aperta e il conflitto si scrive. Il metro è in
+`sorgenti/art/verifica_metadati.py`.
+
+**Una persona sbagliata, e non un'immagine sbagliata.** `P11` doveva essere la
+beata **Beatrice II d'Este**, la monaca di Sant'Antonio in Polesine, una degli
+Este che non governarono, morta nel 1372. Il file trovato è di Bartolomeo Veneto
+e le categorie dicono `Beatrice d'Este`: è la duchessa milanese del 1490, figlia
+di Ludovico il Moro. Due donne, due secoli, due dinastie, e la somiglianza è
+solo nel nome. L'ho segnato **respinta** e ho aperto una voce nuova: il ritratto
+vero della beata va cercato, e non basta rilanciare la stessa ricerca, che ha
+già abboccato.
+
+**Il metadato ha corretto me, una volta.** Su `P61` e `P62` avevo scritto che
+erano «la stessa formella fotografata da un'altra angolazione». Non lo sono:
+sono due formelle diverse dello stesso palazzo, entrambe di Gaetano Davia, una
+per il Bonati e una per il Foschini. Avevo ragione a non accettarle, e ragione a
+non sapere perché. Un metadato non è la verità — la descrizione la scrive chi ha
+caricato il file — ma quando confuta l'occhio va detto, altrimenti il proprio
+registro dei difetti si tiene solo quando fa comodo.
+
+**Le altre cinque passano, e con le riserve dichiarate.** Il monumento equestre di
+Ferrara è un ricomincio del Novecento del monumento quattrocentesco a Nicolò III,
+e resta un monumento: dichiarato. Il ritratto di Borso è un dipinto del suo
+regno, 1469-1471, con l'attribuzione al fratello Baldassarre dichiarata in
+categoria. Quello di Tito Strozzi è di Baldassarre d'Este, suo figlio. Il del
+Bonati e il del Foschini sono rilievi dell'Ottocento. L'Isabella di Castiglia è
+un dipinto del Prado del 1490, e sul file il credito è incerto — l'uploader
+scrive tre provenienze diverse, una delle quali è «Unknown source» — quindi
+l'accettazione vale per il dipinto documentato, non per una provenienza.
+
+**La ricerca rilanciata, e il suo esito.** Cinque interrogazioni su
+Commons, con il nome in italiano, in inglese, con l'anno della morte e con il nome
+del monastero: nessun ritratto. L'unico file che riguarda questa persona è un
+dipinto con la Trinità sulle nubi e **tre santi** insieme, nella chiesa di
+Sant'Antonio in Polesine, che è proprio il suo monastero; e poi una dozzina di
+«Beatrix» che sono tutte Maria Beatrice, arciduchesse d'Austria del Sette-Ottocento.
+Una scena con tre figure non è un ritratto, per la stessa regola con cui sono state
+respinte la scena miniata di Alcuino e la parte alta della stele di Hammurabi — e
+la tentazione qui è più forte, perché il file è bello, la persona è quella e il
+posto è esatto. Il documento adesso non dice «non l'ho trovato», che è una
+constatazione sul lavoro fatto: dice **che cosa esiste** e perché non va bene.
+L'emblema di `P11` è dunque la risposta finale, non una resa, e resta aperta solo
+una fonte fuori da Commons.
+
+**Due controlli che si sono rotti mentre chiudevo, e come.** La prima versione di
+`prova_difetto_immagini.py` chiedeva una persona «aperta» per provare il difetto
+n. 4: chiudendole tutte, la prova morì con «nessuna persona». Una prova che
+funziona solo finché esiste un caso non è una prova del caso, è una prova del
+calendario: il caso ora **si costruisce**. E il catalogo, cambiando esito a
+quelle sei persone, lasciava le loro vecchie tessere d'emblema accanto a quelle
+nuove: sei file che nessuno usava e che il primo che li avesse aperti avrebbe
+trattati come ritratti respinti ancora validi. Gli orfani ora si cercano tutti,
+non solo i `ritratto_`.
+

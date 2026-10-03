@@ -176,17 +176,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "Veneto,_Bartolomeo_-_Beata_Beatrice_II_d'Este_-_1510s.jpg",
-  "dettagli": {
-   "licenza": "Public domain",
-   "autore": "Bartolomeo Veneto",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Veneto%2C_Bartolomeo_-_Beata_Beatrice_II_d%27Este_-_1510s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 630,
-   "altezza": 830
-  },
-  "motivo": "da_verificare: ritratto di dama del Cinquecento, ma i ritratti di donne estensi sono fra le immagini piu' scambiate fra loro: senza i metadati di Commons non si puo' dire che sia Beatrice II e non Isabella o Beatrice I. Finche' non e' verificata non passa.",
-  "attestato": false,
-  "verifica": "da verificare sui metadati"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: il file e' di Bartolomeo Veneto e le categorie dicono «Beatrice d'Este»: e' la duchessa milanese del 1490, figlia di Ludovico il Moro. La Beatrice II che il gioco descrive e' la monaca di Sant'Antonio in Polesine, una degli Este che non governarono, e morta nel 1372. Due donne, due secoli, due dinastie: la ricerca ha abboccato al nome. Emblema, e il ritratto vero va ancora cercato.",
+  "attestato": true,
+  "verifica": "da verificare sui metadati",
+  "etichetta": null
  },
  {
   "codice": "P12",
@@ -296,9 +291,10 @@
    "larghezza": 1000,
    "altezza": 800
   },
-  "motivo": "da_verificare: statua equestre in bronzo contro il cielo: puo' essere il monumento a Niccolò III, ma un monumento non ha un volto e dalla sola immagine non si distingue. Va verificato il file su Commons prima di accettarla.",
-  "attestato": false,
-  "verifica": "da verificare sui metadati"
+  "motivo": "ok",
+  "attestato": true,
+  "verifica": "da verificare sui metadati",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "P18",
@@ -400,9 +396,10 @@
    "larghezza": 1043,
    "altezza": 1366
   },
-  "motivo": "da_verificare: profilo di uomo con berretto rosso, da un codice: e' plausibilmente Borso d'Este, ma senza i metadati non si distingue da altri profili estensi dello stesso periodo.",
-  "attestato": false,
-  "verifica": "da verificare sui metadati"
+  "motivo": "ok",
+  "attestato": true,
+  "verifica": "da verificare sui metadati",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P23",
@@ -507,9 +504,10 @@
    "larghezza": 547,
    "altezza": 793
   },
-  "motivo": "da_verificare: profilo di uomo con berretto nero, dipinto di periodo giusto; ma di Tito Strozzi esiste un solo ritratto noto e non si puo' distinguere a occhio da un parente.",
-  "attestato": false,
-  "verifica": "da verificare sui metadati"
+  "motivo": "ok",
+  "attestato": true,
+  "verifica": "da verificare sui metadati",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P29",
@@ -1152,9 +1150,10 @@
    "larghezza": 2048,
    "altezza": 1536
   },
-  "motivo": "da_verificare: e' la fotografia di una formella architettonica: si vede un profilo inciso in un tondo di marmo, ma non si puo' stabilire chi sia e il Bonati e' un pittore dell'Ottocento.",
-  "attestato": false,
-  "verifica": "da verificare sui metadati"
+  "motivo": "ok",
+  "attestato": true,
+  "verifica": "da verificare sui metadati",
+  "etichetta": "rilievo"
  },
  {
   "codice": "P62",
@@ -1172,9 +1171,10 @@
    "larghezza": 2048,
    "altezza": 1536
   },
-  "motivo": "da_verificare: stessa formella fotografata da un'altra angolazione, e con un altro nome: due file per un solo monumento, e nessuno dei due prova di chi sia. Nessuno dei due passa senza metadati.",
-  "attestato": false,
-  "verifica": "da verificare sui metadati"
+  "motivo": "ok",
+  "attestato": true,
+  "verifica": "da verificare sui metadati",
+  "etichetta": "rilievo"
  },
  {
   "codice": "P63",
@@ -3365,9 +3365,10 @@
    "larghezza": 2087,
    "altezza": 2582
   },
-  "motivo": "da_verificare: ritratto di giovane donna con libro, del Cinquecento: e' plausibilmente Isabella di Castiglia, ma i ritratti di regime spagnole e italiane vengono scambiati fra loro con facilita'. Serve il metadato di Commons.",
-  "attestato": false,
-  "verifica": "da verificare sui metadati"
+  "motivo": "ok",
+  "attestato": true,
+  "verifica": "da verificare sui metadati",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q222",

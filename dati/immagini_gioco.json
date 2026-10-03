@@ -335,20 +335,20 @@
    "usata_in": [
     "P62"
    ],
-   "dettagli": null,
-   "dettagli_non_verificati": {
+   "dettagli": {
     "licenza": "CC BY-SA 3.0",
     "autore": "photo uploaded by RicciSpeziari Photographer: Riccardo Speziari",
     "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Ferrara_-_Ritratto_di_Antonio_Foschini_-_Palazzo_San_Crispino.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "larghezza": 2048,
     "altezza": 1536
    },
-   "etichetta": null,
-   "esito": "da_verificare",
-   "motivo": "da verificare: stessa formella fotografata da un'altra angolazione, e con un altro nome: due file per un solo monumento, e nessuno dei due prova di chi sia. Nessuno dei due passa senza metadati.",
+   "dettagli_non_verificati": null,
+   "etichetta": "rilievo",
+   "esito": "ritratto",
+   "motivo": "ok",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P62.png"
+   "immagine": "sorgenti/art/out/ritratto_P62.png"
   },
   "antonio musa brasavola": {
    "nome": "Antonio Musa Brasavola",
@@ -548,16 +548,10 @@
     "P11"
    ],
    "dettagli": null,
-   "dettagli_non_verificati": {
-    "licenza": "Public domain",
-    "autore": "Bartolomeo Veneto",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Veneto%2C_Bartolomeo_-_Beata_Beatrice_II_d%27Este_-_1510s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "larghezza": 630,
-    "altezza": 830
-   },
+   "dettagli_non_verificati": null,
    "etichetta": null,
-   "esito": "da_verificare",
-   "motivo": "da verificare: ritratto di dama del Cinquecento, ma i ritratti di donne estensi sono fra le immagini piu' scambiate fra loro: senza i metadati di Commons non si puo' dire che sia Beatrice II e non Isabella o Beatrice I. Finche' non e' verificata non passa.",
+   "esito": "emblema",
+   "motivo": "emblema: il file e' di Bartolomeo Veneto e le categorie dicono «Beatrice d'Este»: e' la duchessa milanese del 1490, figlia di Ludovico il Moro. La Beatrice II che il gioco descrive e' la monaca di Sant'Antonio in Polesine, una degli Este che non governarono, e morta nel 1372. Due donne, due secoli, due dinastie: la ricerca ha abboccato al nome. Emblema, e il ritratto vero va ancora cercato.",
    "tipo": "persona",
    "vivo": false,
    "immagine": "sorgenti/art/out/emblema_P11.png"
@@ -635,20 +629,20 @@
    "usata_in": [
     "P22"
    ],
-   "dettagli": null,
-   "dettagli_non_verificati": {
+   "dettagli": {
     "licenza": "Attribution",
     "autore": "Attributed to Baldassare Estense",
     "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Borso_d%27Este.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "larghezza": 1043,
     "altezza": 1366
    },
-   "etichetta": null,
-   "esito": "da_verificare",
-   "motivo": "da verificare: profilo di uomo con berretto rosso, da un codice: e' plausibilmente Borso d'Este, ma senza i metadati non si distingue da altri profili estensi dello stesso periodo.",
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P22.png"
+   "immagine": "sorgenti/art/out/ritratto_P22.png"
   },
   "carl linneo": {
    "nome": "Carl Linneo",
@@ -2333,20 +2327,20 @@
    "usata_in": [
     "Q221"
    ],
-   "dettagli": null,
-   "dettagli_non_verificati": {
+   "dettagli": {
     "licenza": "Public domain",
     "autore": "\nanonymous ",
     "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/IsabellaofCastile03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "larghezza": 2087,
     "altezza": 2582
    },
-   "etichetta": null,
-   "esito": "da_verificare",
-   "motivo": "da verificare: ritratto di giovane donna con libro, del Cinquecento: e' plausibilmente Isabella di Castiglia, ma i ritratti di regime spagnole e italiane vengono scambiati fra loro con facilita'. Serve il metadato di Commons.",
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q221.png"
+   "immagine": "sorgenti/art/out/ritratto_Q221.png"
   },
   "james ellis": {
    "nome": "James Ellis",
@@ -3214,20 +3208,20 @@
    "usata_in": [
     "P17"
    ],
-   "dettagli": null,
-   "dettagli_non_verificati": {
+   "dettagli": {
     "licenza": "CC BY-SA 3.0",
     "autore": "Marcok - it.wikipedia.org",
     "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Ferrara_monumento_equestre_28mar06_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "larghezza": 1000,
     "altezza": 800
    },
-   "etichetta": null,
-   "esito": "da_verificare",
-   "motivo": "da verificare: statua equestre in bronzo contro il cielo: puo' essere il monumento a Niccolò III, ma un monumento non ha un volto e dalla sola immagine non si distingue. Va verificato il file su Commons prima di accettarla.",
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P17.png"
+   "immagine": "sorgenti/art/out/ritratto_P17.png"
   },
   "obizzo i d'este": {
    "nome": "Obizzo I d'Este",
@@ -3942,20 +3936,20 @@
    "usata_in": [
     "P61"
    ],
-   "dettagli": null,
-   "dettagli_non_verificati": {
+   "dettagli": {
     "licenza": "CC BY-SA 3.0",
     "autore": "photo uploaded by RicciSpeziari Photographer: Riccardo Speziari",
     "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Ferrara_-_Ritratto_di_Teodoro_Bonatti_-_Palazzo_San_Crispino.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "larghezza": 2048,
     "altezza": 1536
    },
-   "etichetta": null,
-   "esito": "da_verificare",
-   "motivo": "da verificare: e' la fotografia di una formella architettonica: si vede un profilo inciso in un tondo di marmo, ma non si puo' stabilire chi sia e il Bonati e' un pittore dell'Ottocento.",
+   "dettagli_non_verificati": null,
+   "etichetta": "rilievo",
+   "esito": "ritratto",
+   "motivo": "ok",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P61.png"
+   "immagine": "sorgenti/art/out/ritratto_P61.png"
   },
   "tiberio gracco": {
    "nome": "Tiberio Gracco",
@@ -4022,20 +4016,20 @@
    "usata_in": [
     "P28"
    ],
-   "dettagli": null,
-   "dettagli_non_verificati": {
+   "dettagli": {
     "licenza": "CC BY-SA 4.0",
     "autore": "Baldassare Estense",
     "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Baldassarre_d%27Este%2C_Tito_Vespasiano_Strozzi%2C_Fondazione_Cini_di_Venezia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "larghezza": 547,
     "altezza": 793
    },
-   "etichetta": null,
-   "esito": "da_verificare",
-   "motivo": "da verificare: profilo di uomo con berretto nero, dipinto di periodo giusto; ma di Tito Strozzi esiste un solo ritratto noto e non si puo' distinguere a occhio da un parente.",
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P28.png"
+   "immagine": "sorgenti/art/out/ritratto_P28.png"
   },
   "tommaso d'aquino": {
    "nome": "Tommaso d'Aquino",

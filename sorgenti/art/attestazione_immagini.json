@@ -1,5 +1,5 @@
 {
- "_nota": "Attestazione a vista delle immagini dei personaggi. Ogni voce dice che cosa e' stato accettato e, soprattutto, che cosa e' stato RESPINTO e perche'. Un file di ricerca puo' sbagliare la persona: e' successo sette volte, e una delle volte ha restituito un gatto per un'illustratrice e una ceramica iraniana per i mercanti di Ferrara. Il nome del file non e' una prova, e la ricerca non e' un giudizio. Questo file e' il giudizio, e va rifatto ogni volta che si aggiungono immagini. Ogni voce accettata porta il nome del file: l'attestazione non rimanda alla ricerca, la registra, cosi' resta valida anche se la ricerca viene rifatta e dà un risultato diverso. Le 7 voci con il terzo esito, da_verificare, sono quelle in cui si vede un ritratto giusto di periodo ma non si puo' accertare di chi e': restano aperte finche' non si guarda il metadato di Commons, e non diventano mai ritratti accettati per silenzio.\n",
+ "_nota": "Attestazione a vista delle immagini dei personaggi. Ogni voce dice che cosa e' stato accettato e, soprattutto, che cosa e' stato RESPINTO e perche'. Un file di ricerca puo' sbagliare la persona: e' successo sette volte, e una delle volte ha restituito un gatto per un'illustratrice e una ceramica iraniana per i mercanti di Ferrara. Il nome del file non e' una prova, e la ricerca non e' un giudizio. Questo file e' il giudizio, e va rifatto ogni volta che si aggiungono immagini. Ogni voce accettata porta il nome del file: l'attestazione non rimanda alla ricerca, la registra, cosi' resta valida anche se la ricerca viene rifatta e dà un risultato diverso. Le 7 voci con il terzo esito, da_verificare, sono quelle in cui si vede un ritratto giusto di periodo ma non si puo' accertare di chi e': restano aperte finche' non si guarda il metadato di Commons, e non diventano mai ritratti accettati per silenzio. Le sette voci con il terzo esito sono state chiuse il 3 ottobre 2026 leggendo i metadati di Commons: sei passano e una è respinta, perché il file di P11 ritrae Beatrice d'Este milanese e non la monaca estense del 1372 che il gioco descrive. Le conclusioni e il metro sono in sorgenti/art/verifica_metadati.py.\n",
  "_formato": {
   "esito": "accettata | respinta | non_verificata",
   "etichetta": "fotografia | dipinto | xilografia | miniatura | autoritratto | rilievo | immagine tradizionale | immagine di epoca",
@@ -254,8 +254,9 @@
   "motivo": "iniziale miniata con il busto di un mitrato e l'iscrizione che lo nomina Obizzo: immagine d'epoca, non fatta dal vivo."
  },
  "P11": {
-  "esito": "da_verificare",
-  "motivo": "ritratto di dama del Cinquecento, ma i ritratti di donne estensi sono fra le immagini piu' scambiate fra loro: senza i metadati di Commons non si puo' dire che sia Beatrice II e non Isabella o Beatrice I. Finche' non e' verificata non passa."
+  "esito": "respinta",
+  "motivo": "il file e' di Bartolomeo Veneto e le categorie dicono «Beatrice d'Este»: e' la duchessa milanese del 1490, figlia di Ludovico il Moro. La Beatrice II che il gioco descrive e' la monaca di Sant'Antonio in Polesine, una degli Este che non governarono, e morta nel 1372. Due donne, due secoli, due dinastie: la ricerca ha abboccato al nome. Emblema, e il ritratto vero va ancora cercato.",
+  "chiusa_il": "2026-10-03"
  },
  "P12": {
   "esito": "accettata",
@@ -277,8 +278,10 @@
   "motivo": "iniziale miniata col busto tonsurato e l'iscrizione «Alberto fu fratello de Nicolò»: il nome e' nell'immagine."
  },
  "P17": {
-  "esito": "da_verificare",
-  "motivo": "statua equestre in bronzo contro il cielo: puo' essere il monumento a Niccolò III, ma un monumento non ha un volto e dalla sola immagine non si distingue. Va verificato il file su Commons prima di accettarla."
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "la descrizione, il nome del file e la categoria «Monument to Niccolò III d'Este (Ferrara)» dicono la stessa cosa: e' il monumento equestre di Nicolo' III, e per meta' un ricomincio del Novecento collocato davanti al Palazzo Municipale. Non e' un ritratto dal vivo — Nicolao' III e' morto nel 1441 — e un monumento non ha un volto;  Resta l'immagine che di lui si ha, dichiarata per quello che e'.",
+  "chiusa_il": "2026-10-03"
  },
  "P18": {
   "esito": "accettata",
@@ -301,8 +304,10 @@
   "motivo": "medaglia del Pisanello con il profilo e la firma «PISANELLVS P.F.T.»: due facce della stessa medaglia, e il nome e' inciso."
  },
  "P22": {
-  "esito": "da_verificare",
-  "motivo": "profilo di uomo con berretto rosso, da un codice: e' plausibilmente Borso d'Este, ma senza i metadati non si distingue da altri profili estensi dello stesso periodo."
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "titolo, descrizione e categoria concordano: ritratto di Borso d'Este, 1469-1471, dunque dipinto a vivo dal duca regnante, e l'attribuzione al fratello Baldassarre e' dichiarata in categoria, non nascosta. Il ritratto e' attribuito e va detto: e' l'attribuzione corrente, non una certezza.",
+  "chiusa_il": "2026-10-03"
  },
  "P23": {
   "esito": "respinta",
@@ -323,8 +328,10 @@
   "motivo": "medaglia col busto e l'iscrizione «PELLEGRINO PRISCIANI FERRARIENSIS», piu' il rovescio: il nome gira intorno alla testa."
  },
  "P28": {
-  "esito": "da_verificare",
-  "motivo": "profilo di uomo con berretto nero, dipinto di periodo giusto; ma di Tito Strozzi esiste un solo ritratto noto e non si puo' distinguere a occhio da un parente."
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "la categoria dice «Portrait of Tito Vespasiano Strozzi (Baldassare Estense - Palazzo Cini Gallery)»: il ritratto e' di Tito, e l'attribuzione e' a Baldassarre d'Este, suo figlio. Dipinto collezionato, non ricostruzione.",
+  "chiusa_il": "2026-10-03"
  },
  "P29": {
   "esito": "accettata",
@@ -440,12 +447,16 @@
   "motivo": "ritratto di dama in veste nera con ricami alle maniche, acconciatura rossa: dipinto di corte."
  },
  "P61": {
-  "esito": "da_verificare",
-  "motivo": "e' la fotografia di una formella architettonica: si vede un profilo inciso in un tondo di marmo, ma non si puo' stabilire chi sia e il Bonati e' un pittore dell'Ottocento."
+  "esito": "accettata",
+  "etichetta": "rilievo",
+  "motivo": "descrizione, autore e categorie concordano: formella tonda di Gaetano Davia al Palazzo San Crispino di Ferrara, con Teodoro Bonati, e le categorie la dicono dell'Ottocento. Rilievo, non ritratto: l'ho scritto prima che fosse la stessa formella di P62 e non lo era.",
+  "chiusa_il": "2026-10-03"
  },
  "P62": {
-  "esito": "da_verificare",
-  "motivo": "stessa formella fotografata da un'altra angolazione, e con un altro nome: due file per un solo monumento, e nessuno dei due prova di chi sia. Nessuno dei due passa senza metadati."
+  "esito": "accettata",
+  "etichetta": "rilievo",
+  "motivo": "stessa mano e stesso palazzo di P61, formella diversa: qui e' Antonio Foschini. Due file, due persone, un monumento: avevo scambiato le due formelle guardandole, e i metadatti me l'hanno detto.",
+  "chiusa_il": "2026-10-03"
  },
  "P64": {
   "esito": "accettata",
@@ -850,8 +861,10 @@
   "motivo": "incisione di studioso con turbante e libro: immagine incisa, non ritratto."
  },
  "Q221": {
-  "esito": "da_verificare",
-  "motivo": "ritratto di giovane donna con libro, del Cinquecento: e' plausibilmente Isabella di Castiglia, ma i ritratti di regime spagnole e italiane vengono scambiati fra loro con facilita'. Serve il metadato di Commons."
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "descrizione e categorie concordano: Isabella I di Castiglia, 1490, dipinto del Prado. Sul file il credito e' incerto — l'uploader scrive tre provenienze diverse e una e' «Unknown source» — quindi l'accettazione vale per il dipinto, che e' documentato, e resta scritto che la provenienza non e' dichiarata con una fonte sola.",
+  "chiusa_il": "2026-10-03"
  },
  "Q222": {
   "esito": "respinta",

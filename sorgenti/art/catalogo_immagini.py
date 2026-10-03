@@ -274,10 +274,23 @@ def main(solo_esecuzione=False):
                 os.remove(dup)
                 cancellati += 1
 
+    # Gli orfani si cercano tutti, non solo i `ritratto_`. Una persona che passa
+    # da aperta a ritratto conserva la sua vecchia tessera d'emblema, e quella
+    # resta in `out/` accanto a quella nuova: sei file che nessuno usa e che il
+    # primo che li apre ritrova come se fosse un ritratto respinto ancora valido.
+    citate = {os.path.basename(p["immagine"]) for p in catalogo.values()
+              if p["immagine"]}
+    orfani = 0
+    for nome_file in sorted(os.listdir(OUT)):
+        if nome_file.endswith(".png") and nome_file not in citate:
+            os.remove(os.path.join(OUT, nome_file))
+            orfani += 1
+
     n = {}
     for p in catalogo.values():
         n[p["esito"]] = n.get(p["esito"], 0) + 1
     print("persone nel catalogo: %d  %s" % (len(catalogo), n))
+    print("tessere orfane cancellate: %d" % orfani)
     print("tessere d'emblema scritte: %d" % scritti)
     print("tessere duplicate cancellate: %d" % cancellati)
     print("tessere ricostruite dal grezzo: %d %s"
