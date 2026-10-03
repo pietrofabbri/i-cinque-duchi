@@ -237,9 +237,10 @@ def main():
                 "stanza": celle[_idx("in_colonna")] if _idx("in_colonna") is not None else None,
                 "voce_obbligatoria": voce,
                 "facoltativi": facoltativi(celle[_idx("facoltativi")] if _idx("facoltativi") is not None else None),
-                "mezzo": MEZZO_DICHIARATO[tab["anno"]],
-                "mezzo_stato": "dichiarato" if MEZZO_DICHIARATO[tab["anno"]]
-                               else "non_dichiarato",
+                "mezzo": MEZZO_DICHIARATO.get(tab["anno"]) if
+                         tab["anno"] != 5 else None,
+                "mezzo_stato": "dichiarato" if MEZZO_DICHIARATO.get(tab["anno"])
+                               and tab["anno"] != 5 else "non_dichiarato",
             })
 
     # il conto, che e' la parte che serve
@@ -281,7 +282,9 @@ def main():
         "avvertenza_voce": "una voce senza codice puo' essere collettiva (una "
                            "macchina, gli ingegneri delle reti) e allora non ha "
                            "scheda: il campo `codice` vale null e va detto",
-        "mezzo_dichiarato": MEZZO_DICHIARATO,
+        "mezzo_dichiarato": dict(MEZZO_DICHIARATO, **{
+            "5": "dichiarato da sorgenti/dichiara_mezzo_quinto.py, su due strati: "
+                 "il reale lo sceglie l'archivio, quello della stanza il canto"}),
         "tappe": len(righe),
         "per_anno": {str(k): v for k, v in sorted(per_anno.items())},
         "saltate": len(saltate),
@@ -295,6 +298,14 @@ def main():
         json.dump(out, f, ensure_ascii=False, indent=2)
         f.write("\n")
     print("scritto %s" % os.path.relpath(USCITA, RADICE))
+
+    # Il quinto anno non si dichiara qui: si dichiara dopo, perche' la sua
+    # dichiarazione non e' una parola ma una **regola** calcolata sui mezzi del
+    # testo, e sta in `dichiara_mezzo_quinto.py`. La chiamata e' dentro perche' un
+    # file che si lascia mettere mezzo a `null` e che nessuno rimette e' un file
+    # che regge fino alla prossima estrazione, e poi mente.
+    import dichiara_mezzo_quinto as dmq
+    dmq.principale()
     return 0
 
 

@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — i percorsi del duca: mezzi di trasporto, copertura della mappa e ritorni
-versione: 0.4
+versione: 0.5
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)
 fonte: calcolo sulle coordinate di dati/luoghi_gioco.json
-documenti collegati: videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-audit.md (v0.13), AGENTS.md
+documenti collegati: videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-audit.md (v0.14), AGENTS.md
 ---
 
 # I percorsi del duca
@@ -64,6 +64,53 @@ Il quinto anno è anche l'anno dei mezzi che esistono solo nell'edizione del 151
 
 **Il numero che hanno non è una velocità, e il gioco lo dice.** Sono convenzioni dichiarate, il campo `tipo` dice `gioco` perché nessuno le legga come un dato storico, e ogni versione della tabella porta la scritta. Il confronto che vale non è «quanto ci si arriva»: sui 79 494 km del quinto anno l'aereo fa 106 giorni, il treno 530, l'ippogrifo 191 — e la domanda che il gioco pone è **«che cosa è successo in mezzo?»**.
 
+### 1.1bis Il mezzo del quinto anno, dichiarato il 3 ottobre
+
+*(03/10/2026 — `sorgenti/dichiara_mezzo_quinto.py`)*
+
+Fin qui il quinto anno era l'unico con la colonna **`non_dichiarato`**, e la
+ragione era giusta: sono ventidue i mezzi possibili e cinque sono i mezzi **del
+testo**, e sceglierne uno sarebbe stato scegliere al posto di chi gioca. La domanda
+restava aperta e tornava a ogni revisione.
+
+La risposta non è scegliere: è **dichiarare due regole che non hanno un autore**.
+Il quinto anno è già due strati (`luoghi.md` §4.5) — il pin è reale, la stanza è
+del poema — e ogni strato ha la sua.
+
+**Lo strato reale: lo sceglie l'archivio, che è il presente.** Il mezzo con cui il
+materiale arriva all'archivio è il più veloce dei portatori dell'anno, cioè
+**aereo 30**. Non è una scelta nuova: è la ragione per cui `percorsi_mezzi.py`
+considera l'anacronismo «la risposta e non l'errore», scritta tre paragrafi fa. La
+*data* della tappa resta accanto per informazione — la 5-6 è di Logistilla, la
+5-20 è di Alfonso II — ma non decide, perché non è il mezzo di quella persona: è il
+mezzo con cui il suo materiale arriva oggi in un archivio.
+
+**Lo strato del testo: lo sceglie il canto.** Ogni mezzo del *Furioso* è attestato
+in un canto e in un verso, e quei versi sono già in questo capitolo. La tabella
+non è una scelta: è la traduzione degli indici.
+
+| Canto | Mezzo | Il verso |
+|---|---|---|
+| IV | **Ippogrifo** | «una giumenta generò d'un grifo» — c. IV, 18 |
+| VI | **Sirena** | «la sirena che col suo dolce canto acheta il mare» — c. VI, 40 |
+| XI | **Carro di delfini** | «che fatto al carro i suoi delfini porre» — c. XI, 44 |
+| XII | **Carro di serpenti** | «sul carro che tiravan dui serpenti» — c. XII, 2 |
+| XVIII | **Drago** | «sí duro intorno ha lo scaglioso drago» — c. XVIII, 12 |
+
+**Dove il canto non dà un mezzo, si va a piedi, e anche questo è dichiarato.** Il
+conto delle trenta stanze dell'anno è **a piedi 21, carro di serpenti 4, ippogrifo 3, sirena 2**.
+
+**Il fatto che non si nasconde.** Il carro di delfini sta nel canto XI e il drago
+nel canto XVIII, e nell'anno 5 non c'è nessuna tappa in quei due canti: restano
+**senza tappa**. Non è un difetto della tabella, è il conto delle stanze, e qui si
+dice per iscritto invece di lasciare due righe vuote che sembrerebbero un errore.
+
+**Perché questo non è aggirare la domanda.** Se l'ippogrifo fosse il mezzo di tutte
+e trenta le tappe, avrei scelto al posto del giocatore. Dichiarandolo **per canto**
+non sceglie nessuno: sceglie il testo, che è la stessa cosa che sceglierebbero i
+due lettori diversi che quell'anno ha davanti. E la tabella si vede: se domani un
+giorno preferisce un altro mezzo per un canto, si cambia una riga.
+
 ### 1.2 Il riscontro fra il mezzo di allora e il mezzo di oggi
 
 *(03/10/2026 — `sorgenti/percorsi_mezzi.py`)*
@@ -77,7 +124,7 @@ Il controllo giusto è un confronto, e cerca un difetto solo: **il mezzo di oggi
 | Anno | Mezzi di allora nelle trenta tappe |
 |---|---|
 | **4** | nave 23, aereo 5, treno 1, moto 1 |
-| **5** | aereo 26, treno 1 |
+| **5** | aereo 26, treno 1 — ma su **27 tappe**, non su trenta: le 5-3, 5-6 e 5-20 sono del Seicento e precedenti, e il vecchio conteggio le scartava senza dirlo |
 
 Il ventitré su trenta dell'anno 4 è la nave, e i cinque aerei sono le tappe degli anni Trenta: il file **calcola** il mezzo di ogni tappa dalla data, non lo dichiara a mano. Se si domanda un anno, il risultato cambia da solo.
 
@@ -271,6 +318,7 @@ Se fra due tappe ci sono dodici giorni di strada, il gioco può (a) mostrarne un
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 03/10/2026 | 0.5 | **Il mezzo del quinto anno è dichiarato, su due strati.** Ventidue mezzi possibili e cinque del testo erano la ragione di una colonna `non_dichiarato` che tornava a ogni revisione. La risposta non è scegliere: è dichiarare due regole senza autore. Il mezzo reale lo sceglie l'archivio, che è il presente (aereo 30); quello dentro la stanza lo sceglie **il canto**, perché ogni mezzo del *Furioso* è attestato in un canto e in un verso che il capitolo già porta, e la tabella canto → mezzo non è una scelta ma la traduzione degli indici. Dove il canto non dà un mezzo si va a piedi, e anche questo è dichiarato. Il carro di delfini (c. XI) e il drago (c. XVIII) **non hanno tappa** nell'anno 5, e si dice. Il conto della §1.2 copriva 27 tappe su trenta perché tre venivano scartate da un `continue` che non diceva niente: adesso il conto le nomina. |
 | 03/10/2026 | 0.4 | **I mezzi diventano ventidue e il capitolo acquista tre sezioni.** Otto mezzi storici nuovi — treno e aereo passano anche all'anno 4, e arrivano crociera, **moto**, **sci**, **elicottero** e **monopattino**; e cinque mezzi **del testo** per il quinto anno, con il canto e l'ottava accanto: l'ippogrifo (c. IV, 18), il drago (c. XVIII, 12), la sirena (c. VI, 40), il carro di delfini (c. XI, 44) e il carro di serpenti (c. XII, 2). Ogni mezzo porta due campi nuovi, `tipo` (`storico` o `gioco`) e `dal` (l'anno di attestazione). **Il `dal` è la ragione della modifica**: senza di esso un elicottero in una tappa del 1300 passerebbe inosservato. Il controllo degli anacronismi è diventato **per tappa** (§1.2), perché l'anno 4 non è un'epoca, e il primo calcolo ha trovato un difetto vero nella propria impostazione: cercava un mezzo inesistente alla data della tappa e segnalava l'anno 5 di Alfonso II, dove non c'era né treno né aereo — ma il mezzo di cui si parla è quello **con cui il materiale arriva all'archivio**, che è del presente. Il controllo giusto confronta il mezzo di allora con quello di oggi e cerca un difetto solo: che quello di oggi non sia più lento. La ripartizione che ne esce è la tabella più informativa del capitolo (anno 4: nave 23, aereo 5, treno 1, moto 1) ed è **calcolata dalle date, non scritta a mano**. |
 | 03/10/2026 | 0.3 | Solo rimandi, come alla v0.2: `luoghi.md` sale a v0.4 (la verifica F16 dei filoni) e `audit.md` a v0.6 (I19 chiusa, il conto a 28 chiuse e 86 aperte). **Nessuna cifra di questo documento cambia**: i percorsi sono calcolati sulle coordinate di `dati/luoghi_gioco.json`, che non sono state toccate. |
 | 03/10/2026 | 0.2 | Solo rimandi: l'audit sale a v0.5 e `mappe.md` a v0.7 dopo le chiusure del 3 ottobre (tavolozza, sagome degli edifici, fondo di Ferrara, ambienti dei 150 livelli e file amministrativo mondiale). **Nessuna cifra di questo documento cambia**: i percorsi sono calcolati sulle coordinate di `dati/luoghi_gioco.json`, che il 3 ottobre non è stato toccato. |

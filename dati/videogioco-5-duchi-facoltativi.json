@@ -1,0 +1,3315 @@
+{
+ "_nota": "Catalogo dei facoltativi: le 269 occorrenze di facoltativo dei 150 incontri sono 248 persone distinte, di cui 50 avevano gia' un codice. Il confronto fra nomi e' normalizzato sui diacritici, perche' due grafie della stessa persona non possono diventare due codici. Le voci `da_verificare` sono quelle in cui il nome e' un cognome solo che qualcun altro gia' porta: non si duplicano e non si collegano, perche' scegliere qui sarebbe inventare una persona.",
+ "_indice_persone": {
+  "regola": "il codice canonico e' quello dell'anno 1 quando la persona c'e' anche li', altrimenti il piu' basso della serie Q; gli altri codici sono alias e restano scritti",
+  "persone_con_due_codici": 10,
+  "codici_alias": {
+   "alfonso i d'este": [
+    "Q110"
+   ],
+   "alfonso ii d'este": [
+    "Q320"
+   ],
+   "biagio rossetti": [
+    "Q64"
+   ],
+   "dosso dossi": [
+    "Q115"
+   ],
+   "ercole ii d'este": [
+    "Q210"
+   ],
+   "isabella d'este": [
+    "Q130"
+   ],
+   "josquin des prez": [
+    "Q117"
+   ],
+   "leon battista alberti": [
+    "Q62"
+   ],
+   "lucrezia borgia": [
+    "Q41"
+   ],
+   "ludovico ariosto": [
+    "Q111"
+   ]
+  }
+ },
+ "_collegati": "10 facoltativi comparivano col solo cognome; sono stati collegati al codice della persona, non con uno nuovo, perche' il cognome non poteva essere di nessun altro",
+ "_generato_da": "sorgenti/codifica_facoltativi.py",
+ "persone": [
+  {
+   "nome": "San Giorgio",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-1"
+   ],
+   "codice": "P02",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "San Giorgio"
+  },
+  {
+   "nome": "Matilde di Canossa",
+   "anni": [
+    1,
+    2
+   ],
+   "tappe": [
+    "1-3",
+    "2-21"
+   ],
+   "codice": "P04",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Matilde di Canossa"
+  },
+  {
+   "nome": "Nicolò II d'Este",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-8"
+   ],
+   "codice": "P15",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Nicolò II d'Este, Dosso Dossi"
+  },
+  {
+   "nome": "Alberto V d'Este",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-10"
+   ],
+   "codice": "P16",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Alberto V d'Este, Niccolò Copernico"
+  },
+  {
+   "nome": "Leonello d'Este",
+   "anni": [
+    1,
+    2
+   ],
+   "tappe": [
+    "1-7",
+    "2-8"
+   ],
+   "codice": "P18",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Leonello d'Este, Leon Battista Alberti"
+  },
+  {
+   "nome": "Leon Battista Alberti",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-7"
+   ],
+   "codice": "P20",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Leonello d'Este, Leon Battista Alberti"
+  },
+  {
+   "nome": "Alberti",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-13"
+   ],
+   "codice": "P20",
+   "esito": "collegato",
+   "perche": "cognome solo, e leon battista alberti e' l'unica persona gia' codificata che lo porta: il codice e' il suo, non un codice nuovo",
+   "nome_cellula": "Alberti",
+   "nome_completo": "leon battista alberti"
+  },
+  {
+   "nome": "Borso d'Este",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-15"
+   ],
+   "codice": "P22",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Ercole de' Roberti, Borso d'Este"
+  },
+  {
+   "nome": "Cosmè Tura",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-21"
+   ],
+   "codice": "P23",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Cosmè Tura"
+  },
+  {
+   "nome": "Ercole de' Roberti",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-15"
+   ],
+   "codice": "P25",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Ercole de' Roberti, Borso d'Este"
+  },
+  {
+   "nome": "Taddeo Crivelli e i miniatori della Bibbia di Borso",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-16"
+   ],
+   "codice": "P27",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Taddeo Crivelli e i miniatori della Bibbia di Borso"
+  },
+  {
+   "nome": "Tito Vespasiano Strozzi",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-12"
+   ],
+   "codice": "P28",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Tito Vespasiano Strozzi"
+  },
+  {
+   "nome": "Matteo Maria Boiardo",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-25"
+   ],
+   "codice": "P29",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Matteo Maria Boiardo"
+  },
+  {
+   "nome": "Boiardo",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-11"
+   ],
+   "codice": "P29",
+   "esito": "collegato",
+   "perche": "cognome solo, e matteo maria boiardo e' l'unica persona gia' codificata che lo porta: il codice e' il suo, non un codice nuovo",
+   "nome_cellula": "Boiardo",
+   "nome_completo": "matteo maria boiardo"
+  },
+  {
+   "nome": "Isabella d'Este",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-8",
+    "2-26"
+   ],
+   "codice": "P32",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Isabella d'Este"
+  },
+  {
+   "nome": "Josquin des Prez",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-22"
+   ],
+   "codice": "P33",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Josquin des Prez"
+  },
+  {
+   "nome": "Lucrezia Borgia",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-10"
+   ],
+   "codice": "P35",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Lucrezia Borgia"
+  },
+  {
+   "nome": "Ludovico Bonaccioli",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-13"
+   ],
+   "codice": "P40",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Ludovico Bonaccioli"
+  },
+  {
+   "nome": "Niccolò Copernico",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-10"
+   ],
+   "codice": "P42",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Alberto V d'Este, Niccolò Copernico"
+  },
+  {
+   "nome": "Gabriele Falloppio",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-23"
+   ],
+   "codice": "P45",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Gabriele Falloppio"
+  },
+  {
+   "nome": "Dosso Dossi",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-8"
+   ],
+   "codice": "P48",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Nicolò II d'Este, Dosso Dossi"
+  },
+  {
+   "nome": "Renata di Francia",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-11"
+   ],
+   "codice": "P50",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Renata di Francia"
+  },
+  {
+   "nome": "Torquato Tasso",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-18"
+   ],
+   "codice": "P52",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Torquato Tasso"
+  },
+  {
+   "nome": "Tasso",
+   "anni": [
+    2,
+    3
+   ],
+   "tappe": [
+    "2-26",
+    "3-11"
+   ],
+   "codice": "P52",
+   "esito": "collegato",
+   "perche": "cognome solo, e torquato tasso e' l'unica persona gia' codificata che lo porta: il codice e' il suo, non un codice nuovo",
+   "nome_cellula": "Tasso",
+   "nome_completo": "torquato tasso"
+  },
+  {
+   "nome": "Riccardo Bacchelli",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-29"
+   ],
+   "codice": "P60",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Florestano Vancini, Riccardo Bacchelli"
+  },
+  {
+   "nome": "Napoleone e l'età francese",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-9"
+   ],
+   "codice": "P63",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Napoleone e l'età francese"
+  },
+  {
+   "nome": "I Bersaglieri del Po",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-24"
+   ],
+   "codice": "P66",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "I Bersaglieri del Po"
+  },
+  {
+   "nome": "Filippo de Pisis",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-20"
+   ],
+   "codice": "P74",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Filippo de Pisis"
+  },
+  {
+   "nome": "Florestano Vancini",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-29"
+   ],
+   "codice": "P81",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Florestano Vancini, Riccardo Bacchelli"
+  },
+  {
+   "nome": "Paolo Mazza",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-26"
+   ],
+   "codice": "P86",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Paolo Mazza"
+  },
+  {
+   "nome": "Brondi",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-30"
+   ],
+   "codice": "P87",
+   "esito": "collegato",
+   "perche": "cognome solo, e vasco brondi e' l'unica persona gia' codificata che lo porta: il codice e' il suo, non un codice nuovo",
+   "nome_cellula": "Brondi (P87)",
+   "nome_completo": "vasco brondi"
+  },
+  {
+   "nome": "La comunità ebraica ferrarese",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-28"
+   ],
+   "codice": "P88",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "La comunità ebraica ferrarese"
+  },
+  {
+   "nome": "Le monache di Sant'Antonio in Polesine",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-14"
+   ],
+   "codice": "P91",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Le monache di Sant'Antonio in Polesine"
+  },
+  {
+   "nome": "Il territorio del Po",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-27"
+   ],
+   "codice": "P92",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Il territorio del Po"
+  },
+  {
+   "nome": "Solone",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-5"
+   ],
+   "codice": "Q104",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Solone"
+  },
+  {
+   "nome": "Pericle",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-4",
+    "3-9"
+   ],
+   "codice": "Q105",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Pericle"
+  },
+  {
+   "nome": "Pitagora",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-16"
+   ],
+   "codice": "Q11",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Pitagora"
+  },
+  {
+   "nome": "Alcuino",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-21"
+   ],
+   "codice": "Q112",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Alcuino"
+  },
+  {
+   "nome": "Parmenide",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-11"
+   ],
+   "codice": "Q12",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Parmenide"
+  },
+  {
+   "nome": "Bellini",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-15"
+   ],
+   "codice": "Q120",
+   "esito": "collegato",
+   "perche": "cognome solo, e giovanni bellini e' l'unica persona gia' codificata che lo porta: il codice e' il suo, non un codice nuovo",
+   "nome_cellula": "Bellini",
+   "nome_completo": "giovanni bellini"
+  },
+  {
+   "nome": "Carlo Magno",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-12"
+   ],
+   "codice": "Q121",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Carlo Magno"
+  },
+  {
+   "nome": "Boccaccio",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-14"
+   ],
+   "codice": "Q122",
+   "esito": "collegato",
+   "perche": "cognome solo, e giovanni boccaccio e' l'unica persona gia' codificata che lo porta: il codice e' il suo, non un codice nuovo",
+   "nome_cellula": "Boccaccio",
+   "nome_completo": "giovanni boccaccio"
+  },
+  {
+   "nome": "Manuzio",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-21",
+    "3-29"
+   ],
+   "codice": "Q125",
+   "esito": "collegato",
+   "perche": "cognome solo, e aldo manuzio e' l'unica persona gia' codificata che lo porta: il codice e' il suo, non un codice nuovo",
+   "nome_cellula": "Manuzio",
+   "nome_completo": "aldo manuzio"
+  },
+  {
+   "nome": "Caxton",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-26"
+   ],
+   "codice": "Q126",
+   "esito": "collegato",
+   "perche": "cognome solo, e william caxton e' l'unica persona gia' codificata che lo porta: il codice e' il suo, non un codice nuovo",
+   "nome_cellula": "Caxton",
+   "nome_completo": "william caxton"
+  },
+  {
+   "nome": "Zenone di Elea",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-6"
+   ],
+   "codice": "Q13",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Zenone di Elea"
+  },
+  {
+   "nome": "Cincinnato",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-5"
+   ],
+   "codice": "Q17",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Cincinnato"
+  },
+  {
+   "nome": "Cesare",
+   "anni": [
+    2,
+    3,
+    4
+   ],
+   "tappe": [
+    "2-17",
+    "3-14",
+    "4-16"
+   ],
+   "codice": "Q20",
+   "esito": "collegato",
+   "perche": "cognome solo, e giulio cesare e' l'unica persona gia' codificata che lo porta: il codice e' il suo, non un codice nuovo",
+   "nome_cellula": "Cesare",
+   "nome_completo": "giulio cesare"
+  },
+  {
+   "nome": "Ibn Battuta",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-9"
+   ],
+   "codice": "Q202",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Ibn Battuta"
+  },
+  {
+   "nome": "Cicerone",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-18"
+   ],
+   "codice": "Q21",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Cicerone"
+  },
+  {
+   "nome": "Al-Khwārizmī",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-2"
+   ],
+   "codice": "Q211",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Al-Khwārizmī"
+  },
+  {
+   "nome": "Catone il Censore",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-7",
+    "2-12"
+   ],
+   "codice": "Q26",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Catone il Censore"
+  },
+  {
+   "nome": "Tiberio Gracco",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-10",
+    "2-13"
+   ],
+   "codice": "Q28",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Tiberio Gracco"
+  },
+  {
+   "nome": "Newton",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-7"
+   ],
+   "codice": "Q303",
+   "esito": "collegato",
+   "perche": "cognome solo, e isaac newton e' l'unica persona gia' codificata che lo porta: il codice e' il suo, non un codice nuovo",
+   "nome_cellula": "Newton",
+   "nome_completo": "isaac newton"
+  },
+  {
+   "nome": "Alonzo Church",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-13"
+   ],
+   "codice": "Q314",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Alonzo Church"
+  },
+  {
+   "nome": "Yann LeCun",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-27"
+   ],
+   "codice": "Q315",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Yann LeCun"
+  },
+  {
+   "nome": "Donald Davies",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-18"
+   ],
+   "codice": "Q319",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Donald Davies"
+  },
+  {
+   "nome": "Tim Berners-Lee",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-11"
+   ],
+   "codice": "Q323",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Tim Berners-Lee"
+  },
+  {
+   "nome": "Timnit Gebru",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-26"
+   ],
+   "codice": "Q328",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Timnit Gebru"
+  },
+  {
+   "nome": "Gli Adelardi",
+   "anni": [
+    1
+   ],
+   "tappe": [
+    "1-2"
+   ],
+   "codice": "Q332",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Gli Adelardi"
+  },
+  {
+   "nome": "La Dama di Verrucchio",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-1"
+   ],
+   "codice": "Q333",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "La Dama di Verrucchio"
+  },
+  {
+   "nome": "i popoli della penisola",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-1"
+   ],
+   "codice": "Q334",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i popoli della penisola"
+  },
+  {
+   "nome": "Archita",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-2"
+   ],
+   "codice": "Q335",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Archita"
+  },
+  {
+   "nome": "Tarquinio il Superbo",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-3"
+   ],
+   "codice": "Q336",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Tarquinio il Superbo"
+  },
+  {
+   "nome": "Lucrezia",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-3",
+    "2-23"
+   ],
+   "codice": "Q337",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Lucrezia"
+  },
+  {
+   "nome": "I copisti",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-4",
+    "2-29"
+   ],
+   "codice": "Q338",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "I copisti"
+  },
+  {
+   "nome": "Camillo",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-5",
+    "2-7"
+   ],
+   "codice": "Q339",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Camillo"
+  },
+  {
+   "nome": "i fisici di Crotone",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-6"
+   ],
+   "codice": "Q340",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i fisici di Crotone"
+  },
+  {
+   "nome": "Cornelia",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-9"
+   ],
+   "codice": "Q341",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Cornelia"
+  },
+  {
+   "nome": "gli ambasciatori",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-9"
+   ],
+   "codice": "Q342",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "gli ambasciatori"
+  },
+  {
+   "nome": "Gaio Gracco",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-10"
+   ],
+   "codice": "Q343",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Gaio Gracco"
+  },
+  {
+   "nome": "Appio Claudio",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-11"
+   ],
+   "codice": "Q344",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Appio Claudio"
+  },
+  {
+   "nome": "Scipione l'Africano",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-12",
+    "2-13"
+   ],
+   "codice": "Q345",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Scipione l'Africano"
+  },
+  {
+   "nome": "Petrarca",
+   "anni": [
+    2,
+    3
+   ],
+   "tappe": [
+    "2-14",
+    "3-22"
+   ],
+   "codice": "Q346",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Petrarca"
+  },
+  {
+   "nome": "Costanza d'Altavilla",
+   "anni": [
+    2,
+    3
+   ],
+   "tappe": [
+    "2-15",
+    "3-8"
+   ],
+   "codice": "Q347",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Costanza d'Altavilla"
+  },
+  {
+   "nome": "Manfredi",
+   "anni": [
+    2,
+    3
+   ],
+   "tappe": [
+    "2-15",
+    "3-8"
+   ],
+   "codice": "Q348",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Manfredi"
+  },
+  {
+   "nome": "Euclide",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-16"
+   ],
+   "codice": "Q349",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Euclide"
+  },
+  {
+   "nome": "Giustiniano",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-7"
+   ],
+   "codice": "Q35",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Giustiniano"
+  },
+  {
+   "nome": "Catone Uticense",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-17"
+   ],
+   "codice": "Q350",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Catone Uticense"
+  },
+  {
+   "nome": "Cleopatra",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-18"
+   ],
+   "codice": "Q351",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Cleopatra"
+  },
+  {
+   "nome": "Teodolinda",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-19",
+    "2-27"
+   ],
+   "codice": "Q352",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Teodolinda"
+  },
+  {
+   "nome": "i coloni",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-19"
+   ],
+   "codice": "Q353",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i coloni"
+  },
+  {
+   "nome": "Ottaviano giovane",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-20"
+   ],
+   "codice": "Q354",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Ottaviano giovane"
+  },
+  {
+   "nome": "Agrippa",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-20"
+   ],
+   "codice": "Q355",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Agrippa"
+  },
+  {
+   "nome": "le città del Nord",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-21"
+   ],
+   "codice": "Q356",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "le città del Nord"
+  },
+  {
+   "nome": "Francesco Sforza",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-22"
+   ],
+   "codice": "Q357",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Francesco Sforza"
+  },
+  {
+   "nome": "i mercanti",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-22"
+   ],
+   "codice": "Q358",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i mercanti"
+  },
+  {
+   "nome": "Il tipografo",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-23"
+   ],
+   "codice": "Q359",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Il tipografo"
+  },
+  {
+   "nome": "Enigma",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-24"
+   ],
+   "codice": "Q360",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Enigma"
+  },
+  {
+   "nome": "i cifrari di Stato",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-24"
+   ],
+   "codice": "Q361",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i cifrari di Stato"
+  },
+  {
+   "nome": "Ercole I",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-25",
+    "2-30"
+   ],
+   "codice": "Q362",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Ercole I"
+  },
+  {
+   "nome": "i muratori",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-25"
+   ],
+   "codice": "Q363",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i muratori"
+  },
+  {
+   "nome": "Alboino",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-27"
+   ],
+   "codice": "Q364",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Alboino"
+  },
+  {
+   "nome": "Cristoforo Colombo",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-28"
+   ],
+   "codice": "Q365",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Cristoforo Colombo"
+  },
+  {
+   "nome": "Colombo",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-29"
+   ],
+   "codice": "Q366",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Colombo"
+  },
+  {
+   "nome": "le donne della corte",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-30"
+   ],
+   "codice": "Q367",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "le donne della corte"
+  },
+  {
+   "nome": "Archimede",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-1"
+   ],
+   "codice": "Q368",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Archimede"
+  },
+  {
+   "nome": "i matematici di Alessandria",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-1"
+   ],
+   "codice": "Q369",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i matematici di Alessandria"
+  },
+  {
+   "nome": "Keplero",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-2"
+   ],
+   "codice": "Q370",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Keplero"
+  },
+  {
+   "nome": "Tycho Brahe",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-2"
+   ],
+   "codice": "Q371",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Tycho Brahe"
+  },
+  {
+   "nome": "Traiano",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-3"
+   ],
+   "codice": "Q372",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Traiano"
+  },
+  {
+   "nome": "Adriano",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-3"
+   ],
+   "codice": "Q373",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Adriano"
+  },
+  {
+   "nome": "Socrate",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-4",
+    "3-6"
+   ],
+   "codice": "Q374",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Socrate"
+  },
+  {
+   "nome": "Tucidide",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-5"
+   ],
+   "codice": "Q375",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Tucidide"
+  },
+  {
+   "nome": "Aristotele",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-6"
+   ],
+   "codice": "Q376",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Aristotele"
+  },
+  {
+   "nome": "Teodorico",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-7"
+   ],
+   "codice": "Q377",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Teodorico"
+  },
+  {
+   "nome": "Tolemeo",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-9"
+   ],
+   "codice": "Q378",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Tolemeo"
+  },
+  {
+   "nome": "Tiziano",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-10",
+    "3-15",
+    "3-20"
+   ],
+   "codice": "Q379",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Tiziano"
+  },
+  {
+   "nome": "Ercole II",
+   "anni": [
+    3,
+    4
+   ],
+   "tappe": [
+    "3-10",
+    "4-30"
+   ],
+   "codice": "Q380",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Ercole II"
+  },
+  {
+   "nome": "Eginardo",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-12"
+   ],
+   "codice": "Q381",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Eginardo"
+  },
+  {
+   "nome": "Bramante",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-13"
+   ],
+   "codice": "Q382",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Bramante"
+  },
+  {
+   "nome": "Guicciardini",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-14"
+   ],
+   "codice": "Q383",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Guicciardini"
+  },
+  {
+   "nome": "Fust",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-16"
+   ],
+   "codice": "Q384",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Fust"
+  },
+  {
+   "nome": "Schöffer",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-16"
+   ],
+   "codice": "Q385",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Schöffer"
+  },
+  {
+   "nome": "Alfonso I",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-17",
+    "3-30"
+   ],
+   "codice": "Q386",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Alfonso I"
+  },
+  {
+   "nome": "il coro della corte",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-17"
+   ],
+   "codice": "Q387",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "il coro della corte"
+  },
+  {
+   "nome": "Shakespeare",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-18"
+   ],
+   "codice": "Q388",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Shakespeare"
+  },
+  {
+   "nome": "Lope de Vega",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-18"
+   ],
+   "codice": "Q389",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Lope de Vega"
+  },
+  {
+   "nome": "Lutero",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-19"
+   ],
+   "codice": "Q390",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Lutero"
+  },
+  {
+   "nome": "Calvino",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-19"
+   ],
+   "codice": "Q391",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Calvino"
+  },
+  {
+   "nome": "Antonio Lombardo",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-20"
+   ],
+   "codice": "Q392",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Antonio Lombardo"
+  },
+  {
+   "nome": "Franco Sacchetti",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-22"
+   ],
+   "codice": "Q393",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Franco Sacchetti"
+  },
+  {
+   "nome": "Alberto Magno",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-23"
+   ],
+   "codice": "Q394",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Alberto Magno"
+  },
+  {
+   "nome": "Giovanni di San Vincenzo",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-23"
+   ],
+   "codice": "Q395",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Giovanni di San Vincenzo"
+  },
+  {
+   "nome": "Leonardo",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-24"
+   ],
+   "codice": "Q396",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Leonardo"
+  },
+  {
+   "nome": "Raffaello",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-24"
+   ],
+   "codice": "Q397",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Raffaello"
+  },
+  {
+   "nome": "Francesco Griffo",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-25"
+   ],
+   "codice": "Q398",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Francesco Griffo"
+  },
+  {
+   "nome": "i caratterai",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-25"
+   ],
+   "codice": "Q399",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i caratterai"
+  },
+  {
+   "nome": "i miniatori",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-26"
+   ],
+   "codice": "Q400",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i miniatori"
+  },
+  {
+   "nome": "Wollstonecraft",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-27"
+   ],
+   "codice": "Q401",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Wollstonecraft"
+  },
+  {
+   "nome": "Robespierre",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-27"
+   ],
+   "codice": "Q402",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Robespierre"
+  },
+  {
+   "nome": "Alan Turing",
+   "anni": [
+    3,
+    5
+   ],
+   "tappe": [
+    "3-28",
+    "5-13"
+   ],
+   "codice": "Q403",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Alan Turing"
+  },
+  {
+   "nome": "Ada Lovelace",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-28"
+   ],
+   "codice": "Q404",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Ada Lovelace"
+  },
+  {
+   "nome": "i matematici di Cambridge",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-28"
+   ],
+   "codice": "Q405",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i matematici di Cambridge"
+  },
+  {
+   "nome": "il Sant'Uffizio",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-29"
+   ],
+   "codice": "Q406",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "il Sant'Uffizio"
+  },
+  {
+   "nome": "i musei",
+   "anni": [
+    3
+   ],
+   "tappe": [
+    "3-30"
+   ],
+   "codice": "Q407",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i musei"
+  },
+  {
+   "nome": "L'Eneuma Elish",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-1"
+   ],
+   "codice": "Q408",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "L'Eneuma Elish"
+  },
+  {
+   "nome": "il re assiro",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-1"
+   ],
+   "codice": "Q409",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "il re assiro"
+  },
+  {
+   "nome": "Ibn Jubayr",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-2"
+   ],
+   "codice": "Q410",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Ibn Jubayr"
+  },
+  {
+   "nome": "i portatori d'acqua",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-2"
+   ],
+   "codice": "Q411",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i portatori d'acqua"
+  },
+  {
+   "nome": "Il figlio di Shi Huangdi",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-3"
+   ],
+   "codice": "Q412",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Il figlio di Shi Huangdi"
+  },
+  {
+   "nome": "gli scribi",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-3"
+   ],
+   "codice": "Q413",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "gli scribi"
+  },
+  {
+   "nome": "Nefertari",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-4"
+   ],
+   "codice": "Q414",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Nefertari"
+  },
+  {
+   "nome": "i sacerdoti di Amun",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-4"
+   ],
+   "codice": "Q415",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i sacerdoti di Amun"
+  },
+  {
+   "nome": "Abul Fazl",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-5"
+   ],
+   "codice": "Q416",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Abul Fazl"
+  },
+  {
+   "nome": "le città nuove",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-5"
+   ],
+   "codice": "Q417",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "le città nuove"
+  },
+  {
+   "nome": "I quattro khanati",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-6"
+   ],
+   "codice": "Q418",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "I quattro khanati"
+  },
+  {
+   "nome": "i cronachi cinesi",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-6"
+   ],
+   "codice": "Q419",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i cronachi cinesi"
+  },
+  {
+   "nome": "Hooke",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-7"
+   ],
+   "codice": "Q420",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Hooke"
+  },
+  {
+   "nome": "I lini",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-8"
+   ],
+   "codice": "Q421",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "I lini"
+  },
+  {
+   "nome": "le critiche alla classificazione",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-8"
+   ],
+   "codice": "Q422",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "le critiche alla classificazione"
+  },
+  {
+   "nome": "I mercanti di Songhai",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-9"
+   ],
+   "codice": "Q423",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "I mercanti di Songhai"
+  },
+  {
+   "nome": "I magazzinieri",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-10"
+   ],
+   "codice": "Q424",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "I magazzinieri"
+  },
+  {
+   "nome": "Robert of Chester",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-11"
+   ],
+   "codice": "Q425",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Robert of Chester"
+  },
+  {
+   "nome": "il libro dell'algebra",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-11"
+   ],
+   "codice": "Q426",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "il libro dell'algebra"
+  },
+  {
+   "nome": "Il dizionario di Mengxi",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-12"
+   ],
+   "codice": "Q427",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Il dizionario di Mengxi"
+  },
+  {
+   "nome": "i calligrafi",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-12"
+   ],
+   "codice": "Q428",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i calligrafi"
+  },
+  {
+   "nome": "I sacerdoti di Soknopaiou Nesos",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-13"
+   ],
+   "codice": "Q429",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "I sacerdoti di Soknopaiou Nesos"
+  },
+  {
+   "nome": "le tre scritture",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-13"
+   ],
+   "codice": "Q430",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "le tre scritture"
+  },
+  {
+   "nome": "Tlacaelel",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-14"
+   ],
+   "codice": "Q431",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Tlacaelel"
+  },
+  {
+   "nome": "i calendari",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-14"
+   ],
+   "codice": "Q432",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i calendari"
+  },
+  {
+   "nome": "I rapsodi",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-15"
+   ],
+   "codice": "Q433",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "I rapsodi"
+  },
+  {
+   "nome": "Pisistrato",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-15"
+   ],
+   "codice": "Q434",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Pisistrato"
+  },
+  {
+   "nome": "Ibn Khaldun",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-16"
+   ],
+   "codice": "Q435",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Ibn Khaldun"
+  },
+  {
+   "nome": "i monaci buddisti",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-16"
+   ],
+   "codice": "Q436",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i monaci buddisti"
+  },
+  {
+   "nome": "Il tempio di Kalaram",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-17"
+   ],
+   "codice": "Q437",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Il tempio di Kalaram"
+  },
+  {
+   "nome": "il poeta",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-17"
+   ],
+   "codice": "Q438",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "il poeta"
+  },
+  {
+   "nome": "I millet",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-18"
+   ],
+   "codice": "Q439",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "I millet"
+  },
+  {
+   "nome": "Ibrahim, fratello del sultano",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-18"
+   ],
+   "codice": "Q440",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Ibrahim, fratello del sultano"
+  },
+  {
+   "nome": "Il Libro degli specchi",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-19"
+   ],
+   "codice": "Q441",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Il Libro degli specchi"
+  },
+  {
+   "nome": "il muḥtasib",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-19"
+   ],
+   "codice": "Q442",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "il muḥtasib"
+  },
+  {
+   "nome": "Gli ufficiali del catasto",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-20"
+   ],
+   "codice": "Q443",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Gli ufficiali del catasto"
+  },
+  {
+   "nome": "il censitore cinese",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-20"
+   ],
+   "codice": "Q444",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "il censitore cinese"
+  },
+  {
+   "nome": "I censitori",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-21",
+    "4-25"
+   ],
+   "codice": "Q445",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "I censitori"
+  },
+  {
+   "nome": "i funzionari dell'archivio",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-21"
+   ],
+   "codice": "Q446",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i funzionari dell'archivio"
+  },
+  {
+   "nome": "Il codice",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-22"
+   ],
+   "codice": "Q447",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Il codice"
+  },
+  {
+   "nome": "la stele di Nippur",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-22"
+   ],
+   "codice": "Q448",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "la stele di Nippur"
+  },
+  {
+   "nome": "I piloti di Malindi",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-23"
+   ],
+   "codice": "Q449",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "I piloti di Malindi"
+  },
+  {
+   "nome": "Amerigo Vespucci",
+   "anni": [
+    2
+   ],
+   "tappe": [
+    "2-28"
+   ],
+   "codice": "Q45",
+   "esito": "gia_codificato",
+   "perche": "il nome combacia con una scheda che ha gia' il codice",
+   "nome_cellula": "Amerigo Vespucci"
+  },
+  {
+   "nome": "Ahmad ibn Majid",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-23"
+   ],
+   "codice": "Q450",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Ahmad ibn Majid"
+  },
+  {
+   "nome": "Ma Huan",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-24"
+   ],
+   "codice": "Q451",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Ma Huan"
+  },
+  {
+   "nome": "i cantieri",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-24"
+   ],
+   "codice": "Q452",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i cantieri"
+  },
+  {
+   "nome": "Sojourner Truth",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-25"
+   ],
+   "codice": "Q453",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Sojourner Truth"
+  },
+  {
+   "nome": "Las Casas",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-26"
+   ],
+   "codice": "Q454",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Las Casas"
+  },
+  {
+   "nome": "i signori di Tlaxcala",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-26"
+   ],
+   "codice": "Q455",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i signori di Tlaxcala"
+  },
+  {
+   "nome": "Gorgas",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-27"
+   ],
+   "codice": "Q456",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Gorgas"
+  },
+  {
+   "nome": "i soldati",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-27"
+   ],
+   "codice": "Q457",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i soldati"
+  },
+  {
+   "nome": "Il lavoro alla BBC",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-28"
+   ],
+   "codice": "Q458",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Il lavoro alla BBC"
+  },
+  {
+   "nome": "la revisione spagnola",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-28"
+   ],
+   "codice": "Q459",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "la revisione spagnola"
+  },
+  {
+   "nome": "Malala Yousafzai",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-29"
+   ],
+   "codice": "Q460",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Malala Yousafzai"
+  },
+  {
+   "nome": "il libro di Irène",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-29"
+   ],
+   "codice": "Q461",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "il libro di Irène"
+  },
+  {
+   "nome": "l'Accademia",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-29"
+   ],
+   "codice": "Q462",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "l'Accademia"
+  },
+  {
+   "nome": "Le voci senza nome",
+   "anni": [
+    4
+   ],
+   "tappe": [
+    "4-30"
+   ],
+   "codice": "Q463",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Le voci senza nome"
+  },
+  {
+   "nome": "il problema di Fermi",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-1"
+   ],
+   "codice": "Q464",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "il problema di Fermi"
+  },
+  {
+   "nome": "il fisico teorico",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-1"
+   ],
+   "codice": "Q465",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "il fisico teorico"
+  },
+  {
+   "nome": "Thomas Kuhn",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-2"
+   ],
+   "codice": "Q466",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Thomas Kuhn"
+  },
+  {
+   "nome": "Duhem e Quine",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-2"
+   ],
+   "codice": "Q467",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Duhem e Quine"
+  },
+  {
+   "nome": "Eulero",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-3"
+   ],
+   "codice": "Q468",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Eulero"
+  },
+  {
+   "nome": "Ostrowski",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-3"
+   ],
+   "codice": "Q469",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Ostrowski"
+  },
+  {
+   "nome": "Ford e Thonnard",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-4"
+   ],
+   "codice": "Q470",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Ford e Thonnard"
+  },
+  {
+   "nome": "de Sitter",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-4"
+   ],
+   "codice": "Q471",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "de Sitter"
+  },
+  {
+   "nome": "Stanislaw Ulam",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-5"
+   ],
+   "codice": "Q472",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Stanislaw Ulam"
+  },
+  {
+   "nome": "Nicholas Metropolis",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-5"
+   ],
+   "codice": "Q473",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Nicholas Metropolis"
+  },
+  {
+   "nome": "il regolo babilonese",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-6"
+   ],
+   "codice": "Q474",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "il regolo babilonese"
+  },
+  {
+   "nome": "i matematici arabi",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-6"
+   ],
+   "codice": "Q475",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i matematici arabi"
+  },
+  {
+   "nome": "Margret Turner",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-7"
+   ],
+   "codice": "Q476",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Margret Turner"
+  },
+  {
+   "nome": "i modelli climatici",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-7"
+   ],
+   "codice": "Q477",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i modelli climatici"
+  },
+  {
+   "nome": "il programma spaziale",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-8"
+   ],
+   "codice": "Q478",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "il programma spaziale"
+  },
+  {
+   "nome": "Oktyabrskij",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-8"
+   ],
+   "codice": "Q479",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Oktyabrskij"
+  },
+  {
+   "nome": "William Farr",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-9"
+   ],
+   "codice": "Q480",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "William Farr"
+  },
+  {
+   "nome": "le statistiche cittadine",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-9"
+   ],
+   "codice": "Q481",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "le statistiche cittadine"
+  },
+  {
+   "nome": "Gapminder",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-10"
+   ],
+   "codice": "Q482",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Gapminder"
+  },
+  {
+   "nome": "i revisori dei modelli",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-10"
+   ],
+   "codice": "Q483",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i revisori dei modelli"
+  },
+  {
+   "nome": "chi ha etichettato ImageNet",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-11"
+   ],
+   "codice": "Q484",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "chi ha etichettato ImageNet"
+  },
+  {
+   "nome": "Jia Deng",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-11"
+   ],
+   "codice": "Q485",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Jia Deng"
+  },
+  {
+   "nome": "«Tlön, Uqbar, Orbis Tertius»",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-12"
+   ],
+   "codice": "Q486",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "«Tlön, Uqbar, Orbis Tertius»"
+  },
+  {
+   "nome": "i bibliotecari",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-12"
+   ],
+   "codice": "Q487",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i bibliotecari"
+  },
+  {
+   "nome": "Turing",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-14"
+   ],
+   "codice": "Q488",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Turing"
+  },
+  {
+   "nome": "il lambda calculus",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-14"
+   ],
+   "codice": "Q489",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "il lambda calculus"
+  },
+  {
+   "nome": "Stephen Cook",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-15"
+   ],
+   "codice": "Q490",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Stephen Cook"
+  },
+  {
+   "nome": "Leslie Valiant",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-15"
+   ],
+   "codice": "Q491",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Leslie Valiant"
+  },
+  {
+   "nome": "Bob Kahn",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-16",
+    "5-17",
+    "5-18"
+   ],
+   "codice": "Q492",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Bob Kahn"
+  },
+  {
+   "nome": "i ponti",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-16"
+   ],
+   "codice": "Q493",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i ponti"
+  },
+  {
+   "nome": "Louis Pouzin",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-17"
+   ],
+   "codice": "Q494",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Louis Pouzin"
+  },
+  {
+   "nome": "Peter Kirstein",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-19"
+   ],
+   "codice": "Q495",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Peter Kirstein"
+  },
+  {
+   "nome": "la Cambridge Ring",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-19"
+   ],
+   "codice": "Q496",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "la Cambridge Ring"
+  },
+  {
+   "nome": "Aleotti",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-20"
+   ],
+   "codice": "Q497",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Aleotti"
+  },
+  {
+   "nome": "i geometri ducali",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-20"
+   ],
+   "codice": "Q498",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i geometri ducali"
+  },
+  {
+   "nome": "Bellman",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-21"
+   ],
+   "codice": "Q499",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Bellman"
+  },
+  {
+   "nome": "Floyd",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-21"
+   ],
+   "codice": "Q500",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Floyd"
+  },
+  {
+   "nome": "Vitalik Buterin",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-22"
+   ],
+   "codice": "Q501",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Vitalik Buterin"
+  },
+  {
+   "nome": "chi ha perso",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-22"
+   ],
+   "codice": "Q502",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "chi ha perso"
+  },
+  {
+   "nome": "Ruggiero e la conversione `5-22F`",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-22"
+   ],
+   "codice": "Q503",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Ruggiero e la conversione `5-22F`**"
+  },
+  {
+   "nome": "il CERN nel 1990",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-23"
+   ],
+   "codice": "Q504",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "il CERN nel 1990"
+  },
+  {
+   "nome": "i primi browser",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-23"
+   ],
+   "codice": "Q505",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "i primi browser"
+  },
+  {
+   "nome": "Diffie e Hellman",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-24"
+   ],
+   "codice": "Q506",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Diffie e Hellman"
+  },
+  {
+   "nome": "Rivest",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-24"
+   ],
+   "codice": "Q507",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Rivest, Shamir, Adleman"
+  },
+  {
+   "nome": "Shamir",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-24"
+   ],
+   "codice": "Q508",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Rivest, Shamir, Adleman"
+  },
+  {
+   "nome": "Adleman",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-24"
+   ],
+   "codice": "Q509",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Rivest, Shamir, Adleman"
+  },
+  {
+   "nome": "Norbert Wiener",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-25"
+   ],
+   "codice": "Q510",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Norbert Wiener"
+  },
+  {
+   "nome": "von Neumann",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-25"
+   ],
+   "codice": "Q511",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "von Neumann"
+  },
+  {
+   "nome": "chi ha costruito i dataset",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-26"
+   ],
+   "codice": "Q512",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "chi ha costruito i dataset"
+  },
+  {
+   "nome": "Yoshua Bengio",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-27"
+   ],
+   "codice": "Q513",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Yoshua Bengio"
+  },
+  {
+   "nome": "Margaret Mitchell",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-28"
+   ],
+   "codice": "Q514",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Margaret Mitchell"
+  },
+  {
+   "nome": "le schede dei dataset",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-28"
+   ],
+   "codice": "Q515",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "le schede dei dataset"
+  },
+  {
+   "nome": "Bruno Latour",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-29"
+   ],
+   "codice": "Q516",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Bruno Latour"
+  },
+  {
+   "nome": "AlphaFold",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-29"
+   ],
+   "codice": "Q517",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "AlphaFold"
+  },
+  {
+   "nome": "Amos Tversky",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-30"
+   ],
+   "codice": "Q518",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "Amos Tversky"
+  },
+  {
+   "nome": "chi scriverà nelle fasce bianche",
+   "anni": [
+    5
+   ],
+   "tappe": [
+    "5-30"
+   ],
+   "codice": "Q519",
+   "esito": "nuovo",
+   "perche": "non e' in nessun catalogo: codice assegnato qui",
+   "nome_cellula": "chi scriverà nelle fasce bianche"
+  }
+ ]
+}

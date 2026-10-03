@@ -233,12 +233,22 @@ def controlla_anacronismi():
         if anno not in PORTATORE:
             continue
         conta = {}
+        saltate = []
         for t in range(1, 31):
             lid = "%d-%d" % (anno, t)
             quando = ANNO_TAPPA[lid]
             allora = piu_veloce(PORTATORE[anno], quando)
             oggi = piu_veloce(PORTATORE[anno], None)
-            if allora is None or oggi is None:
+            if oggi is None:
+                continue
+            if allora is None:
+                # Una tappa senza mezzo non e' una tappa da saltare: e' una tappa
+                # che nessuno guardava. Il primo conteggio diceva «aereo 26,
+                # treno 1» per l'anno 5, che pero' copriva 27 tappe su 30: tre
+                # sono del Seicento e precedenti, e venivano scartate da un
+                # `continue` che non diceva niente. Ora il conto le nomina, e chi
+                # legge la tabella sa che copre tutte e trenta o non e' un conto.
+                saltate.append(lid)
                 continue
             conta[allora] = conta.get(allora, 0) + 1
             veloce = MEZZI[oggi][0] >= MEZZI[allora][0]
@@ -249,9 +259,15 @@ def controlla_anacronismi():
                       % (lid, quando, allora, oggi,
                          "OK" if veloce else "KO",
                          costo(PERCORSI[anno], allora)))
-        print("  anno %d — mezzi di allora nelle 30 tappe: %s"
-              % (anno, ", ".join("%s %d" % (m, n) for m, n in
-                                 sorted(conta.items(), key=lambda kv: -kv[1]))))
+        coperte = sum(conta.values())
+        riga = ", ".join("%s %d" % (m, n) for m, n in
+                         sorted(conta.items(), key=lambda kv: -kv[1]))
+        print("  anno %d — mezzi di allora nelle %d tappe coperte: %s"
+              % (anno, coperte, riga))
+        if saltate:
+            print("     ATTENZIONE: %d tappe senza mezzo alla propria data, "
+                  "saltate dal conteggio: %s" % (len(saltate), ", ".join(saltate)))
+            difetti += len(saltate)
     if not difetti:
         print("  nessun difetto: il mezzo di oggi non e' mai piu' lento di quello di allora")
     print()

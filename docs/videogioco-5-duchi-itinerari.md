@@ -1,9 +1,9 @@
 ---
 titolo: "Gli itinerari: chi incontri, dove, e con quale mezzo"
-versione: 0.2
+versione: 0.3
 data: 2026-10-03
 autore: "Progetto I cinque duchi"
-documenti collegati: videogioco-5-duchi-percorsi.md (v0.4), videogioco-5-duchi-anno1-mappa.md (v0.9), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-itinerari.md (questo), AGENTS.md
+documenti collegati: videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-anno1-mappa.md (v0.9), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-itinerari.md (questo), AGENTS.md
 ---
 
 # Gli itinerari: chi incontri, dove, e con quale mezzo
@@ -42,7 +42,7 @@ Tre fatti che decidono la forma:
 | **2** | 30 | 30 | 59 | 3 | a cavallo |
 | **3** | 30 | 30 | 61 | 1 | a cavallo |
 | **4** | 30 | 30 | 63 | 2 | in nave |
-| **5** | 30 | 30 | 61 | 3 | **non dichiarato** |
+| **5** | 30 | 30 | 61 | 3 | **su due strati** (§2) |
 | **Totale** | **150** | **141** | **269** | **9** | — |
 
 **Le centocinquanta voci non sono centocinquantuno.** Sono centocinquanta voci
@@ -62,7 +62,7 @@ del luogo e un secondo nome sarebbe di troppo.
 quinto, e il quinto numero è quello che il documento dell'anno 5 dichiarava
 diversamente: è il difetto di §5.
 
-## 2. Che cosa il mezzo non è, e perché il quinto anno non ce l'ha
+## 2. Che cosa il mezzo non è, e perché il quinto anno ha due strati
 
 Il mezzo di trasporto determina la velocità con cui la mappa si attraversa, e
 quindi il numero di giorni che una tappa costa (`percorsi.md` §1, §2). Ma **le
@@ -75,15 +75,18 @@ tappe non dicono quale mezzo si usa**, e questo documento non lo inventa:
   scudiero);
 - **anno 4**: in nave, perché l'anno attraversa oceani e il veliero è il mezzo
   dell'anno (130 km al giorno, rotta dipendente dal vento);
-- **anno 5**: **nessun mezzo dichiarato**, e la ragione è scritta in
-  `percorsi.md` §1.1: sono **ventidue** i mezzi che il quinto anno potrebbe usare,
-  e cinque di quelli sono i mezzi **del testo** del *Furioso* (l'ippogrifo, il
-  drago, la sirena, il carro di delfini, il carro di serpenti). Sceglierne uno
-  sarebbe scegliere al posto di Pietro, quindi la colonna resta `non_dichiarato` e
-  il motore la sceglie quando avrà la distanza.
+- **anno 5**: **dichiarato il 3 ottobre, su due strati**, e la ragione è in
+  `percorsi.md` §1.1bis. Il mezzo **reale** — con cui il materiale arriva
+  all'archivio, che è il presente — è **aereo 30**. Il mezzo **dentro la stanza** lo
+  sceglie **il canto**, perché ogni mezzo del *Furioso* è attestato in un canto e
+  in un verso: dove il canto ne dà uno si scrive il mezzo con il suo verso, dove
+  non lo dà si va a piedi. Nessuno dei due è una scelta di chi ha scritto il
+  file, e il conto è **a piedi 21, carro di serpenti 4, ippogrifo 3, sirena 2**.
 
-La regola dei due strati vale anche per la velocità: **il pin è reale e ci si va
-in treno; la stanza è del poema e ci si va a cavallo di Astolfo.**
+La regola dei due strati vale anche per la velocità, e il quinto anno è
+l'anno in cui i due strati hanno **mezzi diversi**: il pin è reale e ci si
+va con un mezzo del presente; la stanza è del poema e si attraversa con
+il mezzo che quel canto attesta.
 
 ## 3. Le tabelle degli itinerari, anno per anno
 
@@ -242,7 +245,7 @@ Le trenta tappe, 63 facoltativi, 2 voce collettive.
 | **4-30** | Ferrara, archivio | Le persone che non hanno firmato *(collettivo)* | Le voci senza nome (facoltativa); Ercole II |
 
 
-#### Anno 5 — il mezzo **non è dichiarato**
+#### Anno 5 — in aereo
 
 Le trenta tappe, 61 facoltativi, 3 voce collettive.
 
@@ -279,7 +282,6 @@ Le trenta tappe, 61 facoltativi, 3 voce collettive.
 | **5-29** | Londra, 2020<br>*stanza:* **la corte di Scozia** `F1` 12,12 · `A` | Demis Hassabis | Bruno Latour; AlphaFold (facoltativa) |
 | **5-30** | Ferrara, sala di progetto<br>*stanza:* **la prima pagina** `F3` 1,1 · `S` | Daniel Kahneman (Q330) | Amos Tversky; chi scriverà nelle fasce bianche (facoltative) |
 
-
 ## 4. Come si legge una riga, e che cosa non c'è dentro
 
 Una riga dice quattro cose, e tre sono dati:
@@ -309,13 +311,22 @@ marcatura è nella parentesi.
   (`P01…`, `Q01…`) nella tabella della sua tappa, perché il codice è della scheda e
   la scheda è un altro file. Il campo `codice` del JSON vale `null` in questi casi,
   e **null non vuol dire che la persona non esiste**.
-- **I nomi degli anni 2-5 non hanno catalogo.** L'anno 1 ha i suoi 93 personaggi con
-  il codice (`dati/videogioco-5-duchi-anno1-personaggi.json`); gli anni 2-5 usano
-  la serie `Q` e **non hanno un catalogo analogo**. Quindi per quegli anni il
-  confronto con l'elenco dei nomi non può essere completo, e la classificazione
-  usa la marcatura scritta nella tabella, che è la prova buona. **È un limite
-  dichiarato, non un fatto**: ogni voce del JSON porta il campo `prova` con il nome
-  della prova che l'ha decisa.
+- **I facoltativi non avevano codice, e il 3 ottobre l'hanno avuto.** Le 269
+  occorrenze di facoltativo erano 248 persone distinte: 50 avevano già un codice,
+  10 comparivano col solo cognome e sono state **collegate** al codice della
+  persona, 188 ne hanno ricevuto uno nuovo, e 0 restano da verificare. Il
+  confronto fra nomi è normalizzato sui diacritici (`Al-Khwārizmī` e
+  `al-Khwarizmi` sono la stessa persona) e le celle che contengono due persone
+  vengono divise. Il catalogo è `dati/videogioco-5-duchi-facoltativi.json` e il
+  controllo è `sorgenti/verifica_codici.py`.
+- **10 persone hanno due codici** nei cataloghi degli anni: compaiono in due anni
+  e hanno una scheda per anno, e nessuno dei due file se ne accorgeva. Non è un
+  difetto dei cataloghi, che sono fatti per anno: è la mancanza di un indice
+  unico, ed è lo stesso difetto che si era già visto sulle immagini. Ora c'è
+  `indice_persone` dentro il catalogo dei facoltativi: il **codice canonico** è
+  quello dell'anno 1 quando la persona c'è anche lì, altrimenti il più basso
+  della serie `Q`; gli altri sono **alias** e restano scritti perché i documenti
+  degli anni li nominano.
 
 ## 5. Il difetto che ha fatto nascere tutto questo, e il controllo che lo tiene
 
@@ -355,6 +366,10 @@ I cinque controlli, in una riga:
 | `sorgenti/estrai_incontri.py` | Estrae dalle tabelle degli anni, **le colonne per intestazione** |
 | `sorgenti/genera_itinerari.py` | Genera le tabelle di §3 |
 | `sorgenti/verifica_incontri.py` | I cinque controlli C1–C5 |
+| `sorgenti/dichiara_mezzo_quinto.py` | Scrive i due strati del mezzo del quinto anno in `dati/incontri_livelli.json`; `--prova` dice e non scrive |
+| `dati/videogioco-5-duchi-facoltativi.json` | I facoltativi con il loro codice `Q` e l'esito della codifica |
+| `sorgenti/codifica_facoltativi.py` | Costruisce il catalogo dei facoltativi e l'indice delle persone |
+| `sorgenti/verifica_codici.py` | I cinque controlli sui codici |
 
 ```
 python3 sorgenti/estrai_incontri.py            # estrae, scrive il JSON
@@ -362,6 +377,10 @@ python3 sorgenti/estrai_incontri.py --prova    # dice, non scrive
 python3 sorgenti/genera_itinerari.py           # stampa le tabelle
 python3 sorgenti/genera_itinerari.py --anno 3  # un anno solo
 python3 sorgenti/verifica_incontri.py          # C1-C5
+python3 sorgenti/dichiara_mezzo_quinto.py      # i due strati del mezzo
+python3 sorgenti/dichiara_mezzo_quinto.py --prova
+python3 sorgenti/codifica_facoltativi.py       # il catalogo dei facoltativi
+python3 sorgenti/verifica_codici.py            # i cinque controlli
 ```
 
 **Le colonne si leggono per intestazione, mai per numero**, ed è la seconda volta
@@ -373,27 +392,54 @@ non c'è la riga viene **saltata e detta**.
 
 ## 7. Le questioni aperte
 
-1. **Il mezzo del quinto anno** (§2): ventidue mezzi possibili, cinque dei quali
-   sono del testo. La scelta è di Pietro e non è bloccante: senza mezzo dichiarato
-   il gioco funziona, e la distanza si calcola quando il mezzo c'è.
+1. **Il mezzo del quinto anno**: **chiusa il 03/10/2026**. Ventidue mezzi possibili e
+   cinque dei quali sono del testo: la domanda non era *quale mezzo scegliere*, che
+   avrebbe scelto al posto di Pietro, ma *che cosa si dichiara quando la risposta è di
+   qualcun altro*. La risposta sono **due strati** (§2): il mezzo reale è **l'aereo**,
+   perché l'archivio è il presente, e quello della stanza è **il mezzo che il canto
+   attesta**, con **a piedi** dove il canto non ne dà. Il conto è **aereo 30 su 30** e,
+   per stanza, **a piedi 21, carro di serpenti 4, ippogrifo 3, sirena 2**: il carro di
+   delfini e il drago sono attestati nel testo ma **non hanno tappa nel quinto anno**, e
+   resta scritto. Il mezzo è dunque calcolato, non deciso.
 2. **Il catalogo degli anni 2-5**: **chiusa il 03/10/2026**, al primo gradino.
    Le **120 schede** scritte a mano nei documenti sono ora in
    `dati/videogioco-5-duchi-anno{2,3,4,5}-personaggi.json`, estratte da
    `sorgenti/lingue/catalogo_personaggi.py`. Ogni scheda porta la sua destinazione
    (obbligatoria o facoltativa) con **la prova** che l'ha abbinata, e i campi che i
    documenti non scrivono restano a `null` **con il motivo accanto**.
-   **Quello che resta aperto, e non è una domanda di questo documento**: le 120
-   schede sono i **centoventi** obbligatori dei quattro anni. I **269
-   facoltativi** sono in parte nomi che il catalogo non contiene
-   (Agrippa, Alboino, Ada Lovelace, Alan Turing, Bob Kahn), e per quelli la scheda **non
-   esiste e va scritta**: è il catalogo esteso che `anno2-penisola.md` §6.3 chiama
-   **130 voci** e che nessun file ha. La regola della `premi.md` — che ogni premio
-   abbia una fonte dichiarata — è quindi verificabile sulle 120 schede e **non** sui
-   269 facoltativi, e va detto ogni volta che si scrive un premio.
+   **Il secondo gradino è salito il 03/10/2026**, e la Q2 è chiusa. I **269
+   facoltativi** sono adesso in `dati/videogioco-5-duchi-facoltativi.json`: sono
+   **248 persone** e non 269, perché sei celle del documento contengono due nomi e il
+   conto giusto è sulle persone. Ogni scheda porta il suo codice `Q` e l'esito della
+   codifica — **50** già codificati, **10** collegati a una scheda esistente, **188**
+   nuovi fino a **Q519**, **0** da verificare. La regola della `premi.md` — che ogni
+   premio abbia una fonte dichiarata — è adesso verificabile su **tutti**: i 150
+   obbligatori e i 248 facoltativi.
+   **Il difetto che è saltato fuori facendolo**: dieci persone avevano **due codici**
+   nei cataloghi, perché la serie dell'anno 1 e quella degli anni 2-5 erano due serie
+   diverse. `indice_persone` sceglie adesso il codice canonico — quello dell'anno 1 se
+   c'è, altrimenti il più basso della serie `Q` — e gli altri diventano **alias**,
+   dichiarati accanto alla persona.
 3. **Le cinque tappe del primo anno senza facoltativi** (§1): sono un dato o una
    dimenticanza? Se sono un dato, va scritto perché sono cinque e non tre.
 
 ## 8. Registro delle modifiche
+
+- **v0.3 (03/10/2026)**: **la Q1 del §7 è chiusa e la Q2 sale all'ultimo gradino.**
+  Il mezzo del quinto anno è dichiarato su **due strati** — il reale (`aereo` 30 su 30)
+  e quello di stanza, che è il mezzo attestato dal canto (`a piedi` 21, carro di
+  serpenti 4, ippogrifo 3, sirena 2) — e la tabella di §1 non dice più
+  `non dichiarato`. I **269 facoltativi** hanno il codice `Q` in
+  `dati/videogioco-5-duchi-facoltativi.json`, che porta **248 persone** e tre esiti:
+  **50** già codificati, **10** collegati, **188** nuovi fino a **Q519**, nessuno da
+  verificare.
+  - **la regola dei premi diventa verificabile su tutti**: prima si poteva controllare
+    solo sui 150 obbligatori, perché gli altri non avevano un'identità;
+  - **dieci persone avevano due codici** nei cataloghi degli anni, e la serie dell'anno
+    1 non è la serie degli anni 2-5. L'`indice_persone` dichiara il codice canonico e i
+    suoi alias;
+  - nuovi `sorgenti/dichiara_mezzo_quinto.py`, `sorgenti/codifica_facoltativi.py` e
+    `sorgenti/verifica_codici.py` (cinque controlli, verde).
 
 - **v0.2 (03/10/2026)**: la **Q2 del §7 è chiusa al primo gradino**: i quattro
   cataloghi dei personaggi degli anni 2-5 sono in `dati/`, e portano la destinazione

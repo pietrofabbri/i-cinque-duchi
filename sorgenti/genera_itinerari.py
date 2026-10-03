@@ -82,19 +82,49 @@ def main():
 
     for anno in anni:
         xs = per_anno[anno]
+        mezzi = {x.get("mezzo") for x in xs if x.get("mezzo")}
         mezzo = xs[0]["mezzo"]
-        etichetta = MEZZO.get(mezzo, "**non dichiarato**")
-        print("\n### Anno %d — %s\n" % (anno, etichetta.capitalize()
-                                        if mezzo else "il mezzo non è dichiarato"))
-        print("| Livello | Dove si va | Chi incontri (obbligatorio) | Facoltativi |")
-        print("|---|---|---|---|")
+        # La colonna «come ci si arriva» compare solo quando l'anno ha piu' di un
+        # mezzo, o quando una tappa ha un mezzo proprio della stanza. Negli anni
+        # 1-4 il mezzo e' unico per anno e ripeterlo trenta volte sarebbe una
+        # colonna di zeri: un documento pieno di zeri smette di essere letto.
+        varia = len(mezzi) > 1 or any(x.get("mezzo_stanza") for x in xs)
+        if varia:
+            etichetta = "mezzi dichiarati tappa per tappa"
+        else:
+            etichetta = (MEZZO.get(mezzo, "**non dichiarato**")).capitalize() \
+                if mezzo else "il mezzo non è dichiarato"
+        print("\n### Anno %d — %s\n" % (anno, etichetta))
+        if varia:
+            print("| Livello | Come ci si arriva | Dove si va | "
+                  "Chi incontri (obbligatorio) | Facoltativi |")
+            print("|---|---|---|---|---|")
+        else:
+            print("| Livello | Dove si va | Chi incontri (obbligatorio) | Facoltativi |")
+            print("|---|---|---|---|")
         for x in xs:
             dove = x["luogo"] or "—"
             if x.get("stanza"):
                 dove += " — *stanza:* %s" % x["stanza"]
-            print("| **%s** | %s | %s | %s |"
-                  % (x["livello"], dove, voce_testo(x["voce_obbligatoria"]),
-                     facoltativi_testo(x.get("facoltativi"))))
+            if varia:
+                arrivo = MEZZO.get(x.get("mezzo"), "—")
+                if x.get("mezzo_stanza"):
+                    # Il mezzo della stanza si scrive con il canto che lo attesta:
+                    # e' la prova che non e' una scelta di chi ha generato la
+                    # tabella, e senza il verso sembrerebbe arbitrario.
+                    if x.get("mezzo_stanza_prova"):
+                        arrivo += " + **%s** (nella stanza, %s)" % (
+                            x["mezzo_stanza"], x["mezzo_stanza_prova"])
+                    else:
+                        arrivo += " + %s nella stanza" % x["mezzo_stanza"]
+                print("| **%s** | %s | %s | %s | %s |"
+                      % (x["livello"], arrivo, dove,
+                         voce_testo(x["voce_obbligatoria"]),
+                         facoltativi_testo(x.get("facoltativi"))))
+            else:
+                print("| **%s** | %s | %s | %s |"
+                      % (x["livello"], dove, voce_testo(x["voce_obbligatoria"]),
+                         facoltativi_testo(x.get("facoltativi"))))
     return 0
 
 

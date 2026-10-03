@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — audit delle questioni aperte: la lista operativa
-versione: 0.13
+versione: 0.14
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)
 fonte: lettura di tutti i quindici documenti di progetto, verificata da sorgenti/lingue/conta_questioni.py
-documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.4), videogioco-5-duchi-fonti-visive.md (v0.4), videogioco-5-duchi-furioso.md (v0.6), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-mappe.md (v1.1), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.4), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.1), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3), AGENTS.md
+documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-fonti-visive.md (v0.4), videogioco-5-duchi-furioso.md (v0.6), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-mappe.md (v1.1), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.1), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3), AGENTS.md
 ---
 
 # Audit delle questioni aperte: la lista
@@ -23,8 +23,8 @@ Il documento è verificato da `sorgenti/lingue/conta_questioni.py`, che confront
 |---|---|
 | Documenti con una sezione «Questioni aperte» | **15** |
 | Voci enumerate | **118** |
-| **Chiuse** | **30** |
-| **Aperte** | **88** |
+| **Chiuse** | **31** |
+| **Aperte** | **87** |
 | Di cui bloccanti | quattro |
 | Di cui importanti (cambiano il gioco) | quindici |
 | Di cui minori (si possono rimandare) | le altre |
@@ -33,7 +33,7 @@ Il documento è verificato da `sorgenti/lingue/conta_questioni.py`, che confront
 
 **Una voce non è sempre una domanda.** In `lingue.md` Q3 ci sono due sotto-voci dentro una sola domanda. Le **118 voci non sono 118 domande**.
 
-**Nessuna delle trenta chiuse è bloccante**, e due delle quattro bloccanti rimaste non sono mai state domande: erano lavori, e sono stati fatti — i novanta pin il 02/10/2026 (§2bis), la tavolozza, le sagome, il fondo di Ferrara e i colori delle carte il 03/10/2026 (§3bis). Le decisioni prese hanno tolto lavoro, non lo hanno aggiunto.
+**Nessuna delle trentuno chiuse è bloccante**, e due delle quattro bloccanti rimaste non sono mai state domande: erano lavori, e sono stati fatti — i novanta pin il 02/10/2026 (§2bis), la tavolozza, le sagome, il fondo di Ferrara e i colori delle carte il 03/10/2026 (§3bis). Le decisioni prese hanno tolto lavoro, non lo hanno aggiunto.
 
 ---
 
@@ -421,6 +421,12 @@ E la regola che ne segue, che è quella che il lavoro ha reso vera:
 ## 7. Registro delle modifiche
 
 | Data | Versione | Che cosa è cambiato |
+| 03/10/2026 | 0.14 | **Le due lacune che Pietro aveva affidate sono chiuse, e nessuna delle due si è chiusa scegliendo.** Il **mezzo del quinto anno** non era una scelta fra ventidue mezzi: era una domanda su che cosa si dichiara quando la risposta è di qualcun altro. La risposta sono **due strati** — il mezzo reale, che è l'archivio e dunque il presente (`aereo` 30 su 30), e il mezzo della stanza, che è quello attestato dal canto (a piedi 21, carro di serpenti 4, ippogrifo 3, sirena 2) — e il carro di delfini e il drago restano senza tappa, dichiarato. I **codici dei facoltativi** rendono la regola della `premi.md` verificabile su tutti: i 269 sono occorrenze e dietro ci sono **248 persone**, 50 già codificate, 10 collegate, 188 nuovi fino a **Q519**, zero da verificare.
+  - **il difetto che il mezzo ha smascherato**: `percorsi_mezzi.py` pubblicava «aereo 26, treno 1» per il quinto anno coprendo **27 tappe su 30**; le tre saltate (5-3, 5-6, 5-20) venivano scartate da un `continue` muto. Un conteggio che scarta e non lo dice descrive un anno che non esiste;
+  - **il difetto che i codici hanno smascherato**: **10 persone avevano due codici** nei cataloghi degli anni, perché la serie dell'anno 1 e quella degli anni 2-5 sono due serie diverse. Mancava un indice unico — lo stesso difetto già visto sulle immagini. `indice_persone` dichiara il canonico e gli alias;
+  - **la `premi.md` non è più verificabile solo sui 150 obbligatori**: con i 248 facoltativi codificati la copertura è dell'intera scheda, e quello che resta è la B1, che è una decisione di Pietro e non un lavoro;
+  - nuovi `sorgenti/dichiara_mezzo_quinto.py`, `sorgenti/codifica_facoltativi.py` e `sorgenti/verifica_codici.py` (cinque controlli, verde); `dati/videogioco-5-duchi-facoltativi.json` è il nuovo catalogo.
+Il conto di §1 passa a **118 voci, 31 chiuse, 87 aperte**: le quattro bloccanti non cambiano, perché nessuna delle due lacune era bloccante.
 | 03/10/2026 | 0.13 | **I cataloghi dei personaggi degli anni 2, 3, 4 e 5 esistono: sono i quattro file `dati/videogioco-5-duchi-anno{2,3,4,5}-personaggi.json`, con le 120 schede.** Fino a ieri l'unico anno con un catalogo in `dati/` era il primo (93 schede), e gli altri quattro avevano **centoventi schede scritte a mano dentro i documenti**, mentre `anno2-penisola.md` §6.3 dichiarava da generare un catalogo di **130 voci** che nessun file aveva mai soddisfatto. La `premi.md` §3 pretende che ogni premio abbia una fonte dichiarata: senza i cataloghi la verifica si poteva fare solo sui 150 obbligatori e il progetto non poteva dichiarare di coprire tutta la scheda.
   - **`sorgenti/lingue/catalogo_personaggi.py`** raccoglie quello che è già scritto e **non completa niente**: i campi che i documenti non scrivono (`note_verifica`) restano a `null` **con il motivo accanto**, perché un campo a `null` con la ragione è diverso da un campo assente, e il secondo è un difetto;
   - ogni scheda porta la sua **destinazione** (obbligatoria o facoltativa) con **la prova** che l'ha abbinata — `codice`, `nome_normalizzato`, `nome_senza_articoli`, `nome_parziale` — e le ambiguità (una scheda abbinata a due tappe) sono dichiarate, non risolte scegliendo la prima;
@@ -547,4 +553,60 @@ quelle sei persone, lasciava le loro vecchie tessere d'emblema accanto a quelle
 nuove: sei file che nessuno usava e che il primo che li avesse aperti avrebbe
 trattati come ritratti respinti ancora validi. Gli orfani ora si cercano tutti,
 non solo i `ritratto_`.
+
+## 3octies. Due lacune che Pietro ha affidate: il mezzo del quinto anno e i codici dei facoltativi
+
+**Il mezzo del quinto anno.** Era `non_dichiarato` per un principio giusto: sono
+ventidue i mezzi possibili, cinque sono i mezzi del *Furioso*, e sceglierne uno
+significava scegliere al posto di Pietro. La risposta data non è una scelta: è
+**due regole che non hanno un autore**. Il mezzo **reale** lo sceglie l'archivio,
+che è il presente — ed è la stessa regola (`piu_veloce`) che gli anni 4 e 5 usano
+già, quindi non è una preferenza nuova. Il mezzo **dentro la stanza** lo sceglie
+**il canto**, perché ogni mezzo del testo è attestato in un canto e in un verso: la
+tabella canto → mezzo è la traduzione degli indici, non una rosa. Dove il canto non
+dà un mezzo si va a piedi, dichiarato. Il carro di delfini (c. XI) e il drago
+(c. XVIII) non hanno tappa nell'anno 5: è il conto delle stanze e si dice per
+iscritto.
+
+*Il difetto che è venuto fuori durante il lavoro.* Il conto pubblicato nella §1.2 diceva
+«aereo 26, treno 1» per il quinto anno, ma copriva **27 tappe su trenta**: 5-3,
+5-6 e 5-20 sono del Seicento e precedenti, e venivano scartate da un `continue`
+che non diceva niente. Un conteggio che scarta e non lo dice è un conteggio che
+parla di un anno che non esiste. Ora il conto nomina le tappe scartate.
+
+**I codici dei facoltativi.** La domanda era un codice `Q` a ciascuno dei 269
+facoltativi, perché la regola dei premi si potesse verificare su tutti. La misura
+prima dell'esecuzione dice tre cose che cambiano il conto: i 269 sono
+**occorrenze**, non persone; dietro ci sono **248 persone distinte**; e sei celle
+contengono **due persone in una** («Leonello d'Este, Leon Battista Alberti»). Il
+risultato: 50 già codificate, 10 collegate al codice della persona perché
+comparivano col solo cognome, 188 con codice nuovo, **0 da verificare**.
+
+*Il pericolo evitato.* Nei facoltativi ci sono nomi che sono un cognome solo
+(«Alberti», «Alfonso I») e una variante con l'accento (`Al-Khwārizmī`). Una
+codifica meccanica avrebbe creato un secondo Alberti e un terzo al-Khwarizmi, e in
+un catalogo **una duplicazione è peggio di un'assenza**: l'assenza si vede, la
+duplicazione no, e la verifica dei premi avrebbe contato due premi sullo stesso
+volto. Per questo il confronto è normalizzato sui diacritici, i cognomi solti si
+collegano solo se **non c'è un altro candidato** (e altrimenti restano aperti con
+i candidati elencati), e la guardia finale confronta le **persone**, non le
+stringhe: «Tasso» e «Torquato Tasso» sono la stessa persona e non possono
+contarsi come due.
+
+*Il difetto vero, in un posto che nessuno guardava.* **10 persone avevano due
+codici** nei cataloghi degli anni: compaiono in due anni e hanno una scheda per
+anno, e nessuno dei due file se ne accorgeva. Non è un difetto dei cataloghi, che
+sono per anno: è la mancanza di un indice unico — lo stesso difetto che si era già
+visto sulle immagini, dove la stessa persona aveva due file. Ora `indice_persone`
+dichiara il codice canonico (quello dell'anno 1 quando la persona c'è anche lì,
+altrimenti il più basso della serie `Q`) e gli altri diventano alias che restano
+scritti, perché i documenti degli anni li nominano.
+
+**Il controllo.** `sorgenti/verifica_codici.py` verifica cinque cose: ogni
+occorrenza ha un codice o un motivo, un codice è di una persona sola, una persona ha
+un codice solo, nessun codice nuovo inciampa su uno esistente, e ogni tappa del
+catalogo è confermata da un incontro. La quinta guardia, com'è giusto, si è fermata
+alla prima esecuzione segnalando **276 occorrenze contro 269**: il confronto
+sbagliato era suo, perché sei celle contengono due persone, e la correzione è stata
+farla confrontare una corrispondenza invece di un'aritmetica.
 
