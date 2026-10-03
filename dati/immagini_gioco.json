@@ -1,0 +1,4299 @@
+{
+ "_nota": "Catalogo unico delle immagini del gioco, indicizzato per persona e non per tappa: dodici persone compaiono in due anni e hanno un solo file. Ogni voce porta l'esito e l'etichetta, cosi' il gioco non mostra un volto senza dire che cos'e'. Le voci `da_verificare` non hanno un ritratto: hanno un emblema e il file in attesa, finche' non si verifica di chi e'.",
+ "_generato_da": "sorgenti/art/catalogo_immagini.py",
+ "persone": {
+  "akbar": {
+   "nome": "Akbar",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q205"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Govardhan / Mir Ali Heravi",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Govardhan._Akbar_With_Lion_and_Calf_ca._1630%2C_Metmuseum_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1013,
+    "altezza": 1368
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "miniatura",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q205.png"
+  },
+  "al-khwarizmi": {
+   "nome": "Al-Khwarizmi",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q211"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: e' un francobollo uzbeko del 2000 con un uomo barbuto in turbante. Un francobollo non e' un ritratto: e' un prodotto stampato, e se il volto e' quello giusto lo si deve dire perche' il francobollo sceglie solo il nome. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q211.png"
+  },
+  "alan turing": {
+   "nome": "Alan Turing *(aggiunta",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q128"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Elliott &amp; Fry",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Alan_turing_header.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 752,
+    "altezza": 1002
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q128.png"
+  },
+  "alberto v d'este": {
+   "nome": "Alberto V d'Este",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P16"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Alberto_V_d%27Este2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 261,
+    "altezza": 282
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "miniatura",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P16.png"
+  },
+  "albrecht dürer": {
+   "nome": "Albrecht Dürer *(aggiunta",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q124"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Albrecht Dürer",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Albrecht_D%C3%BCrer_-_1500_self-portrait_%28High_resolution_and_detail%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 4130,
+    "altezza": 5710
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "autoritratto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q124.png"
+  },
+  "alcuino": {
+   "nome": "Alcuino",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q112"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: e' una scena miniata con piu' figure: uno scrivano seduto che insegna e altri che ascoltano. Dentro una scena non si distingue Alcuino dagli altri, e il gioco ha bisogno di un volto solo. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q112.png"
+  },
+  "alda costa": {
+   "nome": "Alda Costa",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P77"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Sien",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Alda_Costa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2304,
+    "altezza": 3072
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P77.png"
+  },
+  "aldo manuzio": {
+   "nome": "Aldo Manuzio *(aggiunta",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q125"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 4.0",
+    "autore": "Presbite",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Aldo_Pio_Manuzio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1536,
+    "altezza": 2048
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q125.png"
+  },
+  "aldobrandino d'este": {
+   "nome": "Aldobrandino d'Este",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P09"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: stessa numerazione discordante degli Estensi. Emblema, e nota aperta.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P09.png"
+  },
+  "alessandro magno": {
+   "nome": "Alessandro Magno",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q109"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Gunnar Bach Pedersen",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Aleksander-d-store.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 797,
+    "altezza": 1066
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q109.png"
+  },
+  "alfonso i d'este": {
+   "nome": "Alfonso I d'Este",
+   "anni": [
+    1,
+    3
+   ],
+   "usata_in": [
+    "P36",
+    "Q110"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Battista Dossi",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Portrait_of_Alfonso_I_d%27Este%2C_Duke_of_Ferrara_%281476%E2%80%931534%29%2C_by_Battista_Dossi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2992,
+    "altezza": 3910
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P36.png"
+  },
+  "alfonso ii d'este": {
+   "nome": "Alfonso II d'Este",
+   "anni": [
+    1,
+    5
+   ],
+   "usata_in": [
+    "P51",
+    "Q320"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Studio of Cesare Aretusi",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Cesare_Aretusi_Retrato_de_Alfonso_II_de_Este%2C_duque_de_Ferrara.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1185,
+    "altezza": 1920
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P51.png"
+  },
+  "alonzo church": {
+   "nome": "Alonzo Church",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q314"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: nessun ritratto di Alonzo Church con licenza libera: i file che si trovano cercando il nome sono altri Alonzo, e la foto di en.wikipedia e' ospitata in quel deposito e non e' libera. Emblema, dichiarandolo.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q314.png"
+  },
+  "amerigo vespucci": {
+   "nome": "Amerigo Vespucci",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q45"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Amerigo_Vespucci.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1000,
+    "altezza": 1370
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "xilografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q45.png"
+  },
+  "annibale": {
+   "nome": "Annibale",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q22"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Fratelli Alinari",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Hannibal_Barca_bust_from_Capua_photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1157,
+    "altezza": 1400
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q22.png"
+  },
+  "antonio foschini": {
+   "nome": "Antonio Foschini",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P62"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": {
+    "licenza": "CC BY-SA 3.0",
+    "autore": "photo uploaded by RicciSpeziari Photographer: Riccardo Speziari",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Ferrara_-_Ritratto_di_Antonio_Foschini_-_Palazzo_San_Crispino.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2048,
+    "altezza": 1536
+   },
+   "etichetta": null,
+   "esito": "da_verificare",
+   "motivo": "da verificare: stessa formella fotografata da un'altra angolazione, e con un altro nome: due file per un solo monumento, e nessuno dei due prova di chi sia. Nessuno dei due passa senza metadati.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P62.png"
+  },
+  "antonio musa brasavola": {
+   "nome": "Antonio Musa Brasavola",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P44"
+   ],
+   "dettagli": {
+    "licenza": "CC0",
+    "autore": "Rijksmuseum",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Portret_van_Antonius_Brassavola_Portretten_van_klassieke_en_recente_filosofen_en_geneesheren_%28serietitel%29%2C_RP-P-OB-26.787_%28cropped2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 4120,
+    "altezza": 4878
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "xilografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P44.png"
+  },
+  "appio claudio cieco": {
+   "nome": "Appio Claudio Cieco",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q19"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 3.0",
+    "autore": "sailko",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Musei_vaticani%2C_braccio_chiaramonti%2C_busto_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1320,
+    "altezza": 2176
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q19.png"
+  },
+  "archita di taranto": {
+   "nome": "Archita di Taranto",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q14"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 4.0",
+    "autore": "NikonZ7II",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Archytas_of_Taras.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 5216,
+    "altezza": 6925
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q14.png"
+  },
+  "augusto": {
+   "nome": "Augusto",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q103"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Till Niermann",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Statue-Augustus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1500,
+    "altezza": 2250
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q103.png"
+  },
+  "azzo vi d'este": {
+   "nome": "Azzo VI d'Este",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P08"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Azzo_VI_d%27Este2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 301,
+    "altezza": 305
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "miniatura",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P08.png"
+  },
+  "azzo vii d'este": {
+   "nome": "Azzo VII d'Este (Novello)",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P10"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: stessa numerazione discordante: 'Azzo VII (Novello)' non coincide con nessun 'Obizzo II d'Este.jpg' che si puo' verificare. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P10.png"
+  },
+  "azzo viii d'este": {
+   "nome": "Azzo VIII d'Este",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P14"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: e' una fotografia d'archivio di un uomo con cappuccio, del XIX o XX secolo: Azzo VIII e' morto nel 1537 e non puo' essere in una fotografia. Il file era stato trovato per il nome dello stemma, non per la persona. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P14.png"
+  },
+  "b. r. ambedkar": {
+   "nome": "B. R. Ambedkar",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q217"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Young_Ambedkar.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 333,
+    "altezza": 430
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q217.png"
+  },
+  "bartolomeo chiozzi, il \"mago chiozzino\"": {
+   "nome": "Bartolomeo Chiozzi, il \"Mago Chiozzino\"",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P59"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: nessun ritratto libero: i file trovati sono una via ferrarese e due guide turistiche. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P59.png"
+  },
+  "beata beatrice ii d'este": {
+   "nome": "Beata Beatrice II d'Este",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P11"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": {
+    "licenza": "Public domain",
+    "autore": "Bartolomeo Veneto",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Veneto%2C_Bartolomeo_-_Beata_Beatrice_II_d%27Este_-_1510s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 630,
+    "altezza": 830
+   },
+   "etichetta": null,
+   "esito": "da_verificare",
+   "motivo": "da verificare: ritratto di dama del Cinquecento, ma i ritratti di donne estensi sono fra le immagini piu' scambiate fra loro: senza i metadati di Commons non si puo' dire che sia Beatrice II e non Isabella o Beatrice I. Finche' non e' verificata non passa.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P11.png"
+  },
+  "belisario": {
+   "nome": "Belisario",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q107"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 4.0",
+    "autore": "Petar Milošević",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Belisarius_mosaic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1107,
+    "altezza": 1370
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q107.png"
+  },
+  "benvenuto tisi detto il garofalo": {
+   "nome": "Benvenuto Tisi detto il Garofalo",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P47"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 3.0",
+    "autore": "Photo uploaded by User:RicciSpeziari. Photographer: Riccardo Speziari",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Ferrara_-_Ritratto_di_Benvenuto_Tisi_da_Garofalo_-_Palazzo_San_Crispino.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1681,
+    "altezza": 1462
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "rilievo",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P47.png"
+  },
+  "biagio rossetti": {
+   "nome": "Biagio Rossetti",
+   "anni": [
+    1,
+    2
+   ],
+   "usata_in": [
+    "P31",
+    "Q64"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: Biagio Rossetti non ha ritratto: su Commons ci sono case e strade intitolate a lui, non la sua faccia. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P31.png"
+  },
+  "borso d'este": {
+   "nome": "Borso d'Este",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P22"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": {
+    "licenza": "Attribution",
+    "autore": "Attributed to Baldassare Estense",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Borso_d%27Este.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1043,
+    "altezza": 1366
+   },
+   "etichetta": null,
+   "esito": "da_verificare",
+   "motivo": "da verificare: profilo di uomo con berretto rosso, da un codice: e' plausibilmente Borso d'Este, ma senza i metadati non si distingue da altri profili estensi dello stesso periodo.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P22.png"
+  },
+  "carl linneo": {
+   "nome": "Carl Linneo",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q208"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Alexander Roslin",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Carl_von_Linn%C3%A9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1938,
+    "altezza": 2342
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q208.png"
+  },
+  "carlo magno": {
+   "nome": "Carlo Magno",
+   "anni": [
+    2,
+    3
+   ],
+   "usata_in": [
+    "Q121",
+    "Q37"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "\nCharlemagne. Autorité émettrice de monnaie\n\nindéterminé. Atelier monétaire. Émetteur",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Charlemagne_denier_Mayence_812_814.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2070,
+    "altezza": 2070
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "rilievo",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q121.png"
+  },
+  "carlo savonuzzi": {
+   "nome": "Carlo Savonuzzi",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P76"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Dusio-Savonuzzi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 545,
+    "altezza": 363
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P76.png"
+  },
+  "cassiodoro": {
+   "nome": "Cassiodoro",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q34"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Fulda workshop",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Gesta_Theodorici_-_Flavius_Magnus_Aurelius_Cassiodorus_%28c_485_-_c_580%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1098,
+    "altezza": 1701
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "miniatura",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q34.png"
+  },
+  "catone il censore": {
+   "nome": "Catone il Censore",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q26"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Patrizio_Torlonia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 420,
+    "altezza": 585
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q26.png"
+  },
+  "celio calcagnini": {
+   "nome": "Celio Calcagnini",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P41"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: uno stemma su fondo rosso: nessun viso. Per un umanista che il gioco vuol dire chi era, non di che famiglia era, uno stemma non basta. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P41.png"
+  },
+  "cicerone": {
+   "nome": "Cicerone",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q21"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 3.0",
+    "autore": "Glauco92",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cicero_-_Musei_Capitolini.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1227,
+    "altezza": 1636
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q21.png"
+  },
+  "cincinnato": {
+   "nome": "Cincinnato",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q17"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: e' la fotografia di una statua in un giardino, lontana, senza volto leggibile: non si distingue Cincinnato da nessun altro e il gioco non puo' mostrare un viso cosi'. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q17.png"
+  },
+  "claude shannon": {
+   "nome": "Claude Shannon",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q325"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 2.0 de",
+    "autore": "Jacobs, Konrad",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/ClaudeShannon_MFO3807.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 284,
+    "altezza": 400
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q325.png"
+  },
+  "confucio": {
+   "nome": "Confucio",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q212"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "anonymous",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Half_Portraits_of_the_Great_Sage_and_Virtuous_Men_of_Old_-_Confucius.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1178,
+    "altezza": 1595
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q212.png"
+  },
+  "copernico": {
+   "nome": "Copernico",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q102"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Nikolaus_Kopernikus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1024,
+    "altezza": 1001
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q102.png"
+  },
+  "cornelia, madre dei gracchi": {
+   "nome": "Cornelia, madre dei Gracchi",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q27"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Didier Descouens",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Ca%27_Rezzonico_-_Cornelia_madre_dei_Gracchi_%28Inv.039%29_-_Alessandro_Varotari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2999,
+    "altezza": 3673
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q27.png"
+  },
+  "corrado govoni": {
+   "nome": "Corrado Govoni",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P75"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Corrado_Govoni.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 276,
+    "altezza": 355
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P75.png"
+  },
+  "cosmè tura": {
+   "nome": "Cosmè Tura",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P23"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: e' un'interno dipinto con figure, non un ritratto: il file e' un'opera ambientata, e per un uomo che e' un solo soggetto di quei dipinti non c'e' nessun volto di Cosmè Tura. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P23.png"
+  },
+  "daniel kahneman": {
+   "nome": "Daniel Kahneman",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q330"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 2.0",
+    "autore": "nrkbeta",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Daniel_Kahneman_%283283955327%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 688,
+    "altezza": 818
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q330.png"
+  },
+  "dante alighieri": {
+   "nome": "Dante Alighieri",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q47"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Sandro Botticelli",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Portrait_de_Dante.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 360,
+    "altezza": 550
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q47.png"
+  },
+  "demis hassabis": {
+   "nome": "Demis Hassabis",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q329"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "persona viva: solo emblema",
+   "tipo": "persona",
+   "vivo": true,
+   "immagine": "sorgenti/art/out/emblema_Q329.png"
+  },
+  "domenico malagutti": {
+   "nome": "Domenico Malagutti",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P67"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: nessun ritratto libero: i file trovati sono giornali del 1904 e un libro. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P67.png"
+  },
+  "donald davies": {
+   "nome": "Donald Davies",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q319"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: Donald Davies non ha un ritratto libero verificabile: nessun file su Commons lo ritrae. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q319.png"
+  },
+  "dosso dossi": {
+   "nome": "Dosso Dossi",
+   "anni": [
+    1,
+    3
+   ],
+   "usata_in": [
+    "P48",
+    "Q115"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Dosso Dossi",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Dosso_Dossi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 338,
+    "altezza": 450
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P48.png"
+  },
+  "edsger dijkstra": {
+   "nome": "Edsger Dijkstra",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q321"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 3.0",
+    "autore": "Hamilton Richards",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Edsger_Wybe_Dijkstra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1200,
+    "altezza": 1600
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q321.png"
+  },
+  "enrico fermi": {
+   "nome": "Enrico Fermi",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q301"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Department of Energy-Office of Public Affairs, restored by Yann",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Enrico_Fermi_1943-49.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2368,
+    "altezza": 2927
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q301.png"
+  },
+  "erasmo da rotterdam": {
+   "nome": "Erasmo da Rotterdam",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q119"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Hans Holbein the Younger",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Holbein-erasmus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1618,
+    "altezza": 2290
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q119.png"
+  },
+  "eratostene": {
+   "nome": "Eratostene",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q101"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Portrait_of_Eratosthenes.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 278,
+    "altezza": 275
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q101.png"
+  },
+  "ercole de' roberti": {
+   "nome": "Ercole de' Roberti",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P25"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Giorgio Vasari",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Delle_vite_de%27_pi%C3%B9_eccellenti_pittori%2C_scultori%2C_et_architetti_%281648%29_%2814779874435%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1702,
+    "altezza": 2000
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "xilografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P25.png"
+  },
+  "ercole i d'este": {
+   "nome": "Ercole I d'Este",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P30"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Dosso Dossi / After Ercole de' Roberti",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Ercole_I_d%27Este.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 779,
+    "altezza": 1024
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P30.png"
+  },
+  "ercole ii d'este": {
+   "nome": "Ercole II d'Este",
+   "anni": [
+    1,
+    4
+   ],
+   "usata_in": [
+    "P49",
+    "Q210"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Niccolò dell'Abbate",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Niccol%C3%B2_dell%27Abbate_-_Presumed_portrait_of_Ercole_II_d%27Este%2C_Duke_of_Ferrara.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2114,
+    "altezza": 2506
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P49.png"
+  },
+  "federico ii": {
+   "nome": "Federico II",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q108"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Frederick_II_and_eagle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 593,
+    "altezza": 818
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q108.png"
+  },
+  "federico ii di svevia": {
+   "nome": "Federico II di Svevia",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q44"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Frederick_II_and_eagle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 593,
+    "altezza": 818
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "miniatura",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q44.png"
+  },
+  "fei-fei li": {
+   "nome": "Fei-Fei Li",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q311"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "persona viva: solo emblema",
+   "tipo": "persona",
+   "vivo": true,
+   "immagine": "sorgenti/art/out/emblema_Q311.png"
+  },
+  "filippo de pisis": {
+   "nome": "Filippo de Pisis",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P74"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 4.0",
+    "autore": "Maspez",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Filippo_de_Pisis_in_studio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1058,
+    "altezza": 637
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P74.png"
+  },
+  "florence nightingale": {
+   "nome": "Florence Nightingale",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q227"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "\nnot listed",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Florence_Nightingale_three_quarter_length.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1839,
+    "altezza": 2453
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q227.png"
+  },
+  "florestano vancini": {
+   "nome": "Florestano Vancini",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P81"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Vancini.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 584,
+    "altezza": 450
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P81.png"
+  },
+  "francesco del cossa": {
+   "nome": "Francesco del Cossa",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P24"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: scena allegorica con molte figure e un fiume in primo piano: e' un dipinto del Cossa, non un suo ritratto. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P24.png"
+  },
+  "frederick douglass": {
+   "nome": "Frederick Douglass",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q225"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "George Kendall Warren",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Frederick_Douglass_%28circa_1879%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2089,
+    "altezza": 3000
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q225.png"
+  },
+  "gabriele falloppio": {
+   "nome": "Gabriele Falloppio",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P45"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Gabriele_Falloppio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 265,
+    "altezza": 302
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P45.png"
+  },
+  "gaetano previati": {
+   "nome": "Gaetano Previati",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P72"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Emilio Sommariva",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Emilio_Sommariva_%281883_-_1956%29_Gaetano_Previati_dipinge_nel_suo_studio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 633,
+    "altezza": 873
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P72.png"
+  },
+  "gengis khan": {
+   "nome": "Gengis Khan",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q206"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "\nUnknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/YuanEmperorAlbumGenghisPortrait.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 3180,
+    "altezza": 4040
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q206.png"
+  },
+  "geoffrey hinton": {
+   "nome": "Geoffrey Hinton",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q327"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "persona viva: solo emblema",
+   "tipo": "persona",
+   "vivo": true,
+   "immagine": "sorgenti/art/out/emblema_Q327.png"
+  },
+  "george orwell": {
+   "nome": "George Orwell",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q228"
+   ],
+   "dettagli": {
+    "licenza": "CC BY 2.0",
+    "autore": "Cassowary Colorizations",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/George_Orwell%2C_c._1940_%2841928180381%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2094,
+    "altezza": 2790
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q228.png"
+  },
+  "giacomo succi": {
+   "nome": "Giacomo Succi",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P68"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: nessun ritratto libero: i file trovati sono trattati di idroterapia. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P68.png"
+  },
+  "gilgamesh": {
+   "nome": "Gilgamesh",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q201"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: e' la fotografia di una tavoletta cuneifica, con un rettangolo rosso disegnato sopra: e' un documento, e un documento non e' una faccia. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q201.png"
+  },
+  "gioacchino": {
+   "nome": "Gioacchino (Nino) Bonnet",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P70"
+   ],
+   "dettagli": {
+    "licenza": "CC BY 4.0",
+    "autore": "Bucaramango",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Ninobonnet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 4000,
+    "altezza": 3000
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P70.png"
+  },
+  "giorgio bassani": {
+   "nome": "Giorgio Bassani",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P79"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 4.0",
+    "autore": "\nUnknownUnknown ",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Giorgio_Bassani_archivi_Mondadori_AA207101_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1083,
+    "altezza": 1536
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P79.png"
+  },
+  "giorgio de chirico": {
+   "nome": "Giorgio de Chirico",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P73"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Carl Van Vechten",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Giorgio_de_Chirico_%28portrait%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 290,
+    "altezza": 358
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P73.png"
+  },
+  "giovanni battista canani": {
+   "nome": "Giovanni Battista Canani",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P46"
+   ],
+   "dettagli": {
+    "licenza": "CC BY 4.0",
+    "autore": "",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Giovanni_Bastista_Canani._19th_century_Wellcome_L0018728.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1194,
+    "altezza": 1600
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "xilografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P46.png"
+  },
+  "giovanni bellini": {
+   "nome": "Giovanni Bellini *(aggiunta",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q120"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Giovanni Bellini",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Giovanni_bellini%2C_presentazione_al_tempio%2C_autoritratto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1439,
+    "altezza": 1860
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "autoritratto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q120.png"
+  },
+  "giovanni boccaccio": {
+   "nome": "Giovanni Boccaccio",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q122"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Andrea del Castagno",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Andrea_del_Castagno_Giovanni_Boccaccio_c_1450.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 766,
+    "altezza": 1200
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q122.png"
+  },
+  "giovanni boldini": {
+   "nome": "Giovanni Boldini",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P71"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Giovanni Boldini",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Giovanni_Boldini01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 517,
+    "altezza": 818
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P71.png"
+  },
+  "giovanni manardo": {
+   "nome": "Giovanni Manardo",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P39"
+   ],
+   "dettagli": {
+    "licenza": "CC0",
+    "autore": "Rijksmuseum",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Portret_van_Johannes_Manardi%2C_RP-P-1874-12-43-2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1260,
+    "altezza": 1624
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "xilografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P39.png"
+  },
+  "girolamo frescobaldi": {
+   "nome": "Girolamo Frescobaldi",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P55"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Claude Mellan",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Girolamo_Frescobaldi_%281583-1643%29%2C_engraving_by_Claude_Mellan_%281619%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2500,
+    "altezza": 3000
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "xilografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P55.png"
+  },
+  "girolamo savonarola": {
+   "nome": "Girolamo Savonarola",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P34"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Fra Bartolomeo",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Girolamo_Savonarola_by_Fra_Bartolommeo_%281497%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 805,
+    "altezza": 1200
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P34.png"
+  },
+  "giulio cesare": {
+   "nome": "Giulio Cesare",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q20"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Gaius_Iulius_Caesar_%28Vatican_Museum%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1890,
+    "altezza": 3426
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q20.png"
+  },
+  "giulio natta": {
+   "nome": "Giulio Natta",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P83"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Giulio_Natta_Nobel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 280,
+    "altezza": 396
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P83.png"
+  },
+  "giustiniano": {
+   "nome": "Giustiniano",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q35"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 4.0",
+    "autore": "Petar Milošević",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Mosaic_of_Justinianus_I_-_Basilica_San_Vitale_%28Ravenna%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1500,
+    "altezza": 1997
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q35.png"
+  },
+  "gli adelardi": {
+   "nome": "Gli Adelardi (famiglia)",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P05"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: famiglia: non ha un volto unico. Emblema, come tutti i collettivi.",
+   "tipo": "gruppo",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P05.png"
+  },
+  "gli ingegneri delle reti": {
+   "nome": "Gli ingegneri delle reti",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q318"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "collettivo: non ha un volto unico",
+   "tipo": "collettivo",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q318.png"
+  },
+  "gli studenti dello studio": {
+   "nome": "Gli studenti dello Studio",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P89"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: la foto trovata e' il convento di Santa Lucia, non lo Studio: sono due cose diverse, e la somiglianza dei nomi e' quello che ha fatto sbagliare la ricerca.",
+   "tipo": "gruppo",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P89.png"
+  },
+  "guarino veronese": {
+   "nome": "Guarino Veronese",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P19"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 3.0",
+    "autore": "Matteo di Andrea de' Pasti",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Matteo_de%27_pasti%2C_guardino_da_verona%2C_recto%2C_1446_c..JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1812,
+    "altezza": 1746
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "rilievo",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P19.png"
+  },
+  "guido carli": {
+   "nome": "Guido Carli",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P84"
+   ],
+   "dettagli": {
+    "licenza": "CC BY 3.0 it",
+    "autore": "Senato",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Guido_Carli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 169,
+    "altezza": 234
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P84.png"
+  },
+  "guido monaco": {
+   "nome": "Guido Monaco (Guido d'Arezzo) a Pomposa",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P03"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "The original uploader was Robbot at Dutch Wikipedia.",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Guido_van_Arezzo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 371,
+    "altezza": 552
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "miniatura",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P03.png"
+  },
+  "hammurabi": {
+   "nome": "Hammurabi",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q222"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: e' la parte alta della stele del Codice, dove un re riceve i leggi da una divinità: e' una scena di incoronazione, non il ritratto di Hammurabi. La stele resta un monumento, ma il volto che si vede non e' il suo. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q222.png"
+  },
+  "hans rosling": {
+   "nome": "Hans Rosling",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q310"
+   ],
+   "dettagli": {
+    "licenza": "CC BY 3.0",
+    "autore": "Gapminder Foundation",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Hans_Rosling%2C_2016_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 617,
+    "altezza": 873
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q310.png"
+  },
+  "hatshepsut": {
+   "nome": "Hatshepsut",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q204"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 2.0",
+    "autore": "rob koopman from Leiderdorp, netherlands",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/WLANL_-_koopmanrob_-_Maat-ka-Re_Hatsjepsoet_%28RMO_Leiden%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2512,
+    "altezza": 3622
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q204.png"
+  },
+  "hernán cortés": {
+   "nome": "Hernán Cortés",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q226"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "\nUnknown artistUnknown artist",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Retrato_de_Hern%C3%A1n_Cort%C3%A9s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 788,
+    "altezza": 928
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q226.png"
+  },
+  "i bersaglieri del po": {
+   "nome": "I Bersaglieri del Po",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P66"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: soldati di oggi che sfilano in strada, uniformi attuali, foto del 2007. Per i Bersaglieri del 1848 e' un'affermazione falsa.",
+   "tipo": "gruppo",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P66.png"
+  },
+  "i censori": {
+   "nome": "I censori",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q220"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "collettivo: non ha un volto unico",
+   "tipo": "collettivo",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q220.png"
+  },
+  "i copisti e gli amanuensi": {
+   "nome": "I copisti e gli amanuensi",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q91"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "collettivo: non ha un volto unico",
+   "tipo": "collettivo",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q91.png"
+  },
+  "i corrieri e i messaggeri": {
+   "nome": "I corrieri e i messaggeri",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q90"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "collettivo: non ha un volto unico",
+   "tipo": "collettivo",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q90.png"
+  },
+  "i tipografi e i privilegi": {
+   "nome": "I tipografi e i privilegi",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q129"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "collettivo: non ha un volto unico",
+   "tipo": "collettivo",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q129.png"
+  },
+  "ibn al-haytham": {
+   "nome": "Ibn al-Haytham",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q219"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "\nJan Heweliusz",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Alhazen_%28122459248%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1079,
+    "altezza": 1259
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "xilografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q219.png"
+  },
+  "ibn battuta": {
+   "nome": "Ibn Battuta",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q202"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: e' la fotografia di un pannello di mostra, con didascalie che a questa misura non si leggono: dentro c'e' un ritratto di Ibn Battuta, ma il file cosi' com'e' non si puo' usare, va ritagliato dalla fonte e riverificato. Emblema, non cancellazione.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q202.png"
+  },
+  "ibn khaldun": {
+   "nome": "Ibn Khaldun",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q216"
+   ],
+   "dettagli": {
+    "licenza": "CC BY 2.5",
+    "autore": "Kassus",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Ibn_Khaldoun-Kassus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1000,
+    "altezza": 1636
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q216.png"
+  },
+  "il concerto delle dame": {
+   "nome": "Il concerto delle dame",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P54"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: collettivo. Emblema.",
+   "tipo": "gruppo",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P54.png"
+  },
+  "il consiglio di corte": {
+   "nome": "Il consiglio di corte",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q92"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "collettivo: non ha un volto unico",
+   "tipo": "collettivo",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q92.png"
+  },
+  "il territorio del po": {
+   "nome": "Il territorio del Po",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P92"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: nessun file su Commons ritrae il Po in questa sezione. Emblema.",
+   "tipo": "luogo_personaggio",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P92.png"
+  },
+  "ipazia": {
+   "nome": "Ipazia",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q213"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Julius Kronberg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Hypatia_by_Julius_Kronberg%2C_1889.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2237,
+    "altezza": 3487
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q213.png"
+  },
+  "isaac newton": {
+   "nome": "Isaac Newton",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q303"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Godfrey Kneller",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Portrait_of_Sir_Isaac_Newton%2C_1689.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2218,
+    "altezza": 2671
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q303.png"
+  },
+  "isabella d'este": {
+   "nome": "Isabella d'Este",
+   "anni": [
+    1,
+    3
+   ],
+   "usata_in": [
+    "P32",
+    "Q130"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: e' un gioiello: un pendente con un profilo inciso dentro un cammeo. Non e' il ritratto di Isabella d'Este, e' un gioiello con una faccia qualunque dentro. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P32.png"
+  },
+  "isabella di castiglia": {
+   "nome": "Isabella di Castiglia",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q221"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": {
+    "licenza": "Public domain",
+    "autore": "\nanonymous ",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/IsabellaofCastile03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2087,
+    "altezza": 2582
+   },
+   "etichetta": null,
+   "esito": "da_verificare",
+   "motivo": "da verificare: ritratto di giovane donna con libro, del Cinquecento: e' plausibilmente Isabella di Castiglia, ma i ritratti di regime spagnole e italiane vengono scambiati fra loro con facilita'. Serve il metadato di Commons.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q221.png"
+  },
+  "james ellis": {
+   "nome": "James Ellis",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q324"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: James Ellis non ha ritratto libero: l'uomo che ha inventato lo stream cipher e non lo ha mai detto resta senza faccia. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q324.png"
+  },
+  "james lovelock": {
+   "nome": "James Lovelock",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q307"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 1.0",
+    "autore": "Bruno Comby",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/James_Lovelock%2C_2005_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 460,
+    "altezza": 651
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q307.png"
+  },
+  "johannes gutenberg": {
+   "nome": "Johannes Gutenberg",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q116"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Gutenberg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1040,
+    "altezza": 1322
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q116.png"
+  },
+  "john snow": {
+   "nome": "John Snow",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q309"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/John_Snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1712,
+    "altezza": 2516
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q309.png"
+  },
+  "john von neumann": {
+   "nome": "John von Neumann",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q304"
+   ],
+   "dettagli": {
+    "licenza": "Attribution",
+    "autore": "LANL",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/JohnvonNeumann-LosAlamos.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 490,
+    "altezza": 639
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q304.png"
+  },
+  "jorge luis borges": {
+   "nome": "Jorge Luis Borges",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q312"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author}",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Jorge_Luis_Borges_%28crop%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 254,
+    "altezza": 375
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q312.png"
+  },
+  "josquin des prez": {
+   "nome": "Josquin des Prez",
+   "anni": [
+    1,
+    3
+   ],
+   "usata_in": [
+    "P33",
+    "Q117"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Josquin_woodcut.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 491,
+    "altezza": 500
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "xilografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P33.png"
+  },
+  "joy buolamwini": {
+   "nome": "Joy Buolamwini",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q326"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "persona viva: solo emblema",
+   "tipo": "persona",
+   "vivo": true,
+   "immagine": "sorgenti/art/out/emblema_Q326.png"
+  },
+  "karl popper": {
+   "nome": "Karl Popper",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q302"
+   ],
+   "dettagli": {
+    "licenza": "No restrictions",
+    "autore": "\nFranz Barta",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Karl_Popper.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 600,
+    "altezza": 769
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q302.png"
+  },
+  "la città stessa": {
+   "nome": "La città stessa",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P93"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 3.0",
+    "autore": "Ввласенко",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Piazza_della_Cattedrale._Ferrara%2C_Italy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 4831,
+    "altezza": 4016
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "luogo_personaggio",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P93.png"
+  },
+  "la comunità ebraica ferrarese": {
+   "nome": "La comunità ebraica ferrarese",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P88"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: fotografia d'oggetti di culto ebraici su un tavolo: non e' la comunita' ebraica di Ferrara, e non e' nemmeno antica.",
+   "tipo": "gruppo",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P88.png"
+  },
+  "la macchina": {
+   "nome": "La macchina",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q313"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "collettivo: non ha un volto unico",
+   "tipo": "collettivo",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q313.png"
+  },
+  "lars porsenna": {
+   "nome": "Lars Porsenna",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q10"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Published by Guillaume Rouille (1518?-1589)",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Lars_Porsena.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 391,
+    "altezza": 399
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q10.png"
+  },
+  "le mani che hanno approssimato √2": {
+   "nome": "Le mani che hanno approssimato √2",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q305"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "collettivo: non ha un volto unico",
+   "tipo": "collettivo",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q305.png"
+  },
+  "le monache di sant'antonio in polesine": {
+   "nome": "Le monache di Sant'Antonio in Polesine",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P91"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: nessun file su Commons ritrae il convento. Emblema.",
+   "tipo": "gruppo",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P91.png"
+  },
+  "le persone che non hanno firmato": {
+   "nome": "Le persone che non hanno firmato",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q230"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "collettivo: non ha un volto unico",
+   "tipo": "collettivo",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q230.png"
+  },
+  "leibniz": {
+   "nome": "Leibniz *(aggiunta",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q207"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Christoph Bernhard Francke",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Christoph_Bernhard_Francke_-_Bildnis_des_Philosophen_Leibniz_%28ca._1695%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 4486,
+    "altezza": 5538
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q207.png"
+  },
+  "leon battista alberti": {
+   "nome": "Leon Battista Alberti",
+   "anni": [
+    1,
+    2
+   ],
+   "usata_in": [
+    "P20",
+    "Q62"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "\nFlorentine School. Original uploader was Carolus at nl.wikipedia",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Leone_Batista_Alberti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 983,
+    "altezza": 1169
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P20.png"
+  },
+  "leonardo da vinci": {
+   "nome": "Leonardo da Vinci",
+   "anni": [
+    2,
+    3
+   ],
+   "usata_in": [
+    "Q113",
+    "Q63"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Leonardo da Vinci",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Leonardo_self.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 420,
+    "altezza": 659
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q113.png"
+  },
+  "leonello d'este": {
+   "nome": "Leonello d'Este",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P18"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Pisanello",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Pisanello_015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 965,
+    "altezza": 1353
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P18.png"
+  },
+  "lucrezia borgia": {
+   "nome": "Lucrezia Borgia",
+   "anni": [
+    1,
+    2
+   ],
+   "usata_in": [
+    "P35",
+    "Q41"
+   ],
+   "dettagli": {
+    "licenza": "CC0",
+    "autore": "\nStyle of Giancristoforo Romano",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Style_of_Giancristoforo_Romano%2C_Lucrezia_Borgia%2C_1480-1519%2C_Wife_of_Alfonso_d%27Este_of_Ferrara_1502%2C_1502%2C_NGA_44453.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 3511,
+    "altezza": 3487
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "rilievo",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P35.png"
+  },
+  "ludovico ariosto": {
+   "nome": "Ludovico Ariosto",
+   "anni": [
+    1,
+    3
+   ],
+   "usata_in": [
+    "P37",
+    "Q111"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Ludovico_Ariosto_1532.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 546,
+    "altezza": 732
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "xilografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P37.png"
+  },
+  "ludovico bonaccioli": {
+   "nome": "Ludovico Bonaccioli",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P40"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: nessun ritratto libero: i file trovati sono la tomba di una parente e l'anticamera del castello. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P40.png"
+  },
+  "luigi parmeggiani": {
+   "nome": "Luigi Parmeggiani",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P69"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 4.0",
+    "autore": "[unknow",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Luigi-Parmeggiani-1860-1945-.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 185,
+    "altezza": 289
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P69.png"
+  },
+  "luzzasco luzzaschi": {
+   "nome": "Luzzasco Luzzaschi",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P53"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: e' il frontespizio di un libro di madrigali, con la data e la citta': un'opera stampata, non un ritratto. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P53.png"
+  },
+  "mansa musa": {
+   "nome": "Mansa Musa",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q209"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Reproduction of the Catalan Atlas of the 20th century that can not be considered facsimile of the original.",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Mansa_Musa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 500,
+    "altezza": 381
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "miniatura",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q209.png"
+  },
+  "marco polo": {
+   "nome": "Marco Polo",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q46"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Marco_Polo_portrait.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 311,
+    "altezza": 420
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q46.png"
+  },
+  "marfisa d'este": {
+   "nome": "Marfisa d'Este",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P57"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Antonis Mor",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Ritratto_di_dama_con_fiore_in_mano_%28Louise_de_Lorraine_%3F%29_-_Palazzo_Ducale%2C_Mantua.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1395,
+    "altezza": 1830
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P57.png"
+  },
+  "marie curie": {
+   "nome": "Marie Curie",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q229"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Henri Manuel",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Marie_Curie_c._1920s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1549,
+    "altezza": 2105
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q229.png"
+  },
+  "matilde di canossa": {
+   "nome": "Matilde di Canossa",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P04"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Hugo-v-cluny_heinrich-iv_mathilde-v-tuszien_cod-vat-lat-4922_1115ad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 481,
+    "altezza": 579
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "miniatura",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P04.png"
+  },
+  "matteo maria boiardo": {
+   "nome": "Matteo Maria Boiardo",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P29"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Matteo_Maria_Boiardo.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 240,
+    "altezza": 328
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "xilografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P29.png"
+  },
+  "mercanti, artigiani e cittadini": {
+   "nome": "Mercanti, artigiani e cittadini",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P90"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: ceramica persiana: il file si chiama 'Iranian handicraft' ed e' quello che ritrae. Per i mercanti di Ferrara e' falso.",
+   "tipo": "gruppo",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P90.png"
+  },
+  "michelangelo antonioni": {
+   "nome": "Michelangelo Antonioni",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P82"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Bibliothèque nationale de France",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Michelangelo_Antonioni_portrait_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 3466,
+    "altezza": 3607
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P82.png"
+  },
+  "miguel de cervantes": {
+   "nome": "Miguel de Cervantes",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q118"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Attributed to Juan de Jáuregui",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Cervantes_J%C3%A1uregui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1443,
+    "altezza": 1893
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q118.png"
+  },
+  "moctezuma ii": {
+   "nome": "Moctezuma II",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q214"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "N. Mathew",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Moctezuma_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 537,
+    "altezza": 756
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "xilografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q214.png"
+  },
+  "napoleone e l'età francese": {
+   "nome": "Napoleone e l'età francese",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P63"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: David, Napoleone che scavalca il San Bernardo: e' una scena di guerra, non un ritratto. Resta immagine buona per il livello, non per la scheda.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P63.png"
+  },
+  "niccolò copernico": {
+   "nome": "Niccolò Copernico",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P42"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Nikolaus_Kopernikus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1024,
+    "altezza": 1001
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P42.png"
+  },
+  "niccolò leoniceno": {
+   "nome": "Niccolò Leoniceno",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P38"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 4.0",
+    "autore": "Dosso Dossi",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Ritratto_di_Nicol%C3%B2_Leoniceno_-_Dossi%2C_Dosso%2C_Pinacoteca_Civica_di_Palazzo_Volpi_a_Como_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1641,
+    "altezza": 2039
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P38.png"
+  },
+  "niccolò machiavelli": {
+   "nome": "Niccolò Machiavelli",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q114"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Santi di Tito",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1244,
+    "altezza": 1600
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q114.png"
+  },
+  "nicolò ii d'este": {
+   "nome": "Nicolò II d'Este",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P15"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: stessa numerazione discordante. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P15.png"
+  },
+  "nicolò iii d'este": {
+   "nome": "Nicolò III d'Este",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P17"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": {
+    "licenza": "CC BY-SA 3.0",
+    "autore": "Marcok - it.wikipedia.org",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Ferrara_monumento_equestre_28mar06_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1000,
+    "altezza": 800
+   },
+   "etichetta": null,
+   "esito": "da_verificare",
+   "motivo": "da verificare: statua equestre in bronzo contro il cielo: puo' essere il monumento a Niccolò III, ma un monumento non ha un volto e dalla sola immagine non si distingue. Va verificato il file su Commons prima di accettarla.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P17.png"
+  },
+  "obizzo i d'este": {
+   "nome": "Obizzo I d'Este",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P07"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: su Commons i ritratti d'Este sono numerati in modo diverso dall'articolo di it.wikipedia: non si puo' attribuire con onesta. Emblema, e nota aperta.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P07.png"
+  },
+  "obizzo ii d'este": {
+   "nome": "Obizzo II d'Este",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P12"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Obizzo_II_d%27Este3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 303,
+    "altezza": 328
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "miniatura",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P12.png"
+  },
+  "obizzo iii d'este": {
+   "nome": "Obizzo III d'Este",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P13"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Obizzo_III.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 306,
+    "altezza": 326
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "miniatura",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P13.png"
+  },
+  "olympe de gouges": {
+   "nome": "Olympe de Gouges",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q127"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Alexander Kucharsky",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Olympe_de_Gouges.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 816,
+    "altezza": 1090
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q127.png"
+  },
+  "omero": {
+   "nome": "Omero",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q215"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 3.0",
+    "autore": "",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Bust_Homer_BM.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 768,
+    "altezza": 1024
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q215.png"
+  },
+  "ottaviano augusto": {
+   "nome": "Ottaviano Augusto",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q29"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Till Niermann",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Statue-Augustus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1500,
+    "altezza": 2250
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q29.png"
+  },
+  "paolo mazza": {
+   "nome": "Paolo Mazza",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P86"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Paolo_Mazza.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 600,
+    "altezza": 719
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P86.png"
+  },
+  "papa clemente viii e la devoluzione": {
+   "nome": "Papa Clemente VIII e la Devoluzione",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P58"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Giuseppe Cesari",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Papa_Clemente_VIII_Aldobrandini_%E2%80%93_Giuseppe_Cesari_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 752,
+    "altezza": 1018
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P58.png"
+  },
+  "paracelso": {
+   "nome": "Paracelso",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P43"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "After Quinten Metsys",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Paracelsus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2802,
+    "altezza": 3737
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P43.png"
+  },
+  "parmenide": {
+   "nome": "Parmenide",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q12"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 3.0",
+    "autore": "",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Parmenides.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 283,
+    "altezza": 370
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q12.png"
+  },
+  "pellegrino prisciani": {
+   "nome": "Pellegrino Prisciani",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P26"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Sperandio di Bartolommeo de' Savelli",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Viso_da_Prisciano_Prisciani_.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 302,
+    "altezza": 603
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "rilievo",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P26.png"
+  },
+  "pericle": {
+   "nome": "Pericle",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q105"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "\nCopy of Kresilas",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Pericles_Pio-Clementino_Inv269_n2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1300,
+    "altezza": 1970
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q105.png"
+  },
+  "pirro ligorio": {
+   "nome": "Pirro Ligorio",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P56"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Pirro_Ligorio_1.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 170,
+    "altezza": 257
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P56.png"
+  },
+  "pisanello": {
+   "nome": "Pisanello",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P21"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 4.0",
+    "autore": "",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Pisanello_-_Self-Portrait%2C_1440s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 835,
+    "altezza": 400
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "rilievo",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P21.png"
+  },
+  "pitagora": {
+   "nome": "Pitagora",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q11"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "The original uploader was Galilea at German Wikipedia.",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Kapitolinischer_Pythagoras_adjusted.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 449,
+    "altezza": 599
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q11.png"
+  },
+  "platone": {
+   "nome": "Platone",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q106"
+   ],
+   "dettagli": {
+    "licenza": "CC BY 2.5",
+    "autore": "Marie-Lan Nguyen\n",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Plato_Silanion_Musei_Capitolini_MC1377.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2400,
+    "altezza": 3600
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q106.png"
+  },
+  "qin shi huang": {
+   "nome": "Qin Shi Huang",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q203"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: e' la foto di un monumento moderno di cemento, scattato dal basso contro il cielo con i caratteri cinesi sul basamento. Qin Shi Huang e' morto nel 210 a.C.: un monumento del Novecento non lo ritrae. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q203.png"
+  },
+  "radia perlman": {
+   "nome": "Radia Perlman",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q316"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "persona viva: solo emblema",
+   "tipo": "persona",
+   "vivo": true,
+   "immagine": "sorgenti/art/out/emblema_Q316.png"
+  },
+  "remo brindisi": {
+   "nome": "Remo Brindisi",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P85"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Remo_Brindisi_Arcumeggia_1957.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2136,
+    "altezza": 2540
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P85.png"
+  },
+  "renata di francia": {
+   "nome": "Renata di Francia",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P50"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Jean Clouet",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Clouet_Renee_Duchess_of_Ferrara.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 417,
+    "altezza": 594
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P50.png"
+  },
+  "renata viganò": {
+   "nome": "Renata Viganò",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P80"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: la ricerca aveva restituito 'Renata Viganò gatto': il nome della persona e il nome del gatto si somigliano in italiano. Renata Viganò non ha un ritratto libero.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P80.png"
+  },
+  "renzo ravenna": {
+   "nome": "Renzo Ravenna",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P78"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Lungoleno",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Renzo_Ravenna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 215,
+    "altezza": 236
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P78.png"
+  },
+  "riccardo bacchelli": {
+   "nome": "Riccardo Bacchelli",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P60"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Angelo Cozzi (Mondadori Publishers)",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Riccardo_Bacchelli_1969_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 175,
+    "altezza": 248
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P60.png"
+  },
+  "romolo": {
+   "nome": "Romolo",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q05"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: e' una moneta romana con due teste di profilo e la leggenda ROMA: sono allegorie, non Romolo. Una moneta registra la Repubblica, non un volto. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q05.png"
+  },
+  "salinguerra torelli": {
+   "nome": "Salinguerra Torelli",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P06"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: e' uno stemma araldico, non la persona: nessun viso, e per Salinguerra Torelli il gioco vuol dire chi era, non di che famiglia era. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P06.png"
+  },
+  "san giorgio": {
+   "nome": "San Giorgio",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P02"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "\nunknown artist, Cretan work of the second half of the 15th century, in the tradition of Cretan painter Angelos Akotando",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/St_George_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2610,
+    "altezza": 3471
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "figura_leggendaria",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P02.png"
+  },
+  "san maurelio": {
+   "nome": "San Maurelio",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P01"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: san Maurelio e' una figura della tradizione, senza ritratto: il progetto lo dice gia' a proposito di Maurelio. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P01.png"
+  },
+  "satoshi nakamoto": {
+   "nome": "Satoshi Nakamoto",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q322"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: e' la foto di una statua di bronzo di un personaggio anonimo con una medaglia di bitcoin al collo. Il nome e' quello di un autore pseudonimo: nessuno conosce quel volto e la medaglia dice solo che la scena e' costruita. Emblema.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q322.png"
+  },
+  "sergej korolëv": {
+   "nome": "Sergej Korolëv",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q308"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unknown Soviet photographer",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Korolyov_%281934%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 367,
+    "altezza": 494
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q308.png"
+  },
+  "solimano il magnifico": {
+   "nome": "Solimano il Magnifico",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q218"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Circle of Titian",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/EmperorSuleiman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1810,
+    "altezza": 2117
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q218.png"
+  },
+  "solone": {
+   "nome": "Solone",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q104"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 3.0",
+    "autore": "Sailko",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Ignoto%2C_c.d._solone%2C_replica_del_90_dc_ca_da_orig._greco_del_110_ac._ca%2C_6143.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1300,
+    "altezza": 2124
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q104.png"
+  },
+  "taddeo crivelli e i miniatori della bibbia di borso": {
+   "nome": "Taddeo Crivelli e i miniatori della Bibbia di Borso",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P27"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: e' una scena della Bibbia di Borso, senza volto del miniatore: e' un'opera, non un ritratto.",
+   "tipo": "gruppo",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P27.png"
+  },
+  "tancredi mosti trotti estense": {
+   "nome": "Tancredi Mosti Trotti Estense",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P65"
+   ],
+   "dettagli": {
+    "licenza": "CC BY 3.0 it",
+    "autore": "Unknown authorUnknown author",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Tancredi_Mosti_Trotti_Estense.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 165,
+    "altezza": 183
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P65.png"
+  },
+  "teodoro bonati": {
+   "nome": "Teodoro Bonati",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P61"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": {
+    "licenza": "CC BY-SA 3.0",
+    "autore": "photo uploaded by RicciSpeziari Photographer: Riccardo Speziari",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Ferrara_-_Ritratto_di_Teodoro_Bonatti_-_Palazzo_San_Crispino.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 2048,
+    "altezza": 1536
+   },
+   "etichetta": null,
+   "esito": "da_verificare",
+   "motivo": "da verificare: e' la fotografia di una formella architettonica: si vede un profilo inciso in un tondo di marmo, ma non si puo' stabilire chi sia e il Bonati e' un pittore dell'Ottocento.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P61.png"
+  },
+  "tiberio gracco": {
+   "nome": "Tiberio Gracco",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q28"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Published by Guillaume Rouille (1518?-1589)",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Tiberius_Gracchus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 381,
+    "altezza": 383
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "xilografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q28.png"
+  },
+  "tim berners-lee": {
+   "nome": "Tim Berners-Lee",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q323"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "persona viva: solo emblema",
+   "tipo": "persona",
+   "vivo": true,
+   "immagine": "sorgenti/art/out/emblema_Q323.png"
+  },
+  "timnit gebru": {
+   "nome": "Timnit Gebru",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q328"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "persona viva: solo emblema",
+   "tipo": "persona",
+   "vivo": true,
+   "immagine": "sorgenti/art/out/emblema_Q328.png"
+  },
+  "tito vespasiano strozzi": {
+   "nome": "Tito Vespasiano Strozzi",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P28"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": {
+    "licenza": "CC BY-SA 4.0",
+    "autore": "Baldassare Estense",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Baldassarre_d%27Este%2C_Tito_Vespasiano_Strozzi%2C_Fondazione_Cini_di_Venezia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 547,
+    "altezza": 793
+   },
+   "etichetta": null,
+   "esito": "da_verificare",
+   "motivo": "da verificare: profilo di uomo con berretto nero, dipinto di periodo giusto; ma di Tito Strozzi esiste un solo ritratto noto e non si puo' distinguere a occhio da un parente.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_P28.png"
+  },
+  "tommaso d'aquino": {
+   "nome": "Tommaso d'Aquino",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q123"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Sandro Botticelli",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Thomas_Aquinas_by_Sandro_Botticelli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1152,
+    "altezza": 1600
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q123.png"
+  },
+  "torquato tasso": {
+   "nome": "Torquato Tasso",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P52"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unidentified painter",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/16th-century_unknown_painters_-_Portrait_of_Torquato_Tasso_-_WGA23945.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 900,
+    "altezza": 1119
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P52.png"
+  },
+  "ugo bassi": {
+   "nome": "Ugo Bassi",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P64"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Rossetti",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Padre_Ugo_Bassi_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 265,
+    "altezza": 324
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "xilografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P64.png"
+  },
+  "vasco brondi": {
+   "nome": "Vasco Brondi",
+   "anni": [
+    1
+   ],
+   "usata_in": [
+    "P87"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 2.0",
+    "autore": "Erica Donolato (User:TuscanyTunes)",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Vasco_brondi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1024,
+    "altezza": 682
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_P87.png"
+  },
+  "vasco da gama": {
+   "nome": "Vasco da Gama",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q223"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "António Manuel da Fonseca",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Vasco_da_Gama_-_1838.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 1275,
+    "altezza": 1754
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "dipinto",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q223.png"
+  },
+  "vera rubin": {
+   "nome": "Vera Rubin",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q306"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "NASA",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Vera_Rubin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 159,
+    "altezza": 211
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "fotografia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q306.png"
+  },
+  "vint cerf": {
+   "nome": "Vint Cerf",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q317"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "persona viva: solo emblema",
+   "tipo": "persona",
+   "vivo": true,
+   "immagine": "sorgenti/art/out/emblema_Q317.png"
+  },
+  "william caxton": {
+   "nome": "William Caxton *(aggiunta",
+   "anni": [
+    3
+   ],
+   "usata_in": [
+    "Q126"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "emblema: xilografia di una stamperia: e' l'opera di Caxton, non la sua faccia. Preziosissima come immagine di livello.",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/emblema_Q126.png"
+  },
+  "yann lecun": {
+   "nome": "Yann LeCun",
+   "anni": [
+    5
+   ],
+   "usata_in": [
+    "Q315"
+   ],
+   "dettagli": null,
+   "dettagli_non_verificati": null,
+   "etichetta": null,
+   "esito": "emblema",
+   "motivo": "persona viva: solo emblema",
+   "tipo": "persona",
+   "vivo": true,
+   "immagine": "sorgenti/art/out/emblema_Q315.png"
+  },
+  "zenone di elea": {
+   "nome": "Zenone di Elea",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q13"
+   ],
+   "dettagli": {
+    "licenza": "Public domain",
+    "autore": "Unidentified engraver",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Diogenis_Laertii_De_Vitis_%281627%29_-_Zenon_of_Elea_or_Zenon_of_Citium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 487,
+    "altezza": 600
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q13.png"
+  },
+  "zheng he": {
+   "nome": "Zheng He",
+   "anni": [
+    4
+   ],
+   "usata_in": [
+    "Q224"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 2.0",
+    "autore": "hassan saeed from Melaka, Malaysia",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Zheng_He.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 683,
+    "altezza": 1024
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "immagine tradizionale",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q224.png"
+  },
+  "ötzi": {
+   "nome": "Ötzi",
+   "anni": [
+    2
+   ],
+   "usata_in": [
+    "Q01"
+   ],
+   "dettagli": {
+    "licenza": "CC BY-SA 3.0",
+    "autore": "120",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Otzi-Quinson.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "larghezza": 600,
+    "altezza": 428
+   },
+   "dettagli_non_verificati": null,
+   "etichetta": "mummia",
+   "esito": "ritratto",
+   "motivo": "ok",
+   "tipo": "persona",
+   "vivo": false,
+   "immagine": "sorgenti/art/out/ritratto_Q01.png"
+  }
+ }
+}

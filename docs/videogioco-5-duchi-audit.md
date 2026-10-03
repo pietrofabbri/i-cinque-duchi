@@ -454,3 +454,37 @@ La **3-28** è chiusa: era la divergenza dichiarata fra registro e documento (Ma
 | 02/10/2026 | 0.4 | **Il quinto anno passa dagli stessi controlli.** `verifica_pin.py` è stato generalizzato (`--anno N`, `--tutti`) e ha coperto i 30 slot del quinto anno: **15 posti con coordinate, nessun difetto**. Il quinto anno ha però prodotto due errori nella **tabella degli attesi** del verificatore (Rotterdam), secondo caso dopo Castel del Monte. `mappe.md` sale a v0.6 e §8bis porta il conto completo di tutti e cinque gli anni: **120 slot, 71 con coordinate**. Aggiunto in §8bis che l'**anno 1 non è coperto**, perché i suoi pin prendono il confine dal WFS del Comune. Il resto del documento non cambia: il conto è 114 voci, 23 chiuse, 91 aperte, quattro bloccanti. |
 | 02/10/2026 | 0.3 | **B5 chiusa.** La verifica dei pin degli anni 2, 3 e 4 è fatta (`sorgenti/gis/verifica_pin.py`, otto controlli, tutti superati): 53 slot di pin con coordinate su 90, e **due difetti reali corretti** — Baghdad a 34 km dal proprio centro, Karakorum in Cina invece che in Mongolia. Il numero 90 era esatto ma era il numero degli **slot**, non dei pin distinti: dietro ci sono 69 posti. Il conto passa a **23 chiuse** e **91 aperte**, e le bloccanti da cinque a **quattro**. Aggiunta **§2bis**, che dice cosa è costato e che cosa resta (nove pin senza unità amministrativa, per copertura del file e non per difetto). Rimando a `mappe.md` aggiornato a v0.5. |
 | 02/10/2026 | 0.2 | La **lista operativa**. Il contatore è stato corretto perché vedeva tredici documenti su quindici e sbagliava il conto: ora sono **114 voci**, 22 chiuse e **92 aperte**, con i documenti nuovi (`lingue.md`, `lingue-immagini.md`, `percorsi.md`, `fonti-visive.md`) dentro. Ogni bloccante e ogni importante ha **pro, contro, valutazione e responsabilità**; le altre settantatre sono in sintesi con chi decide. Registrata una doppia domanda (`lingue.md` Q5 = `anno5-mondo.md`) e la catena B1 → B2 → B4. |
+
+## 3sexies. Le immagini: due difetti che la verifica avrebbe dovuto vedere
+
+Il 3 ottobre sono stati guardati uno per uno i 195 ritratti che nessuno aveva mai
+guardati. Il conto: 145 accettati, 43 respinti, 7 aperti. Le 43 respinte sono
+state respinte perché non sono un ritratto della persona: uno stemma araldico,
+un francobollo, una tavoletta cuneiforme, una parte di stele, un pannello di
+mostra, un monumento di cemento, una medaglia di bitcoin al collo. Sono la prova
+che il nome del file non è una prova.
+
+**Il difetto grande: 195 richieste in una.** `applica_attestazione.py` mandava a
+Commons tutti i nomi dei file in una richiesta sola; la API ne accetta 50 per
+volta. La risposta era un errore con zero pagine, e il codice lo leggeva come
+«il file non esiste». Il risultato è stato che **127 ritratti corretti sono
+diventati emblemi** e la tabella lo dichiarava senza una riga di errore. Il
+motivo è il più importante di tutti: un controllo che non distingue *non ho
+chiesto bene* da *non esiste* non controlla niente, e peggio, convince chi legge
+che sia tutto a posto.
+
+**Il difetto piccolo, che è la stessa cosa.** Il nome del catalogo era scritto a
+mano in due file, e in uno «gioco» era diventato «giogo». Il sintomo era un
+`Errno 2` su un percorso che sembrava giusto, e si è perso tempo a cercarlo nel
+sistema invece che nei due file. Ora il nome **si cerca** fra i file e, se non se
+ne trova uno solo, il controllo si ferma.
+
+**Il terzo esito, che è la cosa nuova.** Finora un'immagine era accettata o
+respinta. Serve un terzo caso, `da_verificare`: si vede un ritratto di persona
+giusta e di periodo giusto, ma non si può accertare di chi è. I ritratti dei duchi
+estensi sono i più scambiati fra loro di tutta la raccolta, e due profili di dame
+del Cinquecento sono indistinguibili a occhio. 7 immagini sono in questa
+condizione: restano aperte, con il file da parte, e il gioco mostra un emblema.
+Un'immagine non verificata a schermo è il gioco che racconta una bugia con il
+volto di una persona vera.
+

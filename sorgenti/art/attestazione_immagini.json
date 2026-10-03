@@ -1,5 +1,5 @@
 {
- "_nota": "Attestazione a vista delle immagini dei personaggi. Ogni voce dice che cosa e' stato accettato e, soprattutto, che cosa e' stato RESPINTO e perche'. Un file di ricerca puo' sbagliare la persona: e' successo sette volte, e una delle volte ha restituito un gatto per un'illustratrice e una ceramica iraniana per i mercanti di Ferrara. Il nome del file non e' una prova, e la ricerca non e' un giudizio. Questo file e' il giudizio, e va rifatto ogni volta che si aggiungono immagini. Ogni voce accettata porta il nome del file: l'attestazione non rimanda alla ricerca, la registra, cosi' resta valida anche se la ricerca viene rifatta e dà un risultato diverso.",
+ "_nota": "Attestazione a vista delle immagini dei personaggi. Ogni voce dice che cosa e' stato accettato e, soprattutto, che cosa e' stato RESPINTO e perche'. Un file di ricerca puo' sbagliare la persona: e' successo sette volte, e una delle volte ha restituito un gatto per un'illustratrice e una ceramica iraniana per i mercanti di Ferrara. Il nome del file non e' una prova, e la ricerca non e' un giudizio. Questo file e' il giudizio, e va rifatto ogni volta che si aggiungono immagini. Ogni voce accettata porta il nome del file: l'attestazione non rimanda alla ricerca, la registra, cosi' resta valida anche se la ricerca viene rifatta e dà un risultato diverso. Le 7 voci con il terzo esito, da_verificare, sono quelle in cui si vede un ritratto giusto di periodo ma non si puo' accertare di chi e': restano aperte finche' non si guarda il metadato di Commons, e non diventano mai ritratti accettati per silenzio.\n",
  "_formato": {
   "esito": "accettata | respinta | non_verificata",
   "etichetta": "fotografia | dipinto | xilografia | miniatura | autoritratto | rilievo | immagine tradizionale | immagine di epoca",
@@ -233,5 +233,731 @@
  "P54": {
   "esito": "respinta",
   "motivo": "collettivo. Emblema."
+ },
+ "P02": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "icona del cavaliere che trafigge il drago: e' l'immagine tradizionale di san Giorgio, non un ritratto. Dichiarata come tale perche' nessuno la cerca vedendo un documento."
+ },
+ "P04": {
+  "esito": "accettata",
+  "etichetta": "miniatura",
+  "motivo": "miniatura di cronaca con l'abbessa incoronata in trono e l'iscrizione che la nomina: la scena e' Matilde di Canossa circondata dalla corte, non un ritratto."
+ },
+ "P06": {
+  "esito": "respinta",
+  "motivo": "e' uno stemma araldico, non la persona: nessun viso, e per Salinguerra Torelli il gioco vuol dire chi era, non di che famiglia era. Emblema."
+ },
+ "P08": {
+  "esito": "accettata",
+  "etichetta": "miniatura",
+  "motivo": "iniziale miniata con il busto di un mitrato e l'iscrizione che lo nomina Obizzo: immagine d'epoca, non fatta dal vivo."
+ },
+ "P11": {
+  "esito": "da_verificare",
+  "motivo": "ritratto di dama del Cinquecento, ma i ritratti di donne estensi sono fra le immagini piu' scambiate fra loro: senza i metadati di Commons non si puo' dire che sia Beatrice II e non Isabella o Beatrice I. Finche' non e' verificata non passa."
+ },
+ "P12": {
+  "esito": "accettata",
+  "etichetta": "miniatura",
+  "motivo": "iniziale miniata col busto di un vescovo e l'iscrizione «Questo Obizzo»: il nome e' scritto nell'immagine, e l'iscrizione e' la prova."
+ },
+ "P13": {
+  "esito": "accettata",
+  "etichetta": "miniatura",
+  "motivo": "profilo di giovane con berretto, iniziale miniata con l'iscrizione «Obisco fu figlo de Aldrovandino»: immagine d'epoca col nome scritto."
+ },
+ "P14": {
+  "esito": "respinta",
+  "motivo": "e' una fotografia d'archivio di un uomo con cappuccio, del XIX o XX secolo: Azzo VIII e' morto nel 1537 e non puo' essere in una fotografia. Il file era stato trovato per il nome dello stemma, non per la persona. Emblema."
+ },
+ "P16": {
+  "esito": "accettata",
+  "etichetta": "miniatura",
+  "motivo": "iniziale miniata col busto tonsurato e l'iscrizione «Alberto fu fratello de Nicolò»: il nome e' nell'immagine."
+ },
+ "P17": {
+  "esito": "da_verificare",
+  "motivo": "statua equestre in bronzo contro il cielo: puo' essere il monumento a Niccolò III, ma un monumento non ha un volto e dalla sola immagine non si distingue. Va verificato il file su Commons prima di accettarla."
+ },
+ "P18": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "il ritratto di Leonello d'Este del Pisanello, il piu' noto e meglio documentato dei duchi: profilo con copricapo fiorito,应根据 il Louvre."
+ },
+ "P19": {
+  "esito": "accettata",
+  "etichetta": "rilievo",
+  "motivo": "medaglia con il profilo e l'iscrizione «VERONENSIS»: i medaglioni umanistici sono un'immagine d'epoca e contemporanea, e l'iscrizione dice chi e'."
+ },
+ "P20": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto con l'iscrizione «LEON BATT. ALBERTI» in alto: l'iscrizione e' la prova che lo rende un documento e non un'ipotesi."
+ },
+ "P21": {
+  "esito": "accettata",
+  "etichetta": "rilievo",
+  "motivo": "medaglia del Pisanello con il profilo e la firma «PISANELLVS P.F.T.»: due facce della stessa medaglia, e il nome e' inciso."
+ },
+ "P22": {
+  "esito": "da_verificare",
+  "motivo": "profilo di uomo con berretto rosso, da un codice: e' plausibilmente Borso d'Este, ma senza i metadati non si distingue da altri profili estensi dello stesso periodo."
+ },
+ "P23": {
+  "esito": "respinta",
+  "motivo": "e' un'interno dipinto con figure, non un ritratto: il file e' un'opera ambientata, e per un uomo che e' un solo soggetto di quei dipinti non c'e' nessun volto di Cosmè Tura. Emblema."
+ },
+ "P24": {
+  "esito": "respinta",
+  "motivo": "scena allegorica con molte figure e un fiume in primo piano: e' un dipinto del Cossa, non un suo ritratto. Emblema."
+ },
+ "P25": {
+  "esito": "accettata",
+  "etichetta": "xilografia",
+  "motivo": "incisione entro una cornice architettonica con la didascalia «HERCOLE FERRARESE PITTORE»: il nome e' scritto sotto il volto."
+ },
+ "P26": {
+  "esito": "accettata",
+  "etichetta": "rilievo",
+  "motivo": "medaglia col busto e l'iscrizione «PELLEGRINO PRISCIANI FERRARIENSIS», piu' il rovescio: il nome gira intorno alla testa."
+ },
+ "P28": {
+  "esito": "da_verificare",
+  "motivo": "profilo di uomo con berretto nero, dipinto di periodo giusto; ma di Tito Strozzi esiste un solo ritratto noto e non si puo' distinguere a occhio da un parente."
+ },
+ "P29": {
+  "esito": "accettata",
+  "etichetta": "xilografia",
+  "motivo": "incisione col proflio del Boiardo e il turbante: e' l'immagine tradizionale del poeta, e come incisione non promette un volto dal vivo."
+ },
+ "P30": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto di Ercole I in armatura, il piu' riprodotto del suo tempo."
+ },
+ "P32": {
+  "esito": "respinta",
+  "motivo": "e' un gioiello: un pendente con un profilo inciso dentro un cammeo. Non e' il ritratto di Isabella d'Este, e' un gioiello con una faccia qualunque dentro. Emblema."
+ },
+ "P33": {
+  "esito": "accettata",
+  "etichetta": "xilografia",
+  "motivo": "disegno a tratto entro un tondo, uomo con turbante: e' il Josquin riprodotto sui frontespizi, e come immagine incisa non promette un ritratto dal vivo."
+ },
+ "P34": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "profilo con la targa «HIERONIMI FERRARIENSIS ADEO MISSI PROPHETAE ET EVANGELISTAE»: il nome e' scritto sotto il viso."
+ },
+ "P35": {
+  "esito": "accettata",
+  "etichetta": "rilievo",
+  "motivo": "medaglia con il profilo e l'iscrizione «LUCRETIA ... ESTANDE BOR...»: il nome e' inciso sulla medaglia."
+ },
+ "P36": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "Alfonso I in armatura con una mano sulla cannona, il ritratto di Tiziano: e' l'immagine che l'ha reso famoso, e infatti la Historia lo usa."
+ },
+ "P37": {
+  "esito": "accettata",
+  "etichetta": "xilografia",
+  "motivo": "incisione in cornice con l'Ariosto barbuto: immagine incisa di epoca, non fotografia."
+ },
+ "P38": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "dipinto con la scritta «N. LEONICENVS» in alto e un libro aperto in mano: il nome e' nell'immagine."
+ },
+ "P39": {
+  "esito": "accettata",
+  "etichetta": "xilografia",
+  "motivo": "incisione di uomo con berretto e libro: il Manardo in un'incisione d'epoca, coerente con un medico che stampava."
+ },
+ "P42": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto di Copernico con la berretta e la veste rossa, il dipinto che tutti i manuali di astronomia riproducono."
+ },
+ "P43": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "dipinto con la scritta «FAMOSO DOCTOR PARELSUS» in basso: il nome e' scritto sotto il ritratto."
+ },
+ "P44": {
+  "esito": "accettata",
+  "etichetta": "xilografia",
+  "motivo": "incisione in ovale entro una cornice, con testo latino sotto: il Brasavola riprodotto in un'incisione."
+ },
+ "P45": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto di vecchio con berretto di pelliccia: il Falloppio come lo ha lasciato il suo ritrattista."
+ },
+ "P48": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto d'uomo canuto con barba grigia e collarino bianco: il Dosso Dossi, che del resto si e' dipinto da solo."
+ },
+ "P49": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto di Ercole II con berretto nero e pellanda: dipinto di periodo, non una ricostruzione."
+ },
+ "P50": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "disegno a pastello di giovane donna con cuffia: e' un ritratto disegnato, non fotografato, e per una principessa di appena nata l'incisore non aveva un modello."
+ },
+ "P51": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto a figura intera in veste nera, con la barba bianca: Alfonso II negli ultimi anni."
+ },
+ "P52": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto del Tasso seduto con un libro, il dipinto con cui l'ha sempre mostrato la scuola."
+ },
+ "P53": {
+  "esito": "respinta",
+  "motivo": "e' il frontespizio di un libro di madrigali, con la data e la citta': un'opera stampata, non un ritratto. Emblema."
+ },
+ "P55": {
+  "esito": "accettata",
+  "etichetta": "xilografia",
+  "motivo": "incisione in ovale con l'iscrizione «HIERONYMVS FRESCOBALDVS FERRARIENSIS» girata intorno: il nome e' scritto intorno al volto."
+ },
+ "P56": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "disegno a matita di un uomo barbuto in tondo: ritratto disegnato, non una foto."
+ },
+ "P57": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto di dama in veste nera con ricami alle maniche, acconciatura rossa: dipinto di corte."
+ },
+ "P61": {
+  "esito": "da_verificare",
+  "motivo": "e' la fotografia di una formella architettonica: si vede un profilo inciso in un tondo di marmo, ma non si puo' stabilire chi sia e il Bonati e' un pittore dell'Ottocento."
+ },
+ "P62": {
+  "esito": "da_verificare",
+  "motivo": "stessa formella fotografata da un'altra angolazione, e con un altro nome: due file per un solo monumento, e nessuno dei due prova di chi sia. Nessuno dei due passa senza metadati."
+ },
+ "P64": {
+  "esito": "accettata",
+  "etichetta": "xilografia",
+  "motivo": "incisione di uomo barbuto con la croce sul petto: il Bassi come cavaliere, e la croce dice il ruolo."
+ },
+ "P65": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia d'epoca in uniforme, con la baschetta: e' un uomo dell'Ottocento, e i contemporanei si fotografavano. Fotografia accettata perche' l'originale e' proprio una fotografia."
+ },
+ "P69": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia di studio in posa, nel modo in cui si fotografava un uomo di spettacolo. Non e' un ritratto d'autore e non finge di esserlo."
+ },
+ "P71": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "dipinto a olio, e la firma «Boldini» si vede in alto a destra con l'anno accanto: il pittore ha dipinto se stesso e lo ha firmato."
+ },
+ "P72": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia del Previati in piedi davanti al cavalletto, in biblioteca: l'uomo al lavoro, non in posa."
+ },
+ "P73": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia del de Chirico con le sue opere alle spalle: il pittore e la sua pittura nello stesso scatto."
+ },
+ "P74": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia del de Pisis che dipinge, col braccio teso verso la tela."
+ },
+ "P75": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia a mezzo busto del Govoni, il volto intero e nitido."
+ },
+ "P78": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia d'epoca, anche scura: il viso si vede e la datazione e' coerente con un uomo attivo nel Novecento ferrarese."
+ },
+ "P79": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia del Bassani in giacca e cravatta, nitida."
+ },
+ "P81": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia sul set con il ciak e i bambini: il Vancini che lavora, e il ciak dice il mestiere senza doverlo spiegare."
+ },
+ "P82": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia ritratto dell'Antonioni, nitida, di quando era in attesa."
+ },
+ "P84": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia in bianco e nero del Carli, il viso intero."
+ },
+ "P85": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia del Brindisi che dipinge un muro: l'uomo al lavoro."
+ },
+ "P86": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia del Mazza con le braccia appoggiate, di giornale: nitida."
+ },
+ "P87": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia del Brondi sul palco con la chitarra: scatto di concerto."
+ },
+ "Q01": {
+  "esito": "accettata",
+  "etichetta": "mummia",
+  "motivo": "e' la fotografia della mummia: non e' un ritratto e non puo' esserlo, perche' l'Oetzi e' morto e nessuno lo ha fotografato in vita. Accettata perche' e' lui, ed e' l'unica immagine che esiste. Per questo serve un'etichetta nuova."
+ },
+ "Q05": {
+  "esito": "respinta",
+  "motivo": "e' una moneta romana con due teste di profilo e la leggenda ROMA: sono allegorie, non Romolo. Una moneta registra la Repubblica, non un volto. Emblema."
+ },
+ "Q10": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "incisione ottocentesca con l'iscrizione «L. PORSENNA C.T.R.»: e' un'immagine fatta duemila anni dopo che lui e' morto, quindi non e' un ritratto. Accettata come immagine tradizionale, e dichiarata tale."
+ },
+ "Q11": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "busto marmoreo di un filosofo: un'idealizzazione romana, non Pitagora. Vale come immagine del mito, e come ritratto no."
+ },
+ "Q12": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "busto marmoreo antico: immagine convenzionale del filosofo, non un ritratto dal vivo."
+ },
+ "Q13": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "incisione di un busto con corona d'alloro su un piedistallo: serie di filosofi inventata dagli incisori, non un ritratto."
+ },
+ "Q14": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "busto in bronzo: immagine antica convenzionale, non un ritratto."
+ },
+ "Q17": {
+  "esito": "respinta",
+  "motivo": "e' la fotografia di una statua in un giardino, lontana, senza volto leggibile: non si distingue Cincinnato da nessun altro e il gioco non puo' mostrare un viso cosi'. Emblema."
+ },
+ "Q19": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "busto marmoreo: immagine convenzionale, non un ritratto dal vivo."
+ },
+ "Q20": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "busto marmoreo di Giulio Cesare, uno dei tanti: immagine convenzionale, e il gioco deve dirlo perche' non e' una fotografia."
+ },
+ "Q21": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "busto marmoreo di Cicerone: immagine convenzionale."
+ },
+ "Q22": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "busto marmoreo di un condottiero: immagine convenzionale."
+ },
+ "Q26": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "busto marmoreo di Catone: immagine convenzionale."
+ },
+ "Q28": {
+  "esito": "accettata",
+  "etichetta": "xilografia",
+  "motivo": "incisione con l'iscrizione «TIB. GRACCVS» girata intorno al profilo: il nome e' scritto sull'immagine."
+ },
+ "Q29": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "statua di Ottaviano armato: un monumento, non un ritratto, ma il volto e' proprio quello che la generazione sua ha voluto fissare. Stessa immagine di Q103."
+ },
+ "Q34": {
+  "esito": "accettata",
+  "etichetta": "miniatura",
+  "motivo": "miniatura di manoscritto con la scritta «CASSIODOR SENATOR» in alto: il nome e' scritto sopra la figura, e sotto c'e' un'altra didascalia da non confondere con il nome."
+ },
+ "Q35": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "mosaico con l'imperatore coronato: documento del periodo, non ritratto."
+ },
+ "Q37": {
+  "esito": "accettata",
+  "etichetta": "rilievo",
+  "motivo": "moneta con «CAROLVS IMP AVG» e profilo laureato: il nome gira intorno alla testa."
+ },
+ "Q41": {
+  "esito": "accettata",
+  "etichetta": "rilievo",
+  "motivo": "medaglia con «LUCRETIA» inciso: la stessa persona che in P35, checompare anche nel terzo anno. Stessa immagine, un solo file nel catalogo."
+ },
+ "Q44": {
+  "esito": "accettata",
+  "etichetta": "miniatura",
+  "motivo": "miniatura medievale con l'imperatore in trono, corona e scettro: immagine di corte, non ritratto."
+ },
+ "Q45": {
+  "esito": "accettata",
+  "etichetta": "xilografia",
+  "motivo": "incisione con la didascalia «AMERIC VESPVCE» sotto il busto: il nome e' scritto sotto l'immagine."
+ },
+ "Q46": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "incisione di un vecchio barbuto attribuita a Marco Polo: nessun ritratto dal vivo ne esiste, perche' nessuno lo ha mai visto. Immagine tradizionale, dichiarata."
+ },
+ "Q47": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "il ritratto di Dante del Botticelli con l'alloro: il profilo che il gioco ha sempre usato per il poeta."
+ },
+ "Q63": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "disegno a sanguigna di vecchio con capelli lunghi: il ritratto di Leonardo che si conosce, e qui e' disegnato, non fotografato."
+ },
+ "Q101": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "incisione in tondo di un filosofo di profilo: appartiene alle serie di filosofi inventate dagli incisori, e non prova niente su Eratostene. Immagine tradizionale."
+ },
+ "Q102": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "stesso dipinto di P42: Copernico compare anche nel terzo anno, e il file e' uno solo."
+ },
+ "Q103": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "stessa statua di Q29: Augusto compare anche nel terzo anno, e il file e' uno solo."
+ },
+ "Q104": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "busto marmoreo: immagine convenzionale."
+ },
+ "Q105": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "busto con l'elmo corinzio: immagine convenzionale, e il casco dice subito il mestiere."
+ },
+ "Q106": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "testa marmorea di filosofo: immagine convenzionale."
+ },
+ "Q107": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "mosaico bizantino con il volto di un generale: documento del periodo, non ritratto."
+ },
+ "Q109": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "busto marmoreo di giovane con capelli ricciuti: immagine convenzionale."
+ },
+ "Q110": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "stesso dipinto di P36: Alfonso I compare anche nel terzo anno, e il file e' uno solo."
+ },
+ "Q111": {
+  "esito": "accettata",
+  "etichetta": "xilografia",
+  "motivo": "stessa incisione di P37: l'Ariosto compare anche nel terzo anno, e il file e' uno solo."
+ },
+ "Q112": {
+  "esito": "respinta",
+  "motivo": "e' una scena miniata con piu' figure: uno scrivano seduto che insegna e altri che ascoltano. Dentro una scena non si distingue Alcuino dagli altri, e il gioco ha bisogno di un volto solo. Emblema."
+ },
+ "Q113": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "stesso disegno di Q63: Leonardo compare anche nel quarto anno, e il file e' uno solo."
+ },
+ "Q114": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto d'uomo in veste nera con un libro in mano: il Machiavelli del ritratto che tutti conoscono."
+ },
+ "Q115": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "stesso dipinto di P48: il Dosso compare anche nel quarto anno, e il file e' uno solo."
+ },
+ "Q116": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "incisione di un vecchio barbuto con berretto di pelliccia: il ritratto di Gutenberg e' immaginato, perche' nessuno lo ha visto in vita. Immagine tradizionale, dichiarata."
+ },
+ "Q118": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto con due scritte: «Miguel de Cervantes Saavedra» in alto e l'eta' e l'anno in basso. Il nome e' scritto sull'immagine, e con l'anno."
+ },
+ "Q119": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto d'uomo con berretto e libro poggiato su un tavolo, su cui e' scritto il nome: l'iscrizione e' la prova."
+ },
+ "Q121": {
+  "esito": "accettata",
+  "etichetta": "rilievo",
+  "motivo": "stessa moneta di Q37, usata per lo stesso Carlo Magno in due anni diversi: una sola immagine nel catalogo."
+ },
+ "Q122": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "affresco di un chierico in veste azzurra con un libro, e una didascalia in basso: e' un'immagine di corte, non un ritratto, ma la didascalia dice chi e'."
+ },
+ "Q123": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "dipinto con l'aureola, la penna e il libro: il Tommaso d'Aquino come lo ha sempre raffigurato la scuola."
+ },
+ "Q124": {
+  "esito": "accettata",
+  "etichetta": "autoritratto",
+  "motivo": "e' l'autoritratto del Durer: il pittore ha dipinto se stesso e lo ha firmato in monogramma. Il caso piu' raro e piu' prezioso della raccolta."
+ },
+ "Q127": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "pastello di dama con i capelli impolverati e la carnagione chiara: ritratto settecentesco, non fotografia."
+ },
+ "Q130": {
+  "esito": "respinta",
+  "motivo": "e' un gioiello, come il file respinto per P32: un pendente con un profilo inciso, non Isabella d'Este ma una faccia qualunque dentro un gioiello. Due giudizi uguali per due codici diversi, ed e' voluto. Emblema."
+ },
+ "Q201": {
+  "esito": "respinta",
+  "motivo": "e' la fotografia di una tavoletta cuneifica, con un rettangolo rosso disegnato sopra: e' un documento, e un documento non e' una faccia. Emblema."
+ },
+ "Q202": {
+  "esito": "respinta",
+  "motivo": "e' la fotografia di un pannello di mostra, con didascalie che a questa misura non si leggono: dentro c'e' un ritratto di Ibn Battuta, ma il file cosi' com'e' non si puo' usare, va ritagliato dalla fonte e riverificato. Emblema, non cancellazione."
+ },
+ "Q203": {
+  "esito": "respinta",
+  "motivo": "e' la foto di un monumento moderno di cemento, scattato dal basso contro il cielo con i caratteri cinesi sul basamento. Qin Shi Huang e' morto nel 210 a.C.: un monumento del Novecento non lo ritrae. Emblema."
+ },
+ "Q204": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "testa scolpita con il copricapo regale: e' una statua, e la statua e' un'immagine convenzionale, non un ritratto dal vivo."
+ },
+ "Q205": {
+  "esito": "accettata",
+  "etichetta": "miniatura",
+  "motivo": "miniatura mughal dell'imperatore con l'aureolo, la spada e il rosario: immagine di corte, non ritratto."
+ },
+ "Q206": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "dipinto cinese di vecchio con turbante bianco: i ritratti dei Khan sono di corte e fatti secoli dopo, quindi immagine convenzionale, dichiarata."
+ },
+ "Q207": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto a olio d'uomo con parrucca lunga: il Leibniz del ritratto di allora, che non e' il Leibniz d'oggiconso sembrare."
+ },
+ "Q208": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto di vecchio in parrucca bianca, con la firma «Linne» nell'angolo in alto a destra: l'originale porta la firma del pittore, non una didascalia."
+ },
+ "Q209": {
+  "esito": "accettata",
+  "etichetta": "miniatura",
+  "motivo": "miniatura di una carta geografica, con il re seduto e il nome accanto: e' la piu' nota raffigurazione di Mansa Musa, e resta una carta, non un ritratto."
+ },
+ "Q210": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "stesso dipinto di P49: Ercole II compare anche nel quarto anno, e il file e' uno solo."
+ },
+ "Q211": {
+  "esito": "respinta",
+  "motivo": "e' un francobollo uzbeko del 2000 con un uomo barbuto in turbante. Un francobollo non e' un ritratto: e' un prodotto stampato, e se il volto e' quello giusto lo si deve dire perche' il francobollo sceglie solo il nome. Emblema."
+ },
+ "Q212": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "dipinto cinese con il cartiglio del titolo che lo dichiara: immagine di scuola, non ritratto dal vivo."
+ },
+ "Q213": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "dipinto ottocentesco di Ipazia seduta con un libro in una chiesa: e' un'allegoria, e la leggo come tale perche' nessuno la vide in vita. Immagine tradizionale."
+ },
+ "Q214": {
+  "esito": "accettata",
+  "etichetta": "xilografia",
+  "motivo": "incisione di un sovrano azteco in trono con copricapo: immagine incisa, non ritratto."
+ },
+ "Q215": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "busto marmoreo di vecchio barbuto: immagine convenzionale."
+ },
+ "Q216": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "e' una statua di bronzo moderna, fotografata in una piazza con l'iscrizione araba sul basamento: non e' un ritratto, ma e' l'unica immagine esistente di Ibn Khaldun e le dichiaro quello che e', un monumento del Novecento."
+ },
+ "Q217": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia ritratto con gli occhiali: nitida, e l'occhio della macchina fotografica e' l'epoca giusta."
+ },
+ "Q218": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto del Solimano col turbante enorme, di scuola veneziana: dipinto di periodo."
+ },
+ "Q219": {
+  "esito": "accettata",
+  "etichetta": "xilografia",
+  "motivo": "incisione di studioso con turbante e libro: immagine incisa, non ritratto."
+ },
+ "Q221": {
+  "esito": "da_verificare",
+  "motivo": "ritratto di giovane donna con libro, del Cinquecento: e' plausibilmente Isabella di Castiglia, ma i ritratti di regime spagnole e italiane vengono scambiati fra loro con facilita'. Serve il metadato di Commons."
+ },
+ "Q222": {
+  "esito": "respinta",
+  "motivo": "e' la parte alta della stele del Codice, dove un re riceve i leggi da una divinità: e' una scena di incoronazione, non il ritratto di Hammurabi. La stele resta un monumento, ma il volto che si vede non e' il suo. Emblema."
+ },
+ "Q223": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto d'uomo con berretto a cuffie e una croce al collo: il Vasco da Gama del ritratto di allora."
+ },
+ "Q224": {
+  "esito": "accettata",
+  "etichetta": "immagine tradizionale",
+  "motivo": "statua moderna fotografata dal basso: monumento, non ritratto, e lo dichiaro."
+ },
+ "Q225": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia d'autore con le mani in primo piano: il Douglass che ha parlato e scritto, e la posa e' quella di un oratore."
+ },
+ "Q226": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto a olio con «HERNANDO CORTES» scritto in alto: il nome e' nell'immagine."
+ },
+ "Q227": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia a figura intera della Nightingale, con l'abito scuro e le mani in grembo."
+ },
+ "Q228": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia a colori dell'Orwell: il volto e' noto e la resa a colori e' dichiarata come ricolorazione, non come un fatto."
+ },
+ "Q229": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia della Curie, nitida, con la criniera e il fermaglio."
+ },
+ "Q301": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia del Fermi davanti a un quadro di comandi: l'uomo al lavoro, e il contesto dice la fisica."
+ },
+ "Q302": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia ravvicinata del Popper, il viso intero."
+ },
+ "Q303": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "ritratto del Newton con i capelli lunghi, dipinto d'epoca: non e' una fotografia, e va detto."
+ },
+ "Q304": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia di von Neumann in giacca e cravatta: nitida."
+ },
+ "Q306": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia a colori della Rubin all'aperto: il viso e' intero e la datazione e' coerente."
+ },
+ "Q307": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia a colori del Lovelock, il viso intero."
+ },
+ "Q310": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia del Rosling con gli occhiali, a colori."
+ },
+ "Q312": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia del Borges con gli occhi alzati: nitida, in bianco e nero."
+ },
+ "Q320": {
+  "esito": "accettata",
+  "etichetta": "dipinto",
+  "motivo": "stesso dipinto di P51: Alfonso II compare anche nel quinto anno, e il file e' uno solo."
+ },
+ "Q321": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia a colori del Dijkstra, il viso intero e gli occhiali."
+ },
+ "Q322": {
+  "esito": "respinta",
+  "motivo": "e' la foto di una statua di bronzo di un personaggio anonimo con una medaglia di bitcoin al collo. Il nome e' quello di un autore pseudonimo: nessuno conosce quel volto e la medaglia dice solo che la scena e' costruita. Emblema."
+ },
+ "Q325": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia dello Shannon con la libreria alle spalle: l'uomo e il suo campo in uno scatto."
+ },
+ "Q330": {
+  "esito": "accettata",
+  "etichetta": "fotografia",
+  "motivo": "fotografia del Kahneman con gli occhiali, a colori, in giacca: il volto intero."
+ },
+ "P41": {
+  "esito": "respinta",
+  "motivo": "uno stemma su fondo rosso: nessun viso. Per un umanista che il gioco vuol dire chi era, non di che famiglia era, uno stemma non basta. Emblema."
  }
 }

@@ -1,7 +1,7 @@
 ---
 titolo: I ritratti dei personaggi — dove vengono e perché sono dichiarati
-versione: 0.2
-data: 2026-10-02
+versione: 0.3
+data: 2026-10-03
 autore: Buffy (per pietrofabbri)
 documenti collegati:
   - docs/videogioco-5-duchi-mappe.md
@@ -43,22 +43,23 @@ libero esiste» insegna più di un ritratto generato.
 
 | | |
 |---|---|
-| schede di personaggio | **213** |
-| con ritratto autentico | **169** |
-| con emblema | **44** |
-| di cui collettivi (famiglie, gruppi, città, «le mani che hanno approssimato √2») | 9 |
-| di cui persone viventi, che per regola hanno solo l'emblema | 9 |
-| di cui senza ritratto libero esistente, verificato | 26 |
-| ritratti guardati uno per uno e attestati | 19 accettati su 45 giudicati (gli altri 26 sono respinti) |
-| ritratti ancora da guardare a vista | 150 |
+| schede di tappa | **213** |
+| persone distinte (il catalogo è per persona, non per tappa) | **201** |
+| con ritratto autentico, guardato a vista | **135** |
+| con emblema | **59** |
+| ancora da verificare, quindi **non** mostrate come ritratto | **7** |
+| giudizi a vista presi in tutto | 195: 145 accettati, 43 respinti, 7 aperti |
+| ritratti ancora da guardare a vista | **0** |
+| persone che compaiono in due anni e hanno un solo file | 12 |
 | misura | 48×54 px, come il ritratto di Borso |
-| peso complessivo dei 169 file | 213 kB (media 1 258 byte) |
 
-Le licenze sono **tutte libere**, e il conto esce dai dati senza arrotondare:
-116 pubblico dominio, 17 CC BY-SA 3.0 (di cui una in francese), 15 CC BY-SA 4.0,
-6 CC BY-SA 1.0/2.0 (di cui una in tedesco), 8 CC BY 2.0/2.5/3.0/4.0 (di cui due in
-italiano), 4 CC0, 2 «Attribution», 1 «No restrictions» — 169 in tutto. Le 48 che
-portano un obbligo (CC BY e CC BY-SA) sono quelle che vanno creditate a schermo.
+I numeri di questa tabella sono **calcolati**, non scritti: li stampa
+`sorgenti/art/verifica_immagini.py --enumero` e li confronta con i dati. Le 213
+persone sono 213 schede perché 12 compaiono in due anni diversi e hanno un solo
+file: alfonso i d'este, alfonso ii d'este, biagio rossetti, carlo magno, dosso dossi, ercole ii d'este, isabella d'este, josquin des prez, leon battista alberti, leonardo da vinci, lucrezia borgia, ludovico ariosto. Indicizzando il catalogo per persona quel difetto sparisce da solo:
+prima la ricerca scaricava lo stesso file due volte e li contava due.
+
+Le licenze sono **tutte libere**, e il conto esce dai dati senza arrotondare: 97 pubblico dominio, 10 CC BY-SA 3.0, 9 CC BY-SA 4.0, 8 CC BY altri, 6 CC BY-SA 1.0/2.0, 3 CC0, 1 Attribution, 1 No restrictions — 135 in tutto, tutte sui 135 ritratti accettati. Le tessere d'emblema sono opere del progetto e non hanno licenza da dichiarare.
 
 ## 3. La ricerca, e il suo difetto più importante
 
@@ -146,22 +147,72 @@ come una fotografia.
    `larghezza`, e va mostrata in fase di prova.
 3. **Il taglio del viso è automatico** e non c'è riconoscimento facciale: la
    regola è una finestra con le proporzioni del riquadro, centrata sul contenuto
-   e non sull'immagine. Va guardata. I fogli di controllo sono `sorgenti/art/provino_ritratti_1..3.png`,
-   **da produrre**: il taglio è automatico e nessuno
-   lo ha ancora guardato, ed è una delle tre cose che questo documento non può
-   sapere da solo.
+   e non sull'immagine. Va guardata. I fogli di controllo sono
+   **prodotti il 3 ottobre**: `sorgenti/art/fogli_controllo.py` compone i fogli,
+   dodici ritratti per schermata, e sono tredici fogli. Ogni cella porta
+   codice, nome e licenza, e mostra anche i sospetti: un foglio che nasconde i
+   sospetti serve a confermare e non a controllare. I fogli sono sul **grezzo** e
+   non sul ritratto finito, perché a 48×54 non si distingue un volto da un
+   francobollo, e il giudizio che conta è proprio quello.
 
 ## 6. Quello che resta da fare
 
 | | |
 |---|---|
-| guardare a vista i **150** ritratti non ancora attestati | il primo di tutti: sono entrati senza controllo, e sette su venti sbagliati vengono da una ricerca fatta bene, non da una fatta male |
-| costruire i **44 emblemi** | con la stessa regola del ritratto: ogni emblema dichiara perché la persona non ha un volto qui |
+| chiudere le **7** immagini ancora da verificare | sono le 7 in cui si vede un ritratto giusto di periodo ma non si può accertare di chi è: il metadato di Commons lo dice, e finché non lo si guarda restano aperte e a schermo c'è un emblema |
+| **disegnare** i 66 emblemi | le tessere esistono e sono un segnale dichiarato, ma non sono disegni: ogni emblema deve dire *perché* la persona non ha un volto qui |
 | decidere se gli emblemi siano disegni o forme tipografiche | se sono forme, l'anno 1 (maurelio) resta l'unico con disegno |
 | ridare le 600 px di partenza | 300 px per le 19 fonti strette non bastano: si può solo rifare la ricerca su una fonte più grande |
 | rivedere la P80 | Renata Viganò potrebbe avere un ritratto sotto un'altra forma: la ricerca su Commons non ne ha trovato |
 
 ## 7. Il registro delle modifiche
+
+### v0.3 — 2026-10-03
+
+**I 195 ritratti sono stati guardati uno per uno.** Non per un campione: 213
+schede, 13 fogli di controllo, 195 giudizi. Il conto esce 145 accettati, 43
+respinti, 7 aperti.
+
+Le 43 respinte non sono un fallimento della ricerca: sono il motivo per cui
+esiste l'attestazione. Cinque volte su 50 la ricerca aveva restituito un oggetto
+invece di una persona — un francobollo per al-Khwarizmi, una tavoletta cuneiforme
+per Gilgamesh, un pannello di mostra per Ibn Battuta, la parte alta della stele
+per Hammurabi, un monumento di cemento per Qin Shi Huang — e in quattro casi
+l'oggetto aveva il nome della persona scritto sopra. Una fotografia
+dell'Ottocento era stata assegnata ad Azzo VIII d'Este, morto nel 1537: non può
+esserlo, perché le fotografie non sono di quell'anno. Sono 43 stelle su 195: sette
+su venti, come la §4 diceva, e per una volta la proporzione era giusta senza che
+nessuno l'avesse contata.
+
+**Due difetti, e sono della stessa famiglia.** Il primo: `applica_attestazione.py`
+mandava tutti i nomi dei file a Commons in una richiesta sola, e la API ne
+accetta 50. Commons rispondeva «troppi valori» con zero pagine, e il codice leggeva
+quello zero come «il file non esiste»: 127 ritratti giusti sono diventati emblemi
+senza una riga di errore. Il secondo, più sciocco: il nome del catalogo era
+scritto a mano in due file, e in uno dei due «gioco» era diventato «giogo». Il
+sintomo era un `Errno 2` su un percorso che sembrava giusto. Per questo il nome
+del catalogo adesso **si cerca** fra i file, e se non ne trova uno solo il
+controllo si ferma e lo dice. È la sesta volta che la stessa lezione serve.
+
+**Il terzo esito.** Esiste adesso `da_verificare`, per le immagini in cui si vede
+un ritratto di persona giusta e di periodo giusto ma l'identità non si può
+accertare a occhio: i ritratti dei duchi estensi sono i più scambiati fra loro. Non
+diventano ritratti per silenzio: restano aperte, con il file da parte, e a schermo
+c'è un emblema. Dichiarare un terzo esito è stato più utile che scegliere fra i
+due.
+
+**Il catalogo è per persona.** `dati/immagini_gioco.json` è quello che il motore
+legge: 48 persone, non 54 schede, perché 201 compaiono in due anni. Ogni voce
+porta l'esito e l'etichetta — il gioco mostra un volto a un ragazzo di tredici
+anni e non può farlo senza dire se è una fotografia o una miniatura.
+
+`sorgenti/art/verifica_immagini.py` controlla cinque cose: il file annunciato
+esiste ed è un PNG 213×12, in `out/` non c'è nulla che nessuno usa, ogni ritratto ha
+un'etichetta dell'elenco, ogni ritratto ha una licenza libera e ogni aperto resta
+aperto, e ogni codice di tappa compare una volta sola. Morde su sei difetti
+iniettati, uno per uno: `prova_difetto_immagini.py` li inietta e li richiede a
+voce.
+
 
 ### v0.2 — 02/10/2026
 

@@ -30,8 +30,9 @@
    "altezza": 3471
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "P03",
@@ -71,8 +72,9 @@
    "altezza": 579
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "miniatura"
  },
  {
   "codice": "P05",
@@ -96,17 +98,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "Blason_famille_Torelli.svg",
-  "dettagli": {
-   "licenza": "CC BY-SA 3.0",
-   "autore": "SanglierT",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Blason_famille_Torelli.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 600,
-   "altezza": 660
-  },
-  "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: e' uno stemma araldico, non la persona: nessun viso, e per Salinguerra Torelli il gioco vuol dire chi era, non di che famiglia era. Emblema.",
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": null
  },
  {
   "codice": "P07",
@@ -139,8 +136,9 @@
    "altezza": 305
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "miniatura"
  },
  {
   "codice": "P09",
@@ -186,9 +184,9 @@
    "larghezza": 630,
    "altezza": 830
   },
-  "motivo": "ok",
+  "motivo": "da_verificare: ritratto di dama del Cinquecento, ma i ritratti di donne estensi sono fra le immagini piu' scambiate fra loro: senza i metadati di Commons non si puo' dire che sia Beatrice II e non Isabella o Beatrice I. Finche' non e' verificata non passa.",
   "attestato": false,
-  "verifica": "non verificata a vista"
+  "verifica": "da verificare sui metadati"
  },
  {
   "codice": "P12",
@@ -207,8 +205,9 @@
    "altezza": 328
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "miniatura"
  },
  {
   "codice": "P13",
@@ -227,8 +226,9 @@
    "altezza": 326
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "miniatura"
  },
  {
   "codice": "P14",
@@ -238,17 +238,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "Azzo_VIII_d'Este.jpg",
-  "dettagli": {
-   "licenza": "Public domain",
-   "autore": "Unknown authorUnknown author",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Azzo_VIII_d%27Este.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 418,
-   "altezza": 469
-  },
-  "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: e' una fotografia d'archivio di un uomo con cappuccio, del XIX o XX secolo: Azzo VIII e' morto nel 1537 e non puo' essere in una fotografia. Il file era stato trovato per il nome dello stemma, non per la persona. Emblema.",
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": null
  },
  {
   "codice": "P15",
@@ -281,8 +276,9 @@
    "altezza": 282
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "miniatura"
  },
  {
   "codice": "P17",
@@ -300,9 +296,9 @@
    "larghezza": 1000,
    "altezza": 800
   },
-  "motivo": "ok",
+  "motivo": "da_verificare: statua equestre in bronzo contro il cielo: puo' essere il monumento a Niccolò III, ma un monumento non ha un volto e dalla sola immagine non si distingue. Va verificato il file su Commons prima di accettarla.",
   "attestato": false,
-  "verifica": "non verificata a vista"
+  "verifica": "da verificare sui metadati"
  },
  {
   "codice": "P18",
@@ -321,8 +317,9 @@
    "altezza": 1353
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P19",
@@ -341,8 +338,9 @@
    "altezza": 1746
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "rilievo"
  },
  {
   "codice": "P20",
@@ -361,8 +359,9 @@
    "altezza": 1169
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P21",
@@ -381,8 +380,9 @@
    "altezza": 400
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "rilievo"
  },
  {
   "codice": "P22",
@@ -400,9 +400,9 @@
    "larghezza": 1043,
    "altezza": 1366
   },
-  "motivo": "ok",
+  "motivo": "da_verificare: profilo di uomo con berretto rosso, da un codice: e' plausibilmente Borso d'Este, ma senza i metadati non si distingue da altri profili estensi dello stesso periodo.",
   "attestato": false,
-  "verifica": "non verificata a vista"
+  "verifica": "da verificare sui metadati"
  },
  {
   "codice": "P23",
@@ -412,17 +412,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "Cosmè_Tura_039.jpg",
-  "dettagli": {
-   "licenza": "Public domain",
-   "autore": "Cosimo Tura",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Cosm%C3%A8_Tura_039.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 2024,
-   "altezza": 2189
-  },
-  "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: e' un'interno dipinto con figure, non un ritratto: il file e' un'opera ambientata, e per un uomo che e' un solo soggetto di quei dipinti non c'e' nessun volto di Cosmè Tura. Emblema.",
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": null
  },
  {
   "codice": "P24",
@@ -432,17 +427,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "Cossa,_Francesco_del_-_Allegory_of_April-_Triumph_of_Venus_(detail)_-_1476-84.jpg",
-  "dettagli": {
-   "licenza": "Public domain",
-   "autore": "Francesco del Cossa",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Cossa%2C_Francesco_del_-_Allegory_of_April-_Triumph_of_Venus_%28detail%29_-_1476-84.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 974,
-   "altezza": 660
-  },
-  "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: scena allegorica con molte figure e un fiume in primo piano: e' un dipinto del Cossa, non un suo ritratto. Emblema.",
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": null
  },
  {
   "codice": "P25",
@@ -461,8 +451,9 @@
    "altezza": 2000
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "xilografia"
  },
  {
   "codice": "P26",
@@ -481,8 +472,9 @@
    "altezza": 603
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "rilievo"
  },
  {
   "codice": "P27",
@@ -515,9 +507,9 @@
    "larghezza": 547,
    "altezza": 793
   },
-  "motivo": "ok",
+  "motivo": "da_verificare: profilo di uomo con berretto nero, dipinto di periodo giusto; ma di Tito Strozzi esiste un solo ritratto noto e non si puo' distinguere a occhio da un parente.",
   "attestato": false,
-  "verifica": "non verificata a vista"
+  "verifica": "da verificare sui metadati"
  },
  {
   "codice": "P29",
@@ -536,8 +528,9 @@
    "altezza": 328
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "xilografia"
  },
  {
   "codice": "P30",
@@ -556,8 +549,9 @@
    "altezza": 1024
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P31",
@@ -581,17 +575,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "Gian-cristoforo-romano-portrait-medal-of-isabella-deste.jpg",
-  "dettagli": {
-   "licenza": "CC BY-SA 4.0",
-   "autore": "Mitglied5",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Gian-cristoforo-romano-portrait-medal-of-isabella-deste.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 3804,
-   "altezza": 2400
-  },
-  "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: e' un gioiello: un pendente con un profilo inciso dentro un cammeo. Non e' il ritratto di Isabella d'Este, e' un gioiello con una faccia qualunque dentro. Emblema.",
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": null
  },
  {
   "codice": "P33",
@@ -610,8 +599,9 @@
    "altezza": 500
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "xilografia"
  },
  {
   "codice": "P34",
@@ -630,8 +620,9 @@
    "altezza": 1200
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P35",
@@ -650,8 +641,9 @@
    "altezza": 3487
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "rilievo"
  },
  {
   "codice": "P36",
@@ -670,8 +662,9 @@
    "altezza": 3910
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P37",
@@ -690,8 +683,9 @@
    "altezza": 732
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "xilografia"
  },
  {
   "codice": "P38",
@@ -710,8 +704,9 @@
    "altezza": 2039
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P39",
@@ -730,8 +725,9 @@
    "altezza": 1624
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "xilografia"
  },
  {
   "codice": "P40",
@@ -755,17 +751,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "Coa_fam_ITA_calcagnini.jpg",
-  "dettagli": {
-   "licenza": "CC BY-SA 3.0",
-   "autore": "Massimop",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Coa_fam_ITA_calcagnini.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 840,
-   "altezza": 1080
-  },
-  "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: uno stemma su fondo rosso: nessun viso. Per un umanista che il gioco vuol dire chi era, non di che famiglia era, uno stemma non basta. Emblema.",
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": null
  },
  {
   "codice": "P42",
@@ -784,8 +775,9 @@
    "altezza": 1001
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P43",
@@ -804,8 +796,9 @@
    "altezza": 3737
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P44",
@@ -824,8 +817,9 @@
    "altezza": 4878
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "xilografia"
  },
  {
   "codice": "P45",
@@ -844,8 +838,9 @@
    "altezza": 302
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P46",
@@ -905,8 +900,9 @@
    "altezza": 450
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P49",
@@ -925,8 +921,9 @@
    "altezza": 2506
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P50",
@@ -945,8 +942,9 @@
    "altezza": 594
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P51",
@@ -965,8 +963,9 @@
    "altezza": 1920
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P52",
@@ -985,8 +984,9 @@
    "altezza": 1119
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P53",
@@ -996,17 +996,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "Luzzaschis_Quinto_libero_dei_madrigali_(first_edition).jpg",
-  "dettagli": {
-   "licenza": "Public domain",
-   "autore": "Luzzascho Luzzaschi",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Luzzaschis_Quinto_libero_dei_madrigali_%28first_edition%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 212,
-   "altezza": 300
-  },
-  "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: e' il frontespizio di un libro di madrigali, con la data e la citta': un'opera stampata, non un ritratto. Emblema.",
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": null
  },
  {
   "codice": "P54",
@@ -1039,8 +1034,9 @@
    "altezza": 3000
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "xilografia"
  },
  {
   "codice": "P56",
@@ -1059,8 +1055,9 @@
    "altezza": 257
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P57",
@@ -1079,8 +1076,9 @@
    "altezza": 1830
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P58",
@@ -1154,9 +1152,9 @@
    "larghezza": 2048,
    "altezza": 1536
   },
-  "motivo": "ok",
+  "motivo": "da_verificare: e' la fotografia di una formella architettonica: si vede un profilo inciso in un tondo di marmo, ma non si puo' stabilire chi sia e il Bonati e' un pittore dell'Ottocento.",
   "attestato": false,
-  "verifica": "non verificata a vista"
+  "verifica": "da verificare sui metadati"
  },
  {
   "codice": "P62",
@@ -1174,9 +1172,9 @@
    "larghezza": 2048,
    "altezza": 1536
   },
-  "motivo": "ok",
+  "motivo": "da_verificare: stessa formella fotografata da un'altra angolazione, e con un altro nome: due file per un solo monumento, e nessuno dei due prova di chi sia. Nessuno dei due passa senza metadati.",
   "attestato": false,
-  "verifica": "non verificata a vista"
+  "verifica": "da verificare sui metadati"
  },
  {
   "codice": "P63",
@@ -1210,8 +1208,9 @@
    "altezza": 324
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "xilografia"
  },
  {
   "codice": "P65",
@@ -1230,8 +1229,9 @@
    "altezza": 183
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "P66",
@@ -1293,8 +1293,9 @@
    "altezza": 289
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "P70",
@@ -1333,8 +1334,9 @@
    "altezza": 818
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "P72",
@@ -1353,8 +1355,9 @@
    "altezza": 873
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "P73",
@@ -1373,8 +1376,9 @@
    "altezza": 358
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "P74",
@@ -1393,8 +1397,9 @@
    "altezza": 637
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "P75",
@@ -1413,8 +1418,9 @@
    "altezza": 355
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "P76",
@@ -1473,8 +1479,9 @@
    "altezza": 236
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "P79",
@@ -1493,8 +1500,9 @@
    "altezza": 1536
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "P80",
@@ -1528,8 +1536,9 @@
    "altezza": 450
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "P82",
@@ -1548,8 +1557,9 @@
    "altezza": 3607
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "P83",
@@ -1589,8 +1599,9 @@
    "altezza": 234
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "P85",
@@ -1609,8 +1620,9 @@
    "altezza": 2540
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "P86",
@@ -1629,8 +1641,9 @@
    "altezza": 719
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "P87",
@@ -1649,8 +1662,9 @@
    "altezza": 682
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "P88",
@@ -1765,8 +1779,9 @@
    "altezza": 428
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "mummia"
  },
  {
   "codice": "Q11",
@@ -1785,8 +1800,9 @@
    "altezza": 599
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q05",
@@ -1796,17 +1812,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "Brogi,_Carlo_(1850-1925)_-_n._8226_-_Certosa_di_Pavia_-_Medaglione_sullo_zoccolo_della_facciata.jpg",
-  "dettagli": {
-   "licenza": "Public domain",
-   "autore": "Carlo Brogi",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Brogi%2C_Carlo_%281850-1925%29_-_n._8226_-_Certosa_di_Pavia_-_Medaglione_sullo_zoccolo_della_facciata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 546,
-   "altezza": 546
-  },
-  "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: e' una moneta romana con due teste di profilo e la leggenda ROMA: sono allegorie, non Romolo. Una moneta registra la Repubblica, non un volto. Emblema.",
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": null
  },
  {
   "codice": "Q34",
@@ -1825,8 +1836,9 @@
    "altezza": 1701
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "miniatura"
  },
  {
   "codice": "Q19",
@@ -1845,8 +1857,9 @@
    "altezza": 2176
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q12",
@@ -1865,8 +1878,9 @@
    "altezza": 370
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q17",
@@ -1876,17 +1890,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "Lucius_Quinctius_Cincinnatus_par_Denis_Foyatier_(1793-1863),_jardin_des_Tuileries,_Paris.jpg",
-  "dettagli": {
-   "licenza": "CC BY-SA 4.0",
-   "autore": "Rudy Hertzog",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Lucius_Quinctius_Cincinnatus_par_Denis_Foyatier_%281793-1863%29%2C_jardin_des_Tuileries%2C_Paris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 2848,
-   "altezza": 4032
-  },
-  "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: e' la fotografia di una statua in un giardino, lontana, senza volto leggibile: non si distingue Cincinnato da nessun altro e il gioco non puo' mostrare un viso cosi'. Emblema.",
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": null
  },
  {
   "codice": "Q63",
@@ -1905,8 +1914,9 @@
    "altezza": 659
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q21",
@@ -1925,8 +1935,9 @@
    "altezza": 1636
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q27",
@@ -1965,8 +1976,9 @@
    "altezza": 600
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q22",
@@ -1985,8 +1997,9 @@
    "altezza": 1400
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q26",
@@ -2005,8 +2018,9 @@
    "altezza": 585
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q47",
@@ -2025,8 +2039,9 @@
    "altezza": 550
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q44",
@@ -2045,8 +2060,9 @@
    "altezza": 818
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "miniatura"
  },
  {
   "codice": "Q14",
@@ -2065,8 +2081,9 @@
    "altezza": 6925
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q28",
@@ -2085,8 +2102,9 @@
    "altezza": 383
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "xilografia"
  },
  {
   "codice": "Q20",
@@ -2105,8 +2123,9 @@
    "altezza": 3426
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q10",
@@ -2125,8 +2144,9 @@
    "altezza": 399
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q29",
@@ -2145,8 +2165,9 @@
    "altezza": 2250
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q37",
@@ -2165,8 +2186,9 @@
    "altezza": 2070
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "rilievo"
  },
  {
   "codice": "Q46",
@@ -2185,8 +2207,9 @@
    "altezza": 420
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q91",
@@ -2254,8 +2277,9 @@
    "altezza": 3487
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "rilievo"
  },
  {
   "codice": "Q35",
@@ -2274,8 +2298,9 @@
    "altezza": 1997
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q90",
@@ -2308,8 +2333,9 @@
    "altezza": 1370
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "xilografia"
  },
  {
   "codice": "Q92",
@@ -2342,8 +2368,9 @@
    "altezza": 275
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q102",
@@ -2362,8 +2389,9 @@
    "altezza": 1001
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q103",
@@ -2382,8 +2410,9 @@
    "altezza": 2250
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q104",
@@ -2402,8 +2431,9 @@
    "altezza": 2124
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q105",
@@ -2422,8 +2452,9 @@
    "altezza": 1970
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q106",
@@ -2442,8 +2473,9 @@
    "altezza": 3600
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q107",
@@ -2462,8 +2494,9 @@
    "altezza": 1370
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q108",
@@ -2503,8 +2536,9 @@
    "altezza": 1066
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q110",
@@ -2523,8 +2557,9 @@
    "altezza": 3910
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q111",
@@ -2543,8 +2578,9 @@
    "altezza": 732
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "xilografia"
  },
  {
   "codice": "Q112",
@@ -2554,17 +2590,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "Raban-Maur_Alcuin_Otgar.jpg",
-  "dettagli": {
-   "licenza": "Public domain",
-   "autore": "Fulda",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Raban-Maur_Alcuin_Otgar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 4679,
-   "altezza": 4984
-  },
-  "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: e' una scena miniata con piu' figure: uno scrivano seduto che insegna e altri che ascoltano. Dentro una scena non si distingue Alcuino dagli altri, e il gioco ha bisogno di un volto solo. Emblema.",
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": null
  },
  {
   "codice": "Q113",
@@ -2583,8 +2614,9 @@
    "altezza": 659
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q114",
@@ -2603,8 +2635,9 @@
    "altezza": 1600
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q115",
@@ -2623,8 +2656,9 @@
    "altezza": 450
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q116",
@@ -2643,8 +2677,9 @@
    "altezza": 1322
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q117",
@@ -2684,8 +2719,9 @@
    "altezza": 1893
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q119",
@@ -2704,8 +2740,9 @@
    "altezza": 2290
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q120",
@@ -2745,8 +2782,9 @@
    "altezza": 2070
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "rilievo"
  },
  {
   "codice": "Q122",
@@ -2765,8 +2803,9 @@
    "altezza": 1200
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q123",
@@ -2785,8 +2824,9 @@
    "altezza": 1600
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q124",
@@ -2796,7 +2836,7 @@
   "vivo": false,
   "titolo": "Albrecht Dürer",
   "pagina": "Albrecht Dürer",
-  "immagine": "3840px-Albrecht_Dürer_-_1500_self-portrait_(High_resolution_and_detail).jpg",
+  "immagine": "Albrecht_Dürer_-_1500_self-portrait_(High_resolution_and_detail).jpg",
   "dettagli": {
    "licenza": "Public domain",
    "autore": "Albrecht Dürer",
@@ -2807,8 +2847,9 @@
   "motivo": "ok",
   "nota_immagine": "deutscher Maler und Graphiker (1471–1528)",
   "immagine_reale": "Albrecht_Dürer_-_1500_self-portrait_(High_resolution_and_detail).jpg",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "autoritratto"
  },
  {
   "codice": "Q125",
@@ -2863,8 +2904,9 @@
    "altezza": 1090
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q128",
@@ -2909,17 +2951,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "Gian-cristoforo-romano-portrait-medal-of-isabella-deste.jpg",
-  "dettagli": {
-   "licenza": "CC BY-SA 4.0",
-   "autore": "Mitglied5",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Gian-cristoforo-romano-portrait-medal-of-isabella-deste.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 3804,
-   "altezza": 2400
-  },
-  "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: e' un gioiello, come il file respinto per P32: un pendente con un profilo inciso, non Isabella d'Este ma una faccia qualunque dentro un gioiello. Due giudizi uguali per due codici diversi, ed e' voluto. Emblema.",
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": null
  },
  {
   "codice": "Q201",
@@ -2929,17 +2966,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "GIŠBILPAP.ga.mes.jpg",
-  "dettagli": {
-   "licenza": "Public domain",
-   "autore": "anonimo, scomparso circa cinquemila anni fa.",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/GI%C5%A0BILPAP.ga.mes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 337,
-   "altezza": 250
-  },
-  "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: e' la fotografia di una tavoletta cuneifica, con un rettangolo rosso disegnato sopra: e' un documento, e un documento non e' una faccia. Emblema.",
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": null
  },
  {
   "codice": "Q202",
@@ -2949,17 +2981,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "Ibn_Battuta_Mall_on_2_June_2007_Pict_3.jpg",
-  "dettagli": {
-   "licenza": "CC BY-SA 3.0",
-   "autore": "Imre Solt",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Ibn_Battuta_Mall_on_2_June_2007_Pict_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 638,
-   "altezza": 1014
-  },
-  "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: e' la fotografia di un pannello di mostra, con didascalie che a questa misura non si leggono: dentro c'e' un ritratto di Ibn Battuta, ma il file cosi' com'e' non si puo' usare, va ritagliato dalla fonte e riverificato. Emblema, non cancellazione.",
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": null
  },
  {
   "codice": "Q203",
@@ -2969,17 +2996,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "Qin_Shi_Huang_statue.jpg",
-  "dettagli": {
-   "licenza": "CC BY-SA 4.0",
-   "autore": "JesseW900",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Qin_Shi_Huang_statue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 1945,
-   "altezza": 2781
-  },
-  "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: e' la foto di un monumento moderno di cemento, scattato dal basso contro il cielo con i caratteri cinesi sul basamento. Qin Shi Huang e' morto nel 210 a.C.: un monumento del Novecento non lo ritrae. Emblema.",
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": null
  },
  {
   "codice": "Q204",
@@ -2998,8 +3020,9 @@
    "altezza": 3622
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q205",
@@ -3018,8 +3041,9 @@
    "altezza": 1368
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "miniatura"
  },
  {
   "codice": "Q206",
@@ -3038,8 +3062,9 @@
    "altezza": 4040
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q207",
@@ -3049,7 +3074,7 @@
   "vivo": false,
   "titolo": "Gottfried Wilhelm Leibniz",
   "pagina": "Gottfried Wilhelm Leibniz",
-  "immagine": "3840px-Christoph_Bernhard_Francke_-_Bildnis_des_Philosophen_Leibniz_(ca._1695).jpg",
+  "immagine": "Christoph_Bernhard_Francke_-_Bildnis_des_Philosophen_Leibniz_(ca._1695).jpg",
   "dettagli": {
    "licenza": "Public domain",
    "autore": "Christoph Bernhard Francke",
@@ -3060,8 +3085,9 @@
   "motivo": "ok",
   "nota_immagine": "German polymath (1646–1716)",
   "immagine_reale": "Christoph_Bernhard_Francke_-_Bildnis_des_Philosophen_Leibniz_(ca._1695).jpg",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q208",
@@ -3080,8 +3106,9 @@
    "altezza": 2342
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q209",
@@ -3100,8 +3127,9 @@
    "altezza": 381
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "miniatura"
  },
  {
   "codice": "Q210",
@@ -3120,8 +3148,9 @@
    "altezza": 2506
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q211",
@@ -3131,17 +3160,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "1983_CPA_5426.jpg",
-  "dettagli": {
-   "licenza": "Public domain",
-   "autore": "А. Адашев",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/1983_CPA_5426.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 735,
-   "altezza": 985
-  },
-  "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: e' un francobollo uzbeko del 2000 con un uomo barbuto in turbante. Un francobollo non e' un ritratto: e' un prodotto stampato, e se il volto e' quello giusto lo si deve dire perche' il francobollo sceglie solo il nome. Emblema.",
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": null
  },
  {
   "codice": "Q212",
@@ -3160,8 +3184,9 @@
    "altezza": 1595
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q213",
@@ -3180,8 +3205,9 @@
    "altezza": 3487
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q214",
@@ -3200,8 +3226,9 @@
    "altezza": 756
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "xilografia"
  },
  {
   "codice": "Q215",
@@ -3220,8 +3247,9 @@
    "altezza": 1024
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q216",
@@ -3240,8 +3268,9 @@
    "altezza": 1636
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q217",
@@ -3260,8 +3289,9 @@
    "altezza": 430
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "Q218",
@@ -3280,8 +3310,9 @@
    "altezza": 2117
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q219",
@@ -3300,8 +3331,9 @@
    "altezza": 1259
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "xilografia"
  },
  {
   "codice": "Q220",
@@ -3333,9 +3365,9 @@
    "larghezza": 2087,
    "altezza": 2582
   },
-  "motivo": "ok",
+  "motivo": "da_verificare: ritratto di giovane donna con libro, del Cinquecento: e' plausibilmente Isabella di Castiglia, ma i ritratti di regime spagnole e italiane vengono scambiati fra loro con facilita'. Serve il metadato di Commons.",
   "attestato": false,
-  "verifica": "non verificata a vista"
+  "verifica": "da verificare sui metadati"
  },
  {
   "codice": "Q222",
@@ -3345,17 +3377,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "Code_of_Hammurabi-Sb_8-IMG_7755-gradient.jpg",
-  "dettagli": {
-   "licenza": "CC BY-SA 3.0 fr",
-   "autore": "Rama",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Code_of_Hammurabi-Sb_8-IMG_7755-gradient.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 5500,
-   "altezza": 5500
-  },
-  "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: e' la parte alta della stele del Codice, dove un re riceve i leggi da una divinità: e' una scena di incoronazione, non il ritratto di Hammurabi. La stele resta un monumento, ma il volto che si vede non e' il suo. Emblema.",
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": null
  },
  {
   "codice": "Q223",
@@ -3374,8 +3401,9 @@
    "altezza": 1754
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q224",
@@ -3394,8 +3422,9 @@
    "altezza": 1024
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "immagine tradizionale"
  },
  {
   "codice": "Q225",
@@ -3414,8 +3443,9 @@
    "altezza": 3000
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "Q226",
@@ -3434,8 +3464,9 @@
    "altezza": 928
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q227",
@@ -3454,8 +3485,9 @@
    "altezza": 2453
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "Q228",
@@ -3474,8 +3506,9 @@
    "altezza": 2790
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "Q229",
@@ -3494,8 +3527,9 @@
    "altezza": 2105
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "Q230",
@@ -3528,8 +3562,9 @@
    "altezza": 2927
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "Q302",
@@ -3548,8 +3583,9 @@
    "altezza": 769
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "Q303",
@@ -3568,8 +3604,9 @@
    "altezza": 2671
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q304",
@@ -3588,8 +3625,9 @@
    "altezza": 639
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "Q305",
@@ -3622,8 +3660,9 @@
    "altezza": 211
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "Q307",
@@ -3642,8 +3681,9 @@
    "altezza": 651
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "Q308",
@@ -3703,8 +3743,9 @@
    "altezza": 873
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "Q311",
@@ -3737,8 +3778,9 @@
    "altezza": 375
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "Q313",
@@ -3856,8 +3898,9 @@
    "altezza": 1920
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "dipinto"
  },
  {
   "codice": "Q321",
@@ -3876,8 +3919,9 @@
    "altezza": 1600
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "Q322",
@@ -3887,17 +3931,12 @@
   "vivo": false,
   "titolo": null,
   "pagina": null,
-  "immagine": "Satoshi_Nakamoto.jpg",
-  "dettagli": {
-   "licenza": "CC BY-SA 4.0",
-   "autore": "Elekes Andor",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Satoshi_Nakamoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "larghezza": 1509,
-   "altezza": 1712
-  },
-  "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "immagine": null,
+  "dettagli": null,
+  "motivo": "emblema: e' la foto di una statua di bronzo di un personaggio anonimo con una medaglia di bitcoin al collo. Il nome e' quello di un autore pseudonimo: nessuno conosce quel volto e la medaglia dice solo che la scena e' costruita. Emblema.",
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": null
  },
  {
   "codice": "Q323",
@@ -3944,8 +3983,9 @@
    "altezza": 400
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  },
  {
   "codice": "Q326",
@@ -4020,7 +4060,8 @@
    "altezza": 818
   },
   "motivo": "ok",
-  "attestato": false,
-  "verifica": "non verificata a vista"
+  "attestato": true,
+  "verifica": "non verificata a vista",
+  "etichetta": "fotografia"
  }
 ]

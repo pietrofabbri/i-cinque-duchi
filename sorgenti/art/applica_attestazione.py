@@ -30,10 +30,11 @@ LIB_NO = re.compile(r"non[- ]?commercial|fair use|\bcc by[- ]nc|no deriv", re.I)
 PREFISSO = re.compile(r"^\d+px-")
 
 
-def licenze(titoli):
-    """titoli -> dettaglio del file. Attenzione: su Commons i file stanno nello
-    spazio `File`, e senza quel prefisso la API cerca pagine e non trova
-    `imageinfo`: la risposta arriva, vuota, e sembra che il file non esista."""
+LOTTO = 45            # la API ne accetta 50 per richiesta; 45 lascia il margine
+
+
+def _un_lotto(titoli):
+    """Una richiesta a Commons. Restituisce None se la API ha risposto male."""
     corpo = urllib.parse.urlencode({
         "action": "query", "format": "json", "prop": "imageinfo",
         "iiprop": "extmetadata|url|size",
@@ -60,20 +61,40 @@ def licenze(titoli):
             time.sleep(3 * (k + 1))
     else:
         return None
+    # Una risposta con `error` o senza `query` **non** significa che i file non
+    # esistono. Significa che non abbiamo chiesto bene, e la differenza è
+    # enorme: la prima volta che questa funzione ha ricevuto 195 titoli in una
+    # sola richiesta, Commons ha risposto `toomanyvalues` con zero pagine, e il
+    # codice ha letto quello zero come «il file non esiste»: 127 ritratti giusti
+    # sono diventati emblemi senza una sola riga di errore. Per questo qui si
+    # interrompe invece di rispondere, e per questo i titoli viaggiano a lotti.
+    if d.get("error") or not (d.get("query") or {}).get("pages"):
+        return None
+    return d
+
+
+def licenze(titoli):
+    """titoli -> dettaglio del file. Attenzione: su Commons i file stanno nello
+    spazio `File`, e senza quel prefisso la API cerca pagine e non trova
+    `imageinfo`: la risposta arriva, vuota, e sembra che il file non esista."""
     su = {}
-    for _, p in (d.get("query", {}).get("pages") or {}).items():
-        if "missing" in p:
-            continue
-        ii = (p.get("imageinfo") or [None])[0]
-        if not ii:
-            continue
-        em = ii.get("extmetadata", {})
-        su[p["title"].split(":", 1)[-1].replace("_", " ")] = {
-            "licenza": (em.get("LicenseShortName", {}) or {}).get("value", ""),
-            "autore": re.sub(r"<[^>]+>", "",
-                             (em.get("Artist", {}) or {}).get("value", ""))[:120],
-            "url": ii.get("url"),
-            "larghezza": ii.get("width"), "altezza": ii.get("height")}
+    for i in range(0, len(titoli), LOTTO):
+        d = _un_lotto(titoli[i:i + LOTTO])
+        if d is None:
+            return None
+        for _, p in d["query"]["pages"].items():
+            if "missing" in p:
+                continue
+            ii = (p.get("imageinfo") or [None])[0]
+            if not ii:
+                continue
+            em = ii.get("extmetadata", {})
+            su[p["title"].split(":", 1)[-1].replace("_", " ")] = {
+                "licenza": (em.get("LicenseShortName", {}) or {}).get("value", ""),
+                "autore": re.sub(r"<[^>]+>", "",
+                                 (em.get("Artist", {}) or {}).get("value", ""))[:120],
+                "url": ii.get("url"),
+                "larghezza": ii.get("width"), "altezza": ii.get("height")}
     return su
 
 
@@ -100,11 +121,11 @@ if __name__ == "__main__":
     print("da riverificare su Commons: %d file" % len(citati))
     su = licenze(citati)
     if su is None:
-        raise SystemExit("Interrotto: Commons non ha risposto. Senza risposta non "
-                         "si decide niente, e decidere 'non esiste' sarebbe "
-                         "un falso.")
+        raise SystemExit("Interrotto: Commons non ha risposto, o ha risposto male. "
+                         "Senza risposta non si decide niente, e decidere 'non "
+                         "esiste' sarebbe un falso.")
 
-    accettate = respinte = 0
+    accettate = respinte = da_verificare = 0
     problemi = []
     for k in codici:
         a = att[k]
@@ -127,6 +148,20 @@ if __name__ == "__main__":
             e["attestato"] = True
             e["motivo"] = "emblema: " + a["motivo"]
             respinte += 1
+            continue
+
+        # Il terzo esito: si vede un ritratto, ma non si puo' accertare di chi e'.
+        # Non viene accettata in silenzio, perche' un'immagine non verificata
+        # diventerebbe a schermo un volto che il gioco non puo' difendere. Resta
+        # in elenco con il file e la ragione, e va chiusa prima della consegna.
+        if a["esito"] == "da_verificare":
+            e["attestato"] = False
+            e["verifica"] = "da verificare sui metadati"
+            e["motivo"] = "da_verificare: " + a["motivo"]
+            if det:
+                e["immagine"] = nome
+                e["dettagli"] = det
+            da_verificare += 1
             continue
 
         if not det:
@@ -172,6 +207,7 @@ if __name__ == "__main__":
 
     print("\naccettate dall'attestazione : %d" % accettate)
     print("respinte a emblema          : %d" % respinte)
+    print("da verificare (aperte)      : %d" % da_verificare)
     print("problemi (file assenti o licenza non libera): %d" % len(problemi))
     for k, n, m in problemi:
         print("   %-6s %-52s %s" % (k, str(n)[:52], m))
@@ -179,6 +215,8 @@ if __name__ == "__main__":
     print("  ritratti autentici         : %d" % len(ritratti))
     print("    di cui guardati a vista  : %d" % len(visti))
     print("    di cui non ancora guardati: %d" % (len(ritratti) - len(visti)))
+    print("  ritratti aperti da verificare: %d"
+          % sum(1 for e in esiti if str(e.get("motivo", "")).startswith("da_verificare")))
     print("  emblemi                    : %d" % len(emblemi))
     print("  ancora da rivedere         : %d"
           % sum(1 for e in esiti if e["motivo"].startswith("richiesta_fallita")))
