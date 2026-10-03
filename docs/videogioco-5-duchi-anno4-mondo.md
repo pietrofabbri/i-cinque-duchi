@@ -1,12 +1,12 @@
 ---
 titolo: Videogioco "I cinque duchi" — Anno IV, il mondo oltre l'Europa: l'archivio di Ferrara e il pianeta a strati
-versione: 0.5
-data: 2026-10-02
+versione: 0.6
+data: 2026-10-03
 autore: Pietro Fabbri (con Claude)
-revisioni: v0.1 (prima stesione dell'01/10/2026); v0.2 (la regola di Newton al 4-7); v0.3 (rimandi); v0.4 (rimandi); v0.5 (le sedici decisioni di Pietro del 02/10/2026: il buco di `S66` è chiuso con una sostituzione — la 4-16 passa da Ibn Khaldun ad Ashoka —, il presente entra come facoltative forti, i due collettivi restano due tappe distinte, i codici `Q` sono confermati, e i buchi geografici dell'anno diventano facoltative continentali)
+revisioni: v0.1 (prima stesione dell'01/10/2026); v0.2 (la regola di Newton al 4-7); v0.3 (rimandi); v0.4 (rimandi); v0.5 (le sedici decisioni di Pietro del 02/10/2026: il buco di `S66` è chiuso con una sostituzione — la 4-16 passa da Ibn Khaldun ad Ashoka —, il presente entra come facoltative forti, i due collettivi restano due tappe distinte, i codici `Q` sono confermati, e i buchi geografici dell'anno diventano facoltative continentali; v0.6 (le 30 schede dei personaggi dell'anno sono in `dati/`, estratte dal §5))
 fonte del materiale: due documenti di progettazione storico-pedagogica di Pietro ("ANNO IV — IL MONDO OLTRE L'EUROPA" e "ANNO IV — LE CIVILTÀ DEL MONDO"), 01/10/2026
-dati: videogioco-5-duchi-anno4-mondo.json e videogioco-5-duchi-anno4-personaggi.json (da generare, v0.1)
-documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.1, livelli 4-1…4-30), videogioco-5-duchi-curricolo.md (v0.1, §4 cornice narrativa e §5.4 elenco dei livelli dell'anno 4), videogioco-5-duchi-luoghi.md (v0.3, la regola dei luoghi e i buchi geografici come facoltative continentali), videogioco-5-duchi-anno3-europa.md (v0.4, da cui questo documento continua le convenzioni), videogioco-5-duchi-anno2-penisola.md (v0.2), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-anno1-mappa.md (v0.9), videogioco-5-duchi-esercizi.md (v0.1), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3)
+dati: videogioco-5-duchi-anno4-personaggi.json (v0.6, le 30 schede del §5); videogioco-5-duchi-anno4-mondo.json (da generare, v0.1)
+documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.1, livelli 4-1…4-30), videogioco-5-duchi-curricolo.md (v0.1, §4 cornice narrativa e §5.4 elenco dei livelli dell'anno 4), videogioco-5-duchi-luoghi.md (v0.3, la regola dei luoghi e i buchi geografici come facoltative continentali), videogioco-5-duchi-anno3-europa.md (v0.4, da cui questo documento continua le convenzioni), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-anno1-mappa.md (v0.9), videogioco-5-duchi-esercizi.md (v0.1), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3)
 ---
 # Anno IV — Il mondo oltre l'Europa
 
@@ -779,6 +779,8 @@ Il quarto anno è l'anno più difficile del progetto: porta **schiavitù, conqui
 ---
 
 ## 15. Registro modifiche
+
+- **v0.6 (03/10/2026)**: le **30 schede dei personaggi dell'anno sono state generate in `dati/`** (`videogioco-5-duchi-anno4-personaggi.json`), con le **25 verifiche storiche** della §12 abbinate per codice. L'anno 4 è quello senza alcuna immagine attestata a vista: le 28 immagini che ci sono sono **file trovati, non ritratti certificati**, e il file lo dice voce per voce.
 
 - **v0.5 (02/10/2026)**: le sedici decisioni di Pietro. Il quarto capitolo era quello con il buco più visibile, ed è stato chiuso.
   - **il buco di `S66` è chiuso** con l'opzione (a): la **4-16** passa da Ibn Khaldun ad **Ashoka**, e con essa l-India antica entra nel percorso obbligatorio. Ibn Khaldun e Buddha diventano facoltative forti della stessa tappa, e nessuna delle due voci sparisce (§0.4);

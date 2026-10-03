@@ -1,9 +1,9 @@
 ---
 titolo: "Gli itinerari: chi incontri, dove, e con quale mezzo"
-versione: 0.1
+versione: 0.2
 data: 2026-10-03
 autore: "Progetto I cinque duchi"
-documenti collegati: videogioco-5-duchi-percorsi.md (v0.4), videogioco-5-duchi-anno1-mappa.md (v0.9), videogioco-5-duchi-anno2-penisola.md (v0.2), videogioco-5-duchi-anno3-europa.md (v0.4), videogioco-5-duchi-anno4-mondo.md (v0.5), videogioco-5-duchi-anno5-mondo.md (v0.6), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-itinerari.md (questo), AGENTS.md
+documenti collegati: videogioco-5-duchi-percorsi.md (v0.4), videogioco-5-duchi-anno1-mappa.md (v0.9), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-itinerari.md (questo), AGENTS.md
 ---
 
 # Gli itinerari: chi incontri, dove, e con quale mezzo
@@ -376,16 +376,30 @@ non c'è la riga viene **saltata e detta**.
 1. **Il mezzo del quinto anno** (§2): ventidue mezzi possibili, cinque dei quali
    sono del testo. La scelta è di Pietro e non è bloccante: senza mezzo dichiarato
    il gioco funziona, e la distanza si calcola quando il mezzo c'è.
-2. **Il catalogo degli anni 2-5**: gli anni 2-5 hanno nomi con codice `Q` che non
-   stanno in nessun file come stanno i 93 dell'anno 1. Senza quel catalogo, la
-   scheda di una facoltativa degli anni 2-5 non esiste, e la regola della `premi.md`
-   — che ogni premio abbia una fonte dichiarata — non può essere verificata su
-   **269 facoltativi**. Non è bloccante per gli itinerari, che funzionano senza, e
-   lo è per i premi.
+2. **Il catalogo degli anni 2-5**: **chiusa il 03/10/2026**, al primo gradino.
+   Le **120 schede** scritte a mano nei documenti sono ora in
+   `dati/videogioco-5-duchi-anno{2,3,4,5}-personaggi.json`, estratte da
+   `sorgenti/lingue/catalogo_personaggi.py`. Ogni scheda porta la sua destinazione
+   (obbligatoria o facoltativa) con **la prova** che l'ha abbinata, e i campi che i
+   documenti non scrivono restano a `null` **con il motivo accanto**.
+   **Quello che resta aperto, e non è una domanda di questo documento**: le 120
+   schede sono i **centoventi** obbligatori dei quattro anni. I **269
+   facoltativi** sono in parte nomi che il catalogo non contiene
+   (Agrippa, Alboino, Ada Lovelace, Alan Turing, Bob Kahn), e per quelli la scheda **non
+   esiste e va scritta**: è il catalogo esteso che `anno2-penisola.md` §6.3 chiama
+   **130 voci** e che nessun file ha. La regola della `premi.md` — che ogni premio
+   abbia una fonte dichiarata — è quindi verificabile sulle 120 schede e **non** sui
+   269 facoltativi, e va detto ogni volta che si scrive un premio.
 3. **Le cinque tappe del primo anno senza facoltativi** (§1): sono un dato o una
    dimenticanza? Se sono un dato, va scritto perché sono cinque e non tre.
 
 ## 8. Registro delle modifiche
+
+- **v0.2 (03/10/2026)**: la **Q2 del §7 è chiusa al primo gradino**: i quattro
+  cataloghi dei personaggi degli anni 2-5 sono in `dati/`, e portano la destinazione
+  di ciascuna scheda. Quel che resta è scritto nella Q2 stessa: i 269 facoltativi
+  sono nomi che il catalogo esteso deve ancora contenere, e la `premi.md` è
+  verificabile sulle 120 schede e non sui facoltativi.
 
 - **v0.1 (03/10/2026)**: prima stesione. Nasce da una domanda di Pietro sugli
   itinerari dei personaggi, e risponde mettendo in un file le tre cose che erano

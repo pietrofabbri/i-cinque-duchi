@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — audit delle questioni aperte: la lista operativa
-versione: 0.12
+versione: 0.13
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)
 fonte: lettura di tutti i quindici documenti di progetto, verificata da sorgenti/lingue/conta_questioni.py
-documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.4), videogioco-5-duchi-fonti-visive.md (v0.4), videogioco-5-duchi-furioso.md (v0.6), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-mappe.md (v1.1), videogioco-5-duchi-anno5-mondo.md (v0.6), videogioco-5-duchi-percorsi.md (v0.4), videogioco-5-duchi-anno4-mondo.md (v0.5), videogioco-5-duchi-anno3-europa.md (v0.4), videogioco-5-duchi-anno2-penisola.md (v0.2), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.1), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3), AGENTS.md
+documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.4), videogioco-5-duchi-fonti-visive.md (v0.4), videogioco-5-duchi-furioso.md (v0.6), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-mappe.md (v1.1), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.4), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.1), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3), AGENTS.md
 ---
 
 # Audit delle questioni aperte: la lista
@@ -22,18 +22,18 @@ Il documento è verificato da `sorgenti/lingue/conta_questioni.py`, che confront
 | | |
 |---|---|
 | Documenti con una sezione «Questioni aperte» | **15** |
-| Voci enumerate | **115** |
-| **Chiuse** | **29** |
-| **Aperte** | **86** |
+| Voci enumerate | **118** |
+| **Chiuse** | **30** |
+| **Aperte** | **88** |
 | Di cui bloccanti | quattro |
 | Di cui importanti (cambiano il gioco) | quindici |
 | Di cui minori (si possono rimandare) | le altre |
 
 **Il criterio**, dichiarato perché un numero senza criterio non è un dato. Una **voce** è un punto numerato, un `### Q1` o una riga di tabella della sezione «Questioni aperte». Una voce è **chiusa** se porta la marcatura nella sua **prima riga** — «chiusa», «risolto», «ratificata», «confermata» — e non in tutto il corpo, perché una voce aperta spiega dentro il corpo quale parte è stata chiusa.
 
-**Una voce non è sempre una domanda.** In `lingue.md` Q3 ci sono due sotto-voci dentro una sola domanda. Le **115 voci non sono 115 domande**.
+**Una voce non è sempre una domanda.** In `lingue.md` Q3 ci sono due sotto-voci dentro una sola domanda. Le **118 voci non sono 118 domande**.
 
-**Nessuna delle ventinove chiuse è bloccante**, e due delle quattro bloccanti rimaste non sono mai state domande: erano lavori, e sono stati fatti — i novanta pin il 02/10/2026 (§2bis), la tavolozza, le sagome, il fondo di Ferrara e i colori delle carte il 03/10/2026 (§3bis). Le decisioni prese hanno tolto lavoro, non lo hanno aggiunto.
+**Nessuna delle trenta chiuse è bloccante**, e due delle quattro bloccanti rimaste non sono mai state domande: erano lavori, e sono stati fatti — i novanta pin il 02/10/2026 (§2bis), la tavolozza, le sagome, il fondo di Ferrara e i colori delle carte il 03/10/2026 (§3bis). Le decisioni prese hanno tolto lavoro, non lo hanno aggiunto.
 
 ---
 
@@ -421,6 +421,14 @@ E la regola che ne segue, che è quella che il lavoro ha reso vera:
 ## 7. Registro delle modifiche
 
 | Data | Versione | Che cosa è cambiato |
+| 03/10/2026 | 0.13 | **I cataloghi dei personaggi degli anni 2, 3, 4 e 5 esistono: sono i quattro file `dati/videogioco-5-duchi-anno{2,3,4,5}-personaggi.json`, con le 120 schede.** Fino a ieri l'unico anno con un catalogo in `dati/` era il primo (93 schede), e gli altri quattro avevano **centoventi schede scritte a mano dentro i documenti**, mentre `anno2-penisola.md` §6.3 dichiarava da generare un catalogo di **130 voci** che nessun file aveva mai soddisfatto. La `premi.md` §3 pretende che ogni premio abbia una fonte dichiarata: senza i cataloghi la verifica si poteva fare solo sui 150 obbligatori e il progetto non poteva dichiarare di coprire tutta la scheda.
+  - **`sorgenti/lingue/catalogo_personaggi.py`** raccoglie quello che è già scritto e **non completa niente**: i campi che i documenti non scrivono (`note_verifica`) restano a `null` **con il motivo accanto**, perché un campo a `null` con la ragione è diverso da un campo assente, e il secondo è un difetto;
+  - ogni scheda porta la sua **destinazione** (obbligatoria o facoltativa) con **la prova** che l'ha abbinata — `codice`, `nome_normalizzato`, `nome_senza_articoli`, `nome_parziale` — e le ambiguità (una scheda abbinata a due tappe) sono dichiarate, non risolte scegliendo la prima;
+  - **tre difetti reali, tutti trovati mentre si scriveva il generatore.** *Primo*: le righe delle schede hanno **più campi insieme** (`**Periodo:** … **Luogo:** … **Pin:** …`) e la prima versione del parser leggeva una riga come un campo solo: `luogo`, `pin`, `strato` e `attendibilita` risultavano vuoti su **tutte e 120 le schede**, senza che il sintomo dicesse perché. *Secondo*: la `forza` è scritta nelle schede del terzo, quarto e quinto anno ma **nel secondo c'è solo nella tabella §4**, una volta su trenta — leggerla dalle sole schede avrebbe dato trenta forze nulle, cioè un dato falso. *Terzo*: il titolo di `Q92` è scritto con un corsivo che non chiude dopo la parentesi (`*(collettivo): progettisti, …*`) e quella scheda non abbinava niente;
+  - **la verifica che conta**: il generatore confronta i **collettivi** del catalogo con la **cifra scritta a mano** nel §4 di ciascun documento (3, 1, 2, 3) ed è verde su tutti e quattro. È il controllo che avrebbe morso il difetto del §3 del registro precedente, ed è quello che va rifatto a ogni rigenerazione: l'anno 5 è già stato corretto una volta perché la frase contava a memoria invece di contare la tabella;
+  - **quello che non è risolto, e va detto**: le 120 schede sono i **centoventi** obbligatori dei quattro anni. I **269 facoltativi** sono in parte nomi che il catalogo non contiene, e per quelli la scheda **non esiste e va scritta** — è il catalogo esteso delle 130 voci. La `premi.md` è quindi verificabile sulle 120 schede e **non** sui facoltativi.
+**Il conto di §1 è cambiato, e il difetto non era nel numero ma nel controllo che lo doveva confermare.** `conta_questioni.py` cercava la forma di prosa «**N** chiuse», che l'audit non usa: i suoi numeri stanno in una **tabella**, e la ricerca non trovava niente. Il controllo passava da mesi senza aver guardato niente — verde come un controllo che guarda, ma il suo verde non significava niente. Il conto reale è **118 voci, 30 chiuse, 88 aperte** (l'audit ne dichiarava 115/29/86, il README 114/29/85: **tre numeri diversi per la stessa cosa**). La tabella ora è letta, e il controllo confronta anche le due frasi in prosa del §1; con un difetto iniettato morde. È il **quarto** caso in tre giorni della stessa regola — dopo i 99 ambienti, i 57 controlli sulle mappe e le 2 voci collettive — ed è il primo in cui il difetto è nel controllo e non nel testo.
+La Q2 di `itinerari.md` passa da aperta a **chiusa al primo gradino**, e resta aperta la parte che riguarda le 130 voci del catalogo esteso.
 | 03/10/2026 | 0.12 | **Gli incontri dei centocinquanta livelli erano sparsi in tre documenti, e in uno di quelli il numero era sbagliato.** Nasce `videogioco-5-duchi-itinerari.md`: per ogni tappa, **dove si va, con quale mezzo, chi si incontra**, con la voce obbligatoria e i facoltativi distinti. Il conto è **150 tappe, 141 nomi distinti, 269 facoltativi, 9 voci collettive**, e le cifre sono calcolate, non scritte.
 **Il difetto che l'ha fatto nascere**: `anno5-mondo.md` §5 dichiarava **2 voci collettive su 30** e la tabella ne porta **tre** — la macchina (5-13), gli ingegneri delle reti (5-18) e **le mani che hanno approssimato √2** (5-6), tutte e tre marcate `collettivo C`. Il documento le contava a memoria invece di leggerle, ed è il terzo caso in due giorni di un numero in letteratura che invecchia (gli altri due: i 99 ambienti con coordinate e i 57 controlli sulle mappe). Il numero è corretto (anno5 v0.6) e la terza voce è **nominata**, perché un conteggio che non elenca è un conteggio che si rifà a memoria.
   - **`sorgenti/estrai_incontri.py`** legge le tabelle degli anni **per intestazione** — la seconda volta che la lezione viene applicata, dopo che `estrai_luoghi.py` aveva letto per numero e messo il filone del *Furioso* al posto della persona in 29 tappe su 30. Ogni voce porta **la prova** che l'ha fatta classificare (`marcatura_nella_tabella`, `codice`, `catalogo_anno1`, `iniziale_maiuscola`): una voce di cui non si sa come è stata decisa è una voce che il prossimo lettore classificherebbe diversamente;

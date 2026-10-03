@@ -1,12 +1,12 @@
 ---
 titolo: Videogioco "I cinque duchi" — Anno V, il mondo contemporaneo: il cantiere dell'Addizione Erculea e la carta della stima
-versione: 0.6
+versione: 0.7
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)
-revisioni: v0.1 (prima stesione del 01/10/2026); v0.2 (le nove persone viventi erano sei: tre nomi senza stato); v0.3 (rimandi di versione); v0.4 (le sedici decisioni di Pietro del 02/10/2026: il giocatore è dentro il *Furioso* e la tabella delle tappe ha la colonna della stanza e del filone, i codici `Q` sono confermati, `F11` entra come facoltativa, e i buchi geografici degli anni 2-4 diventano facoltative continentali)
+revisioni: v0.1 (prima stesione del 01/10/2026); v0.2 (le nove persone viventi erano sei: tre nomi senza stato); v0.3 (rimandi di versione); v0.4 (le sedici decisioni di Pietro del 02/10/2026: il giocatore è dentro il *Furioso* e la tabella delle tappe ha la colonna della stanza e del filone, i codici `Q` sono confermati, `F11` entra come facoltativa, e i buchi geografici degli anni 2-4 diventano facoltative continentali; v0.7 (le 30 schede dei personaggi dell'anno sono in `dati/`, con i campi `stato` e `aggiunta` portati in dati))
 fonte del materiale: due documenti di progettazione storico-pedagogica di Pietro ("ANNO V — IL MONDO CONTEMPORANEO, primo percorso" e "ANNO V — IL MONDO CONTEMPORANEO, secondo percorso"), 01/10/2026
-dati: videogioco-5-duchi-anno5-mondo.json e videogioco-5-duchi-anno5-personaggi.json e videogioco-5-duchi-anno5-stime.json (da generare, v0.1); dati/furioso/citazioni.json (v3, le trenta citazioni del *Furioso* e la facoltativa `5-22F`); dati/luoghi_gioco.json (blocco `tappe`: i trenta pin e le trenta stanze)
-documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.1, livelli 5-1…5-30), videogioco-5-duchi-curricolo.md (v0.1, §4 cornice narrativa e §5.5 elenco dei livelli dell'anno 5), videogioco-5-duchi-luoghi.md (v0.5, la regola dei luoghi e i due strati), videogioco-5-duchi-furioso.md (v0.6, i filoni e le citazioni che questo documento applica alle trenta tappe), videogioco-5-duchi-anno4-mondo.md (v0.5, da cui questo documento continua le convenzioni), videogioco-5-duchi-anno3-europa.md (v0.4), videogioco-5-duchi-anno2-penisola.md (v0.2), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-anno1-mappa.md (v0.9), videogioco-5-duchi-esercizi.md (v0.1), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3)
+dati: videogioco-5-duchi-anno5-personaggi.json (v0.7, le 30 schede del §5 con `stato` e `aggiunta`); videogioco-5-duchi-anno5-mondo.json e videogioco-5-duchi-anno5-stime.json (da generare, v0.1); dati/furioso/citazioni.json (v3, le trenta citazioni del *Furioso* e la facoltativa `5-22F`); dati/luoghi_gioco.json (blocco `tappe`: i trenta pin e le trenta stanze)
+documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.1, livelli 5-1…5-30), videogioco-5-duchi-curricolo.md (v0.1, §4 cornice narrativa e §5.5 elenco dei livelli dell'anno 5), videogioco-5-duchi-luoghi.md (v0.5, la regola dei luoghi e i due strati), videogioco-5-duchi-furioso.md (v0.6, i filoni e le citazioni che questo documento applica alle trenta tappe), videogioco-5-duchi-anno4-mondo.md (v0.5, da cui questo documento continua le convenzioni), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-anno1-mappa.md (v0.9), videogioco-5-duchi-esercizi.md (v0.1), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3)
 ---
 # Anno V — Il mondo contemporaneo
 
@@ -857,7 +857,7 @@ Il quinto anno è l'anno del **metodo**: apparentemente è il meno politico dei 
 5. **Aggiornare `AGENTS.md`** §3 con la sezione «Anno 5» (il luogo è una sala di progetto; l'unità di gioco è il calcolo; il numero è sempre accompagnato dall'errore) e con la sezione trasversale «La regola dei luoghi»
 6. **Generare i dati** in `dati/`:
    - `videogioco-5-duchi-anno5-mondo.json`: 30 tappe con livello, argomento, strato, pin, porta, funzione del personaggio, forza, confronto (voce del percorso II), rimando, facoltativi;
-   - `videogioco-5-duchi-anno5-personaggi.json`: le trenta schede obbligatorie più il catalogo esteso (§6.5), con i campi `stato` e `aggiunta`;
+   - ~~`videogioco-5-duchi-anno5-personaggi.json`~~ **fatto il 03/10/2026**: le trenta schede obbligatorie del §5, con i campi `stato` e `aggiunta`. Il catalogo esteso (§6.5) resta da produrre e non è un file di tappe;
    - `videogioco-5-duchi-anno5-porte.json`: le sette porte, con `PT-FUT` dichiarata **vuota**;
    - `videogioco-5-duchi-anno5-stime.json`: **i campi della carta delle stime** (§7.2) e le sei fasce bianche, che è il deliverable dell'anno e va progettato per primo
 7. **Prima tappa completa** (5-1, Fermi a Chicago), sul modello di `videogioco-5-duchi-tappa-1-01.md`, con l'ingresso della misura da `PT-LAB`, il commento di Alfonso II e la prima riga della carta delle stime con **due numeri**
@@ -868,6 +868,8 @@ Il quinto anno è l'anno del **metodo**: apparentemente è il meno politico dei 
 ---
 
 ## 15. Registro modifiche
+
+- **v0.7 (03/10/2026)**: le **30 schede dei personaggi dell'anno sono state generate in `dati/`** (`videogioco-5-duchi-anno5-personaggi.json`), con i due campi che questo anno introduce (`stato` e `aggiunta`) portati nei dati: i sei `in formazione`, i `def`, e i tre collettivi con i loro stati (`anonimo`, `senza nome`, `senza volto`). Le **27 verifiche storiche** della §12 sono abbinate per codice. Il confronto automatico fra i **tre** collettivi del catalogo e i **tre** dichiarati dal §4 è verde, e il generatore lo rifà a ogni esecuzione.
 
 - **v0.6 (03/10/2026)**: **le voci collettive erano tre, non due, e la frase le contava a memoria.** Il §5 dichiarava «**2 su 30**», e la tabella ne porta **tre**: la macchina (5-13), gli ingegneri delle reti (5-18) e **le mani che hanno approssimato √2** (5-6) — tutte e tre marcate `collettivo C` nella propria casella della voce. Il numero è corretto in due posti (§5 e la scheda di §11) e la terza voce è declaration nominata, perché un conteggio che non elenca è un conteggio che si rifà a memoria.
   - Il difetto è stato trovato da `sorgenti/estrai_incontri.py`, che legge le tabelle degli anni per **intestazione** e confronta il conto con la frase dei documenti: il controllo è **C5** in `sorgenti/verifica_incontri.py`, ed è l'unico dei cinque che confronta un dato con **una frase scritta a mano** in quattro documenti diversi. Provato con difetto iniettato (riportando il numero a 2) e morde;

@@ -1,13 +1,13 @@
 ---
 titolo: Videogioco "I cinque duchi" — Anno III, i personaggi d'Europa: la corte di Ferrara e la carta a strati
-versione: 0.4
-data: 2026-10-02
+versione: 0.5
+data: 2026-10-03
 autore: Pietro Fabbri (con Claude)
-revisioni: v0.1 (prima stesione dell'01/10/2026); v0.2 (correzione di un errore di calcolo sulla morte di Alfonso I); v0.3 (rimandi di versione); v0.4 (le sedici decisioni di Pietro del 02/10/2026: il vuoto del Novecento è risolto con (d)+(b), una sostituzione e un atlante di tredici voci; i codici `Q` sono confermati; le tre facoltative continentali dell'Europa centro-orientale, nordica e balcanica sono assegnate)
+revisioni: v0.1 (prima stesione dell'01/10/2026); v0.2 (correzione di un errore di calcolo sulla morte di Alfonso I); v0.3 (rimandi di versione); v0.4 (le sedici decisioni di Pietro del 02/10/2026: il vuoto del Novecento è risolto con (d)+(b), una sostituzione e un atlante di tredici voci; i codici `Q` sono confermati; le tre facoltative continentali dell'Europa centro-orientale, nordica e balcanica sono assegnate; v0.5 (le 30 schede dei personaggi dell'anno sono in `dati/`, estratte dal §5))
 data: 2026-10-01
 autore: Pietro Fabbri (con Claude)
 fonte del materiale: due documenti di progettazione storico-pedagogica di Pietro ("ANNO III — I PERSONAGGI D'EUROPA" e "ANNO III — L'EUROPA ATTRAVERSO I SECOLI"), 01/10/2026
-dati: videogioco-5-duchi-anno3-europa.json e videogioco-5-duchi-anno3-personaggi.json (da generare, v0.1)
+dati: videogioco-5-duchi-anno3-personaggi.json (v0.5, le 30 schede del §5); videogioco-5-duchi-anno3-europa.json (da generare, v0.1)
 documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.1, livelli 3-1…3-30), videogioco-5-duchi-curricolo.md (v0.1, §4 cornice narrativa e §5.3 elenco dei livelli dell'anno 3), videogioco-5-duchi-luoghi.md (v0.3, §4.7 i buchi geografici come facoltative continentali), videogioco-5-duchi-anno5-mondo.md (v0.4, che riprende il Novecento che qui era un vuoto), videogioco-5-duchi-anno2-penisola.md (v0.2, da cui questo documento continua le convenzioni), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-anno1-mappa.md (v0.9), videogioco-5-duchi-esercizi.md (v0.1), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3)
 ---
 # Anno III — I personaggi d'Europa
@@ -826,6 +826,8 @@ Il terzo anno introduce i temi più pesanti dell'intero progetto, e le regole de
 ---
 
 ## 15. Registro modifiche
+
+- **v0.5 (03/10/2026)**: le **30 schede dei personaggi dell'anno sono state generate in `dati/`** (`videogioco-5-duchi-anno3-personaggi.json`). Il file porta anche le **24 verifiche storiche** della §12, abbinate per codice, e la `forza` di ogni tappa presa dalla colonna della tabella §4 (il §5 la scriveva una volta su trenta).
 
 - **v0.4 (02/10/2026)**: le sedici decisioni di Pietro. Il capitolo sul Novecento, che era la questione aperta più pesante del documento, è stato risolto e riscritto.
   - **il vuoto del Novecento è chiuso** con (d)+(b): **una** sostituzione — la **3-28**, da Alan Turing a **Primo Levi**, con Turing che diventa la facoltativa forte che la casella già prevedeva — e un **atlante di tredici voci** (§4.2) che contiene i tre nomi indicati da Pietro (Curie, Freud, Arendt) più Levi e più le **tre facoltative continentali** che chiudono i buchi di Ungheria, Scandinavia e Balcani;

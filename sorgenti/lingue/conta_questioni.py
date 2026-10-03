@@ -106,20 +106,60 @@ def main():
     problemi = []
     if os.path.exists(audit):
         testo = open(audit, encoding="utf-8").read()
-        numeri = [int(n) for n in re.findall(
-            r"\*\*(\d+)\*\*\s+(?:chiuse|aperte|bloccanti|non\s+bloccanti)", testo)]
-        for n in numeri:
-            if n not in (aperte, chiuse, aperte + chiuse):
-                problemi.append(
-                    "l'audit dichiara %d, che il conto non conferma "
-                    "(aperte %d, chiuse %d, somma %d)" % (n, aperte, chiuse, aperte + chiuse))
+
+        # La tabella del §1, che e' **dove stanno i numeri**. La versione di prima di
+        # questo controllo cercava la forma di prosa «**N** chiuse», e in un documento
+        # che scrive i numeri in tabella quella forma non compare: la ricerca non
+        # trovava niente, il controllo passava, e l'audit dichiarava **115 voci** mentre
+        # il conto ne trovava **118**. Il difetto non era nel numero ma nel controllo che
+        # doveva confermarlo — e un controllo che non guarda niente e' verde come un
+        # controllo che guarda: solo che il verde del primo non significa niente.
+        dichiarati = {}
+        for riga in testo.split("\n"):
+            m = re.match(r"^\|\s*\**(Voci enumerate|Chiuse|Aperte)\**\s*\|\s*\*\*(\d+)\*\*\s*\|",
+                         riga)
+            if m:
+                dichiarati[m.group(1)] = int(m.group(2))
+        if not dichiarati:
+            problemi.append("non trovo la tabella dei numeri nel §1 dell'audit: "
+                            "il controllo non pu' confermare niente")
+        # tutte e tre le righe devono essere **leggibili**: una cella che perde il
+        # grassetto sparisce dalla ricerca, e una riga che sparisce e' una riga che
+        # il controllo non guarda piu'. Meglio un controllo che si rifiuta di tacere
+        # che un controllo che tace.
+        for chiave in ("Voci enumerate", "Chiuse", "Aperte"):
+            if chiave not in dichiarati:
+                problemi.append("la riga «%s» del §1 dell'audit non e' leggibile: "
+                                "il numero c'e' ma il controllo non lo vede"
+                                % chiave.lower())
+        for chiave, reale in (("Voci enumerate", aperte + chiuse),
+                              ("Chiuse", chiuse), ("Aperte", aperte)):
+            if chiave in dichiarati and dichiarati[chiave] != reale:
+                problemi.append("l'audit dichiara %s = %d, il conto dà %d"
+                                % (chiave.lower(), dichiarati[chiave], reale))
+
+        # E i numeri in prosa della sezione 1, che devono dire la stessa cosa.
+        sezione1 = re.search(r"^##\s*1\..*?(?=^##\s)", testo, re.M | re.S)
+        if sezione1:
+            corpo = sezione1.group(0)
+            m = re.search(r"\*\*(\d+) voci non sono \d+ domande\*\*", corpo)
+            if m and int(m.group(1)) != aperte + chiuse:
+                problemi.append("il §1 scrive «%s voci non sono … domande», "
+                                "la somma è %d" % (m.group(1), aperte + chiuse))
+            m = re.search(r"nessuna delle (\w+) chiuse", corpo, re.I)
+            if m:
+                parola = {"ventinove": 29, "trenta": 30, "ventotto": 28,
+                          "ventisette": 27, "ventisei": 26}.get(m.group(1).lower())
+                if parola is not None and parola != chiuse:
+                    problemi.append("il §1 scrive «nessuna delle %s chiuse», "
+                                    "il conto ne trova %d" % (m.group(1), chiuse))
     if problemi:
         print("problemi: %d" % len(problemi))
         for p in problemi:
             print("  " + p)
     else:
         print("problemi: 0")
-        print("(l'audit non dichiara numeri che il conto smentisce)")
+        print("(l'audit dichiara i numeri del §1 e il conto li conferma)")
     return 1 if problemi else 0
 
 

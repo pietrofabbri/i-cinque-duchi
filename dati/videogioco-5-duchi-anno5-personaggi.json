@@ -1,0 +1,1586 @@
+{
+  "versione": 1,
+  "data": "2026-10-03",
+  "anno": 5,
+  "documento": "videogioco-5-duchi-anno5-mondo.md",
+  "scopo": "le schede dei personaggi dell'anno 5, portate dai documenti in dati/ senza aggiungere nulla",
+  "come_si_legge": "per intestazione di sezione (`### Q117 ·`), non contando le righe; e ogni riga si divide sui grassetti, perche' i campi del primogruppo stanno tutti sulla stessa riga",
+  "avvertenza": "questo file **non completa** le schede, le raccoglie. Il campo `note_verifica` resta a null con il motivo accanto, e ogni scheda dichiara in `campi_vuoti` che cosa manca. Un catalogo con campi vuoti dichiarati e' usabile; un catalogo che non li dichiara mente",
+  "avvertenza_immagine": "`fonte_immagine` viene da `sorgenti/art/ritratti_disponibili.json`, che e' una ricerca; il giudizio e' in `sorgenti/art/attestazione_immagini.json`. Una scheda con immagine e `verifica_immagine: non_verificata_a_vista` **non ha un ritratto certificato**: ha un file che sembra giusto",
+  "codici": "proposto_nei_documenti: i codici Q sono proposti nei documenti, non confermati",
+  "schede": 30,
+  "obbligatori": 30,
+  "facoltativi": 4,
+  "senza_tappa": [],
+  "collettivi": 3,
+  "collettivi_dichiarati": 3,
+  "campi_vuoti_totali": 0,
+  "con_immagine": 15,
+  "immagine_verificata": 2,
+  "con_verifiche_storiche": 27,
+  "problemi": [],
+  "persone": [
+    {
+      "codice": "Q301",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Enrico Fermi",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q301)",
+      "riga_documento": 305,
+      "periodo": "1901–1954",
+      "luogo": "Roma, Chicago, Los Alamos",
+      "pin": "Chicago",
+      "strato": "S83",
+      "stato": "def",
+      "attendibilita": "D",
+      "domanda": "non sai la risposta: come fai a dare un numero che sia comunque giusto?",
+      "fonte_epoca": "le lezioni e i problemi di fisica nucleare",
+      "ricostruzione": "il metodo degli ordini di grandezza",
+      "memoria_successiva": "l'uomo che ha costruito la bomba",
+      "aggancio": "il livello chiede l'errore assoluto e relativo e l'aritmetica in virgola mobile. Il «problema di Fermi» è il caso in cui non si sa la risposta e va data comunque: conta gli ordini di grandezza con quello che hai. Il gioco può chiedere al giocatore la stima *prima* di mostrargli la misura vera, e mostrare che una stima con l'ordine di grandezza gi vale più di una risposta esatta tirata a caso. Forte",
+      "forza": "forte",
+      "motto": "«Non so la risposta, ma so di che grandezza è.»",
+      "emblema": "un foglio con una domanda e una potenza di dieci scritta a mano",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {},
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V3",
+          "domanda": "il ruolo di Fermi nel programma nucleare e la datazione; la sua attività di «problema di Fermi» come metodo di stima",
+          "dove": "Q301 — Fermi"
+        }
+      ],
+      "fonte_immagine": "Enrico_Fermi_1943-49.jpg",
+      "etichetta_immagine": null,
+      "verifica_immagine": "non_verificata_a_vista",
+      "verifica_immagine_motivo": "la ricerca ha trovato il file Enrico_Fermi_1943-49.jpg, ma nessuno lo ha guardato: il nome di un file non e' una prova",
+      "licenza": "Public domain",
+      "licenza_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Enrico_Fermi_1943-49.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "autore": "Department of Energy-Office of Public Affairs, restored by Yann",
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-1",
+          "ruolo": "obbligatorio",
+          "prova": "codice"
+        }
+      ]
+    },
+    {
+      "codice": "Q302",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Karl Popper",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q302)",
+      "riga_documento": 312,
+      "periodo": "1902–1994",
+      "luogo": "Vienna, Londra, Nuova Zelanda",
+      "pin": "Vienna",
+      "strato": "S82",
+      "stato": "def",
+      "attendibilita": "D",
+      "domanda": "come si fa a trovare il punto esatto in cui un'idea si rompe?",
+      "fonte_epoca": "la *Logik der Forschung* (1934)",
+      "ricostruzione": "il criterio di falsificabilità",
+      "memoria_successiva": "l'uomo che ha deciso che la scienza è un metodo e non un corpo di verità",
+      "aggancio": "la bisezione cerca lo zero di una funzione dividendo l'intervallo: a metà, di qua o di là? È letteralmente la procedura con cui si cerca il punto in cui un'idea cessa di reggere, e Popper è il primo a chiedere che quella ricerca sia metodo, non talento. Forte",
+      "forza": "forte",
+      "motto": "«Un'idea si valida provando a falsificarla: se non si può, è un oggetto di fede.»",
+      "emblema": "un intervallo diviso a metà, con un punto interrogativo a metà",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {},
+      "forza_prova": "tabella_tappe",
+      "verifiche": [],
+      "fonte_immagine": "Karl_Popper.jpg",
+      "etichetta_immagine": null,
+      "verifica_immagine": "non_verificata_a_vista",
+      "verifica_immagine_motivo": "la ricerca ha trovato il file Karl_Popper.jpg, ma nessuno lo ha guardato: il nome di un file non e' una prova",
+      "licenza": "No restrictions",
+      "licenza_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Karl_Popper.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "autore": "\nFranz Barta",
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-2",
+          "ruolo": "obbligatorio",
+          "prova": "codice"
+        }
+      ]
+    },
+    {
+      "codice": "Q303",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Isaac Newton",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q303)",
+      "riga_documento": 319,
+      "periodo": "1643–1727",
+      "luogo": "Londra, Cambridge, Woolsthorpe",
+      "pin": "Londra",
+      "strato": "S80",
+      "stato": "def",
+      "attendibilita": "D",
+      "domanda": "partendo da un numero sbagliato, quante volte ci arrivo a quello giusto?",
+      "fonte_epoca": "i *Principia* e i trattati giovanili",
+      "ricostruzione": "l'iterazione",
+      "memoria_successiva": "il genio solo, che è l'errore più diffuso",
+      "aggancio": "il livello è il suo metodo, e l'errore che il gioco deve insegnare è proprio quello che l'iterazione non ha: partendo da una stima sbagliata si può divergere invece di convergere. Il livello permette al giocatore di scegliere il punto di partenza e di vedere che cosa succede: è il primo caso in cui «la risposta» dipende da una decisione presa prima. Forte",
+      "forza": "forte",
+      "motto": "«Ogni tanto la matematica mi prende per mano.»",
+      "emblema": "una tangente a una curva che taglia un'altra",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {},
+      "forza_prova": "tabella_tappe",
+      "verifiche": [],
+      "fonte_immagine": "Portrait_of_Sir_Isaac_Newton,_1689.jpg",
+      "etichetta_immagine": null,
+      "verifica_immagine": "non_verificata_a_vista",
+      "verifica_immagine_motivo": "la ricerca ha trovato il file Portrait_of_Sir_Isaac_Newton,_1689.jpg, ma nessuno lo ha guardato: il nome di un file non e' una prova",
+      "licenza": "Public domain",
+      "licenza_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Portrait_of_Sir_Isaac_Newton%2C_1689.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "autore": "Godfrey Kneller",
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-3",
+          "ruolo": "obbligatorio",
+          "prova": "codice"
+        }
+      ]
+    },
+    {
+      "codice": "Q304",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "John von Neumann",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q304)",
+      "riga_documento": 326,
+      "periodo": "1903–1957",
+      "luogo": "Budapest, Princeton, Los Alamos",
+      "pin": "Los Alamos",
+      "strato": "S83",
+      "stato": "def",
+      "attendibilita": "D",
+      "domanda": "come fa a darmi la costante dell'Universo un tiro casuale?",
+      "fonte_epoca": "i lavori di Los Alamos",
+      "ricostruzione": "il metodo di Monte Carlo",
+      "memoria_successiva": "il cervello della macchina, che è un'altra storia e molto romanzata",
+      "aggancio": "il metodo Monte Carlo stima una quantità esatta usando numeri casuali, e la sua prima applicazione è stata una mano invisibile che si muove a caso e calcola al tempo stesso l'energia di una bomba. Il livello chiede di stimare π con un lancio di frecce in un quadrato: il giocatore vede che l'errore scende con il numero di lanci, e che nessun lancio dà la risposta esatta. Forte",
+      "forza": "forte",
+      "motto": "«Meglio una risposta che si può simulare che una verità che si può solo intuire.»",
+      "emblema": "un quadrato pieno di frecce casuali e un numero che si avvicina",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {},
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V4",
+          "domanda": "il ruolo nel calcolo automatico (architettura, EDVAC) e la nascita effettiva del metodo Monte Carlo (con Ulam e Metropolis): non attribuirgli il metodo da solo",
+          "dove": "Q304 — von Neumann"
+        }
+      ],
+      "fonte_immagine": "JohnvonNeumann-LosAlamos.gif",
+      "etichetta_immagine": null,
+      "verifica_immagine": "non_verificata_a_vista",
+      "verifica_immagine_motivo": "la ricerca ha trovato il file JohnvonNeumann-LosAlamos.gif, ma nessuno lo ha guardato: il nome di un file non e' una prova",
+      "licenza": "Attribution",
+      "licenza_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/JohnvonNeumann-LosAlamos.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "autore": "LANL",
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-5",
+          "ruolo": "obbligatorio",
+          "prova": "codice"
+        }
+      ]
+    },
+    {
+      "codice": "Q305",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Le mani che hanno approssimato √2",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q305)",
+      "riga_documento": 333,
+      "periodo": "circa 1800 a.C.",
+      "luogo": "Babilonia",
+      "pin": "Babilonia",
+      "strato": "S80",
+      "stato": "anonimo",
+      "attendibilita": "C",
+      "domanda": "un numero con cui non si può fare niente di esatto e con cui si costruiva tutto: che cosa se ne fa?",
+      "fonte_epoca": "le tavolette babilonesi, conservate in musei",
+      "ricostruzione": "il metodo di approssimazione",
+      "memoria_successiva": "nessuna, ed è la lezione",
+      "aggancio": "il livello chiede la convergenza di una successione per ricorrenza: si parte da 1, si moltiplica per 1,4, si arrotonda, si ripete, e dopo quattro passi si ottiene 1,414. Le tavolette babilonesi contengono proprio questo, con l'approssimazione scritta in cifre sessaggesimali. Medio, perché la connessione con le successioni moderne è analogica, ma il livello può mostrarlo in modo diretto: la stessa iterazione, e il numero arriva a più cifre esatte di quante oggi si sappiano scrivere in forma esatta. E sono mani senza nome, che è il tema dell'Anno IV che torna",
+      "forza": "medio",
+      "motto": "«Non sappiamo chi eravamo. Sappiamo che sapevamo il numero.»",
+      "emblema": "una tavoletta con due colonne di cifre",
+      "aggiunta_dal_progetto": false,
+      "collettivo": true,
+      "bandiere": {
+        "collettivo": "(collettivo)"
+      },
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V28",
+          "domanda": "i numeri delle tavolette e le cifre iniziali e finali: verificare perché il gioco non deve mostrare una sequenza di cifre senza dire quale tavoletta",
+          "dove": "Q305 — le tavolette di √2"
+        }
+      ],
+      "fonte_immagine": null,
+      "etichetta_immagine": null,
+      "verifica_immagine": "nessuna_immagine",
+      "verifica_immagine_motivo": "la ricerca non ha trovato nessun file: la scheda usa l'emblema, come vuole la `AGENTS.md` §5",
+      "licenza": null,
+      "licenza_url": null,
+      "autore": null,
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-6",
+          "ruolo": "obbligatorio",
+          "prova": "nome_normalizzato"
+        }
+      ]
+    },
+    {
+      "codice": "Q306",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Vera Rubin",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q306)",
+      "riga_documento": 340,
+      "periodo": "1928–2016",
+      "luogo": "Bethesda, Washington",
+      "pin": "Bethesda",
+      "strato": "S85",
+      "stato": "def",
+      "attendibilita": "D",
+      "domanda": "non vedo metà dell'Universo: la calcolo dall'area sotto la curva?",
+      "fonte_epoca": "gli articoli sulla rotazione delle galassie",
+      "ricostruzione": "la questione della materia oscura",
+      "memoria_successiva": "«la donna che ha visto l'oscurità», che è un titolo e non una spiegazione",
+      "aggancio": "il livello chiede l'area sotto una curva con rettangoli e trapezi. La curva che Rubin misura è quella della velocità di rotazione delle stelle in funzione dalla distanza dal centro: sotto quella curva c'è la massa. E la curva è piatta dove non dovrebbe esserlo. Il gioco può mostrare che integrando la curva si ottiene la massa, e che la massa ottenuta non basta a spiegare il moto: il numero è giusto e il modello è sbagliato. Forte",
+      "forza": "forte",
+      "motto": "«La curva è piatta. Nessuno me l'aveva detto che non poteva esserlo.»",
+      "emblema": "una galassia vista di lato, con una curva che non scende",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {},
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V5",
+          "domanda": "la scoperta della rotazione delle galassie e le altre tappe del suo lavoro (le supernovae, la materia oscura): verificare che cosa si attribuisce a lei e che cosa al gruppo",
+          "dove": "Q306 — Vera Rubin"
+        }
+      ],
+      "fonte_immagine": "Vera_Rubin.jpg",
+      "etichetta_immagine": null,
+      "verifica_immagine": "non_verificata_a_vista",
+      "verifica_immagine_motivo": "la ricerca ha trovato il file Vera_Rubin.jpg, ma nessuno lo ha guardato: il nome di un file non e' una prova",
+      "licenza": "Public domain",
+      "licenza_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Vera_Rubin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "autore": "NASA",
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-4",
+          "ruolo": "obbligatorio",
+          "prova": "codice"
+        }
+      ]
+    },
+    {
+      "codice": "Q307",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "James Lovelock",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q307)",
+      "riga_documento": 347,
+      "periodo": "1911–2022",
+      "luogo": "Londra, Marlow",
+      "pin": "Londra",
+      "strato": "S86",
+      "stato": "def",
+      "attendibilita": "D+I",
+      "domanda": "tutto l'insieme cambia ogni volta e nessuno lo controlla: come lo si tiene in piede?",
+      "fonte_epoca": "gli articoli su Gaia",
+      "ricostruzione": "le simulazioni",
+      "memoria_successiva": "l'ipotesi che è ancora un'ipotesi, e va detto",
+      "aggancio": "il livello chiede la simulazione a tempo discreto: lo stato del sistema si calcola passo dopo passo. È il modo in cui si studia oggi l'atmosfera, e la versione più famosa è il «mondo margherita» di Lovelock, in cui il temperatura di una pianeta è governata da un'algebra di organismi. Il gioco mostra che il passo piccolo non garantisce niente: la simulazione è buona finché è calibrata, e va calibrata con dati. Forte",
+      "forza": "forte",
+      "motto": "«Il pianeta è un sistema di feedback, e io l'ho potuto solo simulare.»",
+      "emblema": "una margherita stilizzata con le sue \"petale\" numeriche",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {},
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V6",
+          "domanda": "l'ipotesi Gaia è un'ipotesi discussa: la scheda non deve presentarla come teoria accettata, e la sua validità empirica è ancora dibattuta",
+          "dove": "Q307 — Lovelock"
+        }
+      ],
+      "fonte_immagine": "James_Lovelock,_2005_(cropped).jpg",
+      "etichetta_immagine": null,
+      "verifica_immagine": "non_verificata_a_vista",
+      "verifica_immagine_motivo": "la ricerca ha trovato il file James_Lovelock,_2005_(cropped).jpg, ma nessuno lo ha guardato: il nome di un file non e' una prova",
+      "licenza": "CC BY-SA 1.0",
+      "licenza_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/James_Lovelock%2C_2005_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "autore": "Bruno Comby",
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-7",
+          "ruolo": "obbligatorio",
+          "prova": "codice"
+        }
+      ]
+    },
+    {
+      "codice": "Q308",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Sergej Korolëv",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q308)",
+      "riga_documento": 354,
+      "periodo": "1907–1966",
+      "luogo": "Zhytomyr, Mosca, Bajkonur",
+      "pin": "Bajkonur",
+      "strato": "S83",
+      "stato": "def",
+      "attendibilita": "D",
+      "domanda": "se sbaglio due volte di fila, il razzo cade?",
+      "fonte_epoca": "i rapporti dei voli",
+      "ricostruzione": "il calcolo delle orbite",
+      "memoria_successiva": "l'ingegnere che non volò mai e che passò anni in prigionia",
+      "aggancio": "il livello chiede gli equilibri oscillatori con attrito e il problema degli N corpi. Un veicolo in orbita è un sistema che si calcola a passo di secondo, e ogni errore di rotta si somma. Il parallelo con gli oscillatori è che l'orbita è un moto che si ripete: se il sistema è smorzato, cade; se è stabile, resta. Medio, perché il legame con l'attrito è un'analogia e non una proprietà del programma spaziale, ma il caso è autentico e documentato",
+      "forza": "medio",
+      "motto": "«L'orbita non è un punto: è un numero che ogni secondo va ricalcolato.»",
+      "emblema": "due orbite quasi sovrapposte e una freccia che indica la deriva",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {},
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V7",
+          "domanda": "il progetto del razzo, le date, il fatto che l'ingegnere non volò mai: verificare perché (detenzione, prigionia) e che cosa è documentato",
+          "dove": "Q308 — Korolëv"
+        }
+      ],
+      "fonte_immagine": "Korolyov (1934).jpg",
+      "etichetta_immagine": "fotografia",
+      "verifica_immagine": "accettata",
+      "verifica_immagine_motivo": "Korolev nel 1934, undici anni prima del primo satellite.",
+      "licenza": "Public domain",
+      "licenza_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Korolyov_%281934%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "autore": "Unknown Soviet photographer",
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-8",
+          "ruolo": "obbligatorio",
+          "prova": "codice"
+        }
+      ]
+    },
+    {
+      "codice": "Q309",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "John Snow",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q309)",
+      "riga_documento": 361,
+      "periodo": "1813–1858",
+      "luogo": "Londra",
+      "pin": "Londra, Broad Street",
+      "strato": "S81",
+      "stato": "def",
+      "attendibilita": "D",
+      "domanda": "un numero di morti in una città: che cosa devo guardare?",
+      "fonte_epoca": "la distribuzione dei casi",
+      "ricostruzione": "l'acqua",
+      "memoria_successiva": "l'uomo che chiuse la pompa, che è una parte sola della storia e non tutta",
+      "aggancio": "il livello introduce i modelli epidemici e dice che un'epidemia è un sistema con tre fasi. Il caso di Snow è il primo caso in cui una mappa di punti cambia la decisione, e mostra che il dato non è il numeroaggregato ma la sua distribuzione. Il gioco deve anche dire la parte scomoda: chiudere la pompa aiutò, ma le condizioni igieniche erano il motivo per cui il colera era lì, e la fonte era l'acqua, non la cattiva aria. Forte",
+      "forza": "forte",
+      "motto": "«Non guardo la media: guardo la mappa.»",
+      "emblema": "una mappa di strade con una pompa cerchiata due volte",
+      "aggiunta_dal_progetto": true,
+      "collettivo": false,
+      "bandiere": {
+        "aggiunta": "(aggiunta)"
+      },
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V8",
+          "domanda": "la vicenda del Broad Street è la più sovracitata della epidemiologia: verificare che cosa dice il testo del 1855 e che cosa è leggenda (la «pompa» come unico intervento efficace è una semplificazione). È una verifica che conta, perché il gioco la usa come modello di metodo",
+          "dove": "Q309 — John Snow"
+        }
+      ],
+      "fonte_immagine": "John_Snow.jpg",
+      "etichetta_immagine": "fotografia",
+      "verifica_immagine": "accettata",
+      "verifica_immagine_motivo": "dagherrotipia di John Snow: anteriore di quarant'anni alla scoperta del colera.",
+      "licenza": "Public domain",
+      "licenza_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/John_Snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "autore": "",
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-9",
+          "ruolo": "obbligatorio",
+          "prova": "nome_normalizzato"
+        }
+      ]
+    },
+    {
+      "codice": "Q310",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Hans Rosling",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q310)",
+      "riga_documento": 368,
+      "periodo": "1948–2017",
+      "luogo": "Uppsala, Stoccolma",
+      "pin": "Stoccolma",
+      "strato": "S87",
+      "stato": "def",
+      "attendibilita": "D",
+      "domanda": "ho sbagliato i dati o l'asse?",
+      "fonte_epoca": "le serie storiche",
+      "ricostruzione": "gli assi ingannevoli",
+      "memoria_successiva": "l'uomo che mostrava che il mondo stava andando meglio, e che a questo punto quasi nessuno crede",
+      "aggancio": "il livello è la validazione dei modelli e l'analisi di sensibilità: che cosa succede al risultato se cambio un parametro? Rosling ha costruito un intero racconto su una cosa che il gioco può far vedere in trenta secondi: gli stessi dati, due assi diversi, due storie opposte. E aggiunge la parte difficile: i dati li ha raccolti lui, e il confronto con le fontiequindi una verifica, non un'opinione. Forte",
+      "forza": "forte",
+      "motto": "«Il mondo non è andato peggio. Lo abbiamo guardato peggio.»",
+      "emblema": "due grafici identici con assi verticali diversi",
+      "aggiunta_dal_progetto": true,
+      "collettivo": false,
+      "bandiere": {
+        "aggiunta": "(aggiunta)"
+      },
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V9",
+          "domanda": "i dati Gapminder e la loro attendibilità; la forma dei grafici a bolle e il ruolo degli assi",
+          "dove": "Q310 — Rosling"
+        }
+      ],
+      "fonte_immagine": "Hans_Rosling,_2016_(cropped).jpg",
+      "etichetta_immagine": null,
+      "verifica_immagine": "non_verificata_a_vista",
+      "verifica_immagine_motivo": "la ricerca ha trovato il file Hans_Rosling,_2016_(cropped).jpg, ma nessuno lo ha guardato: il nome di un file non e' una prova",
+      "licenza": "CC BY 3.0",
+      "licenza_url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Hans_Rosling%2C_2016_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "autore": "Gapminder Foundation",
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-10",
+          "ruolo": "obbligatorio",
+          "prova": "nome_normalizzato"
+        }
+      ]
+    },
+    {
+      "codice": "Q311",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Fei-Fei Li",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q311)",
+      "riga_documento": 375,
+      "periodo": "1976–",
+      "luogo": "Pechino, Princeton, Stanford",
+      "pin": "Princeton",
+      "strato": "S88",
+      "stato": "in formazione",
+      "attendibilita": "D",
+      "domanda": "un computer non ha visto niente: come gli dico che cosa deve guardare?",
+      "fonte_epoca": "l'insieme di dati e le sue schede",
+      "ricostruzione": "la tassonomia e l'etichettatura",
+      "memoria_successiva": "nessuna: la sua storia è ancora in corso",
+      "aggancio": "il livello è imparare dai dati ed è anche la prima tappa che parla di chi *sceglie* i dati. Un immagine non è un dato finché qualcuno non l'ha chiamata «gatto». La scelta delle etichette, la quantità di esempi per classe e la divisione fra dati di addestramento, di validazione e di test sono scelte politiche prima che tecniche, ed è esattamente ciò che il livello chiede. Forte. La scheda dichiara `stato: in formazione` e non afferma che la sua visione sia corretta",
+      "forza": "forte",
+      "motto": "«Un computer non ha mai visto niente: ha solo quello che noi gli abbiamo dato.»",
+      "emblema": "una griglia di immagini con una etichetta scritta a mano",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {
+        "in_formazione": "(in formazione)"
+      },
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V10",
+          "domanda": "la costruzione di ImageNet, la quantità e la provenienza delle etichette, e il fatto che chi le ha fatte era anonimo: è la scheda che regge l'aggancio e va verificata voce per voce",
+          "dove": "Q311 — Fei-Fei Li"
+        }
+      ],
+      "fonte_immagine": null,
+      "etichetta_immagine": null,
+      "verifica_immagine": "nessuna_immagine",
+      "verifica_immagine_motivo": "la ricerca non ha trovato nessun file: la scheda usa l'emblema, come vuole la `AGENTS.md` §5",
+      "licenza": null,
+      "licenza_url": null,
+      "autore": null,
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-11",
+          "ruolo": "obbligatorio",
+          "prova": "nome_normalizzato"
+        }
+      ]
+    },
+    {
+      "codice": "Q312",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Jorge Luis Borges",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q312)",
+      "riga_documento": 382,
+      "periodo": "1899–1986",
+      "luogo": "Buenos Aires, Ginevra",
+      "pin": "Buenos Aires",
+      "strato": "S83",
+      "stato": "def",
+      "attendibilita": "D+F",
+      "domanda": "tutti i libri possibili, con un numero sbagliato ogni quattro righe",
+      "fonte_epoca": "«La biblioteca di Babel» (1941)",
+      "ricostruzione": "le combinazioni",
+      "memoria_successiva": "il labirinto, che è un'altra cosa",
+      "aggancio": "il livello chiede gli automi a stati finiti, cioè i sistemi che possono essere in un numero finito di stati e che hanno un insieme finito di regole di passaggio. La biblioteca di Babel è esattamente questo: venticinque simboli, tutte le combinazioni possibili, un insieme finito di regole che generano tutto. E i suoi libri contengono errori aritmetici: perché il generatore non capiva la matematica che produceva. Il gioco può mostrarlo con un automa a tre stati che genera l'alfabeto, e poi chiedere che cosa significhi che un sistema finito produca un testo infinito. Forte",
+      "forza": "forte",
+      "motto": "«Il libro è scritto, ma nessuno capirà la matematica che lo ha scritto.»",
+      "emblema": "una biblioteca con scaffali identici all'infinito",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {},
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V11",
+          "domanda": "«Tlön, Uqbar, Orbis Tertius» è un racconto e non un modello: la scheda non deve presentarlo come una previsione",
+          "dove": "Q312 — Borges"
+        }
+      ],
+      "fonte_immagine": "Jorge_Luis_Borges_(crop).jpg",
+      "etichetta_immagine": null,
+      "verifica_immagine": "non_verificata_a_vista",
+      "verifica_immagine_motivo": "la ricerca ha trovato il file Jorge_Luis_Borges_(crop).jpg, ma nessuno lo ha guardato: il nome di un file non e' una prova",
+      "licenza": "Public domain",
+      "licenza_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Jorge_Luis_Borges_%28crop%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "autore": "Unknown authorUnknown author}",
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-12",
+          "ruolo": "obbligatorio",
+          "prova": "codice"
+        }
+      ]
+    },
+    {
+      "codice": "Q313",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "La macchina",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q313)",
+      "riga_documento": 389,
+      "periodo": "dal 1936 a oggi",
+      "luogo": "ovunque",
+      "pin": "Cambridge",
+      "strato": "S82",
+      "stato": "meccanismo",
+      "attendibilita": "C",
+      "domanda": "che cosa basta davvero a dire «sto pensando»?",
+      "fonte_epoca": "la descrizione del 1936",
+      "ricostruzione": "le simulazioni",
+      "memoria_successiva": "nessuna, perché le macchine non hanno memoria e gli esseri umani sì",
+      "aggancio": "è la prima tappa dell'anno la cui protagonista non è una persona, ed è una scelta deliberata. Il livello descrive una macchina con quattro pezzi (nastro, testina, stato, regola) e dimostra che bastano a calcolare tutto ciò che è calcolabile. Il gioco può far costruire al giocatore la macchina a mano e poi mostrare che quella macchina è capace di simulare qualunque altra macchina: la cosa più importante del Novecento detta da una figura senza volto. Forte",
+      "forza": "forte",
+      "motto": "«Quattro pezzi. Eppure, con questi quattro pezzi, ci si arriva a tutto.»",
+      "emblema": "un nastro, una testina e una freccia che si sposta",
+      "aggiunta_dal_progetto": false,
+      "collettivo": true,
+      "bandiere": {
+        "collettivo": "(collettivo)"
+      },
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V12",
+          "domanda": "la descrizione del 1936 è di Turing, che non è il personaggio della tappa: verificare che la tappa non attribuisca la macchina a un collettivo che non esiste",
+          "dove": "Q313 — La macchina"
+        }
+      ],
+      "fonte_immagine": null,
+      "etichetta_immagine": null,
+      "verifica_immagine": "nessuna_immagine",
+      "verifica_immagine_motivo": "la ricerca non ha trovato nessun file: la scheda usa l'emblema, come vuole la `AGENTS.md` §5",
+      "licenza": null,
+      "licenza_url": null,
+      "autore": null,
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-13",
+          "ruolo": "obbligatorio",
+          "prova": "nome_normalizzato"
+        }
+      ]
+    },
+    {
+      "codice": "Q314",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Alonzo Church",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q314)",
+      "riga_documento": 396,
+      "periodo": "1903–1964",
+      "luogo": "Princeton",
+      "pin": "Princeton",
+      "strato": "S82",
+      "stato": "def",
+      "attendibilita": "D",
+      "domanda": "esiste un programma che non si ferma mai: come fa uno a saperlo?",
+      "fonte_epoca": "l'articolo sul problema della decisione (1936)",
+      "ricostruzione": "la non calcolabilità",
+      "memoria_successiva": "il tecnico che ha fermato una teoria",
+      "aggancio": "il livello è il problema della fermata: esiste un programma che va in loop? La risposta di Church (e, in un altro formalismo, di Turing) è no: non è possibile saperlo. È il primo caso nella storia dell'informatica in cui una domanda ben posta ha una risposta che è «non si può rispondere», ed è la ragione per cui oggi esistono gli analizzatori statici e perché non possono essere completi. Forte",
+      "forza": "forte",
+      "motto": "«Ci sono programmi di cui non posso dirvi se finiscono. È un teorema, non una distrazione.»",
+      "emblema": "un nastro che gira e una scritta «non decidibile»",
+      "aggiunta_dal_progetto": true,
+      "collettivo": false,
+      "bandiere": {
+        "aggiunta": "(aggiunta)"
+      },
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V13",
+          "domanda": "l'articolo del 1936 e la distinzione fra lambda-calcolo e funzioni ricorsive; il problema della fermata è di Turing: non attribuirlo a Church",
+          "dove": "Q314 — Church"
+        }
+      ],
+      "fonte_immagine": null,
+      "etichetta_immagine": null,
+      "verifica_immagine": "respinta",
+      "verifica_immagine_motivo": "nessun ritratto di Alonzo Church con licenza libera: i file che si trovano cercando il nome sono altri Alonzo, e la foto di en.wikipedia e' ospitata in quel deposito e non e' libera. Emblema, dichiarandolo.",
+      "licenza": null,
+      "licenza_url": null,
+      "autore": null,
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-13",
+          "ruolo": "facoltativo",
+          "prova": "nome_normalizzato"
+        },
+        {
+          "livello": "5-14",
+          "ruolo": "obbligatorio",
+          "prova": "nome_normalizzato"
+        }
+      ]
+    },
+    {
+      "codice": "Q315",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Yann LeCun",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q315)",
+      "riga_documento": 403,
+      "periodo": "1960–",
+      "luogo": "Parigi, New York",
+      "pin": "New York",
+      "strato": "S89",
+      "stato": "in formazione",
+      "attendibilita": "D",
+      "domanda": "funziona benissimo e non sappiamo spiegare perché: che cosa vuol dire «non sappiamo»?",
+      "fonte_epoca": "le ricerche sulle reti",
+      "ricostruzione": "l'assenza di una teoria",
+      "memoria_successiva": "nessuna: la sua storia è ancora in corso",
+      "aggancio": "il livello distingue i problemi trattabili da quelli che non lo sono, e il caso dell'intelligenza artificiale è la versione seria di quella domanda: l'apprendimento funziona su problemi che nessuno sa risolvere in modo controllato, e non sappiamo perché. Il gioco deve dire che «non sappiamo ancora» è una frase che va sulla targa, non un fallimento. Forte",
+      "forza": "forte",
+      "motto": "«Funziona. Non sappiamo perché. È importante dirlo, non nasconderlo.»",
+      "emblema": "una rete di nodi con un punto interrogativo al centro",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {
+        "in_formazione": "(in formazione)"
+      },
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V14",
+          "domanda": "le sue posizioni sull'assenza di una teoria delle reti profonde sono citate e cambiano: verificare la data della fonte prima di usarle come motto",
+          "dove": "Q315 — LeCun"
+        }
+      ],
+      "fonte_immagine": null,
+      "etichetta_immagine": null,
+      "verifica_immagine": "nessuna_immagine",
+      "verifica_immagine_motivo": "la ricerca non ha trovato nessun file: la scheda usa l'emblema, come vuole la `AGENTS.md` §5",
+      "licenza": null,
+      "licenza_url": null,
+      "autore": null,
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-15",
+          "ruolo": "obbligatorio",
+          "prova": "nome_normalizzato"
+        },
+        {
+          "livello": "5-27",
+          "ruolo": "facoltativo",
+          "prova": "nome_normalizzato"
+        }
+      ]
+    },
+    {
+      "codice": "Q316",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Radia Perlman",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q316)",
+      "riga_documento": 410,
+      "periodo": "1951–",
+      "luogo": "Seattle, Digital Equipment Corporation",
+      "pin": "Seattle",
+      "strato": "S86",
+      "stato": "in formazione",
+      "attendibilita": "D",
+      "domanda": "che cosa succede se i messaggi girano in tondo?",
+      "fonte_epoca": "l'algoritmo che spegne i cicli",
+      "ricostruzione": "il protocollo di instradamento fra ponti",
+      "memoria_successiva": "l'inventore che non ha una medaglia con il suo nome",
+      "aggancio": "il livello chiede topologie e commutazione, cioè come i pacchetti attraversano una rete di apparati. Il problema di Perlman è il più classico dell'informatica distribuita: se due ponti si inoltrano l'uno all'altro il messaggio senza fine, la rete si blocca. La soluzione è calcolare la topologia e spegnere i cicli, e il gioco può far girare letteralmente i pacchetti e mostrarne il blocc. Forte",
+      "forza": "forte",
+      "motto": "«Due apparati che si parlano si mandano messaggi all'infinito. Bisogna spegnere il ciclo.»",
+      "emblema": "due scatole collegate da un filo che si duplica all'infinito",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {},
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V15",
+          "domanda": "l'algoritmo di instradamento fra ponti (STP, 1985) e il suo ruolo: verificare anche il fatto che non ha ricevuto premi importanti, che è la parte che la scheda usa",
+          "dove": "Q316 — Perlman"
+        }
+      ],
+      "fonte_immagine": null,
+      "etichetta_immagine": null,
+      "verifica_immagine": "nessuna_immagine",
+      "verifica_immagine_motivo": "la ricerca non ha trovato nessun file: la scheda usa l'emblema, come vuole la `AGENTS.md` §5",
+      "licenza": null,
+      "licenza_url": null,
+      "autore": null,
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-16",
+          "ruolo": "obbligatorio",
+          "prova": "codice"
+        }
+      ]
+    },
+    {
+      "codice": "Q317",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Vint Cerf",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q317)",
+      "riga_documento": 417,
+      "periodo": "1943–",
+      "luogo": "Los Angeles, Londra",
+      "pin": "Los Angeles",
+      "strato": "S84",
+      "stato": "in formazione",
+      "attendibilita": "D",
+      "domanda": "come si fa senza obbligare nessuno a cambiare lingua?",
+      "fonte_epoca": "le specifiche di TCP",
+      "ricostruzione": "i livelli",
+      "memoria_successiva": "Internet come mercato, che è un racconto politico e non una spiegazione",
+      "aggancio": "il livello è il modello a strati: ogni livello fa un lavoro e non sa nulla di quelli sotto. TCP/IP ha funzionato perché non ha obbligato nessuno a sostituire la propria rete: ha definito un'interfaccia, e l'interfaccia è ciò che rende compatibili cose diverse. È la stessa lezione del programma cinese del terzo anno e della tassa 4-17, applicata alla rete. Forte",
+      "forza": "forte",
+      "motto": "«Il segreto non è la strada: è che ognuno può parlare la sua lingua e ci si incontra a metà.»",
+      "emblema": "due reti con un incrocio di strati numerati",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {},
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V16",
+          "domanda": "il ruolo di Cerf e Kahn nel TCP, e il fatto che il Web di Berners-Lee si appoggia su Internet e non lo è: la distinzione è importante e va detta",
+          "dove": "Q317 — Cerf"
+        }
+      ],
+      "fonte_immagine": null,
+      "etichetta_immagine": null,
+      "verifica_immagine": "nessuna_immagine",
+      "verifica_immagine_motivo": "la ricerca non ha trovato nessun file: la scheda usa l'emblema, come vuole la `AGENTS.md` §5",
+      "licenza": null,
+      "licenza_url": null,
+      "autore": null,
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-17",
+          "ruolo": "obbligatorio",
+          "prova": "codice"
+        }
+      ]
+    },
+    {
+      "codice": "Q318",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Gli ingegneri delle reti",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q318)",
+      "riga_documento": 424,
+      "periodo": "dagli anni Settanta a oggi",
+      "luogo": "ovunque",
+      "pin": "una sala di riunione, 1983",
+      "strato": "S86",
+      "stato": "senza nome",
+      "attendibilita": "C",
+      "domanda": "uno standard di collegamento scritto da ingegneri di sei paesi: chi decide che cosa è corretto?",
+      "fonte_epoca": "i documenti dello standard",
+      "ricostruzione": "il comitato",
+      "memoria_successiva": "nessuna, ed è la lezione",
+      "aggancio": "il livello è Ethernet, CRC, la tabella dello switch: roba che ha fatto funzionare mezzo mondo e che nessuno conosce, perché è scritta in documenti tecnici e non in storie. È la seconda tappa dell'anno senza un nome proprio, ed è la risposta diretta al rischio dell'Anno V, che è l'elogio dei fondatori: Internet è stato costruito da centinaia di persone che hanno passato le giornate a discutere di bit di parità. Medio, perché il legame con il livello è tecnico e non narrativo, ma la tappa è necessaria",
+      "forza": "medio",
+      "motto": "«Non c'è un nome sulla porta. Ci sono ottocento pagine di standard.»",
+      "emblema": "una pila di documenti tecnici e un timbro di approvazione",
+      "aggiunta_dal_progetto": false,
+      "collettivo": true,
+      "bandiere": {
+        "collettivo": "(collettivo)"
+      },
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V17",
+          "domanda": "lo standard Ethernet del 1983 è di Xerox PARC e riguarda una sola tecnologia: la scheda non deve farlo sembrare il protocollo di collegamento di oggi",
+          "dove": "Q318 — Gli ingegneri delle reti"
+        }
+      ],
+      "fonte_immagine": null,
+      "etichetta_immagine": null,
+      "verifica_immagine": "nessuna_immagine",
+      "verifica_immagine_motivo": "la ricerca non ha trovato nessun file: la scheda usa l'emblema, come vuole la `AGENTS.md` §5",
+      "licenza": null,
+      "licenza_url": null,
+      "autore": null,
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-18",
+          "ruolo": "obbligatorio",
+          "prova": "nome_normalizzato"
+        }
+      ]
+    },
+    {
+      "codice": "Q319",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Donald Davies",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q319)",
+      "riga_documento": 431,
+      "periodo": "1924–2000",
+      "luogo": "Londra, Slough",
+      "pin": "Londra",
+      "strato": "S84",
+      "stato": "def",
+      "attendibilita": "D",
+      "domanda": "un numero che identifica un computer: che cosa succede quando i computer sono miliardi?",
+      "fonte_epoca": "i lavori sui pacchetti",
+      "ricostruzione": "l'indirizzamento",
+      "memoria_successiva": "il termine giusto, che nessuno conosce",
+      "aggancio": "il livello chiede indirizzi, maschere, sottoreti, NAT. Davies propose di spezzare i messaggi in pezzi («pacchetti») e di instradarli in modo indipendente, e il nome stesso viene da un suo schizzo. Il gioco può mostrare che il pacchetto è un numero con dentro un altro numero, cioè la subnetting è la stessa idea portata a un livello dentro. Forte",
+      "forza": "forte",
+      "motto": "«Ho chiamato i pezzi pacchetti, e per trent'anni nessuno ha saputo che ero io.»",
+      "emblema": "un messaggio spezzato in tre buste con l'indirizzo scritto fuori",
+      "aggiunta_dal_progetto": true,
+      "collettivo": false,
+      "bandiere": {
+        "aggiunta": "(aggiunta)"
+      },
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V18",
+          "domanda": "l'espressione «pacchetto» è di Davies; verificare la datazione del documento e il ruolo di Peter Kirstein nella Cambridge Ring",
+          "dove": "Q319 — Davies"
+        }
+      ],
+      "fonte_immagine": null,
+      "etichetta_immagine": null,
+      "verifica_immagine": "respinta",
+      "verifica_immagine_motivo": "Donald Davies non ha un ritratto libero verificabile: nessun file su Commons lo ritrae. Emblema.",
+      "licenza": null,
+      "licenza_url": null,
+      "autore": null,
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-18",
+          "ruolo": "facoltativo",
+          "prova": "nome_normalizzato"
+        },
+        {
+          "livello": "5-19",
+          "ruolo": "obbligatorio",
+          "prova": "nome_normalizzato"
+        }
+      ]
+    },
+    {
+      "codice": "Q320",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Alfonso II d'Este",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q320)",
+      "riga_documento": 438,
+      "periodo": "1533–1597",
+      "luogo": "Ferrara",
+      "pin": "Ferrara",
+      "strato": "S80",
+      "stato": "def",
+      "attendibilita": "D",
+      "domanda": "voglio un quartiere nuovo: e se non lo finirò mai?",
+      "fonte_epoca": "le piante ducali",
+      "ricostruzione": "l'ampliamento della città",
+      "memoria_successiva": "il duca elegante, che è quasi tutto ciò che in genere si dice di lui",
+      "aggancio": "il livello chiede di progettare la rete di un edificio: componenti, collegamenti, prestazioni. Alfonso II fa iniziare nel 1592 l'ampliamento della città, e il progetto è incompleto, perché fu interrotto e fu costruito solo in parte. È la prima e unica volta nel gioco che il committente vede finire l'anno senza vedere la fine del suo progetto, ed è il modo in cui il gioco chiude il ciclo dei cinque duchi. Forte",
+      "forza": "forte",
+      "motto": "«Ho ordinato una città. Se non sarà finita, l'avrò almeno ordinata.»",
+      "emblema": "una pianta di quartieri con una parte lasciata in bianco",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {},
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V1",
+          "domanda": "verifica prioritaria. Le date (1559–1597), l'inizio dei lavori (1592), l'attribuzione agli ingegneri ducali, l'estensione realmente costruita e le ragioni dell'interruzione. L'aggancio della tappa 5-20 regge anche senza i dettagli (un ampliamento urbano interrotto è un fatto documentato) ma i numeri che il gioco farà vedere devono essere giusti",
+          "dove": "Q320 — Alfonso II d'Este e l'Addizione Erculea"
+        }
+      ],
+      "fonte_immagine": "Cesare_Aretusi_Retrato_de_Alfonso_II_de_Este,_duque_de_Ferrara.jpg",
+      "etichetta_immagine": null,
+      "verifica_immagine": "non_verificata_a_vista",
+      "verifica_immagine_motivo": "la ricerca ha trovato il file Cesare_Aretusi_Retrato_de_Alfonso_II_de_Este,_duque_de_Ferrara.jpg, ma nessuno lo ha guardato: il nome di un file non e' una prova",
+      "licenza": "Public domain",
+      "licenza_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Cesare_Aretusi_Retrato_de_Alfonso_II_de_Este%2C_duque_de_Ferrara.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "autore": "Studio of Cesare Aretusi",
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-20",
+          "ruolo": "obbligatorio",
+          "prova": "codice"
+        }
+      ]
+    },
+    {
+      "codice": "Q321",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Edsger Dijkstra",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q321)",
+      "riga_documento": 445,
+      "periodo": "1930–2002",
+      "luogo": "Rotterdam, Nuenen, Austin",
+      "pin": "Rotterdam",
+      "strato": "S83",
+      "stato": "def",
+      "attendibilita": "D",
+      "domanda": "qual è il cammino più corto, se «corto» non è la stessa cosa per tutti?",
+      "fonte_epoca": "l'articolo del 1959",
+      "ricostruzione": "l'algoritmo sui grafi",
+      "memoria_successiva": "l'uomo che ha litigato con l'istruzione, che è un'altra battaglia",
+      "aggancio": "il livello è il suo algoritmo, e il caso che il gioco deve insegnare è che «più corto» dipende dal criterio: il cammino più corto in numero di salti non è quello più veloce, se i collegamenti hanno latenze diverse. Il livello successivo (5-22) è esattamente questo passaggio, e l'anno intero lo prepara. Forte",
+      "forza": "forte",
+      "motto": "«Se vuoi che ti dicano solo le strade buone, devi accettare che ci dicano anche le cattive.»",
+      "emblema": "un grafo con un solo percorso evidenziato e altri in grigio",
+      "aggiunta_dal_progetto": true,
+      "collettivo": false,
+      "bandiere": {
+        "aggiunta": "(aggiunta)"
+      },
+      "forza_prova": "tabella_tappe",
+      "verifiche": [],
+      "fonte_immagine": "Edsger_Wybe_Dijkstra.jpg",
+      "etichetta_immagine": null,
+      "verifica_immagine": "non_verificata_a_vista",
+      "verifica_immagine_motivo": "la ricerca ha trovato il file Edsger_Wybe_Dijkstra.jpg, ma nessuno lo ha guardato: il nome di un file non e' una prova",
+      "licenza": "CC BY-SA 3.0",
+      "licenza_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Edsger_Wybe_Dijkstra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "autore": "Hamilton Richards",
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-21",
+          "ruolo": "obbligatorio",
+          "prova": "nome_normalizzato"
+        }
+      ]
+    },
+    {
+      "codice": "Q322",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Satoshi Nakamoto",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q322)",
+      "riga_documento": 452,
+      "periodo": "attivo dal 2008; identità ignota",
+      "luogo": "ignoto",
+      "pin": "un documento del 2008",
+      "strato": "S88",
+      "stato": "senza volto",
+      "attendibilita": "M",
+      "domanda": "come si ha ordine e affidabilità senza un'autorità che garantisca niente?",
+      "fonte_epoca": "il testo del 2008",
+      "ricostruzione": "i registri distribuiti",
+      "memoria_successiva": "l'identità ignota, che è il fatto più conosciuto di tutta questa storia",
+      "aggancio": "il livello chiede affidabilità, riscontro, ritrasmissione, numeri di sequenza: come fa un protocollo a fidarsi di un canale che perde e duplica messaggi? La risposta di quel testo è: ogni partecipante tiene una copia del registro e la confronta, e il registro più lungo fa fede. È la costruzione di un protocollo affidabile senza un'autorità centrale, ed è un caso da tappa piena, anche se non si sa chi lo ha scritto. Forte",
+      "forza": "forte",
+      "motto": "«Nessuno garantisce niente. Ognuno controlla, e il registro più lungo ha ragione.»",
+      "emblema": "due copie di un registro con una riga che non coincide",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {},
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V19",
+          "domanda": "l'identità è sconosciuta: il gioco non deve costruire una biografia. Verificare anche la data del testo (2008) e che cosa il testo dice e non dice",
+          "dove": "Q322 — Nakamoto"
+        }
+      ],
+      "fonte_immagine": "Satoshi_Nakamoto.jpg",
+      "etichetta_immagine": null,
+      "verifica_immagine": "non_verificata_a_vista",
+      "verifica_immagine_motivo": "la ricerca ha trovato il file Satoshi_Nakamoto.jpg, ma nessuno lo ha guardato: il nome di un file non e' una prova",
+      "licenza": "CC BY-SA 4.0",
+      "licenza_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Satoshi_Nakamoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "autore": "Elekes Andor",
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-22",
+          "ruolo": "obbligatorio",
+          "prova": "codice"
+        }
+      ]
+    },
+    {
+      "codice": "Q323",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Tim Berners-Lee",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q323)",
+      "riga_documento": 459,
+      "periodo": "1955–",
+      "luogo": "Londra, Svizzera, Massachusetts",
+      "pin": "Ginevra",
+      "strato": "S86",
+      "stato": "in formazione",
+      "attendibilita": "D",
+      "domanda": "un indirizzo che non appartiene a nessuna persona: che cosa c'è, in fondo, a un numero?",
+      "fonte_epoca": "la proposta del 1989",
+      "ricostruzione": "la rete",
+      "memoria_successiva": "l'inventore che non ha voluto il brevetto",
+      "aggancio": "il livello chiede DNS, HTTP, posta: un nome che diventa un numero, un testo con regole di richiesta e risposta, una casella che esiste solo se qualcuno la controlla. Il Web ha funzionato perché ogni cosa è un indirizzo: la stessa domanda («che cos'è un nome?») che il gioco pone al livello 5-19 la pone qui, e la risposta è un'altra. Forte",
+      "forza": "forte",
+      "motto": "«Il Web non è stato progettato per la ricerca: è stato progettato perché si potesse parlare.»",
+      "emblema": "un indirizzo che si risolve in un indirizzo",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {},
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V20",
+          "domanda": "la proposta del 1989 e la decisione sul brevetto; verificare la formulazione esatta, perché «non ha voluto il brevetto» è una frase che si usa spesso e in modo impreciso",
+          "dove": "Q323 — Berners-Lee"
+        }
+      ],
+      "fonte_immagine": null,
+      "etichetta_immagine": null,
+      "verifica_immagine": "nessuna_immagine",
+      "verifica_immagine_motivo": "la ricerca non ha trovato nessun file: la scheda usa l'emblema, come vuole la `AGENTS.md` §5",
+      "licenza": null,
+      "licenza_url": null,
+      "autore": null,
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-23",
+          "ruolo": "obbligatorio",
+          "prova": "codice"
+        }
+      ]
+    },
+    {
+      "codice": "Q324",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "James Ellis",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q324)",
+      "riga_documento": 466,
+      "periodo": "1910–1995",
+      "luogo": "Londra, GCHQ",
+      "pin": "un ufficio riservato, 1970",
+      "strato": "S84",
+      "stato": "def",
+      "attendibilita": "D",
+      "domanda": "se lo so solo io e non lo dico a nessuno, la conoscenza esiste?",
+      "fonte_epoca": "il documento del 1970, declassificato nel 1997",
+      "ricostruzione": "la chiave pubblica",
+      "memoria_successiva": "nessuna per trent'anni, ed è la lezione",
+      "aggancio": "il livello chiede crittografia asimmetrica, firma digitale, certificati. Un servizio segreto britannico aveva già inventato la chiave pubblica nel 1970 e non ne poteva parlare: la scoperta venne pubblicata ventisette anni dopo, e altri la rifecero per strada propria. È il caso in cui la conoscenza esisteva e non esisteva insieme, ed è l'antitesi perfetta dell'anno 4 (che finiva con «chi non ha potuto scrivere la sua riga»). Forte",
+      "forza": "forte",
+      "motto": "«L'ho scritto e non l'ho detto. La scoperta era lì, senza che nessuno potesse arrivarci.»",
+      "emblema": "un documento sigillato, aperto ventisette anni dopo",
+      "aggiunta_dal_progetto": true,
+      "collettivo": false,
+      "bandiere": {
+        "aggiunta": "(aggiunta)"
+      },
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V21",
+          "domanda": "verifica delicata: il documento del 1970, la sua scoperta «non scoperta» e la declassificazione del 1997. Verificare che cosa è documentato e che cosa è ricostruito; la scheda non deve presentarlo come il primo a inventare la chiave pubblica",
+          "dove": "Q324 — James Ellis"
+        }
+      ],
+      "fonte_immagine": null,
+      "etichetta_immagine": null,
+      "verifica_immagine": "respinta",
+      "verifica_immagine_motivo": "James Ellis non ha ritratto libero: l'uomo che ha inventato lo stream cipher e non lo ha mai detto resta senza faccia. Emblema.",
+      "licenza": null,
+      "licenza_url": null,
+      "autore": null,
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-24",
+          "ruolo": "obbligatorio",
+          "prova": "nome_normalizzato"
+        }
+      ]
+    },
+    {
+      "codice": "Q325",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Claude Shannon",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q325)",
+      "riga_documento": 473,
+      "periodo": "1916–2001",
+      "luogo": "Michigan, Bell Labs",
+      "pin": "Murray Hill, 1948",
+      "strato": "S83",
+      "stato": "def",
+      "attendibilita": "D",
+      "domanda": "più banda non basta mai: che cosa la blocca?",
+      "fonte_epoca": "l'articolo del 1948",
+      "ricostruzione": "il canale rumoroso",
+      "memoria_successiva": "il padre della teoria dell'informazione",
+      "aggancio": "il livello chiede banda, latenza, throughput, jitter, benchmarking. Shannon ha dimostrato che esiste un limite massimo alla quantità di informazione che si può far passare da un canale, e che quel limite dipende dalla banda e dal rumore. Il gioco può far vedere che raddoppiare la banda non raddoppia il throughput se il rumore resta, e che il limite non è un difetto della rete: è una legge. Forte",
+      "forza": "forte",
+      "motto": "«Si può solo fare entrare tanto: il resto si perde, e la legge dice quanto.»",
+      "emblema": "un canale con la larghezza indicata e una freccia che si ferma",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {},
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V22",
+          "domanda": "l'articolo del 1948, il modello del canale rumoroso, e la distinzione fra informazione e significato: il secondo punto è quello che il materiale usa e va verificato",
+          "dove": "Q325 — Shannon"
+        }
+      ],
+      "fonte_immagine": "ClaudeShannon_MFO3807.jpg",
+      "etichetta_immagine": null,
+      "verifica_immagine": "non_verificata_a_vista",
+      "verifica_immagine_motivo": "la ricerca ha trovato il file ClaudeShannon_MFO3807.jpg, ma nessuno lo ha guardato: il nome di un file non e' una prova",
+      "licenza": "CC BY-SA 2.0 de",
+      "licenza_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/ClaudeShannon_MFO3807.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "autore": "Jacobs, Konrad",
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-25",
+          "ruolo": "obbligatorio",
+          "prova": "codice"
+        }
+      ]
+    },
+    {
+      "codice": "Q326",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Joy Buolamwini",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q326)",
+      "riga_documento": 480,
+      "periodo": "1989–",
+      "luogo": "Boston, Atlanta",
+      "pin": "Boston, 2018",
+      "strato": "S89",
+      "stato": "in formazione",
+      "attendibilita": "D",
+      "domanda": "il riconoscimento funziona: solo che funziona peggio su certe facce. Che cosa correggo?",
+      "fonte_epoca": "lo studio sui riconoscitori facciali",
+      "ricostruzione": "i dati sbilanciati",
+      "memoria_successiva": "nessuna: la sua storia è ancora in corso",
+      "aggancio": "il livello chiede accuratezza, precisione, richiamo, matrice di confusione, k vicini, clustering. Il suo studio è la matrice di confusione diventata una questione di giustizia: gli stessi algoritmi che in un test azzardano riconoscono il viso di un certo gruppo di persone sbagliano più volte su un altro, e la ragione è nei dati di addestramento, non nel codice. Il gioco può far costruire al giocatore la matrice e mostrare che una sola metrica non basta e che cambiare i dati sposta l'errore. Forte",
+      "forza": "forte",
+      "motto": "«Il sistema funziona. Funziona peggio per alcune persone, e il motivo è dentro i dati.»",
+      "emblema": "due matrici di confusione con numeri diversi nelle stesse caselle",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {
+        "in_formazione": "(in formazione)"
+      },
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V23",
+          "domanda": "le date della ricerca sul riconoscimento facciale e i dati di Gender Shades: verificare che cosa è stato misurato e come, perché l'aggancio è forte e deve essere esatto",
+          "dove": "Q326 — Buolamwini"
+        }
+      ],
+      "fonte_immagine": null,
+      "etichetta_immagine": null,
+      "verifica_immagine": "nessuna_immagine",
+      "verifica_immagine_motivo": "la ricerca non ha trovato nessun file: la scheda usa l'emblema, come vuole la `AGENTS.md` §5",
+      "licenza": null,
+      "licenza_url": null,
+      "autore": null,
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-26",
+          "ruolo": "obbligatorio",
+          "prova": "nome_normalizzato"
+        }
+      ]
+    },
+    {
+      "codice": "Q327",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Geoffrey Hinton",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q327)",
+      "riga_documento": 487,
+      "periodo": "1947–",
+      "luogo": "Scozia, Toronto",
+      "pin": "Toronto, 2012",
+      "strato": "S89",
+      "stato": "in formazione",
+      "attendibilita": "D",
+      "domanda": "una riga di unità collegate a caso produce frasi: com'è che «funziona» vuol dire qualcosa?",
+      "fonte_epoca": "gli articoli sulle reti profonde",
+      "ricostruzione": "l'apprendimento",
+      "memoria_successiva": "l'uomo che ha detto che le reti sono come il cervello, che è una metafora e non un fatto",
+      "aggancio": "il livello costruisce un neurone artificiale, le funzioni di attivazione, le reti multistrato. Il caso di Hinton è quello in cui l'addestramento di una rete profonda ha cambiato l'informatica in quattro anni, e in cui la cosa più importante da dire ai ragazzi è che nessuno sa perché funziona. Il gioco può mostrare che la rete non è un programma scritto da qualcuno: è una struttura di parametri che il calcolo ha aggiustato a forza, e capire come funziona è un problema aperto. Forte",
+      "forza": "forte",
+      "motto": "«Nessuno ha scritto le regole del riconoscimento. I numeri le hanno trovate.»",
+      "emblema": "una rete di strati con i pesi scritti dentro le linee",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {
+        "in_formazione": "(in formazione)"
+      },
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V24",
+          "domanda": "il 2012 come data del paper su ImageNet e il ruolo del gruppo di Toronto",
+          "dove": "Q327 — Hinton"
+        }
+      ],
+      "fonte_immagine": null,
+      "etichetta_immagine": null,
+      "verifica_immagine": "nessuna_immagine",
+      "verifica_immagine_motivo": "la ricerca non ha trovato nessun file: la scheda usa l'emblema, come vuole la `AGENTS.md` §5",
+      "licenza": null,
+      "licenza_url": null,
+      "autore": null,
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-27",
+          "ruolo": "obbligatorio",
+          "prova": "nome_normalizzato"
+        }
+      ]
+    },
+    {
+      "codice": "Q328",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Timnit Gebru",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q328)",
+      "riga_documento": 494,
+      "periodo": "1983–",
+      "luogo": "Etiopia, Stati Uniti",
+      "pin": "Seattle, 2020",
+      "strato": "S89",
+      "stato": "in formazione",
+      "attendibilita": "D",
+      "domanda": "un sistema che funziona e che sbaglia certe persone: di chi è il documento che lo dice?",
+      "fonte_epoca": "le schede dei dataset",
+      "ricostruzione": "la documentazione",
+      "memoria_successiva": "nessuna: la sua storia è ancora in corso",
+      "aggancio": "il livello è IA generativa, rischi e benefici, bias algoritmico, responsabilità, AI Act: è il livello che chiude il ciclo con l'anno 4 (dati, privacy, «chi è escluso?»). Il suo contributo è l'idea che un insieme di dati dovrebbe avere una scheda, come un farmaco, che dica da dove viene, chi ha pagato, che cosa contiene e che cosa non contiene. E che l'AI Act, di cui il livello parla, esiste in parte perché quella scheda mancava. Forte",
+      "forza": "forte",
+      "motto": "«Un dato senza documentazione è un materiale che nessuno è obbligato a controllare.»",
+      "emblema": "una scheda tecnica con il riquadro «dati raccolti da» vuoto",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {
+        "in_formazione": "(in formazione)"
+      },
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V25",
+          "domanda": "il caso del modello di linguaggio e la vicenda dei ricercatori di Google: verificare che cosa è documentato prima e cosa è ricostruzione giornalistica, e non usare una ricostruzione come fatto",
+          "dove": "Q328 — Gebru"
+        }
+      ],
+      "fonte_immagine": null,
+      "etichetta_immagine": null,
+      "verifica_immagine": "nessuna_immagine",
+      "verifica_immagine_motivo": "la ricerca non ha trovato nessun file: la scheda usa l'emblema, come vuole la `AGENTS.md` §5",
+      "licenza": null,
+      "licenza_url": null,
+      "autore": null,
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-26",
+          "ruolo": "facoltativo",
+          "prova": "nome_normalizzato"
+        },
+        {
+          "livello": "5-28",
+          "ruolo": "obbligatorio",
+          "prova": "nome_normalizzato"
+        }
+      ]
+    },
+    {
+      "codice": "Q329",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Demis Hassabis",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q329)",
+      "riga_documento": 501,
+      "periodo": "1976–",
+      "luogo": "Londra",
+      "pin": "Londra, 2020",
+      "strato": "S89",
+      "stato": "in formazione",
+      "attendibilita": "D",
+      "domanda": "se la macchina propone e noi non capiamo il ragionamento, la scoperta è di chi?",
+      "fonte_epoca": "le pubblicazioni",
+      "ricostruzione": "la ricerca assistita",
+      "memoria_successiva": "nessuna: la sua storia è ancora in corso",
+      "aggancio": "il livello chiede che cosa sia, oggi, il metodo scientifico quando la macchina è dentro. La domanda che il gioco pone è la più difficile dell'anno e non ha risposta: se il sistema suggerisce la struttura e noi non sappiamo ricostruire il ragionamento, la comprensione non è completa. Il gioco non deve scegliere fra le due risposte possibili (è uno strumento, oppure è un investigatore): deve mostrare che il problema è aperto. Forte",
+      "forza": "forte",
+      "motto": "«Ha trovato la struttura. Noi abbiamo capito che cos'è. Sono due cose diverse.»",
+      "emblema": "una struttura tridimensionale e un foglio di calcoli con dentro un puntino interrogativo",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {
+        "in_formazione": "(in formazione)"
+      },
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V26",
+          "domanda": "AlphaFold e il premio Nobel del 2024: verificare le date, l'attribuzione del premio (tre persone) e che cosa il sistema fa e non fa",
+          "dove": "Q329 — Hassabis"
+        }
+      ],
+      "fonte_immagine": null,
+      "etichetta_immagine": null,
+      "verifica_immagine": "nessuna_immagine",
+      "verifica_immagine_motivo": "la ricerca non ha trovato nessun file: la scheda usa l'emblema, come vuole la `AGENTS.md` §5",
+      "licenza": null,
+      "licenza_url": null,
+      "autore": null,
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-29",
+          "ruolo": "obbligatorio",
+          "prova": "nome_normalizzato"
+        }
+      ]
+    },
+    {
+      "codice": "Q330",
+      "codice_stato": "proposto_nei_documenti",
+      "nome": "Daniel Kahneman",
+      "didascalia": null,
+      "anno": 5,
+      "scheda": "videogioco-5-duchi-anno5-mondo.md §5 (Q330)",
+      "riga_documento": 508,
+      "periodo": "1934–2024",
+      "luogo": "Tel Aviv, Princeton, Strasburgo",
+      "pin": "Ferrara, sala di progetto",
+      "strato": "S89",
+      "stato": "def",
+      "attendibilita": "D",
+      "domanda": "il progetto è pronto e non so se è giusto: lo apro, e a chi affido i dati?",
+      "fonte_epoca": "le ricerche con Tversky",
+      "ricostruzione": "i bias sistematici",
+      "memoria_successiva": "l'uomo che ha vinto il premio Nobel e poi ha scritto un libro per dire che non dobbiamo fidarci del nostro cervello",
+      "aggancio": "la prova finale è un progetto di simulazione completo, e Kahneman è la persona che ha dimostrato che noi non sappiamo giudicare il nostro stesso progetto: l'ancoraggio, la disponibilità, la conferma, e soprattutto la tendenza a essere più sicuri di quanto non si sia. Il gioco gli fa l'ultima domanda pratica che gli resta: se il progetto è finito e tu non sei in grado di sapere se è giusto, che cosa fai? Non c'è una risposta automatica, ed è il punto. Forte",
+      "forza": "forte",
+      "motto": "«Il progetto è pronto. Io non so se è giusto. È esattamente il momento in cui non devi fidarti del tuo giudizio.»",
+      "emblema": "una planimetria con sopra una riga di numeri e una domanda",
+      "aggiunta_dal_progetto": false,
+      "collettivo": false,
+      "bandiere": {},
+      "forza_prova": "tabella_tappe",
+      "verifiche": [
+        {
+          "voce": "V27",
+          "domanda": "le ricerche con Tversky, il premio Nobel del 2002 e la data della morte (2024). La scheda è di una persona morta di recente, e va trattata con la cura che il progetto riserva alle persone morte di recente",
+          "dove": "Q330 — Kahneman"
+        }
+      ],
+      "fonte_immagine": "Daniel_Kahneman_(3283955327)_(cropped).jpg",
+      "etichetta_immagine": null,
+      "verifica_immagine": "non_verificata_a_vista",
+      "verifica_immagine_motivo": "la ricerca ha trovato il file Daniel_Kahneman_(3283955327)_(cropped).jpg, ma nessuno lo ha guardato: il nome di un file non e' una prova",
+      "licenza": "CC BY-SA 2.0",
+      "licenza_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Daniel_Kahneman_%283283955327%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "autore": "nrkbeta",
+      "note_verifica": null,
+      "note_verifica_motivo": "i documenti non scrivono questo campo: la §12 porta le verifiche storiche nel campo `verifiche`, che e' un'altra cosa — la nota verifica e' cio' che resta da fare prima che la scheda sia completa",
+      "campi_vuoti": [],
+      "destinazione": [
+        {
+          "livello": "5-30",
+          "ruolo": "obbligatorio",
+          "prova": "codice"
+        }
+      ]
+    }
+  ]
+}
