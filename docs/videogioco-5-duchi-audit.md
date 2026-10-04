@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — audit delle questioni aperte: la lista operativa
-versione: 0.16
+versione: 0.17
 data: 2026-10-04
 autore: Pietro Fabbri (con Claude)
 fonte: lettura di tutti i documenti di progetto che portano una sezione «Questioni aperte» (sedici), verificata da sorgenti/lingue/conta_questioni.py, che confronta anche i numeri che il README copia da qui
-documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-fonti-visive.md (v0.4), videogioco-5-duchi-furioso.md (v0.6), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-mappe.md (v1.3), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.1), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3), AGENTS.md
+documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-fonti-visive.md (v0.5), videogioco-5-duchi-furioso.md (v0.6), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-mappe.md (v1.3), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.1), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3), AGENTS.md
 ---
 
 # Audit delle questioni aperte: la lista
@@ -471,9 +471,82 @@ Nessuna delle quattro decisioni aperte tocca niente di tutto questo, e nessuna d
 
 ---
 
+## 3undecies. Il quinto numero che non guardava: sessanta emblemi che erano diciotto file
+
+La domanda era «cosa manca a livello di elementi grafici da generare?». La
+risposta, prima ancora che la si scrivesse, è stata controllata: e il controllo
+ha trovato un difetto che nessuno dei sei controlli esistenti poteva vedere.
+
+**Il difetto.** L'emblema — il riquadro che il gioco mostra quando di una persona
+non c'è un ritratto libero — era un rettangolo con una diagonale, e la diagonale
+dipendeva da `sum(ord(codice)) % 22`. Sessanta persone, ventidue semi possibili,
+**diciotto file distinti**: dieci di loro avevano lo stesso identico PNG. La
+funzione che lo disegnava diceva nel proprio docstring che «il seme decide la
+diagonale, così due emblemi diversi non sembrano lo stesso file»: era falso, e
+la frase era l'unica prova che qualcuno lo avesse pensato. Nessuno dei sei
+controlli lo vedeva, e il motivo è la cosa che questo giro consegna agli altri
+giri: **tutti e sei contavano i file**, e sessanta file giusti sono sessanta file
+giusti anche quando sono diciotto.
+
+**Il controllo che mancava è il settimo, e conta gli sha256.** Non è un controllo
+nuovo per principio: è il controllo che tutti gli altri avrebbero dovuto fare da
+soli. Dice due cose, e le due sono diverse: quante immagini ci sono, e quante
+persone le hanno. Le due cifre erano diverse da tre giorni, e nessuno lo sapeva.
+
+**Quello che il controllo ha trovato subito, e non era nel piano.** Con il
+controllo 7 in piedi, il primo giro è rosso anche sui **ritratti**: 138 file
+distinti su 141 persone. Il difetto dichiarava i nomi, ed erano sei voci di
+catalogo per tre persone: `augusto` e `ottaviano augusto`, `copernico` e `niccolò
+copernico`, `federico ii` e `federico ii di svevia`. È lo stesso difetto dei
+codici `Q` chiuso il 2 ottobre, dal lato opposto: `chiave_persona()` normalizza
+il nome e non sa che «Augusto» e «Ottaviano Augusto» sono lo stesso uomo, perché
+la normalizzazione è testuale e **l'identità non è una questione di testo**.
+
+**Tre chiusi, e non una regola.** Una regola che unisse due nomi perché uno
+contiene l'altro avrebbe anche unito «il territorio del Po» e «i Bersaglieri del
+Po», che sono due persone diverse, e nessuno dei due nomi contiene l'altro ma la
+regola che unisce per somiglianza non distingue i due casi. I tre sono quindi
+**dichiarati** uno per uno, e il controllo 7 resta a guardarli: se un quarto
+doppione compare, il numero dei distinti torna sotto e il verde viene via. Il
+catalogo passa da 201 a **198 persone**.
+
+**Il secondo difetto del difetto l'ha trovato la prova, non io.** Il controllo 8
+ricalcola la famiglia dell'emblema dal motivo e la confronta con quella che il
+catalogo dichiara. Alla prima versione confrontava, per la parola, il valore
+**ricalcolato con sé stesso**: `emblema_famiglia_da` poteva dire qualunque cosa e
+nessuno se ne accorgesse. È il secondo caso in due giorni di un controllo che
+guarda una cosa e la confronta con sé stesso, ed è il caso che la prova dei
+difetti esiste per trovare: l'ha scoperto iniettando una parola inesistente e
+chiedendo che il difetto fosse visto.
+
+**Il terzo difetto è nel generatore, e l'hanno trovato gli occhi.** Tre segni non
+reggevano a guardarli: il font 3×5 rendeva `DOM` come `DOH`, la volta era un arco
+tracciato con una soglia non simmetrica ed era storta, la fessura dell'anello era
+di 24 gradi e toglieva metà del segno. Nessuno dei tre si sarebbe visto ragionando
+sulla formula, e il progetto ha la regola che vale: **una forma non si approva
+perché la formula è giusta, si approva perché si è guardata**.
+
+**Che cosa è cambiato nel motore.** `sorgenti/art/emblema.py` è nuovo, e
+`catalogo_immagini.py` lo chiama: i sessanta emblemi portano il segno della
+famiglia del loro motivo, le iniziali della persona, e una firma di cinque caselle
+che serve a una cosa sola — rendere i file distinti. Le sette famiglie sono
+classificate dal motivo con una regola dichiarata, i colori vengono tutti dalla
+tavolozza, e nessuna libreria: PNG con `zlib`. `verifica_immagini.py` passa da sei
+a otto controlli e la prova da sei a **undici difetti**, tutti visti. Mentre si
+guardava, è saltato fuori anche che `catalogo_immagini.py` scriveva il catalogo
+**tre volte** con due testi diversi: il risultato era giusto, la terza scrittura
+vinceva, e un file scritto tre volte è un posto dove il prossimo scrive la riga
+sbagliata senza accorgersene.
+
+Nessuna delle decisioni aperte è toccata, e nessuna delle tre righe di
+`AGENTS.md` che il giro cambia è una decisione: sono fatti.
+
+---
+
 ## 7. Registro delle modifiche
 
 | Data | Versione | Che cosa è cambiato |
+| 04/10/2026 | 0.17 | **Sessanta emblemi che erano diciotto file, e il controllo che non c'era.** L'emblema era un rettangolo con una diagonale il cui seme era `sum(ord(codice)) % 22`: sessanta persone, **diciotto file distinti**, dieci persone con lo stesso identico PNG. Nessuno dei sei controlli lo vedeva, perché tutti contavano i file e non i file distinti. Nuovi: il **controllo 7** (gli sha256 distinti devono essere tanti quanti le persone, e il difetto si dichiara con i nomi) e il **controllo 8** (ogni emblema dichiara la famiglia, ricalcolata dal motivo, e la parola che l'ha fatta vincere); `sorgenti/art/emblema.py`, che disegna il segno geometrico della famiglia, le iniziali e la firma, con i colori letti dalla tavolozza e senza librerie. Il controllo 7 ha trovato subito anche **tre doppioni d'identità fra i ritratti** — `augusto`/`ottaviano augusto`, `copernico`/`niccolò copernico`, `federico ii`/`federico ii di svevia`, sei voci per tre persone — chiusi con tre alias **dichiarati** in `catalogo_immagini.py` e non con una regola che avrebbe unito anche «il territorio del Po» e «i Bersaglieri del Po». Il catalogo passa a **198 persone** e 138 ritratti. Il secondo difetto l'ha trovato la prova, non io: il controllo 8 confrontava la parola ricalcolata **con sé stessa**. Il terzo l'hanno trovato gli occhi, guardando il foglio: font 3×5 che rendeva `DOM` come `DOH`, arco della volta tracciato con una soglia non simmetrica, fessura dell'anello di 24 gradi che toglieva metà del segno. La prova dei difetti passa da sei a **undici**. Dettaglio in §3undecies. |
 | 04/10/2026 | 0.16 | **Il quarto numero che invecchiava, e il più semplice di tutti: quanti file ha `dati/mappe/`.** Quattro documenti ne parlavano e avevano dato **quattro numeri diversi** — 25 (`mappe.md`), 23 (`README.md`, due volte), 21 (`AGENTS.md`), 19 (`fonti-visive.md`, che è il conto dei soli file di Natural Earth) — e il peso era doppio: 1,6 MB e 1,4 MB su un conto di **1,52**. Nessuno li confrontava. Il difetto vero è sotto: **nessun file di quella cartella dichiarava da dove viene**, perché il generatore tiene la fonte in una lista Python e il dato non la porta con sé. Nuovi `dati/mappe_manifest.json` (v1, con conti calcolati sui file veri e regge di stare in `dati/` e non in `dati/mappe/`), `sorgenti/gis/mappe_manifest.py`, `sorgenti/gis/verifica_inventario_mappe.py` (I1–I8, dodici frasi in quattro documenti) e `sorgenti/gis/prova_difetto_mappe_manifest.py` (dieci difetti iniettati, tutti visti). Il difetto più subdolo è stato **nel controllo**: la lista `problemi` veniva riassegnata a metà del corpo e l'assegnazione svuotava I4 e I5, due controlli che potevano solo scrivere nella spazzatura. Dettaglio in §3decies.
 | 04/10/2026 | 0.15 | **Il contatore confrontava l'audit con se stesso, e quattro numeri che quattro documenti riportavano non li contava nessuno.** `conta_questioni.py` ora confronta cinque cose: la tabella del §1, le due frasi in prosa, **il numero delle sezioni**, i **numeri per documento del §4** con la loro somma, i **numeri in lettere** e **i numeri che il README copia**; il registro delle modifiche è escluso, dichiarando perché. I quattro difetti trovati sono nelle versioni: sezioni 15 su **16**, `itinerari.md` fuori da ogni intestazione del §4 (la sua voce era contata e non elencata), `fonti-visive.md` 2 su **1**, `anno3-europa.md` 7 su **6**, `furioso.md` 2 su **1**, il §6 con **ventotto** chiuse su **31**, il `README.md` con **sedici** documenti su **31**. Il quinto difetto è nel confronto stesso: il dizionario delle parole italiane non riconosceva **`trentuno`**, **`ventuno`** e **`ventotto`** — le tre forme in cui una parola non si somma — e il confronto delle lettere **ignorava in silenzio i numeri che il documento scrive in lettere**. Nuovi: `sorgenti/lingue/prova_difetto_questioni.py`, quindici difetti iniettati tutti richiesti a essere visti, su una copia di tutti i documenti, più la prova che il registro **non** viene morso. Dettaglio in §3novies.
 | 03/10/2026 | 0.14 | **Le due lacune che Pietro aveva affidate sono chiuse, e nessuna delle due si è chiusa scegliendo.** Il **mezzo del quinto anno** non era una scelta fra ventidue mezzi: era una domanda su che cosa si dichiara quando la risposta è di qualcun altro. La risposta sono **due strati** — il mezzo reale, che è l'archivio e dunque il presente (`aereo` 30 su 30), e il mezzo della stanza, che è quello attestato dal canto (a piedi 21, carro di serpenti 4, ippogrifo 3, sirena 2) — e il carro di delfini e il drago restano senza tappa, dichiarato. I **codici dei facoltativi** rendono la regola della `premi.md` verificabile su tutti: i 269 sono occorrenze e dietro ci sono **248 persone**, 50 già codificate, 10 collegate, 188 nuovi fino a **Q519**, zero da verificare.

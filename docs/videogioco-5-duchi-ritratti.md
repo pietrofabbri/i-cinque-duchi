@@ -1,7 +1,7 @@
 ---
 titolo: I ritratti dei personaggi — dove vengono e perché sono dichiarati
-versione: 0.4
-data: 2026-10-03
+versione: 0.5
+data: 2026-10-04
 autore: Buffy (per pietrofabbri)
 documenti collegati:
   - docs/videogioco-5-duchi-mappe.md
@@ -44,23 +44,45 @@ libero esiste» insegna più di un ritratto generato.
 | | |
 |---|---|
 | schede di tappa | **213** |
-| persone distinte (il catalogo è per persona, non per tappa) | **201** |
-| con ritratto autentico, guardato a vista e verificato | **141** |
+| persone distinte (il catalogo è per persona, non per tappa) | **198** |
+| con ritratto autentico, guardato a vista e verificato | **138** |
 | con emblema | **60** |
 | ancora da verificare | **0** |
 | giudizi a vista presi in tutto | 195: 151 accettati, 44 respinti |
 | ritratti ancora da guardare a vista | **0** |
-| persone che compaiono in due anni e hanno un solo file | 12 |
+| persone che compaiono in due anni e hanno un solo file | 15 |
+| file di immagine distinti, uno per persona | **198 su 198** |
 | misura | 48×54 px, come il ritratto di Borso |
 
 I numeri di questa tabella sono **calcolati**, non scritti: li stampa
-`sorgenti/art/verifica_immagini.py --enumero` e li confronta con i dati. Le 201
-persone sono 213 schede perché 12 compaiono in due anni diversi e hanno un solo
-file: alfonso i d'este, alfonso ii d'este, biagio rossetti, carlo magno, dosso dossi, ercole ii d'este, isabella d'este, josquin des prez, leon battista alberti, leonardo da vinci, lucrezia borgia, ludovico ariosto. Indicizzando il catalogo per persona quel difetto sparisce da solo:
+`sorgenti/art/verifica_immagini.py --enumero` e li confronta con i dati. Le 198
+persone sono 213 schede perché 15 compaiono in due anni diversi e hanno un solo
+file: alfonso i d'este, alfonso ii d'este, augusto, biagio rossetti, carlo magno, copernico, dosso dossi, ercole ii d'este, federico ii, isabella d'este, josquin des prez, leon battista alberti, leonardo da vinci, lucrezia borgia, ludovico ariosto. Indicizzando il catalogo per persona quel difetto sparisce da solo:
 prima la ricerca scaricava lo stesso file due volte e li contava due.
 
-Le licenze sono **tutte libere**, e il conto esce dai dati senza arrotondare: 98 pubblico dominio, 13 CC BY-SA 3.0, 10 CC BY-SA 4.0, 8 CC BY altri, 6 CC BY-SA 1.0/2.0, 3 CC0, 2 Attribution, 1 No restrictions
-— 141 in tutto, tutte sui 141 ritratti accettati.
+**L'ultima riga è la più importante, ed è quella che il 3 ottobre non aveva.**
+Il conto dei file distinti è **calcolato sugli sha256**, non sui nomi: fino al 3
+ottobre i sessanta emblemi erano sessanta file *diversi*, tutti della misura
+giusta, tutti passanti, e dieci persone ne avevano uno identico. Un contatore
+che conta file conta sessanta file giusti anche quando sessanta file sono
+diciotto. L'ultima riga è l'unico numero di questa tabella che quella volta
+avrebbe fermato il difetto, ed è nata dal difetto (§3bis).
+
+**Tre delle quindici persone in due anni lo erano per un motivo che nessuna
+normalizzazione di nome poteva vedere.** `augusto` e `ottaviano augusto`,
+`copernico` e `niccolò copernico`, `federico ii` e `federico ii di svevia`
+erano due voci di catalogo per la stessa persona, con lo stesso file: sei voci
+per tre persone. `chiave_persona()` ripulisce il nome e non sa che «Augusto» e
+«Ottaviano Augusto» sono lo stesso uomo, perché la normalizzazione è testuale e
+l'identità non è una questione di testo. I tre casi sono dichiarati uno per
+uno in `ALIAS` dentro `sorgenti/art/catalogo_immagini.py`, **non** con una
+regola: la regola che unisse due nomi perché uno contiene l'altro avrebbe
+unito anche «il territorio del Po» e «i Bersaglieri del Po», che sono due
+persone diverse. Il controllo 7 continua a sorvegliarli, perché se un quarto
+doppione compare il numero dei file distinti torna sotto e il verde viene via.
+
+Le licenze sono **tutte libere**, e il conto esce dai dati senza arrotondare: 95 pubblico dominio, 13 CC BY-SA 3.0, 10 CC BY-SA 4.0, 4 CC BY-SA 2.0, 3 CC0, 2 Attribution, 2 CC BY 4.0, 2 CC BY 3.0 it, 2 CC BY 2.5, 1 CC BY-SA 2.0 de, 1 CC BY 2.0, 1 CC BY 3.0, 1 CC BY-SA 1.0, 1 No restrictions
+— 138 in tutto, tutte sui 138 ritratti accettati.
 
 ## 3. La ricerca, e il suo difetto più importante
 
@@ -103,6 +125,85 @@ prefisso `File:`), e una volta perché il ciclo di scaricamento non ascoltava il
 429 e sei immagini su centosessantanove finivano fuori con la scritta «download
 fallito», che sembrava un file corrotto. Tutte e tre le volte la causa era la
 stessa: **una risposta che non arriva è stata letta come una risposta negativa**.
+
+## 3ter. I sessanta emblemi: forme che dicono il perché
+
+Fino al 3 ottobre l'emblema era un rettangolo con una diagonale, e il seme che
+la decideva era `sum(ord(codice)) % 22`: **sessanta emblemi, diciotto file**. Dieci
+persone — Al-Khwarizmi, Alcuino, Aldobrandino d'Este, Cincinnato, i censori,
+Ibn Battuta, il concerto delle dame, i mercanti, Napoleone, Taddeo Crivelli —
+avevano lo stesso identico PNG. La funzione che lo disegnava diceva nel suo
+docstring che «il seme decide la diagonale, così due emblemi diversi non sembrano
+lo stesso file»: era falso, e nessun controllo lo guardava, perché tutti i
+controlli contavano i file e non i file distinti.
+
+**Un emblema è una risposta, e la risposta è il perché.** Un riquadro vuoto dice
+«qui non c'è niente»; un riquadro con dentro il *motivo* della famiglia dice
+«non c'è un volto perché *questa persona è viva*» oppure «*quello che si è
+trovato è un'opera, non un volto*». Il secondo riquadro insegna, il primo no.
+
+Le sette famiglie **non sono state scelte a mano**: sono **classificate dalla
+frase del motivo**, dalla prima all'ultima, e il catalogo porta
+`emblema_famiglia` e `emblema_famiglia_da`, quest'ultima è la parola che ha
+fatto vincere. Una classificazione che cambia quando il motivo cambia è una
+classificazione; scritta a mano sarebbe una lista di preferenze travestita da
+regola.
+
+| famiglia | quante | il segno | che cosa dice al ragazzo |
+|---|---|---|---|
+| `opera_non_persona` | 24 | cornice con due righe dentro | quello che si è trovato è un'opera stampata o un oggetto, non un volto |
+| `collettivo` | 11 | tre cerchi in triangolo | sono più persone: un volto solo non sarebbe di nessuno |
+| `nessun_ritratto_libero` | 9 | cornice vuota | nessun ritratto con licenza libera esiste |
+| `vivo` | 9 | anello con una fessura | persona viva: il volto non si disegna finché è vivo |
+| `numero_discorde` | 4 | due quadrati spostati | le fonti non concordano sul numero: non si sa quale |
+| `identita_conflitto` | 2 | due cerchi che si incrociano | due nomi per due persone diverse: l'immagine è dell'altra |
+| `tradizione` | 1 | una nicchia con arco e soglia | figura della tradizione: nessun ritratto storico lo riprende |
+
+**Ogni colore viene dalla tavolozza**, non da un esadecimale scritto nella
+funzione: le sette chiavi sono lette da `dati/fonti_visive/tavolozza.json`, che è
+il file che dichiara da dove viene ogni colore del gioco. Se una chiave non ci
+fosse, `emblema.py` si ferma e dice quale: un colore che non dichiara la sua
+fonte è un colore inventato.
+
+**Sopra il segno ci sono le iniziali, e sotto una firma.** Le iniziali perché un
+emblema senza nome è lo stesso inganno del francobollo: dice che c'è qualcosa
+senza dire chi. Tre lettere, non una: `AZZ` dice «gli Azzo» molto meglio di `A`.
+La firma sono cinque caselle, la cui presenza dipende dai primi cinque bit
+dell'hash del nome della voce di catalogo: **non significa niente** e serve a una
+cosa sola, che sessanta voci producano sessanta file. Le iniziali da sole non
+bastano, perché `Cincinnato` e `i censori` danno entrambe `C`, e `Azzo VII
+d'Este` e `Azzo VIII d'Este` danno entrambe `AZZ`.
+
+**Nessuno di questi segni è un volto.** Il progetto vieta i volti inventati per le
+persone reali (`AGENTS.md` §3); vieta i volti, non le forme. Sono pittura
+geometrica, la stessa cosa che sarebbe un'iniziale.
+
+**Tre difetti sono stati trovati guardando, non ragionando.**
+
+1. Il **font era 3×5** e `M`, `N` e `H` si leggevano uguali: il foglio mostrava
+   `DOM` che si leggeva `DOH`. Il font è 5×7 e le lettere si leggono.
+2. La **volta** era un arco tracciato con una soglia su un numero reale, e la
+   soglia non è simmetrica: la nicchia aveva un fianco di tre pixel e l'altro di
+   uno. Ora l'arco si traccia per angolo.
+3. La **fessura dell'anello** era di 24 gradi e toglieva metà del segno: si leggeva
+   una `C`. Ne servono 13.
+
+Nessuno dei tre si sarebbe visto ragionando sulla formula: si vedono nel foglio
+di controllo, e il foglio di controllo è la parte del metodo che il progetto non
+può saltare.
+
+**I due controlli nuovi, e il difetto che hanno trovato loro.** Il controllo 7
+conta gli **sha256 distinti** e pretende che siano tanti quanti le persone; il
+controllo 8 ricalcola la famiglia dal motivo e pretende che coincida con quella
+che il catalogo dichiara, e che la parola dichiarata sia ancora nel motivo. Il
+controllo 8, alla prima versione, confrontava la parola **ricalcolata** con se
+stessa: `emblema_famiglia_da` poteva dire qualunque cosa e nessuno se ne
+accorgeva. L'ha trovato la prova dei difetti, non io — ed è il secondo difetto
+in due giorni che nasce da un controllo che confronta una cosa con sé stessa.
+
+Il generatore è `sorgenti/art/emblema.py`, chiamato da
+`sorgenti/art/catalogo_immagini.py`. Nessuna libreria: PNG con `zlib`, come i
+fondi di Terrarium e come gli shapefile.
 
 ## 4. L'attestazione: otto immagini respinte
 
@@ -160,13 +261,60 @@ come una fotografia.
 
 | | |
 |---|---|
-| **disegnare** i 60 emblemi | le tessere ci sono e sono un segnale dichiarato, ma non sono disegni: ogni emblema deve dire *perché* la persona non ha un volto qui, e quel perché sta nel catalogo, non nel riquadro |
+| ~~**disegnare** i 60 emblemi~~ | **fatto il 04/10/2026**: i sessanta emblemi non sono più tessere anonime ma forme che dicono *perché* non c'è un volto, e dicono anche *chi* (§3ter) |
+| decidere se gli emblemi siano **disegni a mano** o **forme generate** | restano forme generate, ed è dichiarato: il progetto vieta i *volti* inventati, non le *forme* disegnate; nessuno di questi sessanta segni ha un volto dentro e nessuno è la firma di un artista che non c'è |
 | cercare un ritratto vero della **beata Beatrice II d'Este** (`P11`) | **ricercato il 3 ottobre**: nessun ritratto esiste. Su Commons il nome porta a un dipinto con la Trinità e **tre santi** insieme nel suo monastero di Sant'Antonio in Polesine, e a una dozzina di «Beatrix»:Maria Beatrice, tutte del Sette-Ottocento. Una scena con tre figure non è un ritratto, per la stessa regola con cui sono state respinte quella di Alcuino e la stele di Hammurabi |
 | decidere se gli emblemi siano disegni o forme tipografiche | se sono forme, l'anno 1 (maurelio) resta l'unico con disegno |
 | ridare le 600 px di partenza | 300 px per le 19 fonti strette non bastano: si può solo rifare la ricerca su una fonte più grande |
 | rivedere la P80 | Renata Viganò potrebbe avere un ritratto sotto un'altra forma: la ricerca su Commons non ne ha trovato |
 
 ## 7. Il registro delle modifiche
+
+### v0.5 — 04/10/2026
+
+**Sessanta emblemi, diciotto file.** La tessera dell'emblema era un rettangolo
+con una diagonale il cui seme era `sum(ord(codice)) % 22`: i sessanta emblemi
+erano **diciotto file distinti**, e dieci persone ne avevano uno identico. Il
+docstring della funzione prometteva il contrario — «il seme decide la diagonale,
+così due emblemi diversi non sembrano lo stesso file» — e nessuno dei sei
+controlli lo guardava, perché tutti contavano i file e non i file distinti.
+
+Ora `sorgenti/art/emblema.py` disegna una **forma che dice il perché**, in tre
+parti: il segno geometrico della famiglia, le iniziali della persona, e una
+firma di cinque caselle che rompe le iniziali uguali. Le sette famiglie sono
+**classificate dal motivo** con una regola dichiarata, e il catalogo porta
+`emblema_famiglia` e `emblema_famiglia_da`. I colori vengono tutti dalla
+tavolozza. Sessanta file distinti su sessanta.
+
+**Tre difetti trovati guardando il foglio, non ragionando sulla formula**: il font
+3×5 rendeva `DOM` come `DOH`; l'arco della nicchia era tracciato con una soglia
+non simmetrica e la volta risultava storta; la fessura dell'anello era di 24
+gradi e toglieva metà del segno. Tutti e tre corretti.
+
+**Un difetto che la prova dei difetti ha trovato, non io**: il controllo 8
+confrontava la parola *ricalcolata* con sé stessa, e `emblema_famiglia_da`
+poteva dire qualunque cosa senza che nessuno se ne accorgesse. Ora confronta la
+parola **dichiarata**, e segnala anche quando quella parola non è più nel motivo.
+
+**Tre doppioni d'identità chiusi nello stesso giro.** Il controllo 7 ha detto che
+i ritratti erano 138 file distinti su 141 persone, e ha detto **quali**:
+`augusto`/`ottaviano augusto`, `copernico`/`niccolò copernico`,
+`federico ii`/`federico ii di svevia` — sei voci di catalogo per tre persone,
+con lo stesso file. Sono chiusi con tre alias dichiarati in
+`catalogo_immagini.py`, non con una regola: la regola che unisse due nomi perché
+uno contiene l'altro avrebbe unito anche «il territorio del Po» e «i Bersaglieri
+del Po». **Il catalogo ha quindi 198 persone, non 201**, e i numeri di §2 sono
+tutti ricalcolati.
+
+**Un file scritto tre volte.** `catalogo_immagini.py` scriveva
+`dati/immagini_gioco.json` tre volte di seguito, con due testi `_nota` diversi
+(l'uno dei quali diceva «cinque personaggi», un numero morto da giorni). Il
+risultato era quello giusto — la terza scrittura vinceva — ma ora si scrive una
+volta sola, **dopo** che le tessere sono state disegnate, perché il file deve
+dire la famiglia che il disegno porta davvero.
+
+`sorgenti/art/verifica_immagini.py` passa da sei a otto controlli e da sei a
+undici difetti provati.
 
 ### v0.4 — 03/10/2026
 
@@ -250,16 +398,18 @@ c'è un emblema. Dichiarare un terzo esito è stato più utile che scegliere fra
 due.
 
 **Il catalogo è per persona.** `dati/immagini_gioco.json` è quello che il motore
-legge: 48 persone, non 54 schede, perché 201 compaiono in due anni. Ogni voce
+legge: 198 persone, non 213 schede, perché 15 compaiono in due anni. Ogni voce
 porta l'esito e l'etichetta — il gioco mostra un volto a un ragazzo di tredici
 anni e non può farlo senza dire se è una fotografia o una miniatura.
 
-`sorgenti/art/verifica_immagini.py` controlla cinque cose: il file annunciato
-esiste ed è un PNG 213×12, in `out/` non c'è nulla che nessuno usa, ogni ritratto ha
+`sorgenti/art/verifica_immagini.py` controlla otto cose: il file annunciato
+esiste ed è un PNG 48×54, in `out/` non c'è nulla che nessuno usa, ogni ritratto ha
 un'etichetta dell'elenco, ogni ritratto ha una licenza libera e ogni aperto resta
-aperto, e ogni codice di tappa compare una volta sola. Morde su sei difetti
-iniettati, uno per uno: `prova_difetto_immagini.py` li inietta e li richiede a
-voce.
+aperto, ogni codice di tappa compare una volta sola, nessuna scheda respinta a
+vista compare come ritratto, **i file distinti sono tanti quanti le persone** e
+ogni emblema dichiara la famiglia che il suo motivo dice. Morde su **undici**
+difetti iniettati, uno per uno: `prova_difetto_immagini.py` li inietta e li
+richiede a voce.
 
 
 ### v0.2 — 02/10/2026

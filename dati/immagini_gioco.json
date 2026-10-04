@@ -1,5 +1,5 @@
 {
- "_nota": "Catalogo unico delle immagini del gioco, indicizzato per persona e non per tappa: dodici persone compaiono in due anni e hanno un solo file. Ogni voce porta l'esito e l'etichetta, cosi' il gioco non mostra un volto senza dire che cos'e'. Le voci `da_verificare` non hanno un ritratto: hanno un emblema e il file in attesa, finche' non si verifica di chi e'.",
+ "_nota": "Catalogo unico delle immagini del gioco, indicizzato per persona e non per tappa: dodici persone compaiono in due anni e hanno un solo file. Ogni voce porta l'esito e l'etichetta, cosi' il gioco non mostra un volto senza dire che cos'e'. Le voci `da_verificare` non hanno un ritratto: hanno un emblema e il file in attesa, finche' non si verifica di chi e'. Ogni emblema porta `emblema_famiglia` e `emblema_famiglia_da`: la famiglia dice **perche'** qui non c'e' un volto, e `da` dice quale parola del motivo l'ha fatta vincere.",
  "_generato_da": "sorgenti/art/catalogo_immagini.py",
  "persone": {
   "akbar": {
@@ -40,7 +40,9 @@
    "motivo": "emblema: e' un francobollo uzbeko del 2000 con un uomo barbuto in turbante. Un francobollo non e' un ritratto: e' un prodotto stampato, e se il volto e' quello giusto lo si deve dire perche' il francobollo sceglie solo il nome. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q211.png"
+   "immagine": "sorgenti/art/out/emblema_Q211.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "francobollo"
   },
   "alan turing": {
    "nome": "Alan Turing *(aggiunta",
@@ -126,7 +128,9 @@
    "motivo": "emblema: e' una scena miniata con piu' figure: uno scrivano seduto che insegna e altri che ascoltano. Dentro una scena non si distingue Alcuino dagli altri, e il gioco ha bisogno di un volto solo. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q112.png"
+   "immagine": "sorgenti/art/out/emblema_Q112.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "scena"
   },
   "alda costa": {
    "nome": "Alda Costa",
@@ -189,7 +193,9 @@
    "motivo": "emblema: stessa numerazione discordante degli Estensi. Emblema, e nota aperta.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P09.png"
+   "immagine": "sorgenti/art/out/emblema_P09.png",
+   "emblema_famiglia": "numero_discorde",
+   "emblema_famiglia_da": "numerazione discordante"
   },
   "alessandro magno": {
    "nome": "Alessandro Magno",
@@ -279,7 +285,9 @@
    "motivo": "emblema: nessun ritratto di Alonzo Church con licenza libera: i file che si trovano cercando il nome sono altri Alonzo, e la foto di en.wikipedia e' ospitata in quel deposito e non e' libera. Emblema, dichiarandolo.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q314.png"
+   "immagine": "sorgenti/art/out/emblema_Q314.png",
+   "emblema_famiglia": "nessun_ritratto_libero",
+   "emblema_famiglia_da": "nessun ritratto"
   },
   "amerigo vespucci": {
    "nome": "Amerigo Vespucci",
@@ -420,12 +428,14 @@
    "immagine": "sorgenti/art/out/ritratto_Q14.png"
   },
   "augusto": {
-   "nome": "Augusto",
+   "nome": "Ottaviano Augusto",
    "anni": [
+    2,
     3
    ],
    "usata_in": [
-    "Q103"
+    "Q103",
+    "Q29"
    ],
    "dettagli": {
     "licenza": "Public domain",
@@ -480,7 +490,9 @@
    "motivo": "emblema: stessa numerazione discordante: 'Azzo VII (Novello)' non coincide con nessun 'Obizzo II d'Este.jpg' che si puo' verificare. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P10.png"
+   "immagine": "sorgenti/art/out/emblema_P10.png",
+   "emblema_famiglia": "numero_discorde",
+   "emblema_famiglia_da": "numerazione discordante"
   },
   "azzo viii d'este": {
    "nome": "Azzo VIII d'Este",
@@ -497,7 +509,9 @@
    "motivo": "emblema: e' una fotografia d'archivio di un uomo con cappuccio, del XIX o XX secolo: Azzo VIII e' morto nel 1537 e non puo' essere in una fotografia. Il file era stato trovato per il nome dello stemma, non per la persona. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P14.png"
+   "immagine": "sorgenti/art/out/emblema_P14.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "stemma"
   },
   "b. r. ambedkar": {
    "nome": "B. R. Ambedkar",
@@ -537,7 +551,9 @@
    "motivo": "emblema: nessun ritratto libero: i file trovati sono una via ferrarese e due guide turistiche. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P59.png"
+   "immagine": "sorgenti/art/out/emblema_P59.png",
+   "emblema_famiglia": "nessun_ritratto_libero",
+   "emblema_famiglia_da": "nessun ritratto"
   },
   "beata beatrice ii d'este": {
    "nome": "Beata Beatrice II d'Este",
@@ -554,7 +570,9 @@
    "motivo": "emblema: il file e' di Bartolomeo Veneto e le categorie dicono «Beatrice d'Este»: e' la duchessa milanese del 1490, figlia di Ludovico il Moro. La Beatrice II che il gioco descrive e' la monaca di Sant'Antonio in Polesine, una degli Este che non governarono, e morta nel 1372. Due donne, due secoli, due dinastie: la ricerca ha abboccato al nome. Emblema, e il ritratto vero va ancora cercato.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P11.png"
+   "immagine": "sorgenti/art/out/emblema_P11.png",
+   "emblema_famiglia": "identita_conflitto",
+   "emblema_famiglia_da": "categorie dicono"
   },
   "belisario": {
    "nome": "Belisario",
@@ -619,7 +637,9 @@
    "motivo": "emblema: Biagio Rossetti non ha ritratto: su Commons ci sono case e strade intitolate a lui, non la sua faccia. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P31.png"
+   "immagine": "sorgenti/art/out/emblema_P31.png",
+   "emblema_famiglia": "nessun_ritratto_libero",
+   "emblema_famiglia_da": "non ha ritratto"
   },
   "borso d'este": {
    "nome": "Borso d'Este",
@@ -776,7 +796,9 @@
    "motivo": "emblema: uno stemma su fondo rosso: nessun viso. Per un umanista che il gioco vuol dire chi era, non di che famiglia era, uno stemma non basta. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P41.png"
+   "immagine": "sorgenti/art/out/emblema_P41.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "stemma"
   },
   "cicerone": {
    "nome": "Cicerone",
@@ -816,7 +838,9 @@
    "motivo": "emblema: e' la fotografia di una statua in un giardino, lontana, senza volto leggibile: non si distingue Cincinnato da nessun altro e il gioco non puo' mostrare un viso cosi'. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q17.png"
+   "immagine": "sorgenti/art/out/emblema_Q17.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "statua"
   },
   "claude shannon": {
    "nome": "Claude Shannon",
@@ -865,11 +889,13 @@
    "immagine": "sorgenti/art/out/ritratto_Q212.png"
   },
   "copernico": {
-   "nome": "Copernico",
+   "nome": "Niccolò Copernico",
    "anni": [
+    1,
     3
    ],
    "usata_in": [
+    "P42",
     "Q102"
    ],
    "dettagli": {
@@ -885,7 +911,7 @@
    "motivo": "ok",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/ritratto_Q102.png"
+   "immagine": "sorgenti/art/out/ritratto_P42.png"
   },
   "cornelia, madre dei gracchi": {
    "nome": "Cornelia, madre dei Gracchi",
@@ -948,7 +974,9 @@
    "motivo": "emblema: e' un'interno dipinto con figure, non un ritratto: il file e' un'opera ambientata, e per un uomo che e' un solo soggetto di quei dipinti non c'e' nessun volto di Cosmè Tura. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P23.png"
+   "immagine": "sorgenti/art/out/emblema_P23.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "interno dipinto"
   },
   "daniel kahneman": {
    "nome": "Daniel Kahneman",
@@ -1011,7 +1039,9 @@
    "motivo": "persona viva: solo emblema",
    "tipo": "persona",
    "vivo": true,
-   "immagine": "sorgenti/art/out/emblema_Q329.png"
+   "immagine": "sorgenti/art/out/emblema_Q329.png",
+   "emblema_famiglia": "vivo",
+   "emblema_famiglia_da": "persona viva"
   },
   "domenico malagutti": {
    "nome": "Domenico Malagutti",
@@ -1028,7 +1058,9 @@
    "motivo": "emblema: nessun ritratto libero: i file trovati sono giornali del 1904 e un libro. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P67.png"
+   "immagine": "sorgenti/art/out/emblema_P67.png",
+   "emblema_famiglia": "nessun_ritratto_libero",
+   "emblema_famiglia_da": "nessun ritratto"
   },
   "donald davies": {
    "nome": "Donald Davies",
@@ -1045,7 +1077,9 @@
    "motivo": "emblema: Donald Davies non ha un ritratto libero verificabile: nessun file su Commons lo ritrae. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q319.png"
+   "immagine": "sorgenti/art/out/emblema_Q319.png",
+   "emblema_famiglia": "nessun_ritratto_libero",
+   "emblema_famiglia_da": "nessun file"
   },
   "dosso dossi": {
    "nome": "Dosso Dossi",
@@ -1236,34 +1270,13 @@
    "immagine": "sorgenti/art/out/ritratto_P49.png"
   },
   "federico ii": {
-   "nome": "Federico II",
+   "nome": "Federico II di Svevia",
    "anni": [
+    2,
     3
    ],
    "usata_in": [
-    "Q108"
-   ],
-   "dettagli": {
-    "licenza": "Public domain",
-    "autore": "Unknown authorUnknown author",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Frederick_II_and_eagle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "larghezza": 593,
-    "altezza": 818
-   },
-   "dettagli_non_verificati": null,
-   "etichetta": "dipinto",
-   "esito": "ritratto",
-   "motivo": "ok",
-   "tipo": "persona",
-   "vivo": false,
-   "immagine": "sorgenti/art/out/ritratto_Q108.png"
-  },
-  "federico ii di svevia": {
-   "nome": "Federico II di Svevia",
-   "anni": [
-    2
-   ],
-   "usata_in": [
+    "Q108",
     "Q44"
    ],
    "dettagli": {
@@ -1279,7 +1292,7 @@
    "motivo": "ok",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/ritratto_Q44.png"
+   "immagine": "sorgenti/art/out/ritratto_Q108.png"
   },
   "fei-fei li": {
    "nome": "Fei-Fei Li",
@@ -1296,7 +1309,9 @@
    "motivo": "persona viva: solo emblema",
    "tipo": "persona",
    "vivo": true,
-   "immagine": "sorgenti/art/out/emblema_Q311.png"
+   "immagine": "sorgenti/art/out/emblema_Q311.png",
+   "emblema_famiglia": "vivo",
+   "emblema_famiglia_da": "persona viva"
   },
   "filippo de pisis": {
    "nome": "Filippo de Pisis",
@@ -1382,7 +1397,9 @@
    "motivo": "emblema: scena allegorica con molte figure e un fiume in primo piano: e' un dipinto del Cossa, non un suo ritratto. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P24.png"
+   "immagine": "sorgenti/art/out/emblema_P24.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "scena"
   },
   "frederick douglass": {
    "nome": "Frederick Douglass",
@@ -1491,7 +1508,9 @@
    "motivo": "persona viva: solo emblema",
    "tipo": "persona",
    "vivo": true,
-   "immagine": "sorgenti/art/out/emblema_Q327.png"
+   "immagine": "sorgenti/art/out/emblema_Q327.png",
+   "emblema_famiglia": "vivo",
+   "emblema_famiglia_da": "persona viva"
   },
   "george orwell": {
    "nome": "George Orwell",
@@ -1531,7 +1550,9 @@
    "motivo": "emblema: nessun ritratto libero: i file trovati sono trattati di idroterapia. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P68.png"
+   "immagine": "sorgenti/art/out/emblema_P68.png",
+   "emblema_famiglia": "nessun_ritratto_libero",
+   "emblema_famiglia_da": "nessun ritratto"
   },
   "gilgamesh": {
    "nome": "Gilgamesh",
@@ -1548,7 +1569,9 @@
    "motivo": "emblema: e' la fotografia di una tavoletta cuneifica, con un rettangolo rosso disegnato sopra: e' un documento, e un documento non e' una faccia. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q201.png"
+   "immagine": "sorgenti/art/out/emblema_Q201.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "tavoletta"
   },
   "gioacchino": {
    "nome": "Gioacchino (Nino) Bonnet",
@@ -1864,7 +1887,9 @@
    "motivo": "emblema: famiglia: non ha un volto unico. Emblema, come tutti i collettivi.",
    "tipo": "gruppo",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P05.png"
+   "immagine": "sorgenti/art/out/emblema_P05.png",
+   "emblema_famiglia": "collettivo",
+   "emblema_famiglia_da": "non ha un volto unico"
   },
   "gli ingegneri delle reti": {
    "nome": "Gli ingegneri delle reti",
@@ -1881,7 +1906,9 @@
    "motivo": "collettivo: non ha un volto unico",
    "tipo": "collettivo",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q318.png"
+   "immagine": "sorgenti/art/out/emblema_Q318.png",
+   "emblema_famiglia": "collettivo",
+   "emblema_famiglia_da": "collettivo"
   },
   "gli studenti dello studio": {
    "nome": "Gli studenti dello Studio",
@@ -1898,7 +1925,9 @@
    "motivo": "emblema: la foto trovata e' il convento di Santa Lucia, non lo Studio: sono due cose diverse, e la somiglianza dei nomi e' quello che ha fatto sbagliare la ricerca.",
    "tipo": "gruppo",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P89.png"
+   "immagine": "sorgenti/art/out/emblema_P89.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "convento"
   },
   "guarino veronese": {
    "nome": "Guarino Veronese",
@@ -1984,7 +2013,9 @@
    "motivo": "emblema: e' la parte alta della stele del Codice, dove un re riceve i leggi da una divinità: e' una scena di incoronazione, non il ritratto di Hammurabi. La stele resta un monumento, ma il volto che si vede non e' il suo. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q222.png"
+   "immagine": "sorgenti/art/out/emblema_Q222.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "scena"
   },
   "hans rosling": {
    "nome": "Hans Rosling",
@@ -2070,7 +2101,9 @@
    "motivo": "emblema: soldati di oggi che sfilano in strada, uniformi attuali, foto del 2007. Per i Bersaglieri del 1848 e' un'affermazione falsa.",
    "tipo": "gruppo",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P66.png"
+   "immagine": "sorgenti/art/out/emblema_P66.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "sfilano"
   },
   "i censori": {
    "nome": "I censori",
@@ -2087,7 +2120,9 @@
    "motivo": "collettivo: non ha un volto unico",
    "tipo": "collettivo",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q220.png"
+   "immagine": "sorgenti/art/out/emblema_Q220.png",
+   "emblema_famiglia": "collettivo",
+   "emblema_famiglia_da": "collettivo"
   },
   "i copisti e gli amanuensi": {
    "nome": "I copisti e gli amanuensi",
@@ -2104,7 +2139,9 @@
    "motivo": "collettivo: non ha un volto unico",
    "tipo": "collettivo",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q91.png"
+   "immagine": "sorgenti/art/out/emblema_Q91.png",
+   "emblema_famiglia": "collettivo",
+   "emblema_famiglia_da": "collettivo"
   },
   "i corrieri e i messaggeri": {
    "nome": "I corrieri e i messaggeri",
@@ -2121,7 +2158,9 @@
    "motivo": "collettivo: non ha un volto unico",
    "tipo": "collettivo",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q90.png"
+   "immagine": "sorgenti/art/out/emblema_Q90.png",
+   "emblema_famiglia": "collettivo",
+   "emblema_famiglia_da": "collettivo"
   },
   "i tipografi e i privilegi": {
    "nome": "I tipografi e i privilegi",
@@ -2138,7 +2177,9 @@
    "motivo": "collettivo: non ha un volto unico",
    "tipo": "collettivo",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q129.png"
+   "immagine": "sorgenti/art/out/emblema_Q129.png",
+   "emblema_famiglia": "collettivo",
+   "emblema_famiglia_da": "collettivo"
   },
   "ibn al-haytham": {
    "nome": "Ibn al-Haytham",
@@ -2178,7 +2219,9 @@
    "motivo": "emblema: e' la fotografia di un pannello di mostra, con didascalie che a questa misura non si leggono: dentro c'e' un ritratto di Ibn Battuta, ma il file cosi' com'e' non si puo' usare, va ritagliato dalla fonte e riverificato. Emblema, non cancellazione.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q202.png"
+   "immagine": "sorgenti/art/out/emblema_Q202.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "pannello"
   },
   "ibn khaldun": {
    "nome": "Ibn Khaldun",
@@ -2218,7 +2261,9 @@
    "motivo": "emblema: collettivo. Emblema.",
    "tipo": "gruppo",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P54.png"
+   "immagine": "sorgenti/art/out/emblema_P54.png",
+   "emblema_famiglia": "collettivo",
+   "emblema_famiglia_da": "collettivo"
   },
   "il consiglio di corte": {
    "nome": "Il consiglio di corte",
@@ -2235,7 +2280,9 @@
    "motivo": "collettivo: non ha un volto unico",
    "tipo": "collettivo",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q92.png"
+   "immagine": "sorgenti/art/out/emblema_Q92.png",
+   "emblema_famiglia": "collettivo",
+   "emblema_famiglia_da": "collettivo"
   },
   "il territorio del po": {
    "nome": "Il territorio del Po",
@@ -2252,7 +2299,9 @@
    "motivo": "emblema: nessun file su Commons ritrae il Po in questa sezione. Emblema.",
    "tipo": "luogo_personaggio",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P92.png"
+   "immagine": "sorgenti/art/out/emblema_P92.png",
+   "emblema_famiglia": "nessun_ritratto_libero",
+   "emblema_famiglia_da": "nessun file"
   },
   "ipazia": {
    "nome": "Ipazia",
@@ -2317,7 +2366,9 @@
    "motivo": "emblema: e' un gioiello: un pendente con un profilo inciso dentro un cammeo. Non e' il ritratto di Isabella d'Este, e' un gioiello con una faccia qualunque dentro. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P32.png"
+   "immagine": "sorgenti/art/out/emblema_P32.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "gioiello"
   },
   "isabella di castiglia": {
    "nome": "Isabella di Castiglia",
@@ -2357,7 +2408,9 @@
    "motivo": "emblema: James Ellis non ha ritratto libero: l'uomo che ha inventato lo stream cipher e non lo ha mai detto resta senza faccia. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q324.png"
+   "immagine": "sorgenti/art/out/emblema_Q324.png",
+   "emblema_famiglia": "nessun_ritratto_libero",
+   "emblema_famiglia_da": "non ha ritratto"
   },
   "james lovelock": {
    "nome": "James Lovelock",
@@ -2514,7 +2567,9 @@
    "motivo": "persona viva: solo emblema",
    "tipo": "persona",
    "vivo": true,
-   "immagine": "sorgenti/art/out/emblema_Q326.png"
+   "immagine": "sorgenti/art/out/emblema_Q326.png",
+   "emblema_famiglia": "vivo",
+   "emblema_famiglia_da": "persona viva"
   },
   "karl popper": {
    "nome": "Karl Popper",
@@ -2577,7 +2632,9 @@
    "motivo": "emblema: fotografia d'oggetti di culto ebraici su un tavolo: non e' la comunita' ebraica di Ferrara, e non e' nemmeno antica.",
    "tipo": "gruppo",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P88.png"
+   "immagine": "sorgenti/art/out/emblema_P88.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "oggetti di culto"
   },
   "la macchina": {
    "nome": "La macchina",
@@ -2594,7 +2651,9 @@
    "motivo": "collettivo: non ha un volto unico",
    "tipo": "collettivo",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q313.png"
+   "immagine": "sorgenti/art/out/emblema_Q313.png",
+   "emblema_famiglia": "collettivo",
+   "emblema_famiglia_da": "collettivo"
   },
   "lars porsenna": {
    "nome": "Lars Porsenna",
@@ -2634,7 +2693,9 @@
    "motivo": "collettivo: non ha un volto unico",
    "tipo": "collettivo",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q305.png"
+   "immagine": "sorgenti/art/out/emblema_Q305.png",
+   "emblema_famiglia": "collettivo",
+   "emblema_famiglia_da": "collettivo"
   },
   "le monache di sant'antonio in polesine": {
    "nome": "Le monache di Sant'Antonio in Polesine",
@@ -2651,7 +2712,9 @@
    "motivo": "emblema: nessun file su Commons ritrae il convento. Emblema.",
    "tipo": "gruppo",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P91.png"
+   "immagine": "sorgenti/art/out/emblema_P91.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "convento"
   },
   "le persone che non hanno firmato": {
    "nome": "Le persone che non hanno firmato",
@@ -2668,7 +2731,9 @@
    "motivo": "collettivo: non ha un volto unico",
    "tipo": "collettivo",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q230.png"
+   "immagine": "sorgenti/art/out/emblema_Q230.png",
+   "emblema_famiglia": "collettivo",
+   "emblema_famiglia_da": "collettivo"
   },
   "leibniz": {
    "nome": "Leibniz *(aggiunta",
@@ -2831,7 +2896,9 @@
    "motivo": "emblema: nessun ritratto libero: i file trovati sono la tomba di una parente e l'anticamera del castello. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P40.png"
+   "immagine": "sorgenti/art/out/emblema_P40.png",
+   "emblema_famiglia": "nessun_ritratto_libero",
+   "emblema_famiglia_da": "nessun ritratto"
   },
   "luigi parmeggiani": {
    "nome": "Luigi Parmeggiani",
@@ -2871,7 +2938,9 @@
    "motivo": "emblema: e' il frontespizio di un libro di madrigali, con la data e la citta': un'opera stampata, non un ritratto. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P53.png"
+   "immagine": "sorgenti/art/out/emblema_P53.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "frontespizio"
   },
   "mansa musa": {
    "nome": "Mansa Musa",
@@ -3026,7 +3095,9 @@
    "motivo": "emblema: ceramica persiana: il file si chiama 'Iranian handicraft' ed e' quello che ritrae. Per i mercanti di Ferrara e' falso.",
    "tipo": "gruppo",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P90.png"
+   "immagine": "sorgenti/art/out/emblema_P90.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "ceramica"
   },
   "michelangelo antonioni": {
    "nome": "Michelangelo Antonioni",
@@ -3112,30 +3183,9 @@
    "motivo": "emblema: David, Napoleone che scavalca il San Bernardo: e' una scena di guerra, non un ritratto. Resta immagine buona per il livello, non per la scheda.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P63.png"
-  },
-  "niccolò copernico": {
-   "nome": "Niccolò Copernico",
-   "anni": [
-    1
-   ],
-   "usata_in": [
-    "P42"
-   ],
-   "dettagli": {
-    "licenza": "Public domain",
-    "autore": "Unknown authorUnknown author",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Nikolaus_Kopernikus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "larghezza": 1024,
-    "altezza": 1001
-   },
-   "dettagli_non_verificati": null,
-   "etichetta": "dipinto",
-   "esito": "ritratto",
-   "motivo": "ok",
-   "tipo": "persona",
-   "vivo": false,
-   "immagine": "sorgenti/art/out/ritratto_P42.png"
+   "immagine": "sorgenti/art/out/emblema_P63.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "scena"
   },
   "niccolò leoniceno": {
    "nome": "Niccolò Leoniceno",
@@ -3198,7 +3248,9 @@
    "motivo": "emblema: stessa numerazione discordante. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P15.png"
+   "immagine": "sorgenti/art/out/emblema_P15.png",
+   "emblema_famiglia": "numero_discorde",
+   "emblema_famiglia_da": "numerazione discordante"
   },
   "nicolò iii d'este": {
    "nome": "Nicolò III d'Este",
@@ -3238,7 +3290,9 @@
    "motivo": "emblema: su Commons i ritratti d'Este sono numerati in modo diverso dall'articolo di it.wikipedia: non si puo' attribuire con onesta. Emblema, e nota aperta.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P07.png"
+   "immagine": "sorgenti/art/out/emblema_P07.png",
+   "emblema_famiglia": "numero_discorde",
+   "emblema_famiglia_da": "numerati in modo diverso"
   },
   "obizzo ii d'este": {
    "nome": "Obizzo II d'Este",
@@ -3331,29 +3385,6 @@
    "tipo": "persona",
    "vivo": false,
    "immagine": "sorgenti/art/out/ritratto_Q215.png"
-  },
-  "ottaviano augusto": {
-   "nome": "Ottaviano Augusto",
-   "anni": [
-    2
-   ],
-   "usata_in": [
-    "Q29"
-   ],
-   "dettagli": {
-    "licenza": "Public domain",
-    "autore": "Till Niermann",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Statue-Augustus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "larghezza": 1500,
-    "altezza": 2250
-   },
-   "dettagli_non_verificati": null,
-   "etichetta": "immagine tradizionale",
-   "esito": "ritratto",
-   "motivo": "ok",
-   "tipo": "persona",
-   "vivo": false,
-   "immagine": "sorgenti/art/out/ritratto_Q29.png"
   },
   "paolo mazza": {
    "nome": "Paolo Mazza",
@@ -3600,7 +3631,9 @@
    "motivo": "emblema: e' la foto di un monumento moderno di cemento, scattato dal basso contro il cielo con i caratteri cinesi sul basamento. Qin Shi Huang e' morto nel 210 a.C.: un monumento del Novecento non lo ritrae. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q203.png"
+   "immagine": "sorgenti/art/out/emblema_Q203.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "monumento"
   },
   "radia perlman": {
    "nome": "Radia Perlman",
@@ -3617,7 +3650,9 @@
    "motivo": "persona viva: solo emblema",
    "tipo": "persona",
    "vivo": true,
-   "immagine": "sorgenti/art/out/emblema_Q316.png"
+   "immagine": "sorgenti/art/out/emblema_Q316.png",
+   "emblema_famiglia": "vivo",
+   "emblema_famiglia_da": "persona viva"
   },
   "remo brindisi": {
    "nome": "Remo Brindisi",
@@ -3680,7 +3715,9 @@
    "motivo": "emblema: la ricerca aveva restituito 'Renata Viganò gatto': il nome della persona e il nome del gatto si somigliano in italiano. Renata Viganò non ha un ritratto libero.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P80.png"
+   "immagine": "sorgenti/art/out/emblema_P80.png",
+   "emblema_famiglia": "identita_conflitto",
+   "emblema_famiglia_da": "gatto"
   },
   "renzo ravenna": {
    "nome": "Renzo Ravenna",
@@ -3743,7 +3780,9 @@
    "motivo": "emblema: e' una moneta romana con due teste di profilo e la leggenda ROMA: sono allegorie, non Romolo. Una moneta registra la Repubblica, non un volto. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q05.png"
+   "immagine": "sorgenti/art/out/emblema_Q05.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "moneta"
   },
   "salinguerra torelli": {
    "nome": "Salinguerra Torelli",
@@ -3760,7 +3799,9 @@
    "motivo": "emblema: e' uno stemma araldico, non la persona: nessun viso, e per Salinguerra Torelli il gioco vuol dire chi era, non di che famiglia era. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P06.png"
+   "immagine": "sorgenti/art/out/emblema_P06.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "stemma"
   },
   "san giorgio": {
    "nome": "San Giorgio",
@@ -3800,7 +3841,9 @@
    "motivo": "emblema: san Maurelio e' una figura della tradizione, senza ritratto: il progetto lo dice gia' a proposito di Maurelio. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P01.png"
+   "immagine": "sorgenti/art/out/emblema_P01.png",
+   "emblema_famiglia": "tradizione",
+   "emblema_famiglia_da": "tradizione"
   },
   "satoshi nakamoto": {
    "nome": "Satoshi Nakamoto",
@@ -3817,7 +3860,9 @@
    "motivo": "emblema: e' la foto di una statua di bronzo di un personaggio anonimo con una medaglia di bitcoin al collo. Il nome e' quello di un autore pseudonimo: nessuno conosce quel volto e la medaglia dice solo che la scena e' costruita. Emblema.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q322.png"
+   "immagine": "sorgenti/art/out/emblema_Q322.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "scena"
   },
   "sergej korolëv": {
    "nome": "Sergej Korolëv",
@@ -3903,7 +3948,9 @@
    "motivo": "emblema: e' una scena della Bibbia di Borso, senza volto del miniatore: e' un'opera, non un ritratto.",
    "tipo": "gruppo",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_P27.png"
+   "immagine": "sorgenti/art/out/emblema_P27.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "scena"
   },
   "tancredi mosti trotti estense": {
    "nome": "Tancredi Mosti Trotti Estense",
@@ -3989,7 +4036,9 @@
    "motivo": "persona viva: solo emblema",
    "tipo": "persona",
    "vivo": true,
-   "immagine": "sorgenti/art/out/emblema_Q323.png"
+   "immagine": "sorgenti/art/out/emblema_Q323.png",
+   "emblema_famiglia": "vivo",
+   "emblema_famiglia_da": "persona viva"
   },
   "timnit gebru": {
    "nome": "Timnit Gebru",
@@ -4006,7 +4055,9 @@
    "motivo": "persona viva: solo emblema",
    "tipo": "persona",
    "vivo": true,
-   "immagine": "sorgenti/art/out/emblema_Q328.png"
+   "immagine": "sorgenti/art/out/emblema_Q328.png",
+   "emblema_famiglia": "vivo",
+   "emblema_famiglia_da": "persona viva"
   },
   "tito vespasiano strozzi": {
    "nome": "Tito Vespasiano Strozzi",
@@ -4184,7 +4235,9 @@
    "motivo": "persona viva: solo emblema",
    "tipo": "persona",
    "vivo": true,
-   "immagine": "sorgenti/art/out/emblema_Q317.png"
+   "immagine": "sorgenti/art/out/emblema_Q317.png",
+   "emblema_famiglia": "vivo",
+   "emblema_famiglia_da": "persona viva"
   },
   "william caxton": {
    "nome": "William Caxton *(aggiunta",
@@ -4201,7 +4254,9 @@
    "motivo": "emblema: xilografia di una stamperia: e' l'opera di Caxton, non la sua faccia. Preziosissima come immagine di livello.",
    "tipo": "persona",
    "vivo": false,
-   "immagine": "sorgenti/art/out/emblema_Q126.png"
+   "immagine": "sorgenti/art/out/emblema_Q126.png",
+   "emblema_famiglia": "opera_non_persona",
+   "emblema_famiglia_da": "xilografia"
   },
   "yann lecun": {
    "nome": "Yann LeCun",
@@ -4218,7 +4273,9 @@
    "motivo": "persona viva: solo emblema",
    "tipo": "persona",
    "vivo": true,
-   "immagine": "sorgenti/art/out/emblema_Q315.png"
+   "immagine": "sorgenti/art/out/emblema_Q315.png",
+   "emblema_famiglia": "vivo",
+   "emblema_famiglia_da": "persona viva"
   },
   "zenone di elea": {
    "nome": "Zenone di Elea",

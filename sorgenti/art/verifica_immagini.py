@@ -31,15 +31,43 @@ c'e' davvero in `sorgenti/art/out/`.
 5. **Ogni codice di tappa deve comparire nel catalogo**, una volta sola per
    persona: e' la copertura. Se un codice sparisce, sparisce una tappa.
 
+6. **Una scheda respinta a vista non puo' comparire come ritratto.**
+
+7. **I file distinti devono essere tanti quanti le persone.** Questo e' il
+   controllo che mancava fino al 3 ottobre 2026, e la sua assenza e' la ragione
+   per cui sessanta emblemi erano **diciotto file**: tutti e sessanta i PNG
+   esistevano, avevano la misura giusta e passavano i controlli, e dieci persone
+   avevano lo stesso identico file. Il conto che gli altri controlli facevano
+   era sui file, e sessanta file identici a gruppi sono, per un contatore,
+   sessanta file giusti. Qui si conta lo **sha256** e si pretende che ogni
+   persona abbia un'immagine sua.
+
+   Il difetto si dichiara con i **nomi** delle persone coinvolte: un difetto che
+   non si lascia guardare e' un difetto che non si lascia correggere. Ed e' cosi'
+   che questo controllo ha trovato, da solo, i tre doppioni fra i ritratti
+   (Augusto/Ottaviano Augusto, Copernico/Niccolò Copernico, Federico
+   II/Federico II di Svevia): sei voci di catalogo per tre persone.
+
+8. **Ogni emblema dichiara la famiglia e la parola che l'ha fatta vincere**, e
+   la famiglia viene **ricalcolata dal motivo**: se il catalogo dicesse una
+   famiglia e il motivo un'altra, il gioco mostrerebbe un segno che non spiega
+   la frase scritta accanto. E se la parola non sta piu' nel motivo, il
+   controllo lo dice invece di passare: una parola sparita e' un controllo che
+   non guarda.
+
 Uso:
     python3 sorgenti/art/verifica_immagini.py            # riporta i difetti
     python3 sorgenti/art/verifica_immagini.py --enumero  # stampa i numeri
 """
 import glob
+import hashlib
 import json
 import os
 import re
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import emblema
 
 BASE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ESITO = os.path.join(BASE, "sorgenti", "art", "ritratti_disponibili.json")
@@ -180,6 +208,64 @@ def main(numera=False):
                 difetti.append("6 %s e' stata respinta a vista e %scompare "
                                "come ritratto" % (codice, nome))
 
+    # 7. i file distinti devono essere tanti quanti le persone
+    for esito in ("ritratto", "emblema"):
+        del_file = {}
+        for nome, p in persone.items():
+            if p["esito"] != esito or not p.get("immagine"):
+                continue
+            percorso = os.path.join(BASE, p["immagine"])
+            if not os.path.exists(percorso):
+                continue
+            impronta = hashlib.sha256(open(percorso, "rb").read()).hexdigest()
+            del_file.setdefault(impronta, []).append(nome)
+        attese = sum(1 for p in persone.values() if p["esito"] == esito)
+        distinti = len(del_file)
+        if distinti != attese:
+            raggruppati = sorted((v for v in del_file.values() if len(v) > 1),
+                                 key=lambda v: -len(v))
+            difetti.append(
+                "7 %d %s su %d hanno un'immagine tutta loro: %d file distinti "
+                "per %d persone. I doppioni sono %s"
+                % (distinti, esito, attese, distinti, attese,
+                   "; ".join("= ".join(v) for v in raggruppati[:6])))
+
+    # 8. ogni emblema dichiara la famiglia, e la famiglia viene dal motivo
+    for nome, p in persone.items():
+        if p["esito"] != "emblema":
+            if p.get("emblema_famiglia"):
+                difetti.append("8 %s e' un ritratto e porta una famiglia di "
+                               "emblema: il dato mente sul esito" % nome)
+            continue
+        if not p.get("emblema_famiglia") or not p.get("emblema_famiglia_da"):
+            difetti.append("8 %s e' un emblema senza `emblema_famiglia`: il "
+                           "gioco non sa che cosa dire" % nome)
+            continue
+        try:
+            ricalcolata, parola = emblema.classifica(p["motivo"])
+        except emblema.FamigliaNonRiconosciuta:
+            difetti.append("8 %s: il motivo non sta in nessuna famiglia "
+                           "dichiarata, e il catalogo dice %r"
+                           % (nome, p["emblema_famiglia"]))
+            continue
+        if ricalcolata != p["emblema_famiglia"]:
+            difetti.append("8 %s: il catalogo dice %r, il motivo dice %r"
+                           % (nome, p["emblema_famiglia"], ricalcolata))
+        # La parola da confrontare e' **quella dichiarata**, non quella appena
+        # ricalcolata: confrontando la ricalcolata con se stessa il controllo
+        # passava qualunque cosa dicesse `emblema_famiglia_da`, ed e' un difetto
+        # che la prova dei difetti ha trovato iniettando proprio una parola
+        # inesistente. Un campo che nessuno guarda e' un campo che non esiste.
+        dichiarata = p["emblema_famiglia_da"]
+        if dichiarata not in p["motivo"]:
+            difetti.append("8 %s: `emblema_famiglia_da` dice %r e quella parola "
+                           "nel motivo non c'e': il controllo sta guardando una "
+                           "parola che non c'e'" % (nome, dichiarata))
+        elif dichiarata != parola:
+            difetti.append("8 %s: il motivo ha fatto vincere %r e il catalogo "
+                           "dichiara %r: due parole diverse per la stessa "
+                           "famiglia" % (nome, parola, dichiarata))
+
     if numera:
         per_esito = {}
         for p in persone.values():
@@ -190,6 +276,22 @@ def main(numera=False):
         print("tappe coperte    : %d su %d" % (len(set(visti)), len(attesi)))
         print("file in out/     : %d" % len([f for f in os.listdir(OUT)
                                             if f.endswith(".png")]))
+        for esito in sorted({p["esito"] for p in persone.values()}):
+            impronte = {hashlib.sha256(open(os.path.join(BASE, p["immagine"]),
+                                            "rb").read()).hexdigest()
+                        for p in persone.values()
+                        if p["esito"] == esito and p.get("immagine")
+                        and os.path.exists(os.path.join(BASE, p["immagine"]))}
+            print("  file distinti %-9s: %d su %d"
+                  % (esito, len(impronte),
+                     sum(1 for p in persone.values() if p["esito"] == esito)))
+        famiglie = {}
+        for p in persone.values():
+            if p["esito"] == "emblema":
+                famiglie[p["emblema_famiglia"]] = \
+                    famiglie.get(p["emblema_famiglia"], 0) + 1
+        for k in sorted(famiglie):
+            print("  %-22s: %d" % (k, famiglie[k]))
 
     if difetti:
         print("PROBLEMI: %d" % len(difetti))

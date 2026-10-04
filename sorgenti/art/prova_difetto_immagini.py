@@ -45,6 +45,22 @@ def scrivi(cat):
         f.write("\n")
 
 
+def due_emblemi():
+    """Due persone con emblema, diverse fra loro.
+
+    La prova non puo' usare due nomi scritti qui: se il catalogo cambia quei
+    due nomi spariscono e la prova muore per una ragione che non ha a che fare
+    con il difetto che deve provare. Un caso che dipende dal calendario non e'
+    una prova del caso.
+    """
+    cat = leggi()
+    nomi = [n for n, p in sorted(cat["persone"].items())
+            if p["esito"] == "emblema"]
+    if len(nomi) < 2:
+        raise SystemExit("servono due emblemi distinti per la prova")
+    return nomi[0], nomi[1]
+
+
 def persona_di(esito):
     cat = leggi()
     for n, p in cat["persone"].items():
@@ -133,6 +149,51 @@ def main():
     def d6(cat):
         cat["persone"][ritratto]["usata_in"] = []
     inietta("tappa sparita dal catalogo", d6)
+
+    shutil.copy(os.path.join(BASE, leggi()["persone"][due_emblemi()[1]]["immagine"]),
+                os.path.join(backup, "emblema_vero.png"))
+    # difetto 7: **due emblemi con lo stesso file**. Questo non e' un difetto
+    # ipotetico: fino al 3 ottobre i sessanta emblemi erano diciotto file e dieci
+    # persone ne avevano uno identico, e nessuno dei sei controlli lo vide, perche'
+    # tutti contavano i file e non i file distinti. Il difetto si inietta
+    # copiando un PNG su un altro, cosi' la prova riface esattamente il
+    # difetto reale invece di simularlo.
+    def d7(cat):
+        primo, secondo = due_emblemi()
+        shutil.copy(os.path.join(BASE, cat["persone"][primo]["immagine"]),
+                    os.path.join(BASE, cat["persone"][secondo]["immagine"]))
+    inietta("due emblemi con lo stesso file", d7)
+    # il file sovrascritto si rimette: senza, i quattro difetti seguenti
+    # venivano tutti visti per il motivo sbagliato — quello del difetto 7, non
+    # il loro — e la prova avrebbe dato un verde che non sapeva niente.
+    shutil.copy(os.path.join(backup, "emblema_vero.png"),
+                os.path.join(BASE, leggi()["persone"][due_emblemi()[1]]["immagine"]))
+
+    # difetto 8: un ritratto che porta una famiglia di emblema: il dato mente
+    # sul proprio esito, ed e' il caso in cui il gioco mostrerebbe un segno di
+    # «qui non c'e' un volto» sopra un volto vero.
+    def d8(cat):
+        cat["persone"][ritratto]["emblema_famiglia"] = "vivo"
+    inietta("ritratto con famiglia di emblema", d8)
+
+    # difetto 9: un emblema che non dice quale famiglia e'. Il gioco non avrebbe
+    # niente da mostrare accanto al nome.
+    def d9(cat):
+        cat["persone"][emblema].pop("emblema_famiglia", None)
+    inietta("emblema senza famiglia", d9)
+
+    # difetto 10: la famiglia dichiarata non e' quella che il motivo dice. Il
+    # segno e la frase accanto racconterebbero due cose diverse.
+    def d10(cat):
+        cat["persone"][emblema]["emblema_famiglia"] = "vivo"
+    inietta("famiglia che il motivo non dice", d10)
+
+    # difetto 11: `emblema_famiglia_da` punta a una parola che nel motivo non
+    # c'e' piu'. E' il difetto del difetto: un controllo che confronta una
+    # parola sparita continua a passare e non guarda niente.
+    def d11(cat):
+        cat["persone"][emblema]["emblema_famiglia_da"] = "parola_che_non_esiste"
+    inietta("parola della famiglia sparita dal motivo", d11)
 
     shutil.rmtree(backup, ignore_errors=True)
 

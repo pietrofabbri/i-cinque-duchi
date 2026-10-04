@@ -24,10 +24,10 @@ Uso:
 import json
 import os
 import shutil
-import struct
 import subprocess
 import tempfile
-import zlib
+
+import emblema
 
 BASE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ART = os.path.join(BASE, "sorgenti", "art")
@@ -38,12 +38,24 @@ CATALOGO = os.path.join(BASE, "dati", "immagini_gioco.json")
 
 LATO, ALTEZZA = 48, 54
 
-# L'emblema e' una tessera neutra con la diagonale del progetto. Non e' un
-# ritratto e non finge di esserlo: e' il segnale, in un riquadro solo, che qui il
-# volto non c'e'. Il **motivo** per cui non c'e' sta nel catalogo, per iscritto,
-# accanto al codice: un simbolo non puo' dire «perche'».
-COLORE_EMBLEMA = (0x9a, 0x1e, 0x14)
-COLORE_EMBLEMA_SFONDO = (0xf2, 0xea, 0xdf)
+# Le tre schede che sono la **stessa persona** sotto due nomi. Non e' una
+# lista di preferenze: sono tre casi in cui il catalogo aveva due voci e un
+# solo file, e lo ha detto il controllo 7 di `verifica_immagini.py` contando gli
+# sha256 (138 file distinti su 141 ritratti). Il difetto e' nato da
+# `chiave_persona`, che ripulisce il nome ma non sa che «Ottaviano Augusto» e
+# «Augusto» sono lo stesso uomo: la normalizzazione e' testuale, e l'identita'
+# non e' una questione di testo.
+#
+# Non si e' cercata una regola che trovasse questi tre da sola: una regola che
+# unisce due nomi perche' uno contiene l'altro avrebbe unito anche
+# «il territorio del Po» e «i Bersaglieri del Po», che sono due persone diverse.
+# Qui si dichiarano i tre, e il controllo 7 continua a sorvegliarli: se un
+# quarto doppione compare, il controllo roscola e non lo lascia passare.
+ALIAS = {
+    "ottaviano augusto": "augusto",
+    "niccolò copernico": "copernico",
+    "federico ii di svevia": "federico ii",
+}
 
 
 def chiave_persona(e):
@@ -51,40 +63,15 @@ def chiave_persona(e):
     n = e["nome"].strip().lower()
     for pegg in (" *", "*", " (", "("):
         n = n.split(pegg)[0].strip()
-    return n
+    return ALIAS.get(n, n)
 
 
-def tessera_emblema(seme):
-    """Una PNG 48x54 scritta a mano, senza librerie.
-
-    Il progetto non ha PIL e non aggiunge dipendenze per un rettangolo: il
-    formato PNG si scrive in poche righe con `zlib`, che e' nella libreria
-    standard. Il seme decide la diagonale, cosi' due emblemi diversi non sembrano
-    lo stesso file.
-    """
-    righe = []
-    for y in range(ALTEZZA):
-        riga = bytearray()
-        for x in range(LATO):
-            bordo = x < 2 or x >= LATO - 2 or y < 2 or y >= ALTEZZA - 2
-            if bordo:
-                px = COLORE_EMBLEMA
-            elif (x + y + seme) % 22 < 9 and abs(x - y) < 26:
-                px = COLORE_EMBLEMA
-            else:
-                px = COLORE_EMBLEMA_SFONDO
-            riga += bytes(px)
-        righe.append(bytes(riga))
-
-    def lotto(tipo, dati):
-        return (struct.pack(">I", len(dati)) + tipo + dati
-                + struct.pack(">I", zlib.crc32(tipo + dati) & 0xFFFFFFFF))
-
-    grezzo = b"".join(b"\x00" + r for r in righe)
-    return (b"\x89PNG\r\n\x1a\n"
-            + lotto(b"IHDR", struct.pack(">IIBBBBB", LATO, ALTEZZA, 8, 2, 0, 0, 0))
-            + lotto(b"IDAT", zlib.compress(grezzo, 9))
-            + lotto(b"IEND", b""))
+# La tessera dell'emblema **non e' piu' qui**. Fino al 3 ottobre stava qui,
+# dentro questa funzione, e produceva un rettangolo con una diagonale il cui
+# seme era `sum(ord(codice)) % 22`: i sessanta emblemi erano **diciotto file**,
+# e dieci persone ne avevano uno identico. Ora e' in `emblema.py`, che
+# classifica il motivo in una delle sette famiglie dichiarate e ci scrive dentro
+# il segno della famiglia, le iniziali e la firma.
 
 
 def ricostruisci(codice):
@@ -208,49 +195,21 @@ def main(solo_esecuzione=False):
         print("persone: %d  %s" % (len(catalogo), n))
         return catalogo
 
-    with open(CATALOGO, "w", encoding="utf-8") as f:
-        json.dump({"_nota":
-                   "Catalogo unico delle immagini del gioco, indicizzato per "
-                   "persona e non per tappa: cinque personaggi compaiono in due "
-                   "anni e hanno un solo file. Ogni voce porta l'esito e "
-                   "l'etichetta, cosi' il gioco non mostra un volto senza dire "
-                   "che cos'e'.",
-                   "_generato_da": "sorgenti/art/catalogo_immagini.py",
-                   "persone": catalogo}, f, ensure_ascii=False, indent=1)
-        f.write("\n")
-
     scritti = 0
     cancellati = 0
-    with open(CATALOGO, "w", encoding="utf-8") as f:
-        json.dump({"_nota":
-                   "Catalogo unico delle immagini del gioco, indicizzato per "
-                   "persona e non per tappa: dodici persone compaiono in due anni "
-                   "e hanno un solo file. Ogni voce porta l'esito e l'etichetta, "
-                   "cosi' il gioco non mostra un volto senza dire che cos'e'. Le "
-                   "voci `da_verificare` non hanno un ritratto: hanno un emblema e "
-                   "il file in attesa, finche' non si verifica di chi e'.",
-                   "_generato_da": "sorgenti/art/catalogo_immagini.py",
-                   "persone": catalogo}, f, ensure_ascii=False, indent=1)
-        f.write("\n")
-    with open(CATALOGO, "w", encoding="utf-8") as f:
-        json.dump({"_nota":
-                   "Catalogo unico delle immagini del gioco, indicizzato per "
-                   "persona e non per tappa: dodici persone compaiono in due anni "
-                   "e hanno un solo file. Ogni voce porta l'esito e l'etichetta, "
-                   "cosi' il gioco non mostra un volto senza dire che cos'e'. Le "
-                   "voci `da_verificare` non hanno un ritratto: hanno un emblema e "
-                   "il file in attesa, finche' non si verifica di chi e'.",
-                   "_generato_da": "sorgenti/art/catalogo_immagini.py",
-                   "persone": catalogo}, f, ensure_ascii=False, indent=1)
-        f.write("\n")
-
     for p in catalogo.values():
         if p["esito"] == "ritratto":
             continue
         codice = p["usata_in"][0]
-        seme = sum(ord(c) for c in codice)
+        # La famiglia la calcola `emblema.py` **dal motivo**, e la stessa
+        # funzione disegna: non si scrive qui, perche' un catalogo che
+        # dichiara una famiglia e un disegno che ne dichiara un'altra e' la
+        # stessa bugia del controllo che non guarda.
+        png, famiglia, parola = emblema.tessera(p, BASE)
+        p["emblema_famiglia"] = famiglia
+        p["emblema_famiglia_da"] = parola
         with open(os.path.join(OUT, "emblema_%s.png" % codice), "wb") as f:
-            f.write(tessera_emblema(seme))
+            f.write(png)
         scritti += 1
         # Le tessere del ritratto respinto non devono restare in giro, e si
         # cancellano per **tutti** i codici della persona, non solo per il primo:
@@ -262,7 +221,30 @@ def main(solo_esecuzione=False):
                 os.remove(vecchio)
                 cancellati += 1
 
-    # le copie in piu' delle persone che compaiono in due anni
+    # Il catalogo si scrive **qui, una volta sola, e dopo** che le tessere
+    # sono state disegnate: deve dire la famiglia che il disegno porta davvero,
+    # e l'unico modo per non sbagliare e' scrivere dopo averla calcolata. Fino
+    # al 3 ottobre c'erano tre scritture identiche dello stesso file, con due
+    # testi `_nota` diversi (uno dei quali diceva «cinque personaggi», un numero
+    # che non era piu' vero da giorni): la terza vinceva e le prime due non
+    # servivano a nulla. Non e' un difetto visibile — il risultato era quello
+    # giusto — ma un file scritto tre volte con due contraddizioni in mezzo e'
+    # un posto dove il prossimo scrive la riga sbagliata e non se ne accorge.
+    with open(CATALOGO, "w", encoding="utf-8") as f:
+        json.dump({"_nota":
+                   "Catalogo unico delle immagini del gioco, indicizzato per "
+                   "persona e non per tappa: dodici persone compaiono in due anni "
+                   "e hanno un solo file. Ogni voce porta l'esito e l'etichetta, "
+                   "cosi' il gioco non mostra un volto senza dire che cos'e'. Le "
+                   "voci `da_verificare` non hanno un ritratto: hanno un emblema e "
+                   "il file in attesa, finche' non si verifica di chi e'. Ogni "
+                   "emblema porta `emblema_famiglia` e `emblema_famiglia_da`: la "
+                   "famiglia dice **perche'** qui non c'e' un volto, e `da` dice "
+                   "quale parola del motivo l'ha fatta vincere.",
+                   "_generato_da": "sorgenti/art/catalogo_immagini.py",
+                   "persone": catalogo}, f, ensure_ascii=False, indent=1)
+        f.write("\n")
+
     for p in catalogo.values():
         if p["esito"] != "ritratto" or not p["immagine"]:
             continue
