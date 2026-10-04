@@ -1,0 +1,323 @@
+{
+ "versione": 1,
+ "data": "2026-10-04",
+ "cosa_e": "l'inventario di `dati/mappe/`: **da dove viene ogni file**, quando e con quale produttore. Sta in `dati/` e non in `dati/mappe/` perche' li vale la regola del solo formato a delta, e un JSON ordinario li fa crashare `mappe_lettore.leggi()`",
+ "perche_esiste": "il generatore conosce la fonte di ogni file ma la teneva in una lista Python: **il file di dati non la portava con se**. Il 04/10/2026 ne e' venuto fuori che per contare i file di quella cartella nessuno poteva farlo dai dati, e i documenti avevano dato quattro numeri diversi — 19, 21, 23, 25 — copiati a mano in momenti diversi della storia del progetto",
+ "come_si_legge": "sorgenti/gis/mappe_lettore.py per i dati, sorgenti/gis/verifica_inventario_mappe.py per i conti",
+ "come_si_rigenera": "python3 sorgenti/gis/mappe_manifest.py — i conteggi sono **calcolati** sui file veri con il lettore, e non copiati qui: se un file cambia, il manifest  cambia con lui",
+ "la_regola": "un file che non trova la sua fonte nella lista del generatore **non e' di Natural Earth per default**: e' un file di provenienza ignota, e va detto",
+ "totale": {
+  "file": 25,
+  "byte": 1592486,
+  "megabyte": 1.52
+ },
+ "categorie": {
+  "admin1": {
+   "file": 1,
+   "nomi": [
+    "mondo_admin1.json"
+   ]
+  },
+  "altitudine": {
+   "file": 3,
+   "nomi": [
+    "europa_50_altitudine.json",
+    "mondo_110_altitudine.json",
+    "penisola_10_altitudine.json"
+   ]
+  },
+  "natural_earth": {
+   "file": 19,
+   "nomi": [
+    "europa_50_citta.json",
+    "europa_50_fiumi.json",
+    "europa_50_laghi.json",
+    "europa_50_paesi.json",
+    "europa_50_regioni.json",
+    "europa_50_regioni_amministrative.json",
+    "europa_50_terre.json",
+    "mondo_110_fiumi.json",
+    "mondo_110_laghi.json",
+    "mondo_110_paesi.json",
+    "mondo_110_regioni.json",
+    "mondo_110_terre.json",
+    "penisola_10_citta.json",
+    "penisola_10_coste.json",
+    "penisola_10_fiumi.json",
+    "penisola_10_laghi.json",
+    "penisola_10_paesi.json",
+    "penisola_10_regioni.json",
+    "penisola_10_regioni_fisiche.json"
+   ]
+  },
+  "rilievo": {
+   "file": 2,
+   "nomi": [
+    "rilievo_europa.json",
+    "rilievo_penisola.json"
+   ]
+  }
+ },
+ "produttori": {
+  "natural_earth": "sorgenti/gis/scarica_ne.py -> sorgenti/gis/mappe_formato.py",
+  "admin1": "sorgenti/gis/mondo_admin1.py",
+  "altitudine": "sorgenti/gis/scarica_ne.py -> sorgenti/gis/altitudine.py",
+  "rilievo": "sorgenti/gis/riferimento_altitudine.py -> sorgenti/gis/rilievo.py"
+ },
+ "file": [
+  {
+   "file": "europa_50_altitudine.json",
+   "categoria": "altitudine",
+   "fonte": "Natural Earth geography_regions_elevation_points (pubblico dominio)",
+   "scala": "50m (Europa)",
+   "geometrie": 0,
+   "punti": 2,
+   "byte": 454,
+   "formato": "delta con quantizzazione, q = 2000"
+  },
+  {
+   "file": "europa_50_citta.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 50m/cultural/ne_50m_populated_places (pubblico dominio)",
+   "scala": "50m (Europa)",
+   "geometrie": 0,
+   "punti": 186,
+   "byte": 35318,
+   "formato": "delta con quantizzazione, q = 2000"
+  },
+  {
+   "file": "europa_50_fiumi.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 50m/physical/ne_50m_rivers_lake_centerlines (pubblico dominio)",
+   "scala": "50m (Europa)",
+   "geometrie": 88,
+   "punti": 0,
+   "byte": 9666,
+   "formato": "delta con quantizzazione, q = 2000"
+  },
+  {
+   "file": "europa_50_laghi.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 50m/physical/ne_50m_lakes (pubblico dominio)",
+   "scala": "50m (Europa)",
+   "geometrie": 72,
+   "punti": 0,
+   "byte": 10203,
+   "formato": "delta con quantizzazione, q = 2000"
+  },
+  {
+   "file": "europa_50_paesi.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 50m/cultural/ne_50m_admin_0_countries (pubblico dominio)",
+   "scala": "50m (Europa)",
+   "geometrie": 63,
+   "punti": 0,
+   "byte": 62056,
+   "formato": "delta con quantizzazione, q = 2000"
+  },
+  {
+   "file": "europa_50_regioni.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 50m/physical/ne_50m_geography_regions_polys (pubblico dominio)",
+   "scala": "50m (Europa)",
+   "geometrie": 48,
+   "punti": 0,
+   "byte": 39724,
+   "formato": "delta con quantizzazione, q = 2000"
+  },
+  {
+   "file": "europa_50_regioni_amministrative.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 10m/cultural/ne_10m_admin_1_states_provinces (pubblico dominio)",
+   "scala": "50m (Europa)",
+   "geometrie": 1687,
+   "punti": 0,
+   "byte": 461601,
+   "formato": "delta con quantizzazione, q = 2000"
+  },
+  {
+   "file": "europa_50_terre.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 50m/physical/ne_50m_land (pubblico dominio)",
+   "scala": "50m (Europa)",
+   "geometrie": 123,
+   "punti": 0,
+   "byte": 48630,
+   "formato": "delta con quantizzazione, q = 2000"
+  },
+  {
+   "file": "mondo_110_altitudine.json",
+   "categoria": "altitudine",
+   "fonte": "Natural Earth geography_regions_elevation_points (pubblico dominio)",
+   "scala": "110m (mondo intero)",
+   "geometrie": 0,
+   "punti": 15,
+   "byte": 3340,
+   "formato": "delta con quantizzazione, q = 2000"
+  },
+  {
+   "file": "mondo_110_fiumi.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 110m/physical/ne_110m_rivers_lake_centerlines (pubblico dominio)",
+   "scala": "110m (mondo intero)",
+   "geometrie": 13,
+   "punti": 0,
+   "byte": 2258,
+   "formato": "delta con quantizzazione, q = 100"
+  },
+  {
+   "file": "mondo_110_laghi.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 110m/physical/ne_110m_lakes (pubblico dominio)",
+   "scala": "110m (mondo intero)",
+   "geometrie": 22,
+   "punti": 0,
+   "byte": 2527,
+   "formato": "delta con quantizzazione, q = 100"
+  },
+  {
+   "file": "mondo_110_paesi.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 110m/cultural/ne_110m_admin_0_countries (pubblico dominio)",
+   "scala": "110m (mondo intero)",
+   "geometrie": 177,
+   "punti": 0,
+   "byte": 50954,
+   "formato": "delta con quantizzazione, q = 100"
+  },
+  {
+   "file": "mondo_110_regioni.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 110m/physical/ne_110m_geography_regions_polys (pubblico dominio)",
+   "scala": "110m (mondo intero)",
+   "geometrie": 59,
+   "punti": 0,
+   "byte": 37427,
+   "formato": "delta con quantizzazione, q = 100"
+  },
+  {
+   "file": "mondo_110_terre.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 110m/physical/ne_110m_land (pubblico dominio)",
+   "scala": "110m (mondo intero)",
+   "geometrie": 116,
+   "punti": 0,
+   "byte": 21559,
+   "formato": "delta con quantizzazione, q = 100"
+  },
+  {
+   "file": "mondo_admin1.json",
+   "categoria": "admin1",
+   "fonte": "Natural Earth 10m admin_1_states_provinces (pubblico dominio), tagliato sul riquadro della penisola",
+   "scala": "mondiale (tutta la cartella)",
+   "geometrie": 50,
+   "punti": 0,
+   "byte": 23597,
+   "formato": "delta con quantizzazione, q = 2000"
+  },
+  {
+   "file": "penisola_10_altitudine.json",
+   "categoria": "altitudine",
+   "fonte": "Natural Earth geography_regions_elevation_points (pubblico dominio)",
+   "scala": "10m (penisola)",
+   "geometrie": 0,
+   "punti": 26,
+   "byte": 5262,
+   "formato": "delta con quantizzazione, q = 2000"
+  },
+  {
+   "file": "penisola_10_citta.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 10m/cultural/ne_10m_populated_places (pubblico dominio)",
+   "scala": "10m (penisola)",
+   "geometrie": 0,
+   "punti": 212,
+   "byte": 42957,
+   "formato": "delta con quantizzazione, q = 20000"
+  },
+  {
+   "file": "penisola_10_coste.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 10m/physical/ne_10m_coastline (pubblico dominio)",
+   "scala": "10m (penisola)",
+   "geometrie": 61,
+   "punti": 0,
+   "byte": 120483,
+   "formato": "delta con quantizzazione, q = 20000"
+  },
+  {
+   "file": "penisola_10_fiumi.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 10m/physical/ne_10m_rivers_lake_centerlines_scale_rank (pubblico dominio)",
+   "scala": "10m (penisola)",
+   "geometrie": 83,
+   "punti": 0,
+   "byte": 17369,
+   "formato": "delta con quantizzazione, q = 20000"
+  },
+  {
+   "file": "penisola_10_laghi.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 10m/physical/ne_10m_lakes (pubblico dominio)",
+   "scala": "10m (penisola)",
+   "geometrie": 8,
+   "punti": 0,
+   "byte": 1635,
+   "formato": "delta con quantizzazione, q = 20000"
+  },
+  {
+   "file": "penisola_10_paesi.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 10m/cultural/ne_10m_admin_0_countries (pubblico dominio)",
+   "scala": "10m (penisola)",
+   "geometrie": 24,
+   "punti": 0,
+   "byte": 161555,
+   "formato": "delta con quantizzazione, q = 20000"
+  },
+  {
+   "file": "penisola_10_regioni.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 10m/cultural/ne_10m_admin_1_states_provinces (pubblico dominio)",
+   "scala": "10m (penisola)",
+   "geometrie": 622,
+   "punti": 0,
+   "byte": 328819,
+   "formato": "delta con quantizzazione, q = 20000"
+  },
+  {
+   "file": "penisola_10_regioni_fisiche.json",
+   "categoria": "natural_earth",
+   "fonte": "Natural Earth 10m/physical/ne_10m_geography_regions_polys (pubblico dominio)",
+   "scala": "10m (penisola)",
+   "geometrie": 25,
+   "punti": 0,
+   "byte": 45131,
+   "formato": "delta con quantizzazione, q = 20000"
+  },
+  {
+   "file": "rilievo_europa.json",
+   "categoria": "rilievo",
+   "fonte": "Wikidata P2044, campione su 41 città",
+   "scala": "mondiale (tutta la cartella)",
+   "geometrie": 0,
+   "punti": 186,
+   "byte": 28018,
+   "formato": "delta con quantizzazione, q = 1",
+   "citta": 186,
+   "campo": "altitudine del terreno, da `dati/altitudine_riferimento.json`"
+  },
+  {
+   "file": "rilievo_penisola.json",
+   "categoria": "rilievo",
+   "fonte": "Wikidata P2044, campione su 41 città",
+   "scala": "mondiale (tutta la cartella)",
+   "geometrie": 0,
+   "punti": 212,
+   "byte": 31943,
+   "formato": "delta con quantizzazione, q = 1",
+   "citta": 212,
+   "campo": "altitudine del terreno, da `dati/altitudine_riferimento.json`"
+  }
+ ]
+}

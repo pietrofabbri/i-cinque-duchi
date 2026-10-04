@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — Le mappe: fondo geografico per gli anni 2, 3 e 4, e dove si prendono i dettagli delle tappe
-versione: 1.2
+versione: 1.3
 data: 2026-10-04
 autore: Pietro Fabbri (con Claude)
 fonte del materiale: richiesta di Pietro dell'01/10/2026 («recupera e archivia tutte le mappe che possono essere utili a questo e i prossimi anni»), con l'indicazione di due usi distinti: le mappe generali per costruire un percorso sensato, e le mappe di dettaglio per rappresentare ogni livello nella forma più reale possibile
-dati: dati/mappe/*.json (25 file: i 19 del 01/10/2026 da Natural Earth con `sorgenti/gis/mappe_formato.py`, piu `mondo_admin1.json`, i tre `*_altitudine.json` del 03/10/2026 e i due `rilievo_*.json` del 04/10/2026), dati/mondo_admin1_copertura.json (v1, il conto della copertura: sta in `dati/` e non in `dati/mappe/`, perche' li' vale la regola del solo formato a delta), dati/edifici_footprint.json (v1, 5209 sagome su 54 luoghi), dati/ferrara_fondo.json (v1, 14 tratti di mura)
+dati: dati/mappe/*.json (25 file: i 19 del 01/10/2026 da Natural Earth con `sorgenti/gis/mappe_formato.py`, piu `mondo_admin1.json`, i tre `*_altitudine.json` del 03/10/2026 e i due `rilievo_*.json` del 04/10/2026), dati/mappe_manifest.json (v1, da dove viene ogni file della cartella: sta in `dati/` e non in `dati/mappe/`, per la stessa regola del solo formato a delta), dati/mondo_admin1_copertura.json (v1, il conto della copertura: sta in `dati/` e non in `dati/mappe/`, perche' li' vale la regola del solo formato a delta), dati/edifici_footprint.json (v1, 5209 sagome su 54 luoghi), dati/ferrara_fondo.json (v1, 14 tratti di mura)
 documenti collegati: videogioco-5-duchi-motore-e-grafica.md (v0.1, la pipeline che questi dati alimentano), videogioco-5-duchi-luoghi.md (v0.5, la regola che decide *quali* luoghi servono e i tre gradi di ipotesi di coordinata), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-fonti-visive.md (v0.4), FONTI-E-LICENZE.md, AGENTS.md
 ---
 
@@ -26,7 +26,7 @@ Sono due problemi diversi, con due fonti diverse, e la parte 2 ha una brutta not
 | | |
 |---|---|
 | **Scaricate** | 42 livelli shapefile di **Natural Earth**, in tre scale (110m, 50m, 10m) |
-| **Prodotti** | **25 file di mappe** in formato proprio in `dati/mappe/` (i 19 del 01/10 più `mondo_admin1.json`, i tre `*_altitudine.json` del 03/10 e i due `rilievo_*.json` del 04/10), per un totale di **1,6 MB** |
+| **Prodotti** | **25 file di mappe** in formato proprio in `dati/mappe/` (i 19 del 01/10 più `mondo_admin1.json`, i tre `*_altitudine.json` del 03/10 e i due `rilievo_*.json` del 04/10), per un totale di **1,5 MB** (1 592 486 byte, calcolati da `sorgenti/gis/mappe_manifest.py`) |
 | **Verifiche** | **61 controlli automatici sulle mappe, tutti superati** (`sorgenti/gis/verifica_mappe_numeriche.py`), più **8 controlli sui pin degli anni dal secondo in poi, tutti superati** (`sorgenti/gis/verifica_pin.py`, §8bis: 71 slot con coordinate su 120), più **5 controlli sui trenta pin del primo anno, tutti superati** (`sorgenti/gis/verifica_anno1.py`, §8ter: 30 tappe dentro le mura) |
 | **Licenza** | Natural Earth è **pubblico dominio**: nessun vincolo, nessuna attribuzione richiesta |
 | **Prodotto il 03/10** | **le sagome degli edifici** (5209 su 54 luoghi), **il fondo cittadino dell'anno 1** (14 tratti di mura) e **le cime con la loro quota** (15 + 2 + 26 punti, §2.5): le tre cose che §5 e §7 dichiaravano mancanti ognuna per un motivo diverso. E i **colori delle carte**, che erano nel codice e non in un file (`fonti-visive.md` §3.7) |
@@ -277,6 +277,16 @@ Segnate qui perché sono state scambiate per difetti due volte, e perché un con
 
 *(fatto il 03/10/2026)* Il primo anno ha **cinque controlli suoi** in §8ter: `sorgenti/gis/verifica_anno1.py`, **A1-A5**, tutti superati.
 
+*(fatto il 04/10/2026)* La cartella è cresciuta di **due file** il 04/10, i due rilievi del terreno, ed è successa la cosa che succede ogni volta che una cartella di dati cresce: **nessuno ha aggiornato i documenti che ne parlano**. Se ne sono accorti i numeri. `mappe.md` diceva 25 (giusto, e diceva perché), il `README.md` diceva **23** in due posti, `AGENTS.md` diceva **21** — e li elencava come ventuno perché il conto era di prima che esistessero le altitudini e i rilievi — e `fonti-visive.md` diceva **19**, che è giusto ma è il numero dei soli file di Natural Earth, non quello della cartella. **Quattro documenti, quattro numeri diversi, nessun controllo che li confrontasse**: è la regola del progetto — *un numero scritto a mano invecchia, un numero calcolato no* — che si presenta nella sua forma più semplice, e per la quarta volta in quattro giorni.
+
+**Il difetto vero, però, è sotto il difetto.** Cercando di contare i file dalla **cartella** è venuto fuori che non si poteva: nessun file di `dati/mappe/` dice, da solo, **da dove viene**. Il generatore lo sa — la fonte di ogni file è nella sua lista `LAVORI`, con lo shapefile e la scala — ma quella lista sta in un sorgente Python e il dato non la porta con sé. `mondo_110_paesi.json` letto da solo potrebbe essere Natural Earth, potrebbe essere un rilievo, potrebbe essere qualsiasi cosa. È la stessa malattia della tavolozza e dei colori delle carte, che il 03/10 sono passati dal codice a un file di dati con la regola «**ogni dato dichiara da dove viene**»; alle mappe quella regola non era mai arrivata, e nessuno se ne era accorto perché il nome del file sembrava dirlo.
+
+**La risposta è `dati/mappe_manifest.json`, nella forma che il progetto aveva già scelto per le cime.** Non un campo nuovo dentro i file — il formato a delta è `{"q":…, "f":[…], "p":[…]}`, e cambiarne la forma per far dire a venticinque file qualcosa che un file accanto già dice non vale la pena — ma **un manifest in `dati/`**, che dichiara per ogni file la fonte, il produttore, la scala, il numero di geometrie e di punti e i byte. La regola che lo tiene fuori da `dati/mappe/` è la stessa che tiene fuori `altitudine_manifest.json` e `mondo_admin1_copertura.json`: lì dentro vale il solo formato a delta e un JSON ordinario fa crashare `mappe_lettore.leggi()`. Si genera con `python3 sorgenti/gis/mappe_manifest.py` e i conti sono **calcolati** sui file veri con il lettore del progetto, non copiati: se un file cambia, il manifest cambia con lui.
+
+**Il verificatore è `sorgenti/gis/verifica_inventario_mappe.py` (I1–I8)**, e confronta il conto del manifest con **ogni numero che i documenti riportano** — dodici frasi in quattro documenti, tutte strette, perché un controllo che legge un numero «per caso» in una pagina lunga finisce per confrontare il numero sbagliato e a dare un falso allarme. E controlla anche che **ogni file dichiari la sua fonte e il suo produttore**, che il manifest e la cartella elenchino gli stessi file, e che il peso dichiarato corrisponda a quello calcolato. Il peso è il numero che il motore deve scaricare ed è l'unico che cresce a ogni file: era **1,6 MB** qui e **1,4 MB** in `fonti-visive.md`, due numeri copiati a mano che non coincidevano neppure fra loro, e il conto dà **1,52 MB**. La soglia del confronto sul peso è ±0,15 MB: sotto quella il documento ha arrotondato e non ha sbagliato.
+
+**Una regola che il verificatore si dà da solo, e che è quella che il progetto si è dato coi colori**: un file che non trova la sua fonte nella lista del generatore **non è di Natural Earth per default**. È un file di provenienza ignota, e va detto. Senza quella regola un `rilievo_` chiamato `probe.json` passerebbe per naturale e il conto tornerebbe per la ragione sbagliata.
+
 *(fatto il 03/10/2026)* Sul pacchetto delle mappe sono passati altri due verificatori, che non controllano la geometria ma le cose intorno. `sorgenti/verifica_colori.py` (**C1–C7**) controlla che nessun colore delle carte viva solo nel codice, che le voci dichiarate dicano la verità sulla tavolozza, che **in `dati/mappe/` ci sia solo il formato a delta** e che ogni file di mappa abbia i colori che lo riguardano: 18 file in tabella, **0 problemi**. `sorgenti/gis/verifica_altitudine.py` (**D1–D7**) controlla che le cime cadano nel riquadro dichiarato, che abbiano nome e quota intera, che il conto del manifest torni, che l'Everest sia 8848 e che ci sia una quota negativa: **0 problemi**.
 
 ---
@@ -457,6 +467,36 @@ for proprieta, anelli in geometrie:
 ---
 
 ## 12. Registro modifiche
+
+- **v1.3 (04/10/2026)**: **nessun file di `dati/mappe/` dichiarava da dove viene,
+  e quattro documenti avevano dato quattro numeri diversi per la stessa
+  cartella.** Il generatore conosceva la fonte di ogni file — la lista `LAVORI`
+  porta lo shapefile e la scala — ma quella lista sta in un sorgente Python e il
+  dato non la porta con sé: un file di quelle cartella letto da solo non dice
+  niente di sé. Da qui non si poteva contare la cartella, e i documenti che ne
+  parlano avevano dato **19** (`fonti-visive.md`, che è il numero dei soli file di
+  Natural Earth), **21** (`AGENTS.md`), **23** (`README.md`, due volte) e **25**
+  (qui, l'unico giusto); il peso era **1,6 MB** qui e **1,4 MB** in
+  `fonti-visive.md`, e il conto dà **1,52 MB**.
+
+  - **dati/mappe_manifest.json** (v1): la fonte, il produttore, la scala e i
+    conti di ogni file della cartella. Sta in `dati/` e non in `dati/mappe/`
+    per la regola del solo formato a delta, come `altitudine_manifest.json`. Si
+    genera con `sorgenti/gis/mappe_manifest.py`, e i conti sono **calcolati** sui
+    file veri con il lettore del progetto;
+  - **sorgenti/gis/verifica_inventario_mappe.py** (I1–I8): confronta il conto con
+    **dodici frasi** in quattro documenti e controlla che ogni file dichiari
+    fonte e produttore, che il manifest e la cartella elenchino gli stessi
+    file, e che il peso dichiarato corrisponda a quello calcolato (±0,15 MB);
+  - **sorgenti/gis/prova_difetto_mappe_manifest.py**: **dieci difetti iniettati**,
+    tutti richiesti a essere visti e tutti visti, su una copia. Il dodicesimo è
+    stato il difetto più subdolo dei tre: la lista `problemi` veniva **riassegnata**
+    a metà del corpo del verificatore, e l'assegnazione svuotava tutto quello che
+    I4 e I5 avvano scritto — due controlli che potevano solo scrivere nella
+    spazzatura e non potevano accorgersene. L'ha trovato la prova, non io;
+  - **AGENTS.md** non elencava più `mondo_admin1_copertura.json` dentro
+    `dati/mappe/`: quel file ci è stato il 03/10 e ha fatto crashare il lettore,
+    ed è in `dati/`. Il documento che tutti leggono ripubblicava l'errore.
 
 - **v1.2 (04/10/2026)**: **i due file di rilievo delle città sono prodotti, e la
   cartella ne ha due in più.** `dati/mappe/rilievo_penisola.json` e

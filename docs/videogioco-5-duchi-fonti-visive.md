@@ -4,7 +4,7 @@ versione: 0.4
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)
 fonte: ricerca su Wikimedia Commons del 02/10/2026; tavolozza da Wikidata e Wikipedia del 03/10/2026; sagome e mura da OpenStreetMap via Overpass API del 03/10/2026; cime e quote da Natural Earth `geography_regions_elevation_points` del 03/10/2026; verifica dei fondi già in dati/mappe/
-documenti collegati: videogioco-5-duchi-ritratti.md (v0.4), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-mappe.md (v1.2), videogioco-5-duchi-luoghi-edifici.md (v0.4), videogioco-5-duchi-audit.md (v0.15), videogioco-5-duchi-tappa-1-01.md (v0.3), AGENTS.md
+documenti collegati: videogioco-5-duchi-ritratti.md (v0.4), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-mappe.md (v1.3), videogioco-5-duchi-luoghi-edifici.md (v0.4), videogioco-5-duchi-audit.md (v0.16), videogioco-5-duchi-tappa-1-01.md (v0.3), AGENTS.md
 dati: dati/fonti_visive/fonti_visive.json (v1, 27 voci, 125 candidati), dati/fonti_visive/attestazione.json (v1, vuoto), dati/fonti_visive/tavolozza.json (v1, 18 voci), dati/edifici_footprint.json (v1, 5209 edifici su 54 luoghi), dati/ferrara_fondo.json (v1, 14 tratti di mura), dati/ambienti_livelli.json (v1, 150 ambienti), dati/fonti_visive/colori_cartografici.json (v1, 19 voci), dati/altitudine_manifest.json (v1, tre file di cime: 15, 2 e 26 punti)
 ---
 
@@ -26,7 +26,7 @@ Questo documento fa quattro cose: **fa l'inventario** di che cosa ha e che cosa 
 |---|---|---|---|
 | **Ritratti dei personaggi** | fatto, 169 su 213 | Commons, con attestazione | `sorgenti/art/out/` (169 PNG a 48×54) |
 | **Immagini degli oggetti linguistici** | proposte, 1120 candidati | Commons | `dati/lingue/immagini_oggetti.json` |
-| **Fondi geografici** | fatto, 19 file | **Natural Earth**, pubblico dominio | `dati/mappe/` (1,4 MB) |
+| **Fondi geografici** | fatto, 19 file **di Natural Earth** (la cartella ne ha 25: `dati/mappe_manifest.json`) | **Natural Earth**, pubblico dominio | `dati/mappe/` (1,5 MB) |
 | **Unità amministrative del mondo** | fatto, 50 unità | **Natural Earth 10m**, pubblico dominio | `dati/mappe/mondo_admin1.json` |
 | **Terreno e rilievo** | fatto per 95 luoghi | **Terrarium/SRTM** | `dati/luoghi_gioco.json`, campo `terreno` |
 | **Tavolozza dei colori** | **fatto il 03/10/2026**, 18 voci | Wikidata e Wikipedia | `dati/fonti_visive/tavolozza.json` |
@@ -48,7 +48,7 @@ Questo documento fa quattro cose: **fa l'inventario** di che cosa ha e che cosa 
 
 ## 2. I fondi geografici: che cosa hanno e che cosa manca loro
 
-I **19 file** di `dati/mappe/` vengono da Natural Earth, **pubblico dominio**, in tre scale: 110m per il mondo, 50m per l'Europa, 10m per la penisola. Non sono GeoJSON: sono un **formato a delta con quantizzazione**, e si leggono solo con `sorgenti/gis/mappe_lettore.py`.
+I **19 file** di `dati/mappe/` vengono da Natural Earth, **pubblico dominio**, in tre scale: 110m per il mondo, 50m per l'Europa, 10m per la penisola. Sono **19 su 25**: gli altri sei sono il file amministrativo del mondo, i tre file delle cime e i due rilievi del terreno, e **`dati/mappe_manifest.json`** dice di ognuno da dove viene — prima del 04/10 nessun file della cartella lo diceva, e per questo il numero dei file era un numero che quattro documenti avevano dato in quattro modi diversi. Non sono GeoJSON: sono un **formato a delta con quantizzazione**, e si leggono solo con `sorgenti/gis/mappe_lettore.py`.
 
 Il conto reale, verificato sui file:
 
@@ -373,7 +373,7 @@ Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file d
 | Candidati cercati su Commons | **125**, in 27 voci |
 | Voci senza immagine | **due**: l'incendio e la carestia |
 | Candidati scelti a vista | **zero**, e dichiarato |
-| Fondi geografici già pronti | **19 file**, 1,4 MB, Natural Earth, pubblico dominio |
+| Fondi geografici già pronti | **19 file**, 1,5 MB, Natural Earth, pubblico dominio |
 | Tavolozza | **fatto**: 18 voci, 10 da fonti automatiche, 3 dichiarate, 5 di stato |
 | Sagome degli edifici | **fatto**: 5209 edifici su 54 luoghi, **3336 senza altezza** e a volume neutro |
 | Fondo di Ferrara | **fatto**: 14 tratti, 8601 m di perimetro, 4,20 km², 28 tappe su 28 dentro |
