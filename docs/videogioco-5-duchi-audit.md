@@ -1,9 +1,9 @@
 ---
 titolo: Videogioco "I cinque duchi" — audit delle questioni aperte: la lista operativa
-versione: 0.14
-data: 2026-10-03
+versione: 0.15
+data: 2026-10-04
 autore: Pietro Fabbri (con Claude)
-fonte: lettura di tutti i quindici documenti di progetto, verificata da sorgenti/lingue/conta_questioni.py
+fonte: lettura di tutti i documenti di progetto che portano una sezione «Questioni aperte» (sedici), verificata da sorgenti/lingue/conta_questioni.py, che confronta anche i numeri che il README copia da qui
 documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-fonti-visive.md (v0.4), videogioco-5-duchi-furioso.md (v0.6), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-mappe.md (v1.2), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.1), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3), AGENTS.md
 ---
 
@@ -21,7 +21,7 @@ Il documento è verificato da `sorgenti/lingue/conta_questioni.py`, che confront
 
 | | |
 |---|---|
-| Documenti con una sezione «Questioni aperte» | **15** |
+| Documenti con una sezione «Questioni aperte» | **16** |
 | Voci enumerate | **118** |
 | **Chiuse** | **31** |
 | **Aperte** | **87** |
@@ -298,7 +298,9 @@ prendersi la briga di controllare la propria prosa.
 
 Le **restanti**: minori, o già decise nella sostanza e che aspettano solo l'esecuzione. Chi decide è Pietro quasi sempre, e dove è il progetto è perché non è una domanda ma un lavoro.
 
-### Sistema linguistico (restano 8)
+**Il numero di ogni intestazione è il conto delle voci aperte di quel documento meno le importanti che il §3 elenca già**, e `sorgenti/lingue/conta_questioni.py` lo confronta: il §4 si intitola «Le altre», e un numero che contasse anche le importanti sarebbe doppio. Ogni documento con voci aperte deve comparire in un'intestazione — `itinerari.md` c'era rimasto fuori fino al 04/10/2026, e la sua voce era contata ma non elencata da nessuna parte. Le cifre fuori dalle parentesi sono nomi, non conteggi: il 3 di «Anno 3» non è un numero di voci.
+
+### Sistema linguistico (`lingue.md` 8, `lingue-immagini.md` 4)
 
 | Domanda | Chi decide |
 |---|---|
@@ -308,7 +310,7 @@ Le **restanti**: minori, o già decise nella sostanza e che aspettano solo l'ese
 | Chi ridimensiona le immagini scelte a 96×72, e quando | Il progetto |
 | Il livello 30 di ogni lingua è un compito: che cosa produce, e con quale criterio di superamento | Pietro |
 
-### Percorsi (restano 5)
+### Percorsi (`percorsi.md` 5)
 
 | Domanda | Chi decide |
 |---|---|
@@ -318,14 +320,14 @@ Le **restanti**: minori, o già decise nella sostanza e che aspettano solo l'ese
 | I buchi continentali degli anni 3, 4 e 5 | Pietro |
 | Il tempo di viaggio è un esercizio giocabile o una dichiarazione | Pietro |
 
-### Fonti visive (restano 2)
+### Fonti visive (`fonti-visive.md` 1)
 
 | Domanda | Chi decide |
 |---|---|
 | Chi guarda i 125 candidati delle fonti visive | Io o Pietro |
 | Le due facoltative continentali dell'anno 4 si aprono sul ritorno | Pietro |
 
-### Anno 1 (7) e curricolo (5)
+### Anno 1 (`anno1-ferrara.md` 7) e curricolo (`curricolo.md` 5)
 
 | Domanda | Chi decide |
 |---|---|
@@ -339,7 +341,7 @@ Le **restanti**: minori, o già decise nella sostanza e che aspettano solo l'ese
 | L'allineamento interdisciplinare con le programmazioni reali di classe | Pietro **e i colleghi** |
 | Le fonti storiche del §4 | Il progetto |
 
-### Anno 2 (8)
+### Anno 2 (`anno2-penisola.md` 8)
 
 | Domanda | Chi decide |
 |---|---|
@@ -352,7 +354,7 @@ Le **restanti**: minori, o già decise nella sostanza e che aspettano solo l'ese
 | Le fonti del materiale | Il progetto |
 | Le «visioni» dell'anno 1 nell'anno 2 | Pietro |
 
-### Anno 3 (restano 7), anno 4 (4), anno 5 (restano 7)
+### Anno 3 (`anno3-europa.md` 6), anno 4 (`anno4-mondo.md` 4), anno 5 (`anno5-mondo.md` 7)
 
 | Domanda | Chi decide |
 |---|---|
@@ -370,7 +372,7 @@ Le **restanti**: minori, o già decise nella sostanza e che aspettano solo l'ese
 | Le previsioni con la data: si rileggono fra dieci anni, e con quale formato | Pietro |
 | Il posto di F11 nel registro del gioco | Pietro |
 
-### Luoghi (2), mappe (3), *Furioso* (2), gioco (5), meccaniche (5)
+### Luoghi (`luoghi.md` 2), mappe (`mappe.md` 3), *Furioso* (`furioso.md` 1), gioco (`gioco.md` 5), meccaniche (`meccaniche.md` 5)
 
 | Domanda | Chi decide |
 |---|---|
@@ -389,6 +391,12 @@ Le **restanti**: minori, o già decise nella sostanza e che aspettano solo l'ese
 | Lo strumento del docente: subito o dopo il prototipo | Pietro |
 | Safe Exam Browser e la proposta al regolamento d'istituto sui dispositivi indossabili | Pietro **e l'istituto** |
 | La specifica della modalità accessibile | Il progetto **e il progetto di accessibilità del gioco** |
+
+### Itinerari (`itinerari.md` 1)
+
+| Domanda | Chi decide |
+|---|---|
+| Le cinque tappe del primo anno senza facoltativi: sono un dato o una dimenticanza? Se sono un dato, va scritto perché sono cinque e non tre | Pietro |
 
 ---
 
@@ -414,13 +422,37 @@ La catena è: **B1 → B2 → B4**. **B3** (la LIS) è indipendente e parte in p
 
 E la regola che ne segue, che è quella che il lavoro ha reso vera:
 
-> **Mentre si decide, si costruisce quello che si può costruire.** Le quattro bloccanti aspettano una risposta e aspetteranno ancora: nessuna delle ventotto chiuse le toccava. Il conto di due giorni dice che la risposta non è l'unica cosa che si può fare mentre si aspetta — e non è una metafora: i controlli automatici hanno trovato due coordinate sbagliate che nessuno aveva lette, e i quattro file del 03/10 sono nati tutti da controlli che non avrebbero potuto dare torto.
+> **Mentre si decide, si costruisce quello che si può costruire.** Le quattro bloccanti aspettano una risposta e aspetteranno ancora: nessuna delle trentuno chiuse le toccava. Il conto di due giorni dice che la risposta non è l'unica cosa che si può fare mentre si aspetta — e non è una metafora: i controlli automatici hanno trovato due coordinate sbagliate che nessuno aveva lette, e i quattro file del 03/10 sono nati tutti da controlli che non avrebbero potuto dare torto.
+
+---
+
+## 3novies. Il contatore guardava l'audit con se stesso: i numeri che il resto del progetto copia non erano controllati
+
+*(04/10/2026)*
+
+Il buco era dichiarato da tre giorni e non era un buco di numeri: era un buco di **controllo**. `sorgenti/lingue/conta_questioni.py` confrontava il proprio conto con i numeri dell'audit, e lo faceva bene — quello del §3octies, quando la tabella al posto della prosa. Ma il confronto era **fra l'audit e se stesso**, e tutto il resto del progetto copia quei numeri a mano: la riga 22 del `README.md`, la nota sull'audit, il frontespizio, i titoli delle sezioni 2 e 3. Un numero che quattro documenti riportano e che nessuno conta è un numero che invecchia quattro volte più in fretta di uno.
+
+**I quattro difetti, che sono tutti la stessa cosa** — un numero scritto a mano che nessuno ricalcolava:
+
+  - le **sezioni** dichiarate erano **15** e sono **16**: `itinerari.md` ha aperto la sua il 03/10 e la riga è rimasta indietro. Il frontespizio diceva «lettura di tutti i quindici documenti di progetto», che è doppiamente falso: i documenti sono **31**, e sedici di loro hanno una sezione;
+  - `itinerari.md` non compariva in **nessuna intestazione del §4**. La sua voce aperta — *le cinque tappe del primo anno senza facoltativi: sono un dato o una dimenticanza?* — era contata nel totale e non elencata da nessuna parte: la somma delle intestazioni non tornava con nessuna delle due cifre, e nessuno l'aveva notato perché nessuno le sommava;
+  - tre numeri del §4 erano **sbagliati di uno o due**: `fonti-visive.md` diceva 2 su 1, `anno3-europa.md` diceva 7 su 6, `furioso.md` diceva 2 su 1. Il criterio, una volta dichiarato, è **le voci aperte di quel documento meno le importanti che il §3 elenca già** — il §4 si intitola «Le altre», e contare anche le importanti sarebbe doppio. Ma il criterio era implicito, e un criterio implicito non è un criterio: chi lo scriveva non sapeva di dover sottrarre, e il numero che ne usciva era quello che gli veniva in mano;
+  - il §6 scriveva «nessuna delle **ventotto** chiuse le toccava» con **31** chiuse, e il `README.md` scriveva «il progetto ha **sedici** documenti» con **31** documenti in `docs/`.
+
+**Il difetto nel difetto, che è il quinto caso della regola.** Il confronto dei numeri **in lettere** — «le quattro bloccanti», «le quindici importanti», «nessuna delle trentuno chiuse» — non esisteva, e quando è stato scritto ha morso subito: il dizionario delle parole italiane non riconosceva **`trentuno`**, **`ventuno`** e **`ventotto`**, che sono le tre forme in cui una parola non si somma. Le altre si sommano e il dizionario le aveva; queste no, e il risultato è che il confronto **ignorava in silenzio proprio i numeri che il documento scrive in lettere**: tornava verde non perché il numero fosse giusto, ma perché non lo guardava. È la stessa malattia del 03/10, quando cercava «**N** chiuse» in un documento che scrive i numeri in tabella: un controllo che non trova la parola che cerca è un controllo che non guarda, e il suo verde non significa niente.
+
+**Ora il confronto è cinque volte, e copre quello che il progetto legge davvero**: la tabella del §1, le due frasi in prosa, il **numero delle sezioni**, i **numeri per documento del §4** con la loro somma contro le aperte meno le importanti, i **numeri in lettere** dei titoli e delle celle, e i **numeri che il README copia** — cinque nella riga della tabella dei documenti, cinque nella nota sull'audit, più il numero dei documenti di progetto. Il registro delle modifiche è escluso, e lo è dichiarando perché: i suoi numeri sono quelli di quando sono scritti, e un controllo che urlerebbe su ogni versione passata verrebbe spento per legittima ragione.
+
+**E la prova dei difetti, `sorgenti/lingue/prova_difetto_questioni.py`, ne inietta quindici** — i quattro di sopra più gli altri undici, fra cui una cifra senza il nome del suo documento, una cella che passa dalla cifra alla parola, e le cinque vie del README — e richiede che **tutti e quindici** siano visti. Lavora su una **copia** di tutti i trentauno documenti, non sui file veri: una prova che scrive sull'audit e lo rimette è una prova che, se muore a metà, lascia sbagliato il documento più usato del progetto. E ha una seconda parte, che è la più facile da sbagliare: una riga di registro con i numeri di allora **non** deve produrre alcun problema, e la prova lo richiede per iscritto.
+
+La sua seconda parte ha già morso una volta, nella prova stessa: le quattro iniezioni sul README erano scritte `(r, sostituisci(r, …))` invece di `(t, sostituisci(r, …))`, e finivano per **sovrascrivere l'audit con il README**. La prova si annullava da sola e non se ne accorgeva, perché un difetto che non guarda non produce un errore. Ora l'ordine è scritto dentro la prova, e un'asserzione si rifiuta di procedere se il primo valore non è l'audit. **Una prova che non osserva nulla non ha nessun valore, e il suo fallimento va letto come un difetto della prova** — la lezione del 03/10, che qui si è ripetuta letteralmente.
 
 ---
 
 ## 7. Registro delle modifiche
 
 | Data | Versione | Che cosa è cambiato |
+| 04/10/2026 | 0.15 | **Il contatore confrontava l'audit con se stesso, e quattro numeri che quattro documenti riportavano non li contava nessuno.** `conta_questioni.py` ora confronta cinque cose: la tabella del §1, le due frasi in prosa, **il numero delle sezioni**, i **numeri per documento del §4** con la loro somma, i **numeri in lettere** e **i numeri che il README copia**; il registro delle modifiche è escluso, dichiarando perché. I quattro difetti trovati sono nelle versioni: sezioni 15 su **16**, `itinerari.md` fuori da ogni intestazione del §4 (la sua voce era contata e non elencata), `fonti-visive.md` 2 su **1**, `anno3-europa.md` 7 su **6**, `furioso.md` 2 su **1**, il §6 con **ventotto** chiuse su **31**, il `README.md` con **sedici** documenti su **31**. Il quinto difetto è nel confronto stesso: il dizionario delle parole italiane non riconosceva **`trentuno`**, **`ventuno`** e **`ventotto`** — le tre forme in cui una parola non si somma — e il confronto delle lettere **ignorava in silenzio i numeri che il documento scrive in lettere**. Nuovi: `sorgenti/lingue/prova_difetto_questioni.py`, quindici difetti iniettati tutti richiesti a essere visti, su una copia di tutti i documenti, più la prova che il registro **non** viene morso. Dettaglio in §3novies.
 | 03/10/2026 | 0.14 | **Le due lacune che Pietro aveva affidate sono chiuse, e nessuna delle due si è chiusa scegliendo.** Il **mezzo del quinto anno** non era una scelta fra ventidue mezzi: era una domanda su che cosa si dichiara quando la risposta è di qualcun altro. La risposta sono **due strati** — il mezzo reale, che è l'archivio e dunque il presente (`aereo` 30 su 30), e il mezzo della stanza, che è quello attestato dal canto (a piedi 21, carro di serpenti 4, ippogrifo 3, sirena 2) — e il carro di delfini e il drago restano senza tappa, dichiarato. I **codici dei facoltativi** rendono la regola della `premi.md` verificabile su tutti: i 269 sono occorrenze e dietro ci sono **248 persone**, 50 già codificate, 10 collegate, 188 nuovi fino a **Q519**, zero da verificare.
   - **il difetto che il mezzo ha smascherato**: `percorsi_mezzi.py` pubblicava «aereo 26, treno 1» per il quinto anno coprendo **27 tappe su 30**; le tre saltate (5-3, 5-6, 5-20) venivano scartate da un `continue` muto. Un conteggio che scarta e non lo dice descrive un anno che non esiste;
   - **il difetto che i codici hanno smascherato**: **10 persone avevano due codici** nei cataloghi degli anni, perché la serie dell'anno 1 e quella degli anni 2-5 sono due serie diverse. Mancava un indice unico — lo stesso difetto già visto sulle immagini. `indice_persone` dichiara il canonico e gli alias;
