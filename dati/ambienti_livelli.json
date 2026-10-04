@@ -1,13 +1,14 @@
 {
- "versione": 1,
- "data": "2026-10-03",
+ "versione": 2,
+ "data": "2026-10-04",
  "scopo": "un ambiente per ogni livello: che cosa serve a ciascuno e che cosa si sa davvero. Il file non disegna e non sceglie i luoghi: li legge dai documenti del progetto e dichiara i vuoti",
  "il_modello": "videogioco-5-duchi-tappa-1-01.md 3 (piazza della Cattedrale), l'unica zona gia' costruita: e' il modello, e tutti gli altri centoquarantanove ambienti hanno la sua stessa forma",
  "come_sono_costruiti": [
   "il livello dalla tabella «Le 30 tappe» del suo anno",
   "il luogo dell'anno 1 da anno1-mappa.md 3, che ha le coordinate verificate sui numeri civici del Comune; degli anni 2-5 da luoghi_gioco.json campo `tappe`, che collega per relazione esplicita e non per confronto di nomi",
   "le sagome da edifici_footprint.json, per il nome che li ha nel registro dei luoghi",
-  "il fondo da ferrara_fondo.json, e solo per l'anno 1, che e' l'unico anno che si gioca dentro Ferrara"
+  "il fondo da ferrara_fondo.json, e solo per l'anno 1, che e' l'unico anno che si gioca dentro Ferrara",
+  "gli sprite dalla tabella SPRITE di questo file, e la misura di ognuno misurata sul PNG con png_terrarium.misura_png(); i posti (u, v) dalla tabella 3 di tappa-1-01.md, non riscritti qui"
  ],
  "griglie": {
   "piazza": {
@@ -185,7 +186,12 @@
   },
   "costruiti": [
    "1-1"
-  ]
+  ],
+  "con_sprite": {
+   "1-1": 11
+  },
+  "sprite_totali": 11,
+  "senza_sprite": 149
  },
  "vuoti_dichiarati": {
   "ipotesi": "le 50 tappe che il registro non puo' verificare hanno un'ipotesi in dati/ipotesi_luoghi.json, con tre gradi dichiarati: `documentata`, `argomentata` (che porta il raggio in metri) e `immaginata` (che non ha punto e non ne ha bisogno). Il campo `ipotesi` di ogni ambiente e' la copia del record, e `pin_da_disegnare` e' la coordinata che il motore usa davvero",
@@ -240,11 +246,176 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [
+     {
+      "file": "sorgenti/art/out/maurelio.png",
+      "voce": "Maurelio",
+      "tipo": "personaggio",
+      "cosa": "il vescovo che apre la bottega",
+      "px": [
+       32,
+       24
+      ],
+      "px_da": "misurati sull'intestazione del file con png_terrarium.misura_png()",
+      "u": -3.4,
+      "v": 2.4,
+      "posto_da": "videogioco-5-duchi-tappa-1-01.md 3, riga «Maurelio»"
+     },
+     {
+      "file": "sorgenti/art/out/giorgio.png",
+      "voce": "San Giorgio (visione A1)",
+      "tipo": "personaggio",
+      "cosa": "la statua che compare dopo la soglia, trasparente e color pietra",
+      "px": [
+       32,
+       32
+      ],
+      "px_da": "misurati sull'intestazione del file con png_terrarium.misura_png()",
+      "u": 3.6,
+      "v": 2.6,
+      "posto_da": "videogioco-5-duchi-tappa-1-01.md 3, riga «San Giorgio (visione A1)»"
+     },
+     {
+      "file": "sorgenti/art/out/lapide.png",
+      "voce": "Lapide (visione A2)",
+      "tipo": "oggetto",
+      "cosa": "la lapide ai piedi della facciata, che si attiva dopo la A1",
+      "px": [
+       16,
+       16
+      ],
+      "px_da": "misurati sull'intestazione del file con png_terrarium.misura_png()",
+      "u": -13.0,
+      "v": 1.6,
+      "posto_da": "videogioco-5-duchi-tappa-1-01.md 3, riga «Lapide (visione A2)»"
+     },
+     {
+      "file": "sorgenti/art/out/cartello.png",
+      "voce": "Cartello dell'art. 9",
+      "tipo": "oggetto",
+      "cosa": "il cartello con il testo dell'articolo 9",
+      "px": [
+       16,
+       16
+      ],
+      "px_da": "misurati sull'intestazione del file con png_terrarium.misura_png()",
+      "u": -12.5,
+      "v": 17.0,
+      "posto_da": "videogioco-5-duchi-tappa-1-01.md 3, riga «Cartello dell'art. 9»"
+     },
+     {
+      "file": "sorgenti/art/out/borso.png",
+      "voce": null,
+      "tipo": "personaggio",
+      "cosa": "il protagonista: quattro fotogrammi di camminata",
+      "px": [
+       48,
+       96
+      ],
+      "px_da": "misurati sull'intestazione del file con png_terrarium.misura_png()",
+      "u": null,
+      "v": null,
+      "posto_da": "la tabella 3 non da' un posto a questo file"
+     },
+     {
+      "file": "sorgenti/art/out/facciata.png",
+      "voce": null,
+      "tipo": "edificio",
+      "cosa": "la facciata della Cattedrale, fondo della piazza",
+      "px": [
+       509,
+       312
+      ],
+      "px_da": "misurati sull'intestazione del file con png_terrarium.misura_png()",
+      "u": null,
+      "v": null,
+      "posto_da": "la tabella 3 non da' un posto a questo file"
+     },
+     {
+      "file": "sorgenti/art/out/statua_borso.png",
+      "voce": null,
+      "tipo": "arredo",
+      "cosa": "una figura su piedistallo: il nome dice Borso e il disegno non lo conferma",
+      "px": [
+       16,
+       42
+      ],
+      "px_da": "misurati sull'intestazione del file con png_terrarium.misura_png()",
+      "u": null,
+      "v": null,
+      "posto_da": "la tabella 3 non da' un posto a questo file"
+     },
+     {
+      "file": "sorgenti/art/out/statua_niccolo.png",
+      "voce": null,
+      "tipo": "arredo",
+      "cosa": "una figura su piedistallo con l'ombra per terra: il nome dice Niccolo' e il disegno non lo conferma",
+      "px": [
+       32,
+       38
+      ],
+      "px_da": "misurati sull'intestazione del file con png_terrarium.misura_png()",
+      "u": null,
+      "v": null,
+      "posto_da": "la tabella 3 non da' un posto a questo file"
+     },
+     {
+      "file": "sorgenti/art/out/ritratto_borso.png",
+      "voce": null,
+      "tipo": "ritratto",
+      "cosa": "il ritratto disegnato a mano del protagonista",
+      "px": [
+       48,
+       54
+      ],
+      "px_da": "misurati sull'intestazione del file con png_terrarium.misura_png()",
+      "u": null,
+      "v": null,
+      "posto_da": "la tabella 3 non da' un posto a questo file"
+     },
+     {
+      "file": "sorgenti/art/out/ritratto_giorgio.png",
+      "voce": null,
+      "tipo": "ritratto",
+      "cosa": "il ritratto disegnato a mano di San Giorgio",
+      "px": [
+       48,
+       54
+      ],
+      "px_da": "misurati sull'intestazione del file con png_terrarium.misura_png()",
+      "u": null,
+      "v": null,
+      "posto_da": "la tabella 3 non da' un posto a questo file"
+     },
+     {
+      "file": "sorgenti/art/out/ritratto_maurelio.png",
+      "voce": null,
+      "tipo": "ritratto",
+      "cosa": "il ritratto disegnato a mano di Maurelio",
+      "px": [
+       48,
+       54
+      ],
+      "px_da": "misurati sull'intestazione del file con png_terrarium.misura_png()",
+      "u": null,
+      "v": null,
+      "posto_da": "la tabella 3 non da' un posto a questo file"
+     }
+    ],
+    "sprite_stato": "disegno_a_mano_del_prototipo_del_30_settembre_2026_nessun_codice_li_produce",
+    "scala": {
+     "px_per_m": 12.8,
+     "facciata_larghezza_m": 39.8,
+     "facciata_px_dichiarati": 509,
+     "facciata_px_attesi": 509,
+     "da": "videogioco-5-duchi-tappa-1-01.md 3, riga «Scala»"
+    }
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_nessun_codice_li_produce"
    ],
    "pin_da_disegnare": {
     "lat": 44.83604,
@@ -300,11 +471,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.835513,
@@ -360,11 +534,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.83536,
@@ -420,11 +597,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.834809,
@@ -480,11 +660,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.834336,
@@ -540,11 +723,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.835507,
@@ -600,11 +786,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.836043,
@@ -660,11 +849,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.838137,
@@ -720,11 +912,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.837645,
@@ -780,11 +975,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.832931,
@@ -840,11 +1038,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.833382,
@@ -900,11 +1101,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.833276,
@@ -960,11 +1164,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.831886,
@@ -1020,11 +1227,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.827233,
@@ -1080,11 +1290,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.830497,
@@ -1140,11 +1353,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.832026,
@@ -1200,11 +1416,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.833222,
@@ -1260,11 +1479,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.832833,
@@ -1320,11 +1542,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.84125,
@@ -1380,11 +1605,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.842084,
@@ -1440,11 +1668,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.84206,
@@ -1500,11 +1731,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.842052,
@@ -1560,11 +1794,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.842045,
@@ -1620,11 +1857,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.84182,
@@ -1680,11 +1920,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.844362,
@@ -1740,11 +1983,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.848871,
@@ -1800,7 +2046,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -1813,7 +2061,8 @@
    "vuoti": [
     "orientamento_non_dichiarato",
     "senza_coordinate",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.84505,
@@ -1869,11 +2118,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.84281,
@@ -1929,11 +2181,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.844161,
@@ -1989,7 +2244,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -2002,7 +2259,8 @@
    "vuoti": [
     "orientamento_non_dichiarato",
     "senza_coordinate",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.84388,
@@ -2058,7 +2316,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -2071,7 +2331,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 46.49829,
@@ -2146,10 +2407,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 39.08333,
@@ -2205,7 +2469,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -2218,7 +2484,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 41.89334,
@@ -2274,7 +2541,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -2287,7 +2556,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 38.5794,
@@ -2364,10 +2634,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 41.89306,
@@ -2423,7 +2696,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -2436,7 +2711,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 40.1636,
@@ -2502,11 +2778,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "sole_sagome_senza_altezza"
+    "sole_sagome_senza_altezza",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 41.79833,
@@ -2583,10 +2862,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 45.46694,
@@ -2642,7 +2924,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -2655,7 +2939,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 41.89248,
@@ -2711,7 +2996,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -2724,7 +3011,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 41.9236,
@@ -2780,7 +3068,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -2793,7 +3083,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 40.1636,
@@ -2849,7 +3140,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -2862,7 +3155,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.838137,
@@ -2939,10 +3233,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 41.89306,
@@ -3019,10 +3316,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 43.77139,
@@ -3099,10 +3399,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 38.11566,
@@ -3170,10 +3473,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 40.47111,
@@ -3250,10 +3556,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 41.89306,
@@ -3330,10 +3639,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 41.89306,
@@ -3406,11 +3718,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "sole_sagome_senza_altezza"
+    "sole_sagome_senza_altezza",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 43.01667,
@@ -3487,10 +3802,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 41.89306,
@@ -3546,7 +3864,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -3559,7 +3879,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.838137,
@@ -3636,10 +3957,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 45.43972,
@@ -3695,7 +4019,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -3708,7 +4034,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 41.89248,
@@ -3785,10 +4112,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 43.77139,
@@ -3844,7 +4174,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -3857,7 +4189,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.844,
@@ -3913,7 +4246,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -3926,7 +4261,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.838137,
@@ -3982,7 +4318,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -3995,7 +4333,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.838137,
@@ -4051,7 +4390,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -4064,7 +4405,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.838137,
@@ -4120,7 +4462,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -4133,7 +4477,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.838137,
@@ -4189,7 +4534,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -4202,7 +4549,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.838137,
@@ -4279,10 +4627,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.91667,
@@ -4359,10 +4710,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 54.35833,
@@ -4439,10 +4793,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 41.89306,
@@ -4511,10 +4868,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 37.96667,
@@ -4583,10 +4943,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 37.96667,
@@ -4655,10 +5018,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 37.96667,
@@ -4735,10 +5101,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.41611,
@@ -4805,11 +5174,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "sole_sagome_senza_altezza"
+    "sole_sagome_senza_altezza",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 41.08475,
@@ -4873,11 +5245,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "sole_sagome_senza_altezza"
+    "sole_sagome_senza_altezza",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 40.75467,
@@ -4933,7 +5308,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -4946,7 +5323,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.838137,
@@ -5002,7 +5380,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -5015,7 +5395,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.838137,
@@ -5092,10 +5473,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 50.77621,
@@ -5172,10 +5556,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 45.46694,
@@ -5252,10 +5639,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 43.77139,
@@ -5332,10 +5722,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.83695,
@@ -5412,10 +5805,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 49.99944,
@@ -5471,7 +5867,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -5484,7 +5882,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.838137,
@@ -5561,10 +5960,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 40.48181,
@@ -5641,10 +6043,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 47.56667,
@@ -5721,10 +6126,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 43.14028,
@@ -5801,10 +6209,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 50.77621,
@@ -5873,11 +6284,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "sole_sagome_senza_altezza"
+    "sole_sagome_senza_altezza",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 43.54778,
@@ -5952,10 +6366,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 48.85667,
@@ -6019,11 +6436,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 49.45389,
@@ -6100,10 +6520,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 45.43972,
@@ -6180,10 +6603,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 51.4995,
@@ -6258,10 +6684,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 48.85667,
@@ -6288,11 +6717,11 @@
    "coord_stato": "verificata",
    "fonte_coord": "wikipedia:it",
    "terreno": {
-    "quota": 785.0,
-    "pend": 5.3,
-    "espo": 0.0,
-    "rel": 65.0,
-    "scarto": 7.0,
+    "quota": 242.0,
+    "pend": 21.8,
+    "espo": 57.1,
+    "rel": 503.0,
+    "scarto": 6.6,
     "fonte": "terrarium/SRTM",
     "stato": "misurata"
    },
@@ -6325,11 +6754,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 45.07917,
@@ -6385,7 +6817,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -6398,7 +6832,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 41.89248,
@@ -6475,10 +6910,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 45.15639,
@@ -6544,11 +6982,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "sole_sagome_senza_altezza"
+    "sole_sagome_senza_altezza",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 31.3259,
@@ -6604,7 +7045,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -6617,7 +7060,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 30.0444,
@@ -6681,11 +7125,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "sole_sagome_senza_altezza"
+    "sole_sagome_senza_altezza",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 34.32972,
@@ -6741,7 +7188,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -6754,7 +7203,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 25.7188,
@@ -6823,11 +7273,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "sole_sagome_senza_altezza"
+    "sole_sagome_senza_altezza",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 27.18,
@@ -6891,11 +7344,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 47.1757,
@@ -6972,10 +7428,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 52.37444,
@@ -7051,10 +7510,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 59.85,
@@ -7111,6 +7573,8 @@
      "oro"
     ],
     "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null,
     "tratto": {
      "colonne": 34,
      "righe": 10,
@@ -7138,7 +7602,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 30.0444,
@@ -7194,7 +7659,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -7207,7 +7674,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.838137,
@@ -7276,10 +7744,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 33.31528,
@@ -7346,11 +7817,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "sole_sagome_senza_altezza"
+    "sole_sagome_senza_altezza",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 35.6,
@@ -7427,10 +7901,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.91667,
@@ -7507,10 +7984,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 19.435,
@@ -7566,7 +8046,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -7579,7 +8061,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 38.3667,
@@ -7605,7 +8088,15 @@
    "lon": 85.12833,
    "coord_stato": "verificata",
    "fonte_coord": "wikipedia:en",
-   "terreno": null,
+   "terreno": {
+    "quota": 56.0,
+    "pend": 6.5,
+    "espo": 153.4,
+    "rel": 39.0,
+    "scarto": 4.0,
+    "fonte": "terrarium/SRTM",
+    "stato": "misurata"
+   },
    "ambiente": {
     "tipo": "citta_antica",
     "tipo_da": "luoghi_gioco.tipo",
@@ -7635,11 +8126,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 25.6125,
@@ -7696,6 +8190,8 @@
      "oro"
     ],
     "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null,
     "tratto": {
      "colonne": 34,
      "righe": 10,
@@ -7723,7 +8219,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 28.6139,
@@ -7800,10 +8297,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 41.01224,
@@ -7869,11 +8369,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "sole_sagome_senza_altezza"
+    "sole_sagome_senza_altezza",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 30.05806,
@@ -7929,7 +8432,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -7942,7 +8447,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.838137,
@@ -8009,10 +8515,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 39.86666,
@@ -8068,7 +8577,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -8081,7 +8592,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 32.5422,
@@ -8138,6 +8650,8 @@
      "oro"
     ],
     "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null,
     "tratto": {
      "colonne": 34,
      "righe": 10,
@@ -8165,7 +8679,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 11.2588,
@@ -8221,7 +8736,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -8234,7 +8751,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 28.682,
@@ -8291,6 +8809,8 @@
      "oro"
     ],
     "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null,
     "tratto": {
      "colonne": 34,
      "righe": 10,
@@ -8318,7 +8838,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 39.2904,
@@ -8374,7 +8895,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -8387,7 +8910,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 19.4351,
@@ -8444,6 +8968,8 @@
      "oro"
     ],
     "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null,
     "tratto": {
      "colonne": 34,
      "righe": 10,
@@ -8471,7 +8997,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 41.0122,
@@ -8528,6 +9055,8 @@
      "oro"
     ],
     "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null,
     "tratto": {
      "colonne": 34,
      "righe": 10,
@@ -8555,7 +9084,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 51.5074,
@@ -8612,6 +9142,8 @@
      "oro"
     ],
     "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null,
     "tratto": {
      "colonne": 34,
      "righe": 10,
@@ -8639,7 +9171,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 52.2297,
@@ -8695,7 +9228,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -8708,7 +9243,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.838137,
@@ -8792,10 +9328,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 41.88194,
@@ -8879,10 +9418,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 48.20833,
@@ -8966,10 +9508,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 51.50722,
@@ -9032,7 +9577,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -9045,7 +9592,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 39.028,
@@ -9116,11 +9664,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "sole_sagome_senza_altezza"
+    "sole_sagome_senza_altezza",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 35.89111,
@@ -9183,7 +9734,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -9196,7 +9749,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 32.5422,
@@ -9280,10 +9834,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 51.50722,
@@ -9359,10 +9916,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 45.61667,
@@ -9425,7 +9985,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -9438,7 +10000,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 51.5137,
@@ -9521,10 +10084,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 59.35,
@@ -9608,11 +10174,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "sole_sagome_senza_altezza"
+    "sole_sagome_senza_altezza",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 40.35222,
@@ -9696,10 +10265,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": -34.60833,
@@ -9783,10 +10355,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 52.20806,
@@ -9870,11 +10445,14 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "sole_sagome_senza_altezza"
+    "sole_sagome_senza_altezza",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 40.35222,
@@ -9958,10 +10536,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 40.71667,
@@ -10045,10 +10626,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 47.605,
@@ -10132,10 +10716,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 34.05223,
@@ -10198,7 +10785,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "immaginata",
@@ -10212,7 +10801,8 @@
     "coordinate_non_e_un_luogo",
     "nessun_luogo_dichiarato",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": null
   },
@@ -10290,10 +10880,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 51.50722,
@@ -10377,10 +10970,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.83917,
@@ -10453,10 +11049,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 51.95,
@@ -10519,7 +11118,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "immaginata",
@@ -10533,7 +11134,8 @@
     "coordinate_non_e_un_luogo",
     "nessun_luogo_dichiarato",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": null
   },
@@ -10611,10 +11213,13 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "vuoti": [
-    "orientamento_non_dichiarato"
+    "orientamento_non_dichiarato",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 46.2,
@@ -10677,7 +11282,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -10690,7 +11297,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 51.839,
@@ -10753,7 +11361,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -10766,7 +11376,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 40.6857,
@@ -10829,7 +11440,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -10842,7 +11455,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 42.3601,
@@ -10905,7 +11519,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -10918,7 +11534,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 43.6532,
@@ -10981,7 +11598,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -10994,7 +11613,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 47.6062,
@@ -11057,7 +11677,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "documentata",
@@ -11070,7 +11692,8 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 51.5074,
@@ -11133,7 +11756,9 @@
      "azzurro_oltremare",
      "oro"
     ],
-    "paleta_fonte": "dati/fonti_visive/tavolozza.json"
+    "paleta_fonte": "dati/fonti_visive/tavolozza.json",
+    "sprite": [],
+    "sprite_stato": null
    },
    "ipotesi": {
     "grado": "argomentata",
@@ -11146,7 +11771,8 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm"
+    "senza_sagome_osm",
+    "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
     "lat": 44.838137,

@@ -28,6 +28,7 @@ BASE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 CATALOGO = os.path.join(BASE, "dati", "immagini_gioco.json")
 OUT = os.path.join(BASE, "sorgenti", "art", "out")
 VERIFICA = os.path.join(BASE, "sorgenti", "art", "verifica_immagini.py")
+AMBIENTI = os.path.join(BASE, "dati", "ambienti_livelli.json")
 
 
 def gira():
@@ -87,6 +88,53 @@ def main():
         scrivi(cat)
         provati.append((nome, gira()))
         shutil.copy(copia, CATALOGO)      # subito ripristinato
+
+    def inietta_su(nome, che_cosa, rimetti, cerca=None):
+        """Un difetto che non sta nel catalogo: gli sprite e i loro PNG.
+
+        La regola e' la stessa del difetto 5 e del 7 — si rompe il **file vero**
+        e lo si rimette subito — e qui la ragione e' doppia: il controllo 9 e il
+        controllo 10 leggono il manifesto degli ambienti e i PNG, e una prova che
+        rompesse una copia non starebbe provando il controllo che gira su quelli
+        veri.
+
+        `cerca` e' il numero del controllo che **deve** comparire fra le righe
+        che il difetto produce. Serve per i difetti che ne mordevono piu' di uno:
+        senza, la prova guarderebbe la prima riga dell'output, che puo' essere
+        quella di un controllo diverso, e il difetto 15 ha gia' insegnato che una
+        prova che guarda la riga sbagliata verde e non sa niente.
+        """
+        che_cosa()
+        codice, testo = gira()
+        provati.append((nome, (codice, testo)))
+        rimetti()
+        if cerca and not [r for r in testo.splitlines()
+                          if r.strip().startswith(cerca.strip())]:
+            falliti_cerca.append((nome, cerca))
+
+    falliti_cerca = []
+
+    def primo_sprite():
+        """Il primo sprite dichiarato, preso dal manifesto e non scritto qui.
+
+        Se la prova scrivesse «cartello.png» nel proprio codice, e un domani la
+        tabella cambiasse, la prova morirebbe per una ragione che non ha a che
+        fare col difetto che deve provare: e' gia' successo con il difetto 3.
+        """
+        d = json.load(open(AMBIENTI, encoding="utf-8"))
+        for a_ in d["ambienti"]:
+            if a_["ambiente"].get("sprite"):
+                return a_["ambiente"]["sprite"]
+        raise SystemExit("nessuno sprite dichiarato: la prova non ha caso")
+
+    # i tre file che i difetti sugli sprite toccano, salvati per essere rimessi
+    _primi = primo_sprite()
+    for _chiave, _percorso in (("sprite", os.path.join(BASE, _primi[0]["file"])),
+                               ("facciata", os.path.join(OUT, "facciata.png")),
+                               ("ambienti", AMBIENTI)):
+        shutil.copy(_percorso, os.path.join(backup, _chiave + ".png"
+                                            if _chiave != "ambienti"
+                                            else "ambienti.json"))
 
     ritratto = persona_di("ritratto")
     emblema = persona_di("emblema")
@@ -195,6 +243,65 @@ def main():
         cat["persone"][emblema]["emblema_famiglia_da"] = "parola_che_non_esiste"
     inietta("parola della famiglia sparita dal motivo", d11)
 
+    # difetto 12: uno sprite dichiarato e assente. E' successo davvero: gli
+    # undici file della tappa 1-1 sono rimasti nel ramo senza che nessun dato li
+    # dichiarasse, e il controllo che li contava come persone li chiamava morti.
+    def d12():
+        os.remove(os.path.join(BASE, primo_sprite()[0]["file"]))
+    inietta_su("sprite dichiarato e assente", d12,
+               lambda: shutil.copy(os.path.join(backup, "sprite.png"),
+                                   os.path.join(BASE, primo_sprite()[0]["file"])))
+
+    # difetto 13: un PNG in out/ che nessuno dichiara. Il caso e' il piu' vicino
+    # a quello vero di ieri sera: sei emblemi superati che nessuno guardava.
+    def d13():
+        shutil.copy(os.path.join(BASE, primo_sprite()[0]["file"]),
+                    os.path.join(OUT, "sprite_inventato.png"))
+    inietta_su("PNG che nessuno dichiara", d13,
+               lambda: os.remove(os.path.join(OUT, "sprite_inventato.png")))
+
+    # difetto 14: il manifesto che dichiara una misura che il file non ha. Il
+    # motore ridimensionerebbe su un numero che nessuno ha misurato.
+    def d14():
+        d = json.load(open(AMBIENTI, encoding="utf-8"))
+        for a_ in d["ambienti"]:
+            if a_["ambiente"].get("sprite"):
+                a_["ambiente"]["sprite"][0]["px"] = [1, 1]
+        with open(AMBIENTI, "w", encoding="utf-8") as f:
+            json.dump(d, f, ensure_ascii=False, indent=1)
+    inietta_su("misura dichiarata che il file non ha", d14,
+               lambda: shutil.copy(os.path.join(backup, "ambienti.json"),
+                                   AMBIENTI))
+
+    # difetto 15: **i due numeri della scala che non tornano fra loro**. Il
+    # manifesto dichiara i 509 px che il documento scrive a mano accanto ai 39,8
+    # m e ai 12,8 px per metro, e il prodotto non dà 509. Il controllo 9 non lo
+    # vede — i PNG sono giusti — e il 10 sì: è l'unico difetto che prova che quel
+    # controllo guarda qualcosa e non ripete il 9.
+    def d15():
+        d = json.load(open(AMBIENTI, encoding="utf-8"))
+        for a_ in d["ambienti"]:
+            if a_["ambiente"].get("scala"):
+                a_["ambiente"]["scala"]["facciata_px_dichiarati"] -= 1
+        with open(AMBIENTI, "w", encoding="utf-8") as f:
+            json.dump(d, f, ensure_ascii=False, indent=1)
+    inietta_su("scala che non torna col documento", d15,
+               lambda: shutil.copy(os.path.join(backup, "ambienti.json"),
+                                   AMBIENTI),
+               cerca="10 ")
+
+    # difetto 16: la facciata sul disco larga quanto un francobollo. Qui il
+    # 10 e' l'unico che puo' dirlo sul **file**: il 9 lo direbbe sulla misura
+    # dichiarata, e la prova pretende che lo dica il 10, cosi' si vede che il
+    # controllo guarda due cose e non una.
+    def d16():
+        shutil.copy(os.path.join(BASE, primo_sprite()[0]["file"]),
+                    os.path.join(OUT, "facciata.png"))
+    inietta_su("facciata di misura sbagliata", d16,
+               lambda: shutil.copy(os.path.join(backup, "facciata.png"),
+                                   os.path.join(OUT, "facciata.png")),
+               cerca="10 ")
+
     shutil.rmtree(backup, ignore_errors=True)
 
     falliti = []
@@ -211,6 +318,8 @@ def main():
             print("morde      %-40s  %s" % (titolo, primo[:66]))
 
     codice, testo = gira()
+    for nome, cerca in falliti_cerca:
+        falliti.append("%s (non e' stato visto da %s)" % (nome, cerca.strip()))
     if falliti or codice != 0:
         raise SystemExit("la prova e' fallita")
     print("dopo la prova: verde, e tutti i difetti iniettati erano visti")

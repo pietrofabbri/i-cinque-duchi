@@ -47,6 +47,20 @@ esiste gia' e fa il lavoro per relazione esplicita.
 rilevamento: il campo `tipo_da` dice sempre donde viene, cosi' chi legge sa che
 una parola ha deciso e non un architetto.
 
+**Gli sprite, che fino al 4 ottobre non erano dichiarati da nessuna parte.**
+La 1-1 ha in `sorgenti/art/out/` undici file che non sono ritratti di persone:
+la facciata, il cartello, la lapide, le statue, il protagonista in quattro
+fotogrammi e tre ritratti disegnati a mano. Nessun codice li caricava e nessun
+dato li nominava, e percio' il controllo 2 di `art/verifica_immagini.py` li
+dichiarava file morti: aveva ragione, e il difetto era del progetto e non del
+controllo. Qui sono una tabella, e ogni riga dice la voce della tabella 3 da cui
+prende il posto, il file e che cosa ci si vede. Il legame fra voce e nome del
+file e' **dichiarato** e non dedotto, perche' «San Giorgio (visione A1)» si
+chiama `giorgio.png` e una regola che togliesse le parole avrebbe finito per
+unire cose diverse. La misura di ogni file e' **misurata**, non scritta: e il
+vuoto `sprite_nessun_codice_li_produce` dice che sono un disegno del primo
+prototipo e che nessun codice li rifa.
+
 **Cosa resta vuoto, e resta dichiarato.** Un ambiente senza coordinate non si
 posiziona, e un ambiente senza sagome non ha case. Il file non riempie: elenca i
 vuoti di ogni livello in `vuoti`, cosi' il motore sa cosa non disegnare e la
@@ -67,6 +81,11 @@ FOOTPRINT = os.path.join(RADICE, "dati", "edifici_footprint.json")
 FONDO = os.path.join(RADICE, "dati", "ferrara_fondo.json")
 IPOTESI = os.path.join(RADICE, "dati", "ipotesi_luoghi.json")
 USCITA = os.path.join(RADICE, "dati", "ambienti_livelli.json")
+sys.path.insert(0, os.path.join(RADICE, "sorgenti", "gis"))
+import png_terrarium          # noqa: E402  (sta dopo RADICE)
+
+DOC_1_01 = os.path.join(DOCS, "videogioco-5-duchi-tappa-1-01.md")
+OUT = os.path.join(RADICE, "sorgenti", "art", "out")
 
 # Le cinque tabelle dei livelli. Il numero e' la posizione della sezione dentro il
 # documento: cambiare l'ordine delle sezioni romperebbe il file, e va detto.
@@ -110,6 +129,53 @@ GRIGLIE = {
     "paesaggio":    {"colonne": 40, "righe": 30, "scala_m_per_tessera": 2.0},
 }
 GRIGLIA_DI_DEFAULT = GRIGLIE["paesaggio"]
+
+# Gli undici file di disegno che la tappa 1-1 ha in `sorgenti/art/out/`. Non
+# sono ritratti di persone: sono gli **sprite** di una zona percorribile, e il
+# progetto non aveva nessun posto dove dichiararli. Il risultato era che il
+# controllo 2 di `art/verifica_immagini.py` li dichiarava file morti, e aveva
+# ragione dal punto di vista del controllo: nessun codice li caricava e nessun
+# dato li nominava. Undici file di disegno che il motore non puo' usare.
+#
+# Ogni riga dice tre cose: **la voce** della tabella 3 del documento da cui il
+# file prende il posto (None quando la tabella non gli da' coordinate), **il
+# file**, e **che cosa ci si vede**. Il legame fra la voce e il nome del file
+# e' dichiarato qui e non dedotto: «San Giorgio (visione A1)» si chiama
+# `giorgio.png` e non `san_giorgio.png`, e una regola che togliesse le parole
+# («san», «visione», «dell'art. 9») avrebbe finito per unire cose diverse.
+SPRITE = [
+    ("Maurelio", "maurelio.png", "il vescovo che apre la bottega",
+     "personaggio"),
+    ("San Giorgio (visione A1)", "giorgio.png",
+     "la statua che compare dopo la soglia, trasparente e color pietra",
+     "personaggio"),
+    ("Lapide (visione A2)", "lapide.png",
+     "la lapide ai piedi della facciata, che si attiva dopo la A1", "oggetto"),
+    ("Cartello dell'art. 9", "cartello.png",
+     "il cartello con il testo dell'articolo 9", "oggetto"),
+    (None, "borso.png", "il protagonista: quattro fotogrammi di camminata",
+     "personaggio"),
+    (None, "facciata.png", "la facciata della Cattedrale, fondo della piazza",
+     "edificio"),
+    (None, "statua_borso.png",
+     "una figura su piedistallo: il nome dice Borso e il disegno non lo "
+     "conferma", "arredo"),
+    (None, "statua_niccolo.png",
+     "una figura su piedistallo con l'ombra per terra: il nome dice Niccolo' "
+     "e il disegno non lo conferma", "arredo"),
+    (None, "ritratto_borso.png", "il ritratto disegnato a mano del protagonista",
+     "ritratto"),
+    (None, "ritratto_giorgio.png",
+     "il ritratto disegnato a mano di San Giorgio", "ritratto"),
+    (None, "ritratto_maurelio.png",
+     "il ritratto disegnato a mano di Maurelio", "ritratto"),
+]
+
+# Come stanno questi file: disegno a mano del primo prototipo, nessun codice che
+# li produca. Il campo `sprite_stato` dell'ambiente lo dice, e il vuoto
+# `sprite_senza_codice` lo ripete per ogni livello che non ha sprite.
+SPRITE_STATO = ("disegno_a_mano_del_prototipo_del_30_settembre_2026"
+                "_nessun_codice_li_produce")
 
 # La parola che decide il tipo, quando il campo `tipo` non c'e'. E' un'euristica e
 # il file lo dichiara: se domani un posto si chiama «Piazza del Campo» ma e' una
@@ -171,6 +237,116 @@ def tipo_ambiente(nome, tipo_registrato):
         if parola in basso:
             return tipo, "parola_chiave:" + parola
     return "paesaggio", "nessuna_parola_chiave"
+
+
+def numero(testo):
+    """«1,25» e «39,8» in 1.25 e 39.8: nel progetto la virgola e' decimale."""
+    return float(testo.replace("\u2212", "-").replace(",", "."))
+
+
+def sezione_3():
+    """Il testo della sezione 3 di tappa-1-01.md, che e' il modello."""
+    with open(DOC_1_01, encoding="utf-8") as f:
+        testo = f.read()
+    if "## 3." not in testo:
+        return ""
+    return testo.split("## 3.", 1)[1].split("\n## ", 1)[0]
+
+
+def posti_1_01():
+    """Le voci con le coordinate (u, v), **lette** dalla tabella 3.
+
+    Il documento scrive «(−3,4; 2,4), a sinistra del protiro»: il numero viene
+    fuori dalla cella, non da una tabella qui accanto che lo ripete. Il segno
+    meno del documento e' il carattere U+2212 e non il trattino, e senza quello
+    il numero di Maurelio non si legge.
+
+    «Partenza» dice «(4, 15), al centro della piazza» e non ha il punto e
+    virgola delle coordinate: viene scartata, perche' quei due numeri sono una
+    posizione in griglia e non un punto in metri, e mischiarli sarebbe peggio
+    che non averli.
+    """
+    posti = {}
+    for riga in sezione_3().splitlines():
+        if not riga.startswith("|"):
+            continue
+        celle = [c.strip() for c in riga.strip().strip("|").split("|")]
+        if len(celle) < 2:
+            continue
+        m = re.match(r"^\(([-\u2212]?\d+(?:,\d+)?)\s*;\s*"
+                     r"([-\u2212]?\d+(?:,\d+)?)\)", celle[1])
+        if m:
+            posti[celle[0]] = (numero(m.group(1)), numero(m.group(2)))
+    return posti
+
+
+def scala_1_01():
+    """I pixel per metro, calcolati dalla riga «Scala» della tabella 3.
+
+    La riga dice «1 tessera = 1,25 m = 16 px; facciata larga 39,8 m (509 px)».
+    I 12,8 px per metro sono un quoziente, non un numero scritto: e la
+    larghezza della facciata che ne segue e' un prodotto, non una misura presa
+    dal file. Il confronto fra il prodotto e il file vero lo fa
+    `art/verifica_immagini.py`, non questo file: qui si dichiara, li' si guarda.
+    """
+    for riga in sezione_3().splitlines():
+        if not riga.startswith("| Scala |"):
+            continue
+        m1 = re.search(r"1 tessera = ([\d,]+) m = (\d+) px", riga)
+        m2 = re.search(r"facciata larga ([\d,]+) m \((\d+) px\)", riga)
+        if not (m1 and m2):
+            continue
+        px_per_m = int(m1.group(2)) / numero(m1.group(1))
+        return {"px_per_m": px_per_m,
+                "facciata_larghezza_m": numero(m2.group(1)),
+                "facciata_px_dichiarati": int(m2.group(2)),
+                "facciata_px_attesi": round(numero(m2.group(1)) * px_per_m),
+                "da": "videogioco-5-duchi-tappa-1-01.md 3, riga «Scala»"}
+    return None
+
+
+def sprite_1_01():
+    """Gli sprite della tappa 1-1, con la misura **misurata** sui file.
+
+    Il ritorno e' una coppia: la lista e i vuoti. Un file che non c'e' non
+    viene saltato in silenzio, e un file che non e' un PNG non viene dichiarato
+    con una misura inventata: entrambi finiscono nella lista dei vuoti, che il
+    file dell'ambiente scrive accanto all'ambiente stesso.
+    """
+    posti = posti_1_01()
+    vuoti, fuori = [], []
+    for voce, nome_file, cosa, tipo in SPRITE:
+        percorso = os.path.join(OUT, nome_file)
+        px, u, v = None, None, None
+        posto_da = ("la tabella 3 non da' un posto a questo file"
+                    if voce is None else
+                    "videogioco-5-duchi-tappa-1-01.md 3, riga «%s»: nessuna "
+                    "coordinata" % voce)
+        if voce and voce in posti:
+            u, v = posti[voce]
+            posto_da = "videogioco-5-duchi-tappa-1-01.md 3, riga «%s»" % voce
+        if not os.path.exists(percorso):
+            vuoti.append("sprite_senza_file")
+        else:
+            with open(percorso, "rb") as f:
+                try:
+                    w, h = png_terrarium.misura_png(f.read(24))
+                    px = [w, h]
+                except ValueError:
+                    vuoti.append("sprite_non_png")
+        fuori.append({
+            "file": "sorgenti/art/out/" + nome_file,
+            "voce": voce,
+            "tipo": tipo,
+            "cosa": cosa,
+            "px": px,
+            "px_da": ("misurati sull'intestazione del file con "
+                      "png_terrarium.misura_png()"),
+            "u": u,
+            "v": v,
+            "posto_da": posto_da,
+        })
+    return fuori, sorted(set(vuoti))
 
 
 def main():
@@ -317,6 +493,23 @@ def main():
                        "azzurro_oltremare", "oro"],
             "paleta_fonte": "dati/fonti_visive/tavolozza.json",
         }
+        # Gli sprite: solo la 1-1 ne ha, e sono undici file che fino al 4
+        # ottobre nessun dato dichiarava e nessun codice caricava. Gli altri
+        # centoquarantanove ambienti li dichiarano vuoti, e il vuoto si chiama
+        # `sprite_da_disegnare` perche' «non c'e' niente» e «non c'e' ancora»
+        # sono due fatti diversi: il motore deve poter dire il secondo.
+        if lid == "1-1":
+            amb["sprite"], vuoti_sprite = sprite_1_01()
+            amb["sprite_stato"] = SPRITE_STATO
+            vuoti.extend(vuoti_sprite)
+            amb["scala"] = scala_1_01()
+            if amb["scala"] is None:
+                vuoti.append("scala_non_dichiarata")
+            vuoti.append("sprite_nessun_codice_li_produce")
+        else:
+            amb["sprite"] = []
+            amb["sprite_stato"] = None
+            vuoti.append("sprite_da_disegnare")
         if v["anno"] == 1 and not amb["fondo"]:
             vuoti.append("senza_fondo_ferrara")
         if amb["orientamento"] is None:
@@ -417,8 +610,13 @@ def main():
         return 0
 
     doc = {
-        "versione": 1,
-        "data": "2026-10-03",
+        "versione": 2,
+        # La `data` e' il giorno in cui il file e' stato prodotto, e ieri il
+        # produttore era un altro: il 4 ottobre la tabella `SPRITE` ha messo
+        # dentro undici file che nessuno dichiarava, e un file la cui
+        # `versione` non cambia mentre il suo contenuto cambia e' un file che
+        # mente sul se stesso. La versione sale, la data sale.
+        "data": "2026-10-04",
         "scopo": "un ambiente per ogni livello: che cosa serve a ciascuno e che "
                  "cosa si sa davvero. Il file non disegna e non sceglie i "
                  "luoghi: li legge dai documenti del progetto e dichiara i "
@@ -437,6 +635,9 @@ def main():
             "registro dei luoghi",
             "il fondo da ferrara_fondo.json, e solo per l'anno 1, che e' "
             "l'unico anno che si gioca dentro Ferrara",
+            "gli sprite dalla tabella SPRITE di questo file, e la misura di "
+            "ognuno misurata sul PNG con png_terrarium.misura_png(); i posti "
+            "(u, v) dalla tabella 3 di tappa-1-01.md, non riscritti qui",
         ],
         "griglie": GRIGLIE,
         "griglie_nota": "colonne, righe e scala sono una scelta di progetto, non "
@@ -464,6 +665,12 @@ def main():
             "per_tipo": per_tipo,
             "costruiti": [a["livello"] for a in ambienti
                           if a["ambiente"]["stato"] == "costruito"],
+            "con_sprite": {a["livello"]: len(a["ambiente"]["sprite"])
+                            for a in ambienti if a["ambiente"]["sprite"]},
+            "sprite_totali": sum(len(a["ambiente"]["sprite"])
+                                 for a in ambienti),
+            "senza_sprite": len([a for a in ambienti
+                                 if not a["ambiente"]["sprite"]]),
         },
         "vuoti_dichiarati": {
             # I due numeri qui sotto sono **calcolati**, non scritti: il 03/10/2026

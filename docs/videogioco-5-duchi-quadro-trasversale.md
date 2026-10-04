@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — Quadro trasversale (Diritto, Etica, Filosofia, Psicologia, Arti)
-versione: 0.1
-data: 2026-09-30
+versione: 0.2
+data: 2026-10-03
 autore: Pietro Fabbri (con Claude)
 fonte: proposta di Pietro del 30/09/2026 (percorso quinquennale "IO → ORDINE → ALTRO → MONDO → SENSO"); dettagli degli anni 2–5 in arrivo
 documenti collegati: videogioco-5-duchi-gioco.md, videogioco-5-duchi-esercizi.md, videogioco-5-duchi-anno1-mappa.md, videogioco-5-duchi-tappa-1-01.md
@@ -57,6 +57,28 @@ Ogni anno risponde a **una sola grande domanda**, declinata nelle cinque prospet
 5. Che cosa rende giusta una legge, e giusta una vita?
 
 ---
+
+### 1.3 Il sesto ambito: osservazione e attenzione
+
+Il quadro dichiara quattro ambiti (diritto, etica, filosofia, psicologia) e un'arte principale per anno. Ce n'e' un quinto che non e' un ambito di materia ma **un metodo**, e che il progetto aveva dichiarato assente: `pedagogia.md` §3 lo chiamava «un dominio che il progetto non ha ancora» e `premi.md` §2 lo lasciava `da_costruire`.
+
+**Era un difetto, non una lacuna.** L'osservazione e l'attenzione sono gia' dentro il gioco, in quattro punti che nessuno aveva messi insieme:
+
+| dove | che cosa c'e' |
+|---|---|
+| **`schema-livelli.md` 3-27** | il nucleo `Q8.2`: basi di psicologia cognitiva — **percezione, attenzione, memoria**, modelli mentali. E' l'unico livello dei centocinquanta che fa dell'attenione un oggetto di studio, e non un sottofondo |
+| **`lingue.md` §4** | l'**osservazione linguistica**, presente in tutti i novecento livelli: guardare come si comporta una lingua prima di giudicarla |
+| **1-23 e 1-29** | *osservare con attenzione prima di concludere* (Orto Botanico, Brasavola) e la **Missione del Chiozzino**: cinque fonti e una risposta di un'IA da verificare |
+| **5-11 e l'anno 4** | «non e' un difetto dell'osservazione: e' il campione» (Alcina) e la tappa su Linneo, dove la ricostruzione e' il lavoro di osservare sul campo |
+
+Quindi il dominio esiste, ha una casa e ha un oggetto. La riga `da_costruire` che due documenti si portavano addosso dal 3 ottobre e' stata tolta, e il dominio e' entrato nella **sesta riga** dei due quadri: `pedagogia.md` §3 (la banca della sfida a mani nude) e `premi.md` §2.2 (che premio puo' prendere).
+
+**La differenza rispetto agli altri cinque, dichiarata.** Gli altri cinque ambiti hanno un programma da seguire; questo si puo' solo **esercitare**, e si esercita guardando. Per questo e' l'unico che non ha un numero di livelli: non e' una materia che si distribuisce fra le trenta tappe dell'anno, e' la stessa attenzione applicata a un oggetto diverso in ogni tappa. Il conto dei livelli trasversali resta **zero** perche' questo dominio non ne aggiunge, ed e' il primo dei due che chiudono il conto (~900 premi) dichiarato in `premi.md` §4 e `inventario.md` §5.
+
+**Il suo premio.** Se la tappa a mani nude lo usa, il premio possibile e' la categoria `D` — la pianta e la sua soglia: l'unica cosa che si guarda con attenzione e che premia l'attenzione perche' senza di lei non si vede niente. E' anche l'unico premio che non si puo' ottenere senza guardare davvero.
+
+---
+
 
 ## 2. Anno 1 — Io e le regole
 
@@ -136,3 +158,5 @@ In attesa dei materiali di Pietro. Valgono le stesse regole del §2.2, con più 
 ## 4. Registro modifiche
 
 - **v0.1 (30/09/2026)**: formalizzazione della proposta di Pietro; regole d'integrazione con l'informatica; agganci proposti per le 30 tappe dell'anno 1.
+
+- **v0.2 (03/10/2026)**: **il sesto ambito esiste, e la sua riga era un difetto.** Aggiunto §1.3: «osservazione e attenzione» non è il dominio che il progetto non aveva, è un dominio che aveva in quattro posti che nessuno aveva messi insieme — il nucleo `Q8.2` del livello 3-27 (percezione, attenzione, memoria), l'osservazione linguistica di tutti i novecento livelli, le tappe 1-23 e 1-29 con la Missione del Chiozzino, e la 5-11 con la frase sul campione. La riga `da_costruire` che `pedagogia.md` §3 e `premi.md` §2.2 si portavano addosso è tolta, e il dominio ha il suo premio: la categoria `D`, la pianta e la sua soglia. Nello stesso giorno il documento dichiara che **i livelli trasversali sono zero**: nessuno dei cinque ambiti aggiunge un livello, perché il trasversale è un'aggancio dentro i livelli che già ci sono, non un livello suo. È il primo dei due dati che chiudevano il conto dei ~900 premi.

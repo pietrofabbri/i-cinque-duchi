@@ -5,7 +5,10 @@ che cosa non si sa. Il pericolo di una promessa cosi' non e' che sia falsa, e' c
 diventi **dimenticata**: il motore smette di chiedere, la scheda mostra un vuoto
 che nessuno ha piu' controllato, e il difetto sparisce senza che nessuno lo dica.
 
-I controlli sono sei, e l'ultimo e' quello per cui il file esiste.
+I controlli sono elencati qui sotto, e il numero non e' scritto: quando
+erano «sei» e c'era fino a B5, poi ne sono diventati nove e nessuno
+se n'e' accorto perche' il titolo diceva sei. L'ultimo e' quello per
+cui il file esiste.
 
   B1  i livelli sono esattamente 5 x 30, e nessuno due volte
   B2  ogni ambiente porta i campi che il motore legge, e nessuno e' vuoto
@@ -22,6 +25,10 @@ I controlli sono sei, e l'ultimo e' quello per cui il file esiste.
       punto viene dal registro quando la coordinata e' verificata e dall'ipotesi
       quando non lo e', e in entrambi i casi l'ambiente dice quale dei due ha
       usato
+  B8  nessun numero scritto in `fonti-visive.md` §3.6 puo' contraddire il dato
+  B9  **i posti degli sprite sono riletti dal documento della tappa**: il manifesto
+      degli ambienti puo' essere editato a mano come qualunque altro file, e se il
+      posto di Maurelio fosse scritto li' diventerebbe un numero che invecchia
 
 B6 e' il controllo che vale: un ambiente che dichiara `senza_coordinate` e poi ha
 le coordinate e' un ambiente che mente, e un ambiente che ha i vuoti ma non li
@@ -37,6 +44,17 @@ guardano i numeri scritti nelle righe. B8 legge la sezione e confronta ogni
 numero con il conto: il documento non può piu' dire una cifra che il dato non
 conferma, ed e' l'unico modo perche' un documento resti vero quando il dato
 cambia sotto di lui.
+
+**B9 e' nato il 04/10/2026 dalla stessa malattia, su un file diverso.** Gli sprite
+che la tappa 1-1 aveva in `sorgenti/art/out/` — la facciata, il cartello, la
+lapide, le statue, il protagonista in quattro fotogrammi, tre ritratti disegnati a
+mano — stavano in `dati/ambienti_livelli.json` con i posti presi dalla tabella 3
+del documento. Un manifesto puo' essere editato a mano come qualunque altro
+file, e nessuno guardava se quei posti corrispondessero ancora al documento:
+come i numeri di §3.6, potevano invecchiare in silenzio. B9 riapre la tabella 3
+di `tappa-1-01.md` e confronta riga per riga, posto per posto e scala per
+scala. Se un domani il documento spostasse Maurelio e il manifesto no, lo
+direbbe.
 
 **B7 e' nato con le ipotesi di coordinata** (`dati/ipotesi_luoghi.json`, il 03/10/2026),
 e controlla una cosa che sembra ovvia e non lo e'. Il motore ha due fonti di
@@ -95,6 +113,11 @@ QUOTE = [
      lambda a: sum(1 for x in a if x["ambiente"]["edifici"]["n"])),
     ("Già costruiti", None,
      lambda a: sum(1 for x in a if x["ambiente"]["stato"] == "costruito")),
+    # Il numero degli sprite e' la riga che il 4 ottobre ha salvato: gli undici
+    # file della tappa 1-1 stavano in `out/` e nessuna sezione li contava, e un
+    # file che nessuno conta e' un file che nessuno guarda.
+    ("Sprite dichiarati", None,
+     lambda a: sum(len(x["ambiente"].get("sprite") or []) for x in a)),
 ]
 
 
@@ -266,6 +289,15 @@ def main():
         ip = a.get("ipotesi")
         if ip and ip["grado"] == "immaginata":
             attesi_vuoti.add("nessun_luogo_dichiarato")
+        # Gli sprite: un ambiente senza sprite ha il vuoto `sprite_da_disegnare`,
+        # e uno con sprite disegnati a mano ha `sprite_nessun_codice_li_produce`.
+        # Il secondo si calcola sul campo `sprite_stato`, che il generatore
+        # riempe dalla sua costante: se un domani un codice producesse quei
+        # file, la costante cambierebbe e il vuoto sparirebbe da se'.
+        if not amb.get("sprite"):
+            attesi_vuoti.add("sprite_da_disegnare")
+        elif "nessun_codice" in (amb.get("sprite_stato") or ""):
+            attesi_vuoti.add("sprite_nessun_codice_li_produce")
 
         dichiarati = set(a["vuoti"])
         for v in sorted(dichiarati - attesi_vuoti):
@@ -274,6 +306,37 @@ def main():
         for v in sorted(attesi_vuoti - dichiarati):
             problemi.append("B6  %s: il vuoto '%s' c'e' ma non e' dichiarato"
                             % (lid, v))
+
+        # B9: i posti degli sprite vengono **riletti dal documento**, non
+        # creduti. Il manifesto degli ambienti puo' essere editato a mano come
+        # qualunque altro file, e se il posto di Maurelio fosse scritto li'
+        # diventerebbe un numero che invecchia. Qui la tabella 3 di tappa-1-01.md
+        # viene riletta e confrontata riga per riga: quello che il manifesto
+        # dice deve essere quello che il documento dice adesso.
+        if amb.get("sprite"):
+            posti = al.posti_1_01()
+            scala = al.scala_1_01()
+            if scala is None:
+                problemi.append("B9  %s: la tabella 3 non dichiara piu' la scala "
+                                "e l'ambiente ne ha bisogno" % lid)
+            for sp in amb["sprite"]:
+                voce = sp.get("voce")
+                if voce not in posti:
+                    if sp.get("u") is not None or sp.get("v") is not None:
+                        problemi.append("B9  %s: %s ha il posto (%s, %s) e la riga "
+                                        "«%s» non c'e' piu' nella tabella 3"
+                                        % (lid, sp.get("file"), sp.get("u"),
+                                           sp.get("v"), voce))
+                    continue
+                if (sp.get("u"), sp.get("v")) != posti[voce]:
+                    problemi.append("B9  %s: %s sta in (%s, %s) e il documento "
+                                    "dice %s" % (lid, sp.get("file"), sp.get("u"),
+                                                 sp.get("v"),
+                                                 "".join("%g" % x for x in
+                                                         posti[voce])))
+            if scala and amb.get("scala") != scala:
+                problemi.append("B9  %s: la scala dichiarata non e' quella che "
+                                "dà la tabella 3 (%s)" % (lid, scala))
 
         # B7: il punto da disegnare c'e', e dice da quale dei due file viene
         dis = a.get("pin_da_disegnare")

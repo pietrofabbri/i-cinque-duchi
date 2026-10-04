@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — Tappa 1-1 (San Maurelio, Cattedrale): specifica completa
-versione: 0.3
-data: 2026-09-30
+versione: 0.4
+data: 2026-10-04
 autore: Pietro Fabbri (con Claude)
 implementazione: videogioco-5-duchi-anno1-prototipo-mappa.html (sorgenti esercizi1.js, zona1.js, zona1_dati.js, incorporati dallo script build_mappa_html.py)
 documenti collegati: videogioco-5-duchi-motore-e-grafica.md, videogioco-5-duchi-esercizi.md, videogioco-5-duchi-quadro-trasversale.md, videogioco-5-duchi-anno1-mappa.md, videogioco-5-duchi-gioco.md, videogioco-5-duchi-meccaniche.md
@@ -64,7 +64,28 @@ Le coordinate sono `(u, v)`, in metri dal centro della facciata: `u` verso destr
 
 Altre chicche si aggiungeranno più avanti.
 
-### 3.1 Il dialogo di Maurelio
+### 3.1 Gli sprite: i file che questa piazza aveva già
+
+La tabella qui sopra descrive **le cose**: Maurelio, San Giorgio, la lapide, il cartello, la facciata. Non dice **quali file** le disegnano, e per undici anni di progetto la risposta era «nessuno»: i disegni c'erano in `sorgenti/art/out/` dal primo commit — la facciata (509 × 312 px), il cartello dell'art. 9, la lapide, due statue, il protagonista in quattro fotogrammi e i tre ritratti disegnati a mano — e nessun codice li caricava e nessun dato li nominava. Il controllo che sorveglia la cartella li chiamava file morti, e aveva ragione: un disegno che il motore non può aprire non è un patrimonio.
+
+Sono ora dichiarati, e dichiarati dove il motore li cerca:
+
+| Sprite | Che cos'è | Posto | Misura |
+|---|---|---|---|
+| `borso.png` | il protagonista, quattro fotogrammi di camminata | Partenza (4, 15) | 48 × 96 |
+| `maurelio.png` | il vescovo che apre la bottega | (−3,4; 2,4) | 32 × 24 |
+| `giorgio.png` | la statua, trasparente e color pietra dopo la soglia | (3,6; 2,6) | 32 × 32 |
+| `lapide.png` | la lapide che si attiva dopo la A1 | (−13; 1,6) | 16 × 16 |
+| `cartello.png` | il cartello con il testo dell'articolo 9 | (−12,5; 17) | 16 × 16 |
+| `facciata.png` | la facciata della Cattedrale, fondo della piazza | dietro tutta la zona | 509 × 312 |
+| `statua_borso.png`, `statua_niccolo.png` | due figure su piedistallo: **il nome dice il posto e il disegno non lo conferma** | i leoni del protiro, da mettere | 16 × 42, 32 × 38 |
+| `ritratto_borso.png`, `ritratto_giorgio.png`, `ritratto_maurelio.png` | i tre ritratti disegnati a mano | dialoghi e bottega | 48 × 54 |
+
+**Tre cose che questa tabella dichiara e che prima non erano scritte da nessuna parte.** I **posti** non sono qui: sono letti dalla tabella 3 di questo documento, e il controllo **B9** di `sorgenti/verifica_ambienti.py` li riapre e li confronta a ogni verifica, perché un manifesto si può editare a mano come qualunque altro file. Le **misure** non sono scritte: sono misurate sull'intestazione del PNG. E il vuoto `sprite_nessun_codice_li_produce` dice la terza cosa, che è la più scomoda: **nessun codice produce questi file**. Sono un disegno del primo prototipo e non si rifanno da soli; se il motore li vuole belli, il lavoro è ancora da fare, e il vuoto è il posto dove si vede.
+
+Le misure combaciano con la scala: i **12,8 px per metro** della riga «Scala» danno 509 px per una facciata di 39,8 m, ed è la facciata a dirlo.
+
+### 3.2 Il dialogo di Maurelio
 
 Maurelio parla **solo di sé e della sua epoca**. Non parla di Borso.
 
@@ -131,6 +152,12 @@ Il pulsante «Esporta il report» scarica un `.txt` con riepilogo, indicatori da
 5. **Spazio vuoto** in alto nel riquadro degli esercizi su alcuni schermi (difetto grafico minore).
 
 ## 10. Registro modifiche
+
+- **v0.4 (04/10/2026)**: **gli sprite di questa piazza sono dichiarati, e prima non lo erano.**
+  - undici file in `sorgenti/art/out/` descrivevano questa zona — la facciata, il cartello, la lapide, due statue, il protagonista in quattro fotogrammi, tre ritratti disegnati a mano — e nessun codice li caricava e nessun dato li nominava. Il controllo 2 di `art/verifica_immagini.py` li dichiarava file morti, e aveva ragione;
+  - ora sono la tabella `SPRITE` di `sorgenti/ambienti_livelli.py` (§3.1): il posto è **riletto dalla tabella 3 di questo documento** e la misura è **misurata sul PNG**;
+  - due controlli nuovi: il **B9** di `verifica_ambienti.py` riapre la tabella 3 e confronta posti e scala, e il **10** di `verifica_immagini.py` moltiplica i 39,8 m della facciata per i 12,8 px per metro della scala e pretende che il risultato sia proprio quei 509 px;
+  - il vuoto `sprite_nessun_codice_li_produce` dichiara la cosa scomoda: nessun codice produce questi file.
 
 - **v0.3 (30/09/2026)**:
   - zona ricostruita con la geometria reale (open data del Comune);

@@ -5,7 +5,9 @@ calcolato no**, e questa e' la sesta volta che la regola serve. I numeri qui non
 sono scritti: sono letti da `dati/immagini_gioco.json` e ricalcolati su quello che
 c'e' davvero in `sorgenti/art/out/`.
 
-**I cinque controlli, e perche' ognuno esiste.**
+**I controlli, e perche' ognuno esiste.** Il numero dei controlli non e'
+in questo titolo: l'ultima volta che c'era scritto «cinque» ne erano
+otto, e quel numero era la prova che anche la prosa invecchia.
 
 1. **Il file che il catalogo indica deve esistere.** Il motore legge il catalogo e
    apre un file: se il catalogo promette un ritratto e il file non c'e', a
@@ -13,10 +15,24 @@ c'e' davvero in `sorgenti/art/out/`.
    e' gia' visto nascere: il catalogo e' stato scritto prima che i duplicati
    venissero cancellati, e il conto e' tornato senza che nessuno guardasse.
 
-2. **Il file in `out/` non citato da nessuno e' spazio morto.** Se un'immagine
+2. **Il file in `out/` che nessuno usa e' spazio morto.** Se un'immagine
    respinta resta in `out/` accanto al suo emblema, prima o poi qualcuno la
    riapre e la usa: e' il modo piu' semplice di rimettere in gioco un volto che
    si era giudicato sbagliato.
+
+   «Nessuno» pero' vuol dire **qualcuno che il progetto conosca**, e dal 4 ottobre
+   2026 sono due: il catalogo delle persone e gli sprite dichiarati da
+   `dati/ambienti_livelli.json`. La tappa 1-1 ha in `out/` undici file che non
+   sono ritratti — la facciata, il cartello, la lapide, le statue, il
+   protagonista in quattro fotogrammi, tre ritratti disegnati a mano — e fino a
+   quel giorno questo controllo li dichiarava morti. Aveva ragione: nessun
+   codice li caricava e nessun dato li nominava, e undici file di disegno che il
+   motore non puo' usare non sono un patrimonio. Adesso sono dichiarati, con la
+   voce della tappa da cui prendono il posto e la misura misurata sul file.
+
+   Se `ambienti_livelli.json` non ci fosse, il controllo se ne accorge e si
+   dichiara difetto: senza quell'elenco il controllo 2 non avrebbe niente da
+   guardare e passerebbe qualunque cosa, che e' il difetto peggiore di tutti.
 
 3. **Ogni ritratto deve avere un'etichetta fra quelle dichiarate.** Il gioco mostra
    il volto a un ragazzo: senza sapere che cos'e' (una miniatura, un'incisione,
@@ -55,6 +71,20 @@ c'e' davvero in `sorgenti/art/out/`.
    controllo lo dice invece di passare: una parola sparita e' un controllo che
    non guarda.
 
+9. **Ogni sprite dichiarato deve esistere, essere un PNG e avere la misura che
+   il manifesto dice.** Il manifesto dichiara la misura perche' qualcuno la
+   guardi: se il file non c'e', non e' un PNG, o ha un'altra misura, il gioco
+   mostra un riquadro vuoto o uno storto. E se `px` fosse `null` il controllo
+   lo dice: una misura che nessuno ha misurato non e' una misura.
+
+10. **La facciata deve essere larga quanto la geometria dichiarata.** La riga
+   «Scala» del documento della tappa 1-1 dice «1 tessera = 1,25 m = 16 px;
+   facciata larga 39,8 m (509 px)». I 509 px sono un numero scritto a mano e il
+   quoziente 12,8 px per metro e' un numero calcolato: questo controllo ne moltiplica
+   i due e pretende che il risultato sia proprio quei 509, e che il file sia largo
+   quanto. Se i due numeri del documento non tornassero fra loro il difetto
+   sarebbe nel documento, e si vedrebbe qui prima che a schermo.
+
 Uso:
     python3 sorgenti/art/verifica_immagini.py            # riporta i difetti
     python3 sorgenti/art/verifica_immagini.py --enumero  # stampa i numeri
@@ -64,15 +94,20 @@ import hashlib
 import json
 import os
 import re
+import struct
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                "..", "gis"))
 import emblema
+import png_terrarium
 
 BASE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ESITO = os.path.join(BASE, "sorgenti", "art", "ritratti_disponibili.json")
 ATTEST = os.path.join(BASE, "sorgenti", "art", "attestazione_immagini.json")
 OUT = os.path.join(BASE, "sorgenti", "art", "out")
+AMBIENTI = os.path.join(BASE, "dati", "ambienti_livelli.json")
 
 
 def trova_catalogo():
@@ -104,18 +139,18 @@ LIB_NO = re.compile(r"non[- ]?commercial|fair use|\bcc by[- ]nc|no deriv", re.I)
 
 
 def dimensione_png(percorso):
-    """L'altezza e la larghezza lette dagli 8 byte dell'intestazione PNG.
+    """L'altezza e la larghezza lette dall'intestazione PNG.
 
-    Si leggono e non si assumono: un file che non e' un PNG, o che ha una misura
-    diversa, non puo' passare per un ritratto solo perche' si chiama cosi'.
+    Si leggono e non si assumono, e si leggono con `png_terrarium.misura_png()`:
+    il lettore e' uno solo per tutto il progetto, e una seconda copia qui
+    accanto sarebbe la stessa lettura scritta due volte con due risposte
+    diverse se un domani un PNG dicesse qualcosa di strano.
     """
     with open(percorso, "rb") as f:
-        testa = f.read(24)
-    if len(testa) < 24 or testa[:8] != b"\x89PNG\r\n\x1a\n":
-        return None
-    larghezza = int.from_bytes(testa[16:20], "big")
-    altezza = int.from_bytes(testa[20:24], "big")
-    return larghezza, altezza
+        try:
+            return png_terrarium.misura_png(f.read(24))
+        except (ValueError, struct.error):
+            return None
 
 
 def main(numera=False):
@@ -126,6 +161,24 @@ def main(numera=False):
     etichette_dichiarate = set(att.get("_etichette", {})) | {"mummia"}
 
     difetti = []
+
+    # Gli sprite che gli ambienti dichiarano. Senza questo elenco il controllo 2
+    # non avrebbe niente da guardare e passerebbe qualunque cosa, e un
+    # controllo che non guarda e' verde come un controllo che guarda: si dichiara
+    # difetto anche la mancanza del file che lo rende possibile.
+    sprite, scala_per_livello = {}, {}
+    if os.path.exists(AMBIENTI):
+        with open(AMBIENTI, encoding="utf-8") as f:
+            for a_ in json.load(f)["ambienti"]:
+                livello = a_["livello"]
+                for sp in a_["ambiente"].get("sprite") or []:
+                    sprite[os.path.basename(sp["file"])] = (livello, sp)
+                sc = a_["ambiente"].get("scala")
+                if sc:
+                    scala_per_livello[livello] = sc
+    else:
+        difetti.append("2 %s non c'e': nessuno sprite e' dichiarato e questo "
+                       "controllo non puo' guardare" % AMBIENTI)
 
     # 1. il file che il catalogo indica deve esistere
     citati = set()
@@ -144,14 +197,16 @@ def main(numera=False):
             difetti.append("1 %s: %s e' %dx%d e il motore aspetta %dx%d"
                            % (nome, rel, mis[0], mis[1], LATO, ALTEZZA))
 
-    # 2. niente file in out/ che il catalogo non cita
+    # 2. niente file in out/ che il catalogo non cita e gli ambienti non dichiarano
     if os.path.isdir(OUT):
         for nome_file in sorted(os.listdir(OUT)):
             if nome_file.endswith(".img"):
                 continue
-            if nome_file not in citati:
-                difetti.append("2 %s sta in out/ e nessuna persona lo usa"
-                               % nome_file)
+            if nome_file in citati or nome_file in sprite:
+                continue
+            difetti.append("2 %s sta in out/ e nessuno lo usa: non e' nel "
+                           "catalogo e non e' uno sprite dichiarato in "
+                           "ambienti_livelli.json" % nome_file)
 
     # 3. ogni ritratto ha un'etichetta dell'elenco
     for nome, p in persone.items():
@@ -266,6 +321,52 @@ def main(numera=False):
                            "dichiara %r: due parole diverse per la stessa "
                            "famiglia" % (nome, parola, dichiarata))
 
+    # 9. ogni sprite dichiarato esiste, e' un PNG, e ha la misura dichiarata
+    for nome_file, (livello, sp) in sorted(sprite.items()):
+        percorso = os.path.join(BASE, sp["file"])
+        if not os.path.exists(percorso):
+            difetti.append("9 %s dichiara %s e il file non c'e'"
+                           % (livello, sp["file"]))
+            continue
+        mis = dimensione_png(percorso)
+        if mis is None:
+            difetti.append("9 %s: %s non e' un PNG" % (livello, sp["file"]))
+            continue
+        if sp.get("px") is None:
+            difetti.append("9 %s: %s ha `px` null: nessuno ha misurato questa "
+                           "tessera" % (livello, sp["file"]))
+        elif list(mis) != sp["px"]:
+            difetti.append("9 %s: %s e' %dx%d e il manifesto dichiara %dx%d"
+                           % (livello, sp["file"], mis[0], mis[1],
+                              sp["px"][0], sp["px"][1]))
+        # La voce e' la riga della tabella 3 da cui il file prende il posto. Se
+        # la voce c'e' e il posto no, il motore non sa dove metterlo: e' un
+        # vuoto, e un vuoto che non si chiama vuoto e' solo una dimenticanza.
+        if sp.get("voce") and sp.get("u") is None:
+            difetti.append("9 %s: %s dice di stare dove dice «%s» e non ha un "
+                           "posto (u, v)" % (livello, sp["file"], sp["voce"]))
+
+    # 10. la facciata deve essere larga quanto la geometria dichiarata
+    for livello, sc in sorted(scala_per_livello.items()):
+        facciata = "sorgenti/art/out/facciata.png"
+        percorso = os.path.join(BASE, facciata)
+        mis = dimensione_png(percorso) if os.path.exists(percorso) else None
+        if mis is None:
+            difetti.append("10 %s dichiara una scala in pixel e la facciata non "
+                           "si legge" % livello)
+            continue
+        if sc["facciata_px_attesi"] != sc["facciata_px_dichiarati"]:
+            difetti.append("10 %s: il documento dichiara %d px per la facciata e "
+                           "la sua scala (%s px per metro su %s m) ne dà %d: i due "
+                           "numeri del documento non tornano fra loro"
+                           % (livello, sc["facciata_px_dichiarati"],
+                              sc["px_per_m"], sc["facciata_larghezza_m"],
+                              sc["facciata_px_attesi"]))
+        if mis[0] != sc["facciata_px_attesi"]:
+            difetti.append("10 %s: la scala dichiarata dice %d px di facciata e "
+                           "il file ne ha %d" % (livello, sc["facciata_px_attesi"],
+                                                  mis[0]))
+
     if numera:
         per_esito = {}
         for p in persone.values():
@@ -276,6 +377,11 @@ def main(numera=False):
         print("tappe coperte    : %d su %d" % (len(set(visti)), len(attesi)))
         print("file in out/     : %d" % len([f for f in os.listdir(OUT)
                                             if f.endswith(".png")]))
+        print("  di cui sprite   : %d (dichiarati da %s)"
+              % (len(sprite), os.path.relpath(AMBIENTI, BASE)))
+        print("  ambienti senza  : %d su %d"
+              % (len([a_ for a_ in json.load(open(AMBIENTI, encoding="utf-8"))["ambienti"]
+                      if not a_["ambiente"].get("sprite")]), len(json.load(open(AMBIENTI, encoding="utf-8"))["ambienti"])))
         for esito in sorted({p["esito"] for p in persone.values()}):
             impronte = {hashlib.sha256(open(os.path.join(BASE, p["immagine"]),
                                             "rb").read()).hexdigest()

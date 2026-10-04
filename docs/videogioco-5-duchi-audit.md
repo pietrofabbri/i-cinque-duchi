@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — audit delle questioni aperte: la lista operativa
-versione: 0.17
+versione: 0.18
 data: 2026-10-04
 autore: Pietro Fabbri (con Claude)
 fonte: lettura di tutti i documenti di progetto che portano una sezione «Questioni aperte» (sedici), verificata da sorgenti/lingue/conta_questioni.py, che confronta anche i numeri che il README copia da qui
-documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-fonti-visive.md (v0.5), videogioco-5-duchi-furioso.md (v0.6), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-mappe.md (v1.3), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.1), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3), AGENTS.md
+documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-fonti-visive.md (v0.6), videogioco-5-duchi-furioso.md (v0.6), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-mappe.md (v1.3), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.1), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3), AGENTS.md
 ---
 
 # Audit delle questioni aperte: la lista
@@ -180,7 +180,7 @@ La sezione 3 era la più lunga del documento e le sue prime tre voci erano tre l
 
 **I4, il fondo di Ferrara.** `dati/ferrara_fondo.json`, 14 tratti di mura OSM, **8601 m di perimetro e 4,20 km²**, con la tolleranza di 60 m scelta **non a occhio ma come la più piccola in cui tutte e 28 le tappe del primo anno cadono dentro**. Una fonte è stata rifiutata e dichiarata: la relation OSM «Centro storico», che copre 1,34 km² e lascia fuori Piazza Ariostea e Palazzo dei Diamanti. Il vuoto più grosso — **1037 m** di mura che nessuna fonte disegna — resta dichiarato.
 
-**I19, i colori dei fondi geografici.** `dati/fonti_visive/colori_cartografici.json`, **19 voci**: 16 dichiarate con motivo e criterio, 3 prese dalla tavolozza con la chiave dichiarata e l'esadecimale confrontato byte per byte. La valutazione che c'era in questa riga diceva «costa mezz'ora» ed era ottimista: il file è un'ora, i due verificatori che lo tengono fermo sono un'altra, e **cercandolo è saltato fuori un difetto che non era di colori**. `dati/mappe/mondo_admin1_copertura.json` stava **dentro `dati/mappe/`**, dove vale la regola che ci stanno solo file nel formato a delta, e faceva crashare `mappe_lettore.leggi()` con un `IndexError: list index out of range`: il peggiore dei sintomi, perché dice una lista troppo corta e non dice che il problema è un file che non aveva niente a che fare lì. Il file è stato spostato in `dati/`, il lettore ora controlla la forma del file e solleva un `ValueError` che la dice, e il controllo **C6** tiene la regola ferma. Nello stesso giorno sono entrati anche i **tre file delle cime** (`mappe.md` §2.5), con la scoperta che la fonte è **mondiale in tutte e tre le scale** e che i tre file **non sono annidati**.
+**I19, i colori dei fondi geografici.** `dati/fonti_visive/colori_cartografici.json`, **19 voci**: 16 dichiarate con motivo e criterio, 3 prese dalla tavolozza con la chiave dichiarata e l'esadecimale confrontato byte per byte. La valutazione che c'era in questa riga diceva «costa mezz'ora» ed era ottimista: il file è un'ora, i due verificatori che lo tengono fermo sono un'altra, e **cercandolo è saltato fuori un difetto che non era di colori**. `dati/mondo_admin1_copertura.json` stava **dentro `dati/mappe/`**, dove vale la regola che ci stanno solo file nel formato a delta, e faceva crashare `mappe_lettore.leggi()` con un `IndexError: list index out of range`: il peggiore dei sintomi, perché dice una lista troppo corta e non dice che il problema è un file che non aveva niente a che fare lì. Il file è stato spostato in `dati/`, il lettore ora controlla la forma del file e solleva un `ValueError` che la dice, e il controllo **C6** tiene la regola ferma. Nello stesso giorno sono entrati anche i **tre file delle cime** (`mappe.md` §2.5), con la scoperta che la fonte è **mondiale in tutte e tre le scale** e che i tre file **non sono annidati**.
 
 **E un quarto file, che non era una domanda ma senza il quale i tre sarebbero stati tre tavole isolate.** `dati/ambienti_livelli.json` è **un ambiente per ognuno dei 150 livelli**, costruito sul modello dell'unica zona già esistita (la tappa 1-1) e con tutti i vuoti dichiarati: 99 ambienti con coordinate, 69 con sagome, e **uno solo che il motore ha davvero disegnato**. È il file che risponde alla domanda che nessuno aveva scritta: «e quindi, che cosa si disegna a ogni tappa?». Nello stesso giorno è entrato anche `mondo_admin1.json`, che chiude in `mappe.md` §2.4 la copertura amministrativa mancante: **54 pin coperti su 54**.
 
@@ -543,9 +543,100 @@ Nessuna delle decisioni aperte è toccata, e nessuna delle tre righe di
 
 ---
 
+## 3duodices. Il sesto numero che non guardava: undici disegni che il motore non poteva aprire
+
+Il giro dei sessanta emblemi ha finito alle 23 del 4 ottobre con un commit che
+aveva lasciato **diciassette file in più nel ramo che in locale**. Erano la
+coda di due cose diverse, e la cosa interessante è che **erano due famiglie
+diverse nella stessa cartella** e nessuno le aveva distinte.
+
+**La prima: sei emblemi superati, e il regoletto che li lasciava vivere.** Sei
+persone sono passate da emblema a ritratto in quello stesso giorno, e le loro
+tessere di emblema sono diventate spazzatura: sei file che il catalogo non
+citava e che nessuno guardava. Erano anche, di nuovo, **meno distinti delle
+persone**: `emblema_P17` e `emblema_P62` erano lo stesso byte, `emblema_P28` e
+`emblema_Q221` pure. Sei file, quattro immagini, quattro giorni dopo che
+sessanta emblemi erano diventati diciotto file: **lo stesso difetto, nella stessa
+cartella, e nessuno lo aveva notato** perché il posto che doveva accorgersene —
+`_commit_coerenza.py`, che toglie dal ramo le tessere superate — guardava solo il
+prefisso `ritratto_`. La regola non era sbagliata, era **incompleta**, e un
+controllo che guarda metà di quello che deve guardare è verde come uno che non
+guarda niente. Ora la regola guarda entrambi i prefissi ed è una sola funzione:
+`tessera_superata()`.
+
+**La seconda, e più seria: undici disegni che il motore non poteva aprire.** Nella
+cartella dei ritratti c'era la **piazza della Cattedrale**: la facciata (509 ×
+312 px), il cartello dell'articolo 9, la lapide, due statue, il protagonista in
+quattro fotogrammi e i tre ritratti disegnati a mano. Erano lì dal primo commit
+del 30 settembre. **Nessun codice li caricava e nessun dato li nominava**: la
+tabella 3 di `tappa-1-01.md` descriveva Maurelio, San Giorgio, la lapide e il
+cartello a parole e a coordinate, ma non diceva quali file li disegnano, e
+`dati/ambienti_livelli.json` — il manifesto degli ambienti, costruito il 3 ottobre
+proprio sul modello di questa tappa — non aveva un campo dove metterli.
+
+Il controllo 2 li dichiarava **file morti**, e aveva ragione. Undici file di
+disegno che il motore non può usare non sono un patrimonio: sono un inganno, e
+lo sono anche di più perché il primo file che ho riguardato è la facciata, che è
+proprio la cosa che quella piazza è. La risposta non era cancellarli — sarebbero
+stati cancellati come spazzatura sei disegni che il progetto aveva già e che il
+documento già descriveva — ma **dichiararli**, che è la cosa che il progetto sa
+fare e che questa cartella non aveva.
+
+**Ora sono la tabella `SPRITE`**, in `sorgenti/ambienti_livelli.py`, e ogni riga
+porta tre cose che prima non erano scritte da nessuna parte: la **voce** della
+tabella 3 da cui il file prende il posto, il **file**, e **che cosa ci si vede**.
+Il legame fra voce e nome è **dichiarato** e non dedotto, perché «San Giorgio
+(visione A1)» si chiama `giorgio.png` e una regola che togliesse le parole
+avrebbe finito per unire cose diverse. La misura è **misurata** sul PNG, il posto
+è **riletto** dal documento, e i centoquarantanove ambienti che non hanno sprite
+lo dichiarano con il vuoto `sprite_da_disegnare`.
+
+**Tre controlli nuovi, e uno di loro è la prova che i due precedenti non erano la
+stessa cosa.** Il **9** chiede che ogni sprite dichiarato esista, sia un PNG e
+abbia la misura dichiarata. Il **10** chiede che la facciata sia larga quanto la
+geometria del documento: i 509 px sono un numero scritto a mano accanto ai 39,8 m
+e ai 12,8 px per metro, e il controllo li **moltiplica** e pretende che il
+risultato sia proprio quei 509. Il **B9**, in `verifica_ambienti.py`, riapre la
+tabella 3 del documento e confronta posti e scala riga per riga: un manifesto si
+può editare a mano come qualunque altro file, e i posti degli sprite ne erano la
+prova.
+
+La prova dei difetti è passata da undici a **sedici difetti**, e due dei nuovi
+esistono per una ragione che vale più degli altri: il quindicesimo rompe la
+**sola** dichiarazione della scala e pretende che il difetto lo veda il controllo
+10, non il 9. Senza quel `cerca`, la prova guardava la prima riga dell'output,
+che poteva essere quella di un altro controllo, e avrebbe dato un verde che non
+sapeva niente — che è esattamente il difetto del controllo 8, trovato ieri.
+
+**La lezione, che è la sesta volta che la stessa lezione si presenta.** Un dato
+senza una fonte non è un dato: è una convinzione. Gli sprite erano convinzioni
+senza fonte, il controllo che li contava era verde, e il ramo era **rosso su un
+clone** mentre qui era verde: due risposte alla stessa domanda in due posti
+diversi dello stesso progetto. La regola che ne segue è già nel progetto e questa
+volta l'ha salvata: **un numero dichiarato va riletto dalla sua fonte, non
+creduto** — e va riletto da un controllo, perché un controllo che guarda una cosa
+e la confronta con sé stesso è verde come uno che non guarda.
+
+**C'è anche il secondo sospeso, che era più piccolo e più semplice.** Il foglio di
+controllo degli emblemi esisteva solo come script ad hoc di una sessione, finito
+in un file HTML fuori dal progetto e poi cancellato: un foglio che sparisce
+quando finisce la sessione che l'ha prodotto non è un foglio di controllo.
+Ora è `sorgenti/art/foglio_emblemi.py`, che scrive `sorgenti/art/foglio_emblemi.txt`:
+**in caratteri**, perché la finestra del browser non si compone più e un'immagine
+composta non si interroga. Ogni cella porta codice, nome e famiglia, e il conteggio
+degli emblemi e delle famiglie è **calcolato** dal catalogo: un foglio che
+dichiara «60 emblemi, 7 famiglie» scritti a mano è un foglio che il primo
+emblema tolto rende falso.
+
+Nessuna delle decisioni aperte è toccata, e nessuna riga di `AGENTS.md` che questo
+giro cambia è una decisione: sono fatti.
+
+---
+
 ## 7. Registro delle modifiche
 
 | Data | Versione | Che cosa è cambiato |
+| 04/10/2026 | 0.18 | **Diciassette file che il commit precedente aveva lasciato nel ramo, e due famiglie diverse nella stessa cartella.** Sei erano **emblemi superati** — le persone passate da emblema a ritratto — e la regola che li toglieva dal ramo guardava solo il prefisso `ritratto_`: sei file, quattro immagini distinte, lo stesso difetto dei sessanta emblemi di quattro giorni prima. Gli altri **undici erano i disegni della piazza della Cattedrale** — facciata, cartello, lapide, due statue, il protagonista in quattro fotogrammi, tre ritratti a mano — e nessun codice li caricava e nessun dato li nominava: il controllo 2 li chiamava file morti e aveva ragione. Ora sono la tabella `SPRITE` di `sorgenti/ambienti_livelli.py`, col posto riletto dalla tabella 3 di `tappa-1-01.md` e la misura misurata sul PNG; tre controlli nuovi (**9**, **10**, **B9**) e la prova dei difetti da undici a **sedici**, due dei quali pretendono che a mordere sia il controllo giusto e non un altro che morde per caso. In `out/` restano due famiglie — 198 per le persone, 11 sprite — e il controllo 2 sa dire quale è quale invece di contare. Chiude anche il secondo sospeso: il **foglio degli emblemi** è ora `sorgenti/art/foglio_emblemi.py` e il suo file `sorgenti/art/foglio_emblemi.txt`, in caratteri, con i numeri calcolati. |
 | 04/10/2026 | 0.17 | **Sessanta emblemi che erano diciotto file, e il controllo che non c'era.** L'emblema era un rettangolo con una diagonale il cui seme era `sum(ord(codice)) % 22`: sessanta persone, **diciotto file distinti**, dieci persone con lo stesso identico PNG. Nessuno dei sei controlli lo vedeva, perché tutti contavano i file e non i file distinti. Nuovi: il **controllo 7** (gli sha256 distinti devono essere tanti quanti le persone, e il difetto si dichiara con i nomi) e il **controllo 8** (ogni emblema dichiara la famiglia, ricalcolata dal motivo, e la parola che l'ha fatta vincere); `sorgenti/art/emblema.py`, che disegna il segno geometrico della famiglia, le iniziali e la firma, con i colori letti dalla tavolozza e senza librerie. Il controllo 7 ha trovato subito anche **tre doppioni d'identità fra i ritratti** — `augusto`/`ottaviano augusto`, `copernico`/`niccolò copernico`, `federico ii`/`federico ii di svevia`, sei voci per tre persone — chiusi con tre alias **dichiarati** in `catalogo_immagini.py` e non con una regola che avrebbe unito anche «il territorio del Po» e «i Bersaglieri del Po». Il catalogo passa a **198 persone** e 138 ritratti. Il secondo difetto l'ha trovato la prova, non io: il controllo 8 confrontava la parola ricalcolata **con sé stessa**. Il terzo l'hanno trovato gli occhi, guardando il foglio: font 3×5 che rendeva `DOM` come `DOH`, arco della volta tracciato con una soglia non simmetrica, fessura dell'anello di 24 gradi che toglieva metà del segno. La prova dei difetti passa da sei a **undici**. Dettaglio in §3undecies. |
 | 04/10/2026 | 0.16 | **Il quarto numero che invecchiava, e il più semplice di tutti: quanti file ha `dati/mappe/`.** Quattro documenti ne parlavano e avevano dato **quattro numeri diversi** — 25 (`mappe.md`), 23 (`README.md`, due volte), 21 (`AGENTS.md`), 19 (`fonti-visive.md`, che è il conto dei soli file di Natural Earth) — e il peso era doppio: 1,6 MB e 1,4 MB su un conto di **1,52**. Nessuno li confrontava. Il difetto vero è sotto: **nessun file di quella cartella dichiarava da dove viene**, perché il generatore tiene la fonte in una lista Python e il dato non la porta con sé. Nuovi `dati/mappe_manifest.json` (v1, con conti calcolati sui file veri e regge di stare in `dati/` e non in `dati/mappe/`), `sorgenti/gis/mappe_manifest.py`, `sorgenti/gis/verifica_inventario_mappe.py` (I1–I8, dodici frasi in quattro documenti) e `sorgenti/gis/prova_difetto_mappe_manifest.py` (dieci difetti iniettati, tutti visti). Il difetto più subdolo è stato **nel controllo**: la lista `problemi` veniva riassegnata a metà del corpo e l'assegnazione svuotava I4 e I5, due controlli che potevano solo scrivere nella spazzatura. Dettaglio in §3decies.
 | 04/10/2026 | 0.15 | **Il contatore confrontava l'audit con se stesso, e quattro numeri che quattro documenti riportavano non li contava nessuno.** `conta_questioni.py` ora confronta cinque cose: la tabella del §1, le due frasi in prosa, **il numero delle sezioni**, i **numeri per documento del §4** con la loro somma, i **numeri in lettere** e **i numeri che il README copia**; il registro delle modifiche è escluso, dichiarando perché. I quattro difetti trovati sono nelle versioni: sezioni 15 su **16**, `itinerari.md` fuori da ogni intestazione del §4 (la sua voce era contata e non elencata), `fonti-visive.md` 2 su **1**, `anno3-europa.md` 7 su **6**, `furioso.md` 2 su **1**, il §6 con **ventotto** chiuse su **31**, il `README.md` con **sedici** documenti su **31**. Il quinto difetto è nel confronto stesso: il dizionario delle parole italiane non riconosceva **`trentuno`**, **`ventuno`** e **`ventotto`** — le tre forme in cui una parola non si somma — e il confronto delle lettere **ignorava in silenzio i numeri che il documento scrive in lettere**. Nuovi: `sorgenti/lingue/prova_difetto_questioni.py`, quindici difetti iniettati tutti richiesti a essere visti, su una copia di tutti i documenti, più la prova che il registro **non** viene morso. Dettaglio in §3novies.
@@ -582,7 +673,7 @@ La **3-28** è chiusa: era la divergenza dichiarata fra registro e documento (Ma
 
 |---|---|---|
 | 03/10/2026 | 0.7 | **La B1 è spiegata in parole semplici, e due buchi che erano dichiarati aperti sono chiusi.** Pietro ha chiesto di capire la B1 «meglio, con parole più semplici»: sotto la scheda c'è ora **B1 in parole semplici**, che dice che cosa sono i 150 livelli informatici e i 900 linguistici, quale sarà la schermata che il ragazzo vede nella tappa 5-12 (**un compito solo, 32 compiti in fila, o tappe alterne**), che cosa è già costruito e che cosa è bloccato, e che la stima delle schermate — cioè la cosa che servirebbe per decidere — dipende da un prototipo che non esiste. **La domanda è di Pietro e resta aperta.** Intanto sono chiuse tre cose: la **Q6.2** (`furioso.md` §4.12: nessuna stanza ha un disegno proprio, quattro regole, tempo di Pietro **zero**), le **51 ipotesi di coordinata** (`luoghi.md` §4.8: 28 documentate, 21 argomentate con il raggio in metri, 2 immaginate e senza punto; regole **R1-R6** e controllo **B7**) e **l'anno 1**, che non era coperto da nessun controllo dei pin e ora ha cinque controlli suoi, **A1-A5** (`mappe.md` §8ter: **30 tappe su 30 dentro le mura**, e soprattutto **0 tratti fuori sui 29** percorsi fra tappe consecutive, che è l'unico controllo che solo una città dentro le mura può avere). Le 51 ipotesi hanno anche fatto nascere i **mezzi** dell'anno 4 e 5: 22 mezzi, con l'anno di attestazione di ciascuno e un controllo di anacronismo **per tappa** che ne ha trovato uno nella stessa impostazione (`percorsi.md` §1.2). Il conto passa a **29 chiuse** e **85 aperte**; le quattro bloccanti restano quattro e sono le stesse: nessuno dei lavori di oggi le toccava, perché sono lavori che si possono fare senza la risposta. |
-| 03/10/2026 | 0.6 | **Quattro importanti chiuse in un giorno, e la quarta ha portato con sé un difetto che le altre tre non avevano trovato.** I colori dei fondi geografici (I19, `fonti-visive.md` Q4) sono in `dati/fonti_visive/colori_cartografici.json`, **19 voci**, con la regola che una categoria con il riempimento ha anche il bordo e i due verificatori che la tengono ferma (`verifica_colori.py`, C1–C7). **Cercandoli è emerso che `dati/mappe/mondo_admin1_copertura.json` stava dentro `dati/mappe/`**, dove vale la regola del solo formato a delta, e faceva crashare il lettore delle mappe con un `IndexError` che non diceva niente: il file è stato spostato in `dati/` e il lettore ora solleva un `ValueError` che nomina il percorso. Nello stesso giorno sono entrati i **tre file delle cime** con la loro quota (`mappe.md` §2.5), e la scoperta che vale più dei tre file: la fonte è **mondiale in tutte e tre le scale** e i tre file **non sono annidati**, quindi un motore che li trattasse come risoluzioni diverse dello stesso elenco sbaglierebbe senza che nessun controllo lo vedesse. Chiusa anche la **Q6.1** del *Furioso*: `F11` è dichiarato filone **non assegnato** e la decisione è nei dati (`citazioni.json` v4), tenuta ferma dalla verifica **F16**. Il conto passa a **28 chiuse** e **86 aperte**, e le importanti da sedici a **quindici**. Le quattro bloccanti restano quattro e sono le stesse di prima: nessuno dei quattro lavori le toccava. |
+| 03/10/2026 | 0.6 | **Quattro importanti chiuse in un giorno, e la quarta ha portato con sé un difetto che le altre tre non avevano trovato.** I colori dei fondi geografici (I19, `fonti-visive.md` Q4) sono in `dati/fonti_visive/colori_cartografici.json`, **19 voci**, con la regola che una categoria con il riempimento ha anche il bordo e i due verificatori che la tengono ferma (`verifica_colori.py`, C1–C7). **Cercandoli è emerso che `dati/mondo_admin1_copertura.json` stava dentro `dati/mappe/`**, dove vale la regola del solo formato a delta, e faceva crashare il lettore delle mappe con un `IndexError` che non diceva niente: il file è stato spostato in `dati/` e il lettore ora solleva un `ValueError` che nomina il percorso. Nello stesso giorno sono entrati i **tre file delle cime** con la loro quota (`mappe.md` §2.5), e la scoperta che vale più dei tre file: la fonte è **mondiale in tutte e tre le scale** e i tre file **non sono annidati**, quindi un motore che li trattasse come risoluzioni diverse dello stesso elenco sbaglierebbe senza che nessun controllo lo vedesse. Chiusa anche la **Q6.1** del *Furioso*: `F11` è dichiarato filone **non assegnato** e la decisione è nei dati (`citazioni.json` v4), tenuta ferma dalla verifica **F16**. Il conto passa a **28 chiuse** e **86 aperte**, e le importanti da sedici a **quindici**. Le quattro bloccanti restano quattro e sono le stesse di prima: nessuno dei quattro lavori le toccava. |
 | 03/10/2026 | 0.5 | **Tre importanti chiuse in un giorno, e le tre erano lavori, non domande.** La tavolozza (`fonti-visive.md` Q1), le sagome degli edifici (Q2) e il fondo di Ferrara (Q3) sono prodotti il 03/10/2026: `tavolozza.json` con 18 voci, `edifici_footprint.json` con 5209 sagome su 54 luoghi, `ferrara_fondo.json` con 14 tratti di mura e 4,20 km². Nello stesso giorno è entrato `mondo_admin1.json`, il file amministrativo mondiale che chiude la copertura mancante di `mappe.md` §8bis, e `ambienti_livelli.json`, un ambiente per ciascuno dei 150 livelli. Il conto passa a **26 chiuse** e **88 aperte**, e le importanti da diciannove a **sedici**. La lezione che si vede nel conto è la stessa di B5: **nessuna delle tre aspettava una decisione**, e nessuna delle ventisei chiuse è bloccante. Le quattro bloccanti restano quattro e sono le stesse di prima: nessuno dei tre lavori le toccava. |
 | 02/10/2026 | 0.1 | Prima stesura. Le dodici sezioni «Questioni aperte» allora esistenti, **96 voci**, 22 chiuse e 74 aperte, cinque bloccanti, e la catena delle dipendenze. |
 | 02/10/2026 | 0.4 | **Il quinto anno passa dagli stessi controlli.** `verifica_pin.py` è stato generalizzato (`--anno N`, `--tutti`) e ha coperto i 30 slot del quinto anno: **15 posti con coordinate, nessun difetto**. Il quinto anno ha però prodotto due errori nella **tabella degli attesi** del verificatore (Rotterdam), secondo caso dopo Castel del Monte. `mappe.md` sale a v0.6 e §8bis porta il conto completo di tutti e cinque gli anni: **120 slot, 71 con coordinate**. Aggiunto in §8bis che l'**anno 1 non è coperto**, perché i suoi pin prendono il confine dal WFS del Comune. Il resto del documento non cambia: il conto è 114 voci, 23 chiuse, 91 aperte, quattro bloccanti. |

@@ -281,6 +281,71 @@ def controlla_personaggi():
     return problemi
 
 
+def controlla_pubblicati():
+    """Ogni file che il progetto ha deve poter essere pubblicato.
+
+    Il progetto non usa `git add`: pubblica con `_commit_coerenza.py`, che ha
+    degli elenchi di file da caricare. Un file che non e' in nessun elenco
+    **non si aggiorna mai**, e non se ne accorge nessuno: il file c'e', tutti i
+    controlli sono verdi, e le modifiche restano in questa cartella. E' successo
+    a otto documenti di `docs/` — compreso `tappa-1-01.md`, che i controlli 10 e
+    B9 leggono e che il 4 ottobre non sarebbe arrivato nel ramo — e a quattro
+    file di `sorgenti/art/`.
+
+    Un file che si esclude lo dichiara e dice perche'.
+    """
+    COMMIT = os.path.join(RADICE, "_commit_coerenza.py")
+    # Ogni esclusione e' una regola con **prefisso e suffisso**, e il suo perche'.
+    # Il prefisso da solo non basta: la regola «non si pubblica l'output di
+    # `fogli_controllo.py`» e' `foglio_` + `.html`, e senza il suffisso prendeva
+    # anche `foglio_emblemi.py`, che invece si pubblica ed e' un file che si
+    # legge nel terminale. Un'esclusione troppo larga e' un file che smette di
+    # aggiornarsi senza che nessuno lo dica: e' lo stesso difetto, visto dall'
+    # altro lato.
+    ESCLUSI = [
+        ("sorgenti/art/provino_nuove.py", None,
+         "provino di una sessione, mai citato da nessun documento"),
+        ("sorgenti/art/foglio_", ".html",
+         "output di fogli_controllo.py: tredici pagine che il generatore rifa, "
+         "mai nel ramo e citate da nessun documento"),
+        ("sorgenti/art/ritratti_disponibili_prima.json", None,
+         "copia di lavoro del registro delle tessere, presa prima di una "
+         "decisione del 2 ottobre: serve per vedere che cosa e' cambiato e non "
+         "per far funzionare niente"),
+    ]
+    if not os.path.exists(COMMIT):
+        return ["nessun %s: nessun file e' pubblicabile" % COMMIT]
+    with open(COMMIT, encoding="utf-8") as f:
+        testo = f.read()
+    elencati = set(re.findall(r'"([\w./-]+\.(?:py|json|md|txt|csv|html))"', testo))
+    problemi = []
+    for cartella, estensioni in (("docs", (".md",)),
+                                 ("sorgenti/art", (".py", ".txt", ".json",
+                                                   ".html"))):
+        percorso = os.path.join(RADICE, cartella)
+        if not os.path.isdir(percorso):
+            continue
+        for nome in sorted(os.listdir(percorso)):
+            if not nome.endswith(estensioni):
+                continue
+            rel = cartella + "/" + nome
+            if rel in elencati or nome in elencati:
+                continue
+            escluso = False
+            for prefisso, suffisso, _perche in ESCLUSI:
+                if not rel.startswith(prefisso):
+                    continue
+                if suffisso and not rel.endswith(suffisso):
+                    continue
+                escluso = True
+                break
+            if escluso:
+                continue
+            problemi.append("%s: nessuno script lo pubblica, e quindi nessuna "
+                            "sua modifica arrivera' mai nel ramo" % rel)
+    return problemi
+
+
 if __name__ == "__main__":
     ver = versioni_reali()
     insiemi = [("versioni", controlla_versioni(ver))]
@@ -293,7 +358,8 @@ if __name__ == "__main__":
         insiemi += [("file citati", controlla_file(lontano)),
                     ("cifre dichiarate", controlla_cifre()),
                     ("tappe dell'anno 5", controlla_tappe()),
-                    ("personaggi obbligatori", controlla_personaggi())]
+                    ("personaggi obbligatori", controlla_personaggi()),
+                    ("file pubblicati", controlla_pubblicati())]
     totale = 0
     for nome, problemi in insiemi:
         print("%-24s %d" % (nome, len(problemi)))

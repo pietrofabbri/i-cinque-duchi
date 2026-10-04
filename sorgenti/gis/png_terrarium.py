@@ -73,6 +73,22 @@ def decodifica_png(blob):
     return griglia
 
 
+def misura_png(blob):
+    """La misura in pixel letta dall'intestazione, senza decodificare.
+
+    Serve a chi deve confrontare un file con una misura dichiarata e non ha
+    bisogno dei pixel: si legge il blocco `IHDR` e si finisce. Solleva `ValueError`
+    se il file non e' un PNG: un file che non si apre non puo' passare per
+    un'immagine solo perche' si chiama cosi'.
+    """
+    if blob[:8] != b"\x89PNG\r\n\x1a\n":
+        raise ValueError("non e' un PNG")
+    if blob[12:16] != b"IHDR":
+        raise ValueError("il primo blocco non e' IHDR")
+    larghezza, altezza = struct.unpack(">II", blob[16:24])
+    return larghezza, altezza
+
+
 def quota_di(blob):
     """Le triple in metri: quello che l'algoritmo di rilievo calcola."""
     return [[(R * 256 + G + B / 256.0) - ORIGINE for (R, G, B) in riga]
