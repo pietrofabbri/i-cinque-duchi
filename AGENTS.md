@@ -239,6 +239,7 @@ Questo file serve a chiunque riprenda il lavoro senza il contesto delle conversa
 **Documenti**
 - Ogni `.md` ha un'intestazione YAML (`titolo`, `versione`, `data`, `autore`, `documenti collegati`) e un **registro delle modifiche** in fondo.
 - A ogni modifica si aumenta la versione e si aggiunge una riga al registro.
+- **Un registro che perde una riga è un documento che mente sul proprio lavoro**: la riga è la prova che il lavoro è stato fatto, e senza la riga il lavoro c'è ma non risulta. È successo quattro volte in quattro giorni — due righe scritte due volte, due righe mai scritte — e in tutti e quattro i casi i numeri erano giusti, quindi nessun controllo se n'era accorto. Il conteggio dei numeri non vede il conteggio delle righe: `python3 sorgenti/verifica_registri.py` (**R1–R4**) confronta le versione dichiarate con le righe che ci sono, e non accetta che una versione salti, che una versione abbia due righe, che un registro non sia in ordine o che una tabella di registro non abbia la riga di separazione.
 
 **Codici**
 - **Livelli**: `anno-numero`, per esempio `1-1`.

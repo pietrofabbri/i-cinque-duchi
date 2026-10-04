@@ -172,6 +172,7 @@ python3 sorgenti/verifica_colori.py                # i colori delle carte: sette
 python3 sorgenti/gis/verifica_altitudine.py         # le cime: sette controlli, D1-D7
 python3 sorgenti/gis/verifica_mappe_disegno.py      # dodici pagine di verifica delle carte
 python3 sorgenti/verifica_coerenza.py              # versioni, file citati, cifre dichiarate, tappe, personaggi
+python3 sorgenti/verifica_registri.py              # i registri delle modifiche: quattro controlli, R1-R4
 ```
 `verifica_coerenza.py` è nato da un controllo fatto a mano che trovava **diciannove problemi** in un colpo solo: otto rimandi di versione fermi a prima della revisione del documento che puntavano, un `legame I` su un luogo che esiste, otto immagini respinte che erano otto e non sette, un conto di licenze arrotondato su gruppi che nei dati non esistono. Sono tutti corretti, e tutti i tipi di errore hanno il loro controllo.
 Se il checkout è parziale — cioè se ci sono file che stanno solo sul ramo remoto — il controllo dei file citati va fatto con l'elenco del repository:
