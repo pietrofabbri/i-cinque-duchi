@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — audit delle questioni aperte: la lista operativa
-versione: 0.20
+versione: 0.21
 data: 2026-10-04
 autore: Pietro Fabbri (con Claude)
 fonte: lettura di tutti i documenti di progetto che portano una sezione «Questioni aperte» (sedici), verificata da sorgenti/lingue/conta_questioni.py, che confronta anche i numeri che il README copia da qui
-documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-fonti-visive.md (v0.8), videogioco-5-duchi-furioso.md (v0.6), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-mappe.md (v1.3), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.1), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3), AGENTS.md
+documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-fonti-visive.md (v0.10), videogioco-5-duchi-furioso.md (v0.6), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-mappe.md (v1.3), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.1), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3), AGENTS.md
 ---
 
 # Audit delle questioni aperte: la lista
@@ -704,6 +704,18 @@ La sequenza dei tre giorni è la stessa: l'area che dichiara **5209** e la forma
 **E due difetti di interrogazione, più gravi di quanto sembrassero.** Overpass rispondeva 504 su tutte e tre le istanze: la correzione è stato cambiare fonte, non aspettare — `scarica_osm.py` interroga l'API standard OSM e restituisce **lo stesso formato**, così a valle non cambia niente. E l'interrogazione per **luoghi** era la domanda sbagliata: i pin del registro sono città intere, e i ventotto punti dell'anno 1 stanno fra 204 e 1422 metri dal pin di Ferrara. Il file diceva «Ferrara ha centoquattro edifici» e le tappe non ne avevano nessuno. Ora si interroga anche ogni **livello**, per **relazione esplicita** — la chiave del record è il livello, nessun confronto di nomi — e il raggio di un livello è **calcolato dalla diagonale della sua griglia** più un margine, non scritto: 51 metri per una porta, 121 per un paesaggio. Sono **2632 record su 134 livelli distinti**, contro i 68 che c'erano prima.
 
 **I disegni.** `disegna_ambienti.py` guarda le due tavole di numeri insieme e ne fa **30 immagini schematiche**, una per tappa dell'anno 1. Il difetto più subdolo della giornata è nato qui: la prima versione usava la griglia come riquadro — venti metri per quindici — mentre gli edifici arrivano da un raggio di quaranta-centoventi metri, e il ritaglio li buttava fuori uno per uno. Trenta immagini quasi tutte uguali, tutte sfondo, con **tre coppie a sha identico**. Lo ha visto il controllo **D3**, non un occhio. Il motto è già nel regolamento: *un controllo che non guarda è verde come un controllo che guarda*. E la prova dei difetti ne ha trovato uno in sé stessa — la copia di sicurezza teneva il file sorgente invece di quello sovrascritto, e il ripristino lasciava la coppia identica: cinque difetti iniettati, cinque visti, e il progetto intatto alla fine, che è l'unica cosa che conta in una prova di questo tipo.
+
+## 3quattuordices. Il carattere che il font non ha, e non disegna niente
+
+**Il difetto.** Gli emblemi dei **1050 premi** sono un foglio di tessere 48×54, ciascuna con il segno della categoria, il livello e la firma. Il primo giro ha prodotto tessere **identiche**: `1-1-FE` e `1-2-FE` erano lo stesso file. Il motivo è che il font di `emblema.py` ha **solo le ventisei lettere**, e il codice scriveva `emblema.FONT.get(lettera, [])`: per la cifra `2` la lista è **vuota**, e una lista vuota in mezzo a un disegno non lascia un buco — lascia **esattamente la stessa tessera**.
+
+È la terza volta in quattro giorni che la stessa cosa si presenta con un nome diverso: l'area che dichiara **5209** edifici e la forma che è un punto; l'intestazione PNG che dichiara **RGB** e i dati che sono un byte per pixel; e qui il carattere che il font **non ha** e che il valore di default sostituisce con il vuoto. In tutti e tre i casi la metà che si dichiara è vera e la metà che si consuma è falsa, e il difetto sta nello spazio fra le due.
+
+**La regola che esce, e che va in `AGENTS.md`**: un valore di default che sostituisce un dato mancante non è un dato, è una sparizione silenziosa. `FONT.get(c, [])` è la forma più economica del difetto, e il suo difetto gemello è `dict.get(k, 0)` su un conteggio, che fa la stessa cosa e con la stessa faccia.
+
+**Il secondo difetto, due minuti dopo.** Tolte le cifre, `1-2` e `2-2` erano ancora la stessa tessera: hanno entrambi il numero 2. Il numero della tappa **non identifica un livello** senza l'anno, e un identificatore che non identifica è un'etichetta. Ora la tessera porta anno, numero su due cifre e sigla della lingua — `102SG` e `202SG` — e il generatore si ferma se due lingue prendono la stessa sigla, che è il terzo difetto che la sigla evita.
+
+**Quanto è costato.** Quattro minuti per trovarlo, e niente per la verifica: **Q3** lo vide al primo giro, perché confronta gli sha delle tessere una per una. Il controllo esiste per quello: trecento dei 1050 premi hanno la **stessa categoria** e quindi la stessa forma, e se la firma non rompesse le collisioni quei trecento sarebbero centocinquanta file identici. Sei difetti iniettati, sei visti, verde prima e dopo.
 
 ## 3sexies. Le immagini: due difetti che la verifica avrebbe dovuto vedere
 

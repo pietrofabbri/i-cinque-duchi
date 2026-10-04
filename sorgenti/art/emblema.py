@@ -160,6 +160,18 @@ FONT = {
 }
 
 
+# **Le dieci cifre ci sono, e senza di loro i premi non si distinguevano.**
+# Il font aveva solo le ventisei lettere: `FONT.get("2", [])` restituiva una
+# lista vuota e il numero della tappa non veniva disegnato, cosi' le tessere
+# di `1-1-FE` e `1-2-FE` erano identiche. Il controllo Q3 lo ha visto al
+# primo giro — e la lezione e' la stessa dei sessanta emblemi: se un
+# carattere non c'e' nel font, `FONT.get` restituisce il vuoto **senza
+# dire niente**, e un disegno che non disegna sembra un disegno.
+import digiti                                                   # noqa: E402
+FONT.update(digiti.come_font())
+FONT[chr(32)] = [".....", ".....", ".....", ".....", ".....", ".....", "....."]
+
+
 class FamigliaNonRiconosciuta(ValueError):
     """Il motivo di un emblema non sta in nessuna famiglia dichiarata.
 
@@ -313,8 +325,128 @@ def segno(nome_segno, x0, y0, lato):
             ang = math.radians(grado)
             px.add((int(round(cx + r * math.cos(ang))),
                     int(round(spalla - r * math.sin(ang)))))
+    # --- i segni delle categorie di premio (`premi.md` §1) ---
+    #
+    # Sono forme nuove e non i sette segni delle famiglie: quelle dicono
+    # *perche' qui non c'e' il volto*, queste dicono *che cosa e' l'oggetto
+    # del premio*. Un dipinto e una legge non possono avere la stessa forma, e
+    # riusare i sette sarebbe un gioco di parole.
+
+    elif nome_segno == "volto_riquadrato":
+        # categoria A, figure e ritratti: un riquadro con dentro un segno che
+        # puo' essere una testa e puo' essere una lista. Non e' un volto e non
+        # vuole esserlo: e' il posto dove un volto starebbe.
+        _quadrato(px, int(x0 + 3), int(y0 + 3), int(x1 - 4), int(y1 - 4))
+        _cerchio(px, cx, cy - m * 0.25, m * 0.34, vuoto=True)
+        _quadrato(px, int(cx - m * 0.62), int(cy + m * 0.30),
+                  int(cx + m * 0.62), int(cy + m * 0.86), spessore=1)
+
+    elif nome_segno == "pennello_e_tela":
+        # categoria B, pittura: la tela di faccia e il pennello steso sopra.
+        _quadrato(px, int(x0 + 2), int(y0 + 4), int(x1 - 3), int(y1 - 4))
+        for x in range(int(x0 + 5), int(x1 - 5)):
+            px.add((x, int(y0 + 8)))
+            px.add((x, int(y0 + 10)))
+        # il manico del pennello, in diagonale nell'angolo
+        for k in range(int(m * 0.5)):
+            px.add((int(x1 - 4 - k), int(y1 - 5 - k)))
+            px.add((int(x1 - 5 - k), int(y1 - 5 - k)))
+
+    elif nome_segno == "figura_su_piedistallo":
+        # categoria C, scultura: la figura e il basamento sotto di lei.
+        _cerchio(px, cx, y0 + m * 0.55, m * 0.26, vuoto=True)
+        for y in range(int(y0 + m * 0.95), int(y0 + m * 1.75)):
+            px.add((cx - 1, y))
+            px.add((cx, y))
+            px.add((cx + 1, y))
+        _quadrato(px, int(cx - m * 0.70), int(y0 + m * 1.80),
+                  int(cx + m * 0.70), int(y1 - 3), spessore=1)
+
+    elif nome_segno == "edificio_a_frontone":
+        # categoria D, architettura: il frontone triangolare e due colonne.
+        for k in range(int(m * 0.9)):
+            y = int(y0 + 4 + k)
+            px.add((int(cx - k), y))
+            px.add((int(cx + k), y))
+        for x in (int(cx - m * 0.58), int(cx + m * 0.58)):
+            for y in range(int(y0 + m * 1.05), int(y1 - 4)):
+                px.add((x, y))
+                px.add((x + 1, y))
+        for x in range(int(cx - m * 0.78), int(cx + m * 0.78)):
+            px.add((x, int(y1 - 4)))
+            px.add((x, int(y1 - 5)))
+
+    elif nome_segno == "foglio_stampato":
+        # categoria E, opere scritte: il foglio con le righe e il piega.
+        _quadrato(px, int(x0 + 4), int(y0 + 2), int(x1 - 5), int(y1 - 3))
+        for k in range(5):
+            y = int(y0 + 7 + k * 3)
+            for x in range(int(x0 + 8), int(x1 - 9)):
+                px.add((x, y))
+        _quadrato(px, int(x1 - 9), int(y0 + 2), int(x1 - 6), int(y1 - 3),
+                  spessore=1)
+
+    elif nome_segno == "lastra_iscritta":
+        # categoria F, epigrafi: il cippo con le tre righe dell'iscrizione.
+        _quadrato(px, int(x0 + 5), int(y0 + 3), int(x1 - 6), int(y1 - 3))
+        for k, lung in enumerate((0.62, 0.78, 0.44)):
+            y = int(y0 + 9 + k * 4)
+            for x in range(int(cx - m * lung), int(cx + m * lung)):
+                px.add((x, y))
+
+    elif nome_segno == "chiave_e_onda":
+        # categoria G, musica: il cerchio di una chiave e le due onde.
+        _cerchio(px, int(cx - m * 0.30), int(y0 + m * 0.75), m * 0.34,
+                 vuoto=True)
+        px.add((int(cx + m * 0.04), int(y0 + m * 0.75)))
+        px.add((int(cx + m * 0.18), int(y0 + m * 0.75)))
+        for x in range(int(x0 + 3), int(x1 - 3)):
+            dx = (x - cx) / (m * 1.1)
+            px.add((x, int(cy + m * 0.55 + 3.0 * math.sin(dx * 3.0))))
+            px.add((x, int(cy + m * 0.80 + 3.0 * math.sin(dx * 3.0))))
+
+    elif nome_segno == "sipario":
+        # categoria H, teatro e cinema: il sipario raccolto e i due riflettori.
+        for x in range(int(x0 + 3), int(x1 - 3)):
+            k = int(abs(x - cx) / (m * 0.9) * 3)
+            px.add((x, int(y0 + 3 + k)))
+            px.add((x, int(y0 + 4 + k)))
+        _cerchio(px, int(cx - m * 0.66), int(y1 - 7), m * 0.20, vuoto=True)
+        _cerchio(px, int(cx + m * 0.66), int(y1 - 7), m * 0.20, vuoto=True)
+
+    elif nome_segno == "pagina_con_suggello":
+        # categoria I, documenti e leggi: la pagina e il sigillo in basso.
+        _quadrato(px, int(x0 + 4), int(y0 + 2), int(x1 - 5), int(y1 - 3))
+        for k in range(3):
+            y = int(y0 + 7 + k * 3)
+            for x in range(int(x0 + 8), int(x1 - 9)):
+                px.add((x, y))
+        _cerchio(px, int(cx), int(y1 - 9), m * 0.28, vuoto=True)
+
+    elif nome_segno == "scudo":
+        # categoria J, emblemi e stemmi: lo scudo, che ha un bordo e un fondo.
+        for y in range(int(y0 + 3), int(y1 - 3)):
+            k = int((y - y0) / (m * 1.0))
+            larghezza = m * 0.85 if k < 1 else max(1, int(m * 0.85 - (k - 1) * m * 0.34))
+            for x in (int(cx - larghezza), int(cx + larghezza)):
+                px.add((x, y))
+        for x in range(int(cx - m * 0.85), int(cx + m * 0.85)):
+            px.add((x, int(y0 + 3)))
+
+    elif nome_segno == "quaderno_del_giocatore":
+        # categoria K, la scheda che il giocatore produce: il quaderno aperto,
+        # con la pagina piena e la pagina vuota. Il gioco non sa disegnare il
+        # segno: lo mette il giocatore, e `premi.md` 2.1 lo dichiara.
+        _quadrato(px, int(x0 + 2), int(y0 + 5), int(cx), int(y1 - 4))
+        _quadrato(px, int(cx), int(y0 + 5), int(x1 - 3), int(y1 - 4))
+        for k in range(4):
+            y = int(y0 + 9 + k * 3)
+            for x in range(int(x0 + 6), int(cx - 4)):
+                px.add((x, y))
+
     else:
         raise ValueError("nessun segno dichiarato si chiama %r" % nome_segno)
+
     return px
 
 

@@ -206,7 +206,10 @@ def main(numera=False):
     # e' il tipo di difetto che alla lunga insegna a non aggiungere niente.
     # La cartella e' comunque **dichiarata** qui, non ignorata in silenzio.
     SOTTOCARTELLE = {"ambienti": "sorgenti/art/out/ambienti/indice.json, "
-                                  "sorvegliato da verifica_disegni.py (D1-D3)"}
+                                  "sorvegliato da verifica_disegni.py (D1-D4)",
+                     "premi": "sorgenti/art/out/premi/premi_indice.json, "
+                              "sorvegliato da verifica_premi_emblemi.py "
+                              "(Q1-Q6): i 1050 emblemi dei premi in un foglio"}
     if os.path.isdir(OUT):
         for nome_file in sorted(os.listdir(OUT)):
             percorso = os.path.join(OUT, nome_file)

@@ -1,6 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — i premi: dieci categorie di oggetti, undisciplina ciascuna, e le quattro prove che un premio deve superare
-versione: 0.3
+versione: 0.4
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)
 fonte del materiale: richiesta di Pietro del 03/10/2026 («per ogni livello, per ogni disciplina, tranne informatica, occorre stabilire dei premi... per il ferrarese potrebbero essere figurine di ferraresi illustri che non vengono citati nella storia, per la lingua italiana poeti e autori italiani, poi i premi potrebbero essere dipinti, sculture, opere architettoniche... pensa a cosa potrebbe essere associato come ricompensa al compimento di ciascun livello»), con le regole gia prese su etichette, oggetti di interazione, luoghi e licenze
@@ -155,9 +155,45 @@ Ogni premio porta una scheda di **tre righe brevi**, nella lingua del gioco, e l
 
 1. ~~**Il numero dei livelli trasversali**~~ **chiusa il 03/10/2026**: sono **zero**, dichiarato in `quadro-trasversale.md` §1.3, e il conto dei livelli è **1050** (§4.0).
 2. ~~**La variante scelta**~~ **chiusa il 03/10/2026**: un premio per livello, Pietro.
-3. **Il catalogo `dati/premi.json`**, **da produrre**: i due blocchi di §5 sono chiusi, quindi il catalogo si può scrivere. Con i campi `premio`, `categoria`, `disciplina`, `etichetta`, `fonte`, `licenza`, `perche_prova_2`, e compilato solo dopo che le prove 1, 3 e 4 sono soddisfatte una per una. Sono **1050 record**, e il lavoro più grosso è la prova 3.
+3. ~~**Il catalogo `dati/premi.json`**~~ **parzialmente chiuso il 04/10/2026**: il file esiste, con i **1050 record** e la **categoria riletta da §2**, ma i campi che descrivono l'oggetto — `premio`, `fonte`, `licenza`, `perche_prova_2` — sono `null` con il perché in `vuoto`, e senza quei campi non è un catalogo di premi: è la parte che si può scrivere senza inventare niente. §5.1. i due blocchi di §5 sono chiusi, quindi il catalogo si può scrivere. Con i campi `premio`, `categoria`, `disciplina`, `etichetta`, `fonte`, `licenza`, `perche_prova_2`, e compilato solo dopo che le prove 1, 3 e 4 sono soddisfatte una per una. Sono **1050 record**, e il lavoro più grosso è la prova 3.
 4. ~~**La LIS**~~ **chiusa il 03/10/2026** (§2.1): il premio non è una persona ma la scheda che il giocatore produce, la categoria **K**. Quello che resta aperto non è il premio, è `lingue.md` Q4 — **la forma del segno nel quaderno**, che il gioco non può disegnare.
 5. ~~**Il quinto dominio**~~ **chiusa il 03/10/2026**: `pedagogia.md` §3 e `premi.md` §2.2 lo davano per assente e non lo era — esisteva in quattro posti (`quadro-trasversale.md` §1.3) e ha preso il suo premio, la categoria `D`.
+
+### 5.1 Che cosa c'è del catalogo, e che cosa manca
+
+*(04/10/2026 — `dati/premi.json` e `sorgenti/premi_catalogo.py`.)*
+
+Il file ha **1050 record**, uno per livello: 1050 ÷ 7 = 150 informatici più 900 linguistici, il conto di §4.0. Ogni record porta `chiave`, `livello`, `lingua`, `disciplina`, `categoria`, `argomento` e `voce`. La **categoria non è scelta**: è la colonna «primaria» della tabella di §2, riletta dal documento.
+
+**Quello che non c'è, e perché è dichiarato.** I campi `premio`, `fonte`, `licenza` e `perche_prova_2` sono `null`, e `vuoto` dice perché: *la prova 5 vieta che un premio sia generato*. Un oggetto con una fonte inventata non è un premio, è un placeholder che ha superato le quattro prove senza averle fatte. Il file può quindi essere letto ma non usato come salvadanaio: dice **quanti** premi ci devono essere e **di che categoria** sono, non **che cosa** sono.
+
+**Due difetti che il generatore ha trovato in sé stesso, prima di scrivere.**
+
+- **Il livello informatico aveva il codice lingua `IT`**, che è anche la lingua italiana: due record con la chiave `1-1-IT`, e il conto diceva 1050 senza che nessuno guardasse le chiavi. Ora l'informatica ha `INFO` e l'italiano `IT`, e il generatore **si ferma** se due chiavi coincidono, prima di scrivere.
+- **Sei categorie su undici non hanno nessun livello**: `A`, `C`, `G`, `H`, `I`, `J`. Non è un catalogo incompleto: sono le primarie delle cinque discipline che il progetto dichiara **senza livelli propri** — §4.0 dice che i livelli trasversali sono **zero**. Il campo `categorie_senza_livelli` e il suo `perche` ci sono perché un conto che mostra cinque lettere su undici senza spiegazione sembra un buco.
+
+### 5.2 Gli emblemi: il simbolo della categoria, non l'oggetto
+
+*(04/10/2026 — `sorgenti/art/emblema_premi.py`, `sorgenti/art/digiti.py`.)*
+
+Poiché l'oggetto non esiste, **non si disegna il premio**: si disegna il **suo simbolo**, cioè la categoria. Undici forme dichiarate una per categoria, in `emblema.segno()` accanto ai sette segni delle famiglie e non al posto loro: quelli dicono *perché qui non c'è il volto*, questi dicono *che cosa è l'oggetto*, e un dipinto e una legge non possono avere la stessa forma. Ogni forma porta il **perché sta con quella categoria**, nell'indice e in Q5.
+
+La tessera è quella di `emblema.py`: bordo in inchiostro, segno della categoria in alto, **anno, numero della tappa su due cifre e sigla della lingua** al centro, firma di cinque caselle in basso. Le sigle sono dichiarate (`INFO`→`IN`, `IT`→`IT`, `FE`→`FE`, `LA`→`LA`, `EN`→`EN`, `LIS`→`SG`, `EL`→`EL`) e il generatore si ferma se due lingue ne prendono la stessa: le prime tre lettere non bastavano, perché `IT` e `INFO` cominciano per I, `LA` e `LIS` per L, `EN` ed `EL` per E.
+
+**Un foglio solo: 1502×1962, 78662 byte.** Millettocinquanta file da 48×54 sarebbero millettocinquanta richieste solo per pubblicarli, e il rate limit di GitHub non le fa passare. L'indice dice **dove sta ogni tessera** (`x`, `y`), così il motore estrae il pezzo che gli serve. È una scelta dichiarata, non un risparmio nascosto.
+
+**Due difetti che Q3 ha visto al primo giro, e che il progetto aveva già imparato a cercare.**
+
+- **Il font aveva solo le ventisei lettere.** `FONT.get("2", [])` restituisce una lista **vuota** e senza dire niente, e il numero della tappa semplicemente non veniva disegnato: `1-1-FE` e `1-2-FE` erano la stessa tessera. Le dieci cifre sono ora in `digiti.py`, con la stessa griglia cinque per sette delle lettere.
+- **Il numero della tappa da solo non basta.** `1-2` e `2-2` hanno entrambi il numero 2. Con l'anno davanti e la tappa su due cifre, `1-2` dice «102SG» e `2-2` dice «202SG».
+
+Il primo difetto è la terza volta in quattro giorni che si presenta: `AGENTS.md` dice *un carattere che il font non ha è un disegno che non c'è*, e `FONT.get` con un secondo argomento di default è esattamente il modo di non accorgersene.
+
+### 5.3 I sei controlli e i sei difetti
+
+`sorgenti/art/verifica_premi_emblemi.py` fa **Q1** (le 1050 chiavi sono distinte e il numero è quello di §4.0), **Q2** (ogni tessera sta dentro il foglio e il foglio si decodifica con la misura dichiarata), **Q3** (le tessere sono **tutte distinte**, sha per sha), **Q4** (ogni categoria usata ha una forma dichiarata **che produce pixel**), **Q5** (ogni tessera dice perché quella forma) e **Q6** (ogni tessera corrisponde a un premio, per chiave).
+
+Q3 è il controllo che ha morso due volte, ed è quello che conta: trecento dei 1050 premi hanno la **stessa categoria** e quindi la stessa forma, e se la firma non rompesse le collisioni sarebbero centocinquanta file identici. I sei difetti iniettati sono **sei su sei visti**, verde prima e dopo — e la prova **rilegge il foglio dal disco** prima di dichiararsi a posto, perché chiedere alla griglia che essa stessa ha alterato significa chiedere a sé stessa.
 
 ## 6. Registro delle modifiche
 

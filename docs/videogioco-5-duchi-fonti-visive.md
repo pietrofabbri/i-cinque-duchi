@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — le fonti visive: che cosa il gioco non ha ancora una veste, e dove si prende
-versione: 0.8
+versione: 0.10
 data: 2026-10-04
 autore: Pietro Fabbri (con Claude)
 fonte: ricerca su Wikimedia Commons del 02/10/2026; tavolozza da Wikidata e Wikipedia del 03/10/2026; sagome e mura da OpenStreetMap via API standard OSM del 04/10/2026; cime e quote da Natural Earth `geography_regions_elevation_points` del 03/10/2026; verifica dei fondi già in dati/mappe/
-documenti collegati: videogioco-5-duchi-ritratti.md (v0.5), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-mappe.md (v1.3), videogioco-5-duchi-luoghi-edifici.md (v0.4), videogioco-5-duchi-audit.md (v0.20), videogioco-5-duchi-tappa-1-01.md (v0.4), AGENTS.md
+documenti collegati: videogioco-5-duchi-ritratti.md (v0.5), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-mappe.md (v1.3), videogioco-5-duchi-luoghi-edifici.md (v0.4), videogioco-5-duchi-audit.md (v0.21), videogioco-5-duchi-tappa-1-01.md (v0.4), AGENTS.md
 dati: dati/fonti_visive/fonti_visive.json (v1, 27 voci, 125 candidati), dati/fonti_visive/attestazione.json (v1, vuoto), dati/fonti_visive/tavolozza.json (v1, 18 voci), dati/edifici_footprint.json (v1, 7322 edifici su 203 aree), dati/ferrara_fondo.json (v1, 14 tratti di mura), dati/ambienti_livelli.json (v2, 150 ambienti), dati/fonti_visive/colori_cartografici.json (v1, 19 voci), dati/altitudine_manifest.json (v1, tre file di cime: 15, 2 e 26 punti)
 ---
 
@@ -290,6 +290,34 @@ Non esiste un terzo modo, ed è il punto: **nessun colore entra perché stava gi
 
 La prova ha trovato un difetto in sé stessa, ed è il secondo della giornata: la copia di sicurezza teneva il PNG **sorgente** invece di quello **sovrascritto**, e il ripristino copiava 1-11 su 1-12 lasciandoli identici. Il sintomo era che il verificatore non tornasse verde dopo la prova, ed è la prova che dovesse accorgersene: una prova che non rimette a posto il progetto non è una prova, è un danno.
 
+### 3.10 Gli emblemi dei premi: generati il 04/10/2026
+
+`dati/premi.json` ha **1050 record**, uno per livello (150 informatici più 900 linguistici, il conto di `premi.md` §4.0). L'**oggetto** del premio non esiste — la prova 5 vieta che sia generato — quindi non si disegna il premio ma il **suo simbolo**: la categoria, `A` figure fino a `K` la scheda del giocatore. **1050 tessere in un foglio 1502×1962**, con l'indice che dice dove sta ognuna.
+
+Le **undici forme sono dichiarate una per categoria** in `emblema.segno()`, accanto ai sette segni delle famiglie e non al posto loro: quelli dicono *perché qui non c'è il volto*, questi dicono *che cosa è l'oggetto*. Nessuna è un volto e nessuna è un ritratto — è il limite che il progetto mette a tutta la grafica — e ogni forma porta il **perché sta con quella categoria**, che è il controllo **Q5**.
+
+**Solo 5 categorie su undici hanno tessere**, e le altre 6 non hanno livelli: sono le primarie delle cinque discipline che `premi.md` §4.0 dichiara senza livelli propri. È una conseguenza dichiarata, non un buco, e il catalogo lo dice in `categorie_senza_livelli`.
+
+**I due difetti che Q3 ha visto al primo giro, e che vale la pena ricordare insieme.** Il font aveva **solo le ventesei lettere**: `FONT.get("2", [])` restituisce una lista **vuota** e senza dire niente, e il numero della tappa non veniva disegnato — `1-1-FE` e `1-2-FE` erano la stessa tessera. E il numero della tappa **da solo non basta**: `1-2` e `2-2` hanno entrambi il 2, e serve l'anno davanti. Le dieci cifre sono ora in `sorgenti/art/digiti.py`, sulla stessa griglia cinque per sette delle lettere.
+
+Il primo difetto è la terza volta in quattro giorni che si presenta sotto una forma diversa — l'area che dichiara 5209 e la forma che è un punto, l'intestazione RGB con un byte per pixel, il carattere che il font non ha e non disegna niente. La regola che ne esce è in `AGENTS.md`: **un valore di default che sostituisce un dato mancante non è un dato, è una sparizione silenziosa**, e `FONT.get(c, [])` ne è la forma più economica.
+
+Sei controlli da **Q1** a **Q6** e **sei difetti iniettati, sei visti**; la prova rilegge il foglio dal disco prima di dichiararsi a posto, perché chiedere alla griglia che lei stessa ha alterato significa chiedere a sé stessa.
+
+### 3.10 Gli emblemi dei premi: generati il 04/10/2026
+
+`dati/premi.json` ha **1050 record**, uno per livello (150 informatici più 900 linguistici, il conto di `premi.md` §4.0). L'**oggetto** del premio non esiste — la prova 5 vieta che sia generato — quindi non si disegna il premio ma il **suo simbolo**: la categoria, `A` figure fino a `K` la scheda del giocatore. **1050 tessere in un foglio 1502×1962**, con l'indice che dice dove sta ognuna.
+
+Le **undici forme sono dichiarate una per categoria** in `emblema.segno()`, accanto ai sette segni delle famiglie e non al posto loro: quelli dicono *perché qui non c'è il volto*, questi dicono *che cosa è l'oggetto*. Nessuna è un volto e nessuna è un ritratto — è il limite che il progetto mette a tutta la grafica — e ogni forma porta il **perché sta con quella categoria**, che è il controllo **Q5**.
+
+**Solo 5 categorie su undici hanno tessere**, e le altre 6 non hanno livelli: sono le primarie delle cinque discipline che `premi.md` §4.0 dichiara senza livelli propri. È una conseguenza dichiarata, non un buco, e il catalogo lo dice in `categorie_senza_livelli`.
+
+**I due difetti che Q3 ha visto al primo giro, e che vale la pena ricordare insieme.** Il font aveva **solo le ventesei lettere**: `FONT.get("2", [])` restituisce una lista **vuota** e senza dire niente, e il numero della tappa non veniva disegnato — `1-1-FE` e `1-2-FE` erano la stessa tessera. E il numero della tappa **da solo non basta**: `1-2` e `2-2` hanno entrambi il 2, e serve l'anno davanti. Le dieci cifre sono ora in `sorgenti/art/digiti.py`, sulla stessa griglia cinque per sette delle lettere.
+
+Il primo difetto è la terza volta in quattro giorni che si presenta sotto una forma diversa — l'area che dichiara 5209 e la forma che è un punto, l'intestazione RGB con un byte per pixel, il carattere che il font non ha e non disegna niente. La regola che ne esce è in `AGENTS.md`: **un valore di default che sostituisce un dato mancante non è un dato, è una sparizione silenziosa**, e `FONT.get(c, [])` ne è la forma più economica.
+
+Sei controlli da **Q1** a **Q6** e **sei difetti iniettati, sei visti**; la prova rilegge il foglio dal disco prima di dichiararsi a posto, perché chiedere alla griglia che lei stessa ha alterato significa chiedere a sé stessa.
+
 ## 4. Accuratezza: proporzioni, colori, forme
 
 È la parte che il progetto chiama *solita accuratezza*, e le tre parole hanno tre significati tecnici.
@@ -424,6 +452,8 @@ Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file d
 | Colori delle carte | **fatti**: 19 voci dichiarate, di cui 3 prese dalla tavolozza; nessun colore vive solo nel codice |
 | Cime e quote | **fatte**: 15 + 2 + 26 punti su tre scale, con la scoperta che la fonte è **mondiale in tutte e tre** e i tre file non sono annidati |
 | Quanti ambienti il motore ha disegnato | **uno**, la tappa 1-1 |
+| Emblemi dei premi | **fatti il 04/10/2026**: 1050 tessere in un foglio, undici forme dichiarate, 5 categorie in uso |
+| Emblemi dei premi | **fatti il 04/10/2026**: 1050 tessere in un foglio, undici forme dichiarate, 5 categorie in uso |
 | Disegni degli ambienti | **fatti il 04/10/2026**: 30 immagini schematiche su 30 tappe dell'anno 1, **30 SHA distinti** |
 | Lavoro più grande che resta | i **125 candidati** da guardare a vista, e i **cinquantuno** ambienti senza coordinate |
 | Lavoro più grande che manca *fra i dati* | nessuno: i sei file ci sono e sono verificati |
