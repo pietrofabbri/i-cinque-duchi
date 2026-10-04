@@ -1,13 +1,13 @@
 """Verifica il catalogo dei premi: P1-P5.
 
-Dieci categorie, undici discipline e quattro prove di ammissione sono numeri e
+Undici categorie, undici discipline e quattro prove di ammissione sono numeri e
 nomi che si possono confrontare fra loro e con gli altri documenti. Qui si
 controlla che la lista sia chiusa e senza buchi, che ogni disciplina abbia una
 categoria primaria, che i sei ambiti della sfida a mani nude abbiano ciascuno un
 premio possibile, che nessuna disciplina sia inventata, e che nessun premio possa
 essere un'opera generata o un'immagine senza licenza.
 
-  P1  le dieci categorie sono A..J, senza buchi e senza duplicati
+  P1  le undici categorie sono A..K, senza buchi e senza duplicati
   P2  ogni disciplina ha almeno una categoria primaria, e sono le undici del progetto
   P3  i sei domini della sfida a mani nude hanno ciascuno almeno una categoria
   P4  nessuna disciplina abbinata e' una disciplina che il progetto non ha

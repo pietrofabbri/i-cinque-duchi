@@ -46,6 +46,9 @@ DOC_PREMI = os.path.join(RADICE, "docs", "videogioco-5-duchi-premi.md")
 OUT = os.path.join(RADICE, "sorgenti", "art", "out", "premi")
 FOGLIO = os.path.join(OUT, "premi_foglio.png")
 INDICE = os.path.join(OUT, "premi_indice.json")
+FORME_PAGINA = os.path.join(OUT, "forme_prova.png")
+FORME_INDICE = os.path.join(OUT, "forme_indice.json")
+
 
 # La sigla di ogni lingua. **Tre lettere non bastavano**: `IT` e `INFO`
 # cominciano per I, `LA` e `LIS` per L, `EN` ed `EL` per E, e due tessere con
@@ -59,6 +62,15 @@ LATO = emblema.LATO                    # 48
 ALTEZZA = emblema.ALTEZZA               # 54
 COLONNE = 30                           # trenta tessere per riga
 MARGINE = 2                            # pixel fra una tessera e l'altra
+# Il foglio delle forme e' **alla scala reale**, non piu' grande. La prima
+# versione le disegnava a tre volte per vederle meglio, ed era la cosa
+# sbagliata da guardare: `emblema.segno()` e' scritto per una tessera di 24
+# pixel e molte sue formule usano scarti assoluti, quindi a scala tre il
+# frontone diventava una macchia e il riquadro un pieno. Un foglio di prova
+# che non e' come il file vero e' un foglio di prova di un'altra cosa, e il
+# difetto che doveva far vedere lo nascondeva invece.
+FORMA_LATO = LATO
+FORMA_ALTEZZA = ALTEZZA
 
 # La forma di ogni categoria e **perché sta con quella categoria**. La forma
 # e' il segno in `emblema.segno()`; il perché sta nell'indice e nel documento,
@@ -78,6 +90,61 @@ FORME = {
     "K": ("quaderno_del_giocatore", "la scheda del giocatore: il quaderno "
          "aperto, una pagina scritta e una vuota"),
 }
+
+
+def foglio_forme(tav):
+    """Un foglio con **tutte** le forme dichiarate, grandi tre volte.
+
+    Sei delle undici categorie non hanno nessun livello e quindi nessuna
+    tessera nel foglio dei premi: le loro forme sono state scritte e non
+    sono mai state **guardate**. Un controllo che verifica che una forma
+    produca pixel verifica che produca qualcosa, non che produca una
+    figura riconoscibile — e una figura non riconoscibile è un difetto che
+    resta invisibile finché nessuno la guarda. Questo foglio esiste per
+    poterla guardare, e per guardarle tutte e undici insieme, che è il
+    modo in cui si vedono anche le due che somigliano.
+    """
+    categorie = sorted(FORME)
+    colonne = 6
+    righe = (len(categorie) + colonne - 1) // colonne
+    passo_x = FORMA_LATO + MARGINE * 3
+    passo_y = FORMA_ALTEZZA + MARGINE * 4
+    fondo = emblema._hex(tav["bianco_calce"]["hex"])
+    larghezza = colonne * passo_x + MARGINE
+    altezza = righe * passo_y + MARGINE
+    tela = [[fondo] * larghezza for _ in range(altezza)]
+    inchiostro = emblema._hex(tav["inchiostro"]["hex"])[:3]
+    colore = emblema._hex(
+        tav[emblema.FAMIGLIE["opera_non_persona"]["colore"]]["hex"])[:3]
+
+    voci = []
+    for i, categoria in enumerate(categorie):
+        segno, perche = FORME[categoria]
+        cx = MARGINE + (i % colonne) * passo_x
+        cy = MARGINE + (i // colonne) * passo_y
+        # `emblema.segno` e' pensata per una tessera piccola e restituisce
+        # coordinate intere, ma a tre volte il foglio le arrotla e restano
+        # dei float: `tela[y][x]` con un float e' un TypeError. La conversione
+        # e' qui e non dentro `segno`, perche' li' gli indici sono gia' interi
+        # per costruzione e la conversione sarebbe silenziosa.
+        for x, y in emblema.segno(segno, cx + (FORMA_LATO - 24) // 2,
+                                  cy + emblema.SEGNO_Y, emblema.SEGNO_ALTEZZA):
+            xi, yi = int(round(x)), int(round(y))
+            if 0 <= xi < larghezza and 0 <= yi < altezza:
+                tela[yi][xi] = colore
+        # la lettera della categoria in basso, con il font di sempre
+        x0 = cx + (FORMA_LATO - 5) // 2
+        for righe_lettera, punti in enumerate(
+                emblema.FONT.get(categoria, [])):
+            for c, pieno in enumerate(punti):
+                if pieno == "#" and 0 <= cy + FORMA_ALTEZZA + 4 + righe_lettera \
+                        < altezza and 0 <= x0 + c < larghezza:
+                    tela[cy + FORMA_ALTEZZA + 4 + righe_lettera][x0 + c] = \
+                        inchiostro
+        voci.append({"categoria": categoria, "segno": segno, "perche": perche,
+                     "x": cx, "y": cy, "px": [FORMA_LATO, FORMA_ALTEZZA],
+                     "scala": 1})
+    return tela, larghezza, altezza, voci, colonne
 
 
 def categorie_del_documento():
@@ -244,6 +311,23 @@ def principale():
     os.makedirs(OUT, exist_ok=True)
     byte = scrivi_png(tela, FOGLIO)
 
+    tela_f, larghezza_f, altezza_f, voci_forme, colonne_f = foglio_forme(tav)
+    byte_f = scrivi_png(tela_f, FORME_PAGINA)
+    with open(FORME_INDICE, "w", encoding="utf-8") as f:
+        json.dump({"versione": 1, "data": "2026-10-04",
+                   "foglio": os.path.relpath(FORME_PAGINA, RADICE),
+                   "foglio_px": [larghezza_f, altezza_f],
+                   "colonne": colonne_f, "scala": 1,
+                   "scala_perche": "alla scala reale della tessera: "
+                                   "emblema.segno e' scritto per 24 pixel e "
+                                   "a scala maggiore le formule sbagliano",
+                   "che_cosa_e": "tutte le undici forme dichiarate, grandi "
+                                 "tre volte, per poterle guardare: sei di "
+                                 "queste non hanno nessun livello e quindi "
+                                 "nessuna tessera nel foglio dei premi",
+                   "forme": voci_forme}, f,
+                  ensure_ascii=False, separators=(",", ":"))
+
     with open(INDICE, "w", encoding="utf-8") as f:
         json.dump({"versione": 1, "data": "2026-10-04",
                    "foglio": os.path.relpath(FOGLIO, RADICE),
@@ -276,6 +360,9 @@ def principale():
           % (len(dichiarate), len(FORME)))
     print("scritti %s e %s"
           % (os.path.relpath(FOGLIO, RADICE), os.path.relpath(INDICE, RADICE)))
+    print("  foglio delle %d forme: %dx%d (%d byte), in %s"
+          % (len(FORME), larghezza_f, altezza_f, byte_f,
+             os.path.relpath(FORME_PAGINA, RADICE)))
 
     if guarda is not None:
         trovato = [t for t in indice if t["chiave"] == guarda]

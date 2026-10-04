@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — audit delle questioni aperte: la lista operativa
-versione: 0.21
+versione: 0.22
 data: 2026-10-04
 autore: Pietro Fabbri (con Claude)
 fonte: lettura di tutti i documenti di progetto che portano una sezione «Questioni aperte» (sedici), verificata da sorgenti/lingue/conta_questioni.py, che confronta anche i numeri che il README copia da qui
-documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-fonti-visive.md (v0.10), videogioco-5-duchi-furioso.md (v0.6), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-mappe.md (v1.3), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.1), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3), AGENTS.md
+documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-fonti-visive.md (v0.11), videogioco-5-duchi-furioso.md (v0.6), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-mappe.md (v1.3), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.1), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3), AGENTS.md
 ---
 
 # Audit delle questioni aperte: la lista
@@ -633,10 +633,57 @@ giro cambia è una decisione: sono fatti.
 
 ---
 
+## 3quinquagesim. L'ottavo numero che non guardava: due righe scritte due volte
+
+**Il difetto.** Cercando cosa fosse rimasto in sospeso, il primo sospeso non
+era un disegno: era un **registro**. `premi.md` §6 aveva due righe su cinque —
+mancavano **v0.2** (l'undicesima categoria, la K, nata dalla ricerca sulle
+figure sorde) e **v0.4** (il catalogo da 1050 record e i 1050 emblemi). Sono le
+due versioni che hanno fatto il lavoro grosso, e nel registro non c'erano: il
+documento raccontava di un lavoro che non risultava mai svolto.
+
+Controllando il documento delle fonti visive è venuto fuori il resto, che è la
+stessa cosa in un altro vestito:
+
+- la sezione **§3.10** c'era **due volte**, parola per parola;
+- la riga «Emblemi dei premi» del riepilogo §8 c'era **due volte**;
+- il registro §9 aveva una riga `|---|---|---|` **in mezzo alle righe**, che
+  chiudeva la tabella dopo la 0.5 e faceva sembrare le quattro righe sotto un'altra
+  tabella; e le versioni **0.9 e 0.10 non avevano riga**.
+
+**Perché nessuno l'aveva visto.** Tutti i controlli di questa sezione confrontano
+**numeri**, e un paragrafo scritto due volte ha i numeri giusti in entrambe le
+copie. È la stessa forma del settimo numero, dove il conteggio era vero e la
+geometria un punto: qui il testo è vero e sta due volte. La sostituzione
+testuale era stata eseguita due volte, e la seconda esecuzione è riuscita senza
+dire niente — è la quinta volta in quattro giorni che una cosa fatta due volte
+non lascia traccia.
+
+**La contraddizione più grossa, che stava nello stesso documento.** La *fonte
+del materiale* di `premi.md` riportava la richiesta del 03/10 «tranne
+informatica» e `AGENTS.md` lo ripeteva; `premi.md` §2.2 scriveva **nessuno**
+nella riga del dominio `informatica`; e §4.0 contava **150** livelli informatici
+che «hanno un premio anche loro», con il catalogo che li aveva scritti. Due
+verità che nessuno metteva una accanto all'altra.
+
+**La decisione.** Pietro, 04/10/2026: **l'informatica ha un premio per tappa come
+le altre discipline**. Quindi il numero è **1050**, la richiesta del 03/10 è
+superata, e i tre luoghi che la negavano sono stati corretti — con la
+dichiarazione che in §2.2 l'informatica resta *senza* premio solo nella **sfida a
+mani nude**, dove il premio è la prestazione. Un dominio senza premio nella
+tappa è una cosa diversa da una disciplina senza premi, e la tabella le
+confondeva.
+
+**Quanto è costato.** Quindici minuti a cercare e mezzora a correggere, e
+nessuna a verificare: non è un difetto che i controlli potessero vedere. La
+regola che ne esce è in `AGENTS.md`: **un registro che perde una riga è un
+documento che mente sul proprio lavoro**, e per questo le righe si contano.
+
 ## 7. Registro delle modifiche
 
 | Data | Versione | Che cosa è cambiato |
 | 04/10/2026 | 0.20 | **Un PNG che si annuncia come un'immagine e non lo è, con tre controlli verdi.** I disegni degli ambienti avevano l'intestazione RGB e un byte per pixel: la tela teneva l'indice del colore e l'indice finiva nel file al posto di un byte di canale. `verifica_immagini.py` e i tre controlli sui disegni guardavano l'intestazione e lo sha, e il file passava. È stato `png_terrarium.decodifica_png` — il lettore che il motore usa — a non aprirlo. **D4** è il controllo nuovo: decodifica il file e confronta i pixel con la misura dichiarata, e **E6** lo prova iniettando proprio quel difetto. I colori vengono ora dalla tavolozza e sono dichiarati nell'indice. La stessa malattia del file delle sagome (il conto vero e la forma falsa) e delle trenta immagini identiche: **un controllo che guarda una metà del file è verde come un controllo che non guarda niente.** |
+| 04/10/2026 | 0.22 | **L'ottavo numero che non guardava: due righe scritte due volte e un registro che aveva perso due versioni.** `premi.md` §6 aveva due righe su cinque — mancavano **v0.2** e **v0.4**, cioè la categoria K e tutto il catalogo con gli emblemi. In `fonti-visive.md` la sezione **§3.10** e la riga «Emblemi dei premi» erano ciascuna in **duplice copia**, e il registro aveva una riga di separazione **in mezzo alle righe** più le versioni **0.9 e 0.10 assenti**. Nello stesso documento, la *fonte* e `AGENTS.md` dicevano «tranne informatica» e §2.2 scriveva «nessuno», mentre §4.0 ne contava **150**:  Pietro ha deciso il 04/10 che l'informatica ha un premio per tappa, il numero resta **1050** e i tre luoghi che lo negavano sono corretti. |
 | 04/10/2026 | 0.19 | **Il settimo numero che non guardava, e il più subdolo: il conteggio delle sagome era vero e la geometria era un punto.** `dati/edifici_footprint.json` dichiarava **5209 sagome** e i 5209 erano veri — 5209 edifici con nome, altezza e fonte — ma la forma si scriveva con `round(x / Q)` invece di `round(x * Q)`, e ogni vertice finiva a zero: l'ingombro più grande misurava **cinque centimetri quadrati**. Nessuno lo vide perché il numero, la parte che un umano guarda, era giusto. Il file è stato rigenerato (**7322 edifici su 188 aree**, interrogando anche i 150 pin dei livelli, non solo le città: i pin del registro sono città intere e le tappe dell'anno 1 sono a più di due cento metri dal pin di Ferrara). La perdita nella quantizzazione è ora un controllo **alla fonte**: l'edificio la cui forma non sta nella scala dell'area dichiarata viene scartato e contato. `verifica_sagome.py` (**S1–S3**) sul file rotto ne trovava **5209 su 5209** e ora dà 0. `disegna_ambienti.py` fa i **30 disegni schematici** dell'anno 1 e `verifica_disegni.py` (**D1–D3**) li sorveglia; è stato D3 a vedere che tre coppie di immagini erano identiche, perché il riquadro era la griglia del livello e il ritaglio buttava fuori tutti gli edifici. Cinque difetti iniettati, cinque visti, e una prova che aveva un difetto suo — la copia di sicurezza teneva il sorgente invece del file sovrascritto. §3terdecies. |
 | 04/10/2026 | 0.18 | **Diciassette file che il commit precedente aveva lasciato nel ramo, e due famiglie diverse nella stessa cartella.** Sei erano **emblemi superati** — le persone passate da emblema a ritratto — e la regola che li toglieva dal ramo guardava solo il prefisso `ritratto_`: sei file, quattro immagini distinte, lo stesso difetto dei sessanta emblemi di quattro giorni prima. Gli altri **undici erano i disegni della piazza della Cattedrale** — facciata, cartello, lapide, due statue, il protagonista in quattro fotogrammi, tre ritratti a mano — e nessun codice li caricava e nessun dato li nominava: il controllo 2 li chiamava file morti e aveva ragione. Ora sono la tabella `SPRITE` di `sorgenti/ambienti_livelli.py`, col posto riletto dalla tabella 3 di `tappa-1-01.md` e la misura misurata sul PNG; tre controlli nuovi (**9**, **10**, **B9**) e la prova dei difetti da undici a **sedici**, due dei quali pretendono che a mordere sia il controllo giusto e non un altro che morde per caso. In `out/` restano due famiglie — 198 per le persone, 11 sprite — e il controllo 2 sa dire quale è quale invece di contare. Chiude anche il secondo sospeso: il **foglio degli emblemi** è ora `sorgenti/art/foglio_emblemi.py` e il suo file `sorgenti/art/foglio_emblemi.txt`, in caratteri, con i numeri calcolati. |
 | 04/10/2026 | 0.17 | **Sessanta emblemi che erano diciotto file, e il controllo che non c'era.** L'emblema era un rettangolo con una diagonale il cui seme era `sum(ord(codice)) % 22`: sessanta persone, **diciotto file distinti**, dieci persone con lo stesso identico PNG. Nessuno dei sei controlli lo vedeva, perché tutti contavano i file e non i file distinti. Nuovi: il **controllo 7** (gli sha256 distinti devono essere tanti quanti le persone, e il difetto si dichiara con i nomi) e il **controllo 8** (ogni emblema dichiara la famiglia, ricalcolata dal motivo, e la parola che l'ha fatta vincere); `sorgenti/art/emblema.py`, che disegna il segno geometrico della famiglia, le iniziali e la firma, con i colori letti dalla tavolozza e senza librerie. Il controllo 7 ha trovato subito anche **tre doppioni d'identità fra i ritratti** — `augusto`/`ottaviano augusto`, `copernico`/`niccolò copernico`, `federico ii`/`federico ii di svevia`, sei voci per tre persone — chiusi con tre alias **dichiarati** in `catalogo_immagini.py` e non con una regola che avrebbe unito anche «il territorio del Po» e «i Bersaglieri del Po». Il catalogo passa a **198 persone** e 138 ritratti. Il secondo difetto l'ha trovato la prova, non io: il controllo 8 confrontava la parola ricalcolata **con sé stessa**. Il terzo l'hanno trovato gli occhi, guardando il foglio: font 3×5 che rendeva `DOM` come `DOH`, arco della volta tracciato con una soglia non simmetrica, fessura dell'anello di 24 gradi che toglieva metà del segno. La prova dei difetti passa da sei a **undici**. Dettaglio in §3undecies. |

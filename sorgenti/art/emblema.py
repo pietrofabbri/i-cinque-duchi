@@ -353,14 +353,24 @@ def segno(nome_segno, x0, y0, lato):
             px.add((int(x1 - 5 - k), int(y1 - 5 - k)))
 
     elif nome_segno == "figura_su_piedistallo":
-        # categoria C, scultura: la figura e il basamento sotto di lei.
-        _cerchio(px, cx, y0 + m * 0.55, m * 0.26, vuoto=True)
-        for y in range(int(y0 + m * 0.95), int(y0 + m * 1.75)):
-            px.add((cx - 1, y))
-            px.add((cx, y))
-            px.add((cx + 1, y))
-        _quadrato(px, int(cx - m * 0.70), int(y0 + m * 1.80),
-                  int(cx + m * 0.70), int(y1 - 3), spessore=1)
+        # categoria C, scultura: la testa, il corpo e il basamento a due
+        # gradini. Il basamento e' **largo**: una colonna stretta con un
+        # cerchio in cima si legge come un obelisco, e un obelisco non e' una
+        # statua. La versione precedente chiedeva a `_quadrato` un rettangolo
+        # il cui bordo superiore stava sotto quello inferiore, e la funzione
+        # non scriveva niente: restava una riga sola, e la forma era un obelisco.
+        _cerchio(px, int(cx), int(y0 + 4), 2.4, vuoto=True)
+        for y in range(int(y0 + 7), int(y0 + 14)):        # il corpo
+            for dx in (-1, 0, 1):
+                px.add((int(cx) + dx, y))
+        for x in range(int(cx - 4), int(cx + 5)):          # le spalle
+            px.add((x, int(y0 + 7)))
+        for x in range(int(cx - 7), int(cx + 8)):          # il primo gradino
+            px.add((x, int(y0 + 15)))
+            px.add((x, int(y0 + 16)))
+        for x in range(int(cx - 9), int(cx + 10)):         # il secondo gradino
+            px.add((x, int(y0 + 17)))
+            px.add((x, int(y0 + 18)))
 
     elif nome_segno == "edificio_a_frontone":
         # categoria D, architettura: il frontone triangolare e due colonne.
@@ -424,14 +434,23 @@ def segno(nome_segno, x0, y0, lato):
         _cerchio(px, int(cx), int(y1 - 9), m * 0.28, vuoto=True)
 
     elif nome_segno == "scudo":
-        # categoria J, emblemi e stemmi: lo scudo, che ha un bordo e un fondo.
-        for y in range(int(y0 + 3), int(y1 - 3)):
-            k = int((y - y0) / (m * 1.0))
-            larghezza = m * 0.85 if k < 1 else max(1, int(m * 0.85 - (k - 1) * m * 0.34))
-            for x in (int(cx - larghezza), int(cx + larghezza)):
-                px.add((x, y))
-        for x in range(int(cx - m * 0.85), int(cx + m * 0.85)):
-            px.add((x, int(y0 + 3)))
+        # categoria J, emblemi e stemmi: lo scudo, con la linea di capo, una
+        # banda e la punta in basso. Le pareti scendono **ritte e poi
+        # convergono**: la versione precedente divideva l'altezza per mezzo
+        # riquadro, il `k` non superava mai 1 e la punta non si stringeva mai,
+        # cosi' la forma era un rettangolo.
+        semi = 8
+        y_alto = int(y0 + 2)
+        y_giro = y_alto + semi          # fin qui le pareti sono dritte
+        y_basso = y_giro + semi + 1     # e qui c'e' la punta, un pixel sola
+        for y in range(y_alto, y_basso):
+            h = semi if y <= y_giro else max(0, semi - (y - y_giro))
+            px.add((int(cx - h), y))
+            px.add((int(cx + h), y))
+        for x in range(int(cx - semi), int(cx + semi) + 1):
+            px.add((x, y_alto))                            # la linea di capo
+        for x in range(int(cx - semi + 1), int(cx)):        # la banda
+            px.add((x, y_alto + 5))
 
     elif nome_segno == "quaderno_del_giocatore":
         # categoria K, la scheda che il giocatore produce: il quaderno aperto,
