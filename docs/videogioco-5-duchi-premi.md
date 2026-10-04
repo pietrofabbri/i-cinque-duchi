@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — i premi: dieci categorie di oggetti, undisciplina ciascuna, e le quattro prove che un premio deve superare
 versione: 0.4
-data: 2026-10-03
+data: 2026-10-04
 autore: Pietro Fabbri (con Claude)
 fonte del materiale: richiesta di Pietro del 03/10/2026 («per ogni livello, per ogni disciplina, tranne informatica, occorre stabilire dei premi... per il ferrarese potrebbero essere figurine di ferraresi illustri che non vengono citati nella storia, per la lingua italiana poeti e autori italiani, poi i premi potrebbero essere dipinti, sculture, opere architettoniche... pensa a cosa potrebbe essere associato come ricompensa al compimento di ciascun livello»), con le regole gia prese su etichette, oggetti di interazione, luoghi e licenze
 dati: dati/lingue/associazioni.json (v1, le 180 voci: trenta per lingua, sei lingue); dati/fonti_visive/fonti_visive.json e dati/lingue/immagini_oggetti.json (le schede con etichetta e licenza, da cui i premi prendono la provenienza); dati/premi.json (v1, il catalogo dei premi: da generare, e la sua cardinalita' dipende dalla decisione di §5)
