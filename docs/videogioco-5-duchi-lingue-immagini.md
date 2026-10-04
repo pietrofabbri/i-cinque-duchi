@@ -88,9 +88,21 @@ I termini nuovi sono in `sorgenti/lingue/cerca_immagini_2.py`, e sono **scritti 
 |---|---|---|
 | voci cercate | 146 coperte + 34 scoperte | 90 (LA, EL, FE) |
 | candidati delle novanta voci | 417 | **547** |
-| voci **senza** nessun candidato | **34** | **3** |
+| voci **senza** nessun candidato | **34** | **6** |
 
-Le trenta voci ferraresi non hanno più zero candidati per caso: hanno candidati per **decisione** (§2.2).
+Le trenta voci ferraresi non hanno più zero candidati per caso: hanno candidati per **decisione** (§2.2). Nei fogli di controllo le voci senza nessun candidato sono **3**, e non 6, perché il foglio ripiega sul primo giro quando il secondo non ha dato nulla: sono due numeri veri che descrivono due cose diverse, e quello giusto nella riga che parla del secondo giro è il 6.
+
+**Il numero di voci coperte è migliorato. La correttezza no, e va detto per intero.** Cambiare i termini non è guardare le immagini: `cerca()` prende il **primo termine che dà un risultato**, e un termine come «Roman funeral procession» dà file di qualunque cosa. I nomi che sono tornati, letti uno per uno:
+
+| Voce | Che cosa è tornato |
+|---|---|
+| **i riti funebri** | un corteo funebre di Carlo V, una processione cavalleresca del Seicento, e **un'elimitrice funebre Rolls Royce** |
+| **il fuoco sacro** | un libro del 1900 e due monete di Shapur I |
+| **i voti** | stele votive **buddiste** e **frigie**, non romane |
+| **gli auspici** | una moneta di un senatore, un libro francese in Rough Draft**, e un lituo — cioè il terzo dei tre è giusto |
+| **la maledizione** | tre vere *defixio*, le tavolette di maledizione: l'unica voce centrata |
+
+È la stessa lezione di §5, scritta quattro giorni fa e ripetuta oggi: **una ricerca che restituisce un file non ha trovato l'oggetto**. Il secondo giro ha cambiato la domanda, non ha guardato, e la differenza si vede solo sui nomi — che è il massimo che si può pretendere da una ricerca, e il minimo che basta a sapere che il lavoro di guardare è ancora tutto da fare.
 
 **Una cosa che il secondo giro non può fare, e va detto**: il numero di G7 non è confrontabile fra i due giri. G7 misura se il **nome del file** nomina la voce, e il secondo giro cerca per **concetto**: il file di un rito funebro romano non contiene la parola «funebri» contiene la parola *funeral*. Il numero è quindi **più basso nel secondo giro proprio perché la ricerca è migliore**, e dichiararlo come un peggioramento sarebbe il difetto al contrario: un numero che non misura quello che dice di misurare.
 
@@ -232,5 +244,5 @@ Ridurre a 96×72 gli spinelli di Commons richiede un'immagine minima (§4.1), un
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
-| 04/10/2026 | 0.2 | **Il secondo giro di ricerca, e i fogli di controllo che non esistevano.** Il latino, il greco e il ferrarese sono stati cercati di nuovo cercando **la cosa che si vede** e non la parola che la nomina: alla voce «gli auspici» il lituo dell'augure, non un file che contiene la parola. Le voci **senza nessun candidato** scendono da **34 a 3** e i candidati delle novanta voci salgono da **417 a 547**. Il primo giro **non è stato toccato**: è la prova di che cosa trovava una ricerca che cercava le parole. La Q1 era bloccante perché **manccavano i fogli di controllo** e senza fogli l'attestazione a vista è impossibile: ora ci sono, **18 fogli** da dieci voci, e la Q1 è risolta nel metodo — le immagini le guarda Pietro, io registro i giudizi e lo script **rifiuta** un giudizio senza motivo, con etichetta fra le nove e file fra i candidati guardati. La Q4 è chiusa: le trenta voci ferraresi associano **la cosa che il proverbio evoca**, se esiste ed è vera. Un difetto trovato in sé stesso: il primo tentativo faceva `zip(nomi, termini)` e quindi cercava **il nome italiano della voce** invece del termine inglese — la stessa malattia del primo giro, e l'ho scritta due volte. |
+| 04/10/2026 | 0.2 | **Il secondo giro di ricerca, e i fogli di controllo che non esistevano.** Il latino, il greco e il ferrarese sono stati cercati di nuovo cercando **la cosa che si vede** e non la parola che la nomina: alla voce «gli auspici» il lituo dell'augure, non un file che contiene la parola. Le voci **senza nessun candidato** scendono da **34 a 6** — e a **3** nei fogli, che ripiegano sul primo giro — e i candidati delle novanta voci salgono da **417 a 547**. Il **numero** di voci coperte è migliorato, la **correttezza** no: alla voce «i riti funebri» il secondo giro ha restituito un'elimitrice funebre, e il campione dei nomi è in §2.1. Il primo giro **non è stato toccato**: è la prova di che cosa trovava una ricerca che cercava le parole. La Q1 era bloccante perché **manccavano i fogli di controllo** e senza fogli l'attestazione a vista è impossibile: ora ci sono, **18 fogli** da dieci voci, e la Q1 è risolta nel metodo — le immagini le guarda Pietro, io registro i giudizi e lo script **rifiuta** un giudizio senza motivo, con etichetta fra le nove e file fra i candidati guardati. La Q4 è chiusa: le trenta voci ferraresi associano **la cosa che il proverbio evoca**, se esiste ed è vera. Un difetto trovato in sé stesso: il primo tentativo faceva `zip(nomi, termini)` e quindi cercava **il nome italiano della voce** invece del termine inglese — la stessa malattia del primo giro, e l'ho scritta due volte. |
 | 02/10/2026 | 0.1 | Prima stesura. Ricerca su Wikimedia Commons delle **180 voci** degli oggetti di interazione, con termini scelti voce per voce: **1120 candidati** con licenza libera, di cui **12 respinti** per difetto automatico. La regola delle quattro categorie, le etichette, la misura 96×72 e la regola del ritaglio dichiarato. Il difetto della ricerca — 67 voci in cui nessun candidato nomina l'oggetto, fra cui il latino a 27 su 28 — dichiarato per esteso, con i sette controlli che lo rendono visibile. **Nessuna immagine scelta, nessuna guardata a vista**: è dichiarato, ed è la prima questione aperta. |
