@@ -253,6 +253,27 @@ Questo file serve a chiunque riprenda il lavoro senza il contesto delle conversa
 **Stile dei testi**
 Italiano semplice: frasi brevi, niente gergo non spiegato, niente tono infantile.
 
+**Un numero vero e una forma falsa possono stare nello stesso record**
+Il difetto più insidioso del 04/10/2026: il file delle sagome dichiarava 5209
+edifici e i 5209 erano veri, uno per uno, e la geometria di ognuno era un
+punto, perché la quantizzazione divideva per cento un numero già in metri.
+Nessuno lo vide perche' il numero — la parte che un umano guarda — era
+giusto. Due conseguenze, e sono regole: **(a)** un file che dichiara un
+conteggio deve avere un controllo che guarda anche *che cosa* ha contato, non
+solo *quanto*; **(b)** un difetto che entra nel file è un difetto che si
+propaga a ogni lettore, quindi va fermato **alla fonte**, e il fermo si scrive
+come uno scarto contato, non come un valore che non viene scritto.
+
+**Una prova che non rimette a posto il progetto è un danno**
+Le prove di difetto iniettato rompono il file vero e lo rimettono subito, con
+una copia di sicurezza che deve essere del file **sovrascritto**: una copia del
+file sorgente, ripristinata sul destinatario, lascia la coppia identica e la
+prova fallisce — e il sintomo (il verificatore non torna verde dopo) è della
+prova, non del progetto. Il backup vive fuori dal progetto, il ripristino
+avviene **prima** della prossima prova, e alla fine si richiede che il
+verificatore torni verde: una prova che non richiede il verde finale non
+dice se ha lasciato il mondo come l'ha trovato.
+
 **Un numero scritto a mano invecchia, un numero calcolato no**
 Questa regola nasce da un difetto vero del 3 ottobre 2026: `fonti-visive.md` §3.6
 dichiarava 99 ambienti con coordinate mentre il file ne aveva 100, 69 sagme OSM

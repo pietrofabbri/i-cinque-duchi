@@ -160,7 +160,7 @@ def main(numera=False):
     att = json.load(open(ATTEST, encoding="utf-8"))
     etichette_dichiarate = set(att.get("_etichette", {})) | {"mummia"}
 
-    difetti = []
+    difetti, note_cartelle = [], []
 
     # Gli sprite che gli ambienti dichiarano. Senza questo elenco il controllo 2
     # non avrebbe niente da guardare e passerebbe qualunque cosa, e un
@@ -198,8 +198,28 @@ def main(numera=False):
                            % (nome, rel, mis[0], mis[1], LATO, ALTEZZA))
 
     # 2. niente file in out/ che il catalogo non cita e gli ambienti non dichiarano
+    #
+    # **Le cartelle non sono file dimenticati.** `out/` contiene anche
+    # `out/ambienti/`, che e' la cartella dei disegni generati e ha il suo
+    # verificatore (`verifica_disegni.py`, D1-D3). Senza questa distinzione il
+    # controllo accusa un file che esiste perche' qualcuno ha lavorato bene, ed
+    # e' il tipo di difetto che alla lunga insegna a non aggiungere niente.
+    # La cartella e' comunque **dichiarata** qui, non ignorata in silenzio.
+    SOTTOCARTELLE = {"ambienti": "sorgenti/art/out/ambienti/indice.json, "
+                                  "sorvegliato da verifica_disegni.py (D1-D3)"}
     if os.path.isdir(OUT):
         for nome_file in sorted(os.listdir(OUT)):
+            percorso = os.path.join(OUT, nome_file)
+            if os.path.isdir(percorso):
+                if nome_file in SOTTOCARTELLE:
+                    note_cartelle.append(
+                        "%s/ (%s)" % (nome_file, SOTTOCARTELLE[nome_file]))
+                else:
+                    difetti.append("2 %s/ e' una cartella in out/ e nessuno la "
+                                   "dichiara: se e' un posto dove stanno cose "
+                                   "nuove, va nel catalogo delle cartelle note"
+                                   % nome_file)
+                continue
             if nome_file.endswith(".img"):
                 continue
             if nome_file in citati or nome_file in sprite:
@@ -375,6 +395,8 @@ def main(numera=False):
         for k in sorted(per_esito):
             print("  %-14s: %d" % (k, per_esito[k]))
         print("tappe coperte    : %d su %d" % (len(set(visti)), len(attesi)))
+        print("cartelle in out/: %s"
+              % (", ".join(note_cartelle) or "nessuna dichiarata"))
         print("file in out/     : %d" % len([f for f in os.listdir(OUT)
                                             if f.endswith(".png")]))
         print("  di cui sprite   : %d (dichiarati da %s)"

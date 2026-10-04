@@ -172,7 +172,7 @@
    "5-18",
    "5-22"
   ],
-  "con_sagome": 68,
+  "con_sagome": 134,
   "per_tipo": {
    "edificio": 32,
    "paesaggio": 7,
@@ -228,14 +228,18 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 1-1",
+     "n": 19,
+     "con_altezza": 15,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 4
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Cattedrale di San Giorgio Martire",
+     "Palazzo Arcivescovile"
+    ],
     "stato": "costruito",
     "costruito_in": "videogioco-5-duchi-tappa-1-01.md 3",
     "paleta": [
@@ -414,7 +418,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_nessun_codice_li_produce"
    ],
    "pin_da_disegnare": {
@@ -453,14 +456,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 1-2",
+     "n": 40,
+     "con_altezza": 34,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 6
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Cattedrale di San Giorgio Martire",
+     "Ex Chiesa di San Romano",
+     "Loggia dei Merciai",
+     "Palazzo Arcivescovile",
+     "Palazzo della Ragione",
+     "Torre dei Ribelli",
+     "Torre dell'Orologio"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -477,7 +489,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -516,14 +527,22 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 1-3",
+     "n": 38,
+     "con_altezza": 32,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 6
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Cattedrale di San Giorgio Martire",
+     "Loggia dei Merciai",
+     "Palazzo della Ragione",
+     "Torre dei Ribelli",
+     "Torre dell'Orologio",
+     "Torre della Vittoria"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -540,7 +559,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -579,14 +597,21 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 1-4",
+     "n": 28,
+     "con_altezza": 7,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 21
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Ex Chiesa di San Romano",
+     "Loggia dei Merciai",
+     "Palazzo della Ragione",
+     "Teatro Nuovo",
+     "Torre dei Ribelli"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -603,7 +628,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -642,14 +666,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 1-5",
+     "n": 32,
      "con_altezza": 0,
-     "da_piani": 0,
-     "senza_altezza": 0
+     "da_piani": 1,
+     "senza_altezza": 31
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Ex Chiesa di San Michele"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -666,7 +693,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -705,10 +731,11 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 1-6",
+     "n": 23,
      "con_altezza": 0,
-     "da_piani": 0,
-     "senza_altezza": 0
+     "da_piani": 1,
+     "senza_altezza": 22
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
@@ -729,7 +756,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -768,14 +794,19 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 1-7",
+     "n": 9,
+     "con_altezza": 5,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 4
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Palazzo Arcivescovile",
+     "Scalone d'Onore",
+     "Torre della Vittoria"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -792,7 +823,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -831,14 +861,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 1-8",
+     "n": 29,
+     "con_altezza": 27,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 2
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Castello Estense",
+     "Palazzo della Borsa",
+     "Palazzo della Camera di Commercio",
+     "Torre dei Leoni",
+     "Torre di Santa Caterina",
+     "muro",
+     "passaggio"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -855,7 +894,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -894,14 +932,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 1-9",
+     "n": 36,
+     "con_altezza": 20,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 16
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Chiesa di San Carlo",
+     "Palazzo Borsari",
+     "Palazzo Sacrati Muzzarelli Crema",
+     "Palazzo delle Assicurazioni Generali",
+     "Teatro Comunale di Ferrara",
+     "Torre Marchesana",
+     "Torre dei Leoni"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -918,7 +965,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -957,10 +1003,11 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 1-10",
+     "n": 2,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 2
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
@@ -981,7 +1028,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -1020,14 +1067,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 1-11",
+     "n": 4,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 4
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Casa Romei"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -1044,7 +1094,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -1083,14 +1133,19 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 1-12",
+     "n": 21,
+     "con_altezza": 4,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 17
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Basilica di San Francesco",
+     "Casa Romei",
+     "Chiesa di San Girolamo"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -1107,7 +1162,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -1146,10 +1200,11 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 1-13",
+     "n": 4,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 4
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
@@ -1170,7 +1225,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -1209,10 +1264,11 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 1-14",
+     "n": 8,
+     "con_altezza": 5,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 3
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
@@ -1233,7 +1289,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -1272,10 +1327,11 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 1-15",
+     "n": 5,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 5
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
@@ -1296,7 +1352,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -1335,10 +1391,11 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 1-16",
+     "n": 1,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 1
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
@@ -1359,7 +1416,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -1398,14 +1455,19 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 1-17",
+     "n": 20,
+     "con_altezza": 1,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 19
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Chiesa di Santa Chiara delle Cappuccine",
+     "Palazzina di Marfisa D'Este",
+     "Palazzo Giglioli"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -1422,7 +1484,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -1461,10 +1522,11 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 1-18",
+     "n": 3,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 3
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
@@ -1485,7 +1547,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -1524,14 +1586,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 1-19",
+     "n": 7,
+     "con_altezza": 5,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 2
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Monumento a Ludovico Ariosto"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -1548,7 +1613,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -1587,14 +1651,19 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 1-20",
+     "n": 7,
+     "con_altezza": 5,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 2
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Palazzo Cavalieri di Malta",
+     "Palazzo Massari",
+     "Palazzo Strozzi Bevilacqua"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -1611,7 +1680,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -1650,14 +1718,21 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 1-21",
+     "n": 9,
+     "con_altezza": 5,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 4
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Palazzo Bevilacqua",
+     "Palazzo Prosperi-Sacrati",
+     "Palazzo Scola Camerini",
+     "Palazzo Turchi - Di Bagno",
+     "Palazzo dei Diamanti"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -1674,7 +1749,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -1713,14 +1787,20 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 1-22",
+     "n": 7,
+     "con_altezza": 3,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 4
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Palazzo Bevilacqua",
+     "Palazzo Scola Camerini",
+     "Palazzo Turchi - Di Bagno",
+     "Palazzo dei Diamanti"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -1737,7 +1817,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -1776,14 +1855,22 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 1-23",
+     "n": 10,
+     "con_altezza": 4,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 6
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Palazzo Bevilacqua",
+     "Palazzo Scola Camerini",
+     "Palazzo Turchi - Di Bagno",
+     "Palazzo dei Diamanti",
+     "Ricovero attrezzi e vivaio",
+     "Vivaio all’aperto e vivaio bonsai"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -1800,7 +1887,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -1839,14 +1925,19 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 1-24",
+     "n": 7,
+     "con_altezza": 2,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 5
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Palazzo Scola Camerini",
+     "Palazzo Turchi - Di Bagno",
+     "Palazzo dei Diamanti"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -1863,7 +1954,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -1902,10 +1992,11 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 1-25",
+     "n": 22,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 22
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
@@ -1926,7 +2017,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -1965,9 +2056,10 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 1-26",
+     "n": 4,
      "con_altezza": 0,
-     "da_piani": 0,
+     "da_piani": 4,
      "senza_altezza": 0
     },
     "fondo": "dati/ferrara_fondo.json",
@@ -1989,7 +2081,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -2028,14 +2119,19 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 1-27",
+     "n": 22,
+     "con_altezza": 4,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 18
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Casa dell'Ortolano della Certosa",
+     "Tempio di San Cristoforo alla Certosa",
+     "Tomba di Giorgio Cini"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -2061,7 +2157,6 @@
    "vuoti": [
     "orientamento_non_dichiarato",
     "senza_coordinate",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -2100,14 +2195,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 1-28",
+     "n": 11,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 11
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Associazione \"Nuova Terraviva\""
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -2124,7 +2222,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -2163,14 +2261,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 1-29",
+     "n": 13,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 13
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Tomba di Giorgio Cini"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -2187,7 +2288,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -2226,14 +2327,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 1-30",
+     "n": 6,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 6
     },
     "fondo": "dati/ferrara_fondo.json",
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Tomba di Giorgio Cini"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -2259,7 +2363,7 @@
    "vuoti": [
     "orientamento_non_dichiarato",
     "senza_coordinate",
-    "senza_sagome_osm",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -2298,14 +2402,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 2-1",
+     "n": 17,
      "con_altezza": 0,
-     "da_piani": 0,
-     "senza_altezza": 0
+     "da_piani": 11,
+     "senza_altezza": 6
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Palais Campofranco"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -2331,7 +2438,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -2378,24 +2484,18 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
+     "chiave": "livello 2-2",
+     "n": 11,
      "con_altezza": 0,
-     "da_piani": 1,
-     "senza_altezza": 139
+     "da_piani": 0,
+     "senza_altezza": 11
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Centro per l'Impiego",
      "Ex Centro FIAT",
-     "Ex plesso scolastico \"Gravina\"",
-     "Ingrosso de Siena",
-     "Palazzo Foti",
-     "Santa Maria",
-     "Santissimo Salvatore",
-     "Superette",
-     "Terminal Autolinee Romano",
-     "Villa Manetta"
+     "Il Fornaio",
+     "Superette"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -2413,6 +2513,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -2451,14 +2552,27 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
-     "da_piani": 0,
-     "senza_altezza": 0
+     "chiave": "livello 2-3",
+     "n": 27,
+     "con_altezza": 20,
+     "da_piani": 1,
+     "senza_altezza": 6
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Museo Centrale del Risorgimento",
+     "Palazzetto Altemps",
+     "Palazzo Clementino",
+     "Palazzo Nuovo",
+     "Palazzo Senatorio",
+     "Palazzo dei Conservatori",
+     "Sala della Protomoteca",
+     "Santa Maria in Aracoeli",
+     "Torre della Patarina",
+     "Torre di Niccolò V",
+     "Torri di Bonifacio IX"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -2484,7 +2598,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -2523,6 +2636,7 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
+     "chiave": "luogo Squillace, monastero di Vivarium",
      "n": 0,
      "con_altezza": 0,
      "da_piani": 0,
@@ -2603,26 +2717,27 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 12,
-     "da_piani": 10,
-     "senza_altezza": 118
+     "chiave": "livello 2-5",
+     "n": 22,
+     "con_altezza": 11,
+     "da_piani": 1,
+     "senza_altezza": 10
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Altare della Patria",
-     "Ara di Saturno",
-     "Arco di Settimio Severo",
-     "Base di Costanzo II",
-     "Carcere Mamertino",
-     "Casa Professa",
-     "Casa Tarpea",
-     "Casina dei Pierleoni",
-     "Chiesa di San Giuseppe dei Falegnami al Foro Romano",
-     "Chiesa di San Nicola in Carcere",
-     "Chiesa di Santa Maria Annunziata",
-     "Chiesa di Sant’Omobono"
+     "Esedra di Marco Aurelio",
+     "Museo Centrale del Risorgimento",
+     "Palazzetto Altemps",
+     "Palazzo Caffarelli",
+     "Palazzo Clementino",
+     "Palazzo Nuovo",
+     "Palazzo Senatorio",
+     "Palazzo dei Conservatori",
+     "Sala della Protomoteca",
+     "Santa Maria in Aracoeli",
+     "Terrazza panoramica",
+     "Torre della Patarina"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -2678,6 +2793,7 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
+     "chiave": "luogo Elea (Velia)",
      "n": 0,
      "con_altezza": 0,
      "da_piani": 0,
@@ -2758,10 +2874,11 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 3,
+     "chiave": "livello 2-7",
+     "n": 1,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 3
+     "senza_altezza": 1
     },
     "fondo": null,
     "orientamento": null,
@@ -2831,26 +2948,21 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 110,
-     "con_altezza": 10,
-     "da_piani": 57,
-     "senza_altezza": 43
+     "chiave": "livello 2-8",
+     "n": 20,
+     "con_altezza": 6,
+     "da_piani": 10,
+     "senza_altezza": 4
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Casa degli Omenoni",
-     "Casa dei Panigarola",
-     "Chiesa di San Fedele",
-     "Chiesa di San Giuseppe",
-     "Chiesa di San Raffaele",
+     "Casino Ricordi",
      "Galleria Vittorio Emanuele Secondo",
-     "La Stampa",
-     "Palazzo Besana",
-     "Palazzo Bolchini",
-     "Palazzo Brentani Greppi",
-     "Palazzo Centro Congressi Cariplo",
-     "Palazzo Dario Biandrà"
+     "Palazzo Beltrami",
+     "Palazzo Marino",
+     "Palazzo della Banca Commerciale Italiana",
+     "Teatro alla Scala"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -2906,14 +3018,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 2-9",
+     "n": 3,
+     "con_altezza": 2,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 1
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Santi Cosma e Damiano"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -2939,7 +3054,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -2978,10 +3092,11 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 2-10",
+     "n": 2,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
@@ -3011,7 +3126,7 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -3050,6 +3165,7 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
+     "chiave": "luogo Elea (Velia)",
      "n": 0,
      "con_altezza": 0,
      "da_piani": 0,
@@ -3122,14 +3238,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 2-12",
+     "n": 34,
+     "con_altezza": 31,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 3
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Castello Estense",
+     "Palazzo della Borsa",
+     "Palazzo della Camera di Commercio",
+     "Torre dei Leoni",
+     "Torre di Santa Caterina",
+     "muro",
+     "passaggio"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -3155,7 +3280,6 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -3202,26 +3326,27 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 12,
-     "da_piani": 10,
-     "senza_altezza": 118
+     "chiave": "livello 2-13",
+     "n": 22,
+     "con_altezza": 11,
+     "da_piani": 1,
+     "senza_altezza": 10
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Altare della Patria",
-     "Ara di Saturno",
-     "Arco di Settimio Severo",
-     "Base di Costanzo II",
-     "Carcere Mamertino",
-     "Casa Professa",
-     "Casa Tarpea",
-     "Casina dei Pierleoni",
-     "Chiesa di San Giuseppe dei Falegnami al Foro Romano",
-     "Chiesa di San Nicola in Carcere",
-     "Chiesa di Santa Maria Annunziata",
-     "Chiesa di Sant’Omobono"
+     "Esedra di Marco Aurelio",
+     "Museo Centrale del Risorgimento",
+     "Palazzetto Altemps",
+     "Palazzo Caffarelli",
+     "Palazzo Clementino",
+     "Palazzo Nuovo",
+     "Palazzo Senatorio",
+     "Palazzo dei Conservatori",
+     "Sala della Protomoteca",
+     "Santa Maria in Aracoeli",
+     "Terrazza panoramica",
+     "Torre della Patarina"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -3285,26 +3410,19 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 1,
-     "da_piani": 80,
-     "senza_altezza": 59
+     "chiave": "livello 2-14",
+     "n": 28,
+     "con_altezza": 0,
+     "da_piani": 18,
+     "senza_altezza": 10
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Basilica di Santa Trinita",
-     "Battistero di San Giovanni",
-     "Biblioteca di Palagio di parte Guelfa",
-     "Casa Ghiberti",
-     "Cattedrale di Santa Maria del Fiore",
-     "Chiesa dei Santi Michele e Gaetano",
      "Chiesa di Orsanmichele",
-     "Chiesa di Santa Maria Maggiore",
-     "Ex Tribunale della Mercanzia",
-     "Loggia dei Lanzi",
-     "Mercato del Porcellino",
-     "Palazzetto Tornabuoni"
+     "Palazzo dei Catellini",
+     "Palazzo dell'Arte della Lana",
+     "Palazzo delle Poste"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -3368,26 +3486,20 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
+     "chiave": "livello 2-15",
+     "n": 23,
      "con_altezza": 0,
-     "da_piani": 25,
-     "senza_altezza": 115
+     "da_piani": 4,
+     "senza_altezza": 19
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "38 Aira Hotels",
      "Casa Di Padri Crociferi",
-     "Chiesa del Santissimo Salvatore",
-     "Chiesa di San Giuseppe dei Teatini",
-     "Chiesa di San Matteo al Cassaro",
-     "Chiesa di San Nicolò da Tolentino (Palermo)",
-     "Chiesa di Sant'Antonio abate",
-     "Chiesa di Santa Caterina",
-     "Chiesa di Santa Ninfa dei Crociferi",
-     "Museo d'Arte Contemporanea della Sicilia",
      "Palazzo Arcuri",
-     "Palazzo Costantino di Napoli"
+     "Palazzo Costantino di Napoli",
+     "Palazzo Guggino",
+     "Palazzo Serradifalco Buonocore"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -3451,16 +3563,15 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
+     "chiave": "livello 2-16",
+     "n": 16,
      "con_altezza": 0,
-     "da_piani": 50,
-     "senza_altezza": 90
+     "da_piani": 3,
+     "senza_altezza": 13
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Liceo Archita",
-     "Parrocchia Santissimo Crocifisso",
      "Yves Rocher"
     ],
     "stato": "da_costruire",
@@ -3525,26 +3636,27 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 12,
-     "da_piani": 10,
-     "senza_altezza": 118
+     "chiave": "livello 2-17",
+     "n": 22,
+     "con_altezza": 11,
+     "da_piani": 1,
+     "senza_altezza": 10
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Altare della Patria",
-     "Ara di Saturno",
-     "Arco di Settimio Severo",
-     "Base di Costanzo II",
-     "Carcere Mamertino",
-     "Casa Professa",
-     "Casa Tarpea",
-     "Casina dei Pierleoni",
-     "Chiesa di San Giuseppe dei Falegnami al Foro Romano",
-     "Chiesa di San Nicola in Carcere",
-     "Chiesa di Santa Maria Annunziata",
-     "Chiesa di Sant’Omobono"
+     "Esedra di Marco Aurelio",
+     "Museo Centrale del Risorgimento",
+     "Palazzetto Altemps",
+     "Palazzo Caffarelli",
+     "Palazzo Clementino",
+     "Palazzo Nuovo",
+     "Palazzo Senatorio",
+     "Palazzo dei Conservatori",
+     "Sala della Protomoteca",
+     "Santa Maria in Aracoeli",
+     "Terrazza panoramica",
+     "Torre della Patarina"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -3608,26 +3720,27 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 12,
-     "da_piani": 10,
-     "senza_altezza": 118
+     "chiave": "livello 2-18",
+     "n": 22,
+     "con_altezza": 11,
+     "da_piani": 1,
+     "senza_altezza": 10
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Altare della Patria",
-     "Ara di Saturno",
-     "Arco di Settimio Severo",
-     "Base di Costanzo II",
-     "Carcere Mamertino",
-     "Casa Professa",
-     "Casa Tarpea",
-     "Casina dei Pierleoni",
-     "Chiesa di San Giuseppe dei Falegnami al Foro Romano",
-     "Chiesa di San Nicola in Carcere",
-     "Chiesa di Santa Maria Annunziata",
-     "Chiesa di Sant’Omobono"
+     "Esedra di Marco Aurelio",
+     "Museo Centrale del Risorgimento",
+     "Palazzetto Altemps",
+     "Palazzo Caffarelli",
+     "Palazzo Clementino",
+     "Palazzo Nuovo",
+     "Palazzo Senatorio",
+     "Palazzo dei Conservatori",
+     "Sala della Protomoteca",
+     "Santa Maria in Aracoeli",
+     "Terrazza panoramica",
+     "Torre della Patarina"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -3691,22 +3804,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 110,
+     "chiave": "livello 2-19",
+     "n": 14,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 110
+     "senza_altezza": 14
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Comando Carabinieri di Chiusi",
-     "Concattedrale di San Secondiano",
-     "Ex Ospedale di Chiusi",
-     "Municipio di Chiusi",
      "Museo Nazionale Etrusco di Chiusi",
-     "Porta Lavina",
-     "Santa Maria Novella detta Della Morte",
-     "Teatro Mascagni"
+     "Santa Maria Novella detta Della Morte"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -3771,26 +3879,27 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 12,
-     "da_piani": 10,
-     "senza_altezza": 118
+     "chiave": "livello 2-20",
+     "n": 22,
+     "con_altezza": 11,
+     "da_piani": 1,
+     "senza_altezza": 10
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Altare della Patria",
-     "Ara di Saturno",
-     "Arco di Settimio Severo",
-     "Base di Costanzo II",
-     "Carcere Mamertino",
-     "Casa Professa",
-     "Casa Tarpea",
-     "Casina dei Pierleoni",
-     "Chiesa di San Giuseppe dei Falegnami al Foro Romano",
-     "Chiesa di San Nicola in Carcere",
-     "Chiesa di Santa Maria Annunziata",
-     "Chiesa di Sant’Omobono"
+     "Esedra di Marco Aurelio",
+     "Museo Centrale del Risorgimento",
+     "Palazzetto Altemps",
+     "Palazzo Caffarelli",
+     "Palazzo Clementino",
+     "Palazzo Nuovo",
+     "Palazzo Senatorio",
+     "Palazzo dei Conservatori",
+     "Sala della Protomoteca",
+     "Santa Maria in Aracoeli",
+     "Terrazza panoramica",
+     "Torre della Patarina"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -3846,14 +3955,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 2-21",
+     "n": 34,
+     "con_altezza": 31,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 3
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Castello Estense",
+     "Palazzo della Borsa",
+     "Palazzo della Camera di Commercio",
+     "Torre dei Leoni",
+     "Torre di Santa Caterina",
+     "muro",
+     "passaggio"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -3879,7 +3997,6 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -3926,26 +4043,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
+     "chiave": "livello 2-22",
+     "n": 32,
      "con_altezza": 0,
-     "da_piani": 35,
-     "senza_altezza": 105
+     "da_piani": 19,
+     "senza_altezza": 13
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Ca' Bernardo",
-     "Ca' Corner della Regina",
-     "Ca' Favretto",
-     "Ca' Levi Morenos",
-     "Ca' Pesaro",
-     "Ca' Tron",
-     "Ca' d'Oro",
-     "Chiesa di San Felice",
-     "Chiesa di San Giovanni Elemosinario",
-     "Chiesa di San Silvestro",
-     "Chiesa di San Stae",
-     "Fabbriche Nuove"
+     "Palazzo Bragadin",
+     "San Cassiano"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -4001,14 +4109,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 2-23",
+     "n": 3,
+     "con_altezza": 2,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 1
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Santi Cosma e Damiano"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -4034,7 +4145,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -4081,26 +4191,19 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 1,
-     "da_piani": 80,
-     "senza_altezza": 59
+     "chiave": "livello 2-24",
+     "n": 28,
+     "con_altezza": 0,
+     "da_piani": 18,
+     "senza_altezza": 10
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Basilica di Santa Trinita",
-     "Battistero di San Giovanni",
-     "Biblioteca di Palagio di parte Guelfa",
-     "Casa Ghiberti",
-     "Cattedrale di Santa Maria del Fiore",
-     "Chiesa dei Santi Michele e Gaetano",
      "Chiesa di Orsanmichele",
-     "Chiesa di Santa Maria Maggiore",
-     "Ex Tribunale della Mercanzia",
-     "Loggia dei Lanzi",
-     "Mercato del Porcellino",
-     "Palazzetto Tornabuoni"
+     "Palazzo dei Catellini",
+     "Palazzo dell'Arte della Lana",
+     "Palazzo delle Poste"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -4156,10 +4259,11 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 2-25",
+     "n": 27,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 27
     },
     "fondo": null,
     "orientamento": null,
@@ -4189,7 +4293,7 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -4228,14 +4332,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 2-26",
+     "n": 29,
+     "con_altezza": 27,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Castello Estense",
+     "Palazzo della Borsa",
+     "Palazzo della Camera di Commercio",
+     "Torre dei Leoni",
+     "Torre di Santa Caterina",
+     "muro",
+     "passaggio"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -4261,7 +4374,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -4300,14 +4412,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 2-27",
+     "n": 34,
+     "con_altezza": 31,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 3
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Castello Estense",
+     "Palazzo della Borsa",
+     "Palazzo della Camera di Commercio",
+     "Torre dei Leoni",
+     "Torre di Santa Caterina",
+     "muro",
+     "passaggio"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -4333,7 +4454,6 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -4372,14 +4492,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 2-28",
+     "n": 29,
+     "con_altezza": 27,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Castello Estense",
+     "Palazzo della Borsa",
+     "Palazzo della Camera di Commercio",
+     "Torre dei Leoni",
+     "Torre di Santa Caterina",
+     "muro",
+     "passaggio"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -4405,7 +4534,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -4444,14 +4572,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 2-29",
+     "n": 34,
+     "con_altezza": 31,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 3
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Castello Estense",
+     "Palazzo della Borsa",
+     "Palazzo della Camera di Commercio",
+     "Torre dei Leoni",
+     "Torre di Santa Caterina",
+     "muro",
+     "passaggio"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -4477,7 +4614,6 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -4516,14 +4652,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 2-30",
+     "n": 29,
+     "con_altezza": 27,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Castello Estense",
+     "Palazzo della Borsa",
+     "Palazzo della Camera di Commercio",
+     "Torre dei Leoni",
+     "Torre di Santa Caterina",
+     "muro",
+     "passaggio"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -4549,7 +4694,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -4596,26 +4740,18 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 1,
-     "da_piani": 17,
-     "senza_altezza": 122
+     "chiave": "livello 3-1",
+     "n": 24,
+     "con_altezza": 0,
+     "da_piani": 1,
+     "senza_altezza": 23
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Arpa Piemonte",
-     "CAF CIA - Sede Provinciale",
-     "Casa del Clero",
-     "Chiesa di Santa Lucia",
-     "Chiesa di Santa Maria del Carmine",
-     "Chiesa di Santa Maria di Castello",
-     "Chiesa e Santuario di Nostra Signora di Loreto e Santa Rita",
-     "Collegio Santa Chiara",
-     "Convento dei padri domenicani",
-     "Ex Collegio dei Gesuiti - ora \"ATC\"",
-     "Ex scuderie della caserma Gambarina Vecchia",
-     "FABLAB Alessandria PORTO IDEE"
+     "Palazzo Civalieri di Masio",
+     "Palazzo Ferrari di Castelnuovo",
+     "Palazzo Guasco"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -4679,26 +4815,16 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 114,
-     "con_altezza": 1,
-     "da_piani": 31,
-     "senza_altezza": 82
+     "chiave": "livello 3-2",
+     "n": 13,
+     "con_altezza": 0,
+     "da_piani": 2,
+     "senza_altezza": 11
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Baszta Południowa",
-     "Baszta Wschodnia",
-     "Baszta Żeglarska",
-     "Bazylika Archikatedralna Wniebowzięcia Najświętszej Maryi Panny",
-     "Biblioteka",
-     "Brama Zachodnia",
-     "Brama południowa",
-     "Brama pólnocna",
-     "Hotel Kopernik",
-     "Kanonia pw. św. Stanisława Kostki - Dom Kopernika",
-     "Kaplica „Parakletos“ Kościoła Zielonoświątkowego",
-     "Kościół pw. Świętego Mikołaja"
+     "Hotel Kopernik"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -4762,26 +4888,27 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 12,
-     "da_piani": 10,
-     "senza_altezza": 118
+     "chiave": "livello 3-3",
+     "n": 22,
+     "con_altezza": 11,
+     "da_piani": 1,
+     "senza_altezza": 10
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Altare della Patria",
-     "Ara di Saturno",
-     "Arco di Settimio Severo",
-     "Base di Costanzo II",
-     "Carcere Mamertino",
-     "Casa Professa",
-     "Casa Tarpea",
-     "Casina dei Pierleoni",
-     "Chiesa di San Giuseppe dei Falegnami al Foro Romano",
-     "Chiesa di San Nicola in Carcere",
-     "Chiesa di Santa Maria Annunziata",
-     "Chiesa di Sant’Omobono"
+     "Esedra di Marco Aurelio",
+     "Museo Centrale del Risorgimento",
+     "Palazzetto Altemps",
+     "Palazzo Caffarelli",
+     "Palazzo Clementino",
+     "Palazzo Nuovo",
+     "Palazzo Senatorio",
+     "Palazzo dei Conservatori",
+     "Sala della Protomoteca",
+     "Santa Maria in Aracoeli",
+     "Terrazza panoramica",
+     "Torre della Patarina"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -4845,19 +4972,15 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
+     "chiave": "luogo Atene",
+     "n": 0,
      "con_altezza": 0,
-     "da_piani": 2,
-     "senza_altezza": 138
+     "da_piani": 0,
+     "senza_altezza": 0
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [
-     "Sunny",
-     "Ναός Μεταμορφώσεως",
-     "Σχολή Χορού \"Δόρα Στράτου\"",
-     "Χοροθέατρο Δόρας Στράτου"
-    ],
+    "nomi_edifici": [],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -4874,6 +4997,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
+    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -4920,19 +5044,15 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
+     "chiave": "luogo Atene",
+     "n": 0,
      "con_altezza": 0,
-     "da_piani": 2,
-     "senza_altezza": 138
+     "da_piani": 0,
+     "senza_altezza": 0
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [
-     "Sunny",
-     "Ναός Μεταμορφώσεως",
-     "Σχολή Χορού \"Δόρα Στράτου\"",
-     "Χοροθέατρο Δόρας Στράτου"
-    ],
+    "nomi_edifici": [],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -4949,6 +5069,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
+    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -4995,19 +5116,15 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
+     "chiave": "luogo Atene",
+     "n": 0,
      "con_altezza": 0,
-     "da_piani": 2,
-     "senza_altezza": 138
+     "da_piani": 0,
+     "senza_altezza": 0
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [
-     "Sunny",
-     "Ναός Μεταμορφώσεως",
-     "Σχολή Χορού \"Δόρα Στράτου\"",
-     "Χοροθέατρο Δόρας Στράτου"
-    ],
+    "nomi_edifici": [],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -5024,6 +5141,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
+    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -5070,26 +5188,22 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
+     "chiave": "livello 3-7",
+     "n": 25,
      "con_altezza": 0,
-     "da_piani": 4,
-     "senza_altezza": 136
+     "da_piani": 0,
+     "senza_altezza": 25
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
      "Basilica di San Francesco",
-     "Basilica di Sant'Apollinare Nuovo",
-     "Biblioteca Classense",
-     "Biblioteca di storia contemporanea Alfredo Oriani",
-     "Casa Fabri",
-     "Casa Guaccimanni",
-     "Casa Vignuzzi",
-     "Chiesa di San Romualdo",
-     "Chiesa di Santa Maria del Suffragio",
-     "Garage Mariani",
      "Istituto Paritario San Vincenzo de' Paoli",
-     "Liceo classico Dante Alighieri"
+     "Museo Dantesco",
+     "Palazzo Santacroce",
+     "Palazzo della Provincia",
+     "Quadrarco di Braccioforte",
+     "Tomba di Dante"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -5107,6 +5221,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -5153,16 +5268,16 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 5,
-     "con_altezza": 0,
+     "chiave": "livello 3-8",
+     "n": 14,
+     "con_altezza": 12,
      "da_piani": 0,
-     "senza_altezza": 5
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Castel del Monte",
-     "Infopoint"
+     "Castel del Monte"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -5180,7 +5295,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -5227,10 +5341,11 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 11,
+     "chiave": "livello 3-9",
+     "n": 1,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 11
+     "senza_altezza": 1
     },
     "fondo": null,
     "orientamento": null,
@@ -5290,14 +5405,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 3-10",
+     "n": 29,
+     "con_altezza": 27,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Castello Estense",
+     "Palazzo della Borsa",
+     "Palazzo della Camera di Commercio",
+     "Torre dei Leoni",
+     "Torre di Santa Caterina",
+     "muro",
+     "passaggio"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -5323,7 +5447,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -5362,14 +5485,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 3-11",
+     "n": 29,
+     "con_altezza": 27,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Castello Estense",
+     "Palazzo della Borsa",
+     "Palazzo della Camera di Commercio",
+     "Torre dei Leoni",
+     "Torre di Santa Caterina",
+     "muro",
+     "passaggio"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -5395,7 +5527,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -5442,26 +5573,24 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 1,
-     "da_piani": 59,
-     "senza_altezza": 80
+     "chiave": "livello 3-12",
+     "n": 38,
+     "con_altezza": 5,
+     "da_piani": 32,
+     "senza_altezza": 1
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "AOK",
-     "Aachener Dom",
      "Aachener Rathaus",
-     "Alexander-von-Humboldt-Haus",
-     "Annahalle",
-     "Aquis Grana",
-     "Aula Carolina",
-     "B&B Hotel Aachen-City",
-     "Bezirksvertretung Aachen-Mitte",
-     "Bischöfliches Generalvikariat",
-     "Büchel-Museum Rote Burg",
-     "Centre Charlemagne"
+     "Granusturm",
+     "Haus Brüssel",
+     "Haus Löwenstein",
+     "Hexenhof",
+     "Hotel 3 Könige",
+     "Kiosk am Markt",
+     "Postwagen",
+     "Sport Mulack"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -5525,26 +5654,21 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 110,
-     "con_altezza": 10,
-     "da_piani": 57,
-     "senza_altezza": 43
+     "chiave": "livello 3-13",
+     "n": 20,
+     "con_altezza": 6,
+     "da_piani": 10,
+     "senza_altezza": 4
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Casa degli Omenoni",
-     "Casa dei Panigarola",
-     "Chiesa di San Fedele",
-     "Chiesa di San Giuseppe",
-     "Chiesa di San Raffaele",
+     "Casino Ricordi",
      "Galleria Vittorio Emanuele Secondo",
-     "La Stampa",
-     "Palazzo Besana",
-     "Palazzo Bolchini",
-     "Palazzo Brentani Greppi",
-     "Palazzo Centro Congressi Cariplo",
-     "Palazzo Dario Biandrà"
+     "Palazzo Beltrami",
+     "Palazzo Marino",
+     "Palazzo della Banca Commerciale Italiana",
+     "Teatro alla Scala"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -5608,26 +5732,19 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 1,
-     "da_piani": 80,
-     "senza_altezza": 59
+     "chiave": "livello 3-14",
+     "n": 28,
+     "con_altezza": 0,
+     "da_piani": 18,
+     "senza_altezza": 10
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Basilica di Santa Trinita",
-     "Battistero di San Giovanni",
-     "Biblioteca di Palagio di parte Guelfa",
-     "Casa Ghiberti",
-     "Cattedrale di Santa Maria del Fiore",
-     "Chiesa dei Santi Michele e Gaetano",
      "Chiesa di Orsanmichele",
-     "Chiesa di Santa Maria Maggiore",
-     "Ex Tribunale della Mercanzia",
-     "Loggia dei Lanzi",
-     "Mercato del Porcellino",
-     "Palazzetto Tornabuoni"
+     "Palazzo dei Catellini",
+     "Palazzo dell'Arte della Lana",
+     "Palazzo delle Poste"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -5691,26 +5808,25 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 28,
+     "chiave": "livello 3-15",
+     "n": 39,
+     "con_altezza": 33,
      "da_piani": 0,
-     "senza_altezza": 112
+     "senza_altezza": 6
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
+     "Birreria \"Giori\"",
      "Castello Estense",
-     "Cattedrale di San Giorgio Martire",
-     "Chiesa di San Carlo",
-     "Chiesa di San Domenico",
-     "Chiesa di San Michele del Gesù",
-     "Chiesa di Santa Maria dei Teatini",
-     "Chiesa di Santo Stefano",
-     "Chiesa parrocchiale Santo Stefano",
-     "Complesso Boldini",
-     "Ex Caserma del Littorio",
-     "Ex Chiesa di San Michele",
-     "Ex Chiesa di San Romano"
+     "Chiesa di San Giuliano",
+     "Palazzo Arcivescovile",
+     "Palazzo Municipale",
+     "Torre Marchesana",
+     "Torre dei Leoni",
+     "Torre di San Paolo",
+     "Via Coperta",
+     "passaggio"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -5774,26 +5890,18 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 6,
-     "da_piani": 94,
-     "senza_altezza": 40
+     "chiave": "livello 3-16",
+     "n": 35,
+     "con_altezza": 14,
+     "da_piani": 20,
+     "senza_altezza": 1
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Alte Universität",
-     "Alten- und Pflegeheim Bruder-Konrad-Stift",
-     "Alter Dom Sankt Johannis",
-     "Augustinerkirche",
-     "Bischöfliches Ordinariat",
-     "Brückenturm am Rathaus",
-     "C&A",
-     "Chorhaus am Dom",
      "Dom-Café",
-     "Erbacher Hof",
-     "Frankfurter Hof",
-     "Galeria"
+     "Dominformation",
+     "Gotthardkapelle"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -5849,14 +5957,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 3-17",
+     "n": 29,
+     "con_altezza": 27,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Castello Estense",
+     "Palazzo della Borsa",
+     "Palazzo della Camera di Commercio",
+     "Torre dei Leoni",
+     "Torre di Santa Caterina",
+     "muro",
+     "passaggio"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -5882,7 +5999,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -5929,26 +6045,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
+     "chiave": "livello 3-18",
+     "n": 30,
      "con_altezza": 0,
-     "da_piani": 65,
-     "senza_altezza": 75
+     "da_piani": 13,
+     "senza_altezza": 17
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Antiguo Hospital Benéfico de Nuestra Señora de la Misericordia",
-     "Antiguo Hospital de Santa María la Rica",
      "Ayuntamiento de Alcalá de Henares",
-     "Biblioteca pública Cardenal Cisneros - Archivo Municipal",
-     "Capilla de San Ildefonso",
      "Capilla del Oidor",
-     "Colegio Convento Trinitarios Descalzos",
-     "Colegio Mayor de San Ildefonso",
      "Colegio Menor de San Clemente Mártir",
-     "Colegio Menor de San José de Caracciolos (de la Facultad de Filosofía y Letras)",
-     "Colegio de los Irlandeses",
-     "Concejalía de Hacienda"
+     "Corral de Comedias de Alcalá",
+     "Delegación Comarcal de Agricultura",
+     "Quiosco de la Música",
+     "Restaurante El Casino",
+     "Torre de Santa María"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -6012,27 +6125,15 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 1,
-     "da_piani": 90,
-     "senza_altezza": 49
+     "chiave": "livello 3-19",
+     "n": 30,
+     "con_altezza": 0,
+     "da_piani": 26,
+     "senza_altezza": 4
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [
-     "Alexander",
-     "Evangelisch-methodistische Kirche Kleinbasel",
-     "Halle 1",
-     "Halle 2",
-     "Halle 3",
-     "Messe Basel",
-     "Musical Theater",
-     "WRO-1047",
-     "WRO-1055",
-     "WRO-1056",
-     "WRO-1057",
-     "WRO-1058"
-    ],
+    "nomi_edifici": [],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -6095,26 +6196,19 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 75,
-     "con_altezza": 20,
-     "da_piani": 2,
-     "senza_altezza": 53
+     "chiave": "livello 3-20",
+     "n": 11,
+     "con_altezza": 0,
+     "da_piani": 1,
+     "senza_altezza": 10
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Centro Polifunzionale G. d'Avack",
      "Chemistry Interdisciplinary Project",
-     "Dipartimento di Scienze Chimiche",
-     "Edificio Venanzina Pennesi",
-     "Museo di Scienze Naturali dell'Università",
      "Polo Informatica \"Carla Lodovici\" - Edificio A",
-     "Polo Informatica \"Carla Lodovici\" - Edificio B",
      "Polo di Biologia",
-     "Polo di Fisica",
-     "Polo di Geologia",
-     "Polo di Matematica \"Giovanni Giachetta\"",
-     "Polo di Medicina Sperimentale e Sanità Pubblica \"Stefania Scuri\""
+     "Polo di Matematica \"Giovanni Giachetta\""
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -6178,26 +6272,24 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 1,
-     "da_piani": 59,
-     "senza_altezza": 80
+     "chiave": "livello 3-21",
+     "n": 38,
+     "con_altezza": 5,
+     "da_piani": 32,
+     "senza_altezza": 1
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "AOK",
-     "Aachener Dom",
      "Aachener Rathaus",
-     "Alexander-von-Humboldt-Haus",
-     "Annahalle",
-     "Aquis Grana",
-     "Aula Carolina",
-     "B&B Hotel Aachen-City",
-     "Bezirksvertretung Aachen-Mitte",
-     "Bischöfliches Generalvikariat",
-     "Büchel-Museum Rote Burg",
-     "Centre Charlemagne"
+     "Granusturm",
+     "Haus Brüssel",
+     "Haus Löwenstein",
+     "Hexenhof",
+     "Hotel 3 Könige",
+     "Kiosk am Markt",
+     "Postwagen",
+     "Sport Mulack"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -6261,18 +6353,18 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
+     "chiave": "livello 3-22",
+     "n": 20,
      "con_altezza": 0,
-     "da_piani": 0,
-     "senza_altezza": 140
+     "da_piani": 1,
+     "senza_altezza": 19
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
      "Banca dei Paschi di Siena",
-     "Casa natale di Giovanni Boccaccio",
-     "Certaldo",
-     "Chiesa di San Tommaso"
+     "Chiesa di San Tommaso",
+     "Edicola Giglio d'Oro"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -6290,7 +6382,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -6337,24 +6428,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 1,
-     "da_piani": 96,
-     "senza_altezza": 43
+     "chiave": "livello 3-23",
+     "n": 27,
+     "con_altezza": 5,
+     "da_piani": 18,
+     "senza_altezza": 4
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Auberge Maubuisson",
-     "D'win",
-     "Le BHV Marais",
-     "Mikros Image",
-     "Préfecture de Police",
-     "Tour Saint-Jacques",
-     "duO",
-     "Église Luthérienne des Billettes",
-     "Église Saint-Gervais",
-     "Église Saint-Merri"
+     "Hôtel de ville",
+     "Le BHV Marais"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -6418,14 +6502,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
-     "da_piani": 0,
-     "senza_altezza": 0
+     "chiave": "livello 3-24",
+     "n": 39,
+     "con_altezza": 22,
+     "da_piani": 14,
+     "senza_altezza": 3
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Frauenkirche"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -6442,7 +6529,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -6489,26 +6575,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
+     "chiave": "livello 3-25",
+     "n": 32,
      "con_altezza": 0,
-     "da_piani": 35,
-     "senza_altezza": 105
+     "da_piani": 19,
+     "senza_altezza": 13
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Ca' Bernardo",
-     "Ca' Corner della Regina",
-     "Ca' Favretto",
-     "Ca' Levi Morenos",
-     "Ca' Pesaro",
-     "Ca' Tron",
-     "Ca' d'Oro",
-     "Chiesa di San Felice",
-     "Chiesa di San Giovanni Elemosinario",
-     "Chiesa di San Silvestro",
-     "Chiesa di San Stae",
-     "Fabbriche Nuove"
+     "Palazzo Bragadin",
+     "San Cassiano"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -6572,26 +6649,21 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
+     "chiave": "livello 3-26",
+     "n": 38,
      "con_altezza": 0,
-     "da_piani": 80,
-     "senza_altezza": 60
+     "da_piani": 34,
+     "senza_altezza": 4
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
      "36 Broadway",
      "55 Broadway",
-     "62 Buckingham Gate",
-     "Artillery Mansions",
-     "Asticus Building",
-     "Award House",
-     "Blewcoat School",
-     "Buckingham Green",
-     "Caxton Hall",
-     "Caxton House",
-     "Change, Grow, Live",
-     "Christchurch House"
+     "Broadway Cafe",
+     "Falkland House",
+     "Intu Properties",
+     "The Feathers"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -6655,24 +6727,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 1,
-     "da_piani": 96,
-     "senza_altezza": 43
+     "chiave": "livello 3-27",
+     "n": 27,
+     "con_altezza": 5,
+     "da_piani": 18,
+     "senza_altezza": 4
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Auberge Maubuisson",
-     "D'win",
-     "Le BHV Marais",
-     "Mikros Image",
-     "Préfecture de Police",
-     "Tour Saint-Jacques",
-     "duO",
-     "Église Luthérienne des Billettes",
-     "Église Saint-Gervais",
-     "Église Saint-Merri"
+     "Hôtel de ville",
+     "Le BHV Marais"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -6736,14 +6801,18 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 3-28",
+     "n": 11,
      "con_altezza": 0,
-     "da_piani": 0,
-     "senza_altezza": 0
+     "da_piani": 4,
+     "senza_altezza": 7
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Anagrafe Centrale - Torino",
+     "Società Editrice Internazionale"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -6760,7 +6829,6 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -6799,14 +6867,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 3-29",
+     "n": 3,
+     "con_altezza": 2,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 1
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Santi Cosma e Damiano"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -6832,7 +6903,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -6879,26 +6949,16 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
+     "chiave": "livello 3-30",
+     "n": 18,
      "con_altezza": 0,
-     "da_piani": 4,
-     "senza_altezza": 136
+     "da_piani": 2,
+     "senza_altezza": 16
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Camera di Commercio di Mantova",
-     "Chiesa di Santa Maria della Carità",
-     "Cinema Teatro Ariston",
-     "Galleria Apollo",
-     "Municipio",
-     "Palazzo Gonzaga di Vescovato",
-     "Palazzo Guidi di Bagno",
-     "Palazzo Nievo",
-     "Palazzo Siliprandi",
-     "Palazzo dell'Agricoltura",
-     "Parcheggio Mazzini",
-     "Teatro Sociale"
+     "Palazzo dell'Agricoltura"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -6962,16 +7022,15 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 4,
+     "chiave": "livello 4-1",
+     "n": 2,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 4
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [
-     "زقورة أور"
-    ],
+    "nomi_edifici": [],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -7027,8 +7086,9 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 4-2",
+     "n": 2,
+     "con_altezza": 2,
      "da_piani": 0,
      "senza_altezza": 0
     },
@@ -7060,7 +7120,6 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -7107,10 +7166,11 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 1,
+     "chiave": "luogo Xianyang",
+     "n": 0,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 1
+     "senza_altezza": 0
     },
     "fondo": null,
     "orientamento": null,
@@ -7131,7 +7191,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "sole_sagome_senza_altezza",
+    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -7170,14 +7230,22 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 4-4",
+     "n": 12,
      "con_altezza": 0,
-     "da_piani": 0,
-     "senza_altezza": 0
+     "da_piani": 1,
+     "senza_altezza": 11
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Bubastite Portal",
+     "Imperial Cult Chapel",
+     "الصرح الأول",
+     "الصرح الثانى",
+     "معبد رمسيس الثالث",
+     "مقاصير ستي الثاني"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -7203,7 +7271,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -7250,19 +7317,15 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 32,
+     "chiave": "livello 4-5",
+     "n": 5,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 32
+     "senza_altezza": 5
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [
-     "Agra Fort",
-     "DDA sport complex,sector 11",
-     "Diwan-i-Aam",
-     "Hathi Pol"
-    ],
+    "nomi_edifici": [],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -7326,6 +7389,7 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
+     "chiave": "luogo Karakorum",
      "n": 0,
      "con_altezza": 0,
      "da_piani": 0,
@@ -7397,26 +7461,16 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 114,
-     "da_piani": 6,
-     "senza_altezza": 20
+     "chiave": "livello 4-7",
+     "n": 38,
+     "con_altezza": 35,
+     "da_piani": 1,
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Andreasstraße / Rosenquartier",
-     "Börse",
-     "Ernst-August-Carree",
-     "Galerie Luise",
-     "Georgspalast",
-     "Hannover Hauptbahnhof",
-     "KFC",
-     "Kröpcke-Center",
-     "Mehlstraße",
-     "Opernhaus",
-     "Rosenquartier",
-     "Seilwinderhaus"
+     "Kröpcke-Center"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -7480,25 +7534,16 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 34,
+     "chiave": "livello 4-8",
+     "n": 7,
      "con_altezza": 0,
-     "da_piani": 28,
-     "senza_altezza": 6
+     "da_piani": 6,
+     "senza_altezza": 1
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Blåsenhus",
-     "Campus1477",
-     "Geocentrum",
-     "Institutet för språk och folkminnen",
-     "Kunskapsgymnasiet Uppsala",
-     "Linneanum",
-     "Psykiatrins hus",
-     "Segerstedthuset",
-     "Skandionkliniken",
-     "Sveriges geologiska undersökning",
-     "Uppsala Arkivcentrum"
+     "Campus1477"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -7554,8 +7599,9 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 4-9",
+     "n": 2,
+     "con_altezza": 2,
      "da_piani": 0,
      "senza_altezza": 0
     },
@@ -7602,7 +7648,6 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -7641,14 +7686,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 4-10",
+     "n": 29,
+     "con_altezza": 27,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Castello Estense",
+     "Palazzo della Borsa",
+     "Palazzo della Camera di Commercio",
+     "Torre dei Leoni",
+     "Torre di Santa Caterina",
+     "muro",
+     "passaggio"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -7674,7 +7728,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -7721,17 +7774,15 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 39,
-     "con_altezza": 3,
-     "da_piani": 1,
-     "senza_altezza": 35
+     "chiave": "livello 4-11",
+     "n": 2,
+     "con_altezza": 0,
+     "da_piani": 0,
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "بناية المداد",
-     "قاعة الحفلات الموسيقية والمسرح",
-     "قاعة الفنانين التشكيليين",
      "نادي صوفر"
     ],
     "stato": "da_costruire",
@@ -7750,6 +7801,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -7796,17 +7848,15 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 3,
+     "chiave": "luogo Qufu",
+     "n": 0,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 3
+     "senza_altezza": 0
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [
-     "圣迹殿",
-     "角樓"
-    ],
+    "nomi_edifici": [],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -7823,7 +7873,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "sole_sagome_senza_altezza",
+    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -7870,26 +7920,18 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 1,
-     "da_piani": 17,
-     "senza_altezza": 122
+     "chiave": "livello 4-13",
+     "n": 24,
+     "con_altezza": 0,
+     "da_piani": 1,
+     "senza_altezza": 23
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Arpa Piemonte",
-     "CAF CIA - Sede Provinciale",
-     "Casa del Clero",
-     "Chiesa di Santa Lucia",
-     "Chiesa di Santa Maria del Carmine",
-     "Chiesa di Santa Maria di Castello",
-     "Chiesa e Santuario di Nostra Signora di Loreto e Santa Rita",
-     "Collegio Santa Chiara",
-     "Convento dei padri domenicani",
-     "Ex Collegio dei Gesuiti - ora \"ATC\"",
-     "Ex scuderie della caserma Gambarina Vecchia",
-     "FABLAB Alessandria PORTO IDEE"
+     "Palazzo Civalieri di Masio",
+     "Palazzo Ferrari di Castelnuovo",
+     "Palazzo Guasco"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -7953,26 +7995,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 3,
-     "da_piani": 13,
-     "senza_altezza": 124
+     "chiave": "livello 4-14",
+     "n": 17,
+     "con_altezza": 0,
+     "da_piani": 1,
+     "senza_altezza": 16
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Antigua Aduana de la Ciudad de México",
-     "Antigua Escuela de San Ildelfonso",
      "Antiguo Colegio de San Ildefonso",
-     "Antiguo Palacio del Arzobispado",
-     "Cartago",
      "Casa del Marqués del Apartado",
-     "Catedral Metropolitana de la Ciudad de México",
-     "Centro Cultural de España en México",
-     "Ex Templo de la Encarnación",
-     "Iglesia de Santa Teresa la Antigua",
-     "Instituto de Estudios Superiores Rosario Castellanos Justo Sierra",
-     "Mayorazgo de Nava Chávez"
+     "Mayorazgo de Nava Chávez",
+     "Palacio de la Autonomía",
+     "Recinto de los Guerreros Águila",
+     "Templo Mayor",
+     "Templo Rojo Norte",
+     "Templo Rojo Sur"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -8028,6 +8067,7 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
+     "chiave": "luogo Chio e la Ionia",
      "n": 0,
      "con_altezza": 0,
      "da_piani": 0,
@@ -8108,14 +8148,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 4-16",
+     "n": 2,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Hotel Element Guestline"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -8132,7 +8175,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -8171,6 +8214,7 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
+     "chiave": "luogo Bombay e Delhi",
      "n": 0,
      "con_altezza": 0,
      "da_piani": 0,
@@ -8266,26 +8310,18 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
+     "chiave": "livello 4-18",
+     "n": 18,
      "con_altezza": 0,
-     "da_piani": 5,
-     "senza_altezza": 135
+     "da_piani": 1,
+     "senza_altezza": 17
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Bidolukitap.com",
-     "Büyük Postane",
-     "Cağaloğlu Hamamı",
-     "Cezeri Kasımpaşa Camii",
-     "Hacı Beşir Ağa Camii",
-     "Hazine-i Evrak binası",
-     "Hotel Hotellino",
-     "Zeynep Sultan Camii",
-     "Ziraat Bankası Binası",
-     "istanbul office",
-     "İl Sağlık Müd. Ek Hizmet Binası (Mütekaidin Dairesi)",
-     "İran Konsolosluğu"
+     "Raymond Hotel",
+     "Vilayet Camii",
+     "İstanbul Valiliği"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -8349,16 +8385,15 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 100,
+     "chiave": "livello 4-19",
+     "n": 8,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 100
+     "senza_altezza": 8
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [
-     "متحف المركبات الملكية"
-    ],
+    "nomi_edifici": [],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -8414,14 +8449,24 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 4-20",
+     "n": 40,
+     "con_altezza": 36,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 4
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Castello Estense",
+     "Palazzo della Camera di Commercio",
+     "Palazzo delle Assicurazioni Generali",
+     "Torre dei Leoni",
+     "Torre di San Paolo",
+     "Torre di Santa Caterina",
+     "muro",
+     "passaggio"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -8447,7 +8492,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -8494,15 +8538,15 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 61,
+     "chiave": "livello 4-21",
+     "n": 3,
      "con_altezza": 0,
-     "da_piani": 29,
-     "senza_altezza": 32
+     "da_piani": 2,
+     "senza_altezza": 1
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Caja Rural Castilla-La Mancha",
      "Parroquia de San Ildefonso"
     ],
     "stato": "da_costruire",
@@ -8559,8 +8603,9 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 4-22",
+     "n": 1,
+     "con_altezza": 1,
      "da_piani": 0,
      "senza_altezza": 0
     },
@@ -8592,7 +8637,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -8631,14 +8675,19 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 4-23",
+     "n": 8,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 8
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "4in bazaar",
+     "dubaaibazaar",
+     "landship mall"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -8679,7 +8728,7 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -8718,6 +8767,7 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
+     "chiave": "luogo Nanchang e il mare",
      "n": 0,
      "con_altezza": 0,
      "da_piani": 0,
@@ -8790,14 +8840,22 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
-     "da_piani": 0,
-     "senza_altezza": 0
+     "chiave": "livello 4-25",
+     "n": 33,
+     "con_altezza": 31,
+     "da_piani": 1,
+     "senza_altezza": 1
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Battle Monument",
+     "Clarence M. Mitchell Jr. Courthouse",
+     "Courthouse East",
+     "Equitable Building",
+     "The Munsey Building",
+     "The Suntrust Building"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -8838,7 +8896,6 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -8877,14 +8934,25 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 4-26",
+     "n": 20,
      "con_altezza": 0,
-     "da_piani": 0,
-     "senza_altezza": 0
+     "da_piani": 2,
+     "senza_altezza": 18
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Antiguo Colegio de San Ildefonso",
+     "Casa del Marqués del Apartado",
+     "Mayorazgo de Nava Chávez",
+     "Museo Templo Mayor",
+     "Palacio de la Autonomía",
+     "Recinto de los Guerreros Águila",
+     "Templo Mayor",
+     "Templo Rojo Norte",
+     "Templo Rojo Sur"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -8910,7 +8978,6 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -8949,14 +9016,17 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 4-27",
+     "n": 7,
+     "con_altezza": 3,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 4
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Ayazma"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -8997,7 +9067,6 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -9036,14 +9105,25 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
-     "da_piani": 0,
-     "senza_altezza": 0
+     "chiave": "livello 4-28",
+     "n": 36,
+     "con_altezza": 13,
+     "da_piani": 17,
+     "senza_altezza": 6
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Admiralty Arch",
+     "Association of the British Pharmaceutical Industry",
+     "Charing Cross Tube Station (buildings and tunnels)",
+     "Grand Buildings",
+     "Momento London",
+     "Nelson's Column",
+     "Royal Bank of Scotland",
+     "South Africa House",
+     "Whitehall Telephone Exchange"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -9084,7 +9164,6 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -9123,14 +9202,20 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
-     "da_piani": 0,
+     "chiave": "livello 4-29",
+     "n": 25,
+     "con_altezza": 23,
+     "da_piani": 2,
      "senza_altezza": 0
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Novotel Warszawa Centrum",
+     "Pawilon Cepelii",
+     "Rotunda PKO",
+     "Widok Towers"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -9171,7 +9256,6 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -9210,14 +9294,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 4-30",
+     "n": 29,
+     "con_altezza": 27,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Castello Estense",
+     "Palazzo della Borsa",
+     "Palazzo della Camera di Commercio",
+     "Torre dei Leoni",
+     "Torre di Santa Caterina",
+     "muro",
+     "passaggio"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -9243,7 +9336,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -9297,26 +9389,27 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 98,
-     "con_altezza": 14,
-     "da_piani": 59,
-     "senza_altezza": 25
+     "chiave": "livello 5-1",
+     "n": 18,
+     "con_altezza": 3,
+     "da_piani": 10,
+     "senza_altezza": 5
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "122 South Michigan",
-     "20 North Michigan",
-     "25 East Washington",
-     "33 North Dearborn Building",
-     "33 West Monroe",
-     "55 East Monroe Self Park",
-     "55 West Monroe",
-     "Amalgamated Bank",
      "Barker Building",
-     "Baskin Building",
-     "Bell Savings Building",
-     "Block 37 Shops"
+     "Chicago Building",
+     "Haskell Building",
+     "Heyworth Building",
+     "J.P. Atwater",
+     "Majestic Building",
+     "One North State Street",
+     "One South Dearborn",
+     "Reliance Building",
+     "Saks Off 5th",
+     "Silversmith Hotel Chicago Downtown",
+     "State-Madison Building"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -9387,26 +9480,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 140,
+     "chiave": "livello 5-2",
+     "n": 37,
+     "con_altezza": 34,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 3
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Anker-Haus",
-     "Bräuner-Hof",
-     "Deutschordenshaus",
-     "Domherrenhof",
-     "Erzbischöfliches Palais",
-     "Franziskanerkloster St. Hieronymus",
-     "Grabenhof",
-     "Grillparzerhof",
-     "Großer Fähnrichshof",
-     "Göttweigerhof",
-     "Haas-Haus",
-     "Haus Schaumburg"
+     "Bartholomäuskapelle",
+     "Churhaus",
+     "Eligiuskapelle",
+     "Heidenturm",
+     "Stephansdom",
+     "Südturm",
+     "Virgilkapelle",
+     "Zum goldenen Becher"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -9477,26 +9567,27 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 5,
-     "da_piani": 74,
-     "senza_altezza": 61
+     "chiave": "livello 5-3",
+     "n": 40,
+     "con_altezza": 11,
+     "da_piani": 19,
+     "senza_altezza": 10
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
      "Admiralty Arch",
-     "Admiralty Citadel",
-     "Admiralty House",
-     "Anglo-American PLC",
-     "Aria house",
-     "Association of Teachers and Lecturers",
      "Association of the British Pharmaceutical Industry",
-     "Belluzzo & Partners",
-     "Benjamin Franklin House",
-     "British Council",
-     "Brook Street",
-     "Café Ciel"
+     "Charing Cross Tube Station (buildings and tunnels)",
+     "Cool Britannia",
+     "Grand Buildings",
+     "Harrington House",
+     "Momento London",
+     "Nelson's Column",
+     "Northumberland House",
+     "Royal Bank of Scotland",
+     "The Horse and Guardsman",
+     "Trafalgar Theatre"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -9559,10 +9650,11 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 5-4",
+     "n": 11,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 11
     },
     "fondo": null,
     "orientamento": null,
@@ -9592,7 +9684,7 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -9646,10 +9738,11 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 24,
+     "chiave": "livello 5-5",
+     "n": 13,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 24
+     "senza_altezza": 13
     },
     "fondo": null,
     "orientamento": null,
@@ -9716,8 +9809,9 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 5-6",
+     "n": 1,
+     "con_altezza": 1,
      "da_piani": 0,
      "senza_altezza": 0
     },
@@ -9749,7 +9843,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -9803,26 +9896,27 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 5,
-     "da_piani": 74,
-     "senza_altezza": 61
+     "chiave": "livello 5-7",
+     "n": 40,
+     "con_altezza": 11,
+     "da_piani": 19,
+     "senza_altezza": 10
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
      "Admiralty Arch",
-     "Admiralty Citadel",
-     "Admiralty House",
-     "Anglo-American PLC",
-     "Aria house",
-     "Association of Teachers and Lecturers",
      "Association of the British Pharmaceutical Industry",
-     "Belluzzo & Partners",
-     "Benjamin Franklin House",
-     "British Council",
-     "Brook Street",
-     "Café Ciel"
+     "Charing Cross Tube Station (buildings and tunnels)",
+     "Cool Britannia",
+     "Grand Buildings",
+     "Harrington House",
+     "Momento London",
+     "Nelson's Column",
+     "Northumberland House",
+     "Royal Bank of Scotland",
+     "The Horse and Guardsman",
+     "Trafalgar Theatre"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -9893,19 +9987,15 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 53,
-     "con_altezza": 1,
-     "da_piani": 2,
-     "senza_altezza": 50
+     "chiave": "livello 5-8",
+     "n": 1,
+     "con_altezza": 0,
+     "da_piani": 0,
+     "senza_altezza": 1
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [
-     "Администрация ФГУП \"ЦЭНКИ\"",
-     "ГДО",
-     "Гагарина 13 (гороно)",
-     "Телекомпания \"Виза\""
-    ],
+    "nomi_edifici": [],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -9922,6 +10012,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -9967,14 +10058,24 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
+     "chiave": "livello 5-9",
+     "n": 26,
      "con_altezza": 0,
-     "da_piani": 0,
-     "senza_altezza": 0
+     "da_piani": 24,
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Hearst Magazines UK",
+     "Marshall Street Leisure Centre",
+     "Smoke and Mirrors",
+     "St Giles House",
+     "TC",
+     "The John Snow",
+     "Thirty Broadwick",
+     "house party"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -10000,7 +10101,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_a_mano",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -10054,25 +10154,16 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 77,
+     "chiave": "livello 5-10",
+     "n": 9,
      "con_altezza": 0,
-     "da_piani": 72,
-     "senza_altezza": 5
+     "da_piani": 9,
+     "senza_altezza": 0
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "CBI Betonginstitutet",
-     "Futuraskolan Brunbärsvägen",
-     "KTH-Hallen",
-     "KTH: Administration",
-     "KTH: B",
-     "KTH: L",
-     "KTH: LSA & ITA",
-     "KTH: Q",
-     "KTH: U",
-     "KTH: V",
-     "KTH: W"
+     "KTH: Q"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -10143,26 +10234,16 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
+     "chiave": "livello 5-11",
+     "n": 24,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 140
+     "senza_altezza": 24
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "163 Nassau Street",
-     "165 Nassau Court",
-     "175 Nassau Street",
-     "183 Nassau Street",
-     "185 Nassau Street",
-     "194 Nassau Street",
-     "201 Nassau Street",
-     "Aaron Burr Hall",
-     "Alfalfa",
-     "Bainbridge House",
-     "Firestone Library",
-     "Garden Theater"
+     "Charlotte W. Newcombe Foundation"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -10234,26 +10315,18 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 121,
-     "con_altezza": 24,
-     "da_piani": 21,
-     "senza_altezza": 76
+     "chiave": "livello 5-12",
+     "n": 4,
+     "con_altezza": 2,
+     "da_piani": 0,
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Aerolíneas Argentinas",
-     "Agencia de Recaudación y Control Aduanero",
-     "Anexo Secretaría de Inteligencia",
      "Banco Nación",
-     "Banco Provincia",
-     "Banco Tornquist",
-     "Cabildo de Buenos Aires",
-     "Casa de Altos de Elorriaga",
-     "Casa de la Cultura de la Ciudad",
-     "Casa de la Provinica de Santa Fe",
-     "Catedral Metropolitana",
-     "Citi"
+     "Monumento al General Manuel Belgrano",
+     "Pirámide de Mayo"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -10324,26 +10397,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 1,
-     "da_piani": 33,
-     "senza_altezza": 106
+     "chiave": "livello 5-13",
+     "n": 40,
+     "con_altezza": 2,
+     "da_piani": 28,
+     "senza_altezza": 10
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "ADC Theatre",
-     "All Saints Flats",
      "All Saints' Church",
-     "Bishop Bateman Court (Trinity Hall)",
      "Block G, Library",
      "Block H",
      "Blocks A, B & C",
      "Blocks D, E & F",
-     "Blue Boar A to H",
-     "Blue Boar I to N",
-     "Blue Boar O, P and Q",
-     "Blue Boar common Room"
+     "Dining Hall",
+     "Malcolm Place",
+     "Westcott House Chapel"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -10414,26 +10484,16 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
+     "chiave": "livello 5-14",
+     "n": 24,
      "con_altezza": 0,
      "da_piani": 0,
-     "senza_altezza": 140
+     "senza_altezza": 24
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "163 Nassau Street",
-     "165 Nassau Court",
-     "175 Nassau Street",
-     "183 Nassau Street",
-     "185 Nassau Street",
-     "194 Nassau Street",
-     "201 Nassau Street",
-     "Aaron Burr Hall",
-     "Alfalfa",
-     "Bainbridge House",
-     "Firestone Library",
-     "Garden Theater"
+     "Charlotte W. Newcombe Foundation"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -10505,26 +10565,18 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 136,
+     "chiave": "livello 5-15",
+     "n": 38,
+     "con_altezza": 37,
      "da_piani": 0,
-     "senza_altezza": 4
+     "senza_altezza": 1
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Ahrens Building",
-     "Basilica of Saint Patrick's Old Cathedral - Most Precious Blood Catholic Church",
-     "Best Western Plus Soho Hotel",
-     "Charles B. Wang Community Health Center",
      "Chung Pak Building",
-     "Church of the Transfiguration",
-     "Clock Tower Building",
-     "Columbus Park Pavilion",
-     "Excelsior Building",
-     "Hardware Building",
-     "Health Building",
-     "Hotel 50 Bowery"
+     "Criminal Courts Building",
+     "Manhattan Detention Complex"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -10595,26 +10647,22 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 59,
-     "con_altezza": 7,
-     "da_piani": 33,
-     "senza_altezza": 19
+     "chiave": "livello 5-16",
+     "n": 18,
+     "con_altezza": 8,
+     "da_piani": 8,
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "5th and Madison Condos",
-     "7th & Columbia Building",
-     "800 Columbia",
      "800 Fifth Avenue",
-     "901 Fifth",
-     "Alaska Building",
-     "Arctic Building",
-     "Bishop Lewis Work Release",
-     "Bradbury Apartments",
-     "Broderick Building",
-     "Central Building",
-     "Chamber of Commerce Building"
+     "Columbia Center",
+     "F5 Tower",
+     "SeaPark",
+     "Seattle Municipal Court",
+     "Seattle Municipal Tower",
+     "Seattle Police Department"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -10685,25 +10733,16 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 44,
-     "con_altezza": 34,
-     "da_piani": 5,
-     "senza_altezza": 5
+     "chiave": "livello 5-17",
+     "n": 9,
+     "con_altezza": 5,
+     "da_piani": 4,
+     "senza_altezza": 0
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Ava Apartments",
      "CalTrans District 7 Headquarters",
-     "City Hall East",
-     "Crawford Addition",
-     "DoubleTree by Hilton Hotel Los Angeles Downtown",
-     "Hiro House",
-     "LAPD Metropolitan Communications Dispatch Center",
-     "LAPD Metropolitan Detention Center",
-     "Little Tokyo Library",
-     "Los Angeles City Hall",
-     "Los Angeles County Law Library",
      "Los Angeles Police Department Headquarters"
     ],
     "stato": "da_costruire",
@@ -10767,6 +10806,7 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
+     "chiave": "luogo una sala di riunione, 1983",
      "n": 0,
      "con_altezza": 0,
      "da_piani": 0,
@@ -10849,26 +10889,27 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
-     "con_altezza": 5,
-     "da_piani": 74,
-     "senza_altezza": 61
+     "chiave": "livello 5-19",
+     "n": 40,
+     "con_altezza": 11,
+     "da_piani": 19,
+     "senza_altezza": 10
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
      "Admiralty Arch",
-     "Admiralty Citadel",
-     "Admiralty House",
-     "Anglo-American PLC",
-     "Aria house",
-     "Association of Teachers and Lecturers",
      "Association of the British Pharmaceutical Industry",
-     "Belluzzo & Partners",
-     "Benjamin Franklin House",
-     "British Council",
-     "Brook Street",
-     "Café Ciel"
+     "Charing Cross Tube Station (buildings and tunnels)",
+     "Cool Britannia",
+     "Grand Buildings",
+     "Harrington House",
+     "Momento London",
+     "Nelson's Column",
+     "Northumberland House",
+     "Royal Bank of Scotland",
+     "The Horse and Guardsman",
+     "Trafalgar Theatre"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -10939,26 +10980,18 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 104,
-     "con_altezza": 21,
-     "da_piani": 2,
-     "senza_altezza": 81
+     "chiave": "livello 5-20",
+     "n": 25,
+     "con_altezza": 18,
+     "da_piani": 0,
+     "senza_altezza": 7
     },
     "fondo": null,
     "orientamento": null,
     "nomi_edifici": [
-     "Banca d'Italia",
-     "Birreria \"Giori\"",
-     "Castello Estense",
-     "Chiesa di San Domenico",
-     "Chiesa di San Giuliano",
-     "Chiesa di Santa Maria dei Servi",
-     "Ex Casa del Fascio",
      "Ex Caserma del Littorio",
-     "Ex Chiesa dei Santi Pietro e Paolo",
-     "Ex Chiesa di San Nicolò",
-     "Palazzo Canonici Mattei",
-     "Palazzo INA"
+     "Palazzo INA",
+     "Palazzo delle Poste"
     ],
     "stato": "da_costruire",
     "costruito_in": null,
@@ -11029,16 +11062,15 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 7,
+     "chiave": "livello 5-21",
+     "n": 1,
      "con_altezza": 0,
-     "da_piani": 1,
-     "senza_altezza": 6
+     "da_piani": 0,
+     "senza_altezza": 1
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [
-     "Clubhuis 't Slot"
-    ],
+    "nomi_edifici": [],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -11055,6 +11087,7 @@
    },
    "vuoti": [
     "orientamento_non_dichiarato",
+    "sole_sagome_senza_altezza",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -11100,6 +11133,7 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
+     "chiave": "luogo un documento del 2008",
      "n": 0,
      "con_altezza": 0,
      "da_piani": 0,
@@ -11182,27 +11216,15 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 140,
+     "chiave": "livello 5-23",
+     "n": 23,
      "con_altezza": 0,
-     "da_piani": 18,
-     "senza_altezza": 122
+     "da_piani": 3,
+     "senza_altezza": 20
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [
-     "Armée du Salut",
-     "Auditoire de Calvin",
-     "Cathédrale Saint-Pierre",
-     "Hôtel de Ville",
-     "Maison Tavel",
-     "Manège en Ville",
-     "Musée d'Art et d'Histoire",
-     "Musée international de la Réforme",
-     "Palais Eynard",
-     "Palais de Justice",
-     "Palais de l'Athénée",
-     "Paroisse de l'Oratoire"
-    ],
+    "nomi_edifici": [],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -11264,6 +11286,7 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
+     "chiave": "luogo un ufficio riservato, 1970",
      "n": 0,
      "con_altezza": 0,
      "da_piani": 0,
@@ -11343,6 +11366,7 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
+     "chiave": "luogo Murray Hill, 1948",
      "n": 0,
      "con_altezza": 0,
      "da_piani": 0,
@@ -11422,14 +11446,18 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
-     "da_piani": 0,
-     "senza_altezza": 0
+     "chiave": "livello 5-26",
+     "n": 23,
+     "con_altezza": 2,
+     "da_piani": 19,
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Boston City Hall",
+     "Sears' Crescent and Sears' Block Building"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -11455,7 +11483,6 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -11501,14 +11528,21 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
-     "da_piani": 0,
-     "senza_altezza": 0
+     "chiave": "livello 5-27",
+     "n": 13,
+     "con_altezza": 10,
+     "da_piani": 2,
+     "senza_altezza": 1
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Bell Trinity Square",
+     "Council Chambers",
+     "East Tower",
+     "Old City Hall",
+     "Toronto City Hall"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -11534,7 +11568,6 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -11580,14 +11613,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
-     "da_piani": 0,
-     "senza_altezza": 0
+     "chiave": "livello 5-28",
+     "n": 25,
+     "con_altezza": 16,
+     "da_piani": 2,
+     "senza_altezza": 7
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "5th and Madison Condos",
+     "901 Fifth",
+     "Daniels Recital Hall",
+     "Downtown Seattle YMCA",
+     "Fourth and Madison Building",
+     "Madison Centre",
+     "The Seattle Public Library - Central Library"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -11613,7 +11655,6 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -11659,14 +11700,21 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
-     "da_piani": 0,
-     "senza_altezza": 0
+     "chiave": "livello 5-29",
+     "n": 28,
+     "con_altezza": 13,
+     "da_piani": 12,
+     "senza_altezza": 3
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Admiralty Arch",
+     "Grand Buildings",
+     "Momento London",
+     "Nelson's Column",
+     "Royal Bank of Scotland"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -11692,7 +11740,6 @@
    "vuoti": [
     "coordinate_non_e_un_luogo",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {
@@ -11738,14 +11785,23 @@
     "griglia_da": "GRIGLIE di sorgenti/ambienti_livelli.py: scelta di progetto, non un dato della fonte",
     "edifici": {
      "fonte": "dati/edifici_footprint.json",
-     "n": 0,
-     "con_altezza": 0,
+     "chiave": "livello 5-30",
+     "n": 29,
+     "con_altezza": 27,
      "da_piani": 0,
-     "senza_altezza": 0
+     "senza_altezza": 2
     },
     "fondo": null,
     "orientamento": null,
-    "nomi_edifici": [],
+    "nomi_edifici": [
+     "Castello Estense",
+     "Palazzo della Borsa",
+     "Palazzo della Camera di Commercio",
+     "Torre dei Leoni",
+     "Torre di Santa Caterina",
+     "muro",
+     "passaggio"
+    ],
     "stato": "da_costruire",
     "costruito_in": null,
     "paleta": [
@@ -11771,7 +11827,6 @@
    "vuoti": [
     "coordinate_da_geocodificare_wfs",
     "orientamento_non_dichiarato",
-    "senza_sagome_osm",
     "sprite_da_disegnare"
    ],
    "pin_da_disegnare": {

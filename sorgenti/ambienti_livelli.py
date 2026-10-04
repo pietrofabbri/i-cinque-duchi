@@ -403,17 +403,27 @@ def main():
     print("tappe dell'anno 1 con coordinate: %d" % len(coord_anno1))
 
     # --- sagome e fondo
-    sagome = {}
+    sagome, sagome_di_livello = {}, {}
     if os.path.exists(FOOTPRINT):
         with open(FOOTPRINT, encoding="utf-8") as f:
             fp = json.load(f)
         for e in fp["edifici"]:
+            # **Due chiavi, e non una.** Un record puo' essere interrogato per
+            # un livello o per un luogo, e i due non sono la stessa cosa: le
+            # sagome di un livello sono quelle entro il raggio della *sua*
+            # griglia, e non hanno nome. Abbinandole al nome della citta' si
+            # direbbe che un muro e' la cattedrale solo perche' stanno nello
+            # stesso file. La chiave che si usa e' quella che il generatore ha
+            # scritto, e il livello ha la precedenza quando c'e' entrambe.
             sagome.setdefault(e["luogo"], []).append(e)
+            if e.get("livello"):
+                sagome_di_livello.setdefault(e["livello"], []).append(e)
     fondo = None
     if os.path.exists(FONDO):
         with open(FONDO, encoding="utf-8") as f:
             fondo = json.load(f)
-    print("luoghi con sagome: %d" % len(sagome))
+    print("chiavi con sagome: %d luoghi, %d livelli"
+          % (len(sagome), len(sagome_di_livello)))
 
     # Le ipotesi di coordinata: un record per tappa, e solo per le tappe che il
     # registro non puo' verificare. Se il file non c'e' il progetto funziona lo
@@ -458,9 +468,14 @@ def main():
 
         tipo, tipo_da = tipo_ambiente(nome, luogo.get("tipo") if luogo else None)
 
-        # le sagome: per chiave di luogo, che e' il nome in luoghi_gioco.json
-        ed = sagome.get(nome if luogo else "", [])
+        # Le sagome del livello vengono per chiave di livello, quelle del
+        # registro per chiave di luogo. Il livello ha la precedenza: e' la
+        # relazione esplicita, e non un abbinamento per nome.
+        ed = sagome_di_livello.get(lid, [])
+        chiave = "livello " + lid if ed else (
+            "luogo " + (nome if luogo else ""))
         edifici = {"fonte": "dati/edifici_footprint.json",
+                   "chiave": chiave,
                    "n": len(ed),
                    "con_altezza": sum(1 for e in ed
                                       if e["fonte_altezza"] == "osm_height"),

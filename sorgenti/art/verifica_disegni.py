@@ -1,0 +1,87 @@
+"""Verifica i disegni degli ambienti: che ci siano, che abbiano la misura
+dichiarata e che non siano due volte lo stesso disegno.
+
+Tre controlli, e sono tre perche' sono tre modi in cui un disegno mente:
+
+  D1  **Ogni disegno dichiarato esiste ed e' un PNG.** Un indice che promette
+      trenta file e ne ha ventinove e' un indice falso, ed e' il difetto che
+      piu' spesso si vede in questo progetto: il numero conta, il file no.
+  D2  **Ogni PNG ha la misura che l'indice dichiara**, riletta dall'intestazione
+      con `png_terrarium.misura_png()` e non presa da dove l'hai scritta: se il
+      disegnatore avesse cambiato la scala senza cambiare l'indice, qui si
+      vedrebbe.
+  D3  **Due livelli non sono lo stesso disegno.** Due SHA uguali su trenta
+      file accadono solo se il disegno ha smesso di dipendere dal livello, e
+      allora tutti gli ambienti sono la stessa immagine travestita da diverse.
+
+Il controllo e' verde come un controllo che guarda: per questo l'indice dice
+anche quanti edifici sono stati ritagliati, e `D1` verifica che quel numero ci
+sia. Un ritaglio non dichiarato e' un'immagine che mente su quanti edifici
+ha.
+"""
+import hashlib
+import json
+import os
+import sys
+
+RADICE = os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__))))
+sys.path.insert(0, os.path.join(RADICE, "sorgenti", "gis"))
+from png_terrarium import misura_png                     # noqa: E402
+
+INDICE = os.path.join(RADICE, "sorgenti", "art", "out", "ambienti",
+                      "indice.json")
+AMBIENTI = os.path.join(RADICE, "dati", "ambienti_livelli.json")
+
+
+def main():
+    if not os.path.exists(INDICE):
+        print("non trovo %s" % os.path.relpath(INDICE, RADICE))
+        return 1
+    ind = json.load(open(INDICE, encoding="utf-8"))
+    problemi = []
+    visti, sha = [], {}
+
+    for d in ind["disegnati"]:
+        percorso = os.path.join(RADICE, d["file"])
+        nome = d["livello"]
+        if not os.path.exists(percorso):
+            problemi.append("D1 %s: l'indice promette %s e il file non c'e'"
+                            % (nome, d["file"]))
+            continue
+        with open(percorso, "rb") as f:
+            blob = f.read()
+        if not blob.startswith(b"\x89PNG\r\n\x1a\n"):
+            problemi.append("D1 %s: il file c'e' ma non e' un PNG" % nome)
+            continue
+        w, h = misura_png(blob)
+        if [w, h] != d["px"]:
+            problemi.append("D2 %s: il PNG e' %dx%d e l'indice dichiara %dx%d"
+                            % (nome, w, h, d["px"][0], d["px"][1]))
+        digest = hashlib.sha256(blob).hexdigest()
+        if digest in sha:
+            problemi.append("D3 %s e %s: lo stesso disegno, sha uguale"
+                            % (sha[digest], nome))
+        sha[digest] = nome
+        visti.append(nome)
+
+    # Ogni tappa dell'anno 1 deve avere il suo disegno: l'indice puo' dire che
+    # mancano, ma non puo' dirlo per errore. Il confronto e' con l'anno letto
+    # dal file degli ambienti, non con una lista scritta qui.
+    ambienti = json.load(open(AMBIENTI, encoding="utf-8"))["ambienti"]
+    anno1 = [a["livello"] for a in ambienti if a["livello"].startswith("1-")]
+    mancanti = [l for l in anno1 if l not in visti]
+    if mancanti:
+        problemi.append("D1 tappe dell'anno 1 senza disegno: %d (%s)"
+                        % (len(mancanti), ", ".join(mancanti[:6])))
+
+    for p in problemi:
+        print("   %s" % p)
+    print("PROBLEMI: %d" % len(problemi))
+    print("  disegni verificati : %d" % len(visti))
+    print("  distinti (sha)     : %d" % len(sha))
+    return 1 if problemi else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

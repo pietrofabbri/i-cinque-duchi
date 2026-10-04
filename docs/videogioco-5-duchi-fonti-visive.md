@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — le fonti visive: che cosa il gioco non ha ancora una veste, e dove si prende
-versione: 0.6
+versione: 0.7
 data: 2026-10-04
 autore: Pietro Fabbri (con Claude)
-fonte: ricerca su Wikimedia Commons del 02/10/2026; tavolozza da Wikidata e Wikipedia del 03/10/2026; sagome e mura da OpenStreetMap via Overpass API del 03/10/2026; cime e quote da Natural Earth `geography_regions_elevation_points` del 03/10/2026; verifica dei fondi già in dati/mappe/
-documenti collegati: videogioco-5-duchi-ritratti.md (v0.5), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-mappe.md (v1.3), videogioco-5-duchi-luoghi-edifici.md (v0.4), videogioco-5-duchi-audit.md (v0.18), videogioco-5-duchi-tappa-1-01.md (v0.4), AGENTS.md
-dati: dati/fonti_visive/fonti_visive.json (v1, 27 voci, 125 candidati), dati/fonti_visive/attestazione.json (v1, vuoto), dati/fonti_visive/tavolozza.json (v1, 18 voci), dati/edifici_footprint.json (v1, 5209 edifici su 54 luoghi), dati/ferrara_fondo.json (v1, 14 tratti di mura), dati/ambienti_livelli.json (v2, 150 ambienti), dati/fonti_visive/colori_cartografici.json (v1, 19 voci), dati/altitudine_manifest.json (v1, tre file di cime: 15, 2 e 26 punti)
+fonte: ricerca su Wikimedia Commons del 02/10/2026; tavolozza da Wikidata e Wikipedia del 03/10/2026; sagome e mura da OpenStreetMap via API standard OSM del 04/10/2026; cime e quote da Natural Earth `geography_regions_elevation_points` del 03/10/2026; verifica dei fondi già in dati/mappe/
+documenti collegati: videogioco-5-duchi-ritratti.md (v0.5), videogioco-5-duchi-lingue-immagini.md (v0.1), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-mappe.md (v1.3), videogioco-5-duchi-luoghi-edifici.md (v0.4), videogioco-5-duchi-audit.md (v0.19), videogioco-5-duchi-tappa-1-01.md (v0.4), AGENTS.md
+dati: dati/fonti_visive/fonti_visive.json (v1, 27 voci, 125 candidati), dati/fonti_visive/attestazione.json (v1, vuoto), dati/fonti_visive/tavolozza.json (v1, 18 voci), dati/edifici_footprint.json (v1, 7322 edifici su 203 aree), dati/ferrara_fondo.json (v1, 14 tratti di mura), dati/ambienti_livelli.json (v2, 150 ambienti), dati/fonti_visive/colori_cartografici.json (v1, 19 voci), dati/altitudine_manifest.json (v1, tre file di cime: 15, 2 e 26 punti)
 ---
 
 # Le fonti visive
@@ -30,7 +30,7 @@ Questo documento fa quattro cose: **fa l'inventario** di che cosa ha e che cosa 
 | **Unità amministrative del mondo** | fatto, 50 unità | **Natural Earth 10m**, pubblico dominio | `dati/mappe/mondo_admin1.json` |
 | **Terreno e rilievo** | fatto per 95 luoghi | **Terrarium/SRTM** | `dati/luoghi_gioco.json`, campo `terreno` |
 | **Tavolozza dei colori** | **fatto il 03/10/2026**, 18 voci | Wikidata e Wikipedia | `dati/fonti_visive/tavolozza.json` |
-| **Sagome degli edifici** | **fatto il 03/10/2026**, 5209 edifici su 54 luoghi | OpenStreetMap, **ODbL** | `dati/edifici_footprint.json` |
+| **Sagome degli edifici** | **rifatto il 04/10/2026**, 7322 edifici su 203 aree | OpenStreetMap, **ODbL** | `dati/edifici_footprint.json` |
 | **Fondo di Ferrara** (anno 1) | **fatto il 03/10/2026**, 14 tratti di mura | OpenStreetMap, **ODbL** | `dati/ferrara_fondo.json` |
 | **Ambienti dei 150 livelli** | **fatto il 03/10/2026**, 150 su 150 | i documenti del progetto più i tre file sopra | `dati/ambienti_livelli.json` |
 | **Colori dei fondi geografici** | **fatto il 03/10/2026**, 19 voci | una scelta dichiarata, non un colore a occhio nel codice | `dati/fonti_visive/colori_cartografici.json` |
@@ -60,8 +60,8 @@ Il conto reale, verificato sui file:
 
 **I tre limiti che il documento delle mappe dichiara già, e che qui tornano — due risolti, uno ancora vero.**
 
-1. ~~**Le sagome degli edifici non esistono come dato.**~~ **Risolto il 03/10/2026**: `dati/edifici_footprint.json`, 5209 sagome su 54 luoghi, ognuna con `forma`, `altezza_m` e `fonte_altezza` (`osm_height`, `osm_levels`, `assente`). Vengono da OpenStreetMap, autorizzata il 02/10/2026, e viaggiano con **ODbL**. §3.2.
-2. **Le altezze non esistono come dato**: misurate nel 24% dei casi a Milano e nel 3% a Roma. Il progetto risponde con il **terreno** — quota, pendenza, esposizione, rilievo locale misurati su SRTM, con errore medio di 12,6 m su 14 punti noti. Sui 5209 edifici effettivamente presi, l'altezza c'è in 588 casi (`osm_height`) e si ricava dai piani in altri 1285 (`osm_levels`): **3336 non hanno niente** e diventano un volume neutro dichiarato. §3.2.
+1. ~~**Le sagome degli edifici non esistono come dato.**~~ **Risolto il 03/10/2026, rifatto il 04/10/2026 perché la geometria era falsa**: `dati/edifici_footprint.json`, 7322 sagome su 203 aree, ognuna con `forma`, `altezza_m` e `fonte_altezza` (`osm_height`, `osm_levels`, `assente`). Vengono da OpenStreetMap, autorizzata il 02/10/2026, e viaggiano con **ODbL**. §3.2.
+2. **Le altezze non esistono come dato**: misurate nel 24% dei casi a Milano e nel 3% a Roma. Il progetto risponde con il **terreno** — quota, pendenza, esposizione, rilievo locale misurati su SRTM, con errore medio di 12,6 m su 14 punti noti. Sui 7322 edifici effettivamente presi, l'altezza c'è in 2005 casi (`osm_height`) e si ricava dai piani in altri 1932 (`osm_levels`): **3385 non hanno niente** e diventano un volume neutro dichiarato. §3.2.
 3. ~~**Non c'è un file della città di Ferrara.**~~ **Risolto il 03/10/2026**: `dati/ferrara_fondo.json` ha il perimetro delle mura ricostuito da 14 tratti OSM, 8601 m di perimetro e 4,20 km² di area interna, con tutte le 28 tappe 3. ~~**Non c'è un file della città di Ferrara.**~~ **Risolto il 03/10/2026**: `dati/ferrara_fondo.json` ha il perimetro delle mura ricostruito da 14 tratti OSM, 8601 m di perimetro e 4,20 km² di area interna, con tutte le 28 tappe dell'anno 1 che ci cadono dentro. §3.5.
 
 **Il punto 2 resta il punto aperto, ma il 03/10/2026 è stato costruito un file che va nella stessa direzione e va detto con le sue parole.** `dati/mappe/mondo_110_altitudine.json`, `europa_50_altitudine.json` e `penisola_10_altitudine.json` portano le **cime** di Natural Earth con la loro quota: 15, 2 e 26 punti. Sono cime, non luoghi di gioco, e il file lo dichiara: nessun motore può dedurre la quota di una tappa da un elenco di cime. Ma il punto 2 chiedeva se il gioco ha un dato di quota, e adesso l'ha per il primo volta — per il sottosuolo, non per i luoghi.
@@ -109,28 +109,40 @@ La Cappella dei Magi e la galera del Provveditore sono fonti che il progetto pu�
 
 La fonte è **OpenStreetMap**, autorizzata il 02/10, con ODbL e l'attribuzione «© OpenStreetMap contributors». La ricerca del 02/10 aveva trovato 36 fotografie di edifici italiani — il Duomo di Ferrara, il Castello Estense, Palazzo Schifanoia, San Stefano — ma quelle sono **foto, non sagome**: servono al documentario, non al disegno. La sagoma che il motore disegna è un'altra cosa, ed è **un estratto dei building di OSM per i 54 luoghi che hanno coordinate**, in formato delta come le mappe.
 
-`dati/edifici_footprint.json` è di **1,6 MB** e contiene **5209 edifici su 54 luoghi**, tutti i 54 con almeno un edificio (`luoghi_senza_edifici` è vuoto).
+`dati/edifici_footprint.json` è di **2.75 MB** e contiene **7322 edifici su 203 aree interrogate**. Le aree non sono più solo le città del registro: sono i **centocinquanta pin dei livelli** più le 188 città, perché i pin del registro sono città intere e i ventotto punti dell'anno 1 stanno fra 204 e 1422 metri dal pin di Ferrara — a chiedere solo le città il file diceva «Ferrara ha centoquattro edifici» e le tappe non ne avevano nessuno.
 
 | | |
 |---|---|
-| Luoghi interrogati | **54**, tutti con coordinate |
-| Edifici tenuti | **5209** |
-| Edifici scartati | **6470**, e ogni scarto ha un motivo dichiarato: 3372 oltre il tetto del luogo, 3072 anonimi e piccoli, 13 ad anello troppo corto, 13 semplificati troppo |
-| Altezza misurata (`osm_height`) | **588** |
-| Altezza dai piani (`osm_levels` × 3,2 m/piano) | **1285** |
-| Senza altezza: **volume neutro dichiarato** | **3336** |
+| Aree interrogate | **203**: i pin dei livelli più 188 luoghi del registro |
+| Edifici tenuti | **7322** |
+| Edifici agganciati a un livello | **2632 record su 134 livelli distinti** |
+| Edifici agganciati a un luogo | **4690 record** |
+| Aree senza edificio, dichiarate | **15**, ognuna con il suo stato in `luoghi_senza_edifici` |
+| Altezza misurata (`osm_height`) | **2005** |
+| Altezza dai piani (`osm_levels` × 3,2 m/piano) | **1932**, che è una stima dichiarata e non una misura |
+| Senza altezza: **volume neutro dichiarato** | **3385** |
+| Ingombro reale delle sagome | minimo **1.2 m²**, mediano **247 m²**, massimo **35141 m²** |
+
+**Edifici scartati, e ogni scarto ha un motivo dichiarato:** 14 anello_troppo_corto, 1788 anonimo_e_piccolo, 2 forma_perdita_nell_arrotondamento, 23 fuori_raggio, 9193 oltre_tetto_area, 1 semplificato_troppo, 84 troppo_piccolo_per_disegnare.
+
+**Il difetto che è costato più caro, e che nessuno vedeva.** La prima versione del file scriveva la forma con `round(x / Q)` invece di `round(x * Q)`: divideva per cento un numero che era già in metri, e ogni vertice finiva a zero. Il file dichiarava **5209 sagome** e quei 5209 erano veri — erano 5209 edifici, con nome, altezza e fonte. Ma la **geometria era un punto**: l'ingombro più grande in tutto il file misurava cinque centimetri quadrati, la superficie di una monetina. Un conteggio vero e una forma falsa nello stesso file, e la cosa più insidiosa che ci fosse, perché il numero è la parte che un umano guarda.
+
+**Due difetti minori sulla stessa riga, trovati solo dopo che la forma c'era.** La semplificazione a tolleranza fissa cancellava gli edifici piccoli: un'area di due metri con una tolleranza di un metro e mezzo si riduceva a un quarto della sua area reale, e la forma e il `area_m2` del record dicevano due cose diverse. Ora la tolleranza non scende sotto un ventesimo della dimensione maggiore dell'anello. E il confronto della perdita era fatto contro l'area della figura *semplificata* invece che contro quella *dichiarata*: misurava la perdita della quantizzazione contro la perdita della semplificazione, e le due si coprivano a vicenda.
+
+E due difetti di interrogazione, che vengono prima. **Le tre istanze di Overpass rispondono 504**, e la correzione è stata cambiare fonte e non aspettare: ora si interroga l'**API standard OSM** (`api/0.6/map?bbox=`) attraverso `scarica_osm.py`, che restituisce lo **stesso formato** di Overpass perché a valle non cambiasse niente. Il prezzo dichiarato è una richiesta per pin invece di una per gruppo: ogni risposta è completa o assente e il file dice quale, mentre prima una richiesta si spezzava a metà senza che nessuno lo sapesse. E `id` arrivava come stringa dallo XML dove Overpass dava un intero: un `TypeError` alla prima tappa, che è il tipo di difetto che si vede subito e quindi non è pericoloso.
+
+**Perché i controlli ci sono, e che cosa hanno morso.** `verifica_sagome.py` fa tre controlli: **S1**, ogni forma racchiude la stessa area che il record dichiara, entro un fattore due per lato; **S2**, nessuna sagoma degenere sotto il metro quadro di ingombro; **S3**, `fonte_altezza` è una delle tre dichiarate e «assente» non porta metri. Sul file rotto S1 e S2 trovavano **5209 problemi su 5209** e l'ingombro massimo era **0,0 m²**: il controllo vedeva esattamente il difetto che nessuno vedeva. Sul file rigenerato dà **0**.
 
 **Le quattro regole, tutte dichiarate nel file, perché un buco travestito da geometria è il peggiore dei difetti.**
 
-1. **Raggio 250 m attorno al pin.** È una scelta, non un limite della fonte: dichiarata come `raggio_m`.
+1. **Due raggi, e non uno, perché un luogo e un livello non sono la stessa cosa.** Un **luogo** del registro è una città intera: si guarda entro 250 m, che è `raggio_m`, e si tiene fino a 140 edifici. Un **livello** è una zona percorribile di ottanta metri per sessanta al massimo, e per farlo il raggio non è scritto ma **calcolato dalla diagonale della griglia più un margine di 20 m**: va da 51 metri di una porta a 121 di un paesaggio, e il tetto è 40. Chiedere 250 metri a tutte voleva dire portare in giro tre quarti degli edifici fuori dalla zona: dati veri che il motore non può mostrare, che è la stessa cosa di nessun dato, solo più pesante.
 2. **Cosa è «significativo»**: ha un nome, ha un wikidata, ha un'altezza o dei piani, è di una categoria che il gioco sa nomincare, è patrimonio, oppure ha più di 120 m² di area. Un capannone senza nome e senza misure non viene disegnato come se fosse un palazzo.
-3. **Tetto di 140 edifici per luogo.** Oltre, il file tiene i più grandi e dichiara il tetto: altrimenti il centro di Londra mangia il file per un solo tappa.
+3. **Il tetto è dichiarato e si vede nel conto**: i più grandi si tengono e gli altri si dichiarano come scarto. Oltre, il centro di Londra mangia il file per una sola tappa.
 4. **Altezza assente non si stima.** L'edificio esce con `altezza_m: null` e `fonte_altezza: "assente"`, e il motore ne fa un **volume neutro**. È la stessa regola di §4.3 e la stessa dei 41 luoghi che non hanno coordinate perché non sono luoghi: *un volume che non sa niente si dichiara, non si indovina*.
 
-**I due difetti che sono costati di più, entrambi dichiarati nel codice.**
+**I due difetti del 3 ottobre, che il 4 sono diventati un altro.** Il primo giro interrogava Overpass in gruppi spezzati: con aree concatenate sulla stessa riga l'API risponde `HTTP 400: ';' expected - '(' found`, e con gruppi da sei c'è stato un `504`, per cui `overpass_spezzato()` dimezzava il gruppo e riprovava. Il secondo difetto era che **la prima versione del file aveva il conto sbagliato in un modo invisibile**: interrogare 54 luoghi in un colpo è più semplice e non finisce, e alla prima interruzione si perdeva tutto. Da qui il flag `--riprendi`.
 
-- **L'interrogazione a Overpass va spezzata.** Con aree concatenate sulla stessa riga l'API risponde `HTTP 400: ';' expected - '(' found`; separate da `;` e su righe nuove funziona. Con aree raggruppate a 6 alla volta c'è stato un `504`: `overpass_spezzato()` dimezza il gruppo e riprova, fino a tre volte, e la scala finale (`GRUPPO=3`) ha fatto passare tutti i 54 luoghi.
-- **La prima versione del file aveva il conto sbagliato in un modo invisibile.** Interrogare 54 luoghi in un colpo solo è più semplice e non finisce: alla prima interruzione si perde tutto. Da qui il flag `--riprendi`, che legge il file già scritto e salta i luoghi che ci sono.
+Il 4 ottobre Overpass era saturo su tutte e tre le istanze, e la correzione è stata cambiare fonte invece di aspettare. Il terzo difetto **è stato scritto male e nessuno lo vide**, ed è quello descritto sopra: la quantizzazione. Il quarto è comparso solo quando le sagome hanno cominciato a essere vere — dieci edifici con l'altezza dichiarata ma di mezzo metro quadro, che il generatore teneva e che il verifica non poteva accettare. Nessuno dei due sarebbe stato trovato senza l'altro: la quantizzazione è invisibile finché le sagome sono tutte un punto, e i dieci edifici minuscoli sono invisibili finché le sagome sono vere.
 
 ### 3.3 Le epigrafi: fonti, non immagini
 
@@ -199,7 +211,7 @@ Un ambiente porta: il livello, l'argomento, la voce (il personaggio), il luogo, 
 |---|---|
 | Ambienti | **150** su 150 attesi, nessuno mancante |
 | Con coordinate | **100** |
-| Con sagome OSM | **68** |
+| Con sagome OSM | **134** |
 | Già costruiti (quelli che il motore ha disegnato) | **1**, la tappa 1-1 |
 | Sprite dichiarati | **11**, tutti della tappa 1-1 |
 
@@ -207,7 +219,7 @@ I **nove tipi** di ambiente e quante volte compare ciascuno: `citta` 65, `edific
 
 **Il tipo non è indovinato in silenzio.** Ogni ambiente dichiara in `tipo_da` da dove viene il suo tipo: dal campo `tipo` del registro dei luoghi quando c'è, e da una **parola chiave** quando non c'è (`cattedrale` → edificio, `piazza` → piazza). Le griglie — colonne, righe, metri per tessera, nove tabelle diverse — sono una **scelta di progetto, non un dato di una fonte**, e stanno tutte nel file perché il motore le legga e nessuno le riscriva nel codice.
 
-**I vuoti sono tutti dichiarati, uno per uno**, e sono la parte più utile del file: `orientamento_non_dichiarato` **150** (**nessuno** dei centocinquanta ha un orientamento dichiarato, e dichiararlo vuol dire che il motore non deve sceglierlo da solo), `senza_sagome_osm` 82, `coordinate_non_e_un_luogo` 23, `coordinate_da_geocodificare_a_mano` 14, `coordinate_da_geocodificare_wfs` 11, `sole_sagome_senza_altezza` 13, `senza_coordinate` 2, `nessun_luogo_dichiarato` 2 (le due tappe la cui esistenza il progetto ha deciso di non chiedere: è una risposta, non una mancanza). E i due vuoti degli sprite: `sprite_da_disegnare` **149** (tutti gli ambienti tranne la 1-1) e `sprite_nessun_codice_li_produce` **1** (la 1-1 ha i suoi undici file, ma sono un disegno del primo prototipo e nessun codice li rifà).
+**I vuoti sono tutti dichiarati, uno per uno**, e sono la parte più utile del file: `orientamento_non_dichiarato` **150** (**nessuno** dei centocinquanta ha un orientamento dichiarato, e dichiararlo vuol dire che il motore non deve sceglierlo da solo), `senza_sagome_osm` **16**, `coordinate_non_e_un_luogo` **23**, `coordinate_da_geocodificare_a_mano` **14**, `coordinate_da_geocodificare_wfs` **11**, `sole_sagome_senza_altezza` **29**, `senza_coordinate` **2**, `nessun_luogo_dichiarato` **2**. E i due vuoti degli sprite: `sprite_da_disegnare` **149** (tutti gli ambienti tranne la 1-1) e `sprite_nessun_codice_li_produce` **1** (la 1-1 ha i suoi undici file, ma sono un disegno del primo prototipo e nessun codice li rifà).
 
 **Gli sprite della tappa 1-1: undici file che nessuno dichiarava.** Nella stessa cartella dei ritratti, `sorgenti/art/out/`, la piazza della Cattedrale aveva la facciata (509 × 312 px), il cartello dell'art. 9, la lapide, due statue, il protagonista in quattro fotogrammi e tre ritratti disegnati a mano. Erano lì dal primo commit, e **nessun codice li caricava e nessun dato li nominava**: il controllo 2 di `art/verifica_immagini.py` li dichiarava file morti, e aveva ragione — un disegno che il motore non può usare non è un patrimonio, è un inganno. Ora sono la tabella `SPRITE` di `sorgenti/ambienti_livelli.py`: ogni riga dice la **voce** della tabella 3 di `tappa-1-01.md` da cui prende il posto, il file, che cosa ci si vede, e la **misura misurata sul PNG** (non scritta). I posti non sono copiati: sono riletti dal documento, e il controllo **B9** li rilettura a ogni verifica e li confronta, perché un manifesto si può editare a mano come qualunque altro file.
 
@@ -252,6 +264,27 @@ Non esiste un terzo modo, ed è il punto: **nessun colore entra perché stava gi
 
 ---
 
+### 3.9 I disegni degli ambienti: generati il 04/10/2026
+
+`dati/ambienti_livelli.json` e `dati/edifici_footprint.json` erano due tavole di numeri, e nessuno le guardava insieme. `sorgenti/art/disegna_ambienti.py` le guarda insieme e ne fa un'immagine per tappa: **30 disegni**, in `sorgenti/art/out/ambienti/`, con l'indice in `indice.json`.
+
+**Che cosa si disegna, e che cosa non si disegna.** Ogni edificio è il **rettangolo che occupa** visto dalla zona, ritagliato ai bordi, con l'altezza che il dato dichiara. Non è la facciata: la facciata c'è nel file, ma a questa scala è più grande della zona e ritagliarla lascia un bordo obliquo, non un edificio. Il disegno è dunque **schematico**, e lo dice nell'indice: dice quanti edifici ci sono, quanto sono alti e dove stanno, non com'è fatto il tetto. **Un'altezza non dichiarata non si stima**: esce un volume neutro di `NEUTRO_M` metri, che è un'altezza dichiarata e non quella giusta.
+
+**Il riquadro non è scritto.** È l'**inviluppo delle sagome del livello**, calcolato dai dati, con la griglia come minimo. Ed è qui che è nato il difetto più subdolo della giornata: la prima versione usava la griglia come riquadro, cioè la zona percorribile — venti metri per quindici — mentre gli edifici si interrogano entro un raggio di quaranta-centoventi metri. Il ritaglio li buttava fuori uno per uno e il risultato erano trenta immagini quasi tutte uguali, tutte sfondo: **tre coppie avevano lo stesso sha**. Lo ha visto il controllo **D3**, che confronta gli sha, e non un occhio. Il motto è quello di `AGENTS.md`: *un controllo che non guarda è verde come un controllo che guarda*.
+
+| | |
+|---|---|
+| Disegni | **30**, uno per ogni tappa dell'anno 1 |
+| SHA distinti | **30** su 30: nessuna tappa è la stessa immagine travestita da un'altra |
+| Edifici disegnati | **447** |
+| Edifici ritagliati fuori dal riquadro | **0** |
+| Larghezza | da **488** a **2584** pixel, secondo l'inviluppo |
+| Punti per metro | **4**, dichiarati, gli stessi dei sprite della tappa 1-1 |
+
+**Tre controlli e cinque difetti iniettati.** `verifica_disegni.py` fa **D1** (ogni file promesso esiste ed è un PNG), **D2** (ogni PNG ha la misura che l'indice dichiara, **riletta dall'intestazione** e non presa da dove è stata scritta) e **D3** (due livelli non hanno lo stesso sha). `prova_difetto_disegni.py` rompe il **file vero** e lo rimette subito, e pretende che ogni difetto venga visto dal controllo giusto: **cinque su cinque**.
+
+La prova ha trovato un difetto in sé stessa, ed è il secondo della giornata: la copia di sicurezza teneva il PNG **sorgente** invece di quello **sovrascritto**, e il ripristino copiava 1-11 su 1-12 lasciandoli identici. Il sintomo era che il verificatore non tornasse verde dopo la prova, ed è la prova che dovesse accorgersene: una prova che non rimette a posto il progetto non è una prova, è un danno.
+
 ## 4. Accuratezza: proporzioni, colori, forme
 
 È la parte che il progetto chiama *solita accuratezza*, e le tre parole hanno tre significati tecnici.
@@ -290,11 +323,11 @@ La forma è il contorno, e per il gioco è la cosa più difficile, perché **la 
 | Costa, fiumi, confini | geometrie | Natural Earth | fatto |
 | Unità amministrative del mondo | geometrie del primo livello | Natural Earth 10m | fatto, 50 unità |
 | Rilievo del terreno | quota e pendenza | SRTM / Terrarium | fatto per 95 luoghi |
-| **Sagoma di un edificio** | **geometria della facciata** | **OSM building** | **fatto: 5209 su 54 luoghi** |
+| **Sagoma di un edificio** | **geometria della facciata** | **OSM building** | **fatto: 7322 record su 203 aree** |
 | **Perimetro delle mura di Ferrara** | **poligono di chiusura** | **OSM `city_wall`** | **fatto: 14 tratti, 4,20 km²** |
 | **Ortofoto aerea** | non serve: il gioco è 3/4 disegnato | — | — |
 
-**La regola sulla forma, che è quella del progetto sui luoghi**: una forma che non è verificata **non si disegna**. Se di un edificio non si sa la pianta, si disegna un volume neutro e la scheda dice che è un volume neutro — che è la regola dei 41 luoghi che non hanno coordinate perché non sono luoghi (`luoghi-edifici.md` §1) e che ora vale anche per i **3336 edifici su 5209** che escono da OSM senza altezza.
+**La regola sulla forma, che è quella del progetto sui luoghi**: una forma che non è verificata **non si disegna**. Se di un edificio non si sa la pianta, si disegna un volume neutro e la scheda dice che è un volume neutro — che è la regola dei 41 luoghi che non hanno coordinate perché non sono luoghi (`luoghi-edifici.md` §1) e che ora vale anche per i **3385 edifici su 7322** che escono da OSM senza altezza.
 
 ---
 ## 5. Il difetto della ricerca, che è il più istruttivo del lavoro
@@ -344,7 +377,7 @@ La tavolozza è `dati/fonti_visive/tavolozza.json`, **18 voci**, costruita da fo
 
 **Q2 — ~~Le sagome degli edifici si costruiscono adesso?~~ CHIUSA il 03/10/2026**
 
-Era il buco più grande, ed era bloccante per gli anni 2-5. Il file c'è: `dati/edifici_footprint.json`, **5209 edifici su 54 luoghi**, in formato delta, con `forma`, `altezza_m` e `fonte_altezza` — §3.2.
+Era il buco più grande, ed era bloccante per gli anni 2-5. Il file c'è: `dati/edifici_footprint.json`, **7322 edifici su 203 aree**, in formato delta, con `forma`, `altezza_m` e `fonte_altezza` — §3.2.
 
 **La metà della domanda che riguardava i 95 luoghi è stata corretta, e il motivo va scritto**: non sono 95. Sono **54**, i luoghi che hanno coordinate. Gli altri 41 non sono luoghi (porte di gioco, percorsi fra due città, situazioni) e non hanno niente da sagomare; costruire sagome per loro avrebbe significato inventare il posto in cui si disegna un non luogo. E i 3336 edifici senza altezza diventano un **volume neutro dichiarato**, non una stima.
 
@@ -380,12 +413,13 @@ Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file d
 | Candidati scelti a vista | **zero**, e dichiarato |
 | Fondi geografici già pronti | **19 file**, 1,5 MB, Natural Earth, pubblico dominio |
 | Tavolozza | **fatto**: 18 voci, 10 da fonti automatiche, 3 dichiarate, 5 di stato |
-| Sagome degli edifici | **fatto**: 5209 edifici su 54 luoghi, **3336 senza altezza** e a volume neutro |
+| Sagome degli edifici | **rifatto il 04/10/2026**: 7322 edifici su 203 aree, di cui 2632 record su 134 livelli; **3385 senza altezza** e a volume neutro |
 | Fondo di Ferrara | **fatto**: 14 tratti, 8601 m di perimetro, 4,20 km², 28 tappe su 28 dentro |
-| Ambienti dei livelli | **fatti**: 150 su 150, di cui 99 con coordinate e 69 con sagome |
+| Ambienti dei livelli | **fatti**: 150 su 150, di cui 100 con coordinate verificate e **134 con sagome** |
 | Colori delle carte | **fatti**: 19 voci dichiarate, di cui 3 prese dalla tavolozza; nessun colore vive solo nel codice |
 | Cime e quote | **fatte**: 15 + 2 + 26 punti su tre scale, con la scoperta che la fonte è **mondiale in tutte e tre** e i tre file non sono annidati |
 | Quanti ambienti il motore ha disegnato | **uno**, la tappa 1-1 |
+| Disegni degli ambienti | **fatti il 04/10/2026**: 30 immagini schematiche su 30 tappe dell'anno 1, **30 SHA distinti** |
 | Lavoro più grande che resta | i **125 candidati** da guardare a vista, e i **cinquantuno** ambienti senza coordinate |
 | Lavoro più grande che manca *fra i dati* | nessuno: i sei file ci sono e sono verificati |
 
@@ -399,6 +433,7 @@ Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file d
   - la lezione che resta è la stessa di `verifica_coerenza.py`: i controlli devono guardare **anche le frasi scritte**, non solo i file. Un dato che nessuno confronta con la sua descrizione è un dato che può dire due cose diverse nello stesso giorno.
 
 | Data | Versione | Che cosa è cambiato |
+| 04/10/2026 | 0.7 | **Il file delle sagome aveva il conto giusto e la geometria distrutta.** `dati/edifici_footprint.json` scriveva la forma con `round(x / Q)` invece di `round(x * Q)`: divideva per cento un numero che era già in metri, e ogni vertice finiva a zero. I **5209** edifici erano veri, uno per uno, e la loro sagoma era un punto: l'ingombro più grande in tutto il file misurava cinque centimetri quadrati. Un numero vero e una forma falsa nello stesso file, e la parte che un umano guarda è proprio quella che era vera. Oggi il file è stato **rigenerato da capo**: **7322 edifici su 203 aree** — i centocinquanta pin dei livelli più le 188 città, perché i pin del registro sono città intere e le tappe dell'anno 1 sono a più di due cento metri dal pin di Ferrara, e il file diceva «Ferrara ha centoquattro edifici» mentre le tappe non ne avevano nessuno. Sono tre difetti nuovi, trovati solo dopo che la forma c'era: la **toleranza di semplificazione fissa** cancellava gli edifici piccoli (un'area di due metri con una toleranza di un metro e mezzo diventava un quarto della sua area), il **confronto della perdita** guardava l'area semplificata invece di quella dichiarata, e **dieci edifici** con l'altezza ma di mezzo metro quadro passavano la soglia. Due verificatori nuovi: `verifica_sagome.py` (**S1–S3**, che sul file rotto trovava 5209 problemi su 5209 e ora dà 0) e `verifica_disegni.py` (**D1–D3**). |
 | 04/10/2026 | 0.6 | **Undici file di disegno che il motore non poteva usare, e sei che nessuno guardava.** Nella cartella dei ritratti c'era la piazza della Cattedrale — facciata, cartello, lapide, due statue, il protagonista in quattro fotogrammi, tre ritratti a mano — e nessun codice li caricava e nessun dato li nominava: il controllo 2 li dichiarava morti e aveva ragione. Sono ora la tabella `SPRITE`, con la voce della tabella 3 da cui prendono il posto e la misura **misurata sul PNG**; i posti sono riletti dal documento e il controllo **B9** li rilettura (§3.6). Nello stesso giorno i **sei emblemi superati** — le persone passate da emblema a ritratto — sono spariti dalla cartella: erano sei file e quattro immagini distinte, cioè lo stesso difetto dei sessanta emblemi che erano diciotto file, quattro giorni prima. Restano due famiglie diverse in `out/`: **198** PNG per le persone e **11** sprite, **209** in tutto, e il controllo 2 sa dire quale è quale invece di contare. La facciata diventa un controllo: i suoi 509 px sono il prodotto dei 39,8 m del documento per i 12,8 px per metro della scala, e se i due numeri del documento non tornassero fra loro si vedrebbe lì. |
 | 04/10/2026 | 0.5 | **La riga dei ritratti era un numero invecchiato, e la riga degli emblemi era un buco che si era chiuso da solo.** La tabella di §1 diceva «169 su 213» e «169 PNG a 48×54»: il 169 era il conto del 1 ottobre, quando quarantatre immagini erano ancora aperte, e nessun controllo lo confrontava con i dati. Ora dice **138 su 213** e i **198 PNG, uno per persona**, e aggiunge che i 60 emblemi sono **disegni** e non tessere (`ritratti.md` §3ter). La riga non è un abbellimento: fino al 3 ottobre i sessanta emblemi erano diciotto file distinti e dieci persone ne avevano uno identico, e qui la tabella ne contava sessanta senza che nessuno guardasse se fossero gli stessi. |
 |---|---|---|
