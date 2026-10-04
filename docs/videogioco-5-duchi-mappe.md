@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — Le mappe: fondo geografico per gli anni 2, 3 e 4, e dove si prendono i dettagli delle tappe
-versione: 1.1
-data: 2026-10-03
+versione: 1.2
+data: 2026-10-04
 autore: Pietro Fabbri (con Claude)
 fonte del materiale: richiesta di Pietro dell'01/10/2026 («recupera e archivia tutte le mappe che possono essere utili a questo e i prossimi anni»), con l'indicazione di due usi distinti: le mappe generali per costruire un percorso sensato, e le mappe di dettaglio per rappresentare ogni livello nella forma più reale possibile
-dati: dati/mappe/*.json (23 file: i 19 del 01/10/2026 da Natural Earth con `sorgenti/gis/mappe_formato.py`, piu `mondo_admin1.json` e i tre `*_altitudine.json` del 03/10/2026), dati/mondo_admin1_copertura.json (v1, il conto della copertura: sta in `dati/` e non in `dati/mappe/`, perche' li' vale la regola del solo formato a delta), dati/edifici_footprint.json (v1, 5209 sagome su 54 luoghi), dati/ferrara_fondo.json (v1, 14 tratti di mura)
+dati: dati/mappe/*.json (25 file: i 19 del 01/10/2026 da Natural Earth con `sorgenti/gis/mappe_formato.py`, piu `mondo_admin1.json`, i tre `*_altitudine.json` del 03/10/2026 e i due `rilievo_*.json` del 04/10/2026), dati/mondo_admin1_copertura.json (v1, il conto della copertura: sta in `dati/` e non in `dati/mappe/`, perche' li' vale la regola del solo formato a delta), dati/edifici_footprint.json (v1, 5209 sagome su 54 luoghi), dati/ferrara_fondo.json (v1, 14 tratti di mura)
 documenti collegati: videogioco-5-duchi-motore-e-grafica.md (v0.1, la pipeline che questi dati alimentano), videogioco-5-duchi-luoghi.md (v0.5, la regola che decide *quali* luoghi servono e i tre gradi di ipotesi di coordinata), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-fonti-visive.md (v0.4), FONTI-E-LICENZE.md, AGENTS.md
 ---
 
@@ -26,7 +26,7 @@ Sono due problemi diversi, con due fonti diverse, e la parte 2 ha una brutta not
 | | |
 |---|---|
 | **Scaricate** | 42 livelli shapefile di **Natural Earth**, in tre scale (110m, 50m, 10m) |
-| **Prodotti** | **23 file di mappe** in formato proprio in `dati/mappe/` (i 19 del 01/10 più `mondo_admin1.json` e i tre `*_altitudine.json` del 03/10), per un totale di **1,6 MB** |
+| **Prodotti** | **25 file di mappe** in formato proprio in `dati/mappe/` (i 19 del 01/10 più `mondo_admin1.json`, i tre `*_altitudine.json` del 03/10 e i due `rilievo_*.json` del 04/10), per un totale di **1,6 MB** |
 | **Verifiche** | **61 controlli automatici sulle mappe, tutti superati** (`sorgenti/gis/verifica_mappe_numeriche.py`), più **8 controlli sui pin degli anni dal secondo in poi, tutti superati** (`sorgenti/gis/verifica_pin.py`, §8bis: 71 slot con coordinate su 120), più **5 controlli sui trenta pin del primo anno, tutti superati** (`sorgenti/gis/verifica_anno1.py`, §8ter: 30 tappe dentro le mura) |
 | **Licenza** | Natural Earth è **pubblico dominio**: nessun vincolo, nessuna attribuzione richiesta |
 | **Prodotto il 03/10** | **le sagome degli edifici** (5209 su 54 luoghi), **il fondo cittadino dell'anno 1** (14 tratti di mura) e **le cime con la loro quota** (15 + 2 + 26 punti, §2.5): le tre cose che §5 e §7 dichiaravano mancanti ognuna per un motivo diverso. E i **colori delle carte**, che erano nel codice e non in un file (`fonti-visive.md` §3.7) |
@@ -270,7 +270,7 @@ Segnate qui perché sono state scambiate per difetti due volte, e perché un con
 | 7 città europee dentro il proprio Paese | **7 su 7** |
 | 6 città fuori dall'Europa assenti dal file europeo | **6 su 6** |
 | 212 città archiviate: nessuna di un Paese lontano dentro l'Italia | **conforme** |
-| nessun vertice fuori dal mondo, in tutti i 23 file | **conforme** |
+| nessun vertice fuori dal mondo, in tutti i 25 file | **conforme** |
 | **totale** | **61 su 61** |
 
 *(fatto il 02/10/2026)* Il controllo sui pin è in §8bis: **72 slot di pin hanno coordinate e sono stati verificati tutti**, e ne sono usciti **due difetti reali**, corretti.
@@ -354,7 +354,7 @@ python3 sorgenti/gis/verifica_pin.py --tutti     # tutti e cinque: 120 slot, 72 
 python3 sorgenti/gis/verifica_anno1.py           # il primo anno: 30 tappe dentro le mura (A1-A5)
 ```
 
-Il file ha anche `rilievo_senza_pil.py`, che misura quota e pendenza sui tasselli Terrarium **senza Pillow** (il PNG si decodifica con `zlib`, quarantacinque righe): serve perché `rilievo.py` va pure lui su questa macchina e senza `PIL` si ferma al primo tassello. I due file danno **numeri identici** su sette città già archiviate, e serve a rimisurare un punto senza reinstallare nulla.
+Il file ha anche `rilievo_senza_pil.py`, che misura quota e pendenza sui tasselli Terrarium **senza Pillow**, e dal 04/10/2026 il tassello lo decodifica `png_terrarium.py`, un modulo che non importa nessuno: il batch delle città, il registro dei luoghi e la prova a mano usano **lo stesso decodificatore**, quindi danno lo stesso numero per costruzione e non per verifica. I due file di dati che ne sono usciti il 04/10/2026 sono `rilievo_penisola.json` e `rilievo_europa.json` (212 e 186 città), e `verifica_rilievo.py` li tiene con sei controlli.
 
 ---
 
@@ -457,6 +457,18 @@ for proprieta, anelli in geometrie:
 ---
 
 ## 12. Registro modifiche
+
+- **v1.2 (04/10/2026)**: **i due file di rilievo delle città sono prodotti, e la
+  cartella ne ha due in più.** `dati/mappe/rilievo_penisola.json` e
+  `rilievo_europa.json` contengono 212 e 186 città con quota, pendenza,
+  esposizione e rilievo locale, misurati sui Terrarium di AWS Open Data. Il
+  conteggio dei file della cartella passa da 23 a 25 in tre posti di questo
+  documento, perché un numero di file scritto a mano è un numero che prima o
+  poi mente. Il tassello PNG si decodifica con `png_terrarium.py` invece che con
+  Pillow: il progetto non installa pacchetti, e due copie dello stesso
+  algoritmo sono due numeri che un giorno divergono. Il conto dell'errore
+  rispetto alle altitudini di riferimento è in `luoghi-edifici.md` §4, e
+  `verifica_rilievo.py` lo confronta anche con la cifra scritta lì.
 
 - **v1.1 (03/10/2026)**: **l'ultimo punto di «cosa c'è da fare» era chiuso da due giorni e lo dichiarava aperto.** Il punto 8 chiedeva gli ambienti dei centocinquanta livelli: il file c'era, completo al 150 su 150, con il suo generatore e i suoi otto controlli. Quello che mancava era la scrittura, e una riga di «cosa c'è da fare» che non corrisponde a nessun lavoro mancante è una riga che mente — perché costringe a rileggerla ogni volta, e a chiedersi se il lavoro sia ancora da fare. Chiudendola sono tornato alla sezione che l'aveva prodotto e **i suoi numeri non erano più quelli del file**: sette cifre sbagliate in `fonti-visive.md` §3.6. La chiusura di un punto scoperto un difetto in un altro documento, ed è la seconda volta che accade (§11 punto 4 aveva fatto trovare il conto dei pin). Il punto 8 è chiuso e la catena degli ambienti è `ambienti_livelli.py` → `verifica_ambienti.py` (B1–B8), tutti superati.
 

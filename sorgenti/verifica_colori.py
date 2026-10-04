@@ -25,8 +25,9 @@ C5  ogni voce dichiarata e' o usata dal disegno, o elencata fra le
 C6  **la cartella `dati/mappe/` contiene solo file a delta**, come `mappe.md` e
     `AGENTS.md` dichiarano
 C7  ogni file di mappa del pacchetto ha almeno un colore dichiarato che lo
-    riguarda: una categoria senza colore non e' una categoria senza colore, e'
-    un colore che si è dimenticato
+    riguarda, oppure e' fra i `file_senza_colore` con la ragione per cui non
+    ne ha bisogno: una categoria senza colore non e' una categoria senza
+    colore, e' un colore che si è dimenticato
 
 C6 esiste perche' un file di copertura era finito in quella cartella per
 errore e faceva saltare il lettore con un `IndexError` che non diceva niente:
@@ -189,10 +190,25 @@ def verifica():
             if chiave not in per_chiave:
                 problemi.append("C7: %s ha bisogno del colore %s, che non è "
                                 "dichiarato" % (nome, chiave))
-    for nome in sorted(presenti - set(COPERTURA)):
+    # Un file che nessuno disegna non ha colore da dichiarare: va detto che
+    # non ne ha bisogno, e con quale motivo. E' la terza via della copertura,
+    # e senza questa terza via un file di dati che nessuno disegna puo' solo
+    # farsi dare un colore inventato per passare il controllo.
+    senza = {}
+    for voce in colori.get("file_senza_colore", []):
+        if not voce.get("dichiarazione"):
+            problemi.append("C7: %s è dichiarato senza colore ma non dice perché"
+                            % voce.get("file"))
+        for n in [x.strip() for x in voce.get("file", "").split(",") if x.strip()]:
+            senza[n] = voce.get("dichiarazione")
+    for nome in sorted(senza):
+        if nome not in presenti:
+            problemi.append("C7: la dichiarazione senza colore nomina %s, che non "
+                            "è in dati/mappe/" % nome)
+    for nome in sorted(presenti - set(COPERTURA) - set(senza)):
         problemi.append("C7: %s è in dati/mappe/ ma nessun colore lo riguarda: "
-                        "aggiungilo alla copertura o dichiara perché non ne ha "
-                        "bisogno" % nome)
+                        "aggiungilo alla copertura, o dichiara in "
+                        "`file_senza_colore` perché non ne ha bisogno" % nome)
 
     return colori, problemi
 

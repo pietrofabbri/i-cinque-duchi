@@ -1468,7 +1468,16 @@
      "attribuzione": "capitale dell'impero mauryana, sul Gange; il sito corrisponde all'odierna Patna",
      "nota": "l'identificazione e' dichiarata, non data per scontata: il punto che il gioco usa e' il centro della citta' moderna"
     }
-   ]
+   ],
+   "terreno": {
+    "quota": 56.0,
+    "pend": 6.5,
+    "espo": 153.4,
+    "rel": 39.0,
+    "scarto": 4.0,
+    "fonte": "terrarium/SRTM",
+    "stato": "misurata"
+   }
   },
   {
    "luogo": "Pella",
@@ -2049,11 +2058,11 @@
    "coord_stato": "verificata",
    "perche": null,
    "terreno": {
-    "quota": 785.0,
-    "pend": 5.3,
-    "espo": 0.0,
-    "rel": 65.0,
-    "scarto": 7.0,
+    "quota": 242.0,
+    "pend": 21.8,
+    "espo": 57.1,
+    "rel": 503.0,
+    "scarto": 6.6,
     "fonte": "terrarium/SRTM",
     "stato": "misurata"
    },

@@ -1,0 +1,571 @@
+{
+ "versione": 1,
+ "data": "2026-10-04",
+ "fonte": "Wikidata, proprietà P2044 (altitudine sul livello del mare) delle entità di classe Q515 (città)",
+ "endpoint": "https://query.wikidata.org/sparql",
+ "regola": "stesso nome, stesso paese, entità più vicina entro 15 km; a parità di distanza la più popolosa",
+ "campione": "una città ogni 10, in ordine di file, sui file rilievo_penisola.json, rilievo_europa.json",
+ "senza_riferimento": [
+  "Ariana (Tunisia)",
+  "Città del Vaticano (Vatican)",
+  "Marsala (Italy)",
+  "Trento (Italy)",
+  "Kasserine (Tunisia)",
+  "Pristina (Kosovo)",
+  "Tampere (Finland)",
+  "Tromsø (Norway)",
+  "Valencia (Spain): la città più vicina è a 7561 km"
+ ],
+ "nota": "le città che Wikidata non conosce o non quota restano fuori: il file contiene solo riferimenti con fonte, e il conto dice quali sono e quante",
+ "punti": [
+  {
+   "file": "rilievo_penisola.json",
+   "nome": "Tatabánya",
+   "paese": "Hungary",
+   "lon": 18.433,
+   "lat": 47.55,
+   "qid": "http://www.wikidata.org/entity/Q187821",
+   "altitudine": 167.0,
+   "popolazione": 64785,
+   "distanza_km": 4.935,
+   "altre_omonime": [
+    {
+     "altitudine": 167.0,
+     "paese": "Hungary",
+     "distanza_km": 4.935
+    }
+   ]
+  },
+  {
+   "file": "rilievo_penisola.json",
+   "nome": "Bellinzona",
+   "paese": "Switzerland",
+   "lon": 9.02,
+   "lat": 46.197,
+   "qid": "http://www.wikidata.org/entity/Q64044",
+   "altitudine": 230.0,
+   "popolazione": 45305,
+   "distanza_km": 0.334,
+   "altre_omonime": []
+  },
+  {
+   "file": "rilievo_penisola.json",
+   "nome": "Sarnen",
+   "paese": "Switzerland",
+   "lon": 8.243,
+   "lat": 46.899,
+   "qid": "http://www.wikidata.org/entity/Q63964",
+   "altitudine": 471.0,
+   "popolazione": 10862,
+   "distanza_km": 0.377,
+   "altre_omonime": [
+    {
+     "altitudine": 1309.0,
+     "paese": "Switzerland",
+     "distanza_km": 0.377
+    }
+   ]
+  },
+  {
+   "file": "rilievo_penisola.json",
+   "nome": "Saranda",
+   "paese": "Albania",
+   "lon": 20.0,
+   "lat": 39.877,
+   "qid": "http://www.wikidata.org/entity/Q193226",
+   "altitudine": 0.0,
+   "popolazione": 22613,
+   "distanza_km": 0.882,
+   "altre_omonime": [
+    {
+     "altitudine": 0.0,
+     "paese": "Albania",
+     "distanza_km": 0.882
+    }
+   ]
+  },
+  {
+   "file": "rilievo_penisola.json",
+   "nome": "Reggio Calabria",
+   "paese": "Italy",
+   "lon": 15.64136,
+   "lat": 38.115,
+   "qid": "http://www.wikidata.org/entity/Q8471",
+   "altitudine": 31.0,
+   "popolazione": 170951,
+   "distanza_km": 0.758,
+   "altre_omonime": []
+  },
+  {
+   "file": "rilievo_penisola.json",
+   "nome": "Karlsruhe",
+   "paese": "Germany",
+   "lon": 8.39999,
+   "lat": 48.99999,
+   "qid": "http://www.wikidata.org/entity/Q1040",
+   "altitudine": 121.0,
+   "popolazione": 309247,
+   "distanza_km": 1.854,
+   "altre_omonime": [
+    {
+     "altitudine": 121.0,
+     "paese": "Germany",
+     "distanza_km": 1.854
+    },
+    {
+     "altitudine": 121.0,
+     "paese": "Germany",
+     "distanza_km": 1.854
+    }
+   ]
+  },
+  {
+   "file": "rilievo_penisola.json",
+   "nome": "Subotica",
+   "paese": "Serbia",
+   "lon": 19.68003,
+   "lat": 46.07002,
+   "qid": "http://www.wikidata.org/entity/Q170287",
+   "altitudine": 109.0,
+   "popolazione": 105681,
+   "distanza_km": 3.543,
+   "altre_omonime": [
+    {
+     "altitudine": 109.0,
+     "paese": "Serbia",
+     "distanza_km": 3.543
+    }
+   ]
+  },
+  {
+   "file": "rilievo_penisola.json",
+   "nome": "Lucerna",
+   "paese": "Switzerland",
+   "lon": 8.28,
+   "lat": 47.05042,
+   "qid": "http://www.wikidata.org/entity/Q4191",
+   "altitudine": 436.0,
+   "popolazione": 86234,
+   "distanza_km": 1.973,
+   "altre_omonime": []
+  },
+  {
+   "file": "rilievo_penisola.json",
+   "nome": "Žilina",
+   "paese": "Slovakia",
+   "lon": 18.74939,
+   "lat": 49.21982,
+   "qid": "http://www.wikidata.org/entity/Q25797",
+   "altitudine": 345.0,
+   "popolazione": 79873,
+   "distanza_km": 1.218,
+   "altre_omonime": []
+  },
+  {
+   "file": "rilievo_penisola.json",
+   "nome": "Arezzo",
+   "paese": "Italy",
+   "lon": 11.87498,
+   "lat": 43.46173,
+   "qid": "http://www.wikidata.org/entity/Q13378",
+   "altitudine": 296.0,
+   "popolazione": 96260,
+   "distanza_km": 0.289,
+   "altre_omonime": []
+  },
+  {
+   "file": "rilievo_penisola.json",
+   "nome": "Ingolstadt",
+   "paese": "Germany",
+   "lon": 11.44999,
+   "lat": 48.77042,
+   "qid": "http://www.wikidata.org/entity/Q3004",
+   "altitudine": 368.0,
+   "popolazione": 140799,
+   "distanza_km": 2.006,
+   "altre_omonime": [
+    {
+     "altitudine": 374.0,
+     "paese": "Germany",
+     "distanza_km": 2.006
+    },
+    {
+     "altitudine": 376.0,
+     "paese": "Germany",
+     "distanza_km": 2.006
+    }
+   ]
+  },
+  {
+   "file": "rilievo_penisola.json",
+   "nome": "Mulhouse",
+   "paese": "France",
+   "lon": 7.34998,
+   "lat": 47.7504,
+   "qid": "http://www.wikidata.org/entity/Q79815",
+   "altitudine": 231.0,
+   "popolazione": 104978,
+   "distanza_km": 0.833,
+   "altre_omonime": [
+    {
+     "altitudine": 240.0,
+     "paese": "France",
+     "distanza_km": 0.833
+    },
+    {
+     "altitudine": 249.0,
+     "paese": "France",
+     "distanza_km": 0.833
+    }
+   ]
+  },
+  {
+   "file": "rilievo_penisola.json",
+   "nome": "Tébessa",
+   "paese": "Algeria",
+   "lon": 8.12001,
+   "lat": 35.41043,
+   "qid": "http://www.wikidata.org/entity/Q984575",
+   "altitudine": 858.0,
+   "popolazione": 194461,
+   "distanza_km": 1.199,
+   "altre_omonime": [
+    {
+     "altitudine": 858.0,
+     "paese": "Algeria",
+     "distanza_km": 1.199
+    }
+   ]
+  },
+  {
+   "file": "rilievo_penisola.json",
+   "nome": "Banja Luka",
+   "paese": "Bosnia and Herzegovina",
+   "lon": 17.17997,
+   "lat": 44.7804,
+   "qid": "http://www.wikidata.org/entity/Q131127",
+   "altitudine": 163.0,
+   "popolazione": 185042,
+   "distanza_km": 1.323,
+   "altre_omonime": [
+    {
+     "altitudine": 163.0,
+     "paese": "Bosnia and Herzegovina",
+     "distanza_km": 1.323
+    }
+   ]
+  },
+  {
+   "file": "rilievo_penisola.json",
+   "nome": "Genova",
+   "paese": "Italy",
+   "lon": 8.93004,
+   "lat": 44.40999,
+   "qid": "http://www.wikidata.org/entity/Q1449",
+   "altitudine": 20.0,
+   "popolazione": 558745,
+   "distanza_km": 0.434,
+   "altre_omonime": [
+    {
+     "altitudine": 20.0,
+     "paese": "Italy",
+     "distanza_km": 0.434
+    }
+   ]
+  },
+  {
+   "file": "rilievo_penisola.json",
+   "nome": "Firenze",
+   "paese": "Italy",
+   "lon": 11.25,
+   "lat": 43.78,
+   "qid": "http://www.wikidata.org/entity/Q2044",
+   "altitudine": 50.0,
+   "popolazione": 360930,
+   "distanza_km": 1.014,
+   "altre_omonime": [
+    {
+     "altitudine": 50.0,
+     "paese": "Italy",
+     "distanza_km": 1.014
+    }
+   ]
+  },
+  {
+   "file": "rilievo_penisola.json",
+   "nome": "Sarajevo",
+   "paese": "Bosnia and Herzegovina",
+   "lon": 18.383,
+   "lat": 43.85002,
+   "qid": "http://www.wikidata.org/entity/Q11194",
+   "altitudine": 527.0,
+   "popolazione": 275524,
+   "distanza_km": 2.512,
+   "altre_omonime": [
+    {
+     "altitudine": 527.0,
+     "paese": "Bosnia and Herzegovina",
+     "distanza_km": 2.512
+    },
+    {
+     "altitudine": 527.0,
+     "paese": "Bosnia and Herzegovina",
+     "distanza_km": 2.512
+    }
+   ]
+  },
+  {
+   "file": "rilievo_europa.json",
+   "nome": "Potenza",
+   "paese": "Italy",
+   "lon": 15.799,
+   "lat": 40.642,
+   "qid": "http://www.wikidata.org/entity/Q3543",
+   "altitudine": 819.0,
+   "popolazione": 64406,
+   "distanza_km": 0.967,
+   "altre_omonime": []
+  },
+  {
+   "file": "rilievo_europa.json",
+   "nome": "Catanzaro",
+   "paese": "Italy",
+   "lon": 16.60001,
+   "lat": 38.90038,
+   "qid": "http://www.wikidata.org/entity/Q3883",
+   "altitudine": 342.0,
+   "popolazione": 84670,
+   "distanza_km": 1.522,
+   "altre_omonime": []
+  },
+  {
+   "file": "rilievo_europa.json",
+   "nome": "Montpellier",
+   "paese": "France",
+   "lon": 3.86999,
+   "lat": 43.6104,
+   "qid": "http://www.wikidata.org/entity/Q6441",
+   "altitudine": 14.0,
+   "popolazione": 310240,
+   "distanza_km": 0.586,
+   "altre_omonime": []
+  },
+  {
+   "file": "rilievo_europa.json",
+   "nome": "Città di San Marino",
+   "paese": "San Marino",
+   "lon": 12.44177,
+   "lat": 43.9361,
+   "qid": "http://www.wikidata.org/entity/Q1848",
+   "altitudine": 675.0,
+   "popolazione": 4040,
+   "distanza_km": 0.702,
+   "altre_omonime": [
+    {
+     "altitudine": 675.0,
+     "paese": "San Marino",
+     "distanza_km": 0.702
+    }
+   ]
+  },
+  {
+   "file": "rilievo_europa.json",
+   "nome": "Lilla",
+   "paese": "France",
+   "lon": 3.07806,
+   "lat": 50.65192,
+   "qid": "http://www.wikidata.org/entity/Q648",
+   "altitudine": 30.0,
+   "popolazione": 238246,
+   "distanza_km": 2.652,
+   "altre_omonime": []
+  },
+  {
+   "file": "rilievo_europa.json",
+   "nome": "Odessa",
+   "paese": "Ukraine",
+   "lon": 30.70806,
+   "lat": 46.49196,
+   "qid": "http://www.wikidata.org/entity/Q1874",
+   "altitudine": 40.0,
+   "popolazione": 1010537,
+   "distanza_km": 2.476,
+   "altre_omonime": []
+  },
+  {
+   "file": "rilievo_europa.json",
+   "nome": "Konya",
+   "paese": "Turkey",
+   "lon": 32.47306,
+   "lat": 37.87696,
+   "qid": "http://www.wikidata.org/entity/Q79857",
+   "altitudine": 1019.0,
+   "popolazione": 2232374,
+   "distanza_km": 1.738,
+   "altre_omonime": [
+    {
+     "altitudine": 1019.0,
+     "paese": "Turkey",
+     "distanza_km": 5.033
+    },
+    {
+     "altitudine": 1019.0,
+     "paese": "Turkey",
+     "distanza_km": 5.033
+    }
+   ]
+  },
+  {
+   "file": "rilievo_europa.json",
+   "nome": "L'Aia",
+   "paese": "Netherlands",
+   "lon": 4.26996,
+   "lat": 52.08004,
+   "qid": "http://www.wikidata.org/entity/Q36600",
+   "altitudine": 1.0,
+   "popolazione": 548320,
+   "distanza_km": 2.736,
+   "altre_omonime": []
+  },
+  {
+   "file": "rilievo_europa.json",
+   "nome": "Pskov",
+   "paese": "Russia",
+   "lon": 28.32994,
+   "lat": 57.83,
+   "qid": "http://www.wikidata.org/entity/Q2214",
+   "altitudine": 45.0,
+   "popolazione": 185486,
+   "distanza_km": 1.496,
+   "altre_omonime": [
+    {
+     "altitudine": 45.0,
+     "paese": "Russia",
+     "distanza_km": 1.496
+    }
+   ]
+  },
+  {
+   "file": "rilievo_europa.json",
+   "nome": "Penza",
+   "paese": "Russia",
+   "lon": 44.99998,
+   "lat": 53.18002,
+   "qid": "http://www.wikidata.org/entity/Q5540",
+   "altitudine": 150.0,
+   "popolazione": 487978,
+   "distanza_km": 2.222,
+   "altre_omonime": []
+  },
+  {
+   "file": "rilievo_europa.json",
+   "nome": "Belgrado",
+   "paese": "Serbia",
+   "lon": 20.46604,
+   "lat": 44.82059,
+   "qid": "http://www.wikidata.org/entity/Q3711",
+   "altitudine": 117.0,
+   "popolazione": 1197714,
+   "distanza_km": 0.783,
+   "altre_omonime": [
+    {
+     "altitudine": 117.0,
+     "paese": "Serbia",
+     "distanza_km": 0.783
+    },
+    {
+     "altitudine": 117.0,
+     "paese": "Serbia",
+     "distanza_km": 0.783
+    }
+   ]
+  },
+  {
+   "file": "rilievo_europa.json",
+   "nome": "Budapest",
+   "paese": "Hungary",
+   "lon": 19.08137,
+   "lat": 47.50195,
+   "qid": "http://www.wikidata.org/entity/Q1781",
+   "altitudine": 117.0,
+   "popolazione": 1685209,
+   "distanza_km": 3.072,
+   "altre_omonime": [
+    {
+     "altitudine": 117.0,
+     "paese": "Hungary",
+     "distanza_km": 3.072
+    },
+    {
+     "altitudine": 117.0,
+     "paese": "Hungary",
+     "distanza_km": 3.072
+    }
+   ]
+  },
+  {
+   "file": "rilievo_europa.json",
+   "nome": "Dublino",
+   "paese": "Ireland",
+   "lon": -6.25698,
+   "lat": 53.34673,
+   "qid": "http://www.wikidata.org/entity/Q1761",
+   "altitudine": 20.0,
+   "popolazione": 592713,
+   "distanza_km": 0.398,
+   "altre_omonime": [
+    {
+     "altitudine": 20.0,
+     "paese": "Ireland",
+     "distanza_km": 0.398
+    },
+    {
+     "altitudine": 20.0,
+     "paese": "Ireland",
+     "distanza_km": 0.398
+    }
+   ]
+  },
+  {
+   "file": "rilievo_europa.json",
+   "nome": "Algeri",
+   "paese": "Algeria",
+   "lon": 3.04861,
+   "lat": 36.76501,
+   "qid": "http://www.wikidata.org/entity/Q3561",
+   "altitudine": 0.0,
+   "popolazione": 2364230,
+   "distanza_km": 1.547,
+   "altre_omonime": [
+    {
+     "altitudine": 0.0,
+     "paese": "Algeria",
+     "distanza_km": 1.547
+    }
+   ]
+  },
+  {
+   "file": "rilievo_europa.json",
+   "nome": "Vienna",
+   "paese": "Austria",
+   "lon": 16.36469,
+   "lat": 48.20196,
+   "qid": "http://www.wikidata.org/entity/Q1741",
+   "altitudine": 151.0,
+   "popolazione": 2028289,
+   "distanza_km": 0.915,
+   "altre_omonime": [
+    {
+     "altitudine": 198.0,
+     "paese": "Austria",
+     "distanza_km": 0.915
+    },
+    {
+     "altitudine": 151.0,
+     "paese": "Austria",
+     "distanza_km": 0.915
+    }
+   ]
+  }
+ ]
+}

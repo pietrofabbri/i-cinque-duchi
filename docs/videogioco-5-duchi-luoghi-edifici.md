@@ -1,7 +1,7 @@
 ---
 titolo: I luoghi e le sagome — che cosa serve per disegnarli davvero
-versione: 0.3
-data: 2026-10-02
+versione: 0.4
+data: 2026-10-04
 autore: Buffy (per pietrofabbri)
 documenti collegati:
   - docs/videogioco-5-duchi-mappe.md
@@ -158,14 +158,47 @@ record compilato dice di più sul metodo di dieci record completati a mano.
 
 Il rilievo si prende dai **Terrarium** di AWS Open Data, derivati da SRTM:
 una richiesta HTTP per tassello, **senza registrazione**, e i numeri sono buoni.
-`dati/mappe/rilievo_penisola.json` e `rilievo_europa.json` sono **da produrre**, e lo produce
-`sorgenti/gis/rilievo.py`, che per ogni città dà quota, pendenza (m/km),
-esposizione e rilievo locale.
+`dati/mappe/rilievo_penisola.json` e `rilievo_europa.json` **ci sono**: sono
+**212 e 186 righe**, tutte le città dei due file di Natural Earth, misurate il
+4 ottobre 2026 da `sorgenti/gis/rilievo.py`, che per ogni città dà quota,
+pendenza (m/km), esposizione e rilievo locale.
 
-**Verificato su 14 punti ad altitudine nota**, errore medio assoluto **12,6 m**.
-Ferrara 16 m (è sotto il livello del mare, e sotto c'è), Venezia 0,0 m, Aosta
-580 m contro 583, Cortina 1 222 m contro 1 224, piazza Grande in Aosta letta su un
-tassello che arriva a 2 078 m di rilievo.
+**La misura non ha bisogno di Pillow, perché il progetto non installa
+pacchetti.** Il PNG di Terrarium si decodifica con `zlib` e i cinque filtri di
+riga che specifica il formato: quarantacinque righe in
+`sorgenti/gis/png_terrarium.py`, un modulo che non importa nessuno e serve a
+tutti gli script che misurano. Prima erano due copie dello stesso algoritmo —
+`rilievo.py` con Pillow e `rilievo_senza_pil.py` senza — e due copie di un
+algoritmo sono due numeri che un giorno divergono.
+
+**Il numero che questa sezione dichiarava non era verificabile, e il vero
+errore è più grande.** «Verificato su 14 punti ad altitudine nota, errore medio
+assoluto 12,6 m» non aveva nessuno dietro: i quattordici punti erano scelti a
+mano e i loro numeri erano scritti a mano nella stessa frase che li dichiarava.
+Adesso il riferimento lo chiede qualcun altro — **Wikidata**, proprietà `P2044`,
+cercando **la stessa città per posizione e non per nome** — e il conto lo rifa
+`sorgenti/gis/verifica_rilievo.py` su **32 punti** campionati fra le 398 città:
+**errore medio assoluto 32,9 m**, **massimo 155 m**, **otto errori sopra i 50 m**.
+Le nove città del campione che Wikidata non conosce o non quota restano fuori,
+e il file le dichiara per nome: un campione di trentadue punti su quarantuno è
+un campione, uno di quarantuno su quarantuno con i mancanti riempiti a mano
+sarebbe una bugia.
+
+**I 155 m che restano non vengono dal pixel.** Il difetto dell'indice del pixel
+è corretto (è quello descritto sotto); quello che resta è che **la coordinata
+di una città non è il suo centro**: Catanzaro ha un riferimento di 342 m e legge
+187 m, Potenza ha 819 m e legge 724 m, e sono due città su un pendio, dove a
+pochi chilometri la quota cambia di quelle cifre. Algeri è il caso inverso —
+riferimento 0 m, misura 72 m — ed è l'unico in cui il numero più grossolano è
+il riferimento: è restato com'è, perché un dato esterno non si sceglie per
+quanto assomiglia a quello che si vorrebbe.
+
+**Due città si chiamano uguale, e il file le tiene entrambe.** Nel file delle
+città di Natural Earth `Ragusa` è in Italia e in Croazia e `Kasserine` è due
+volte in Tunisia: la chiave di un punto non può essere il nome, e ora è la
+coppia di coordinate. Restano **50 coppie** di righe a meno di 700 metri l'una
+dall'altra — è la fonte a metterle lì accanto, non il misuratore — e il
+verificatore le conta e le dice invece di far finta che non ci siano.
 
 Il primo errore di questa tabella è stato di **132,6 m**, e la causa è da
 raccontare: per l'indice del pixel dentro il tassello usavo il resto della
@@ -230,10 +263,60 @@ qualcosa.
 | i 10 `da_geocodificare_a_mano` | Roma (Curia, Campidoglio, villa dei Gracchi), Bolzano, Squillace, Bethesda, Londra |
 | i 9 `citta_antica` | Uruk, Tebe, Babilonia, Elea: servono piante ricostruite, non il rilievo moderno |
 | **il generatore delle sagome** | è la vera lacuna: senza, le altezze restano stimate ovunque fuori Ferrara |
-| scaricare `rilievo_penisola.json` e `rilievo_europa.json` | lo script è pronto e verificato; non è ancora stato eseguito |
+| ~~scaricare `rilievo_penisola.json` e `rilievo_europa.json`~~ **fatto il 04/10/2026** | **212 + 186 = 398 città** misurate e verificate: `sorgenti/gis/verifica_rilievo.py`, sei controlli |
 | le **dimensioni** delle piazze | nessuna fonte le dà per iscritto: o si rilevano dal WFS o restano vuote |
 
 ## 7. Il registro delle modifiche
+
+### v0.4 — 04/10/2026
+
+**I due file di rilievo che il documento prometteva dal 2 ottobre esistono, e
+produrli ha trovato tre difetti che nessuno dei controlli precedenti vedeva.**
+
+- **`rilievo.py` scriveva un nome di città che non è un nome.** Le città di
+  Natural Earth hanno le proprietà in un dizionario, e la riga che sceglieva il
+  nome (`props[0] se isinstance(props, list) else props`) scriveva il
+  **dizionario intero** al posto del nome: un file pieno di righe intitolate
+  «{NAME: Ferrara, ADM0NAME: Italy}». I numeri giusti con il titolo che non è
+  un titolo, che è il difetto più difficile da vedere guardando i numeri;
+- **la fusione dei file accodava ogni città quattro volte.** Il batch scrive il
+  file ogni venti città con tutti i punti misurati finora, e la fusione li
+  aggiungeva a quelli già dentro senza chiederlo: il conto diceva **408 città su
+  212**. E il rimedio per mettere i punti a posto — ripulire per nome — ne
+  **perdeva due**, perché Ragusa e Kasserine sono due città ciascuna. La chiave di
+  un punto ora è la coppia di coordinate, e `--riprendi` ripara il file prima di
+  riprendere il batch;
+- **`rilievo.py` e `rilievo_senza_pil.py` erano due copie dello stesso algoritmo**,
+  una con Pillow e una senza: due numeri che un giorno divergono. Il
+  decodificatore è ora un modulo solo, `png_terrarium.py`, e il batch e la prova
+  danno lo stesso valore per costruzione, non per verifica.
+
+**Il numero dichiarato da due giorni era falso, e il vero errore è maggiore.**
+«14 punti, errore medio 12,6 m» non aveva dietro nessun riferimento:
+i punti e i loro numeri erano scelti a mano nella stessa frase che li dichiarava.
+Ora il riferimento viene da **Wikidata** (`P2044`), cercando la stessa città per
+posizione, e `verifica_rilievo.py` ricalcola tutto: **32 punti, errore medio
+32,9 m, massimo 155 m**. Il verificatore legge anche la cifra scritta qui e la
+confronta: se le due divergono, è un difetto, non un aggiornamento.
+
+**Un numero scritto a mano che era sbagliato di 543 metri.** Il campo `terreno`
+del registro dei luoghi era l'ultimo campo compilato a mano, ed era stato
+misurato con la versione di `rilievo.py` che leggeva il pixel sbagliato:
+**Torino a 785 m**, che non è Torino ma una collina a sette chilometri, e la
+città è a 239 m. Le altre 54 erano giuste per caso, perché sono città in piano e
+su un piano il pixel sbagliato dà quasi la stessa risposta: è la parte peggiore di
+un difetto di coordinate, passa quasi sempre e quando sbaglia sbaglia di
+mezzo chilometro. Ora `terreno` non è più di mano: lo produce
+`sorgenti/luoghi/terreno.py`, che ha anche riempito Pataliputra, che non ce
+l'aveva.
+
+Il controllo che tiene tutto è `sorgenti/gis/verifica_rilievo.py`, sei controlli:
+i campi che il documento promette, **le righe contro le città di partenza** (è
+il primo che avrebbe visto i duplicati), i numeri plausibili con un punto sotto
+il mare e uno sopra i mille metri, le città che si somigliano dette per nome,
+l'errore contro il riferimento confrontato anche con la cifra di qui, e la
+stessa città misurata due volte (registro e file delle città) entro la
+tolleranza dichiarata.
 
 ### v0.3 — 03/10/2026
 
