@@ -675,7 +675,7 @@ tappa è una cosa diversa da una disciplina senza premi, e la tabella le
 confondeva.
 
 **Il controllo che cerca le righe mancanti ne ha trovate altre due, qui dentro.**
-Applicato a tutti i registri dei ventidue documenti, il controllo ha detto che
+Applicato a tutti i registri — **31 documenti in `docs/`, 21 con un registro di almeno due righe** — il controllo ha detto che
 in `audit.md` mancava la riga **0.21** — che era il difetto del font senza le
 cifre, uno dei due della giornata — e che la tabella di §7 **non aveva la riga
 di separazione**: le righe sembravano testo con due pipe. Il documento che conta
