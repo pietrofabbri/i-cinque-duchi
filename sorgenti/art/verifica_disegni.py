@@ -13,6 +13,11 @@ Tre controlli, e sono tre perche' sono tre modi in cui un disegno mente:
   D3  **Due livelli non sono lo stesso disegno.** Due SHA uguali su trenta
       file accadono solo se il disegno ha smesso di dipendere dal livello, e
       allora tutti gli ambienti sono la stessa immagine travestita da diverse.
+  D4  **Il file si decodifica davvero, non solo si annuncia.** D1 e D2 leggono
+      l'intestazione, che si puo' dichiarare come si vuole: un PNG che promette
+      tre canali e ne scrive uno supera i tre controlli e non si apre. D4 lo
+      decodifica con `png_terrarium.decodifica_png` e confronta i pixel con la
+      misura dichiarata.
 
 Il controllo e' verde come un controllo che guarda: per questo l'indice dice
 anche quanti edifici sono stati ritagliati, e `D1` verifica che quel numero ci
@@ -27,7 +32,7 @@ import sys
 RADICE = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.abspath(__file__))))
 sys.path.insert(0, os.path.join(RADICE, "sorgenti", "gis"))
-from png_terrarium import misura_png                     # noqa: E402
+from png_terrarium import decodifica_png, misura_png       # noqa: E402
 
 INDICE = os.path.join(RADICE, "sorgenti", "art", "out", "ambienti",
                       "indice.json")
@@ -40,7 +45,7 @@ def main():
         return 1
     ind = json.load(open(INDICE, encoding="utf-8"))
     problemi = []
-    visti, sha = [], {}
+    visti, sha, decodificati = [], {}, 0
 
     for d in ind["disegnati"]:
         percorso = os.path.join(RADICE, d["file"])
@@ -58,12 +63,35 @@ def main():
         if [w, h] != d["px"]:
             problemi.append("D2 %s: il PNG e' %dx%d e l'indice dichiara %dx%d"
                             % (nome, w, h, d["px"][0], d["px"][1]))
+        # **D4: il file si decodifica davvero.** D1 e D2 guardano l'intestazione,
+        # che si puo' dichiarare come si vuole: un PNG che promette tre canali e
+        # ne scrive uno supera i due controlli e non si apre. Il primo tentativo
+        # dei disegni era esattamente questo — intestazione RGB, un byte per
+        # pixel — e i tre controlli erano verdi.
+        try:
+            griglia = decodifica_png(blob)
+        except Exception as e:
+            problemi.append("D4 %s: il file si annuncia come %dx%d ma non si "
+                           "decodifica (%s: %s)"
+                           % (nome, w, h, type(e).__name__, e))
+            continue
+        if len(griglia) != h or len(griglia[0]) != w:
+            problemi.append("D4 %s: si decodifica in %dx%d e l'indice dichiara "
+                           "%dx%d" % (nome, len(griglia[0]), len(griglia),
+                                       w, h))
+            continue
+        if len({tuple(p) for p in griglia[0]}) < 1:
+            problemi.append("D4 %s: si decodifica ma la prima riga e' vuota"
+                           % nome)
+            continue
+
         digest = hashlib.sha256(blob).hexdigest()
         if digest in sha:
             problemi.append("D3 %s e %s: lo stesso disegno, sha uguale"
                             % (sha[digest], nome))
         sha[digest] = nome
         visti.append(nome)
+        decodificati += 1
 
     # Ogni tappa dell'anno 1 deve avere il suo disegno: l'indice puo' dire che
     # mancano, ma non puo' dirlo per errore. Il confronto e' con l'anno letto
@@ -80,6 +108,7 @@ def main():
     print("PROBLEMI: %d" % len(problemi))
     print("  disegni verificati : %d" % len(visti))
     print("  distinti (sha)     : %d" % len(sha))
+    print("  decodificati (D4) : %d" % decodificati)
     return 1 if problemi else 0
 
 

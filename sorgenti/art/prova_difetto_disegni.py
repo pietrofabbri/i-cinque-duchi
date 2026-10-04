@@ -132,6 +132,30 @@ def main():
     sys.path.insert(0, os.path.join(BASE, "sorgenti", "gis"))
     inietta("E4 due livelli con lo stesso disegno", e4, "D3")
 
+    # E6: il file si annuncia come un'immagine e non lo e'. Il PNG di prima
+    # versione aveva l'intestazione RGB e un byte per pixel: D1 e D2 lo
+    # accettavano, perche' guardano l'intestazione, e solo la decodifica lo
+    # smaschera. Il difetto che questo controllo e' nato per morire.
+    def e6(ind):
+        fasullo = os.path.join(OUT, "annunciato_solo.png")
+        import struct as _s, zlib as _z
+        w, h = 8, 4
+        righe = b"".join(b"\x00" + b"\x07" * w for _ in range(h))
+        def blocco(tipo, dati):
+            return (_s.pack(">I", len(dati)) + tipo + dati
+                    + _s.pack(">I", __import__("zlib").crc32(tipo + dati)
+                              & 0xffffffff))
+        con = (b"\x89PNG\r\n\x1a\n"
+               + blocco(b"IHDR", _s.pack(">IIBBBBB", w, h, 8, 2, 0, 0, 0))
+               + blocco(b"IDAT", _z.compress(righe, 9)) + blocco(b"IEND", b""))
+        with open(fasullo, "wb") as f:
+            f.write(con)
+        ind["disegnati"][9]["file"] = \
+            "sorgenti/art/out/ambienti/annunciato_solo.png"
+        ind["disegnati"][9]["px"] = [w, h]
+        creati.append(fasullo)
+    inietta("E6 il file si annuncia come un PNG e non lo e'", e6, "D4")
+
     # E5: una tappa dell'anno 1 non ha piu' il suo disegno.
     def e5(ind):
         tolto = ind["disegnati"][2]["livello"]

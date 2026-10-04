@@ -60,8 +60,35 @@ NEUTRO_M = 4.0
 # Pixel d'aria sopra l'edificio piu' alto, perche' il tetto si veda.
 MARGINE_ALTO_PX = 8
 
+# **Sono indici, non colori.** La tela tiene un numero per cella e i numeri
+# diventano triplette solo quando si scrive il file, prendendole dalla
+# tavolozza: un colore scritto qui sarebbe un colore che vive in un posto solo,
+# che e' il difetto che `verifica_colori.py` (C1) guarda. La prima versione
+# scriveva l'indice come se fosse un byte di canale, e il PNG risultava con un
+# byte per pixel mentre l'intestazione dichiarava RGB: un file che sembrava
+# un'immagine e che nessun lettore del progetto poteva aprire.
 SFONDO, INCHIOSTRO, TERRA, ORO = 0, 1, 2, 3
 SEGNI = {SFONDO: ".", INCHIOSTRO: "#", TERRA: "-", ORO: "O"}
+TAVOLA = os.path.join(RADICE, "dati", "fonti_visive", "tavolozza.json")
+
+
+def colori_rgb():
+    """Le quattro triplette disegnate, prese dalla tavolozza e non scritte."""
+    con = open(TAVOLA, encoding="utf-8")
+    try:
+        voci = {v["chiave"]: v for v in json.load(con)["voci"]}
+    finally:
+        con.close()
+    scelte = []
+    for chiave in ("sfondo", "inchiostro", "terra_gialla", "oro"):
+        if chiave not in voci:
+            raise SystemExit("la tavolozza non ha la voce %s" % chiave)
+        esadecimale = voci[chiave].get("hex")
+        if not esadecimale:
+            raise SystemExit("la voce %s non dichiara l'esadecimale" % chiave)
+        h = esadecimale.lstrip("#")
+        scelte.append(tuple(int(h[i:i + 2], 16) for i in (0, 2, 4)))
+    return scelte
 
 # Che cosa si disegna di un edificio, e di che colore. Le chiavi sono i valori
 # che `fonte_altezza` puo' avere: se ne nasce una quarta, `disegna` lo dice e
@@ -144,9 +171,16 @@ def riquadro(tela, x, y, w, h, colore):
             riga[xx] = colore
 
 
-def scrivi_png(tela, percorso):
-    """Il PNG piu' semplice che esista: RGB, tre byte per pixel."""
-    righe = b"".join(b"\x00" + bytes(pixel) for pixel in tela)
+def scrivi_png(tela, percorso, rgb):
+    """Il PNG piu' semplice che esista: RGB, tre byte per pixel.
+
+    Ogni cella della tela e' un **indice** e diventa qui una tripla RGB presa
+    dalla tavolozza. Scrivere l'indice direttamente e' il difetto che ha reso
+    la prima versione dei disegni illeggibile: l'intestazione dichiarava tre
+    canali e i dati ne avevano uno.
+    """
+    righe = b"".join(b"\x00" + b"".join(bytes(rgb[c]) for c in riga)
+                     for riga in tela)
     grezzo = zlib.compress(righe, 9)
 
     def blocco(tipo, dati):
@@ -278,6 +312,8 @@ def principale():
     with open(SAGOME, encoding="utf-8") as f:
         sagome = json.load(f)["edifici"]
 
+    rgb = colori_rgb()
+
     scelti = [a for a in ambienti
               if tutte or guarda == a["livello"]
               or (anno is None and a["livello"].startswith("1-"))
@@ -288,7 +324,7 @@ def principale():
     for a in scelti:
         tela, alto_px, stat = disegna(a, sagome)
         nome = os.path.join(OUT, "ambiente_%s.png" % a["livello"])
-        scrivi_png(tela, nome)
+        scrivi_png(tela, nome, rgb)
         disegnati.append({"livello": a["livello"],
                           "file": os.path.relpath(nome, RADICE),
                           "px": [len(tela[0]), alto_px],
@@ -308,6 +344,10 @@ def principale():
                    "tipo_disegno": "schematico: l'ingombro di ogni edificio "
                                    "ritagliato alla zona, non la facciata",
                    "px_per_m": PXL_PER_M, "neutro_m": NEUTRO_M,
+                   "colori": {n: "%02X%02X%02X" % c for n, c in
+                              zip(("sfondo", "inchiostro", "terra", "oro"),
+                                  rgb)},
+                   "colori_da": "dati/fonti_visive/tavolozza.json",
                    "passaggi": len(disegnati),
                    "senza_sagome": vuoti,
                    "edifici_ritagliati": tagliati,
