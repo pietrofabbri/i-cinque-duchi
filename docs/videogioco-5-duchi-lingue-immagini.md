@@ -1,11 +1,12 @@
 ---
 titolo: Videogioco "I cinque duchi" — le immagini degli oggetti di interazione: dove vengono e perché si dichiarano
-versione: 0.1
-data: 2026-10-02
+versione: 0.2
+data: 2026-10-04
 autore: Pietro Fabbri (con Claude)
 fonte: ricerca su Wikimedia Commons del 02/10/2026
 documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-ritratti.md (v0.5), videogioco-5-duchi-luoghi-edifici.md (v0.4), videogioco-5-duchi-esercizi.md (v0.1), AGENTS.md, FONTI-E-LICENZE.md
-dati: dati/lingue/associazioni.json (v1), dati/lingue/immagini_oggetti.json (v1, 180 voci, 1120 candidati)
+dati: dati/lingue/associazioni.json (v1), dati/lingue/immagini_oggetti.json (v1, **il primo giro**, 180 voci, 1120 candidati), dati/lingue/immagini_2.json (v2, **il secondo giro** per il latino, il greco e il ferrarese: 90 voci, 547 candidati), dati/lingue/attestazione_oggetti.json (le scelte a vista; **vuota finché nessuno guarda**), dati/lingue/giudizi_oggetti.json (**da produrre**: i giudizi che Pietro scrive guardando i fogli, che `giudizi_oggetti.py` trasforma in attestazione)
+controllo: python3 sorgenti/lingue/verifica_immagini_oggetti.py (G1-G7: copertura, licenze, misura, proporzione, completezza, pertinenza e scivolamento), python3 sorgenti/lingue/cerca_immagini_2.py (il secondo giro, con un controllo di allineamento che si ferma se la tabella dei termini non ha esattamente le trenta voci), python3 sorgenti/lingue/fogli_oggetti.py (i 18 fogli di controllo), python3 sorgenti/lingue/giudizi_oggetti.py (registra i giudizi a vista e li applica all'attestazione)
 ---
 
 # Le immagini degli oggetti di interazione
@@ -74,6 +75,33 @@ La ricerca ha girato il 02/10/2026 su Wikimedia Commons, con `sorgenti/lingue/ce
 | **Greco** | 2 | *Il vino di Maronea* e *i vini dirottati*: il primo non ha un'immagine propria (è un vino locale, non un oggetto riconoscibile), il secondo è una pratica di cui non resta documento visivo. |
 
 ---
+
+### 2.1 Il secondo giro: cercare la **cosa**, non la **parola**
+
+Il 04/10/2026 la ricerca è stata rifatta per il **latino**, il **greco** e il **ferrarese**, e il principio è cambiato: **si cerca la cosa che si vede, non la parola che la nomina**.
+
+Una voce non è una parola da tradurre: è **la cosa che il ragazzo guarda**. Per «gli auspici» la risposta non è un file che si chiama *auspicia* ma **il lituo dell'augure**, lo strumento che l'augure tiene in mano in mano: è l'oggetto che fa quella cosa. Il primo giro cercava «auspicia» e trovava una **moneta con la scritta SPES**, che è un augurio di speranza e non un auspicio romano. Non era un errore di ricerca: era la ricerca giusta con la domanda sbagliata.
+
+I termini nuovi sono in `sorgenti/lingue/cerca_immagini_2.py`, e sono **scritti a mano**: si dichiara la regola che il progetto dichiara da quattro giorni, cioè che **una ricerca automatica non sceglie, e nemmeno i termini**.
+
+| | Primo giro | Secondo giro |
+|---|---|---|
+| voci cercate | 146 coperte + 34 scoperte | 90 (LA, EL, FE) |
+| candidati delle novanta voci | 417 | **547** |
+| voci **senza** nessun candidato | **34** | **3** |
+
+Le trenta voci ferraresi non hanno più zero candidati per caso: hanno candidati per **decisione** (§2.2).
+
+**Una cosa che il secondo giro non può fare, e va detto**: il numero di G7 non è confrontabile fra i due giri. G7 misura se il **nome del file** nomina la voce, e il secondo giro cerca per **concetto**: il file di un rito funebro romano non contiene la parola «funebri» contiene la parola *funeral*. Il numero è quindi **più basso nel secondo giro proprio perché la ricerca è migliore**, e dichiararlo come un peggioramento sarebbe il difetto al contrario: un numero che non misura quello che dice di misurare.
+
+### 2.2 Le trenta voci ferraresi: la cosa che il proverbio riguarda
+
+Le trenta voci ferraresi sono campi di proverbi e modi di dire, e un proverbio non ha immagine. Il 02/10 la risposta era `nessuna` con il motivo dichiarato, e la Q4 chiedeva che cosa fare della tappa ferrarese, che sarebbe stata l'unica senza immagine.
+
+**Pietro ha deciso il 04/10/2026 di associare «qualcosa di evocativo»**, e la scelta è dichiarata perche' è una scelta: alla voce «i proverbi sul tempo» non si mette un'immagine dei proverbi — che non esiste — ma **la Torre dell'Orologio di Ferrara**, che è la cosa di cui il campo parla. Non è l'immagine del proverbio: è **la cosa che il proverbio riguarda**, e quella si può fotografare per davvero.
+
+La regola che ne nasce è dichiarata perché qualcuno la riuserà: **a una voce che non ha un oggetto si può associare la cosa che la voce evoca, e solo se esiste ed è vera**. Un'immagine inventata è esclusa come sempre (`prova 5`): se per «i proverbi sulla fortuna» non ci fosse niente di ferrarese da fotografare, la risposta resta `nessuna` col motivo, e va detto che è una delle quattro categorie e non un buco.
+
 
 ## 3. Le etichette, che sono la parte importante
 
@@ -180,17 +208,17 @@ Il conto dei dodici problemi è **12 candidati respinti** su 1120, non dodici vo
 
 ### 6.2 Le questioni aperte
 
-**Q1 — Chi guarda le immagini, e con quale impegno? (bloccante per le tappe dell'oggetto)**
-Guardare 1120 candidati a vista è un lavoro di ore, non di minuti, e finora non è stato fatto **nessuno**. Le opzioni sono tre: le guardo io e registro l'attestazione, le guarda Pietro, oppure si guarda **un campione** — i 146 migliori per voce — e il resto si considera sufficiente. La terza è la più realistica, ma va detto che **non è la stessa cosa**: un campione non attesta il resto.
+**Q1 — Chi guarda le immagini, e con quale impegno? (chiusa il metodo il 04/10/2026; resta il lavoro)**
+Guardare 1120 candidati a vista è un lavoro di ore, non di minuti. La domanda era *chi*, e il 04/10 è risolta: **le guarda Pietro**, io registro. Il metodo è quello dei ritratti ed è scritto: `sorgenti/lingue/fogli_oggetti.py` produce i **18 fogli** (dieci voci per foglio, i tre candidati migliori per voce, con licenza, autore, data e misura in ogni cella), e `sorgenti/lingue/giudizi_oggetti.py` prende i giudizi da `dati/lingue/giudizi_oggetti.json` — **da produrre**, perché quel file lo scrive chi guarda, e finché nessuno guarda non esiste e non deve esistere — e li scrive nell'attestazione **solo se reggono**: esito fra i tre, etichetta fra le nove, categoria fra le quattro, e **motivo di almeno 25 caratteri**. Un motivo più corto è un campo compilato a macchetta, ed è la forma più economica del difetto che il progetto ha imparato a cercare. I fogli non selezionano: mettono in testa i candidati che il loro nome non collega alla voce (`SOSPETTO`), perché un foglio che nasconde i sospetti serve a confermare e non a controllare. Restano da guardare i **180** migliori per voce — e il resto si considera sufficiente. La terza è la più realistica, ma va detto che **non è la stessa cosa**: un campione non attesta il resto.
 
 **Q2 — Le trenta voci di ogni lingua sono confermate? (bloccante)**
 Riprende `lingue.md` §7 Q2. Un'immagine cerca la voce giusta, non quella confermata: se le trenta voci cambiano, tutta la ricerca va rifatta. Conviene quindi chiudere Q2 prima di scegliere le immagini, non dopo.
 
-**Q3 — Le fonti del latino e del greco vanno cercate altrove? (bloccante per il latino)**
-Il G7 dice che **27 voci latine su 28** hanno solo proposte scoperte per caso. Le fonti giuste non sono Commons: sono i **corpus epigrafici** (EDCS, EDR) e le **biblioteche digitali** (Gallica, BEIC). Commons ha le immagini degli oggetti, non le fonti filologiche. Va deciso se aggiungere questi due corpi alle ricerche, il che è un lavoro diverso e va detto.
+**Q3 — Le fonti del latino e del greco vanno cercate altrove? (parzialmente chiusa il 04/10/2026)**
+Il G7 dice che **27 voci latine su 28** hanno solo proposte scoperte per caso. Il 04/10 sono state cercate **di nuovo su Commons**, con i termini che nominano le cose (§2.1), e il latino è passato da **27 voci a rischio su 28** a un numero che il secondo giro non può confrontare (§2.1). Le fonti giuste per le voci che restano senza immagine non sono Commons: sono i **corpus epigrafici** (EDCS, EDR) e le **biblioteche digitali** (Gallica, BEIC). Commons ha le immagini degli oggetti, non le fonti filologiche. Va deciso se aggiungere questi due corpi alle ricerche, il che è un lavoro diverso e va detto.
 
-**Q4 — Che cosa si fa delle trenta voci ferraresi? (non bloccante)**
-Le trenta voci ferraresi non hanno immagine e non ne possono avere: sono campi di raccolta. Ma allora la tappa dell'oggetto ferrarese **non ha immagine**, mentre tutte le altre ne hanno. Va deciso se le tappe ferraresi mostrano qualcos'altro — un'immagine della persona che parla, una trascrizione, il paesaggio — o se dichiarano il vuoto con la stessa regola dei 44 emblemi. La seconda è più onesta, ed è quella che il progetto sceglie di solito.
+**Q4 — Che cosa si fa delle trenta voci ferraresi? (chiusa il 04/10/2026)**
+Le trenta voci ferraresi non hanno immagine **del proverbio**, che non esiste, e il 04/10 Pietro ha deciso che associano **la cosa che il campo evoca**, se esiste ed è vera (§2.2). Le tappe ferraresi quindi **non sono le uniche senza immagine**, e ogni voce che non trovi niente di ferrarese torna `nessuna` col motivo dichiarato. Va ancora deciso se le tappe ferraresi mostrano qualcos'altro — un'immagine della persona che parla, una trascrizione, il paesaggio — o se dichiarano il vuoto con la stessa regola dei 44 emblemi. La seconda è più onesta, ed è quella che il progetto sceglie di solito.
 
 **Q5 — Le immagini servono solo per le facoltative? (non bloccante)**
 Le voci degli oggetti servono alle tappe facoltative, ma gli stessi oggetti compaiono anche nei **testi autentici** dei 900 livelli (`lingue.md` §2: ogni livello ha un testo vero). Una tappa su Cesare ha bisogno di un'immagine della pagina di Cesare, non di una coppa. Le due cose sono diverse, e solo la prima è stata fatta: **le immagini dei testi autentici non sono state cercate**, e sono almeno 900.
@@ -204,4 +232,5 @@ Ridurre a 96×72 gli spinelli di Commons richiede un'immagine minima (§4.1), un
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 04/10/2026 | 0.2 | **Il secondo giro di ricerca, e i fogli di controllo che non esistevano.** Il latino, il greco e il ferrarese sono stati cercati di nuovo cercando **la cosa che si vede** e non la parola che la nomina: alla voce «gli auspici» il lituo dell'augure, non un file che contiene la parola. Le voci **senza nessun candidato** scendono da **34 a 3** e i candidati delle novanta voci salgono da **417 a 547**. Il primo giro **non è stato toccato**: è la prova di che cosa trovava una ricerca che cercava le parole. La Q1 era bloccante perché **manccavano i fogli di controllo** e senza fogli l'attestazione a vista è impossibile: ora ci sono, **18 fogli** da dieci voci, e la Q1 è risolta nel metodo — le immagini le guarda Pietro, io registro i giudizi e lo script **rifiuta** un giudizio senza motivo, con etichetta fra le nove e file fra i candidati guardati. La Q4 è chiusa: le trenta voci ferraresi associano **la cosa che il proverbio evoca**, se esiste ed è vera. Un difetto trovato in sé stesso: il primo tentativo faceva `zip(nomi, termini)` e quindi cercava **il nome italiano della voce** invece del termine inglese — la stessa malattia del primo giro, e l'ho scritta due volte. |
 | 02/10/2026 | 0.1 | Prima stesura. Ricerca su Wikimedia Commons delle **180 voci** degli oggetti di interazione, con termini scelti voce per voce: **1120 candidati** con licenza libera, di cui **12 respinti** per difetto automatico. La regola delle quattro categorie, le etichette, la misura 96×72 e la regola del ritaglio dichiarato. Il difetto della ricerca — 67 voci in cui nessun candidato nomina l'oggetto, fra cui il latino a 27 su 28 — dichiarato per esteso, con i sette controlli che lo rendono visibile. **Nessuna immagine scelta, nessuna guardata a vista**: è dichiarato, ed è la prima questione aperta. |
