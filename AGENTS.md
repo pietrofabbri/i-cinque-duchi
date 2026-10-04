@@ -90,6 +90,7 @@ Questo file serve a chiunque riprenda il lavoro senza il contesto delle conversa
 - **Quattro prove, e tutte e quattro**: esiste e si può vedere (licenza libera, etichetta, autore, data); **insegna il livello** (senza questa è una decorazione); **non è già nella storia** (il premio è la scoperta, non il ripasso); **non è un duplicato** (due premi uguali sono uno solo).
 - **Non entra mai un'opera generata**, per la stessa ragione che non entrano le immagini degli oggetti (`lingue-immagini.md` §1): un premio inventato insegna che esistono opere che non esistono.
 - **L'informatica ha un premio per tappa come le altre discipline**: centocinquanta, che portano il catalogo a **1050** (`premi.md` §4.0). La richiesta del 03/10 diceva «tranne informatica» ed è stata superata il **04/10/2026**: i centocinquanta livelli informatici hanno un premio come gli altri, e la riga non è più l'eccezione. §2.2 resta dichiarata *senza* premio solo per la **sfida a mani nude**, dove il premio è la prestazione.
+- **Le immagini degli oggetti si scelgono guardando, e chi guarda non sono io**: `sorgenti/lingue/fogli_oggetti.py` produce i fogli di controllo, `giudizi_oggetti.py` registra i giudizi e **rifiuta** tutto ciò che non regge — etichetta fra le nove, categoria fra le quattro, file fra i candidati guardati, **motivo di almeno 25 caratteri**. Un motivo più corto è un campo compilato a macchetta. I **50 MB** dei fogli e i **35 MB** della cache non sono nel ramo e si rigenerano con un comando dai due JSON, che sono nel ramo.
 - **La lingua dei segni ha la categoria K**, la scheda che il giocatore produce (`premi.md` §2.1): centocinquanta figure sorde storiche non esistono, e la prova 4 le avrebbe contate come duplicati. Resta aperta `lingue.md` Q4 — **la forma del segno nel quaderno**, che il gioco non può disegnare.
 
 **Modello pedagogico** (trasversale, vedi `pedagogia.md` e `ripassi.md`, del 03/10/2026)
@@ -300,6 +301,27 @@ Le tre regole che ne vengono:
 La forma del difetto è quasi sempre la stessa: **una riga di metodo, non un
 lavoro**. Il file era giusto e la catena che lo produceva era giusta; a mentire era
 la prosa che lo raccontava.
+
+**Un controllo scritto per un campione non copre l'insieme**
+Questa regola nasce da un difetto vero del 5 ottobre 2026: `verifica_disegni.py`
+chiedeva che i PNG dei disegni degli ambienti avessero **tutti sha diversi**. Sull'anno 1
+— trenta tappe, un campione scelto per guardare dentro il disegnatore — la richiesta
+era giusta. Estesi i disegni a tutte e centocinquanta le tappe, è impossibile: 43 tappe
+su 150 hanno le stesse sagome sulla stessa griglia e quindi lo stesso disegno. Un
+controllo che segnala come difetto la verità è un allarme spento, e spento non è verde.
+
+Le due regole che ne vengono:
+
+1. **Un controllo va riscritto quando il dato si allarga, non tarato.** La domanda da
+   porre non è «come faccio perché passi?» ma «che cosa deve essere vero quando il dato
+   è due volte più grande?». Qui la risposta è D3 in `sorgenti/art/verifica_disegni.py`,
+   che confronta la **chiave dei dati** (sagome e griglia, `chiave_dati()`) con lo **sha
+   del PNG**: stessi dati, stesso disegno; dati diversi, disegni diversi. Il conto torna,
+   107 chiavi dati e 107 sha distinti su 150.
+2. **Il comando che genera un indice può cancellare metà del lavoro senza dirlo.**
+   `disegna_ambienti.py --anno N` scrive lo stesso `indice.json` con dentro quell'anno
+   solo: si può perdere di vista che gli altri quattro anni non sono disegnati. Si usa
+   `--tutte`. Lo stesso vale per ogni generatore che scrive un manifesto unico.
 
 ## 5. Vincoli tecnici e di contenuto
 

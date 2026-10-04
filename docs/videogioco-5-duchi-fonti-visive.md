@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — le fonti visive: che cosa il gioco non ha ancora una veste, e dove si prende
-versione: 0.11
-data: 2026-10-04
+versione: 0.12
+data: 2026-10-05
 autore: Pietro Fabbri (con Claude)
 fonte: ricerca su Wikimedia Commons del 02/10/2026; tavolozza da Wikidata e Wikipedia del 03/10/2026; sagome e mura da OpenStreetMap via API standard OSM del 04/10/2026; cime e quote da Natural Earth `geography_regions_elevation_points` del 03/10/2026; verifica dei fondi già in dati/mappe/
-documenti collegati: videogioco-5-duchi-ritratti.md (v0.5), videogioco-5-duchi-lingue-immagini.md (v0.2), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-mappe.md (v1.3), videogioco-5-duchi-luoghi-edifici.md (v0.4), videogioco-5-duchi-audit.md (v0.22), videogioco-5-duchi-tappa-1-01.md (v0.4), AGENTS.md
+documenti collegati: videogioco-5-duchi-ritratti.md (v0.5), videogioco-5-duchi-lingue-immagini.md (v0.2), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-mappe.md (v1.3), videogioco-5-duchi-luoghi-edifici.md (v0.4), videogioco-5-duchi-audit.md (v0.23), videogioco-5-duchi-tappa-1-01.md (v0.4), AGENTS.md
 dati: dati/fonti_visive/fonti_visive.json (v1, 27 voci, 125 candidati), dati/fonti_visive/attestazione.json (v1, vuoto), dati/fonti_visive/tavolozza.json (v1, 18 voci), dati/edifici_footprint.json (v1, 7322 edifici su 203 aree), dati/ferrara_fondo.json (v1, 14 tratti di mura), dati/ambienti_livelli.json (v2, 150 ambienti), dati/fonti_visive/colori_cartografici.json (v1, 19 voci), dati/altitudine_manifest.json (v1, tre file di cime: 15, 2 e 26 punti)
 ---
 
@@ -264,23 +264,32 @@ Non esiste un terzo modo, ed è il punto: **nessun colore entra perché stava gi
 
 ---
 
-### 3.9 I disegni degli ambienti: generati il 04/10/2026
+### 3.9 I disegni degli ambienti: i trenta dell'anno 1 il 04/10/2026, tutti e centocinquanta il 05/10/2026
 
-`dati/ambienti_livelli.json` e `dati/edifici_footprint.json` erano due tavole di numeri, e nessuno le guardava insieme. `sorgenti/art/disegna_ambienti.py` le guarda insieme e ne fa un'immagine per tappa: **30 disegni**, in `sorgenti/art/out/ambienti/`, con l'indice in `indice.json`.
+`dati/ambienti_livelli.json` e `dati/edifici_footprint.json` erano due tavole di numeri, e nessuno le guardava insieme. `sorgenti/art/disegna_ambienti.py` le guarda insieme e ne fa un'immagine per tappa: **150 disegni**, uno per tappa, in `sorgenti/art/out/ambienti/`, con l'indice in `indice.json`. I primi **30** (anno 1) il 4 ottobre, tutti e centocinquanta il 5: l'anno 1 era un campione scelto per guardare dentro il disegnatore, non un traguardo.
+
+**Il comando è `--tutte`, e va detto perché ha un'insidia.** `--anno N` scrive lo stesso `indice.json` con dentro solo quell'anno: si può così perdere di vista che gli altri quattro anni non sono disegnati, e trovarsi un indice con trenta voci che si dichiara "i disegni" mentre i file ne hanno centocinquanta. `--tutte` riscrive l'indice per tutte le centocinquanta tappe, e l'indice è la prova che il conto è quello giusto.
 
 **Che cosa si disegna, e che cosa non si disegna.** Ogni edificio è il **rettangolo che occupa** visto dalla zona, ritagliato ai bordi, con l'altezza che il dato dichiara. Non è la facciata: la facciata c'è nel file, ma a questa scala è più grande della zona e ritagliarla lascia un bordo obliquo, non un edificio. Il disegno è dunque **schematico**, e lo dice nell'indice: dice quanti edifici ci sono, quanto sono alti e dove stanno, non com'è fatto il tetto. **Un'altezza non dichiarata non si stima**: esce un volume neutro di `NEUTRO_M` metri, che è un'altezza dichiarata e non quella giusta.
 
-**Il riquadro non è scritto.** È l'**inviluppo delle sagome del livello**, calcolato dai dati, con la griglia come minimo. Ed è qui che è nato il difetto più subdolo della giornata: la prima versione usava la griglia come riquadro, cioè la zona percorribile — venti metri per quindici — mentre gli edifici si interrogano entro un raggio di quaranta-centoventi metri. Il ritaglio li buttava fuori uno per uno e il risultato erano trenta immagini quasi tutte uguali, tutte sfondo: **tre coppie avevano lo stesso sha**. Lo ha visto il controllo **D3**, che confronta gli sha, e non un occhio. Il motto è quello di `AGENTS.md`: *un controllo che non guarda è verde come un controllo che guarda*.
+**Il riquadro non è scritto.** È l'**inviluppo delle sagome del livello**, calcolato dai dati, con la griglia come minimo. Ed è qui che è nato il difetto più subdolo della giornata: la prima versione usava la griglia come riquadro, cioè la zona percorribile — venti metri per quindici — mentre gli edifici si interrogano entro un raggio di quaranta-centoventi metri. Il ritaglio li buttava fuori uno per uno e il risultato erano trenta immagini quasi tutte uguali, tutte sfondo: **tre coppie avevano lo stesso sha**. Lo ha visto il controllo **D3**, che confrontava gli sha, e non un occhio. Il motto è quello di `AGENTS.md`: *un controllo che non guarda è verde come un controllo che guarda*.
 
+**Sui centocinquanta, però, D3 era diventato il controllo sbagliato.** Se chiede «gli sha sono tutti diversi?», su un anno intero la risposta è no e non può esserlo: le tappe che condividono luogo e griglia condividono disegno, e sono **43 su 150**. Un controllo che segnala come difetto la verità costringe a due sciocchi: o si falsano i dati perché i disegni escano diversi, o si zittisce il controllo. D3 è stato riscritto il 5 ottobre per confrontare **la chiave dei dati** — le sagome del livello più la sua griglia, in `chiave_dati()` di `sorgenti/art/verifica_disegni.py` — con lo sha del PNG: *stessi dati devono dare stesso disegno, dati diversi devono dare disegni diversi*. Il conto torna esattamente, **107 chiavi dati e 107 sha distinti su 150**, ed è un controllo che guarda due cose e non una.
+
+**Un controllo che non è mai stato provato non è un controllo.** `sorgenti/art/prova_difetto_disegni_150.py` rovescia il disegnatore due volte e verifica che D3 lo veda: **F1** fa perdere un edificio a `2-5`, che allora eredita il disegno di `2-8` — «il disegnatore perde qualcosa»; **F2** mette una macchia su `5-18`, che ha gli stessi dati di altre tre tappe ma un file più piccolo — «il disegnatore aggiunge qualcosa che nei dati non c'è». Iniettati **2**, visti **2**, e il ripristino è verificato sugli sha. Un difetto che il controllo non trova è un difetto che il controllo non ha.
+
+**Cosa costa, dichiarato.** `verifica_disegni.py` impiega **2 minuti e 10 secondi** per esecuzione, perché **D4** decodifica tutti e centocinquanta i PNG in Python puro per guardare i colori. È lento, ed è dichiarato invece che nascosto: un controllo che costa un minuto e mezzo e non lo dichiara viene saltato entro un mese.
 | | |
 |---|---|
-| Disegni | **30**, uno per ogni tappa dell'anno 1 |
-| SHA distinti | **30** su 30: nessuna tappa è la stessa immagine travestita da un'altra |
-| Edifici disegnati | **447** |
+| Disegni | **150**, uno per ogni tappa, su 150 |
+| Chiavi dati diverse | **107** su 150: 107 tappe hanno sagome e griglia loro, e le altre **43** sono la stessa tappa vista due volte |
+| SHA distinti | **107** su 150: **uguagliano le chiavi dati**, cioè nessuna tappa con dati diversi ha lo stesso disegno, e nessuna tappa con gli stessi dati ha un disegno diverso |
+| Edifici disegnati | **2632** |
 | Edifici ritagliati fuori dal riquadro | **0** |
-| Larghezza | da **488** a **2584** pixel, secondo l'inviluppo |
+| Larghezza | da **80** a **2584** pixel, secondo l'inviluppo |
 | Punti per metro | **4**, dichiarati, gli stessi dei sprite della tappa 1-1 |
-| PNG che si decodificano | **30 su 30**, con quattro colori dalla tavolozza |
+| PNG che si decodificano | **150 su 150**, con quattro colori dalla tavolozza |
+| Tappe con disegno vuoto | **16**, dichiarate una per una in `indice.json` (`senza_sagome`), perché sono le tappe che `dati/ambienti_livelli.json` dichiara `senza_sagome_osm` |
 
 **I colori vengono dalla tavolozza, e il file lo dichiara**: sfondo `EDE4D3`, inchiostro `2B2622`, terra `CC7722` e oro `B08D3E`, presi da `dati/fonti_visive/tavolozza.json` e scritti nell'indice. Un colore scritto nel codice del disegnatore sarebbe un colore che vive in un posto solo, che è il difetto che `verifica_colori.py` (C1) guarda.
 
@@ -439,7 +448,7 @@ Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file d
 | Cime e quote | **fatte**: 15 + 2 + 26 punti su tre scale, con la scoperta che la fonte è **mondiale in tutte e tre** e i tre file non sono annidati |
 | Quanti ambienti il motore ha disegnato | **uno**, la tappa 1-1 |
 | Emblemi dei premi | **fatti il 04/10/2026**: 1050 tessere in un foglio, undici forme dichiarate, 5 categorie in uso |
-| Disegni degli ambienti | **fatti il 04/10/2026**: 30 immagini schematiche su 30 tappe dell'anno 1, **30 SHA distinti** |
+| Disegni degli ambienti | **fatti il 05/10/2026**: **150 immagini schematiche su 150 tappe**, 2632 edifici disegnati, **16 tappe vuote dichiarate**, e D3 riscritto sul confronto fra **chiave dati e sha**: 107 chiavi dati, 107 sha distinti |
 | Lavoro più grande che resta | i **125 candidati** da guardare a vista, e i **cinquantuno** ambienti senza coordinate |
 | Lavoro più grande che manca *fra i dati* | nessuno: i sei file ci sono e sono verificati |
 
@@ -447,12 +456,21 @@ Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file d
 
 ## 9. Registro delle modifiche
 
+## 9. Registro delle modifiche
+
+- **v0.12 (05/10/2026)**: **i trenta disegni dell'anno 1 erano verdi, e D3 era diventato il controllo sbagliato.** Estesi i disegni a tutte e centocinquanta le tappe (`python3 sorgenti/art/disegna_ambienti.py --tutte`, 25 s, 1,5 MB, **2632** edifici disegnati, **0** ritagliati fuori, larghezza da **80** a **2584** px, **150** PNG decodificati). Le **16** tappe senza sagome restano vuote e sono dichiarate una per una: un disegno vuoto che non sa di essere vuoto è più peggio di un disegno che non c'è. Ma il controllo **D3** non poteva restare com'è: chiedeva che gli sha fossero tutti diversi, e sui centocinquanta la risposta è no e non può essere sì — le tappe con le stesse sagome sulla stessa griglia sono **43 su 150** e condividono il disegno. Un controllo che segnala come difetto la verità non è un controllo, è un allarme spento.
+  - **D3 è riscritto in `sorgenti/art/verifica_disegni.py`**: confronta la **chiave dei dati** (sagome + griglia, funzione `chiave_dati()`) con lo sha del PNG — stessi dati, stesso disegno; dati diversi, disegno diverso. Il conto torna: **107 chiavi dati, 107 sha distinti su 150**;
+  - **la prova del difetto è nuova, `sorgenti/art/prova_difetto_disegni_150.py`**: rovescia il disegnatore due volte (F1 perde un edificio dalla 2-5, F2 macchia la 5-18), verifica che D3 veda entrambi i difetti e verifica il ripristino confrontando gli sha. **2 iniettati, 2 visti**;
+  - **la data dell'indice non è più scritta a mano**: `indice.json` scriveva `2026-10-04` mentre i centocinquanta disegni sono del 5; ora è calcolata. È un numero, e i numeri scritti a mano invecchiano;
+  - **il costo è dichiarato**: `verifica_disegni.py` impiega **2 min 10 s** per esecuzione perché D4 decodifica tutti i PNG in Python puro. È lento, e si dichiara invece di fingere che sia veloce.
+  - **l'insidia di `--anno N`** è dichiarata accanto al comando: scrive lo stesso `indice.json` con dentro un anno solo, e un indice con trenta voci che si dichiara "i disegni" fa perdere di vista gli altri quattro anni. Si usa `--tutte`.
+
+- **v0.11 (04/10/2026)**: **tre righe scritte due volte, e un registro che si chiudeva a metà.** La sezione §3.10 e la riga «Emblemi dei premi» del riepilogo §8 erano ciascuna in duplice copia, parola per parola: la sostituzione che le aveva scritte era stata eseguita due volte e nessun controllo se n'era accorto, perché i numeri erano giusti in entrambe le copie. Nel registro §9 c'era una riga `|---|---|---|` **in mezzo alle righe**: chiudeva la tabella dopo la 0.5 e le quattro righe sotto sembravano un'altra tabella. E le versioni **0.9 e 0.10 non avevano riga**, cioè i due difetti più importanti della giornata — il font senza le cifre e le forme disegnate senza guardarle — erano spariti dal registro mentre erano nel testo. Il modulo è quello di sempre, nella quinta forma: una riga scritta due volte è un numero contato due volte, e un numero contato due volte è un documento che mente sul suo stesso lavoro.
+
 - **v0.4 (03/10/2026)**: **i numeri di §3.6 erano scritti a mano, e non erano più quelli del file.** Il controllo che sorveglia gli ambienti ne aveva sette, e tutti e sette confrontavano i dati fra loro: nessuno confrontava il dato con **le righe scritte qui**. Così la sezione dichiarava **99** ambienti con coordinate quando il file ne ha **100**, **69** con sagome OSM quando ne ha **68**, `citta_antica` **11** contro **12** e `percorso` **11** contro **10**, e i vuoti erano tre cifre sotto: `senza_sagome_osm` 81 contro 82, `coordinate_non_e_un_luogo` 24 contro 23, `nessun_luogo_dichiarato` non citato. La dichiarazione più falsa era un’altra: la sezione scriveva che «la 1-1 ha un orientamento e gli altri 149 no», mentre **nessuno** dei centocinquanta lo ha — la 1-1 compresa. Tutte le verifiche passavano, ed è la ragione per cui il difetto è rimasto due giorni in un documento che si dichiara costruito.
   - **B8 è il controllo nuovo**, in `sorgenti/verifica_ambienti.py`: legge questa sezione e confronta ogni numero con il conto — le tre quote della tabella, i nove tipi e tutti i vuoti. Lo ha scritto il difetto: ne ha trovati sette in una volta sola;
   - **le due frasi che il file scrive su se stesso non sono più scritte a mano.** In `sorgenti/ambienti_livelli.py` il numero delle ipotesi era «le 51 tappe» quando le ipotesi erano già **50** (la 4-16 aveva trovato la sua), e l’orientamento era dato per dichiarato sulla 1-1. Ora entrambe le frasi sono calcolate: la regola è che **un numero in letteratura invecchia e nessuno lo rilegge**, mentre un numero calcolato cambia da solo quando il dato cambia sotto;
   - la lezione che resta è la stessa di `verifica_coerenza.py`: i controlli devono guardare **anche le frasi scritte**, non solo i file. Un dato che nessuno confronta con la sua descrizione è un dato che può dire due cose diverse nello stesso giorno.
-
-- **v0.11 (04/10/2026)**: **tre righe scritte due volte, e un registro che si chiudeva a metà.** La sezione §3.10 e la riga «Emblemi dei premi» del riepilogo §8 erano ciascuna in duplice copia, parola per parola: la sostituzione che le aveva scritte era stata eseguita due volte e nessun controllo se n'era accorto, perché i numeri erano giusti in entrambe le copie. Nel registro §9 c'era una riga `|---|---|---|` **in mezzo alle righe**: chiudeva la tabella dopo la 0.5 e le quattro righe sotto sembravano un'altra tabella. E le versioni **0.9 e 0.10 non avevano riga**, cioè i due difetti più importanti della giornata — il font senza le cifre e le forme disegnate senza guardarle — erano spariti dal registro mentre erano nel testo. Il modulo è quello di sempre, nella quinta forma: una riga scritta due volte è un numero contato due volte, e un numero contato due volte è un documento che mente sul suo stesso lavoro.
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|

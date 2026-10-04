@@ -42,6 +42,7 @@ import math
 import os
 import struct
 import sys
+import time
 import zlib
 
 RADICE = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -340,7 +341,8 @@ def principale():
 
     indice = os.path.join(OUT, "indice.json")
     with open(indice, "w", encoding="utf-8") as f:
-        json.dump({"versione": 1, "data": "2026-10-04",
+        json.dump({"versione": 1,
+                   "data": time.strftime("%Y-%m-%d"),
                    "tipo_disegno": "schematico: l'ingombro di ogni edificio "
                                    "ritagliato alla zona, non la facciata",
                    "px_per_m": PXL_PER_M, "neutro_m": NEUTRO_M,

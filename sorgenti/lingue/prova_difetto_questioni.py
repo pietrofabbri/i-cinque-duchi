@@ -34,6 +34,75 @@ AUDIT = "videogioco-5-duchi-audit.md"
 README = "README.md"
 
 
+def porzione(testo, schema, che_cosa):
+    """La riga del documento che la prova deve alterare, cercata ogni volta.
+
+    **Un numero scritto dentro la prova invecchia come tutti gli altri**, ed e'
+    successo: il 05/10/2026 il conto delle questioni chiuse e' passato da 31
+    a 34, e i tre difetti che dipendevano da quel numero non hanno piu' trovato
+    il testo da alterare. Una prova che non altera niente e non se ne accorge
+    passa per la ragione sbagliata, che e' la peggiore: e' verde perche' non
+    ha guardato niente. Il numero lo cerca nel documento, non lo sa.
+    """
+    m = re.search(schema, testo)
+    if not m:
+        raise SystemExit("la prova cerca %s e non lo trova: il documento e' "
+                         "cambiato e la prova va aggiornata" % che_cosa)
+    return m.group(0)
+
+
+def _sposta(testo, schema, che_cosa, posizione, passo):
+    """Il numero alla posizione `posizione` (1 = primo) di quella riga, spostato
+    di `passo`. Serve a far salire di uno un numero senza sapere quale sia."""
+    m = re.search(schema, testo)
+    if not m:
+        raise SystemExit("la prova cerca %s e non lo trova: il documento e' "
+                         "cambiato e la prova va aggiornata" % che_cosa)
+    numeri = re.findall(r"\d+", m.group(0))
+    if len(numeri) <= posizione:
+        raise SystemExit("la riga %s non ha %d numeri: %r"
+                         % (che_cosa, posizione + 1, m.group(0)))
+    nuovo = str(int(numeri[posizione]) + passo)
+    parti = re.split(r"(\d+)", m.group(0))
+    volte = 0
+    for k, pezzo in enumerate(parti):
+        if pezzo.isdigit():
+            if volte == posizione:
+                parti[k] = nuovo
+                break
+            volte += 1
+    return testo.replace(m.group(0), "".join(parti), 1)
+
+
+def _piu_uno(testo, schema, che_cosa):
+    """Sale di uno il numero che segue `parola` nella riga trovata: serve al
+    difetto «il README scrive sedici importanti» senza sapere quanti sono."""
+    m = re.search(schema, testo)
+    if not m:
+        raise SystemExit("la prova cerca %s e non lo trova: il documento e' "
+                         "cambiato e la prova va aggiornata" % che_cosa)
+    numeri = re.findall(r"\d+", m.group(0))
+    ultimo = numeri[-1]
+    return testo.replace(m.group(0),
+                         m.group(0).replace(ultimo, str(int(ultimo) + 1)), 1)
+
+
+def _meno_uno(testo, schema, che_cosa, quanti):
+    """Scende di uno gli ultimi `quanti` numeri della riga: il difetto e'
+    «il conto e' sbagliato», non «il conto e' questo numero»."""
+    m = re.search(schema, testo)
+    if not m:
+        raise SystemExit("la prova cerca %s e non lo trova: il documento e' "
+                         "cambiato e la prova va aggiornata" % che_cosa)
+    numeri = re.findall(r"\d+", m.group(0))
+    if len(numeri) < quanti:
+        raise SystemExit("la riga %s non ha %d numeri" % (che_cosa, quanti))
+    nuovo = m.group(0)
+    for n in reversed(numeri[-quanti:]):
+        nuovo = nuovo.replace(n, str(int(n) - 1), 1)
+    return testo.replace(m.group(0), nuovo, 1)
+
+
 def gira(radice):
     r = subprocess.run([sys.executable, CONTA, "--radice", radice],
                        capture_output=True, text=True)
@@ -131,7 +200,9 @@ def main():
     #    guardi. Il grassetto che va via non è invece un difetto: il confronto
     #    accetta la cifra sia in grassetto sia no, e la prova lo dichiara
     difetto("la riga «Aperte» scrive il numero in lettere",
-            lambda t, r: (sostituisci(t, "| **Aperte** | **87** |",
+            lambda t, r: (sostituisci(t,
+                                      porzione(t, r"\| \*\*Aperte\*\* \| "
+                                              r"\*\*\d+\*\* \|", "la riga «Aperte»"),
                                       "| **Aperte** | ottantasette |"), r),
             "non e' leggibile")
 
@@ -173,7 +244,9 @@ def main():
 
     # 9. il numero di chiuse in prosa, che è la via che il registro non copre
     difetto("l'audit scrive «nessuna delle ventotto chiuse» in §6",
-            lambda t, r: (sostituisci(t, "nessuna delle trentuno chiuse le toccava",
+            lambda t, r: (sostituisci(t,
+                                      porzione(t, r"nessuna delle \w+ chiuse le toccava",
+                                              "la frase sulle chiuse del §6"),
                                       "nessuna delle ventotto chiuse le toccava"), r),
             "ventotto chiuse")
 
@@ -183,15 +256,20 @@ def main():
     #     il README: la prova si annullava da sola e non si accorgeva di non
     #     aver provato niente. Un difetto nella prova è un difetto della prova,
     #     non del verificatore.
-    difetto("il README scrive «16 importanti»",
-            lambda t, r: (t, sostituisci(r, "31 chiuse, 87 aperte**, 4 bloccanti e 15 importanti",
-                                         "31 chiuse, 87 aperte**, 4 bloccanti e 16 importanti")),
-            "16 importanti")
+    #     L'atteso e' la **forma** della frase («importanti», «l'audit dice») e
+    #     non la cifra: la cifra la decide il documento, e un'atteso con la
+    #     cifra dentro si rompe da sola alla prima chiusura — che e' gia'
+    #     successo una volta su questi due difetti.
+    difetto("il README scrive un numero di importanti diverso dall'audit",
+            lambda t, r: (t, _piu_uno(r, r"\d+ chiuse, \d+ aperte\*\*, 4 bloccanti e "
+                                      r"\d+ importanti",
+                                      "i numeri che il README copia")),
+            "importanti")
 
-    difetto("il README scrive «30 chiuse, 86 aperte»",
-            lambda t, r: (t, sostituisci(r, "31 chiuse, 87 aperte**",
-                                         "30 chiuse, 86 aperte**")),
-            "30 chiuse, 86 aperte")
+    difetto("il README scrive un conto di chiuse e aperte diverso dall'audit",
+            lambda t, r: (t, _meno_uno(r, r"\d+ chiuse, \d+ aperte\*\*",
+                                       "i numeri che il README copia", 2)),
+            "l'audit dice")
 
     difetto("il README scrive «117 voci enumerate»",
             lambda t, r: (t, sostituisci(r, "118 voci enumerate in sedici sezioni",
