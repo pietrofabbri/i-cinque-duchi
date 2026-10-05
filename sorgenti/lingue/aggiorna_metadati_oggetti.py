@@ -21,8 +21,14 @@ La regola di quale chiave leggere non è qui dentro: è `autore_di()` nell'estra
 lo stesso posto che usa la ricerca. Una regola copiata in due script è una
 regola che un giorno i due script racconteranno diversamente.
 
+Rieseguire questo script quando non è successo niente non cambia un byte: se
+nessun autore è diverso, il file non viene riscritto e la nota non si accoda.
+Uno script che riscrive un file a ogni esecuzione è un file che smette di
+dire la verità, perché promette un lavoro per ogni volta che gira.
+
 Uso:  python3 sorgenti/lingue/aggiorna_metadati_oggetti.py
       python3 sorgenti/lingue/aggiorna_metadati_oggetti.py --secco
+      python3 sorgenti/lingue/aggiorna_metadati_oggetti.py --scrivi
 """
 import io
 import json
@@ -132,19 +138,37 @@ def main():
     print("autori corretti: %d, di cui comparsi dal nulla: %d"
           % (corretti, aggiunti))
     print("titoli senza risposta (lasciati come erano): %d" % persi)
-    if "--scrivi" in sys.argv:
+    if "--scrivi" not in sys.argv:
+        print("nessuna scrittura: manca --scrivi")
+        return 0
+
+    # **La nota e la data si scrivono solo se qualcosa e' cambiato.** Una nota
+    # che si accoda a ogni esecuzione promette un lavoro per ogni esecuzione, e
+    # dopo sei mesi di esecuzioni inutili racconterebbe una storia falsa: e'
+    # un numero che si aggiorna senza che sia successo niente, che e' la cosa
+    # che questo progetto non accetta da nessuna parte.
+    if corretti:
         documento["versione"] = documento.get("versione", 1)
         documento["data"] = time.strftime("%Y-%m-%d")
         documento["nota"] = ("%s Metadati riletti da Commons il %s senza "
                              "ripetere le ricerche: le scelte a vista non "
                              "cambiano, gli autori si."
-                             % (documento.get("nota", ""),
+                             % (documento.get("nota", "").strip(),
                                 time.strftime("%Y-%m-%d"))).strip()
-        with io.open(DATI, "w", encoding="utf-8") as f:
-            json.dump(documento, f, ensure_ascii=False, indent=1)
-        print("scritto: %s" % DATI)
-    else:
-        print("nessuna scrittura: manca --scrivi")
+
+    # **E non si scrive se il testo non e' cambiato.** Il confronto e' sul testo
+    # effettivamente prodotto, non sull'esito: cosi' l'idempotenza si vede
+    # perché il file sul disco e' lo stesso, e non perché qualcuno lo promise.
+    nuovo = json.dumps(documento, ensure_ascii=False, indent=1)
+    with io.open(DATI, encoding="utf-8") as f:
+        prima = f.read()
+    if nuovo == prima:
+        print("niente da scrivere: il file e' gia' quello che si avrebbe "
+              "scritto (nessun autore e' cambiato)")
+        return 0
+    with io.open(DATI, "w", encoding="utf-8") as f:
+        f.write(nuovo)
+    print("scritto: %s" % DATI)
     return 0
 
 
