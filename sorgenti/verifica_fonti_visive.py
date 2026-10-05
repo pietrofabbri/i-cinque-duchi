@@ -34,6 +34,12 @@ stesso dà verde su quel difetto: per questo `M1` confronta il file con
   I5  ogni tappa dichiarata esiste, e l'emblema che il file porta e' quello che
       il documento dell'anno dichiara per quella tappa
   I6  i numeri scritti in §6 del documento sono quelli del file
+  V1  la tabella delle categorie dice, per ogni categoria, il file che ha
+      prodotto: il file c'e' davvero, oppure la cella dice `nessuno` e dice
+      perche'
+  V2  ogni capitolo di §3 dichiara nel proprio testo almeno un file che
+      esiste: un capitolo che non costruisce niente deve dirlo
+  V3  ogni percorso citato nella riga `dati:` del frontespizio esiste
 
 Uso:
     python3 sorgenti/verifica_fonti_visive.py
@@ -67,6 +73,18 @@ QUALSIASI = re.compile(r"(?m)^#{2,3} ")
 EMBLEMA = re.compile(r"\*\*Emblema:\*\*\s*(.+?)\s*$", re.M)
 RIGA_TAPPA = re.compile(r"(?m)^\| \*\*(\d-\d{1,2})\*\* \|(.*)$")
 FORME = ("immagine", "testo", "non_usata")
+# le tre famiglie di controlli V: i posti in cui il capitolo **nomina un file**.
+# Il percorso dentro apici e' il patto: se il capitolo scrive `dati/x.json`,
+# quel file c'e' quando il capitolo lo dice, e V1-V3 lo verificano.
+PERCORSO = re.compile(r"`((?:dati|sorgenti|docs)/[^`\s]+)`")
+# **nel frontespizio i percorsi sono in chiaro**, non fra apici: la stessa regex
+# di sopra, usata li', non trovava niente e V3 era verde perche' non leggeva una
+# parola di quello che dichiara
+PERCORSO_SCIOGLTO = re.compile(r"(?:dati|sorgenti|docs)/[\w./-]+\."
+                                r"(?:json|csv|txt|py)")
+RIGA_CATEGORIA = re.compile(
+    r"(?m)^\| \*\*(\w+)\*\* \|([^\n]*)$")
+CAPITOLO = re.compile(r"(?m)^### (3\.\d+) ([^\n]*)\n")
 # le parole con cui una voce nomina il proprio evento: `moria` non e' l'unica
 # parola della peste (la tappa 3-22 scrive «la peste», il 4-27 «mortalita», il
 # 5-9 «epidemici»), ed e' dentro `memoria`. I **confini di parola** non sono un
@@ -476,6 +494,74 @@ def controlla(problemi, iniettato=None):
         elif trovato != atteso:
             problemi.append("I6: la sezione 6 dichiara %d per «%s», il "
                             "file %d" % (trovato, cella, atteso))
+
+    # V1-V3: i tre posti in cui il capitolo nomina un file. Tre numeri falsi
+    # nella stessa sezione li hanno motivati — «gli otto file» nel titolo,
+    # «sono sei» due righe sotto, «i sei file» nel riepilogo — e nessuno dei
+    # tre si e' mosso quando sono diventati falsi: **una riga scritta due volte,
+    # o non scritta, non lascia traccia nei controlli dei numeri**, anche quando
+    # il numero e' un titolo. La cura non e' correggerli: e' toglierli e mettere
+    # al loro posto i nomi dei file, che sono controllabili.
+    s3 = sezione(testo, "## 3. Le fonti cercate", "### 3.1 ")
+
+    # V1: la tabella delle categorie e il file che ogni categoria ha prodotto
+    categorie = [m for m in RIGA_CATEGORIA.finditer(s3)
+                 if m.group(1) not in ("Totale",)]
+    if not categorie:
+        problemi.append("V1: la tabella delle categorie di §3 non c'e'")
+    for m in categorie:
+        # la riga finisce con la barra di chiusura, quindi `split("|")` mette
+        # in fondo una cella vuota: senza buttarla via, la colonna del file
+        # era sempre l'ultima — cioè niente — e tutte e cinque le categorie
+        # risultavano senza file
+        celle = [c.strip() for c in m.group(2).split("|") if c.strip()]
+        # la colonna del file e' l'ultima: si prende per posizione dal fondo,
+        # perche' cosi' aggiungere una colonna non sposta le altre
+        if len(celle) < 4:
+            problemi.append("V1: la riga della categoria %s ha %d colonne"
+                            % (m.group(1), len(celle) + 1))
+            continue
+        percorsi = PERCORSO.findall(celle[-1])
+        if not percorsi:
+            if len(celle[-1]) < 25:
+                problemi.append("V1: la categoria %s non ha un file di dati e "
+                                "non dice perche'" % m.group(1))
+            continue
+        for percorso in percorsi:
+            if not os.path.exists(os.path.join(RADICE, percorso)):
+                problemi.append("V1: la categoria %s dichiara il file %s, che "
+                                "non esiste" % (m.group(1), percorso))
+
+    # V2: ogni capitolo di §3 dichiara almeno un file che esiste.
+    # **Il pezzo è un altro**: il ciclo gira sui capitoli, e i capitoli stanno
+    # *dopo* §3.1, mentre il pezzo di V1 finisce a §3.1. Con lo stesso
+    # pezzo il ciclo non girava mai e il controllo era verde perche' non
+    # guardava niente: la prova lo ha detto con «la prova non ha provato».
+    s3_capitoli = sezione(testo, "### 3.1 I mezzi di trasporto", "## 4. ")
+    confini = [m.start() for m in re.finditer(r"(?m)^#{2,3} ", s3_capitoli)]
+    capitoli = CAPITOLO.finditer(s3_capitoli)
+    for m in capitoli:
+        seguenti = [c for c in confini if c > m.start()]
+        corpo = s3_capitoli[m.start():seguenti[0] if seguenti
+                             else len(s3_capitoli)]
+        vivi = [p for p in PERCORSO.findall(corpo)
+                if os.path.exists(os.path.join(RADICE, p))]
+        if not vivi:
+            problemi.append("V2: il capitolo %s non nomina nessun file che "
+                            "esista: o non costruisce niente, e deve dirlo, o "
+                            "il nome che scrive non e' quello del file"
+                            % m.group(1))
+
+    # V3: ogni percorso della riga `dati:` del frontespizio esiste
+    for riga in testo.splitlines():
+        if riga.startswith("dati:") or riga.startswith("dati :"):
+            for percorso in PERCORSO_SCIOGLTO.findall(riga):
+                if not os.path.exists(os.path.join(RADICE, percorso)):
+                    problemi.append("V3: il frontespizio cita %s, che non "
+                                    "esiste" % percorso)
+            break
+    else:
+        problemi.append("V3: il frontespizio non ha la riga `dati:`")
     return problemi
 
 
@@ -588,21 +674,59 @@ def inietta(quale):
         t = io.open(p, encoding="utf-8").read()
         return p, t.replace("| Tappe che nominano | **6**",
                             "| Tappe che nominano | **5**", 1)
+    if quale == "V1":
+        p = DOC
+        t = io.open(p, encoding="utf-8").read()
+        # la cella del file di una categoria punta a un file che non c'e': il
+        # difetto che nessuno dei controlli precedenti vedeva, perche' nessuno
+        # guardava la tabella delle categorie. La sostituzione sta **dentro §3**:
+        # la stessa stringa compare nella tabella dell'inventario in §1, e una
+        # sostituzione a caso colpisce la prima occorrenza e non quella che il
+        # controllo guarda — la prova che non ha provato niente.
+        i = t.index("## 3. Le fonti cercate")
+        j = t.index("### 3.1 ")
+        corpo = t[i:j].replace("| `dati/fonti_visive/epigrafi.json` |",
+                               "| `dati/fonti_visive/epigrafi_inesistente.json`"
+                               " |", 1)
+        return p, t[:i] + corpo + t[j:]
+    if quale == "V2":
+        p = DOC
+        t = io.open(p, encoding="utf-8").read()
+        # il capitolo 3.1 dichiara due percorsi (`mezzi.json` e
+        # `mezzi_fonti.py`): rotto il primo il secondo e' ancora vivo e il
+        # capitolo continua a dichiarare un file che esiste, che e' la regola
+        # stessa del controllo. Il difetto va sul 3.2, che ne dichiara uno solo.
+        i = t.index("### 3.2 ")
+        j = t.index("### 3.3 ")
+        corpo = t[i:j].replace("dati/edifici_footprint.json",
+                               "dati/edifici_footprint_inesistente.json", 1)
+        return p, t[:i] + corpo + t[j:]
+    if quale == "V3":
+        p = DOC
+        t = io.open(p, encoding="utf-8").read()
+        # il frontespizio: il difetto e' l'ennesimo nome di un file che non e'
+        # mai stato prodotto, e la riga e' la prima che si legge
+        return p, t.replace("dati/fonti_visive/incidenti.json (v1, 3 voci, "
+                            "6 candidati)",
+                            "dati/fonti_visive/incidenti_inesistente.json (v1, "
+                            "3 voci, 6 candidati)", 1)
     raise ValueError(quale)
 
 
 def main():
     difetti_prova = [a for a in sys.argv if a.startswith("--difetti")]
     problemi = controlla([])
-    print("== M1-M7, E1-E4 e I1-I6. i mezzi, le epigrafi e gli incidenti")
+    print("== M1-M7, E1-E4, I1-I6 e V1-V3. i mezzi, le epigrafi, gli "
+          "incidenti\n   e i file che il capitolo nomina")
     if problemi:
         for p in problemi:
             print("   difetto %s" % p)
     else:
         print("   ogni mezzo ha una forma, i numeri delle due sezioni e del "
               "frontespizio sono\n   quelli del file, nessuna epigrafe entra "
-              "nel gioco senza testo, e ogni incidente ha\n   una forma, una "
-              "ragione e una scansione che torna sui documenti")
+              "nel gioco senza testo, ogni incidente ha una forma e\n   una "
+              "scansione che torna sui documenti, e ogni file che il capitolo "
+              "nomina esiste")
 
     if not difetti_prova:
         return 1 if problemi else 0
@@ -610,7 +734,8 @@ def main():
     print("\nprova: un difetto alla volta, coi file rimessi a posto")
     iniettati = visti = 0
     for quale in ("M1", "M2", "M4", "M5", "M7", "E2", "E3", "E4",
-                  "I1", "I2", "I3", "I4", "I5", "I6"):
+                  "I1", "I2", "I3", "I4", "I5", "I6",
+                  "V1", "V2", "V3"):
         percorso, nuovo = inietta(quale)
         prima = io.open(percorso, encoding="utf-8").read()
         if nuovo == prima:

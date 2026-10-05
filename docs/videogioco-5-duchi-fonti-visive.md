@@ -1,6 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — le fonti visive: che cosa il gioco non ha ancora una veste, e dove si prende
-versione: 0.15
+versione: 0.16
 data: 2026-10-05
 autore: Pietro Fabbri (con Claude)
 fonte: ricerca su Wikimedia Commons del 02/10/2026; tavolozza da Wikidata e Wikipedia del 03/10/2026; sagome e mura da OpenStreetMap via API standard OSM del 04/10/2026; cime e quote da Natural Earth `geography_regions_elevation_points` del 03/10/2026; verifica dei fondi già in dati/mappe/
@@ -14,7 +14,7 @@ dati: dati/fonti_visive/fonti_visive.json (v1, 32 voci, 130 candidati), dati/fon
 
 Il gioco ha delle immagini per i **personaggi** (213 schede, 138 ritratti autentici) e per gli **oggetti linguistici** (180 voci, 1120 candidati). Ha i **fondi geografici** (19 file Natural Earth). Il 2 ottobre non aveva altro, e non le aveva mai contate.
 
-Questo documento fa quattro cose: **fa l'inventario** di che cosa ha e che cosa non ha una veste grafica; **cerca le fonti** per ciò che manca, con una ricerca vera su Wikimedia Commons; **costruisce** le sei derivazioni che erano solo un buco dichiarato — la tavolozza, i colori delle carte, le sagome degli edifici, il fondo di Ferrara, gli ambienti dei centocinquanta livelli e le cime con la loro quota; e **giudica l'accuratezza** di tutto questo su tre cose che il progetto chiama *proporzioni, colori, forme*, perché un'immagine «giusta» che viene stirata o scurita mente quanto un'immagine sbagliata.
+Questo documento fa quattro cose: **fa l'inventario** di che cosa ha e che cosa non ha una veste grafica; **cerca le fonti** per ciò che manca, con una ricerca vera su Wikimedia Commons; **costruisce** le derivazioni che erano solo un buco dichiarato — la tavolozza, i colori delle carte, le sagome degli edifici, il fondo di Ferrara, gli ambienti dei centocinquanta livelli e le cime con la loro quota, e poi i **mezzi**, le **epigrafi** e gli **incidenti**, che erano i due buchi rimasti; e **giudica l'accuratezza** di tutto questo su tre cose che il progetto chiama *proporzioni, colori, forme*, perché un'immagine «giusta» che viene stirata o scurita mente quanto un'immagine sbagliata.
 
 **Che cosa non è questo documento.** Non sceglie le fonti dei **130 candidati**: sono proposte, e nessuna è stata guardata a vista. Il file `dati/fonti_visive/attestazione.json` è pronto e vuoto, con tutti i campi dichiarati. E non disegna niente: i sei file che ha prodotto sono **dati**, non grafica, e ognuno dichiara la propria fonte e i propri vuoti.
 
@@ -71,20 +71,20 @@ Il conto reale, verificato sui file:
 
 ---
 
-## 3. Le fonti cercate, e gli otto file costruiti
+## 3. Le fonti cercate, e i file costruiti
 
-La ricerca (`sorgenti/fonti_visive_cerca.py`) ha esaminato **32 voci** in cinque categorie, con termini scelti uno per uno e non tradotti alla cieca. Ha prodotto **130 candidati con licenza libera**. Le categorie che hanno prodotto un **file di dati** sono quelle degli edifici, dei colori e dei fondi (sagome §3.2, colore §3.4, mura di Ferrara §3.5, ambienti §3.6); quelle che non lo hanno prodotto sono i mezzi e le epigrafi, e il perché è dichiarato.
+La ricerca (`sorgenti/fonti_visive_cerca.py`) ha esaminato **32 voci** in cinque categorie, con termini scelti uno per uno e non tradotti alla cieca. Ha prodotto **130 candidati con licenza libera**. **Delle cinque categorie cercate, tutte e cinque hanno un file di dati**, e sono le cinque righe dell'ultima colonna della tabella: i **mezzi** (§3.1), le **sagome degli edifici** (§3.2), le **epigrafi** (§3.3), gli **incidenti** (§6) e la **tavolozza** (§3.4). Le tre che il 3 ottobre erano ancora senza file — i mezzi, le epigrafi e gli incidenti — le hanno avuti il 5, e ognuno con la sua forma dichiarata dentro.
 
-A quei quattro file il 03/10/2026 se ne sono aggiunti **due che non vengono dalla ricerca su Commons** ma da un buco emerso documentando: i **colori delle carte** (§3.7) e le **cime con la loro quota** (§3.8). Sono sei, e sei è il numero che dice §8.
+Fuori dalle categorie della ricerca, i capitoli hanno costruito il resto: il **fondo di Ferrara** (§3.5), gli **ambienti dei centocinquanta livelli** (§3.6), i **colori delle carte** (§3.7) e le **cime con la loro quota** (§3.8) il 3 ottobre; le **sagome dei premi** (§3.10) e i primi **disegni degli ambienti** (§3.9) il 4; **tutti e centocinquanta i disegni** il 5. Di questi prodotti **qui non c'è un numero**, e non per reticenza: un numero che si conta a mano e che nessuno ricalcola è un numero che invecchia, ed è la ragione per cui il titolo di questa sezione ha smesso di dire «gli otto file» mentre la frase due righe sotto diceva «sono sei». Il numero di ciò che è stato costruito è **il numero dei capitoli**, e quello si vede dalla tavola dei contenuti.
 
-| Categoria | Voci | Candidati | Voci senza immagine |
-|---|---|---|---|
-| **mezzo** | 16 | 46 | nessuna |
-| **edificio** | 6 | 36 | nessuna |
-| **epigrafe** | 3 | 18 | nessuna |
-| **incidente** | 3 | 6 | **una** (`carestia`), e non è un vuoto: è una voce che nessuna tappa nomina |
-| **colore** | 4 | 24 | nessuna |
-| **Totale** | **32** | **130** | **una** |
+| Categoria | Voci | Candidati | Voci senza immagine | File di dati |
+|---|---|---|---|---|
+| **mezzo** | 16 | 46 | nessuna | `dati/fonti_visive/mezzi.json` |
+| **edificio** | 6 | 36 | nessuna | `dati/edifici_footprint.json` |
+| **epigrafe** | 3 | 18 | nessuna | `dati/fonti_visive/epigrafi.json` |
+| **incidente** | 3 | 6 | **una** (`carestia`), e non è un vuoto: è una voce che nessuna tappa nomina | `dati/fonti_visive/incidenti.json` |
+| **colore** | 4 | 24 | nessuna | `dati/fonti_visive/tavolozza.json` |
+| **Totale** | **32** | **130** | **una** | ognuna con il suo |
 
 ### 3.1 I mezzi di trasporto: il file è costruito il 05/10/2026, e i vuoti sono dieci su sedici
 
@@ -558,11 +558,19 @@ Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file d
 | Epigrafi | **fatto il 05/10/2026 come dato**: 3 immagini, **zero** testi, la fonte dichiarata e il divieto di entrare senza testo |
 | Incidenti | **chiusi il 05/10/2026 come dato**: 3 voci, **1** immagine, **1** col testo al posto e **1** non usata dal gioco, con la scansione dei 120 blocchi di persona che lo dimostra: **6 tappe** nominano un incidente, e nessuna delle tre che nominano un incendio ha una fiamma |
 | Lavoro più grande che resta | i **130 candidati** da guardare a vista, i **cinque mezzi** senza immagine (tutti cercati e respinti) e i **cinquantuno** ambienti senza coordinate |
-| Lavoro più grande che manca *fra i dati* | nessuno: i sei file ci sono e sono verificati |
+| Lavoro più grande che manca *fra i dati* | nessuno: ogni buco ha il suo file e il suo controllo, e le frasi che li nominano sono controllate come si controllano i numeri (`V1`–`V3`) |
 
 ---
 
 ## 9. Registro delle modifiche
+
+- **v0.16 (05/10/2026)**: **tre numeri falsi nella stessa sezione, e nessuno dei sette controlli che c'erano li guardava.** Il titolo della §3 diceva «gli otto file costruiti», la frase due righe sotto diceva «sono sei, e sei è il numero che dice §8», e il riepilogo ripetiva «i sei file ci sono e sono verificati»: tre numeri, tutti e tre veri il giorno in cui sono stati scritti, nessuno dei tre mosso quando sono diventati falsi, e nessuno dei sette controlli — **M1–M7, E1–E4** — guardava quella frase, quel titolo o quella riga. È la malattia di sempre nella forma più semplice: *una riga scritta due volte, o non scritta, non lascia traccia nei controlli dei numeri*, e qui la riga era un **titolo**.
+  - **la cura non è stata correggere i numeri: è stata toglierli.** Il titolo ora non porta un numero, la frase non dice più «sono sei», e al loro posto ci sono **i nomi dei file** — che si possono controllare. Un numero ripetuto in due posti è la malattia; toglierne uno è la cura, e l'altro si toglie anche;
+  - **la tabella delle categorie ha una quinta colonna, `File di dati`**, con il file che ogni categoria cercata ha prodotto: `mezzi.json`, `edifici_footprint.json`, `epigrafi.json`, `incidenti.json`, `tavolozza.json`. Le cinque righe sono l'unico posto in cui la cosa si dichiara, e **il capitolo non porta più nessun totale**;
+  - **tre controlli nuovi, V1–V3**, tutti e tre di una sola idea: *i tre posti in cui il capitolo nomina un file*. **V1** la tabella delle categorie dice il file che ogni categoria ha prodotto, e quel file esiste; se la cella dice `nessuno`, dice anche perché. **V2** ogni capitolo della §3 dichiara nel proprio testo almeno un file che esiste: un capitolo che non costruisce niente deve dirlo. **V3** ogni percorso citato nella riga `dati:` del frontespizio esiste. La prova ne inietta **diciassette** difetti e li vede **tutti e diciassette**;
+  - **V2 è nato verde, e la prova lo ha detto**: il ciclo che gira sui capitoli guardava il pezzo di §3 che finisce **prima** del primo capitolo, quindi non conteneva nessun capitolo e non guardava niente. È la terza volta che il difetto vero è un controllo che guarda il posto sbagliato, e la seconda che lo dice la prova e non il giudizio — il messaggio «la prova non ha provato» è nato per questo;
+  - **due difetti della prova, dichiarati perché sono la regola nuova**: il difetto di **V1** colpiva la prima occorrenza della stringa, che è la tabella dell'inventario in §1 e non quella delle categorie in §3, quindi il controllo non aveva niente da vedere; e il difetto di **V2** rompeva `mezzi.json` in un capitolo che dichiara **due** percorsi, così che il secondo restava vivo e il capitolo continuava a dichiarare un file che esiste — che è la regola stessa del controllo. Le tre iniezioni ora colpiscono il posto giusto: nella sezione giusta, nel capitolo che dichiara un solo percorso, e nel frontespizio che è la prima riga che si legge;
+  - **un difetto di V3, che è il più instructive**: nel frontespizio i percorsi sono in chiaro, non fra apici backtick, e la regex del capitolo li richiedeva. Il controllo era verde **perché non leggeva una parola** di quello che dichiara — un controllo che non guarda è verde come un controllo che guarda, e questa volta la prova non c'entra: era il controllo a essere muto.
 
 - **v0.15 (05/10/2026)**: **i due vuoti erano dichiarati da quattro giorni, e la dichiarazione era giusta sul numero e sbagliata sulla domanda.** «L'incendio e la carestia non hanno immagine d'epoca libera»: il vuoto è reale, e la ricerca del 5 lo conferma con la misura (**0** risultati per l'incendio dell'archivio, **0** per quello di una biblioteca antica, **14** per le incisioni di libri che bruciano — e mostrano un episodio leggendario, non un archivio; **0** e **3** per la carestia). Ma la domanda giusta non era *che immagine ha un incendio*: era **che cosa mostra il gioco quando un incendio è in scena**. La risposta era già scritta nei documenti degli anni.
   - **le tre tappe che nominano un incendio non hanno una fiamma**: la 4-3 (Qin Shi Huang) ha per emblema un **peso di bronzo**, la 4-10 (Ercole II) uno **scaffale vuoto con un cartellino scritto a metà**, la 4-13 (Ipazia) un **frammento di stele**. Il gioco rappresenta **l'oggetto che l'incendio ha lasciato**, ed è la forma che il progetto chiama «il testo al posto dell'immagine». La voce `incendio` non è un vuoto: è la forma **`testo`**;
