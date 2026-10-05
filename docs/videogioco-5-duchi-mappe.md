@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — Le mappe: fondo geografico per gli anni 2, 3 e 4, e dove si prendono i dettagli delle tappe
-versione: 1.4
+versione: 1.5
 data: 2026-10-04
 autore: Pietro Fabbri (con Claude)
 fonte del materiale: richiesta di Pietro dell'01/10/2026 («recupera e archivia tutte le mappe che possono essere utili a questo e i prossimi anni»), con l'indicazione di due usi distinti: le mappe generali per costruire un percorso sensato, e le mappe di dettaglio per rappresentare ogni livello nella forma più reale possibile
 dati: dati/mappe/*.json (25 file: i 19 del 01/10/2026 da Natural Earth con `sorgenti/gis/mappe_formato.py`, piu `mondo_admin1.json`, i tre `*_altitudine.json` del 03/10/2026 e i due `rilievo_*.json` del 04/10/2026), dati/mappe_manifest.json (v1, da dove viene ogni file della cartella: sta in `dati/` e non in `dati/mappe/`, per la stessa regola del solo formato a delta), dati/mondo_admin1_copertura.json (v1, il conto della copertura: sta in `dati/` e non in `dati/mappe/`, perche' li' vale la regola del solo formato a delta), dati/edifici_footprint.json (v1, 5209 sagome su 54 luoghi), dati/ferrara_fondo.json (v1, 14 tratti di mura)
-documenti collegati: videogioco-5-duchi-motore-e-grafica.md (v0.1, la pipeline che questi dati alimentano), videogioco-5-duchi-luoghi.md (v0.6, la regola che decide *quali* luoghi servono e i tre gradi di ipotesi di coordinata), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-fonti-visive.md (v0.19), FONTI-E-LICENZE.md, AGENTS.md
+documenti collegati: videogioco-5-duchi-motore-e-grafica.md (v0.1, la pipeline che questi dati alimentano), videogioco-5-duchi-luoghi.md (v0.6, la regola che decide *quali* luoghi servono e i tre gradi di ipotesi di coordinata), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-fonti-visive.md (v0.20), FONTI-E-LICENZE.md, AGENTS.md
 ---
 
 # Le mappe
@@ -418,7 +418,7 @@ python3 sorgenti/gis/verifica_pin.py --tutti       # gli stessi 8 controlli, tut
 python3 sorgenti/gis/mondo_admin1.py              # il file amministrativo del mondo
 python3 sorgenti/gis/edifici_footprint.py         # le sagome degli edifici (Overpass)
 python3 sorgenti/gis/ferrara_fondo.py             # il fondo cittadino dell'anno 1
-python3 sorgenti/verifica_ambienti.py               # i 150 ambienti, otto controlli (B1-B8)
+python3 sorgenti/verifica_ambienti.py               # i 150 ambienti, nove controlli (B1-B9)
 python3 sorgenti/gis/altitudine.py                    # le tre scale delle cime
 python3 sorgenti/gis/verifica_altitudine.py           # le cime, sette controlli
 python3 sorgenti/gis/verifica_mappe_disegno.py        # dodici pagine di verifica
@@ -462,12 +462,13 @@ for proprieta, anelli in geometrie:
 5. ~~**Decidere il formato degli edifici**~~ **fatto il 03/10/2026**: `dati/edifici_footprint.json` con i campi `forma`, `altezza_m` e `fonte_altezza` (`osm_height`/`osm_levels`/`assente`), che è la regola di §5.1 scritta nei dati e non solo nel documento
 6. ~~**Costruire il file amministrativo mondiale**~~ **fatto il 03/10/2026**: `dati/mappe/mondo_admin1.json`, 50 unità, 54 pin coperti su 54, con il conto della copertura in `dati/mondo_admin1_copertura.json` — che sta in `dati/` e non in `dati/mappe/`, e il perché è scritto (§2.4 e §3)
 7. ~~**Costruire il fondo cittadino dell'anno 1**~~ **fatto il 03/10/2026**: `dati/ferrara_fondo.json`, 14 tratti di mura OSM, 4,20 km² (§3.5 di `fonti-visive.md`)
-8. ~~**Costruire gli ambienti dei 150 livelli**~~ **fatto il 03/10/2026**: `dati/ambienti_livelli.json`, **150 su 150** (§3.6 di `fonti-visive.md`, `sorgenti/ambienti_livelli.py` e `sorgenti/verifica_ambienti.py` con otto controlli A1-A8/B1-B8). Restava scritto aperto mentre il file era gia' pronto da due giorni: una riga di «cosa c'e' da fare» che non corrisponde a nessun lavoro mancante e' una riga che mente, e questa ne aveva scoperto un'altra
+8. ~~**Costruire gli ambienti dei 150 livelli**~~ **fatto il 03/10/2026**: `dati/ambienti_livelli.json`, **150 su 150** (§3.6 di `fonti-visive.md`, `sorgenti/ambienti_livelli.py` e `sorgenti/verifica_ambienti.py` con nove controlli, B1-B9). Restava scritto aperto mentre il file era gia' pronto da due giorni: una riga di «cosa c'e' da fare» che non corrisponde a nessun lavoro mancante e' una riga che mente, e questa ne aveva scoperto un'altra
 
 ---
 
 ## 12. Registro modifiche
 
+- **v1.5 (05/10/2026)**: **due righe che contavano otto controlli quandone sono nove.** Il blocco dei comandi e la voce 8 di «cosa c'e' da fare» scrivevano `verifica_ambienti.py` con otto controlli e B1-B8: B9 c'era dal 3 ottobre, e una delle due righe scriveva anche A1-A8, che non sono etichette di quello script. Nessuno dei nove controlli degli ambienti guardava se i documenti che lo citano ne contano bene: e' il buco che X3 di `sorgenti/verifica_prove.py` chiude. La riga 514 di questo registro, che porta B1-B8, resta quella che era: un registro racconta il passato.
 - **v1.4 (05/10/2026)**: **Il rimando è l'unica cosa che cambia.** Un documento collegato è salito di versione e questo rimando è rimasto indietro: la riga è sbagliata e non sembra, perché un rimando che cita una versione superiore a quella vera sembra un rimando fermo. Qui dentro non cambia nient'altro — e si scrive lo stesso, perché una riga che cambia è una riga che cambia.  **E il registro era fuori ordine**: la riga **v1.0** stava fra la v0.8 e la v0.7, e nessuno dei cinque controlli dei registri lo poteva vedere — le righe di registro erano riconosciute solo nella forma `v0.x`, e un registro che passa da `v1` non aveva **nessuna** riga letta. È il secondo buco della stessa mattinata: un controllo che non riconosce il formato non controlla il documento.
 - **v1.3 (04/10/2026)**: **nessun file di `dati/mappe/` dichiarava da dove viene,
   e quattro documenti avevano dato quattro numeri diversi per la stessa

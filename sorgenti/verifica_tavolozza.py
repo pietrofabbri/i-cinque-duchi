@@ -7,7 +7,7 @@ copiata a mano va bene finche' nessuno la tocca; il giorno in cui qualcuno
 cambia un esadecimale su Wikidata, il file mente e nessuno se ne accorge. Qui si
 va a leggere la fonte di ogni voce e si confronta.
 
-I controlli sono cinque, e sono tutti sul file, non sulla fonte:
+I controlli sono sei, e sono tutti sul file, non sulla fonte:
 
   A1  ogni voce ha un esadecimale di sei cifre
   A2  le chiavi sono uniche: due voci con lo stesso nome sono due colori che si
@@ -17,11 +17,11 @@ I controlli sono cinque, e sono tutti sul file, non sulla fonte:
   A4  la fonte dichiara ancora quell'esadecimale  (il controllo che va in rete)
   A5  le voci dichiarate e di stato non si presentano come storiche: portano una
       nota che dice che cosa sono
+  A6  i colori di stato sono distinguibili fra loro: due colori troppo
+      vicini sono due colori che il motore non puo' separare
 
-Un sesto controllo, A6, e' quello che serve di piu' e non e' un controllo: il
-confronto fra i colori di stato. Due colori di stato che si somigliano troppo
-sono due colori che il motore non puo' distinguere, e il file non se ne accorge
-guardando gli esadecimali uno per uno.
+A6 e' il controllo che serve di piu' ed e' l'unico che guarda due colori insieme:
+guardando gli esadecimali uno per uno il file non se ne accorge.
 
 Uso:
     python3 sorgenti/verifica_tavolozza.py

@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — la sequenza degli anni 2, 3 e 4: le trenta voci obbligatorie in fila, con i luoghi e le distanze
-versione: 0.2
+versione: 0.3
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)
 fonte del materiale: richiesta di Pietro del 03/10/2026 («hai la sequenza dei livelli per i 4 anni, con relativi luoghi, quindi puoi mettere in sequenza i vari personaggi (almeno quelli non facoltativi)»), con le regole già prese sui percorsi, sui tipi di legame e sulle ipotesi di coordinata
 dati: dati/sequenza_tappe.json (v1, generato da sorgenti/sequenza_tappe.py: le novanta tappe degli anni 2, 3 e 4 con luogo, voce, mezzo, distanza e giorni); dati/luoghi_gioco.json (il registro, da cui vengono le coordinate); dati/ipotesi_luoghi.json (le quarantanove coordinate che il registro non puo' verificare)
-controllo: python3 sorgenti/sequenza_tappe.py (rigenera il JSON e le tre tabelle di questo documento); python3 sorgenti/verifica_sequenza.py (S1-S6: trenta tappe per anno in ordine, una voce obbligatoria per tappa e nessuna ripetuta, le facoltative fuori dalla sequenza, nessun punto mancante senza dichiarazione, e le distanze che combaciano con i km al giorno dichiarati nei percorsi)
+controllo: python3 sorgenti/sequenza_tappe.py (rigenera il JSON e le tre tabelle di questo documento); python3 sorgenti/verifica_sequenza.py (S1-S7: trenta tappe per anno in ordine, una voce obbligatoria per tappa e nessuna ripetuta, le facoltative fuori dalla sequenza, nessun punto mancante senza dichiarazione, e le distanze che combaciano con i km al giorno dichiarati nei percorsi)
 documenti collegati: videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-percorsi.md (v0.5, il percorso del duca, che qui non e' lo stesso), videogioco-5-duchi-luoghi.md (v0.6, i tipi di legame e le ipotesi), videogioco-5-duchi-ritratti.md (v0.5), AGENTS.md
 ---
 
@@ -197,7 +197,7 @@ Il controllo S3 lo ha trovato e il numero è **tredici**: sono persone che il gi
 ```bash
 python3 sorgenti/sequenza_tappe.py            # il JSON e le tre tabelle qui sotto
 python3 sorgenti/sequenza_tappe.py --anno 3   # un anno solo, in chiaro, senza scrivere
-python3 sorgenti/verifica_sequenza.py         # i sei controlli
+python3 sorgenti/verifica_sequenza.py         # i sette controlli
 ```
 
 Le tabelle stanno fra i due marcatori `<!-- SEQUENZA:INIZIO -->` e `<!-- SEQUENZA:FINE -->`: il generatore sostituisce quello che c'è fra, e tutto il resto del documento lo tocca solo se lo cambi a mano.
@@ -205,10 +205,11 @@ Le tabelle stanno fra i due marcatori `<!-- SEQUENZA:INIZIO -->` e `<!-- SEQUENZ
 ## 6. Cosa c'è da fare
 
 1. **Il numero due della colonna facoltative**, che nell'anno 2 non torna: o la tabella si completa, o il titolo della colonna smette di dire «(2)».
-2. ~~**Il generatore del registro**~~ **chiusa il 03/10/2026**: esiste, ed è stato eseguito davvero. Il confronto che mancava è quello che §1 racconta, e l'ha vinto. La catena ha quattro controlli suoi in `sorgenti/verifica_catena_luoghi.py`.
+2. ~~**Il generatore del registro**~~ **chiusa il 03/10/2026**: esiste, ed è stato eseguito davvero. Il confronto che mancava è quello che §1 racconta, e l'ha vinto. La catena ha cinque controlli suoi in `sorgenti/verifica_catena_luoghi.py`.
 3. **Le trenta voci in sequenza**: questa pagina mette i nomi in fila, ma non mette in fila gli **argomenti** che ogni voce porta con sé. È il capitolo che manca, ed è il capitolo che rende la sequenza un percorso e non un elenco.
 
 ## 7. Registro delle modifiche
 
+- **v0.3 (05/10/2026)**: **tre numeri fermi al giorno in cui sono stati scritti.** Il blocco dei comandi diceva `S1-S6` quando i controlli sono sette (S7 e' nato dalla 4-16 e dalla 3-28), la riga sotto diceva «i sei controlli», e la voce 2 attribuiva alla catena quattro controlli quandi sono cinque. Nessuno dei sette controlli della sequenza guardava i numeri scritti su di lei, che e' la stessa malattia che I7 cura negli interni: X3 di `sorgenti/verifica_prove.py` lo fa per tutti i documenti.
 - **v0.2 (03/10/2026)**: **la divergenza dichiarata è chiusa, e chiusa come si deve: rigenerando.** Il registro dei luoghi è stato rifatto dalla catena `estrai_luoghi.py` → `coordinate.py` → `classifica.py`, e lungo la strada sono usciti quattro difetti veri. Il primo: **`estrai_luoghi.py` leggeva le colonne per numero**, e nell'anno 5 la colonna della stanza sta fra il pin e la voce — in ventinove tappe su trenta il campo `voce` aveva il filone del *Furioso* invece della persona. Ora la tabella si legge per **intestazione**. Il secondo: **le correzioni di Baghdad e Karakorum vivevano solo in un JSON editato a mano** e sparivano alla prima rigenerazione; ora stanno in `dati/luoghi_correzioni.json` e vengono riapplicate ogni volta. Il terzo: **`classifica.py` aveva due copie della regola che assegna lo stato della coordinata**, e le due copie erano già divergenti sulle sette ferraresi; ora c'è una definizione sola. Il quarto, che è la conseguenza: **`ambienti_livelli.json` era rimasto indietro** e la 4-16 aveva ancora il punto dall'ipotesi benché il registro avesse la coordinata. La correzione della 4-16 è così passata da **dato scritto a mano** a **dato che la catena produce**, che è la differenza fra una correzione e una riparazione. Le divergenze fra registro e documento sono **zero**, e `DICHIARATE` in `sequenza_tappe.py` resta vuota e dichiarata. Il percorso dell'anno 3 è passato da 18990 a 20098 km perché la 3-28 è diventata Torino.
 - **v0.1 (03/10/2026)**: prima stesione. Novanta tappe in sequenza, le trenta voci obbligatorie di ciascun anno in fila con i luoghi e le distanze, le facoltative tenute fuori e dichiarate. Il ritorno vero del lavoro è **un difetto di dati**: la 4-16 aveva nel registro il luogo di Ibn Khaldun dopo che il documento l'aveva cambiato in quello di Ashoka, e le ipotesi del giorno prima avevano costruito sopra quel posto sbagliato una strada interamente inventata che i sei controlli avevano approvato. La lezione è scritta in §1 e vale per tutto il progetto: **un controllo di forma non verifica una premessa**.

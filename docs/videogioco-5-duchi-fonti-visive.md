@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — le fonti visive: che cosa il gioco non ha ancora una veste, e dove si prende
-versione: 0.19
+versione: 0.20
 data: 2026-10-05
 autore: Pietro Fabbri (con Claude)
 fonte: ricerca su Wikimedia Commons del 02/10/2026; tavolozza da Wikidata e Wikipedia del 03/10/2026; sagome e mura da OpenStreetMap via API standard OSM del 04/10/2026; cime e quote da Natural Earth `geography_regions_elevation_points` del 03/10/2026; verifica dei fondi già in dati/mappe/
-documenti collegati: videogioco-5-duchi-ritratti.md (v0.5), videogioco-5-duchi-lingue-immagini.md (v0.4), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-mappe.md (v1.4), videogioco-5-duchi-luoghi-edifici.md (v0.6), videogioco-5-duchi-audit.md (v0.24), videogioco-5-duchi-tappa-1-01.md (v0.4), AGENTS.md
+documenti collegati: videogioco-5-duchi-ritratti.md (v0.5), videogioco-5-duchi-lingue-immagini.md (v0.4), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-mappe.md (v1.5), videogioco-5-duchi-luoghi-edifici.md (v0.6), videogioco-5-duchi-audit.md (v0.25), videogioco-5-duchi-tappa-1-01.md (v0.4), AGENTS.md
 dati: dati/fonti_visive/fonti_visive.json (v1, 32 voci, 130 candidati), dati/fonti_visive/attestazione.json (v1, vuoto), dati/fonti_visive/incidenti.json (v1, 3 voci, 6 candidati), dati/fonti_visive/tavolozza.json (v1, 18 voci), dati/edifici_footprint.json (v1, 7322 edifici su 203 aree), dati/ferrara_fondo.json (v1, 14 tratti di mura), dati/ambienti_livelli.json (v2, 150 ambienti), dati/fonti_visive/colori_cartografici.json (v1, 19 voci), dati/altitudine_manifest.json (v1, tre file di cime: 15, 2 e 26 punti)
 ---
 
@@ -563,6 +563,8 @@ Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file d
 ---
 
 ## 9. Registro delle modifiche
+
+- **v0.20 (05/10/2026)**: **una riga che dichiarava cinque tappe e ne elencava sei, e un capitolo che non guardava i numeri della §6.** La riga «Tappe che nominano» era scritta quando la lista ne aveva cinque; la sesta tappa c'era gia' nella riga stessa, accanto al cinque, e nessuno dei sette controlli degli interni la guardava perche' il conteggio delle righe non e' il conteggio degli elementi di una riga. Il numero e' adesso **6**, e questa correzione l'ha trovata `sorgenti/verifica_prove.py`, che non fa nient'altro che chiedere ai numeri scritti in prosa di essere uguali a quelli del codice.
 - **v0.19 (05/10/2026)**: **Il rimando è l'unica cosa che cambia.** Un documento collegato è salito di versione e questo rimando è rimasto indietro: la riga è sbagliata e non sembra, perché un rimando che cita una versione superiore a quella vera sembra un rimando fermo. Qui dentro non cambia nient'altro — e si scrive lo stesso, perché una riga che cambia è una riga che cambia.
 - **v0.18 (05/10/2026)**: **due conteggi rimasti a sei in un capitolo che non guardava i numeri, e uno di loro era in uno script.** Il §3 diceva «sei controlli da Q1 a Q6 e sei difetti iniettati» per gli emblemi dei premi: sono **sette** dalla v0.6 di `premi.md`, quando la firma ha smesso di portare l'hash e ha cominciato a portare il numero dell'elemento interattivo, e Q7 è nato con lei. E `verifica_immagini.py`, che descrive le sottocartelle sorvegliate, dichiarava ancora «(Q1-Q6)» nella riga sui premi. Entrambi i numeri erano **giusti il giorno prima** e sono invecchiati da soli, che è il difetto più economico da trovare e il più difficile: nessuno dei due guardatori li confrontava con l'altro. La riga sui **disegni degli ambienti** — quattro controlli e sei difetti — è giusta e non è stata toccata: `prova_difetto_disegni.py` rompe i file veri e ne inietta sei, ed è un'altra prova.
 - **v0.17 (05/10/2026)**: **un rimando che puntava a una prova che non esiste.** Il capitolo sui premi diceva «la prova 5 vieta che l'oggetto sia generato», e `premi.md` §3 dichiara **quattro** prove: il divieto è nella **prima**. Il numero è corretto e la frase si leggeva come le altre, quindi è il difetto che `AGENTS.md` chiama *un numero vero che guarda il numero sbagliato*. Il rimando è corretto e il controllo **P8** di `sorgenti/verifica_premi.py` legge le quattro righe della tabella e rifiuta da qui in poi ogni rimando a una prova inesistente, in questo capitolo come in tutti gli altri.

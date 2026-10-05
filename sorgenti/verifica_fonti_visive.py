@@ -16,9 +16,9 @@ stesso dà verde su quel difetto: per questo `M1` confronta il file con
       oppure segno fantastico — mai due e mai nessuna
   M4  nessun mezzo fantastico ha un'immagine: sono creature
   M5  i numeri scritti in §3.1 del documento sono quelli del file
+  M6  ogni immagine ha l'attribuzione calcolata, e la licenza libera
   M7  le voci e i candidati della ricerca sono gli stessi nella tabella delle
       categorie, nel frontespizio e nel riepilogo: tre posti, un numero solo
-  M6  ogni immagine ha l'attribuzione calcolata, e la licenza libera
   E1  ogni voce epigrafa ha la sua immagine, scelta fra i candidati
   E2  **nessuna epigrafe entra nel gioco senza trascrizione e traduzione**
   E3  nessun testo e' scritto dal progetto: o c'e' con la sua fonte, o e' null
