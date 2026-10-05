@@ -163,7 +163,7 @@ python3 sorgenti/art/prova_difetto_disegni_150.py   # rovescia il disegnatore du
 python3 sorgenti/verifica_catena_luoghi.py          # la catena estratti-coordinate-registro: cinque controlli, L1-L5
 python3 sorgenti/sequenza_tappe.py                 # le novanta tappe degli anni 2-4 in fila, e le tabelle qui
 python3 sorgenti/verifica_sequenza.py              # la sequenza: sette controlli, S1-S7
-python3 sorgenti/verifica_parlato.py              # la parte orale: quattro controlli, A1-A4
+python3 sorgenti/verifica_parlato.py              # la parte orale: quattro controlli, A1-A4, e --difetti ne inietta quattro
 python3 sorgenti/verifica_incontri.py            # gli incontri: cinque controlli, C1-C5
 python3 sorgenti/estrai_incontri.py             # estrae voce, luogo e facoltativi dalle tabelle
 python3 sorgenti/aggiorna_itinerari.py           # rimette le tabelle generate nel documento
@@ -205,13 +205,13 @@ Fino al 5 ottobre 2026 nessuno guardava questi numeri. `python3 sorgenti/verific
 | Verificatori che dichiarano i loro controlli | **19** |
 | Verificatori senza dichiarazione | **13** |
 | Controlli dichiarati in tutto | **125** |
-| Controlli con la prova del difetto | **59** |
-| Controlli senza prova | **66** |
-| Prove eseguite da questo controllo | **6** |
+| Controlli con la prova del difetto | **63** |
+| Controlli senza prova | **62** |
+| Prove eseguite da questo controllo | **7** |
 
-**I tredici verificatori che non dichiarano i loro controlli** sono in `TACITI`, dentro `verifica_prove.py`, ciascuno con il motivo. Sono un buco dichiarato, non un buco nascosto: senza quella tabella sarebbero tredici script che il conto non guarda, ed e' la forma piu' comune di una sparizione silenziosa. **I 66 controlli senza prova** sono il debito vero: passano, ma nessuno li ha mai visti fallire. Il numero e' scritto qui perche' sia fermo: quando qualcuno aggiunge una prova, questa riga va aggiornata nello stesso commit, e X6 e' rosso se non e' successo. **Il primo debito chiuso e' `verifica_tavolozza.py`**, che ha sei controlli e sei difetti iniettati: il metodo e' `controlla(doc)` prende il file dalla chiamata invece di leggerlo da solo, e cosi' la prova puo' fargli vedere una copia rotta. Un controllo che legge il file dentro `main()` non ha una prova: non c'e' modo di dargliela.
+**I tredici verificatori che non dichiarano i loro controlli** sono in `TACITI`, dentro `verifica_prove.py`, ciascuno con il motivo. Sono un buco dichiarato, non un buco nascosto: senza quella tabella sarebbero tredici script che il conto non guarda, ed e' la forma piu' comune di una sparizione silenziosa. **I 62 controlli senza prova** sono il debito vero: passano, ma nessuno li ha mai visti fallire. Il numero e' scritto qui perche' sia fermo: quando qualcuno aggiunge una prova, questa riga va aggiornata nello stesso commit, e X6 e' rosso se non e' successo. **I primi due debiti chiusi** sono `verifica_tavolozza.py` (sei controlli, sei difetti) e `verifica_parlato.py` (quattro, quattro). Il metodo e' sempre lo stesso: i controlli prendono i loro input dalla chiamata — `controlla(doc)`, `controlla(doc, dati, lingue)` — invece di leggerli da soli, e la prova fa girare gli stessi controlli su una copia rotta. **Un controllo che legge il file dentro `main()` non ha una prova: non c'e' modo di dargliela.** Con `verifica_parlato.py` e' comparso anche un difetto vero: la frase in testa al file prometteva gia' «quattro controlli, tutti morroni (provati con difetti iniettati)», e nessun difetto era mai stato iniettato. Un numero giusto e una frase sbagliata, la stessa malattia dei numeri invecchiati dei documenti — e a dirlo non era stato nessun controllo.
 
-**X5 esegue le sei prove davvero**, in un processo nuovo, e non si accontenta che l'opzione `--difetti` esista: un'opzione che c'e' e non vede niente e' verde lo stesso. E' X5 che ha trovato, scrivendosi, che `verifica_fonti_visive.py` era gia' rosso da solo.
+**X5 esegue le sette prove davvero**, in un processo nuovo, e non si accontenta che l'opzione `--difetti` esista: un'opzione che c'e' e non vede niente e' verde lo stesso. E' X5 che ha trovato, scrivendosi, che `verifica_fonti_visive.py` era gia' rosso da solo.
 
 ## Stato del progetto
 **Fatto**
