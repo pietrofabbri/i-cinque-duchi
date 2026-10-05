@@ -12,7 +12,9 @@ controllo guarda se stessi i guardi.
       etichetta due volte, e l'ordine del docstring è quello dei numeri
   X2  ogni controllo dichiarato è guardato dal codice: compare almeno una
       volta, fuori dal docstring, in una riga che riporta un problema
-  X3  i numeri che i documenti scrivono sui controlli sono quelli del codice
+  X3  i numeri che i documenti scrivono sui controlli sono quelli del codice:
+      i conteggi, gli intervalli di etichette e le etichette singole citate
+      accanto al nome dello script
   X4  ogni verificatore dichiara i suoi controlli, o il motivo per cui non li
       dichiara: nessuno resta fuori dal conto senza essere detto
   X5  la prova del difetto esiste e funziona: `--difetti` viene eseguito e deve
@@ -95,6 +97,16 @@ CONTA = re.compile(r"\b(\d{1,3}|[a-z]+)\s+(?:controlli|verifiche|prove)\b")
 # `M1-M6`, `A1–A6`, `R1—R4`: un intervallo di etichette dello stesso prefisso.
 INTERVALLO = re.compile(r"(?<![A-Za-z0-9])([A-Z])(\d{1,2})\s*[-–—]\s*\1(\d{1,2})"
                         r"(?![0-9])")
+# Un'etichetta sola, citata vicino al nome dello script: «il controllo **B7** di
+# `verifica_ambienti.py`», «**P6** e **P7**». È un numero scritto in prosa
+# esattamente come `B1-B8`, e fino al 5 ottobre 2026 non lo si guardava.
+# La barra esclude gli intervalli, già presi da INTERVALLO: senza, ogni
+# `R1-R6` verrebbe contato due volte. Lo sfondo esclude la virgoletta di
+# codice, perché `R6` dentro `` `R6` `` è il nome di un file o un'etichetta
+# che si sta usando altrove, non un numero che questo documento attribuisce.
+SINGOLA = re.compile(r"(?<![A-Za-z0-9`\-–—])([A-Z])(\d{1,2})"
+                     r"(?![0-9\-–—])")
+
 # La sezione del registro delle modifiche: dentro, un numero descrive che cosa
 # era vero il giorno in cui la riga e' stata scritta, non che cosa e' vero adesso.
 # `fonti-visive.md` §9 dice ancora «dieci controlli M1-M6 ed E1-E4» perche' in
@@ -115,6 +127,11 @@ CONTI = {
     "Controlli con la prova del difetto": "provati",
     "Controlli senza prova": "senza_prova",
     "Prove eseguite da questo controllo": "prove_eseguite",
+    # La copertura di X3. Un controllo che confronta 81 numeri in 13 documenti
+    # e non lo dichiara promette, senza dirlo, che confronta quelli di tutti.
+    "Numeri in prosa confrontati con il codice": "numeri_confrontati",
+    "Documenti confrontati almeno una volta": "documenti_confrontati",
+    "Documenti senza nessun confronto": "documenti_non_confrontati",
 }
 SEZIONE_CONTO = "## Il conto dei controlli"
 
@@ -313,7 +330,11 @@ def controlla(sorgenti, documenti, problemi, esegui=None):
         if et:
             dichiarazioni[os.path.basename(rel)] = (rel, et)
     guardate = 0
+    # quanti confronti per documento: serve a dichiarare la copertura vera,
+    # che e' diversa dal numero di documenti letti
+    per_document = {}
     for rel in sorted(documenti):
+        confronti = 0
         testo = documenti[rel]
         for numero_riga, riga in righe_utili(testo):
             if not riga.strip():
@@ -325,9 +346,11 @@ def controlla(sorgenti, documenti, problemi, esegui=None):
                 clausola = intorno(citati[0], riga)
                 script, et = dichiarazioni[citati[0]]
                 gruppi = per_prefisso(et)
+                dette = set(et)
                 detto = numero(clausola)
                 if detto is not None:
                     guardate += 1
+                    confronti += 1
                     if detto != len(et):
                         problemi.append(
                             "X3 %s riga %d: scrive %d controlli per %s, "
@@ -339,6 +362,7 @@ def controlla(sorgenti, documenti, problemi, esegui=None):
                         continue
                     numeri = gruppi[pref]
                     guardate += 1
+                    confronti += 1
                     if (int(a), int(b)) != (numeri[0], numeri[-1]):
                         problemi.append(
                             "X3 %s riga %d: %s scrive %s%d-%s%d, il file "
@@ -346,10 +370,32 @@ def controlla(sorgenti, documenti, problemi, esegui=None):
                             % (rel, numero_riga, citati[0], pref, int(a),
                                pref, int(b), pref, numeri[0], pref,
                                numeri[-1]))
-    return guardate
+                # **Le etichette singole.** «il controllo B7 di
+                # `verifica_ambienti.py`` e' un numero scritto in prosa come
+                # «B1-B8», e senza questo passaggio il documento poteva
+                # citare un controllo che il file non ha e X3 taceva.
+                # Solo se lo script usa quel prefisso: `luoghi.md` scrive
+                # «R1-R6» e «B7» sulla stessa riga, e R1-R6 sono di
+                # `ipotesi_luoghi.py`, non di `verifica_ambienti.py` —
+                # confrontarli sarebbe un difetto inventato.
+                for m in SINGOLA.finditer(clausola):
+                    pref, numero_et = m.group(1), m.group(2)
+                    if pref not in gruppi:
+                        continue
+                    guardate += 1
+                    confronti += 1
+                    if pref + numero_et not in dette:
+                        problemi.append(
+                            "X3 %s riga %d: %s cita l'etichetta %s%d, che il "
+                            "file non dichiara (%s)"
+                            % (rel, numero_riga, citati[0], pref,
+                               int(numero_et), " ".join(et)))
+        per_document[rel] = confronti
+    return guardate, per_document
 
 
-def controlla_conto(sorgenti, documenti, problemi, prove_effettive=0):
+def controlla_conto(sorgenti, documenti, problemi, prove_effettive=0,
+                   numeri_confrontati=0, per_document=None):
     """X4 e X6: nessun verificatore resta fuori dal conto, e il conto e' scritto."""
     # ---- X4
     taciti = [rel for rel in sorted(sorgenti) if not dichiarate(sorgenti[rel])]
@@ -376,6 +422,11 @@ def controlla_conto(sorgenti, documenti, problemi, prove_effettive=0):
     # ---- X6: il conto del debito e' scritto, e non cresce da solo
     conteggi = conta(sorgenti)
     conteggi["prove_eseguite"] = prove_effettive
+    conteggi["numeri_confrontati"] = numeri_confrontati
+    conteggi["documenti_confrontati"] = len(
+        [v for v in (per_document or {}).values() if v > 0])
+    conteggi["documenti_non_confrontati"] = len(per_document or {}) - \
+        conteggi["documenti_confrontati"]
     letto = leggi_conto(documenti.get("README.md", ""))
     for riga, chiave in CONTI.items():
         if riga not in letto:
@@ -486,6 +537,15 @@ def esegui_prove(sorgenti, radice, problemi, solo=None):
 
 
 # --------------------------------------------------------------------------
+# La parte di messaggio che distingue un difetto dall'altro dello stesso
+# controllo. Senza, due iniezioni dello stesso controllo si sommano e la prova
+# non sa quale abbia morso.
+SEGNO = {
+    "X3": ("X3 ", "controlli per"),
+    "X3_etichetta": ("X3 ", "l'etichetta"),
+}
+
+
 def inietta(sorgenti, documenti, difetto):
     """Un difetto alla volta, su una copia dell'albero.
 
@@ -524,6 +584,37 @@ def inietta(sorgenti, documenti, difetto):
                                         "otto": "dieci", "sette": "nove",
                                         "sei": "otto", "cinque": "sette",
                                         "quattro": "sei"}[m.group(1)],
+                             scelta, count=1)
+        if nuovo_testo == scelta:
+            return None, None, None
+        d[rel] = d[rel].replace(scelta, nuovo_testo, 1)
+    elif difetto == "X3_etichetta":
+        # un'etichetta sola che il file non dichiara: il documento cita il
+        # controllo P9 di `verifica_premi.py`, che ne dichiara P1-P8. La
+        # versione che chiama solo `verifica_premi.py` è scelta apposta:
+        # X3 confronta l'etichetta solo quando la riga nomina un solo
+        # verificatore, e la prova deve colpire il passaggio nuovo.
+        # La riga deve nominare UN solo verificatore, e va presa fra quelle che
+        # X3 legge davvero. `premi.md` ha tre righe che nominano lo script: la
+        # 8, che ne nomina due (`verifica_premi_emblemi.py` e
+        # `verifica_premi.py`) e che X3 non confronta — con due nomi non sa a
+        # chi attribuire l'etichetta, ed e' la stessa regola che impedisce di
+        # attribuire `R1-R6` di `luoghi.md` a `verifica_ambienti.py` invece che
+        # a `ipotesi_luoghi.py` — e le 182 e 233, che lo nominano solo e sono le
+        # due che servono.
+        rel = "docs/videogioco-5-duchi-premi.md"
+        # Le righe si scelgono fra quelle che X3 legge davvero: dentro il
+        # registro delle modifiche un numero descrive il passato, e nessun
+        # controllo lo deve leggere come se fosse il presente.
+        righe = [r for _, r in righe_utili(d[rel])
+                 if "verifica_premi.py" in r
+                 and re.search(r"\bP\d+\b", r)
+                 and len(set(re.findall(r"[\w./-]*verifica_[\w]+\.py", r))) == 1]
+        if not righe:
+            return None, None, None
+        scelta = righe[0]
+        nuovo_testo = re.sub(r"\bP(\d+)\b",
+                             lambda m: "P9" if m.group(1) != "9" else m.group(0),
                              scelta, count=1)
         if nuovo_testo == scelta:
             return None, None, None
@@ -585,9 +676,10 @@ def main():
     sorgenti, documenti = albero()
 
     problemi = []
-    guardate = controlla(sorgenti, documenti, problemi)
+    guardate, per_document = controlla(sorgenti, documenti, problemi)
     eseguite = esegui_prove(sorgenti, RADICE, problemi)
-    controlla_conto(sorgenti, documenti, problemi, eseguite)
+    controlla_conto(sorgenti, documenti, problemi, eseguite, guardate,
+                    per_document)
 
     numeri = conta(sorgenti)
     print("== X1-X6. i controlli sui controlli")
@@ -597,8 +689,10 @@ def main():
     print("   controlli dichiarati: %d, con la prova del difetto: %d, "
           "senza prova: %d" % (numeri["controlli"], numeri["provati"],
                                numeri["senza_prova"]))
-    print("   numeri scritti nei documenti confrontati con il codice: %d"
-          % guardate)
+    print("   numeri scritti nei documenti confrontati con il codice: %d, "
+          "in %d documenti su %d"
+          % (guardate, len([v for v in per_document.values() if v > 0]),
+             len(per_document)))
     print("   prove `--difetti` eseguite davvero: %d" % eseguite)
     if problemi:
         for p in problemi:
@@ -612,7 +706,8 @@ def main():
     if sola_prova:
         iniettati = 0
         visti = 0
-        for difetto in ("X1", "X2", "X3", "X4", "X5", "X6"):
+        for difetto in ("X1", "X2", "X3", "X3_etichetta", "X4", "X5",
+                        "X6"):
             s, d, finto = inietta(dict(sorgenti), dict(documenti), difetto)
             if s is None or (not s and not d and finto is None):
                 print("   NON INIETTATO  %s: nessun file su cui intervenire"
@@ -636,9 +731,16 @@ def main():
                     shutil.rmtree(temporanea, ignore_errors=True)
             else:
                 problemi2 = []
-                controlla(s, d, problemi2)
-                controlla_conto(s, d, problemi2, eseguite)
-                trovati = [p for p in problemi2 if p.startswith(difetto + " ")]
+                guardate2, per_document2 = controlla(s, d, problemi2)
+                controlla_conto(s, d, problemi2, eseguite, guardate2,
+                                per_document2)
+                if difetto in SEGNO:
+                    prefisso, segno = SEGNO[difetto]
+                    trovati = [p for p in problemi2
+                               if p.startswith(prefisso) and segno in p]
+                else:
+                    trovati = [p for p in problemi2
+                               if p.startswith(difetto + " ")]
             if trovati:
                 visti += 1
                 for p in trovati:
