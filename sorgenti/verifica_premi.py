@@ -158,6 +158,71 @@ def inietta_riga_malata(testo):
         testo[:m.start()], testo[m.start():])
 
 
+def problemi_5(doc, dati=None):
+    """P5: nessun premio generato, e i quattro campi dell'oggetto dichiarati.
+
+    Tre cose, e ognuna guarda un posto diverso:
+
+    - **le frasi vietate** non devono comparire *nella sezione delle prove* come
+      qualcosa che un premio può essere. La versione precedente le cercava in
+      tutto il documento, e in tutto il documento compaiono solo per spiegare
+      perché non si possono usare: il controllo non poteva mai accorgersi di
+      niente, e nessuno se n'era accorto perché un controllo che non può fallire
+      e un controllo che non c'è sulla carta fanno la stessa cosa.
+    - **il divieto deve esserci**, e la sua assenza è un difetto: un controllo
+      che vieta senza dire che cosa vieta non vieta niente.
+    - **i quattro campi dell'oggetto** (`premio`, `fonte`, `licenza`,
+      `perche_prova_2`) devono essere `null` **e** dichiarati in `vuoto`. Un
+      campo nullo senza la spiegazione accanto è il buco che il generatore si
+      ferma a non lasciare.
+
+    Il `licenza` **non è una delle quattro prove** e questa funzione non lo
+    chiama: la versione precedente stampava «il campo licenza e' fra le prove» e
+    la parola non compare in nessuna delle quattro righe della tabella. La
+    licenza è un dato del record, e la prova che la riguarda è la prima — *l'opera
+    esiste, l'immagine è libera di diritti*.
+
+    `dati` è il catalogo già letto, per non rileggerlo: chi chiama questa
+    funzione ha già il file in mano e riaprirlo sarebbe un costo per niente.
+    """
+    problemi = []
+    prove = sezione(doc, "## 3.", "## 4.")
+    for v in VIETATI:
+        if v in prove.lower():
+            problemi.append("P5: la sezione delle prove contiene «%s» come "
+                            "qualcosa che un premio può essere" % v)
+    for frase in ("vieta le immagini", "libera di diritti"):
+        if frase not in prove:
+            problemi.append("P5: la sezione delle prove non dice che il premio "
+                            "dev'essere «%s»" % frase)
+    if dati is None:
+        with io.open(PREMI, encoding="utf-8") as f:
+            dati = json.load(f)
+    # **Tutti i record, non il primo.** La versione precedente guardava
+    # `premi[0]` e dichiarava di guardare il catalogo: un oggetto inventato
+    # nel record numero quattro passava, e in un catalogo di millecinquanta
+    # record il primo è l'unico che non parla. Qui si guarda ogni record e si
+    # conta quanti sono i campi compilati, così il numero esce dai dati.
+    compilati = 0
+    for r in dati.get("premi", []):
+        for campo in ("licenza", "fonte", "premio", "perche_prova_2"):
+            if r.get(campo) is not None:
+                compilati += 1
+                if len(problemi) < 3:
+                    problemi.append("P5: il record %s ha `%s` compilato a %r "
+                                    "senza che le quattro prove siano state "
+                                    "superate" % (r["chiave"], campo,
+                                                  r[campo]))
+            elif not any(campo in frase for frase in r.get("vuoto", [])):
+                if len(problemi) < 3:
+                    problemi.append("P5: il campo `%s` del record %s è vuoto e "
+                                    "non dice perché" % (campo, r["chiave"]))
+    if compilati:
+        problemi.append("P5: %d campi dell'oggetto sono compilati in tutto il "
+                        "catalogo, e nessuna prova è stata superata" % compilati)
+    return problemi
+
+
 def problemi_delle_prove(doc, documenti):
     """P8: i rimandi «prova n» devono esistere nella tabella di §3.
 
@@ -398,16 +463,9 @@ def main():
             problemi.append("P4: lingue.md non dichiara piu' la lingua «%s»" % nome)
 
     print("\n== P5. nessun premio puo' essere generato o senza licenza ==")
-    for v in VIETATI:
-        # il divieto deve comparire nel documento come divieto, non come descrizione
-        if v in doc.lower():
-            problemi.append("P5: il documento contiene «%s» senza dichiararlo vietato" % v)
-    if "l'elenco è **chiuso**" not in doc and "l'elenco e' **chiuso**" not in doc:
-        pass
-    for frase in ("vieta le immagini", "libera di diritti"):
-        if frase not in doc:
-            problemi.append("P5: il documento non dice che il premio dev'essere «%s»" % frase)
-    print("   il divieto di generare e' dichiarato e il campo licenza e' fra le prove")
+    problemi += problemi_5(doc)
+    print("   il divieto di generare e' dichiarato nella sezione delle prove, "
+          "e i quattro campi dell'oggetto sono dichiarati vuoti con il perche'")
 
     print("\n== P8. nessun rimando a una prova che §3 non dichiara ==")
     citati = [(os.path.relpath(p, RADICE), leggi(p))
@@ -444,14 +502,48 @@ def main():
 
     print("\nprova: un difetto alla volta, col file rimesso a posto")
 
-    # P8 e' l'unico dei tre che non guarda il catalogo: guarda i **testi**, e
-    # quindi non puo' passare dalla stessa coppia (file, difetto) degli altri
-    # due. Il suo difetto si inietta in memoria e si passa alla stessa funzione
-    # che il controllo usa, ed e' la funzione a dover accorgersene.
+    # **I tre controlli che guardano i testi** — P5, P8 e quello che verrà —
+    # non possono passare dalla stessa coppia (file su disco, difetto) degli
+    # altri: il difetto theirs si inietta in memoria e si passa alla stessa
+    # funzione che il controllo chiama. Scrivere il difetto su un file vero e
+    # rimetterlo a posto funzionerebbe, ma è più fragile e più lento, e
+    # soprattutto metterebbe il file vero dentro una prova.
+    with io.open(PREMI, encoding="utf-8") as f:
+        dati = json.load(f)
+
+    # P5 — la sezione delle prove non dice più che cosa vieta. È il difetto che
+    # il blocco `if ...: pass` non poteva vedere, perché non guardava niente.
+    prove_5 = problemi_5(doc.replace("vieta le immagini", "accoglie le immagini"))
+    visti5 = any(m.startswith("P5:") for m in prove_5)
+    iniettati, visti = 1, 1 if visti5 else 0
+    print("   %-4s %s%s" % ("P5", "VISTO" if visti5 else "NON VISTO",
+                            ": %s" % prove_5[0][:70] if prove_5 else
+                            " (nessun difetto: la prova non ha provato)"))
+
+    # P5 — un campo dell'oggetto compilato per fare prima: e' la meta' dei
+    # cataloghi che sembrano completi. Il difetto sta nel **quarto** record,
+    # non nel primo: la versione di P5 che guardava `premi[0]` non lo vedeva,
+    # e in un catalogo di millecinquanta record il primo e' l'unico che non
+    # parla. Un difetto che sta nel primo si vede anche per caso.
+    dati_5 = json.loads(json.dumps(dati))
+    dati_5["premi"][3]["premio"] = "un'anfora etrusca"
+    dati_5["premi"][3]["fonte"] = "un sito qualsiasi"
+    prove_5b = problemi_5(doc, dati_5)
+    visti5b = any(m.startswith("P5:") for m in prove_5b)
+    iniettati += 1
+    visti += 1 if visti5b else 0
+    print("   %-4s %s%s" % ("P5", "VISTO" if visti5b else "NON VISTO",
+                            ": %s" % prove_5b[0][:70] if prove_5b else
+                            " (nessun difetto: la prova non ha provato)"))
+
+    # P8 guarda i **testi** e niente del catalogo: il suo difetto si inietta in
+    # memoria e si passa alla stessa funzione che il controllo usa, ed e' la
+    # funzione a dover accorgersene.
     con_8, _dichiarate = problemi_delle_prove(
         doc, [(nome, inietta_riga_malata(testo)) for nome, testo in citati])
     visti8 = any(m.startswith("P8:") for m in con_8)
-    iniettati, visti = 1, 1 if visti8 else 0
+    iniettati += 1
+    visti += 1 if visti8 else 0
     print("   %-4s %s%s" % ("P8", "VISTO" if visti8 else "NON VISTO",
                             ": %s" % con_8[0][:70] if con_8 else
                             " (nessun difetto: la prova non ha provato)"))

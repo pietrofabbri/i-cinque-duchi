@@ -43,7 +43,7 @@ numero_della_firma = emblema_premi.numero_della_firma
 PREMI = os.path.join(RADICE, "dati", "premi.json")
 INDICE = os.path.join(RADICE, "sorgenti", "art", "out", "premi",
                       "premi_indice.json")
-CARDINALITA = 1050            # prem.md 4.0: 150 informatici piu' 900 linguistici
+CARDINALITA = 1050            # premi.md 4.0: 150 informatici piu' 900 linguistici
 
 
 def leggi_firma(t, tessere, colore):
@@ -84,11 +84,14 @@ def controlla(catalogo=None, indice=None, tessere=None):
         w, h = misura_png(blob)
         tessere = decodifica_png(blob)
         if [w, h] != indice["foglio_px"]:
+            # **La griglia si usa anche se la misura non torna.** Il problema
+            # e' gia' dichiarato e i controlli dopo devono poter guardare: una
+            # `else: tessere = tessere` — cioe' niente — sarebbe un `else` che
+            # dice di non fare niente scrivendolo, che e' la forma piu' costosa
+            # di non fare niente.
             problemi.append("Q2 il foglio e' %dx%d e l'indice dichiara %dx%d"
                             % (w, h, indice["foglio_px"][0],
                                indice["foglio_px"][1]))
-        else:
-            tessere = tessere
     voci = indice["tessere"]
 
     # Q1 — chiavi distinte nel catalogo e una per livello
@@ -98,7 +101,7 @@ def controlla(catalogo=None, indice=None, tessere=None):
         problemi.append("Q1 chiavi duplicate nel catalogo: %s"
                         % ", ".join(doppi))
     if len(catalogo["premi"]) != CARDINALITA:
-        problemi.append("Q1 il catalogo ha %d premi e prem.md 4.0 ne dichiara %d"
+        problemi.append("Q1 il catalogo ha %d premi e premi.md 4.0 ne dichiara %d"
                         % (len(catalogo["premi"]), CARDINALITA))
 
     # Q2 — ogni tessera dentro il foglio

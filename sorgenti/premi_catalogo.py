@@ -2,12 +2,16 @@
 
 **Che cosa c'è e che cosa non c'è, e perché.** `premi.md` §4 ha deciso la
 cardinalità — un premio per livello, 1050 — e §2 ha chiuso le undici
-categorie. Ma il **catalogo non esisteva**: `premi.md` §5 lo dava
+categorie. Il **catalogo non esisteva**: `premi.md` §5 lo dava
 esplicitamente per *da produrre*, e la prova 1 vieta che un premio sia
 un'opera generata. Questo file produce la parte che si può produrre senza
 inventare niente: **il livello, la lingua, la disciplina e la categoria**, con
 la regola che assegna la categoria letta dalla tabella di `premi.md` §2 e non
-scelta qui.
+scelta qui — e, dalla v0.6, anche **l'elemento interattivo** da cui il livello
+viene, letto da `associazioni.json` e da `lingue.md` §6 per l'oggetto che la
+sezione dichiara. Il file che questa riga diceva *da produrre* è stato scritto
+il 04/10/2026 e la sua seconda versione il 05/10/2026: la frase è rimasta
+nella docstring perché nessuno rilegge le docstring.
 
 I campi che descrivono **l'oggetto** — `premio`, `fonte`, `licenza`, le tre
 righe — restano `null` con il perché accanto, in `vuoto`, perche' un oggetto
@@ -248,7 +252,7 @@ def principale():
     totali = len(premiate)
     if totali != 1050:
         raise SystemExit("i livelli sono %d e non 1050: la cardinalità decisa "
-                         "in prem.md 4.0 non torna" % totali)
+                         "in premi.md 4.0 non torna" % totali)
 
     # **Il legame fra livello, elemento e argomento**, letto dai documenti e non
     # scritto qui. Senza questo blocco `argomento_del_livello` e
@@ -340,7 +344,7 @@ def principale():
     doc = {
         "versione": 2,
         "data": time.strftime("%Y-%m-%d"),
-        "scopo": "un record per livello, con la categoria che prem.md 2 "
+        "scopo": "un record per livello, con la categoria che premi.md 2 "
                  "assegna alla disciplina. L'oggetto del premio non e' qui: "
                  "manca e il file lo dice",
         "che_cosa_non_e": "NON e' il catalogo dei premi. Manca tutto cio che "
