@@ -1,6 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — le fonti visive: che cosa il gioco non ha ancora una veste, e dove si prende
-versione: 0.17
+versione: 0.18
 data: 2026-10-05
 autore: Pietro Fabbri (con Claude)
 fonte: ricerca su Wikimedia Commons del 02/10/2026; tavolozza da Wikidata e Wikipedia del 03/10/2026; sagome e mura da OpenStreetMap via API standard OSM del 04/10/2026; cime e quote da Natural Earth `geography_regions_elevation_points` del 03/10/2026; verifica dei fondi già in dati/mappe/
@@ -360,7 +360,7 @@ Le **undici forme sono dichiarate una per categoria** in `emblema.segno()`, acca
 
 Il primo difetto è la terza volta in quattro giorni che si presenta sotto una forma diversa — l'area che dichiara 5209 e la forma che è un punto, l'intestazione RGB con un byte per pixel, il carattere che il font non ha e non disegna niente. La regola che ne esce è in `AGENTS.md`: **un valore di default che sostituisce un dato mancante non è un dato, è una sparizione silenziosa**, e `FONT.get(c, [])` ne è la forma più economica.
 
-Sei controlli da **Q1** a **Q6** e **sei difetti iniettati, sei visti**; la prova rilegge il foglio dal disco prima di dichiararsi a posto, perché chiedere alla griglia che lei stessa ha alterato significa chiedere a sé stessa.
+Sette controlli da **Q1** a **Q7** e **sette difetti iniettati, sette visti**; la prova rilegge il foglio dal disco prima di dichiararsi a posto, perché chiedere alla griglia che lei stessa ha alterato significa chiedere a sé stessa. **Q7** è l'unico dei sette che rilegge i **pixel** invece di confrontare due file, e porta il numero dell'elemento interattivo: gli altri sei avrebbero detto la stessa frase dell'indice anche con il disegno sbagliato.
 
 ## 4. Accuratezza: proporzioni, colori, forme
 
@@ -563,6 +563,7 @@ Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file d
 ---
 
 ## 9. Registro delle modifiche
+- **v0.18 (05/10/2026)**: **due conteggi rimasti a sei in un capitolo che non guardava i numeri, e uno di loro era in uno script.** Il §3 diceva «sei controlli da Q1 a Q6 e sei difetti iniettati» per gli emblemi dei premi: sono **sette** dalla v0.6 di `premi.md`, quando la firma ha smesso di portare l'hash e ha cominciato a portare il numero dell'elemento interattivo, e Q7 è nato con lei. E `verifica_immagini.py`, che descrive le sottocartelle sorvegliate, dichiarava ancora «(Q1-Q6)» nella riga sui premi. Entrambi i numeri erano **giusti il giorno prima** e sono invecchiati da soli, che è il difetto più economico da trovare e il più difficile: nessuno dei due guardatori li confrontava con l'altro. La riga sui **disegni degli ambienti** — quattro controlli e sei difetti — è giusta e non è stata toccata: `prova_difetto_disegni.py` rompe i file veri e ne inietta sei, ed è un'altra prova.
 - **v0.17 (05/10/2026)**: **un rimando che puntava a una prova che non esiste.** Il capitolo sui premi diceva «la prova 5 vieta che l'oggetto sia generato», e `premi.md` §3 dichiara **quattro** prove: il divieto è nella **prima**. Il numero è corretto e la frase si leggeva come le altre, quindi è il difetto che `AGENTS.md` chiama *un numero vero che guarda il numero sbagliato*. Il rimando è corretto e il controllo **P8** di `sorgenti/verifica_premi.py` legge le quattro righe della tabella e rifiuta da qui in poi ogni rimando a una prova inesistente, in questo capitolo come in tutti gli altri.
 - **v0.16 (05/10/2026)**: **tre numeri falsi nella stessa sezione, e nessuno dei sette controlli che c'erano li guardava.** Il titolo della §3 diceva «gli otto file costruiti», la frase due righe sotto diceva «sono sei, e sei è il numero che dice §8», e il riepilogo ripetiva «i sei file ci sono e sono verificati»: tre numeri, tutti e tre veri il giorno in cui sono stati scritti, nessuno dei tre mosso quando sono diventati falsi, e nessuno dei sette controlli — **M1–M7, E1–E4** — guardava quella frase, quel titolo o quella riga. È la malattia di sempre nella forma più semplice: *una riga scritta due volte, o non scritta, non lascia traccia nei controlli dei numeri*, e qui la riga era un **titolo**.
   - **la cura non è stata correggere i numeri: è stata toglierli.** Il titolo ora non porta un numero, la frase non dice più «sono sei», e al loro posto ci sono **i nomi dei file** — che si possono controllare. Un numero ripetuto in due posti è la malattia; toglierne uno è la cura, e l'altro si toglie anche;

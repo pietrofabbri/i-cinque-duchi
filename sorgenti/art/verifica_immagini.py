@@ -209,7 +209,8 @@ def main(numera=False):
                                   "sorvegliato da verifica_disegni.py (D1-D4)",
                      "premi": "sorgenti/art/out/premi/premi_indice.json, "
                               "sorvegliato da verifica_premi_emblemi.py "
-                              "(Q1-Q6): i 1050 emblemi dei premi in un foglio"}
+                              "(Q1-Q7): i 1050 emblemi dei premi in un foglio, e la firma "
+                              "letta dai pixel"}
     if os.path.isdir(OUT):
         for nome_file in sorted(os.listdir(OUT)):
             percorso = os.path.join(OUT, nome_file)
