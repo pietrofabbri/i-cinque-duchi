@@ -209,16 +209,9 @@
    "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
    "motivo": "una tappa sola: i suoi numeri sono un esempio, non un conteggio",
    "natura": "il documento non ha un controllo che confronti i suoi numeri"
-  },
-  {
-   "chiave": "sorgenti/verifica_livelli.py",
-   "elenco": "TACITI",
-   "guardato_da": "sorgenti/verifica_prove.py, controllo X4",
-   "motivo": "non dichiara etichette perche' non e' un verificatore: e' il generatore dei centocinquanta livelli, scrive lv.json e corpo.md come effetto collaterale e scrive su un percorso assoluto di un'altra macchina; e' nel conto solo perche' il suo nome comincia con «verifica», che e' il nome che il conto riconosce",
-   "natura": "non e' un verificatore: e' un generatore che ha nel nome il prefisso dei verificatori"
   }
  ],
  "che_cosa": "I buchi conosciuti del progetto: cioe' le cose che un controllo dichiara di non poter guardare, con il motivo. Un buco che non e' qui non e' un buco che qualcuno sta guardando.",
  "data": "2026-10-05",
- "versione": 2
+ "versione": 3
 }

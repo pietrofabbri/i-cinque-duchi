@@ -1,3 +1,15 @@
+# **NON e' un verificatore.** Questo file genera i centocinquanta livelli:
+# scrive `lv.json`, `corpo.md` e il catalogo dei livelli. Fino al 5 ottobre
+# 2026 si chiamava `verifica_livelli.py`, e il nome era tutta la parte
+# sbagliata: `verifica_prove.py` riconosce come verificatori i file che
+# cominciano per `verifica`, quindi un generatore entrava nel conto dei
+# controlli e il conto prometteva di guardare qualcosa che non e' un
+# controllo. Il nome e' stato corretto invece di dichiarare il buco: un
+# registro che raccoglie voci che non sono buchi smette di servire.
+#
+# Attenzione: non ha guardia `if __name__`, importa con `exec` un altro
+# file e scrive su percorsi assoluti: si esegue per generare, non per
+# controllare niente.
 # (anno, n, titolo-argomenti, [nodi core], tipo)  tipo: N normale, P prova di corte
 L = {}
 L[1] = [

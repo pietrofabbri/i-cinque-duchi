@@ -203,9 +203,9 @@ Fino al 5 ottobre 2026 nessuno guardava questi numeri. `python3 sorgenti/verific
 
 | | |
 |---|---|
-| Verificatori nel ramo | **36** |
+| Verificatori nel ramo | **35** |
 | Verificatori che dichiarano i loro controlli | **22** |
-| Verificatori senza dichiarazione | **14** |
+| Verificatori senza dichiarazione | **13** |
 | Controlli dichiarati in tutto | **141** |
 | Controlli con la prova del difetto | **82** |
 | Controlli senza prova | **59** |
@@ -214,7 +214,7 @@ Fino al 5 ottobre 2026 nessuno guardava questi numeri. `python3 sorgenti/verific
 | Documenti confrontati almeno una volta | **13** |
 | Documenti senza nessun confronto | **19** |
 
-**I quattordici verificatori che non dichiarano i loro controlli** sono in `TACITI`, dentro `verifica_prove.py`, ciascuno con il motivo. Sono un buco dichiarato, non un buco nascosto: senza quella tabella sarebbero quattordici script che il conto non guarda, ed e' la forma piu' comune di una sparizione silenziosa. **I 67 controlli senza prova** sono il debito vero: passano, ma nessuno li ha mai visti fallire. Il numero e' scritto qui perche' sia fermo: quando qualcuno aggiunge una prova, questa riga va aggiornata nello stesso commit, e X6 e' rosso se non e' successo. **I primi due debiti chiusi** sono `verifica_tavolozza.py` (sei controlli, sei difetti) e `verifica_parlato.py` (quattro, quattro). Il metodo e' sempre lo stesso: i controlli prendono i loro input dalla chiamata — `controlla(doc)`, `controlla(doc, dati, lingue)` — invece di leggerli da soli, e la prova fa girare gli stessi controlli su una copia rotta. **Un controllo che legge il file dentro `main()` non ha una prova: non c'e' modo di dargliela.** Con `verifica_parlato.py` e' comparso anche un difetto vero: la frase in testa al file prometteva gia' «quattro controlli, tutti morroni (provati con difetti iniettati)», e nessun difetto era mai stato iniettato. Un numero giusto e una frase sbagliata, la stessa malattia dei numeri invecchiati dei documenti — e a dirlo non era stato nessun controllo.
+**I tredici verificatori che non dichiarano i loro controlli** sono in `TACITI`, dentro `verifica_prove.py`, ciascuno con il motivo. Sono un buco dichiarato, non un buco nascosto: senza quella tabella sarebbero tredici script che il conto non guarda, ed e' la forma piu' comune di una sparizione silenziosa. **I 67 controlli senza prova** sono il debito vero: passano, ma nessuno li ha mai visti fallire. Il numero e' scritto qui perche' sia fermo: quando qualcuno aggiunge una prova, questa riga va aggiornata nello stesso commit, e X6 e' rosso se non e' successo. **I primi due debiti chiusi** sono `verifica_tavolozza.py` (sei controlli, sei difetti) e `verifica_parlato.py` (quattro, quattro). Il metodo e' sempre lo stesso: i controlli prendono i loro input dalla chiamata — `controlla(doc)`, `controlla(doc, dati, lingue)` — invece di leggerli da soli, e la prova fa girare gli stessi controlli su una copia rotta. **Un controllo che legge il file dentro `main()` non ha una prova: non c'e' modo di dargliela.** Con `verifica_parlato.py` e' comparso anche un difetto vero: la frase in testa al file prometteva gia' «quattro controlli, tutti morroni (provati con difetti iniettati)», e nessun difetto era mai stato iniettato. Un numero giusto e una frase sbagliata, la stessa malattia dei numeri invecchiati dei documenti — e a dirlo non era stato nessun controllo.
 
 **X3 confront tutti i documenti, ma non tutti i documenti hanno un numero da confrontare.** Le tre righe in fondo alla tabella dicono la copertura vera, e sono controllate come le altre: un controllo che guarda qualche documento e scrive «i numeri dei documenti sono quelli del codice» mente per gli altri, ed è la stessa forma di sparizione silenziosa che I7 dichiara con «documenti interamente guardati: 0». Fra i documenti senza nessun confronto, undici non nominano un verificatore nemmeno; gli altri lo nominano solo dentro il registro delle modifiche — dove un numero descrive il giorno in cui la riga è stata scritta, e leggerlo come il presente sarebbe un difetto — oppure su righe che ne nominano due insieme, dove non si sa a chi attribuirlo. Dal 5 ottobre X3 confronta anche le **etichette singole**: il «controllo B7 di `verifica_ambienti.py`» è un numero scritto in prosa come «B1-B9», e prima non lo si guardava. Solo se lo script usa quel prefisso, perché `luoghi.md` scrive «R1-R6» e «B7» sulla stessa riga e i due non sono dello stesso script — R1-R6 sono di `ipotesi_luoghi.py`. Senza quella regola il confronto avrebbe inventato un difetto, e un difetto inventato è peggio di nessun difetto: fa perdere la fiducia al controllo che si voleva.
 
@@ -244,10 +244,12 @@ I buchi conosciuti — le cose che un controllo dichiara di non poter guardare �
 
 | | |
 |---|---|
-| Buchi dichiarati | **31** |
-| Verificatori che non dichiarano i controlli | **14** |
+| Buchi dichiarati | **30** |
+| Verificatori che non dichiarano i controlli | **13** |
 | Documenti senza un controllo dei numeri | **17** |
 | Dichiarazioni senza riscontro nel codice | **0** |
+
+**Un nome con il prefisso giusto non è una faccenda di gusto.** `verifica_livelli.py` genera i centocinquanta livelli: scrive `lv.json`, `corpo.md` e il catalogo, non ha guardia `if __name__`, importa con `exec` un altro file e scrive su un percorso assoluto di un'altra macchina. Ma `albero()` prende per verificatori i file che cominciano per `verifica`, quindi il generatore era **nel conto dei controlli**, e il conto — che serve a dire «so dove non guardo» — prometteva di guardare qualcosa che non è un controllo. Si chiama ora `genera_livelli.py`. Il nome è stato corretto invece che dichiarato: una voce nel registro che descrive un buco già chiuso è peggio di una voce assente, perché fa dire che si guarda qualcosa che non c'è.
 
 **Ogni voce ha un motivo, e il motivo non è una scusa**: vuoto no, e «non c'è tempo» è fra le frasi che B1 rifiuta, perché dice *quando* manca e non *perché* il buco c'è. Ogni voce dice a chi appartiene e quale controllo la tiene d'occhio, e **B3 non si accontenta che la voce dichiari il proprietario: va a leggere il suo codice** e verifica che l'elenco sia davvero letto da lì. Un elenco dichiarato e non letto è un elenco che qualcuno scrive e nessuno guarda.
 
