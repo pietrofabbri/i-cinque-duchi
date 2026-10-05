@@ -152,7 +152,7 @@ python3 sorgenti/lingue/conta_questioni.py          # le questioni aperte, e il 
 python3 sorgenti/percorsi_confronto.py              # i percorsi del duca: distanze e giorni, nelle tre varianti
 python3 sorgenti/percorsi_mezzi.py                   # i mezzi di trasporto e che cosa cambia se cambiano
 python3 sorgenti/fonti_visive_cerca.py               # le fonti visive per ciò che non ha una veste grafica
-python3 sorgenti/verifica_tavolozza.py              # i 18 colori: fonte, tipo e copertura
+python3 sorgenti/verifica_tavolozza.py              # i 18 colori: fonte, tipo e copertura, e --difetti ne inietta sei
 python3 sorgenti/mezzi_fonti.py                       # i 21 mezzi: immagine proposta, vuoto motivato o segno
 python3 sorgenti/epigrafi_fonti.py                     # le 3 epigrafi: l'immagine e il testo che manca, con la fonte
 python3 sorgenti/verifica_fonti_visive.py              # i due file di sopra: venti controlli, M1-M7, E1-E4, I1-I6 e V1-V3
@@ -205,13 +205,13 @@ Fino al 5 ottobre 2026 nessuno guardava questi numeri. `python3 sorgenti/verific
 | Verificatori che dichiarano i loro controlli | **19** |
 | Verificatori senza dichiarazione | **13** |
 | Controlli dichiarati in tutto | **125** |
-| Controlli con la prova del difetto | **53** |
-| Controlli senza prova | **72** |
-| Prove eseguite da questo controllo | **5** |
+| Controlli con la prova del difetto | **59** |
+| Controlli senza prova | **66** |
+| Prove eseguite da questo controllo | **6** |
 
-**I tredici verificatori che non dichiarano i loro controlli** sono in `TACITI`, dentro `verifica_prove.py`, ciascuno con il motivo. Sono un buco dichiarato, non un buco nascosto: senza quella tabella sarebbero tredici script che il conto non guarda, ed e' la forma piu' comune di una sparizione silenziosa. **I 72 controlli senza prova** sono il debito vero: passano, ma nessuno li ha mai visti fallire. Il numero e' scritto qui perche' sia fermo: quando qualcuno aggiunge una prova, questa riga va aggiornata nello stesso commit, e X6 e' rosso se non e' successo.
+**I tredici verificatori che non dichiarano i loro controlli** sono in `TACITI`, dentro `verifica_prove.py`, ciascuno con il motivo. Sono un buco dichiarato, non un buco nascosto: senza quella tabella sarebbero tredici script che il conto non guarda, ed e' la forma piu' comune di una sparizione silenziosa. **I 66 controlli senza prova** sono il debito vero: passano, ma nessuno li ha mai visti fallire. Il numero e' scritto qui perche' sia fermo: quando qualcuno aggiunge una prova, questa riga va aggiornata nello stesso commit, e X6 e' rosso se non e' successo. **Il primo debito chiuso e' `verifica_tavolozza.py`**, che ha sei controlli e sei difetti iniettati: il metodo e' `controlla(doc)` prende il file dalla chiamata invece di leggerlo da solo, e cosi' la prova puo' fargli vedere una copia rotta. Un controllo che legge il file dentro `main()` non ha una prova: non c'e' modo di dargliela.
 
-**X5 esegue le cinque prove davvero**, in un processo nuovo, e non si accontenta che l'opzione `--difetti` esista: un'opzione che c'e' e non vede niente e' verde lo stesso. E' X5 che ha trovato, scrivendosi, che `verifica_fonti_visive.py` era gia' rosso da solo.
+**X5 esegue le sei prove davvero**, in un processo nuovo, e non si accontenta che l'opzione `--difetti` esista: un'opzione che c'e' e non vede niente e' verde lo stesso. E' X5 che ha trovato, scrivendosi, che `verifica_fonti_visive.py` era gia' rosso da solo.
 
 ## Stato del progetto
 **Fatto**
