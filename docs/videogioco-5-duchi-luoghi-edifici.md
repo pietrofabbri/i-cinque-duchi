@@ -1,7 +1,7 @@
 ---
 titolo: I luoghi e le sagome — che cosa serve per disegnarli davvero
-versione: 0.4
-data: 2026-10-04
+versione: 0.5
+data: 2026-10-05
 autore: Buffy (per pietrofabbri)
 documenti collegati:
   - docs/videogioco-5-duchi-mappe.md
@@ -254,7 +254,139 @@ l'esito distingue **`non_trovato`** (risposta avuta, niente) da **`richiesta_fal
 `da_rifare`. È in `AGENTS.md`, e va tenuto in tutti gli script che parlano con
 qualcosa.
 
-## 6. Cosa c'è da fare
+## 6. Gli interni: che cosa si può davvero attraversare
+
+**La domanda.** L'anno 1 si gioca dentro Ferrara, in trenta edifici reali. Di
+quegli edifici il progetto ha la **sagoma** — il poligono da OpenStreetMap —
+e non ha l'interno: il giocatore vede una facciata e non ci entra. Che cosa si
+può scrivere, senza inventare?
+
+**La risposta breve: le stanze che la fonte nomina una per una.** Non un
+catalogo di interni e non una pianta: quello che Wikimedia Commons dichiara,
+con il nome che dà alla fonte, e con quante fotografie libere ci sono. Il file
+è `dati/interni_edifici.json` (38 kB), il generatore è
+`sorgenti/interni_edifici.py`, i controlli sono `sorgenti/verifica_interni.py`.
+
+| | |
+|---|---|
+| edifici dell'anno 1 | 30 |
+| con una categoria di Commons | 23 |
+| **con almeno una stanza** | **11** |
+| stanze trovate | 41 |
+| stanze con almeno una fotografia libera | 41 |
+| fotografie, tutte con licenza libera dichiarata | 830 |
+| edifici dichiarati senza categoria, con il perché | 7 |
+| categorie di Commons condivise da più tappe | 1 |
+
+### 6.1 Gli interni che si possono attraversare
+
+| Tappa | Edificio | Stanze | Foto libere | Le stanze, con il nome che dà la fonte |
+|---|---|---|---|---|
+| `1-4` | Museo della Cattedrale (ex San Romano) | 1 | 75 | Cloister |
+| `1-7` | Palazzo Municipale e Volto del Cavallo | 2 | 61 | Camerino delle Duchesse, Sala Arazzi |
+| `1-8` | Castello Estense | 18 | 342 | Alfonso I d'Este's Camerino d'Alabastro, Anticamera del Governo, Camerino dei baccanali, Chapel, Dungeon, Kitchens, Sala Gotica 1, Sala degli stemmi, Sala dei Comuni, Sala dei Paesaggi, Sala del Governo, Sala dell'Aurora, Sala della Devoluzione, Sala delle Geografie o Marchesana, Sala di Ettore e Andromaca, Saletta dei Giochi, Saletta dei Veleni, Salone dei Giochi |
+| `1-10` | Palazzo Paradiso (Biblioteca Ariostea) | 5 | 53 | Anatomical theater, Sala Agnelli, Sala Riminaldi, Sala dei Falconi, Sala di Ercole |
+| `1-12` | Casa Romei | 2 | 90 | Courtyard, Secondary Courtyard |
+| `1-13` | Monastero del Corpus Domini | 1 | 11 | Sala del Coro |
+| `1-14` | Monastero di Sant'Antonio in Polesine | 1 | 3 | Cloister |
+| `1-15` | Palazzo Schifanoia | 8 | 149 | Hall of the battles, Hall of the busts, Hall of the white eagle, Room of Leonello, Room of the double lancet windows, Sala conferenze, Sala delle Virtù, Salone dei Mesi |
+| `1-16` | Palazzo Bonacossi | 1 | 4 | Courtyard |
+| `1-17` | Palazzina Marfisa d'Este | 1 | 36 | Loggia degli Aranci |
+| `1-25` | Casa di Ludovico Ariosto | 1 | 6 | Courtyard |
+
+### 6.2 Perché la fonte è Commons e non un'altra
+
+Un blog di viaggi dice «il castello ha delle sale», e non si può codificare.
+Commons ha `Category:Castello Estense (Ferrara) - Chapel`, e si può. È la stessa
+fonte che il progetto usa già per le sagome, per i ritratti e per le immagini
+degli oggetti, ed è l'unica che **distingue una stanza dall'altra con un nome
+proprio** dentro una categoria. E le categorie sono fatte una per ambiente: la
+fonte non scrive «il castello ha delle sale» in un paragrafo, apre una
+sottocategoria per ciascuna.
+
+Le fotografie sono tutte con licenza libera dichiarata: CC BY-SA 4.0 (473), CC BY-SA 3.0 (302), CC BY 3.0 (15), Public domain (13), CC BY-SA 2.5 (9), CC BY 2.5 it (7), CC BY-SA 2.0 (7), CC0 (3), CC BY 2.5 (1). La licenza si
+**legge dai metadati di ciascun file** e non si deduce dalla presenza della
+fotografia — una foto senza licenza non è un bene libero, e il progetto lo sa
+già per gli oggetti, dove dodici candidati sono stati respinti per metadati
+mancanti.
+
+### 6.3 Il metodo, e le quattro regole che tengono
+
+Il nome che il gioco scrive e il nome che Commons scrive sono due nomi
+diversi, e il primo metodo — il titolo esatto — lasciava 7 edifici su
+30 senza categoria. Le regole che tengono, in ordine:
+
+1. **prima per titolo esatto**, con 5 qualificatori provati in
+   ordine (NOME (Ferrara) - Interior, NOME - Interior, NOME (Ferrara), NOME, NOME, Ferrara); poi **per ricerca**, sui nomi che il registro
+   ricava dal nome dell'edificio: la parte fra parentesi, la parte prima dei due
+   punti, la parte prima di una congiunzione. «Palazzo Turchi di Bagno e Orto
+   Botanico» è un palazzo e un orto in una voce sola, e nessuna delle due metà è
+   il nome di una categoria. Vince il primo candidato che risponde **e parla
+   dell'edificio**: dev'essere la categoria dell'edificio, non una collezione
+   di opere che lo riguardano;
+2. **la città.** Il gioco gioca a Ferrara, e una categoria è accettata solo se
+   dichiara Ferrara o nessuna città. Senza questa regola il Museo del
+   Risorgimento e della Resistenza di Ferrara era diventato quello di Vicenza,
+   e poi il Vittoriano di Roma: stesso nome, tre città, e il file sceglieva il
+   più conosciuto. Anche le sottocategorie si guardano: il Teatro Comunale di
+   Ferrara su Commons ha il nome di quello di Treviso, e la città che lo
+   dichiara è in una sottocategoria;
+3. **la stanza è una stanza se il nome lo dice**: prima escludendo, e ogni
+   esclusione porta il motivo (23 motivi), poi cercando una parola di
+   ambiente fra le 63 parole di `parole_di_ambiente`, in italiano e in
+   inglese. Le esclusioni si guardano sul nome **intero** della categoria e le
+   inclusioni sul nome **ripulito** dell'edificio, perché il nome dell'edificio
+   ci mette dentro parole di ambiente — «Museo» nel nome del Museo Casa Romei —
+   che non sono quelle di nessuna stanza;
+4. **la licenza si confronta dopo aver tolto spazi, trattini e punti.** Il nome
+   breve della fonte è `CC BY-SA 4.0` e la chiave del progetto era
+   `cc-by-sa-4.0`: un trattino di differenza e il confronto non agganciava
+   niente. Le prime due esecuzioni contavano **3 immagini libere su 663**,
+   tutte e tre CC0, e avevano respinto 385 fotografie CC BY-SA 4.0. Il numero
+   era giusto e il verdetto falso.
+
+### 6.4 Che cosa non c'è, e perché non c'è
+
+| | |
+|---|---|
+| 12 edifici con categoria ma senza stanze | la fonte non divide gli interni uno per uno: le sottocategorie ci sono e sono tutte scartate con il motivo, che si legge in `non_stanze` |
+| 7 edifici senza categoria | nessun nome provato e nessun candidato parlano dell'edificio; il perché è per ciascuno, in `vuoto` |
+| le **dimensioni** delle stanze | nessuna fonte libera del progetto le dà per iscritto: restano vuote finché non si rileva |
+| il **campo `stanza`** di `luoghi_gioco.json` | è un luogo narrativo del Furioso («il bosco dove Orlando perde il senno»), non un ambiente visitabile: le due cose non si sommano e non si confondono |
+
+### 6.5 I controlli, e che cosa hanno visto
+
+Sei controlli in `sorgenti/verifica_interni.py`, tutti a exit 0:
+
+| | |
+|---|---|
+| **I1** | ogni tappa dell'anno 1 c'è negli interni, una volta sola, col suo argomento |
+| **I2** | i numeri del riepilogo sono contati sul file, non dichiarati |
+| **I3** | le stanze sono stanze per la regola scritta, e ogni esclusione dice perché |
+| **I4** | le licenze sono fra quelle accettate e i numeri delle immagini tornano |
+| **I5** | ogni assenza dice perché, e nessuna è un edificio mai cercato |
+| **I6** | le categorie sono di Ferrara, e se stanno su più tappe il file lo dichiara |
+
+`--difetti` inietta **10 difetti** e li vede tutti. Sono voluti anche
+quelli che non riguardano il numero: una categoria di un'altra città spacciata
+per edificio, una categoria di opere spacciata per stanza, una categoria
+condivisa fra due tappe e non dichiarata. Un difetto che cambia una cifra si
+vede anche senza il difetto che cambia una parola.
+
+**Tre difetti veri, nessuno visibile a occhio.** Il più grave: il file
+scriveva, sotto il nome del museo che il gioco mostra, le stanze di un museo
+omonimo di un'altra città. Il numero di stanze era giusto e l'edificio falso.
+
+### 6.6 Cosa c'è da fare con questi interni
+
+| | |
+|---|---|
+| **le 41 stanze come ambienti di gioco** | il campo che manca è `ambiente`: percorso, uscita, che cosa si può fare dentro |
+| i 12 edifici con categoria ma senza stanze | il chiostro di Sant'Antonio in Polesine c'è ma era stato scartato per una regola sul nome; va guardato caso per caso, non allargato alla cieca |
+| le **piante** | nessuna fonte libera le dà: il WFS del Comune dà sagomi, non muri interni |
+| **le fotografie scaricate** | qui si interroga e si decide, come in `cerca_ritratti.py`: il download è un'altra fase |
+
+## 7. Cosa c'è da fare
 
 | | |
 |---|---|
@@ -266,7 +398,60 @@ qualcosa.
 | ~~scaricare `rilievo_penisola.json` e `rilievo_europa.json`~~ **fatto il 04/10/2026** | **212 + 186 = 398 città** misurate e verificate: `sorgenti/gis/verifica_rilievo.py`, sei controlli |
 | le **dimensioni** delle piazze | nessuna fonte le dà per iscritto: o si rilevano dal WFS o restano vuote |
 
-## 7. Il registro delle modifiche
+## 8. Il registro delle modifiche
+
+### v0.5 — 05/10/2026
+
+**Gli interni degli edifici dell'anno 1, presi dalla fonte, e quattro difetti
+che il conto dei numeri non avrebbe mai visti.**
+
+L'anno 1 si gioca dentro trenta edifici reali di Ferrara e il progetto ne
+aveva solo le sagome: il giocatore vedeva una facciata e non entrava. La
+raccolta guarda le trenta tappe su Wikimedia Commons, che è l'unica fonte che
+*distingue una stanza dall'altra con un nome proprio* dentro una categoria, e
+scrive quello che la fonte dichiara: 41 stanze in 11 edifici, con
+830 fotografie e la licenza di ciascuna letta dai metadati. Quello che la
+fonte non dichiara resta dichiarato vuoto, con il perché: 7 edifici
+senza categoria e 12 con categoria ma senza stanze, e ogni esclusione
+porta il motivo.
+
+Quattro difetti, tutti della stessa forma — un numero giusto e una frase
+sbagliata:
+
+- **385 fotografie CC BY-SA 4.0 respinte per un trattino.** Il confronto fra la
+  chiave `cc-by-sa-4.0` e il nome breve della fonte `CC BY-SA 4.0` non
+  agganciava niente: tre sole immagini libere su 663, tutte e tre CC0. Ora il
+  confronto passa da una normalizzazione e tutte e 663 sono libere.
+- **un museo di un'altra città sotto il nome di quello che il gioco mostra.**
+  Il Museo del Risorgimento e della Resistenza esiste a Vicenza e a Roma; il
+  file aveva preso il Vittoriano, che è il più conosciuto dei tre. Ora la città
+  si guarda nel titolo e nelle sottocategorie, e il gioco gioca a Ferrara.
+- **un criterio di una parola sola.** «Cattedrale di San Giorgio» finiva sul
+  Museo della Cattedrale: una parola su due. Ora ne servono due quando il nome
+  del gioco ne ha due.
+- **un metodo sbagliato, dichiarato giusto.** Le stanze si cercavano dentro la
+  categoria dell'edificio: su Commons stanno in una categoria separata che si
+  chiama `... - Interior`, e la prima esecuzione aveva reso **una stanza su
+  trenta edifici**.
+
+E due numeri che invecchiavano da soli, del genere di difetto che questa
+sessione ha già trovato tre volte: il blocco `metodo` scriveva «tre
+qualificatori» quando erano 5, e il contatore delle parole di
+ambiente diceva «66» per un pattern che ne contiene 63. Entrambi sono ora
+generati dalla regola che descrivono.
+
+Le regole nuove hanno un costo, e va detto: hanno fatto perdere qualche voce.
+`Museo Boldini` era una stanza del Palazzo Massari, ed è una stanza che non
+esiste — è il museo che sta dentro il palazzo, detto due volte. Lo stesso per
+`Museo Casa Romei` e per le categorie di quadinti e mobili. Sono state scartate
+con il motivo, e il file le mostra in `non_stanze`: una lista scartata senza
+dire perché sembra una lista arbitraria.
+
+Le tre tappe della Certosa sono parti di un complesso solo e finiscono sulla
+categoria unica del complesso. È giusto, ma il file lo dichiara in
+`categorie_condivise` e il controllo I6 lo pretenderebbe anche: una cosa
+ripetuta senza traccia è un numero che si crede due volte.
+
 
 ### v0.4 — 04/10/2026
 

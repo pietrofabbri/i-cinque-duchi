@@ -1,6 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — I filoni dell'Orlando furioso: i luoghi del quinto anno e le citazioni delle trenta tappe
-versione: 0.6
+versione: 0.7
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)
 revisioni: v0.1 (testo e trenta citazioni); v0.2 (controllo di coerenza del 02/10/2026: tre citazioni erano nel filone sbagliato, due tappe confinanti citavano ottave adiacenti, e le cifre del riscontro sono state ricalcolate); v0.3 (seconda tornata dello stesso controllo: un legame `I` posto su un luogo che esiste, l'elenco degli inesistenti dichiarato nei dati, la tabella delle verifiche riordinata e due rimandi corretti); v0.4 (le sedici decisioni di Pietro del 02/10/2026 applicate: regola dei due strati ratificata, `F8` e `F9` fatte sul testo, il tipo `N` di non luogo, `F11` come tappa facoltativa, il giocatore dentro il *Furioso*, l'Africa riscritta, l'edizione spiegata in modo semplice); v0.5 (la Q6.1 chiusa: `F11` dichiarato filone **non assegnato**, cioè stanza aperta da un'altra, la decisione scritta nei dati e la verifica F16 che la tiene ferma); v0.6 (03/10/2026: la Q6.2 chiusa in §4.12, nessuna stanza ha un disegno proprio, quattro regole e il tempo di Pietro a zero)
@@ -9,7 +9,7 @@ dati: dati/furioso/citazioni.json (v4, trenta record: tappa, filone, canto, otta
 strumenti: sorgenti/furioso/scarica_wikisource.py, sorgenti/furioso/estrai_ottave.py, sorgenti/furioso/costruisci_citazioni.py, sorgenti/furioso/verifica_citazioni.py, sorgenti/furioso/provino_html.py, sorgenti/verifica_coerenza.py
 controllo: python3 sorgenti/furioso/verifica_citazioni.py (30 citazioni obbligatorie, 82 versi, 1 citazione facoltativa, 12 filoni dichiarati di cui 11 giocabili, 0 problemi) e --gutenberg (23 citazioni a riscontro, 3 differenze dichiarate); python3 sorgenti/verifica_coerenza.py (versioni, file citati, cifre dichiarate, tappe e personaggi)
 prototipo: provino_furioso.html (una pagina, offline, generata)
-documenti collegati: videogioco-5-duchi-luoghi.md (v0.6, §4.5 con la regola dei due strati e il tipo `N` di non luogo), videogioco-5-duchi-anno5-mondo.md (v0.7, le trenta tappe 5-1…5-30 e la sezione sul giocatore dentro il *Furioso*), videogioco-5-duchi-luoghi-edifici.md (v0.4), AGENTS.md, FONTI-E-LICENZE.md
+documenti collegati: videogioco-5-duchi-luoghi.md (v0.6, §4.5 con la regola dei due strati e il tipo `N` di non luogo), videogioco-5-duchi-anno5-mondo.md (v0.7, le trenta tappe 5-1…5-30 e la sezione sul giocatore dentro il *Furioso*), videogioco-5-duchi-luoghi-edifici.md (v0.5), AGENTS.md, FONTI-E-LICENZE.md
 ---
 # I filoni dell'*Orlando furioso*
 
@@ -572,6 +572,7 @@ La Q6.1 e la Q6.2 sono chiuse il 03/10/2026 e non sono più qui: le cose fatte n
 
 ## 10. Registro modifiche
 
+- **v0.7 (05/10/2026)**: **Il rimando è l'unica cosa che cambia.** Un documento collegato è salito di versione e questo rimando è rimasto indietro: la riga è sbagliata e non sembra, perché un rimando che cita una versione superiore a quella vera sembra un rimando fermo. Qui dentro non cambia nient'altro — e si scrive lo stesso, perché una riga che cambia è una riga che cambia.
 - **v0.6 (03/10/2026)**: **la Q6.2 è chiusa, ed è chiusa nella forma più economica possibile: nessuna stanza ha un disegno proprio.** La domanda di Pietro — «come si disegna sulla carta del gioco una strada che non ha nome, una grotta, un campo, un non luogo e una Luna, a minimo impatto sul mio tempo?» — si è rivelata, riscritta, una domanda di **etichette** e non di disegno: un ambiente non è un'immagine, è una promessa con dentro quattro campi, e l'unico che mancava era la coordinata, che è anche l'unico dei quattro che non riguarda il disegno (§4.12).
   - **quattro regole**: la stanza prende il pin reale e verificato del personaggio; un nome doppio non si riduce a un punto ma si tira fuori come **tratto** fra due punti veri (otto nomi del quarto anno); un nome in cui una parte non è un luogo non ha strada e la parte non geografica resta a parole (cinque casi); e se non c'è un luogo **non si disegna niente e il gioco lo dice**;
   - **il tempo di Pietro è zero**: nessuna illustrazione, nessuna mappa nuova. L'unica cosa che resta da fare è leggere la riga `frase` di ciascuna delle 51 ipotesi, che è già scritta, e adattarla al tono del livello;

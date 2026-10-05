@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — i percorsi del duca: mezzi di trasporto, copertura della mappa e ritorni
-versione: 0.5
+versione: 0.6
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)
 fonte: calcolo sulle coordinate di dati/luoghi_gioco.json
-documenti collegati: videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-audit.md (v0.23), AGENTS.md
+documenti collegati: videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-audit.md (v0.24), AGENTS.md
 ---
 
 # I percorsi del duca
@@ -318,6 +318,7 @@ Se fra due tappe ci sono dodici giorni di strada, il gioco può (a) mostrarne un
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 05/10/2026 | 0.6 | **Il rimando è l'unica cosa che cambia.** Un documento collegato è salito di versione e questo rimando è rimasto indietro: la riga è sbagliata e non sembra, perché un rimando che cita una versione superiore a quella vera sembra un rimando fermo. Qui dentro non cambia nient'altro — e si scrive lo stesso, perché una riga che cambia è una riga che cambia. |
 | 03/10/2026 | 0.5 | **Il mezzo del quinto anno è dichiarato, su due strati.** Ventidue mezzi possibili e cinque del testo erano la ragione di una colonna `non_dichiarato` che tornava a ogni revisione. La risposta non è scegliere: è dichiarare due regole senza autore. Il mezzo reale lo sceglie l'archivio, che è il presente (aereo 30); quello dentro la stanza lo sceglie **il canto**, perché ogni mezzo del *Furioso* è attestato in un canto e in un verso che il capitolo già porta, e la tabella canto → mezzo non è una scelta ma la traduzione degli indici. Dove il canto non dà un mezzo si va a piedi, e anche questo è dichiarato. Il carro di delfini (c. XI) e il drago (c. XVIII) **non hanno tappa** nell'anno 5, e si dice. Il conto della §1.2 copriva 27 tappe su trenta perché tre venivano scartate da un `continue` che non diceva niente: adesso il conto le nomina. |
 | 03/10/2026 | 0.4 | **I mezzi diventano ventidue e il capitolo acquista tre sezioni.** Otto mezzi storici nuovi — treno e aereo passano anche all'anno 4, e arrivano crociera, **moto**, **sci**, **elicottero** e **monopattino**; e cinque mezzi **del testo** per il quinto anno, con il canto e l'ottava accanto: l'ippogrifo (c. IV, 18), il drago (c. XVIII, 12), la sirena (c. VI, 40), il carro di delfini (c. XI, 44) e il carro di serpenti (c. XII, 2). Ogni mezzo porta due campi nuovi, `tipo` (`storico` o `gioco`) e `dal` (l'anno di attestazione). **Il `dal` è la ragione della modifica**: senza di esso un elicottero in una tappa del 1300 passerebbe inosservato. Il controllo degli anacronismi è diventato **per tappa** (§1.2), perché l'anno 4 non è un'epoca, e il primo calcolo ha trovato un difetto vero nella propria impostazione: cercava un mezzo inesistente alla data della tappa e segnalava l'anno 5 di Alfonso II, dove non c'era né treno né aereo — ma il mezzo di cui si parla è quello **con cui il materiale arriva all'archivio**, che è del presente. Il controllo giusto confronta il mezzo di allora con quello di oggi e cerca un difetto solo: che quello di oggi non sia più lento. La ripartizione che ne esce è la tabella più informativa del capitolo (anno 4: nave 23, aereo 5, treno 1, moto 1) ed è **calcolata dalle date, non scritta a mano**. |
 | 03/10/2026 | 0.3 | Solo rimandi, come alla v0.2: `luoghi.md` sale a v0.4 (la verifica F16 dei filoni) e `audit.md` a v0.6 (I19 chiusa, il conto a 28 chiuse e 86 aperte). **Nessuna cifra di questo documento cambia**: i percorsi sono calcolati sulle coordinate di `dati/luoghi_gioco.json`, che non sono state toccate. |

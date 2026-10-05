@@ -1,9 +1,9 @@
 ---
 titolo: "Gli itinerari: chi incontri, dove, e con quale mezzo"
-versione: 0.3
+versione: 0.4
 data: 2026-10-03
 autore: "Progetto I cinque duchi"
-documenti collegati: videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-anno1-mappa.md (v0.9), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-luoghi.md (v0.6), videogioco-5-duchi-itinerari.md (questo), AGENTS.md
+documenti collegati: videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-anno1-mappa.md (v0.9), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-itinerari.md (questo), AGENTS.md
 ---
 
 # Gli itinerari: chi incontri, dove, e con quale mezzo
@@ -425,6 +425,7 @@ non c'è la riga viene **saltata e detta**.
 
 ## 8. Registro delle modifiche
 
+- **v0.4 (05/10/2026)**: **Il rimando è l'unica cosa che cambia.** Un documento collegato è salito di versione e questo rimando è rimasto indietro: la riga è sbagliata e non sembra, perché un rimando che cita una versione superiore a quella vera sembra un rimando fermo. Qui dentro non cambia nient'altro — e si scrive lo stesso, perché una riga che cambia è una riga che cambia.
 - **v0.3 (03/10/2026)**: **la Q1 del §7 è chiusa e la Q2 sale all'ultimo gradino.**
   Il mezzo del quinto anno è dichiarato su **due strati** — il reale (`aereo` 30 su 30)
   e quello di stanza, che è il mezzo attestato dal canto (`a piedi` 21, carro di
