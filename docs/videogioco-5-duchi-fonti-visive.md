@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — le fonti visive: che cosa il gioco non ha ancora una veste, e dove si prende
-versione: 0.14
+versione: 0.15
 data: 2026-10-05
 autore: Pietro Fabbri (con Claude)
 fonte: ricerca su Wikimedia Commons del 02/10/2026; tavolozza da Wikidata e Wikipedia del 03/10/2026; sagome e mura da OpenStreetMap via API standard OSM del 04/10/2026; cime e quote da Natural Earth `geography_regions_elevation_points` del 03/10/2026; verifica dei fondi già in dati/mappe/
 documenti collegati: videogioco-5-duchi-ritratti.md (v0.5), videogioco-5-duchi-lingue-immagini.md (v0.2), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-mappe.md (v1.3), videogioco-5-duchi-luoghi-edifici.md (v0.4), videogioco-5-duchi-audit.md (v0.23), videogioco-5-duchi-tappa-1-01.md (v0.4), AGENTS.md
-dati: dati/fonti_visive/fonti_visive.json (v1, 32 voci, 130 candidati), dati/fonti_visive/attestazione.json (v1, vuoto), dati/fonti_visive/tavolozza.json (v1, 18 voci), dati/edifici_footprint.json (v1, 7322 edifici su 203 aree), dati/ferrara_fondo.json (v1, 14 tratti di mura), dati/ambienti_livelli.json (v2, 150 ambienti), dati/fonti_visive/colori_cartografici.json (v1, 19 voci), dati/altitudine_manifest.json (v1, tre file di cime: 15, 2 e 26 punti)
+dati: dati/fonti_visive/fonti_visive.json (v1, 32 voci, 130 candidati), dati/fonti_visive/attestazione.json (v1, vuoto), dati/fonti_visive/incidenti.json (v1, 3 voci, 6 candidati), dati/fonti_visive/tavolozza.json (v1, 18 voci), dati/edifici_footprint.json (v1, 7322 edifici su 203 aree), dati/ferrara_fondo.json (v1, 14 tratti di mura), dati/ambienti_livelli.json (v2, 150 ambienti), dati/fonti_visive/colori_cartografici.json (v1, 19 voci), dati/altitudine_manifest.json (v1, tre file di cime: 15, 2 e 26 punti)
 ---
 
 # Le fonti visive
@@ -37,6 +37,7 @@ Questo documento fa quattro cose: **fa l'inventario** di che cosa ha e che cosa 
 | **Cime e quote** | **fatto il 03/10/2026**, 15 + 2 + 26 punti | **Natural Earth**, pubblico dominio | `dati/mappe/mondo_110_altitudine.json` e gli altri due |
 | **Mezzi di trasporto** | **fatto il 05/10/2026**: 21 mezzi, 6 con immagine proposta, 10 storici con il vuoto dichiarato e 5 fantastici con il segno | Commons, con scelta sui metadati | `dati/fonti_visive/mezzi.json` |
 | **Epigrafi e iscrizioni** | **fatto il 05/10/2026 come dato**: 3 immagini scelte e **zero** testi, con la fonte dichiarata e il divieto di entrare senza testo | Commons per l'immagine, **EDH** per il testo che non è arrivato | `dati/fonti_visive/epigrafi.json` |
+| **Incidenti** | **fatto il 05/10/2026 come dato**: 3 voci, una immagine, una col testo al posto e **una che il gioco non usa**, dichiarata con la scansione che lo dimostra | Commons per l'immagine, per il resto i documenti degli anni | `dati/fonti_visive/incidenti.json` |
 
 **Cinque buchi il 2 ottobre, due il 3, e i due che restavano sono chiusi come dati il 5.** Erano cinque, ed erano cinque problemi diversi. Quattro sono chiusi: la **tavolozza**, le **sagome degli edifici**, il **fondo di Ferrara** e gli **ambienti dei centocinquanta livelli**. Restano due, ed è giusto che restino: i **mezzi di trasporto** servono al percorso del duca e sono un problema di *immagini*, non di geometrie; le **epigrafi** servono al latino e sono un problema di *testo*, non di grafica. Nessuna delle due era un buco che si potesse chiudere con uno script, e sono dichiarate in §7.
 
@@ -81,9 +82,9 @@ A quei quattro file il 03/10/2026 se ne sono aggiunti **due che non vengono dall
 | **mezzo** | 16 | 46 | nessuna |
 | **edificio** | 6 | 36 | nessuna |
 | **epigrafe** | 3 | 18 | nessuna |
-| **incidente** | 3 | 6 | **due** (`incendio`, `carestia`) |
+| **incidente** | 3 | 6 | **una** (`carestia`), e non è un vuoto: è una voce che nessuna tappa nomina |
 | **colore** | 4 | 24 | nessuna |
-| **Totale** | **32** | **130** | **due** |
+| **Totale** | **32** | **130** | **una** |
 
 ### 3.1 I mezzi di trasporto: il file è costruito il 05/10/2026, e i vuoti sono dieci su sedici
 
@@ -448,11 +449,38 @@ La ricerca su Commons ha sbagliato in modi diversi, e sono tre, e vanno dichiara
 
 ## 6. I due vuoti dichiarati, e come stanno adesso
 
-**L'incendio e la carestia non hanno immagine.** Sono le due voci su ventisette che la ricerca non ha riempito, e il vuoto è reale: un incendio dell'archivio di Ferrara del 1534 e una carestia del Cinquecento **non hanno immagini d'epoca libere che le illustrino**, perché sono eventi di cui non si è disegnato niente. Le incisioni che esistono sono o di eccesso o di epoca sbagliata.
+**Il vuoto era reale, e non era il buco che sembrava.** Il capitolo scriveva che l'incendio dell'archivio e la carestia «non hanno immagini d'epoca libere che le illustrino» e che il vuoto è reale. Il vuoto è reale, e la ricerca del 5 ottobre ne dà la misura: **0** risultati per l'incendio dell'archivio di Ferrara, **0** per l'incendio di una biblioteca antica in italiano, **14** per `burning of books fire engraving` — e i due che sono incisioni del Cinquecento mostrano un episodio leggendario, i libri gettati nel fuoco, non un archivio ducale. Per la carestia: **0** in italiano e **3** in inglese, che sono un mito di Giunone, una pianta di assedio del 1573 e un manoscritto di liuto. Ma la domanda dentro la domanda era un'altra, ed era quella giusta: **che cosa mostra il gioco quando un incendio è in scena?**
 
-La regola è quella degli altri buchi: **si dichiara il vuoto**. Una tappa sull'incendio mostra la scheda dell'incendio con scritto perché non c'è immagine, e il testo della fonte — perché **la fonte testuale c'è ed è più affidabile di un'immagine che non c'è**.
+La risposta era già scritta nei documenti degli anni, e non è un'immagine. Le tre tappe che nominano un incendio sono la **4-3**, la **4-10** e la **4-13**, e nessuna delle tre ha una fiamma:
 
-Ma c'è una seconda possibilità, e va decisa: il progetto ha già deciso che **l'Africa del *Furioso*** entra riscritta sulla parola del testo (`furioso.md` §6), cioè **il testo al posto dell'immagine**. Lo stesso si può fare qui: l'incendio si rappresenta con **una pagina del registro che brucia**, cioè con la fonte testuale. È la soluzione più onesta e la più economica, e per la carestia
+| Tappa | Che cosa dice dell'incendio | Che cosa mostra, cioè il suo emblema |
+|---|---|---|
+| **4-3** Qin Shi Huang | l'incendio dei libri del 213 a.C. è la **memoria**: «l'uomo che bruciò i libri» | un peso di bronzo con tre stampigliature uguali |
+| **4-10** Ercole II d'Este | l'incendio dell'archivio del gennaio 1534 è una **ricostruzione**, e la domanda è che cosa manca di un archivio | uno scaffale vuoto con un cartellino scritto a metà |
+| **4-13** Ipazia | l'incendio è la **memoria**, «un racconto di secoli dopo», e la verifica **V2** vieta di usarlo come fatto | un frammento di stele con tre righe di tre scritture diverse |
+
+Tre tappe, tre oggetti, nessuna fiamma: **il gioco non rappresenta l'incendio, rappresenta l'oggetto che l'incendio ha lasciato.** È la forma che `mezzi.json` chiama `segno` e che il progetto ha già deciso per l'*Africa* del *Furioso* — il testo al posto dell'immagine. Perciò la voce `incendio` non è un vuoto dichiarato: è una voce con la forma **`testo`**, e la scheda porta il testo della fonte mentre la tappa porta il suo emblema, che il progetto disegna.
+
+**La carestia invece è un buco di una forma diversa, ed è il difetto vero di questa chiusura.** Nessuna delle centocinquanta tappe la nomina: la scansione dei blocchi di persona dei cinque documenti degli anni non trova la parola in nessuno. La voce era stata cercata il 2 ottobre per completezza della categoria, e nessuno se ne accorse perché il numero che si guardava era un altro — è **M1 nella categoria sbagliata**, la stessa malattia dei dieci mezzi mai cercati. Il file la dichiara **`non_usata`**, e la prova sta accanto al numero: `persone_scansionate` e `tappe_che_nominano_l_evento` sono calcolati sui documenti, non ricordati.
+
+| | |
+|---|---|
+| Voci della categoria `incidente` | **3**: incendio, carestia, moria |
+| Candidati esaminati | **6**, tutti quelli della ricerca del 02/10, nessuno nuovo |
+| Con immagine scelta | **1**, la moria, con l'attribuzione calcolata |
+| Col testo al posto | **1**, l'incendio |
+| Voci che il gioco non usa | **1**, la carestia |
+| Persone scandite | **120**, i blocchi di persona dei cinque documenti degli anni |
+| Tappe che nominano | **6**: 4-3, 4-10 e 4-13 l'incendio; 3-22, 4-27 e 5-9 la moria |
+| Senza i confini di parola | **120**, e sono tutti: la parola «moria» sta dentro «memoria» |
+
+**L'ultima riga è il difetto che la scansione ha trovato, e la quarta volta che il progetto incontra la stessa lezione.** Cercata come sottostringa, la voce `moria` viene fuori in tutti i **120** blocchi invece dei **tre** che sono suoi, perché `memoria` è in ogni scheda. Il progetto lo aveva già scritto — «una parola che ha due sensi va cercata con due parole», §5 — e questa volta la parola ambigua era nel **codice che conta le tappe**, non in una ricerca su Commons. I due numeri stanno nella stessa riga e il file li dichiara entrambi: `senza_confini_di_parola` vale `null` dove la scansione sbagliata non trova di più, perché **un numero che non differisce non è una prova**.
+
+**La moria è l'unica delle tre che ha un'immagine, e l'ha perché il gioco la nomina.** È un'incisione di **Marcantonio Raimondi**, `Marcantonio - A plague scene, H,3.46.jpg`, **2500×2005** px, pubblico dominio, **senza data** nella pagina: la data si dichiara e non si indovina, come sull'aereo. È la più grande delle tre stampe della stessa serie (2500×2005, 2500×1942, 1600×1254) e sceglierne una è una scelta fra sorelle, dichiarata. Le altre due tappe che nominano la peste sono del 1854 e del 1858 e mostrano un diagramma e una mappa, non un'epidemia: **l'immagine serve alla scheda della voce, non alla scena**.
+
+**Che cosa era deciso e non scritto, cioè il difetto di forma di questa sezione.** `AGENTS.md` scriveva dal 5 ottobre: «un vuoto si dichiara, non si riempie: l'incendio e la carestia non hanno immagine d'epoca libera, e si rappresentano con la fonte testuale, come si è fatto per l'*Africa* del *Furioso*». Qui, invece, la stessa decisione era **annunciata come da decidere** — «c'è una seconda possibilità, e va decida» — e la frase si interrompeva a metà, dopo «e per la carestia». È la quinta volta che una cosa è stata scritta al passato in un documento e al futuro in un altro: la stessa forma del *la ricerca va rifatta* di due versioni fa, e l'unico difetto che la rende invisibile è che nessun controllo confronta una decisione con il documento che la chiede. Da oggi la decisione sta qui, che è il posto che la chiedeva, e `AGENTS.md` rimanda a qui.
+
+**Le misure sono del 5 ottobre e sono fatte con gli strumenti che avevano rete**, non con `fonti_visive_cerca.py`, che dal processo non ne ha: il file lo dichiara voce per voce, con l'interrogazione e il numero che ha risposto.
 
 ---
 
@@ -514,7 +542,7 @@ Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file d
 |---|---|
 | Categorie senza veste grafica | il 02/10 erano **cinque**: mezzo, sagome, mappa di Ferrara, epigrafi, tavolozza. Il 03/10 sono **due**: mezzo ed epigrafi. Il 05/10 sono **zero senza una risposta scritta**: mezzo ed epigrafi hanno un file ciascuno, con i vuoti dichiarati dentro |
 | Candidati cercati su Commons | **130**, in 32 voci |
-| Voci senza immagine | **due**: l'incendio e la carestia |
+| Voci senza immagine | **zero**: nessuna voce è senza una risposta scritta. Una è dichiarata **non usata** (la carestia, che nessuna tappa nomina), una ha **il testo al posto** (l'incendio), una ha l'immagine (la moria) |
 | Candidati scelti a vista | **zero**, e dichiarato |
 | Fondi geografici già pronti | **19 file**, 1,5 MB, Natural Earth, pubblico dominio |
 | Tavolozza | **fatto**: 18 voci, 10 da fonti automatiche, 3 dichiarate, 5 di stato |
@@ -528,12 +556,21 @@ Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file d
 | Disegni degli ambienti | **fatti il 05/10/2026**: **150 immagini schematiche su 150 tappe**, 2632 edifici disegnati, **16 tappe vuote dichiarate**, e D3 riscritto sul confronto fra **chiave dati e sha**: 107 chiavi dati, 107 sha distinti |
 | Mezzi di trasporto | **fatto il 05/10/2026**: 21 mezzi, **11 con immagine** dopo la ricerca del 05/10, **5** storici con il vuoto motivato, 5 fantastici con il segno |
 | Epigrafi | **fatto il 05/10/2026 come dato**: 3 immagini, **zero** testi, la fonte dichiarata e il divieto di entrare senza testo |
+| Incidenti | **chiusi il 05/10/2026 come dato**: 3 voci, **1** immagine, **1** col testo al posto e **1** non usata dal gioco, con la scansione dei 120 blocchi di persona che lo dimostra: **6 tappe** nominano un incidente, e nessuna delle tre che nominano un incendio ha una fiamma |
 | Lavoro più grande che resta | i **130 candidati** da guardare a vista, i **cinque mezzi** senza immagine (tutti cercati e respinti) e i **cinquantuno** ambienti senza coordinate |
 | Lavoro più grande che manca *fra i dati* | nessuno: i sei file ci sono e sono verificati |
 
 ---
 
 ## 9. Registro delle modifiche
+
+- **v0.15 (05/10/2026)**: **i due vuoti erano dichiarati da quattro giorni, e la dichiarazione era giusta sul numero e sbagliata sulla domanda.** «L'incendio e la carestia non hanno immagine d'epoca libera»: il vuoto è reale, e la ricerca del 5 lo conferma con la misura (**0** risultati per l'incendio dell'archivio, **0** per quello di una biblioteca antica, **14** per le incisioni di libri che bruciano — e mostrano un episodio leggendario, non un archivio; **0** e **3** per la carestia). Ma la domanda giusta non era *che immagine ha un incendio*: era **che cosa mostra il gioco quando un incendio è in scena**. La risposta era già scritta nei documenti degli anni.
+  - **le tre tappe che nominano un incendio non hanno una fiamma**: la 4-3 (Qin Shi Huang) ha per emblema un **peso di bronzo**, la 4-10 (Ercole II) uno **scaffale vuoto con un cartellino scritto a metà**, la 4-13 (Ipazia) un **frammento di stele**. Il gioco rappresenta **l'oggetto che l'incendio ha lasciato**, ed è la forma che il progetto chiama «il testo al posto dell'immagine». La voce `incendio` non è un vuoto: è la forma **`testo`**;
+  - **la carestia è un buco di una forma diversa, ed è il difetto vero**: nessuna delle centocinquanta tappe la nomina. Una voce cercata e non usata è **M1 nella categoria sbagliata** — il numero che si guardava era un altro. Ora è dichiarata **`non_usata`**, con `persone_scansionate` e `tappe_che_nominano_l_evento` calcolati sui cinque documenti degli anni;
+  - **`dati/fonti_visive/incidenti.json`**, costruito da `sorgenti/incidenti_fonti.py`: 3 voci, 6 candidati, **1** immagine (un'incisione di Marcantonio Raimondi, 2500×2005 px, pubblico dominio, **senza data** dichiarata, scelta fra tre stampe della stessa serie), **1** col testo al posto e **1** non usata. La rigenerazione dà un file identico;
+  - **sei controlli nuovi, I1–I6**, in `sorgenti/verifica_fonti_visive.py`: I1 una riga per ogni voce cercata, I2 una forma sola fra le tre e la sua ragione, I3 l'immagine fra i candidati con l'attribuzione calcolata, **I4 la dichiarazione «nessuna tappa la usa» deve essere vera** — la scansione è rifatta dal verificatore sul documento e il conto del file deve coincidere, I5 ogni tappa dichiarata esiste fra i centocinquanta livelli e **l'emblema del file è quello che il documento dell'anno dichiara per quella tappa**, I6 i numeri di §6 sono quelli del file. La prova ne inietta **quattordici** difetti e li vede **tutti e quattordici**;
+  - **quattro difetti della strada, dichiarati perché sono la regola nuova**: la scansione del verificatore chiamava una variabile locale `sezione`, che in Python è una funzione dello stesso modulo usata da M5 ed E4 — il nome assegnato in un punto della funzione è locale in tutta la funzione, e le verifiche precedenti avrebbero smesso di trovarla; il primo blocco di persona di ogni anno si mangiava mezzo documento, perché finiva alla successiva intestazione di persona e non alla successiva intestazione qualunque, e il conto che ne era uscito era di tre persone più delle vere; l'emblema della 3-22 era stato scritto a mano ed era sbagliato — l'emblema è **l'albero con dieci rami**, non quello che avevo indovinato — ed è la prova che la regola «un numero non si scrive a mano» vale anche per un oggetto; e il numero della scansione sbagliata era in letteratura **duecento** dove la scansione ne trova **120**: un numero in prosa che nessuno ricalcola è un numero che invecchia, e l'unica correzione è scrivere quello che la macchina ha contato;
+  - **la decisione era presa e non scritta, e la frase si interrompeva a metà.** `AGENTS.md` scriveva dal 5 «si rappresentano con la fonte testuale, come si è fatto per l'*Africa* del *Furioso*»; qui la stessa decisione era annunciata come **da decidere**, e la sezione finiva dopo «e per la carestia». È la quinta volta che una cosa è al passato in un documento e al futuro in un altro, e l'unico difetto che la rende invisibile è che nessun controllo confronta una decisione con il documento che la chiede.
 
 - **v0.14 (05/10/2026)**: **la ricerca che il capitolo prescriveva era rimasta in sospeso, e nessuno se ne accorse perché era scritta al passato.** Il §5 fin dal 2 ottobre diceva *la ricerca va rifatta su quei termini*: un futuro, in un documento che ha un registro delle modifiche, e un futuro non eseguito è un buco che non ha nome. Rifatta il 5: **cinque buchi su nove si chiudono** e gli altri quattro hanno tutti una ragione che non è «non ho trovato».
   - **cinque mezzi che non erano mai stati cercati** hanno un'immagine: la **crociera** è la Queen Elizabeth del 1940, l'**aereo** la Constellation della TWA in volo, la **moto** una Honda Cub del 1953, gli **sci** uno slalom diagonale del 1955, il **monopattino** una Vespa 125 del 1953. Il file dei mezzi passa da **6 a 11** immagini su 21;

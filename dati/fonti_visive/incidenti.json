@@ -1,0 +1,181 @@
+{
+ "versione": 1,
+ "data": "2026-10-05",
+ "che_cosa": "i tre incidenti del gioco: l'immagine che si puo' avere, il testo che la sostituisce quando l'immagine non serve, e la voce che il gioco non usa",
+ "regole": [
+  "**Un incidente non si disegna: si mostra l'oggetto che resta.** Le tre tappe che nominano un incendio hanno per emblema un peso di bronzo, uno scaffale vuoto e un frammento di stele, e nessuna delle tre ha una fiamma. Il buco di due mesi fa non era un buco di immagini: era una domanda che non era stata fatta.",
+  "**Il vuoto non e' una forma ammessa.** Le forme sono tre: un'immagine, il testo al posto dell'immagine, e la voce che il gioco non usa. Un vuoto senza ragione non e' una forma chiusa: e' un buco travestito da risposta.",
+  "**Una voce che nessuna tappa usa si dichiara, e il conto e' un numero.** `persone_scansionate` e `tappe_che_nominano_l_evento` sono calcolati, e `senza_confini_di_parola` dichiara la scansione sbagliata: senza i confini di parola «moria» sta dentro «memoria» e viene fuori in tutti i 120 blocchi invece dei tre che sono suoi. Il numero e' calcolato, e dove la scansione sbagliata non trova di piu' il campo vale null: un numero che non differisce non e' una prova.",
+  "**L'immagine di una voce serve alla scheda, non alla scena.** La scheda e' la riga di carta che nomina l'incidente; la scena della tappa e' l'emblema, che il progetto disegna. Sono due cose diverse, e confonderle e' quello che faceva il capitolo: chiedere un'immagine per una scena che non e' un'immagine.",
+  "**Una scelta fra sorelle si dichiara.** Le tre stampe della moria sono la stessa scena a tre dimensioni diverse: sceglierne una e' una scelta, e il file dice quale e perche'."
+ ],
+ "misure": [
+  {
+   "voce": "incendio",
+   "interrogazione": "Ferrara 1534 incendio archivio (namespace 6, filemime:image/jpeg)",
+   "esito": "0 risultati: nessuna immagine libera dell'incendio dell'archivio ducale",
+   "eseguita": "05/10/2026"
+  },
+  {
+   "voce": "incendio",
+   "interrogazione": "incendio biblioteca antica (namespace 6, filemime:image/jpeg)",
+   "esito": "0 risultati: nemmeno in italiano, che e' il termine con cui la voce e' stata cercata il 02/10",
+   "eseguita": "05/10/2026"
+  },
+  {
+   "voce": "incendio",
+   "interrogazione": "burning of books fire engraving (namespace 6, filemime:image/jpeg)",
+   "esito": "14 risultati, e i due che sono incisioni del Cinquecento mostrano un episodio leggendario (i libri gettati nel fuoco, il Romano e il Goto), non un archivio ducale del 1534: nessuno utilizzabile per l'evento della tappa",
+   "eseguita": "05/10/2026"
+  },
+  {
+   "voce": "carestia",
+   "interrogazione": "carestia 1520 incisione (namespace 6, filemime:image/jpeg)",
+   "esito": "0 risultati",
+   "eseguita": "05/10/2026"
+  },
+  {
+   "voce": "carestia",
+   "interrogazione": "famine engraving 16th century (namespace 6, filemime:image/jpeg)",
+   "esito": "3 risultati: Giunone che manda la carestia a Crastore (un mito del Metropolitan), una pianta di Edimburgo durante l'assedio del 1573 e un manoscritto di liuto. Nessuna scena di carestia, che e' quello che il capitolo dichiarava",
+   "eseguita": "05/10/2026"
+  }
+ ],
+ "conti": {
+  "voci": 3,
+  "candidati": 6,
+  "con_immagine": 1,
+  "col_testo_al_posto": 1,
+  "non_usate": 1,
+  "persone_scansionate": 120,
+  "tappe_che_nominano_un_incidente": 6,
+  "senza_confini_di_parola": 120
+ },
+ "voci": [
+  {
+   "voce": "carestia",
+   "candidati": 0,
+   "forma": "non_usata",
+   "immagine": null,
+   "attribuzione": null,
+   "perche_questa_forma": "nessuna delle centocinquanta tappe la nomina. La scansione dei blocchi di persona dei cinque documenti degli anni non trova la parola in nessuno, ed e' per questo che la voce e' dichiarata e non piu' un buco: cercare un'immagine per una tappa che non esiste e' lavoro che sembra lavoro",
+   "riserva": "una voce cercata e non usata e' la malattia di M1 nella categoria sbagliata: finche' nessuna tappa la chiede, il numero che conta e' zero, e il file lo scrive come numero",
+   "dove_andrebbe_mostrata": "nessuna: finche' nessuna tappa la nomina, non c'e' dove mostrarla",
+   "usata_da": [],
+   "perche_non_usata": "nessuna tappa la nomina: 120 persone scandite nei cinque documenti degli anni, e la parola non compare neppure dentro un'altra parola (0 tappe con i confini, 0 senza)",
+   "scansione": {
+    "persone_scansionate": 120,
+    "tappe_che_nominano_l_evento": 0,
+    "senza_confini_di_parola": null
+   },
+   "misure": [
+    "carestia 1520 incisione (namespace 6, filemime:image/jpeg)",
+    "famine engraving 16th century (namespace 6, filemime:image/jpeg)"
+   ]
+  },
+  {
+   "voce": "incendio",
+   "candidati": 0,
+   "forma": "testo",
+   "immagine": null,
+   "attribuzione": null,
+   "perche_questa_forma": "il gioco non rappresenta l'incendio: rappresenta l'oggetto che e' rimasto dopo. Le tre tappe che lo nominano (4-3, 4-10, 4-13) hanno per emblema un peso di bronzo, uno scaffale vuoto con un cartellino scritto a metà e un frammento di stele, e in nessuna delle tre la fiamma compare; l'incendio ci arriva dentro la domanda, non dentro l'immagine. E' la forma che il progetto ha gia' deciso per l'Africa del Furioso: il testo al posto dell'immagine",
+   "riserva": "la scheda della voce resta senza illustrazione, e va detto al giocatore perche': un'immagine di un incendio d'archivio non esiste, e quella che esiste su Commons mostra un episodio diverso (i libri gettati nel fuoco, 14 risultati, nessuno dei quali l'archivio di Ferrara). Il vuoto e' dichiarato, non ricoperto",
+   "dove_andrebbe_mostrata": "la scheda della voce e la domanda della tappa: la scheda porta il testo della fonte (l'incendio del 1534), la tappa porta il suo emblema, che e' gia' disegnato dal progetto",
+   "usata_da": [
+    {
+     "tappa": "4-3",
+     "persona": "Q203",
+     "dove": "docs/videogioco-5-duchi-anno4-mondo.md",
+     "la_parola": "bruciò",
+     "la_frase": "rimo imperatore, che è anche l'uomo che bruciò i libri. - **Aggancio 4-3:** per poter",
+     "emblema": "un peso di bronzo con tre stampigliature uguali."
+    },
+    {
+     "tappa": "4-10",
+     "persona": "Q210",
+     "dove": "docs/videogioco-5-duchi-anno4-mondo.md",
+     "la_parola": "incendio",
+     "la_frase": "nte:** l'archivio; **ricostruzione:** l'incendio del 1534, le riforme amministrative, l'",
+     "emblema": "uno scaffale vuoto con un cartellino scritto a metà."
+    },
+    {
+     "tappa": "4-13",
+     "persona": "Q213",
+     "dove": "docs/videogioco-5-duchi-anno4-mondo.md",
+     "la_parola": "bruciata",
+     "la_frase": "astica su Ipazia; **memoria:** la donna bruciata, che è un racconto di secoli dopo. - **",
+     "emblema": "un frammento di stele con tre righe di tre scritture diverse."
+    }
+   ],
+   "perche_non_usata": null,
+   "scansione": {
+    "persone_scansionate": 120,
+    "tappe_che_nominano_l_evento": 3,
+    "senza_confini_di_parola": null
+   },
+   "misure": [
+    "Ferrara 1534 incendio archivio (namespace 6, filemime:image/jpeg)",
+    "incendio biblioteca antica (namespace 6, filemime:image/jpeg)",
+    "burning of books fire engraving (namespace 6, filemime:image/jpeg)"
+   ]
+  },
+  {
+   "voce": "moria",
+   "candidati": 6,
+   "forma": "immagine",
+   "immagine": {
+    "file": "File:Marcantonio - A plague scene, H,3.46.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Marcantonio_-_A_plague_scene,_H,3.46.jpg",
+    "licenza": "Public domain",
+    "autore": "Marcantonio Raimondi",
+    "data": "",
+    "px": [
+     2500,
+     2005
+    ],
+    "termine": "plague Italy engraving"
+   },
+   "attribuzione": "Marcantonio - A plague scene, H,3.46.jpg, Marcantonio Raimondi, senza data",
+   "perche_questa_forma": "e' l'unica delle tre che ha sei candidati e tappe che la nominano (3-22, 4-27 e 5-9), ed e' l'unica che puo' avere un'immagine: le altre due no, perche' il gioco non le rappresenta",
+   "riserva": "la pagina non dichiara la data e il file porta «senza data»: e' uno dei tre candidati della stessa serie (H,3.46, H,3.47 e un «After» del 1863), e sceglierne una e' una scelta fra sorelle",
+   "dove_andrebbe_mostrata": "la scheda della voce, che la nomina; la scena della tappa e' gia' l'emblema (l'albero con dieci rami del 3-22, il diagramma a ragnatela del 4-27, la mappa di strade del 5-9)",
+   "usata_da": [
+    {
+     "tappa": "3-22",
+     "persona": "Q122",
+     "dove": "docs/videogioco-5-duchi-anno3-europa.md",
+     "la_parola": "peste",
+     "la_frase": "* il *Decameron*; **ricostruzione:** la peste e i gruppi che si rifugiarono in campag",
+     "emblema": "un albero con dieci rami."
+    },
+    {
+     "tappa": "4-27",
+     "persona": "Q227",
+     "dove": "docs/videogioco-5-duchi-anno4-mondo.md",
+     "la_parola": "mortalità",
+     "la_frase": "fa esattamente questo, e mostra che la mortalità Byind era **molto più bassa** per le ma",
+     "emblema": "un diagramma a ragnatela con due rientranze."
+    },
+    {
+     "tappa": "5-9",
+     "persona": "Q309",
+     "dove": "docs/videogioco-5-duchi-anno5-mondo.md",
+     "la_parola": "epidemici",
+     "la_frase": "5-9:** il livello introduce i **modelli epidemici** e dice che un'epidemia è un sistema c",
+     "emblema": "una mappa di strade con una pompa cerchiata due volte."
+    }
+   ],
+   "perche_non_usata": null,
+   "scansione": {
+    "persone_scansionate": 120,
+    "tappe_che_nominano_l_evento": 3,
+    "senza_confini_di_parola": 120
+   },
+   "misure": [],
+   "perche_questa_immagine": "la piu' grande delle tre stampe della stessa serie (2500x2005 contro 1600x1254 e 2500x1942) e l'unica che porta una riserva che si puo' scrivere: e' un'incisione italiana del Cinquecento, che e' l'epoca del gioco, mentre la processione del Pogliaghi e' del 1890 e quella di Wellcome e' un'incisione dopo Raffaello con licenza CC BY 4.0, che obbliga a creare l'attribuzione",
+   "riserva_immagine": "la pagina non dichiara la data, e il file porta «senza data», come sull'aereo: mezzi.json 5 e incidenti.json 1 dicono la stessa cosa",
+   "scelta_da": "ricerca del 02/10/2026, scelta sui metadati; licenza riletta sulla pagina del file il 05/10/2026"
+  }
+ ]
+}
