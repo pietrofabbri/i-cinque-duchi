@@ -10,10 +10,12 @@ entrambi i casi.
   R2  nessuna versione ha due righe
   R3  ogni registro e' monotono, in un verso o nell'altro
   R4  ogni tabella di registro ha la riga di separazione sotto l'intestazione
+  R5  nessuna intestazione di sezione e' scritta due volte
 
 Uso:  python3 sorgenti/verifica_registri.py            # tutti i documenti
-      python3 sorgenti/verifica_registri.py --difetti  # ne inietta tre su tutti
+      python3 sorgenti/verifica_registri.py --difetti  # ne inietta quattro, uno per volta
 """
+import collections
 import io
 import os
 import re
@@ -25,6 +27,7 @@ DOCS = os.path.join(RADICE, "docs")
 RIGA_TAB = re.compile(r"^\| (\d\d)/(\d\d)/(\d{4}) \| 0\.(\d+) \|", re.M)
 RIGA_ELENCO = re.compile(r"^- \*\*v0\.(\d+) \((\d\d)/(\d\d)/(\d{4})\)\*\*", re.M)
 INTESTAZIONE = "| Data | Versione | Che cosa è cambiato |"
+SEZIONE = re.compile(r"(?m)^(#{2,3} .+)$")
 SEPARAZIONE = "|---|---|---|"
 
 
@@ -85,6 +88,20 @@ def controlla(testo, nome, problemi):
             problemi.append("R3 %s: la %s del registro non e' in ordine, e non "
                             "e' nemmeno al contrario" % (nome, che_cosa))
 
+    # R5: nessuna intestazione di sezione due volte. Il difetto che l'ha
+    # motivato era una intestazione di registro scritta due volte di fila:
+    # nessuno dei quattro controlli precedenti la vedeva, perche' guardano le
+    # righe del registro e non le intestazioni che lo contengono. Una riga in
+    # piu' non lascia traccia nei numeri — che e' la regola di questo progetto,
+    # detta meglio: *una riga scritta due volte, o non scritta, non lascia
+    # traccia nei controlli dei numeri* vale anche per le righe che non sono
+    # numeri.
+    for titolo, quante in sorted(collections.Counter(
+            SEZIONE.findall(testo)).items()):
+        if quante > 1:
+            problemi.append("R5 %s: l'intestazione %r c'e' %d volte"
+                            % (nome, titolo, quante))
+
     # R4: la tabella ha la riga di separazione sotto l'intestazione
     if INTESTAZIONE in testo:
         i = testo.index(INTESTAZIONE)
@@ -127,6 +144,12 @@ def inietta(testo, difetto):
         if j < 0 or j - i > len(INTESTAZIONE) + 2:
             return None
         return testo[:j] + testo[j + len(SEPARAZIONE) + 1:]
+    if difetto == "R5":
+        # l'intestazione della sezione del registro scritta due volte
+        m = re.search(r"(?m)^#{2,3} .+$", testo)
+        if not m:
+            return None
+        return testo[:m.end()] + "\n\n" + m.group(0) + "\n" + testo[m.end():]
     raise ValueError(difetto)
 
 
@@ -144,33 +167,49 @@ def main():
         con_registro += 1
         controlla(testo, nome, problemi)
 
-    print("== R1-R4. i registri delle modifiche")
+    print("== R1-R5. i registri delle modifiche")
     print("   documenti con registro: %d su %d" % (con_registro, len(documenti)))
     if problemi:
         for p in problemi:
             print("   difetto %s" % p)
     else:
         print("   nessuna versione salta, nessuna riga e' doppia, nessun "
-              "registro e' fuori ordine, nessuna tabella senza separazione")
+              "registro e' fuori ordine, nessuna tabella senza separazione, "
+              "nessuna intestazione ripetuta")
 
     if sola_prova:
         candidati = []
+        per_r5 = []
         for nome in documenti:
             testo = leggi(os.path.join(DOCS, nome))
             tab, _ = versioni_doc(testo)
             if len(tab) >= 3:
                 candidati.append((nome, testo))
+            # R5 cerca un'intestazione di sezione e non una riga di registro:
+            # chiedergli lo stesso candidato degli altri lo lasciava senza
+            # nessuno da guardare, e la prova finiva «NON INIETTATO» — che e'
+            # un difetto che si dichiara e non si fa notare. I quattro difetti
+            # hanno bisogno di quattro documenti diversi per non accumularsi.
+            if SEZIONE.search(testo):
+                per_r5.append((nome, testo))
         iniettati = 0
         visti = 0
         # un difetto alla volta, ciascuno su un documento diverso: iniettarli
         # insieme fa fermare la prova al primo trovato e gli altri non vengono
         # guardati, che e' il difetto che questa sezione dell'audit descrive
-        for numero, difetto in enumerate(("R1", "R2", "R4")):
-            if numero >= len(candidati):
-                print("   NON INIETTATO  %s: nessun documento con una tabella "
-                      "di registro" % difetto)
-                continue
-            nome, testo = candidati[numero]
+        for numero, difetto in enumerate(("R1", "R2", "R4", "R5")):
+            if difetto == "R5":
+                if numero >= len(per_r5):
+                    print("   NON INIETTATO  %s: nessun documento con "
+                          "un'intestazione di sezione" % difetto)
+                    continue
+                nome, testo = per_r5[numero]
+            else:
+                if numero >= len(candidati):
+                    print("   NON INIETTATO  %s: nessun documento con una "
+                          "tabella di registro" % difetto)
+                    continue
+                nome, testo = candidati[numero]
             alterato = inietta(testo, difetto)
             if alterato is None:
                 print("   NON INIETTATO  %s su %s" % (difetto, nome))

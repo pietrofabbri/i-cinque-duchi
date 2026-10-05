@@ -323,6 +323,25 @@ Le due regole che ne vengono:
    solo: si può perdere di vista che gli altri quattro anni non sono disegnati. Si usa
    `--tutte`. Lo stesso vale per ogni generatore che scrive un manifesto unico.
 
+**Un numero vero che guarda il numero sbagliato non è un numero**
+Questa regola nasce da un difetto vero del 5 ottobre 2026: la ricerca delle
+fonti visive dichiarava **undici** mezzi di trasporto, e il gioco ne usa
+**ventuno**. Dieci non erano mai stati cercati e nessuno se ne accorse, perché
+la tabella contava le voci cercate e non i mezzi del gioco: due numeri veri,
+nessuno dei due confrontato con l'altro. È la stessa forma dei difetti dei
+giorni precedenti, con un nome nuovo, e vale per ogni elenco di voci.
+
+Le due regole che ne vengono:
+
+1. **Un elenco di voci si confronta con la fonte che le genera, non con
+   sé stesso.** `verifica_fonti_visive.py` fa così con il controllo **M1**:
+   legge `percorsi_mezzi.py` e pretende una riga per ogni mezzo. Un file che
+   confronta solo se stesso è verde anche quando manca metà del mondo.
+2. **Aggiungere una voce alla fonte aggiunge un difetto se l'elenco non
+   cresce.** Per questo ogni voce ha sempre una delle forme ammesse —
+   un'immagine, un vuoto con la sua ragione, o il segno di un mezzo fantastico —
+   e non esiste una quarta forma, che è «non ci ho pensato».
+
 ## 5. Vincoli tecnici e di contenuto
 
 **Tecnica**

@@ -1,0 +1,122 @@
+{
+ "versione": 1,
+ "data": "2026-10-05",
+ "che_cosa": "le tre voci epigrafiche del gioco: l'immagine proposta e il testo che manca, con la fonte da cui arriva",
+ "regole": [
+  "**Un'epigrafe entra nel gioco solo con la sua trascrizione e la sua traduzione.** Una foto di un sasso non e' un testo: e' un'illustrazione, e l'illustrazione la fa il progetto con le sue sagome, non con la fonte.",
+  "**Il testo non lo scrive il progetto.** Una trascrizione o una traduzione redatte qui sarebbero un testo generato, che e' la stessa cosa che il progetto vieta per le immagini degli oggetti. Se il testo non c'e' nella fonte, l'epigrafe non entra: si dichiara e basta.",
+  "**La fonte del testo e' EDH** (Epigraphic Database Heidelberg, 82 000 iscrizioni latine, CC BY-SA), con EDR ed EAGLE come alternative per italiano e greco. Il rimando all'iscrizione e' l'id che Wikidata porta nella proprieta' P1415, ed e' cid che rende l'epigrafe recuperabile quando la fonte si lascia interrogare.",
+  "**Un'epigrafe senza testo non e' un premio.** I premi F del latino e C del greco sono «premio da guardare e non da leggere»: se l'epigrafe non ha testo, il premio che e' la domanda di ripasso non si puo' costruire, e la tappa resta senza premio finche' il testo non c'e'."
+ ],
+ "misure": [
+  {
+   "fonte": "Wikidata Query Service",
+   "interrogazione": "SELECT (COUNT(?item) AS ?n) WHERE { ?item wdt:P1415 ?insc }",
+   "esito": "63048 voci con la scheda epigrafica, che e' un identificatore e non il testo; con la traduzione soltanto 15",
+   "eseguita": "05/10/2026"
+  },
+  {
+   "fonte": "Wikimedia Commons",
+   "interrogazione": "action=query&prop=revisions&rvprop=content sui file prescelti",
+   "esito": "il campo `inscriptions` del template Artwork e' vuoto: l'immagine c'e', il testo no",
+   "eseguita": "05/10/2026"
+  },
+  {
+   "fonte": "EDH, due domini e l'API",
+   "interrogazione": "pagina dell'iscrizione e API JSON",
+   "esito": "risposta anti-robot a tutte e tre le richieste: la fonte giusta non e' interrogabile da qui",
+   "eseguita": "05/10/2026"
+  }
+ ],
+ "conti": {
+  "voci": 3,
+  "candidati": 18,
+  "con_immagine": 3,
+  "con_trascrizione": 0,
+  "con_trascrizione_e_traduzione": 0,
+  "entrano_nel_gioco": 0
+ },
+ "voci": [
+  {
+   "voce": "lapide",
+   "candidati": 6,
+   "immagine": {
+    "file": "File:Funerary stele of Sosibia (Boston MFA 1971.209).jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Funerary_stele_of_Sosibia_(Boston_MFA_1971.209).jpg",
+    "licenza": "CC BY 4.0",
+    "autore": "Mark Landon",
+    "data": "2023-03-06",
+    "px": [
+     3460,
+     5352
+    ]
+   },
+   "perche_questa": "una stele funeraria di persona nota, che e' la forma che il gioco usa per la lapide; 3460x5352 px e la piu' alta del lotto",
+   "riserva": "senza testo: il campo inscriptions della pagina Commons e' vuoto",
+   "trascrizione": null,
+   "traduzione": null,
+   "fonte_del_testo": "EDH (Epigraphic Database Heidelberg), via l'identificatore in Wikidata P1415; EDR ed EAGLE per italiano e greco",
+   "testo_mancante_perche": "la fonte non e' interrogabile da questa sessione: EDH risponde anti-robot e Wikidata non porta il testo",
+   "entra_nel_gioco": false,
+   "usa_per": {
+    "lapide": "premio F del latino: la domanda di ripasso",
+    "lastra": "premio F del latino: la domanda di ripasso",
+    "iscrizione": "premio C del greco: la domanda di ripasso"
+   }
+  },
+  {
+   "voce": "lastra",
+   "candidati": 6,
+   "immagine": {
+    "file": "File:Marble funerary relief MET DP337516.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Marble_funerary_relief_MET_DP337516.jpg",
+    "licenza": "CC0",
+    "autore": "This file was donated to Wikimedia Commons as part of a project by the  Metropolitan Museum of Art . See the  Image and ",
+    "data": "2nd–3rd century A.D.",
+    "px": [
+     3919,
+     2947
+    ]
+   },
+   "perche_questa": "un rilievo funerario marmoreo del Metropolitan, di grandezza maggiore dei cinque simili che la ricerca ha portato",
+   "riserva": "senza testo, e le sei lastre candidate sono tutte lo stesso tipo: l'antiguità non ha lastre con iscrizioni diverse",
+   "trascrizione": null,
+   "traduzione": null,
+   "fonte_del_testo": "EDH (Epigraphic Database Heidelberg), via l'identificatore in Wikidata P1415; EDR ed EAGLE per italiano e greco",
+   "testo_mancante_perche": "la fonte non e' interrogabile da questa sessione: EDH risponde anti-robot e Wikidata non porta il testo",
+   "entra_nel_gioco": false,
+   "usa_per": {
+    "lapide": "premio F del latino: la domanda di ripasso",
+    "lastra": "premio F del latino: la domanda di ripasso",
+    "iscrizione": "premio C del greco: la domanda di ripasso"
+   }
+  },
+  {
+   "voce": "iscrizione",
+   "candidati": 6,
+   "immagine": {
+    "file": "File:Greek inscription, Eleutherna, 600-450 BC, AM Rethymno, 076104.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Greek_inscription,_Eleutherna,_600-450_BC,_AM_Rethymno,_076104.jpg",
+    "licenza": "CC BY-SA 4.0",
+    "autore": "Zde",
+    "data": "2007-07-04",
+    "px": [
+     3452,
+     2300
+    ]
+   },
+   "perche_questa": "un'iscrizione greca di Creta che **proibisce l'eccesso di vino**, che e' un testo che si può tradurre e usare: e' la scelta perche' e' l'unica che promette qualcosa",
+   "riserva": "senza testo nella pagina Commons; il testo (le tre righe greche) si potrebbe prendere da EDH, che pero' risponde anti-robot",
+   "trascrizione": null,
+   "traduzione": null,
+   "fonte_del_testo": "EDH (Epigraphic Database Heidelberg), via l'identificatore in Wikidata P1415; EDR ed EAGLE per italiano e greco",
+   "testo_mancante_perche": "la fonte non e' interrogabile da questa sessione: EDH risponde anti-robot e Wikidata non porta il testo",
+   "entra_nel_gioco": false,
+   "usa_per": {
+    "lapide": "premio F del latino: la domanda di ripasso",
+    "lastra": "premio F del latino: la domanda di ripasso",
+    "iscrizione": "premio C del greco: la domanda di ripasso"
+   }
+  }
+ ]
+}

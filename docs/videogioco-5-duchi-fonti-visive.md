@@ -1,6 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — le fonti visive: che cosa il gioco non ha ancora una veste, e dove si prende
-versione: 0.12
+versione: 0.13
 data: 2026-10-05
 autore: Pietro Fabbri (con Claude)
 fonte: ricerca su Wikimedia Commons del 02/10/2026; tavolozza da Wikidata e Wikipedia del 03/10/2026; sagome e mura da OpenStreetMap via API standard OSM del 04/10/2026; cime e quote da Natural Earth `geography_regions_elevation_points` del 03/10/2026; verifica dei fondi già in dati/mappe/
@@ -35,10 +35,10 @@ Questo documento fa quattro cose: **fa l'inventario** di che cosa ha e che cosa 
 | **Ambienti dei 150 livelli** | **fatto il 03/10/2026**, 150 su 150 | i documenti del progetto più i tre file sopra | `dati/ambienti_livelli.json` |
 | **Colori dei fondi geografici** | **fatto il 03/10/2026**, 19 voci | una scelta dichiarata, non un colore a occhio nel codice | `dati/fonti_visive/colori_cartografici.json` |
 | **Cime e quote** | **fatto il 03/10/2026**, 15 + 2 + 26 punti | **Natural Earth**, pubblico dominio | `dati/mappe/mondo_110_altitudine.json` e gli altri due |
-| **Medi di trasporto** | **non c'è** | — | — |
-| **Epigrafi e iscrizioni** | **non c'è** | — | — |
+| **Mezzi di trasporto** | **fatto il 05/10/2026**: 21 mezzi, 6 con immagine proposta, 10 storici con il vuoto dichiarato e 5 fantastici con il segno | Commons, con scelta sui metadati | `dati/fonti_visive/mezzi.json` |
+| **Epigrafi e iscrizioni** | **fatto il 05/10/2026 come dato**: 3 immagini scelte e **zero** testi, con la fonte dichiarata e il divieto di entrare senza testo | Commons per l'immagine, **EDH** per il testo che non è arrivato | `dati/fonti_visive/epigrafi.json` |
 
-**Cinque buchi il 2 ottobre, due il 3.** Erano cinque, ed erano cinque problemi diversi. Quattro sono chiusi: la **tavolozza**, le **sagome degli edifici**, il **fondo di Ferrara** e gli **ambienti dei centocinquanta livelli**. Restano due, ed è giusto che restino: i **mezzi di trasporto** servono al percorso del duca e sono un problema di *immagini*, non di geometrie; le **epigrafi** servono al latino e sono un problema di *testo*, non di grafica. Nessuna delle due era un buco che si potesse chiudere con uno script, e sono dichiarate in §7.
+**Cinque buchi il 2 ottobre, due il 3, e i due che restavano sono chiusi come dati il 5.** Erano cinque, ed erano cinque problemi diversi. Quattro sono chiusi: la **tavolozza**, le **sagome degli edifici**, il **fondo di Ferrara** e gli **ambienti dei centocinquanta livelli**. Restano due, ed è giusto che restino: i **mezzi di trasporto** servono al percorso del duca e sono un problema di *immagini*, non di geometrie; le **epigrafi** servono al latino e sono un problema di *testo*, non di grafica. Nessuna delle due era un buco che si potesse chiudere con uno script, e sono dichiarate in §7.
 
 **Un sesto buco è stato chiuso lo stesso giorno, e non era un buco di immagini mancanti: era un colore che c'era già e stava nel posto sbagliato.** I colori delle carte geografici stavano scritti nel codice del disegnatore, dove nessuno li leggeva (§3.7); mentre li si cercavano è saltato fuori che un file che non aveva niente a che fare stava dentro `dati/mappe/` e faceva crashare il lettore delle mappe (§7, Q4).
 
@@ -70,7 +70,7 @@ Il conto reale, verificato sui file:
 
 ---
 
-## 3. Le fonti cercate, e i sei file costruiti
+## 3. Le fonti cercate, e gli otto file costruiti
 
 La ricerca (`sorgenti/fonti_visive_cerca.py`) ha esaminato **27 voci** in cinque categorie, con termini scelti uno per uno e non tradotti alla cieca. Ha prodotto **125 candidati con licenza libera**. Le categorie che hanno prodotto un **file di dati** sono quelle degli edifici, dei colori e dei fondi (sagome §3.2, colore §3.4, mura di Ferrara §3.5, ambienti §3.6); quelle che non lo hanno prodotto sono i mezzi e le epigrafi, e il perché è dichiarato.
 
@@ -85,25 +85,36 @@ A quei quattro file il 03/10/2026 se ne sono aggiunti **due che non vengono dall
 | **colore** | 4 | 24 | nessuna |
 | **Totale** | **27** | **125** | **due** |
 
-### 3.1 I mezzi di trasporto: la categoria più nuova
+### 3.1 I mezzi di trasporto: il file è costruito il 05/10/2026, e i vuoti sono dieci su sedici
 
-È il buco che è nato con i percorsi del duca: undici mezzi, **zero immagini**. La ricerca ne ha trovati quarantuno, e sono le fonti giuste per il Quattrocento, perché il gioco si disegna in un'epoca in cui un mezzo è un'immagine d'epoca.
+**Il buco era più grande di quanto il documento dicesse, e la riga che lo dichiarava era quella giusta a metà.** La ricerca del 2 ottobre aveva coperto **undici** mezzi e il capitolo li chiamava «undici mezzi»: era vero. Ma il gioco ne usa **ventuno**, e quei due numeri non erano mai stati confrontati. Dieci mezzi storici —crociera, moto, sci, elicottero, monopattino— **non sono mai stati cercati**, e nessuno se ne accorse, perché la tabella contava le voci cercate e non i mezzi del gioco. È la stessa malattia di un numero vero che guarda il numero sbagliato.
 
-| Mezzo | Anno | Proposta migliore trovata |
-|---|---|---|
-| A piedi | 1 | un dipinto di pellegrino |
-| Mulo | 2, 3 | una stampa ottocentesca di mulo di somma |
-| **Cavallo** | 2, 3 | **la Cappella dei Magi di Benozzo Gozzoli** |
-| **Galera** | 2, 3 | **una galera veneziana del Provveditore d'Armata** |
-| Nave | 2, 3 | Patinir, un veliero dipinto |
-| Carovana | 4 | una carovana di cammelli del Marocco |
-| **Diligenza** | 4 | **una stampa di Abel Hold**, pittore di strada |
-| Treno | 5 | una foto di ferrovia della Val di Fiemme |
-| Aereo | 5 | una foto di volo anni Cinquanta |
-| Carrozza | 2, 3 | una carrozza d'epoca |
-| Pipa | 2, 3 | **sbagliata**, vedi §5 |
+`sorgenti/mezzi_fonti.py` costruisce `dati/fonti_visive/mezzi.json`: **una riga per ogni mezzo che `percorsi_mezzi.py` sa usare**, cioè ventuno righe, e ogni riga è una delle tre forme che il progetto ammette — un'immagine, un vuoto con la sua ragione, o il segno di un mezzo fantastico.
 
-La Cappella dei Magi e la galera del Provveditore sono fonti che il progetto può usare bene: sono italiane, sono d'epoca, e hanno un autore e una data.
+| | |
+|---|---|
+| Mezzi del gioco | **21**: 16 storici e **5** fantastici (ippogrifo, drago, sirena, carro di delfini, carro di serpenti) |
+| Con immagine proposta | **6**: mulo, galera, nave, carovana, diligenza, treno |
+| Storici **senza** immagine | **10**, di cui **5** non hanno mai avuto una ricerca |
+| Fantastici con segno dedicato | **5**, e nessuna immagine: sono creature |
+| Candidati esaminati | **41**, tutti quelli della ricerca del 02/10, nessuno nuovo |
+
+**Le sei immagini, con l'attribuzione calcolata e la riserva dichiarata quando c'è.**
+
+| Mezzo | Immagine | Autore, anno | La riserva, che è la parte difficile |
+|---|---|---|---|
+| mulo | la mulattiera del **San Gottardo** di Peter Birmann | Peter Birmann, 1805 | è del 1805 e non del Quattrocento, ma dice «bestia da soma delle vie postali» meglio di qualunque altra |
+| galera | la **galera del Provveditore d'Armata** | autore non dichiarato, 1700 | 735×516 px: la più piccola del lotto, e l'autore non c'è |
+| nave | i **carricchi portoghesi** di Patinir | autore non dichiarato, 1540 | il gioco descrive un veliero latino e questo è portoghese: la somiglianza è dichiarata |
+| carovana | la **carovana del sale** dell'Adrar | autore non dichiarato, 1965 | **una fotografia del 1965**, non un dipinto: e il gioco non promette immagini d'epoca per la carovana |
+| diligenza | la **diligenza di Tarascon** di Van Gogh | Vincent van Gogh, 1888 | fra i candidati c'era anche la stampa di Abel Hold, che si è deciso di non usare |
+| treno | la **ferrovia marmifera di Carrara** del 1890 | L'Eco del Carrione, 1890 | 641×393 px: può stare solo come icona |
+
+**I dieci vuoti, uno per mezzo e con la ragione.** Cinque sono vuoti che la ricerca aveva già visto e che il capitolo dichiarava: il **cavallo** (tre dei quattro candidati sono la Cappella dei Magi, che è un corteo di trecento persone, e il quarto è una batteria d'artiglieria: nessuno dei quattro è un cavallo), l'**aereo** (i due candidati sono il volo turistico sugli aerei da giardinaggio), la **carrozza** (quella americana del 1922 e tre guide turistiche), la **pipa** (l'unico candidato è il rospo del genere *Pipa*) e **a piedi** (un sentiero di pellegrini di oggi e un conchiglio: nessuno dei due è «un uomo solo, con la bisaccia»). Gli altri cinque sono **crociera, moto, sci, elicottero e monopattino**, e la loro ragione è una sola espiattata: nessuna ricerca, perché la sessione del 5 ottobre non ha rete.
+
+**I cinque fantastici non hanno immagine e non la devono avere.** Ippogrifo, drago, sirena e i due carri sono creature del *Furioso*: la regola dei luoghi fantastici in `AGENTS.md` dice già che vanno disegnati a mano sulla carta del gioco con un segno dedicato. Il file porta quel segno in un campo suo, e il controllo vieta che un mezzo fantastico abbia un'immagine — perché la prima volta che si troverà un drago dipinto del Quattrocento, la tentazione sarà di metterlo, e sarà sbagliata in un modo che nessun numero registra.
+
+**La scelta è sui metadati, non a vista, e il file lo dichiara.** L'agente non può vedere un'immagine, e il progetto vieta che una scelta sia inventata: qui ogni scelta porta **il motivo per cui quel candidato corrisponde a ciò che `percorsi_mezzi.py` descrive**, e resta una proposta finché Pietro non la guarda. È la stessa regola dei 180 oggetti linguistici, e la stessa attesa a vista.
 
 ### 3.2 Le sagome degli edifici: costruite il 03/10/2026
 
@@ -144,9 +155,33 @@ E due difetti di interrogazione, che vengono prima. **Le tre istanze di Overpass
 
 Il 4 ottobre Overpass era saturo su tutte e tre le istanze, e la correzione è stata cambiare fonte invece di aspettare. Il terzo difetto **è stato scritto male e nessuno lo vide**, ed è quello descritto sopra: la quantizzazione. Il quarto è comparso solo quando le sagome hanno cominciato a essere vere — dieci edifici con l'altezza dichiarata ma di mezzo metro quadro, che il generatore teneva e che il verifica non poteva accettare. Nessuno dei due sarebbe stato trovato senza l'altro: la quantizzazione è invisibile finché le sagome sono tutte un punto, e i dieci edifici minuscoli sono invisibili finché le sagome sono vere.
 
-### 3.3 Le epigrafi: fonti, non immagini
+### 3.3 Le epigrafi: il testo manca, e la fonte che lo tiene è chiusa a noi
 
-Le tre voci (lapide, lastra, iscrizione) hanno diciotto candidati, e sono la categoria più semplice: un'epigrafe **è** la sua immagine. Serve però la regola che vale per i testi autentici delle lingue antiche (`lingue.md` §7 Q3): l'epigrafe entra con la sua **trascrizione e la sua traduzione**, non come foto muta.
+**Un'epigrafe non è un'immagine: è un testo, e il testo è la parte che il gioco usa.** Le tre voci hanno **diciotto** immagini e **zero** testi, e la differenza è tutta qui: l'epigrafe è la domanda di ripasso (`ripassi.md` §2), è il premio **F** del latino e il **C** del greco (`premi.md` §2.1), ed è l'unica cosa che distingue un'epigrafe da una fotografia di un sasso. Senza testo l'epigrafe non è un premio: è un'illustrazione, e le illustrazioni le fa il progetto con le sue sagome.
+
+`sorgenti/epigrafi_fonti.py` costruisce `dati/fonti_visive/epigrafi.json`: tre voci con l'immagine proposta e **il testo dichiarato mancante**, con la fonte da cui arriva. Il buco non è chiuso, e il file non finge: dice che **zero** epigrafi entrano nel gioco e perché.
+
+| | |
+|---|---|
+| Voci | **3**: lapide, lastra, iscrizione |
+| Candidati esaminati | **18**, tutti quelli della ricerca del 02/10, nessuno nuovo |
+| Con immagine scelta | **3**, e tutte e tre senza testo |
+| Con trascrizione e traduzione | **0** |
+| Che entrano nel gioco | **0**, e nessuna può entrarci finché i due campi sono vuoti |
+
+**Le tre fonti sono state interrogate il 5 ottobre e hanno tutte detto di no, in tre modi diversi.**
+
+| Fonte | Che cosa le si chiede | Che cosa ha risposto |
+|---|---|---|
+| **Wikidata** | il testo dell'iscrizione | **63048** voci hanno la proprietà che rimanda alla scheda epigrafica, ma è un **identificatore numerico**, non il testo; e solo **15** hanno anche una traduzione |
+| **Wikimedia Commons** | il testo nella pagina del file | il campo `inscriptions` del template è **vuoto**: l'immagine c'è, il testo no (verificato su tre file) |
+| **EDH**, la fonte giusta | la trascrizione di 82 000 iscrizioni latine | **protezione anti-robot** a ogni richiesta, pagina e API, su due domini |
+
+**Perché i campi sono `null` e non compilati.** Il progetto vieta che un testo sia scritto dal progetto: una trascrizione o una traduzione redatte qui sarebbero un testo generato, che è la stessa cosa che il progetto vieta per le immagini degli oggetti. Il file indica la fonte — **EDH**, con EDR ed EAGLE come alternative per italiano e greco — e il modo per recuperarla quando si lascia interrogare: **l'identificatore in Wikidata P1415**, che è il numero con cui EDH chiama l'iscrizione.
+
+**La regola, che è la consegna vera di questa sezione**: un'epigrafe entra nel gioco **solo con la sua trascrizione e la sua traduzione**; `verifica_fonti_visive.py` lo vieta (`E2`), e oggi lo vieta a tutte e tre. Il che significa che i premi F del latino e C del greco restano senza immagine finché EDH non risponde — ed è un fatto dichiarato, non un lavandino.
+
+**Le tre immagini scelte, e perché quella.** La **lapide** è la stele di Sosibia (Boston, 3460×5352 px), che è una persona nota e la forma che il gioco usa; la **lastra** è il rilievo funerario del Metropolitan più grande fra i sei simili che la ricerca ha portato; l'**iscrizione** è l'iscrizione cretese di Eleutherna che **proibisce l'eccesso di vino**, scelta perché è l'unica delle diciotto che promette un testo traducibile. Tutte e tre senza testo, e tutte e tre con la riserva scritta.
 
 ### 3.4 Il colore: la tavolozza, costruita il 03/10/2026
 
@@ -380,15 +415,26 @@ La ricerca su Commons ha sbagliato in modi diversi, e sono tre, e vanno dichiara
 
 ---
 
-## 6. I due vuoti dichiarati
+## 6. I due vuoti dichiarati, e come stanno adesso
 
 **L'incendio e la carestia non hanno immagine.** Sono le due voci su ventisette che la ricerca non ha riempito, e il vuoto è reale: un incendio dell'archivio di Ferrara del 1534 e una carestia del Cinquecento **non hanno immagini d'epoca libere che le illustrino**, perché sono eventi di cui non si è disegnato niente. Le incisioni che esistono sono o di eccesso o di epoca sbagliata.
 
 La regola è quella degli altri buchi: **si dichiara il vuoto**. Una tappa sull'incendio mostra la scheda dell'incendio con scritto perché non c'è immagine, e il testo della fonte — perché **la fonte testuale c'è ed è più affidabile di un'immagine che non c'è**.
 
-Ma c'è una seconda possibilità, e va decisa: il progetto ha già deciso che **l'Africa del *Furioso*** entra riscritta sulla parola del testo (`furioso.md` §6), cioè **il testo al posto dell'immagine**. Lo stesso si può fare qui: l'incendio si rappresenta con **una pagina del registro che brucia**, cioè con la fonte testuale. È la soluzione più onesta e la più economica, e per la carestia forse l'unica.
+Ma c'è una seconda possibilità, e va decisa: il progetto ha già deciso che **l'Africa del *Furioso*** entra riscritta sulla parola del testo (`furioso.md` §6), cioè **il testo al posto dell'immagine**. Lo stesso si può fare qui: l'incendio si rappresenta con **una pagina del registro che brucia**, cioè con la fonte testuale. È la soluzione più onesta e la più economica, e per la carestia
 
 ---
+
+## 6bis. I mezzi e le epigrafi: che cosa è chiuso e che cosa no
+
+**I due buchi che restavano sono chiusi come dati il 5 ottobre, e nessuno dei due è chiuso come immagini.** La differenza è dichiarata perché i due titoli sembrano uguali e non lo sono.
+
+| Buco | Che cosa c'è adesso | Che cosa manca |
+|---|---|---|
+| **mezzi** | `dati/fonti_visive/mezzi.json`: **21 righe, una per mezzo del gioco**, con 6 immagini proposte, 10 vuoti motivati e 5 segni fantastici | **10 mezzi storici senza immagine**, di cui 5 non hanno mai avuto una ricerca: la ricerca serve, e la sessione non aveva rete |
+| **epigrafi** | `dati/fonti_visive/epigrafi.json`: 3 immagini scelte, **la regola** (niente epigrafe senza trascrizione e traduzione) e **la fonte** del testo | **il testo**: EDH risponde anti-robot, e quindi **zero** epigrafi entrano nel gioco, e i premi F del latino e C del greco restano senza immagine finche' non arriva |
+
+**Chiuso come dati** vuol dire che ogni voce ha una risposta scritta: un'immagine, un vuoto con la sua ragione, o un segno. Un buco chiuso come dati non si dimentica e non si confonde con uno chiuso come immagini, che è la forma più insidiosa di buco chiuso: sembra risolto e il motore non ha niente da mostrare.
 
 ## 7. Le questioni aperte
 
@@ -435,7 +481,7 @@ Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file d
 
 | | |
 |---|---|
-| Categorie senza veste grafica | il 02/10 erano **cinque**: mezzo, sagome, mappa di Ferrara, epigrafi, tavolozza. Il 03/10 sono **due**: mezzo ed epigrafi |
+| Categorie senza veste grafica | il 02/10 erano **cinque**: mezzo, sagome, mappa di Ferrara, epigrafi, tavolozza. Il 03/10 sono **due**: mezzo ed epigrafi. Il 05/10 sono **zero senza una risposta scritta**: mezzo ed epigrafi hanno un file ciascuno, con i vuoti dichiarati dentro |
 | Candidati cercati su Commons | **125**, in 27 voci |
 | Voci senza immagine | **due**: l'incendio e la carestia |
 | Candidati scelti a vista | **zero**, e dichiarato |
@@ -449,14 +495,21 @@ Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file d
 | Quanti ambienti il motore ha disegnato | **uno**, la tappa 1-1 |
 | Emblemi dei premi | **fatti il 04/10/2026**: 1050 tessere in un foglio, undici forme dichiarate, 5 categorie in uso |
 | Disegni degli ambienti | **fatti il 05/10/2026**: **150 immagini schematiche su 150 tappe**, 2632 edifici disegnati, **16 tappe vuote dichiarate**, e D3 riscritto sul confronto fra **chiave dati e sha**: 107 chiavi dati, 107 sha distinti |
-| Lavoro più grande che resta | i **125 candidati** da guardare a vista, e i **cinquantuno** ambienti senza coordinate |
+| Mezzi di trasporto | **fatto il 05/10/2026 come dato**: 21 mezzi, 6 con immagine, 10 storici con il vuoto motivato (di cui 5 mai cercati), 5 fantastici con il segno |
+| Epigrafi | **fatto il 05/10/2026 come dato**: 3 immagini, **zero** testi, la fonte dichiarata e il divieto di entrare senza testo |
+| Lavoro più grande che resta | i **125 candidati** da guardare a vista, i **10 mezzi** senza immagine (cinque dei quali mai cercati) e i **cinquantuno** ambienti senza coordinate |
 | Lavoro più grande che manca *fra i dati* | nessuno: i sei file ci sono e sono verificati |
 
 ---
 
 ## 9. Registro delle modifiche
 
-## 9. Registro delle modifiche
+- **v0.13 (05/10/2026)**: **gli ultimi due buchi chiusi come dati, e il numero che li nascondeva era vero.** I mezzi di trasporto avevano **undici** immagini proposte e il gioco ne usa **ventuno**: dieci storici non erano mai stati cercati, e nessuno se ne accorgeva, perché la tabella contava le voci cercate e non i mezzi del gioco. È la stessa malattia di un numero vero che guarda il numero sbagliato, e per questo il controllo nuovo confronta il file con **`percorsi_mezzi.py`**, non con se stesso.
+  - **`dati/fonti_visive/mezzi.json`**, costruito da `sorgenti/mezzi_fonti.py`: **21 righe**, una per mezzo, e ogni riga è una delle tre forme ammesse — **6** immagini proposte con l'attribuzione **calcolata** e la riserva dichiarata, **10** storici con il vuoto e la sua ragione (fra cui i **5** mai cercati), **5** fantastici con il segno dedicato e nessuna immagine, perché sono creature;
+  - **`dati/fonti_visive/epigrafi.json`**, costruito da `sorgenti/epigrafi_fonti.py`: 3 immagini scelte e **zero** testi, e il testo mancante è dichiarato con la **fonte** che lo tiene (**EDH**, con l'identificatore P1415 di Wikidata che la rende recuperabile) e con la misura delle tre fonti interrogate il 5: Wikidata dà 63048 identificatori e 15 traduzioni ma non il testo, Commons ha il campo `inscriptions` vuoto, EDH risponde anti-robot su due domini e sull'API. **Nessuna epigrafe entra nel gioco**, e il controllo lo vieta finché trascrizione e traduzione non ci sono: i premi **F** del latino e **C** del greco restano senza immagine, ed è un fatto dichiarato;
+  - **`sorgenti/verifica_fonti_visive.py`**, dieci controlli **M1–M6** ed **E1–E4**: M1 confronta il file con i mezzi del gioco, M2 pretendere che l'immagine sia fra i candidati della ricerca, M3 che ogni mezzo abbia **una** delle tre forme e che il vuoto abbia la ragione, M4 che nessun mezzo fantastico abbia un'immagine, M5 ed E4 che i numeri scritti in §3.1 e §3.3 siano quelli del file, M6 che l'attribuzione ci sia e la licenza sia libera, E1 che ogni voce abbia la sua immagine, **E2 che nessuna epigrafe entri senza testo**, E3 che nessun testo sia scritto dal progetto. La prova ne inietta **sette** uno alla volta e li vede **tutti e sette**;
+  - **due difetti della prova, dichiarati perché sono la regola nuova**: la prima versione accettava che un difetto fosse visto da un controllo diverso dal suo — l'M4 iniettava un'immagine a un mezzo fantastico e la segnalava **M2** — e la seconda leggeva il numero sbagliato della riga, perche' la funzione cercava la prima cifra dopo una frase che finiva col grassetto; ne stampava sei difetti, tutti suoi, dei quali nessuno era un difetto del documento;
+  - **R5 in `verifica_registri.py`**: nessuna intestazione di sezione scritta due volte. Il difetto che l'ha motivato era **mio**, di oggi: riscrivendo questo stesso elenco del registro avevo lasciato `## 9. Registro delle modifiche` due volte di fila, e quattro controlli non lo vedevano perche' guardano le righe e non le intestazioni.
 
 - **v0.12 (05/10/2026)**: **i trenta disegni dell'anno 1 erano verdi, e D3 era diventato il controllo sbagliato.** Estesi i disegni a tutte e centocinquanta le tappe (`python3 sorgenti/art/disegna_ambienti.py --tutte`, 25 s, 1,5 MB, **2632** edifici disegnati, **0** ritagliati fuori, larghezza da **80** a **2584** px, **150** PNG decodificati). Le **16** tappe senza sagome restano vuote e sono dichiarate una per una: un disegno vuoto che non sa di essere vuoto è più peggio di un disegno che non c'è. Ma il controllo **D3** non poteva restare com'è: chiedeva che gli sha fossero tutti diversi, e sui centocinquanta la risposta è no e non può essere sì — le tappe con le stesse sagome sulla stessa griglia sono **43 su 150** e condividono il disegno. Un controllo che segnala come difetto la verità non è un controllo, è un allarme spento.
   - **D3 è riscritto in `sorgenti/art/verifica_disegni.py`**: confronta la **chiave dei dati** (sagome + griglia, funzione `chiave_dati()`) con lo sha del PNG — stessi dati, stesso disegno; dati diversi, disegno diverso. Il conto torna: **107 chiavi dati, 107 sha distinti su 150**;
