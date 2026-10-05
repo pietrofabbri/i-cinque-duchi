@@ -48,6 +48,10 @@ import sys
 import tempfile
 
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Il registro dei buchi del progetto sta in un file solo:
+# i tre elenchi non si scrivono qui.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import buchi  # noqa: E402
 
 # **Le due forme in cui un verificatore dichiara i propri controlli**, e sono
 # due perche' il progetto ne ha due: l'elenco `  X1  testo` nei docstring di
@@ -120,40 +124,12 @@ SEZIONE_CONTO = "## Il conto dei controlli"
 # dichiara. Il secondo caso e' il piu' importante: e' il difetto che lascia la
 # lista indietro rispetto alla realta', ed e' successo: `verifica_interni.py`
 # dichiara I1-I7 in una tabella e questa lista lo contava fra i taciti.
-TACITI = {
-    "sorgenti/art/verifica_immagini.py":
-        "non ha etichette: i suoi controlli sono per file, e il numero lo "
-        "dichiara il documento che li elenca",
-    "sorgenti/art/verifica_metadati.py":
-        "non ha etichette: ricava i metadati dalle immagini e non ha una "
-        "lista di controlli da dichiarare",
-    "sorgenti/furioso/verifica_citazioni.py":
-        "non ha etichette: confronta le citazioni con i file del testo, e le "
-        "cite sono i controlli",
-    "sorgenti/gis/verifica_altitudine.py":
-        "ha i controlli D1-D7 nel codice ma non li dichiara in nessuna delle "
-        "due forme: le etichette vanno scritte nel docstring",
-    "sorgenti/gis/verifica_inventario_mappe.py":
-        "ha i controlli I1-I8 nel codice ma non li dichiara: le etichette "
-        "vanno scritte nel docstring",
-    "sorgenti/gis/verifica_mappe_disegno.py":
-        "non ha etichette: sono dodici pagine di verifica delle carte, e ogni "
-        "pagina e' un controllo con un nome suo",
-    "sorgenti/gis/verifica_mappe_numeriche.py":
-        "non ha etichette: confronta le carte con i numeri del file",
-    "sorgenti/gis/verifica_pin.py":
-        "ha i controlli A1-A6 nel codice ma non li dichiara",
-    "sorgenti/gis/verifica_rilievo.py":
-        "ha i controlli V1-V6 nel codice ma non li dichiara",
-    "sorgenti/lingue/verifica_titoli.py":
-        "non ha etichette: e' un generatore che si ferma se qualcosa non torna",
-    "sorgenti/verifica_codici.py":
-        "non ha etichette: e' un controllo solo, sui codici dei facoltativi",
-    "sorgenti/verifica_coerenza.py":
-        "ha i controlli B1-B9 ma non li dichiara in nessuna delle due forme",
-    "sorgenti/verifica_colori.py":
-        "ha i controlli C1-C7 ma non li dichiara in nessuna delle due forme",
-}
+#
+# **I motivi non si scrivono qui**: stanno in `dati/buchi_aperto.json`, che è
+# l'unico registro dei buchi del progetto, e si leggono da `sorgenti/buchi.py`.
+# Un elenco in tre file non è un registro: quando ne nasce uno in uno solo dei
+# tre, nessuno lo vede.
+TACITI = buchi.elenco("TACITI")
 
 
 # --------------------------------------------------------------------------

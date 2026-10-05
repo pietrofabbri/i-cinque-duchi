@@ -1,0 +1,217 @@
+{
+ "buchi": [
+  {
+   "chiave": "sorgenti/art/verifica_immagini.py",
+   "elenco": "TACITI",
+   "guardato_da": "sorgenti/verifica_prove.py, controllo X4",
+   "motivo": "non ha etichette: i suoi controlli sono per file, e il numero lo dichiara il documento che li elenca",
+   "natura": "il verificatore non dichiara i suoi controlli"
+  },
+  {
+   "chiave": "sorgenti/art/verifica_metadati.py",
+   "elenco": "TACITI",
+   "guardato_da": "sorgenti/verifica_prove.py, controllo X4",
+   "motivo": "non ha etichette: ricava i metadati dalle immagini e non ha una lista di controlli da dichiarare",
+   "natura": "il verificatore non dichiara i suoi controlli"
+  },
+  {
+   "chiave": "sorgenti/furioso/verifica_citazioni.py",
+   "elenco": "TACITI",
+   "guardato_da": "sorgenti/verifica_prove.py, controllo X4",
+   "motivo": "non ha etichette: confronta le citazioni con i file del testo, e le citazioni sono i controlli",
+   "natura": "il verificatore non dichiara i suoi controlli"
+  },
+  {
+   "chiave": "sorgenti/gis/verifica_altitudine.py",
+   "elenco": "TACITI",
+   "guardato_da": "sorgenti/verifica_prove.py, controllo X4",
+   "motivo": "ha i controlli D1-D7 nel codice ma non li dichiara in nessuna delle due forme: le etichette vanno scritte nel docstring",
+   "natura": "il verificatore non dichiara i suoi controlli"
+  },
+  {
+   "chiave": "sorgenti/gis/verifica_inventario_mappe.py",
+   "elenco": "TACITI",
+   "guardato_da": "sorgenti/verifica_prove.py, controllo X4",
+   "motivo": "ha i controlli I1-I8 nel codice ma non li dichiara: le etichette vanno scritte nel docstring",
+   "natura": "il verificatore non dichiara i suoi controlli"
+  },
+  {
+   "chiave": "sorgenti/gis/verifica_mappe_disegno.py",
+   "elenco": "TACITI",
+   "guardato_da": "sorgenti/verifica_prove.py, controllo X4",
+   "motivo": "non ha etichette: sono dodici pagine di verifica delle carte, e ogni pagina e' un controllo con un nome suo",
+   "natura": "il verificatore non dichiara i suoi controlli"
+  },
+  {
+   "chiave": "sorgenti/gis/verifica_mappe_numeriche.py",
+   "elenco": "TACITI",
+   "guardato_da": "sorgenti/verifica_prove.py, controllo X4",
+   "motivo": "non ha etichette: confronta le carte con i numeri del file",
+   "natura": "il verificatore non dichiara i suoi controlli"
+  },
+  {
+   "chiave": "sorgenti/gis/verifica_pin.py",
+   "elenco": "TACITI",
+   "guardato_da": "sorgenti/verifica_prove.py, controllo X4",
+   "motivo": "ha i controlli A1-A6 nel codice ma non li dichiara",
+   "natura": "il verificatore non dichiara i suoi controlli"
+  },
+  {
+   "chiave": "sorgenti/gis/verifica_rilievo.py",
+   "elenco": "TACITI",
+   "guardato_da": "sorgenti/verifica_prove.py, controllo X4",
+   "motivo": "ha i controlli V1-V6 nel codice ma non li dichiara",
+   "natura": "il verificatore non dichiara i suoi controlli"
+  },
+  {
+   "chiave": "sorgenti/lingue/verifica_titoli.py",
+   "elenco": "TACITI",
+   "guardato_da": "sorgenti/verifica_prove.py, controllo X4",
+   "motivo": "non ha etichette: e' un generatore che si ferma se qualcosa non torna",
+   "natura": "il verificatore non dichiara i suoi controlli"
+  },
+  {
+   "chiave": "sorgenti/verifica_codici.py",
+   "elenco": "TACITI",
+   "guardato_da": "sorgenti/verifica_prove.py, controllo X4",
+   "motivo": "non ha etichette: e' un controllo solo, sui codici dei facoltativi",
+   "natura": "il verificatore non dichiara i suoi controlli"
+  },
+  {
+   "chiave": "sorgenti/verifica_coerenza.py",
+   "elenco": "TACITI",
+   "guardato_da": "sorgenti/verifica_prove.py, controllo X4",
+   "motivo": "ha i controlli B1-B9 ma non li dichiara in nessuna delle due forme",
+   "natura": "il verificatore non dichiara i suoi controlli"
+  },
+  {
+   "chiave": "sorgenti/verifica_colori.py",
+   "elenco": "TACITI",
+   "guardato_da": "sorgenti/verifica_prove.py, controllo X4",
+   "motivo": "ha i controlli C1-C7 ma non li dichiara in nessuna delle due forme",
+   "natura": "il verificatore non dichiara i suoi controlli"
+  },
+  {
+   "chiave": "videogioco-5-duchi-anno1-ferrara.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "i suoi numeri sono le trenta tappe e i luoghi, e li guarda la catena di `luoghi.md`; qui non c'e' un controllo che legga il documento",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  },
+  {
+   "chiave": "videogioco-5-duchi-anno1-mappa.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "i suoi numeri sono le trapezi e i confini della mappa del primo anno: il controllo degli ambienti guarda il capitolo di `fonti-visive.md`, non questo documento",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  },
+  {
+   "chiave": "videogioco-5-duchi-anno2-penisola.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "nessun controllo legge questo documento; i suoi numeri sono scelte di progetto su trenta tappe, non conteggi di un file generato",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  },
+  {
+   "chiave": "videogioco-5-duchi-anno3-europa.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "come il secondo anno: nessun controllo legge il documento",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  },
+  {
+   "chiave": "videogioco-5-duchi-anno4-mondo.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "come il secondo anno: nessun controllo legge il documento",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  },
+  {
+   "chiave": "videogioco-5-duchi-anno5-mondo.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "come il secondo anno: nessun controllo legge il documento",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  },
+  {
+   "chiave": "videogioco-5-duchi-curricolo.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "i suoi numeri sono scelte di curriculum, non conteggi di un file",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  },
+  {
+   "chiave": "videogioco-5-duchi-esercizi.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "i suoi numeri sono esempi, non conteggi",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  },
+  {
+   "chiave": "videogioco-5-duchi-gioco.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "i suoi numeri descrivono il gioco e non sono un dato da confrontare",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  },
+  {
+   "chiave": "videogioco-5-duchi-itinerari.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "i numeri sono le distanze e i giorni: li calcola `percorsi_calcola.py`, ma nessun controllo li confronta col documento",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  },
+  {
+   "chiave": "videogioco-5-duchi-lingue.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "i suoi numeri sono i 900 titoli e le sei lingue: nessun controllo li confronta col documento, e `lingue/verifica_titoli.py` genera il file dei titoli senza guardare le cifre del capitolo",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  },
+  {
+   "chiave": "videogioco-5-duchi-meccaniche.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "nessun controllo legge questo documento",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  },
+  {
+   "chiave": "videogioco-5-duchi-motore-e-grafica.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "nessun controllo legge questo documento: i suoi numeri sono fps, risoluzioni e dimensioni di finestra",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  },
+  {
+   "chiave": "videogioco-5-duchi-percorsi.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "i numeri sono le distanze: li confronta `percorsi_confronto.py`, che però non cita il documento, quindi la dichiarazione starebbe in N4",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  },
+  {
+   "chiave": "videogioco-5-duchi-quadro-trasversale.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "i suoi numeri sono incroci fra documenti, non conteggi",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  },
+  {
+   "chiave": "videogioco-5-duchi-schema-livelli.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "i suoi numeri sono la forma dello schema, non un dato",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  },
+  {
+   "chiave": "videogioco-5-duchi-tappa-1-01.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "una tappa sola: i suoi numeri sono un esempio, non un conteggio",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  }
+ ],
+ "che_cosa": "I buchi conosciuti del progetto: cioe' le cose che un controllo dichiara di non poter guardare, con il motivo. Un buco che non e' qui non e' un buco che qualcuno sta guardando.",
+ "data": "2026-10-05",
+ "versione": 1
+}

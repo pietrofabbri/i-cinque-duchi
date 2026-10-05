@@ -43,6 +43,10 @@ import re
 import sys
 
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Il registro dei buchi del progetto sta in un file solo:
+# i tre elenchi non si scrivono qui.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import buchi  # noqa: E402
 DOCS = os.path.join(RADICE, "docs")
 INVENTARIO = os.path.join(RADICE, "dati", "numeri_prosa.json")
 README = os.path.join(RADICE, "README.md")
@@ -100,65 +104,20 @@ GUARDATO = {
     "videogioco-5-duchi-ritratti.md": ["sorgenti/art/verifica_immagini.py"],
 }
 
-# **I documenti senza un controllo dei loro numeri, e perché.** Non è una lista
-# di scuse: è il posto dove il buco è scritto, e N2 è rosso se un documento
-# senza controllo non è qui. La ragione conta più del documento: «non ha un
-# dato generato» è una ragione, «non c'è tempo» non lo è.
-SENZA = {
-    "videogioco-5-duchi-anno1-ferrara.md":
-        "i suoi numeri sono le trenta tappe e i luoghi, e li guarda la catena "
-        "di `luoghi.md`; qui non c'e' un controllo che legga il documento",
-    "videogioco-5-duchi-anno1-mappa.md":
-        "i suoi numeri sono le trapezi e i confini della mappa del primo anno: "
-        "il controllo degli ambienti guarda il capitolo di `fonti-visive.md`, "
-        "non questo documento",
-    "videogioco-5-duchi-anno2-penisola.md":
-        "nessun controllo legge questo documento; i suoi numeri sono scelte di "
-        "progetto su trenta tappe, non conteggi di un file generato",
-    "videogioco-5-duchi-anno3-europa.md":
-        "come il secondo anno: nessun controllo legge il documento",
-    "videogioco-5-duchi-anno4-mondo.md":
-        "come il secondo anno: nessun controllo legge il documento",
-    "videogioco-5-duchi-anno5-mondo.md":
-        "come il secondo anno: nessun controllo legge il documento",
-    "videogioco-5-duchi-curricolo.md":
-        "i suoi numeri sono scelte di curriculum, non conteggi di un file",
-    "videogioco-5-duchi-esercizi.md":
-        "i suoi numeri sono esempi, non conteggi",
-    "videogioco-5-duchi-gioco.md":
-        "i suoi numeri descrivono il gioco e non sono un dato da confrontare",
-    "videogioco-5-duchi-itinerari.md":
-        "i numeri sono le distanze e i giorni: li calcola "
-        "`percorsi_calcola.py`, ma nessun controllo li confronta col documento",
-    "videogioco-5-duchi-lingue.md":
-        "i suoi numeri sono i 900 titoli e le sei lingue: nessun controllo li "
-        "confronta col documento, e `lingue/verifica_titoli.py` genera il file "
-        "dei titoli senza guardare le cifre del capitolo",
-    "videogioco-5-duchi-mappe.md":
-        "nessun controllo legge questo documento",
-    "videogioco-5-duchi-meccaniche.md":
-        "nessun controllo legge questo documento",
-    "videogioco-5-duchi-motore-e-grafica.md":
-        "nessun controllo legge questo documento: i suoi numeri sono fps, "
-        "risoluzioni e dimensioni di finestra",
-    "videogioco-5-duchi-percorsi.md":
-        "i numeri sono le distanze: li confronta `percorsi_confronto.py`, che "
-        "però non cita il documento, quindi la dichiarazione starebbe in N4",
-    "videogioco-5-duchi-quadro-trasversale.md":
-        "i suoi numeri sono incroci fra documenti, non conteggi",
-    "videogioco-5-duchi-schema-livelli.md":
-        "i suoi numeri sono la forma dello schema, non un dato",
-    "videogioco-5-duchi-tappa-1-01.md":
-        "una tappa sola: i suoi numeri sono un esempio, non un conteggio",
-}
+# I documenti senza un controllo dei loro numeri, e i motivi.
+#
+# **Non si scrivono qui**: stanno in `dati/buchi_aperto.json`, che è l'unico
+# registro dei buchi del progetto, e si leggono da `sorgenti/buchi.py`. Un
+# elenco in tre file non è un registro. N2 è rosso se un documento non è
+# dichiarato in nessuno dei due posti.
+SENZA = buchi.elenco("SENZA")
 
 # **Le dichiarazioni che N4 non puo' reggere**, e perche'. Sono controlli che
 # guardano il dato di un documento senza nominarlo: il documento descrive il
 # gioco, il controllo guarda il file. Il numero resta nel conto di N5, e non e'
 # una scusa: e' la misura di quanti documenti credono di essere guardati e non
 # lo sono nel senso stretto della parola.
-SENZA_APPOGGIO = {
-}
+SENZA_APPOGGIO = buchi.elenco("SENZA_APPOGGIO")
 
 SEZIONE_CONTO = "## I numeri scritti in prosa"
 CONTI = ("Documenti con un controllo dichiarato", "Documenti senza controllo",

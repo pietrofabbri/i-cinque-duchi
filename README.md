@@ -188,6 +188,7 @@ python3 sorgenti/verifica_coerenza.py              # versioni, file citati, cifr
 python3 sorgenti/verifica_registri.py              # i registri delle modifiche: cinque controlli, R1-R5
 python3 sorgenti/verifica_prove.py                # i controlli sui controlli: sei controlli, X1-X6
 python3 sorgenti/verifica_numeri.py                # i numeri scritti in prosa e chi li guarda: cinque controlli, N1-N5
+python3 sorgenti/verifica_buchi.py                   # il registro dei buchi aperti: cinque controlli, B1-B5
 ```
 `verifica_coerenza.py` è nato da un controllo fatto a mano che trovava **diciannove problemi** in un colpo solo: otto rimandi di versione fermi a prima della revisione del documento che puntavano, un `legame I` su un luogo che esiste, otto immagini respinte che erano otto e non sette, un conto di licenze arrotondato su gruppi che nei dati non esistono. Sono tutti corretti, e tutti i tipi di errore hanno il loro controllo.
 Se il checkout è parziale — cioè se ci sono file che stanno solo sul ramo remoto — il controllo dei file citati va fatto con l'elenco del repository:
@@ -202,17 +203,17 @@ Fino al 5 ottobre 2026 nessuno guardava questi numeri. `python3 sorgenti/verific
 
 | | |
 |---|---|
-| Verificatori nel ramo | **34** |
-| Verificatori che dichiarano i loro controlli | **21** |
+| Verificatori nel ramo | **35** |
+| Verificatori che dichiarano i loro controlli | **22** |
 | Verificatori senza dichiarazione | **13** |
-| Controlli dichiarati in tutto | **135** |
-| Controlli con la prova del difetto | **68** |
+| Controlli dichiarati in tutto | **140** |
+| Controlli con la prova del difetto | **73** |
 | Controlli senza prova | **67** |
-| Prove eseguite da questo controllo | **8** |
+| Prove eseguite da questo controllo | **9** |
 
 **I tredici verificatori che non dichiarano i loro controlli** sono in `TACITI`, dentro `verifica_prove.py`, ciascuno con il motivo. Sono un buco dichiarato, non un buco nascosto: senza quella tabella sarebbero tredici script che il conto non guarda, ed e' la forma piu' comune di una sparizione silenziosa. **I 67 controlli senza prova** sono il debito vero: passano, ma nessuno li ha mai visti fallire. Il numero e' scritto qui perche' sia fermo: quando qualcuno aggiunge una prova, questa riga va aggiornata nello stesso commit, e X6 e' rosso se non e' successo. **I primi due debiti chiusi** sono `verifica_tavolozza.py` (sei controlli, sei difetti) e `verifica_parlato.py` (quattro, quattro). Il metodo e' sempre lo stesso: i controlli prendono i loro input dalla chiamata — `controlla(doc)`, `controlla(doc, dati, lingue)` — invece di leggerli da soli, e la prova fa girare gli stessi controlli su una copia rotta. **Un controllo che legge il file dentro `main()` non ha una prova: non c'e' modo di dargliela.** Con `verifica_parlato.py` e' comparso anche un difetto vero: la frase in testa al file prometteva gia' «quattro controlli, tutti morroni (provati con difetti iniettati)», e nessun difetto era mai stato iniettato. Un numero giusto e una frase sbagliata, la stessa malattia dei numeri invecchiati dei documenti — e a dirlo non era stato nessun controllo.
 
-**X5 esegue le otto prove davvero**, in un processo nuovo, e non si accontenta che l'opzione `--difetti` esista: un'opzione che c'e' e non vede niente e' verde lo stesso. E' X5 che ha trovato, scrivendosi, che `verifica_fonti_visive.py` era gia' rosso da solo.
+**X5 esegue le nove prove davvero**, in un processo nuovo, e non si accontenta che l'opzione `--difetti` esista: un'opzione che c'e' e non vede niente e' verde lo stesso. E' X5 che ha trovato, scrivendosi, che `verifica_fonti_visive.py` era gia' rosso da solo.
 
 ## I numeri scritti in prosa
 
@@ -231,6 +232,21 @@ I7 confronta i numeri che **una** sezione dichiara con il suo file. La regola ch
 **I 17 documenti dichiarano tutti un controllo che esiste e che si appoggia a un riferimento vero** (N4): il codice del controllore nomina il documento o il suo dato. Tre dichiarazioni non reggevano e sono state tolte invece che giustificate — `anno1-mappa.md` non è il capitolo degli ambienti (lo è `fonti-visive.md` §3.6), `verifica_titoli.py` genera un file e non confronta le cifre di `lingue.md`, e `verifica_codici.py` guarda i cataloghi delle persone, che `luoghi.md` non nomina.
 
 **«Documenti interamente guardati: 0»** è il numero che conta davvero: nessun documento è guardato per tutte le sue cifre. Un controllo guarda una sezione, un capitolo ha dodici sezioni, e la copertura vera è parziale in tutti e quattordici. È dichiarato perché un conto che non si può raggiungere è un conto che non serve: il primo passo onesto non è far salire quella percentuale, è scrivere quale sezione di quale documento è guardata.
+
+## Il registro dei buchi aperti
+
+I buchi conosciuti — le cose che un controllo dichiara di non poter guardare — vivevano in **tre dizionari, in tre file**: `TACITI` in `verifica_prove.py`, `SENZA` e `SENZA_APPOGGIO` in `verifica_numeri.py`. Un registro in tre posti non è un registro: cercarlo costa tre ricerche, e quando ne nasce uno in uno solo degli elenchi nessuno lo vede. Ora l'unico posto dove si scrive è **`dati/buchi_aperto.json`**, i tre dizionari lo leggono, e `python3 sorgenti/verifica_buchi.py` (**B1-B5**) tiene il registro onesto.
+
+| | |
+|---|---|
+| Buchi dichiarati | **30** |
+| Verificatori che non dichiarano i controlli | **13** |
+| Documenti senza un controllo dei numeri | **17** |
+| Dichiarazioni senza riscontro nel codice | **0** |
+
+**Ogni voce ha un motivo, e il motivo non è una scusa**: vuoto no, e «non c'è tempo» è fra le frasi che B1 rifiuta, perché dice *quando* manca e non *perché* il buco c'è. Ogni voce dice a chi appartiene e quale controllo la tiene d'occhio, e **B3 non si accontenta che la voce dichiari il proprietario: va a leggere il suo codice** e verifica che l'elenco sia davvero letto da lì. Un elenco dichiarato e non letto è un elenco che qualcuno scrive e nessuno guarda.
+
+**B2 ha trovato un difetto vero il primo giorno**: `videogioco-5-duchi-mappe.md` era nell'elenco dei documenti «senza controllo» — con la frase «nessun controllo legge questo documento» — e nello stesso tempo ne dichiarava quattro. La voce era un ricordo di quando il capitolo non ne aveva. È la forma più comune di voce stantia, un buco chiuso e non tolto dal registro, ed è per questo che B2 confronta le due liste invece di fidarsi che ognuna sia giusta a modo suo.
 
 ## Stato del progetto
 **Fatto**
