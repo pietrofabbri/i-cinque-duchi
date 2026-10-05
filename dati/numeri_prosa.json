@@ -9287,6 +9287,18 @@
    "soggetto": "candidati"
   },
   {
+   "numero": null,
+   "riga": 9,
+   "scritto": "due",
+   "soggetto": "classi"
+  },
+  {
+   "numero": null,
+   "riga": 9,
+   "scritto": "ventitré",
+   "soggetto": "richieste"
+  },
+  {
    "numero": 30,
    "riga": 9,
    "scritto": "trenta",
@@ -9479,118 +9491,136 @@
    "soggetto": "personaggi"
   },
   {
-   "numero": 8,
+   "numero": 9,
    "riga": 207,
-   "scritto": "otto",
+   "scritto": "nove",
    "soggetto": "controlli"
   },
   {
-   "numero": 12,
-   "riga": 220,
-   "scritto": "dodici",
-   "soggetto": "problemi"
-  },
-  {
-   "numero": 12,
-   "riga": 220,
-   "scritto": "12",
+   "numero": 11,
+   "riga": 221,
+   "scritto": "11",
    "soggetto": "candidati"
   },
   {
-   "numero": 12,
-   "riga": 220,
-   "scritto": "dodici",
+   "numero": 11,
+   "riga": 221,
+   "scritto": "undici",
    "soggetto": "voci"
   },
   {
-   "numero": 12,
-   "riga": 220,
-   "scritto": "dodici",
+   "numero": 11,
+   "riga": 221,
+   "scritto": "undici",
    "soggetto": "non"
   },
   {
    "numero": null,
-   "riga": 220,
+   "riga": 221,
    "scritto": "due",
    "soggetto": "problemi"
   },
   {
    "numero": null,
-   "riga": 220,
+   "riga": 221,
    "scritto": "due",
    "soggetto": "posti"
   },
   {
    "numero": 385,
-   "riga": 220,
+   "riga": 221,
    "scritto": "385",
    "soggetto": "fotografie"
   },
   {
    "numero": 5,
-   "riga": 222,
+   "riga": 223,
    "scritto": "cinque",
    "soggetto": "rifiuti"
   },
   {
    "numero": 5,
-   "riga": 222,
+   "riga": 223,
    "scritto": "5",
    "soggetto": "candidati"
   },
   {
    "numero": 4,
-   "riga": 222,
+   "riga": 223,
    "scritto": "quattro",
    "soggetto": "sono"
   },
   {
    "numero": 5,
-   "riga": 222,
+   "riga": 223,
    "scritto": "5",
    "soggetto": "ottobre"
   },
   {
-   "numero": 5,
-   "riga": 222,
-   "scritto": "cinque",
-   "soggetto": "che"
+   "numero": 1119,
+   "riga": 223,
+   "scritto": "1119",
+   "soggetto": "file"
+  },
+  {
+   "numero": 1117,
+   "riga": 223,
+   "scritto": "1117",
+   "soggetto": "titoli"
   },
   {
    "numero": 1120,
-   "riga": 227,
+   "riga": 223,
+   "scritto": "1120",
+   "soggetto": "candidati"
+  },
+  {
+   "numero": 4,
+   "riga": 223,
+   "scritto": "quattro",
+   "soggetto": "della"
+  },
+  {
+   "numero": 8,
+   "riga": 223,
+   "scritto": "otto",
+   "soggetto": "controlli"
+  },
+  {
+   "numero": null,
+   "riga": 223,
+   "scritto": "uno",
+   "soggetto": "script"
+  },
+  {
+   "numero": 1120,
+   "riga": 228,
    "scritto": "1120",
    "soggetto": "candidati"
   },
   {
    "numero": 18,
-   "riga": 227,
+   "riga": 228,
    "scritto": "18",
    "soggetto": "fogli"
   },
   {
    "numero": 10,
-   "riga": 227,
+   "riga": 228,
    "scritto": "dieci",
    "soggetto": "voci"
   },
   {
    "numero": 3,
-   "riga": 227,
+   "riga": 228,
    "scritto": "tre",
    "soggetto": "candidati"
   },
   {
    "numero": 25,
-   "riga": 227,
+   "riga": 228,
    "scritto": "25",
    "soggetto": "caratteri"
-  },
-  {
-   "numero": 30,
-   "riga": 229,
-   "scritto": "trenta",
-   "soggetto": "voci"
   },
   {
    "numero": 30,
@@ -9599,56 +9629,62 @@
    "soggetto": "voci"
   },
   {
+   "numero": 30,
+   "riga": 231,
+   "scritto": "trenta",
+   "soggetto": "voci"
+  },
+  {
    "numero": 27,
-   "riga": 233,
+   "riga": 234,
    "scritto": "27",
    "soggetto": "voci"
   },
   {
    "numero": 27,
-   "riga": 233,
+   "riga": 234,
    "scritto": "27",
    "soggetto": "voci"
   },
   {
    "numero": null,
-   "riga": 233,
+   "riga": 234,
    "scritto": "due",
    "soggetto": "corpi"
   },
   {
    "numero": 30,
-   "riga": 235,
+   "riga": 236,
    "scritto": "trenta",
    "soggetto": "voci"
   },
   {
    "numero": 30,
-   "riga": 236,
+   "riga": 237,
    "scritto": "trenta",
    "soggetto": "voci"
   },
   {
    "numero": 44,
-   "riga": 236,
+   "riga": 237,
    "scritto": "44",
    "soggetto": "emblemi"
   },
   {
    "numero": 900,
-   "riga": 239,
+   "riga": 240,
    "scritto": "900",
    "soggetto": "livelli"
   },
   {
    "numero": null,
-   "riga": 239,
+   "riga": 240,
    "scritto": "due",
    "soggetto": "cose"
   },
   {
    "numero": 72,
-   "riga": 242,
+   "riga": 243,
    "scritto": "72",
    "soggetto": "gli"
   }

@@ -1,7 +1,7 @@
 {
  "versione": 1,
- "data": "2026-10-02",
- "nota": "Proposte, non scelte, e non ancora guardate a vista: le scelte le fa una persona e si registrano in sorgenti/lingue/attestazione_oggetti.json con etichetta e motivo, come per i ritratti.",
+ "data": "2026-10-05",
+ "nota": "Proposte, non scelte, e non ancora guardate a vista: le scelte le fa una persona e si registrano in sorgenti/lingue/attestazione_oggetti.json con etichetta e motivo, come per i ritratti. Metadati riletti da Commons il 2026-10-05 senza ripetere le ricerche: le scelte a vista non cambiano, gli autori si.",
  "risultati": [
   {
    "lingua": "IT",
@@ -11363,7 +11363,7 @@
      "file": "File:Red wine cap.jpg",
      "termino": "vino produzione",
      "licenza": "CC BY 2.0",
-     "autore": "",
+     "autore": "Wollombi",
      "data": "",
      "larghezza": 800,
      "altezza": 600,

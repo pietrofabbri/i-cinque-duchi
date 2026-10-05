@@ -241,6 +241,29 @@ def get(params, tries=4):
     return {"_errore": "insuccesso"}
 
 
+# **Tre chiavi, non due.** `Attribution` è quella che mancava:
+# `File:Red wine cap.jpg` è CC BY 2.0 — dove l'attribuzione è obbligatoria per
+# legge — e dichiara l'autore lì. Leggendone due si respinse un'immagine che la
+# fonte attribuisce, ed è la stessa forma del difetto delle 385 fotografie
+# CC BY-SA respinte per un trattino: non un giudizio, una chiave non guardata.
+CHIAVI_AUTORE = ("Artist", "Credit", "Attribution")
+
+
+def autore_di(meta):
+    """L'autore che la fonte dichiara, o la stringa vuota se non lo dichiara.
+
+    Vuota e non un altro candidato: un file a cui la fonte non attribuisce
+    niente deve restare senza autore, altrimenti eredita quello di un file
+    vicino e l'attribuzione è inventata.
+    """
+    for chiave in CHIAVI_AUTORE:
+        grezzo = (meta.get(chiave, {}) or {}).get("value", "") or ""
+        pulito = re.sub(r"<[^>]+>", " ", grezzo).strip()
+        if pulito:
+            return pulito[:120]
+    return ""
+
+
 def cerca(termini, limite=8):
     """Nomi di file su Commons per un termine, con la licenza di ognuno."""
     out = []
@@ -261,15 +284,13 @@ def cerca(termini, limite=8):
                 return (meta.get(k, {}) or {}).get("value", "") or ""
 
             lic = re.sub(r"<[^>]+>", " ", val("LicenseShortName")) or val("License")
-            # **tre chiavi, non due.** `Attribution` è quella che mancava:
-            # `File:Red wine cap.jpg` è CC BY 2.0 — dove l'attribuzione è
-            # obbligatoria per legge — e dichiara l'autore li'. Leggendone due
-            # si respinse un'immagine che la fonte attribuisce, ed è la stessa
-            # forma del difetto delle 385 fotografie CC BY-SA respinte per un
-            # trattino: non un giudizio, una chiave non guardata.
-            for chiave in ("Artist", "Credit", "Attribution"):
-                if not autore:
-                    autore = re.sub(r"<[^>]+>", " ", val(chiave)).strip()
+            # **`autore` si rilegge a ogni candidato.** Se la variabile sta
+            # fuori dal ciclo, o non esiste affatto, il primo autore letto
+            # finisce su tutti gli altri candidati della stessa risposta: è
+            # quello che succedeva, ed è un difetto che nessuno vede leggendo
+            # una riga, perché la riga è giusta e sbagliata insieme. G9 lo
+            # prende con quattro candidati e una risposta finta.
+            autore = autore_di(meta)
             data = re.sub(r"<[^>]+>", " ", val("DateTimeOriginal")).strip()
             if LIB_NO.search(lic):
                 continue
@@ -279,7 +300,7 @@ def cerca(termini, limite=8):
                 "file": pagina.get("title", ""),
                 "termino": termine,
                 "licenza": lic.strip()[:80],
-                "autore": autore[:120],
+                "autore": autore,
                 "data": data[:60],
                 "larghezza": ii.get("width"),
                 "altezza": ii.get("height"),

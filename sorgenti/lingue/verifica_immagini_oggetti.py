@@ -28,6 +28,11 @@ I controlli:
                   metadati mancanti (la fonte non li dichiara e nessun
                   codice li può far comparire). I due numeri sono
                   quelli che il documento dichiara
+  G9  l'estrattore **eseguito**, non letto: gli altri otto controlli guardano
+                  il file che l'estrattore ha scritto, e un estrattore rotto
+                  produce un file coerente e falso. Qui l'estrattore vero
+                  gira senza rete su una risposta di Commons finta, e ogni
+                  candidato deve portare il proprio autore
 
 Il punto di G6 e G7 è la lezione già imparata con i ritratti, dove una ricerca
 automatica ha restituito un gatto per Renata Viganò e una ceramica iraniana per
@@ -35,6 +40,7 @@ i mercanti di Ferrara. Una ricerca che trova il file «giusto» non ha ancora
 trovato l'oggetto giusto, e G7 lo rende visibile senza guardare le immagini.
 """
 import collections
+import io
 import json
 import os
 import re
@@ -171,7 +177,135 @@ def tutto_a_rischio(voce, termini, candidati):
     return True
 
 
+# **La risposta finta con cui si esercita l'estrattore.** Tre candidati che
+# dicono cose diverse: uno ha l'autore in `Artist`, uno solo in `Attribution`,
+# uno non dichiara niente. Il terzo e' quello che distingue un estrattore
+# corretto da uno che porta l'autore del primo candidato su tutti gli altri:
+# senza di lui, «il primo autore finisce su tutti» passerebbe.
+RISPOSTA_FINTA = {
+    "query": {"pages": {
+        "1": {"title": "File:Primo.jpg", "imageinfo": [{
+            "width": 800, "height": 600, "descriptionurl": "u/1",
+            "extmetadata": {"LicenseShortName": {"value": "CC BY 2.0"},
+                            "Artist": {"value": "AUTORE-PRIMO"}}}]},
+        "2": {"title": "File:Secondo.jpg", "imageinfo": [{
+            "width": 900, "height": 700, "descriptionurl": "u/2",
+            "extmetadata": {"LicenseShortName": {"value": "CC BY-SA 4.0"},
+                            "Artist": {"value": "AUTORE-SECONDO"}}}]},
+        "3": {"title": "File:Terzo.jpg", "imageinfo": [{
+            "width": 900, "height": 700, "descriptionurl": "u/3",
+            "extmetadata": {"LicenseShortName": {"value": "CC0"},
+                            "Attribution": {"value": "Wollombi"}}}]},
+        "4": {"title": "File:Quarto.jpg", "imageinfo": [{
+            "width": 900, "height": 700, "descriptionurl": "u/4",
+            "extmetadata": {"LicenseShortName": {"value": "CC0"}}}]},
+    }},
+}
+# Cosa ci si aspetta da quei quattro candidati, nell'ordine in cui li restituisce
+# l'estrattore: il primo autore, il secondo, quello che sta solo in
+# `Attribution`, e nessuno. L'ultimo e' il caso che distingue tutto.
+ATTESI_FINTI = ["AUTORE-PRIMO", "AUTORE-SECONDO", "Wollombi", ""]
+
+
+def carica_estrattore(percorso=None):
+    """L'estrattore, importato da un percorso dato o dal suo posto solito."""
+    import importlib.util
+    if percorso is None:
+        percorso = os.path.join(BASE, "cerca_immagini_oggetti.py")
+    spec = importlib.util.spec_from_file_location("cerca_immagini_oggetti",
+                                                  percorso)
+    modulo = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(modulo)
+    return modulo
+
+
+def controlla_estrattore(problemi, percorso=None):
+    """G9: l'estrattore gira davvero e ogni candidato porta il suo autore."""
+    try:
+        estrattore = carica_estrattore(percorso)
+    except Exception as errore:  # noqa: BLE001 - il motivo va detto
+        problemi.append("G9 l'estrattore non si puo' caricare: %s" % errore)
+        return
+    estrattore.get = lambda q: RISPOSTA_FINTA
+    estrattore.time.sleep = lambda *a, **k: None
+    try:
+        candidati = estrattore.cerca(["un termine qualsiasi"])
+    except Exception as errore:  # noqa: BLE001 - il motivo va detto
+        problemi.append(
+            "G9 l'estrattore muore su una risposta finta: %s: %s "
+            "(e' il difetto che aveva reso impossibile rigenerare i dati)"
+            % (type(errore).__name__, errore))
+        return
+    if len(candidati) != len(ATTESI_FINTI):
+        problemi.append(
+            "G9 l'estrattore ha restituito %d candidati su %d: la risposta "
+            "finita ne contiene %d"
+            % (len(candidati), len(ATTESI_FINTI), len(ATTESI_FINTI)))
+        return
+    for ottenuto, atteso, nome in zip([c.get("autore", "") for c in candidati],
+                                      ATTESI_FINTI,
+                                      [c.get("file", "?") for c in candidati]):
+        if ottenuto != atteso:
+            problema = "G9 %s: autore %r, la fonte dichiara %r" % (
+                nome, ottenuto, atteso)
+            if ottenuto == ATTESI_FINTI[0] and atteso != ATTESI_FINTI[0]:
+                problema += (" — l'estrattore sta portando l'autore del primo "
+                             "candidato su tutti gli altri")
+            problemi.append(problema)
+
+
+# **Il difetto iniettato, scritto una volta sola e usato come si usa.** Non e'
+# togliere una riga: e' l'autore del primo candidato che resta appeso alla
+# funzione e viene riusato per tutti gli altri. Non e' neppure il difetto di
+# una lista che non riparte da vuoto — e' quello che nasce scrivendo «se non
+# ce n'e' uno, tienilo» invece di «leggilo ogni volta». Le tre righe sostituiscono
+# una riga sola, e la riga che sostituiscono e' l'unica che legge l'autore.
+DIFETTO_AUTORE = (
+    '            autore = getattr(cerca, "_primo", "") or autore_di(meta)\n'
+    '            cerca._primo = autore'
+)
+RIGA_DA_CORROMPERE = "            autore = autore_di(meta)"
+
+
+def prova_difetti():
+    """Il difetto vero, iniettato su una copia dell'estrattore.
+
+    L'estrattore copiato che porta l'autore del primo candidato su tutti gli
+    altri deve essere rosso. Se la prova non morde vuol dire che G9 non sta
+    guardando il codice ma qualcosa d'altro.
+    """
+    import shutil
+    import tempfile
+    vero = os.path.join(BASE, "cerca_immagini_oggetti.py")
+    with io.open(vero, encoding="utf-8") as f:
+        testo = f.read()
+    rotto = testo.replace(RIGA_DA_CORROMPERE, DIFETTO_AUTORE, 1)
+    if rotto == testo:
+        print("   NON INIETTATO G9: l'estrattore non chiama piu' autore_di")
+        print("\ndifetti iniettati: 0, visti: 0, non visti: 1")
+        return 1
+    temporanea = tempfile.mkdtemp(prefix="g9_")
+    try:
+        copia = os.path.join(temporanea, "cerca_immagini_oggetti.py")
+        with io.open(copia, "w", encoding="utf-8") as f:
+            f.write(rotto)
+        problemi = []
+        controlla_estrattore(problemi, copia)
+        visti = [p for p in problemi if p.startswith("G9 ")]
+    finally:
+        shutil.rmtree(temporanea, ignore_errors=True)
+    for p in visti:
+        print("   visto   %s" % p)
+    if not visti:
+        print("   NON VISTO  G9")
+    print("\ndifetti iniettati: 1, visti: %d, non visti: %d"
+          % (len(visti), 0 if visti else 1))
+    return 0 if visti else 1
+
+
 def main():
+    if "--difetti" in sys.argv:
+        return prova_difetti()
     if not os.path.exists(DATI):
         print("manca", DATI)
         return 1
@@ -304,6 +438,9 @@ def main():
                 "metadati mancanti, i candidati sono %d e %d"
                 % (merito, metadati, scarti["merito"], scarti["fonte"]))
 
+    # G9 — l'estrattore, eseguito
+    controlla_estrattore(problemi)
+
     print("candidati respinti: %d in tutto" % (scarti["merito"]
                                               + scarti["fonte"]))
     print("  per merito (il candidato e' stato guardato e non entra): %d"
@@ -325,6 +462,7 @@ def main():
     print("    G7 non dice che l'immagine sia sbagliata: dice che il suo nome")
     print("    non parla dell'oggetto, e quindi che guardarla è la prima cosa.")
     print("immagini già scelte a vista: %d" % scelte)
+    print("G9 l'estrattore e' stato eseguito su una risposta finta, senza rete")
     print("problemi: %d" % len(problemi))
     for p in problemi:
         print("  " + p)

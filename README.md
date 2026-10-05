@@ -78,7 +78,7 @@ riferimenti/mappa-informatica/   mappa delle propedeuticità dell'informatica (2
 | 18 | `videogioco-5-duchi-luoghi-edifici.md` | **Trasversale**: i 95 luoghi del gioco classificati in sette tipi, lo schema del dettaglio per luogo, la decisione su ODbL, il rilievo del terreno come risposta alle altezze mancanti e gli interni degli edifici dell'anno 1 | 0.6 |
 | 19 | `videogioco-5-duchi-furioso.md` | **Anno 5**: i dodici filoni dell'*Orlando furioso*, la regola dei due strati (pin reale, stanza del filone), il tipo `N` del non luogo, le **trenta citazioni** dei livelli più la facoltativa `5-22F`, e la **regola che nessuna stanza ha un disegno proprio** (§4.12) | 0.7 |
 | 20 | `videogioco-5-duchi-lingue.md` | **Trasversale**: il sistema linguistico — sei lingue (italiano, ferrarese, latino, inglese, LIS, greco) per cinque anni, **900 livelli**, l'anatomia di un livello, l'occhio del linguista, le sei associazioni con gli oggetti di interazione e i 900 titoli | 0.2 |
-| 21 | `videogioco-5-duchi-lingue-immagini.md` | **Trasversale**: le **180 immagini degli oggetti di interazione** — 1120 candidati con licenza libera trovati su Commons, la regola delle quattro categorie, le etichette, la misura e la regola del ritaglio, e il difetto della ricerca automatica | 0.6 |
+| 21 | `videogioco-5-duchi-lingue-immagini.md` | **Trasversale**: le **180 immagini degli oggetti di interazione** — 1120 candidati con licenza libera trovati su Commons, la regola delle quattro categorie, le etichette, la misura e la regola del ritaglio, e il difetto della ricerca automatica | 0.7 |
 | 22 | `videogioco-5-duchi-audit.md` | **Trasversale**: la **lista operativa** di tutte le questioni aperte — 118 voci in **16 sezioni**, **34 chiuse, 84 aperte**, 4 bloccanti e 15 importanti, ognuna con pro, contro, valutazione e responsabilità; la **B1 spiegata in parole semplici**. I numeri che questa tabella riporta sono **controllati**, anche quelli in lettere: `sorgenti/lingue/conta_questioni.py` confronta l'audit, i numeri per documento del §4 e i numeri che il `README.md` ne copia, e `prova_difetto_questioni.py` inietta quindici difetti e richiede che siano tutti visti | 0.25 |
 | 23 | `videogioco-5-duchi-percorsi.md` | **Trasversale**: i **percorsi del duca** — i **22 mezzi** con l'anno di attestazione e il controllo di anacronismo per tappa, le tre varianti di percorso, il ritorno come momento degli incontri, e la copertura della mappa con i suoi buhi | 0.6 |
 | 24 | `videogioco-5-duchi-fonti-visive.md` | **Trasversale**: le **fonti visive** — che cosa il gioco ha e che cosa non ha una veste grafica, i fondi geografici verificati, 130 candidati cercati per i cinque buchi, e i due incidenti chiusi come dato il 5 ottobre, le regole di accuratezza su proporzioni, colori e forme, e i sei file che li hanno chiusi: tavolozza, colori delle carte, sagome, fondo di Ferrara, ambienti dei 150 livelli e cime con la quota | 0.20 |
@@ -206,10 +206,10 @@ Fino al 5 ottobre 2026 nessuno guardava questi numeri. `python3 sorgenti/verific
 | Verificatori nel ramo | **35** |
 | Verificatori che dichiarano i loro controlli | **22** |
 | Verificatori senza dichiarazione | **13** |
-| Controlli dichiarati in tutto | **140** |
-| Controlli con la prova del difetto | **73** |
-| Controlli senza prova | **67** |
-| Prove eseguite da questo controllo | **9** |
+| Controlli dichiarati in tutto | **141** |
+| Controlli con la prova del difetto | **82** |
+| Controlli senza prova | **59** |
+| Prove eseguite da questo controllo | **10** |
 | Numeri in prosa confrontati con il codice | **83** |
 | Documenti confrontati almeno una volta | **13** |
 | Documenti senza nessun confronto | **19** |
@@ -218,7 +218,7 @@ Fino al 5 ottobre 2026 nessuno guardava questi numeri. `python3 sorgenti/verific
 
 **X3 confront tutti i documenti, ma non tutti i documenti hanno un numero da confrontare.** Le tre righe in fondo alla tabella dicono la copertura vera, e sono controllate come le altre: un controllo che guarda qualche documento e scrive «i numeri dei documenti sono quelli del codice» mente per gli altri, ed è la stessa forma di sparizione silenziosa che I7 dichiara con «documenti interamente guardati: 0». Fra i documenti senza nessun confronto, undici non nominano un verificatore nemmeno; gli altri lo nominano solo dentro il registro delle modifiche — dove un numero descrive il giorno in cui la riga è stata scritta, e leggerlo come il presente sarebbe un difetto — oppure su righe che ne nominano due insieme, dove non si sa a chi attribuirlo. Dal 5 ottobre X3 confronta anche le **etichette singole**: il «controllo B7 di `verifica_ambienti.py`» è un numero scritto in prosa come «B1-B9», e prima non lo si guardava. Solo se lo script usa quel prefisso, perché `luoghi.md` scrive «R1-R6» e «B7» sulla stessa riga e i due non sono dello stesso script — R1-R6 sono di `ipotesi_luoghi.py`. Senza quella regola il confronto avrebbe inventato un difetto, e un difetto inventato è peggio di nessun difetto: fa perdere la fiducia al controllo che si voleva.
 
-**X5 esegue le nove prove davvero**, in un processo nuovo, e non si accontenta che l'opzione `--difetti` esista: un'opzione che c'e' e non vede niente e' verde lo stesso. E' X5 che ha trovato, scrivendosi, che `verifica_fonti_visive.py` era gia' rosso da solo.
+**X5 esegue le dieci prove davvero**, in un processo nuovo, e non si accontenta che l'opzione `--difetti` esista: un'opzione che c'e' e non vede niente e' verde lo stesso. E' X5 che ha trovato, scrivendosi, che `verifica_fonti_visive.py` era gia' rosso da solo.
 
 ## I numeri scritti in prosa
 
@@ -228,7 +228,7 @@ I7 confronta i numeri che **una** sezione dichiara con il suo file. La regola ch
 |---|---|
 | Documenti con un controllo dichiarato | **14** |
 | Documenti senza controllo | **17** |
-| Numeri in prosa contati | **2583** |
+| Numeri in prosa contati | **2589** |
 | Documenti interamente guardati | **0** |
 | Dichiarazioni senza riscontro nel codice | **0** |
 
