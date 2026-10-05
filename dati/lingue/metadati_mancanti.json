@@ -1,0 +1,151 @@
+{
+ "chiavi_legte": [
+  "Artist",
+  "Credit",
+  "Attribution"
+ ],
+ "data": "2026-10-05",
+ "risultati": [
+  {
+   "esito": {
+    "chiavi_con_valore": [],
+    "chiavi_lette": [
+     "DateTime",
+     "ObjectName",
+     "CommonsMetadataExtension",
+     "Categories",
+     "Assessments",
+     "LicenseShortName",
+     "UsageTerms",
+     "AttributionRequired",
+     "Copyrighted",
+     "Restrictions",
+     "License"
+    ],
+    "classe": "la fonte non dichiara la chiave",
+    "dominio_pubblico": true,
+    "licenza": "Public domain",
+    "valori": {
+     "Artist": "",
+     "Attribution": "",
+     "Credit": ""
+    }
+   },
+   "file": "File:Antonio Allegri da Correggio.jpg"
+  },
+  {
+   "esito": {
+    "chiavi_con_valore": [
+     "Attribution"
+    ],
+    "chiavi_lette": [
+     "DateTime",
+     "ObjectName",
+     "CommonsMetadataExtension",
+     "Categories",
+     "Assessments",
+     "LicenseShortName",
+     "UsageTerms",
+     "AttributionRequired",
+     "Attribution",
+     "LicenseUrl",
+     "Copyrighted",
+     "Restrictions",
+     "License"
+    ],
+    "classe": "noi non lo leggevamo",
+    "dominio_pubblico": false,
+    "licenza": "CC BY 2.0",
+    "valori": {
+     "Artist": "",
+     "Attribution": "Wollombi",
+     "Credit": ""
+    }
+   },
+   "file": "File:Red wine cap.jpg"
+  },
+  {
+   "esito": {
+    "chiavi_con_valore": [],
+    "chiavi_lette": [
+     "DateTime",
+     "ObjectName",
+     "CommonsMetadataExtension",
+     "Categories",
+     "Assessments",
+     "LicenseShortName",
+     "UsageTerms",
+     "AttributionRequired",
+     "Copyrighted",
+     "Restrictions",
+     "License"
+    ],
+    "classe": "la fonte non dichiara la chiave",
+    "dominio_pubblico": true,
+    "licenza": "Public domain",
+    "valori": {
+     "Artist": "",
+     "Attribution": "",
+     "Credit": ""
+    }
+   },
+   "file": "File:The Specials - Protest Songs.png"
+  },
+  {
+   "esito": {
+    "chiavi_con_valore": [],
+    "chiavi_lette": [
+     "DateTime",
+     "ObjectName",
+     "CommonsMetadataExtension",
+     "Categories",
+     "Assessments",
+     "ImageDescription",
+     "LicenseShortName",
+     "UsageTerms",
+     "AttributionRequired",
+     "Copyrighted",
+     "Restrictions",
+     "License"
+    ],
+    "classe": "la fonte non dichiara la chiave",
+    "dominio_pubblico": true,
+    "licenza": "Public domain",
+    "valori": {
+     "Artist": "",
+     "Attribution": "",
+     "Credit": ""
+    }
+   },
+   "file": "File:Yersinia pestis 2.jpg"
+  },
+  {
+   "esito": {
+    "chiavi_con_valore": [],
+    "chiavi_lette": [
+     "DateTime",
+     "ObjectName",
+     "CommonsMetadataExtension",
+     "Categories",
+     "Assessments",
+     "LicenseShortName",
+     "UsageTerms",
+     "AttributionRequired",
+     "Copyrighted",
+     "Restrictions",
+     "License"
+    ],
+    "classe": "la fonte non dichiara la chiave",
+    "dominio_pubblico": true,
+    "licenza": "Public domain",
+    "valori": {
+     "Artist": "",
+     "Attribution": "",
+     "Credit": ""
+    }
+   },
+   "file": "File:Yersinia pestis.jpg"
+  }
+ ],
+ "versione": 1
+}

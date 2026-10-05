@@ -1,0 +1,127 @@
+{
+ "File:Antonio Allegri da Correggio.jpg": {
+  "chiavi_con_valore": [],
+  "chiavi_lette": [
+   "DateTime",
+   "ObjectName",
+   "CommonsMetadataExtension",
+   "Categories",
+   "Assessments",
+   "LicenseShortName",
+   "UsageTerms",
+   "AttributionRequired",
+   "Copyrighted",
+   "Restrictions",
+   "License"
+  ],
+  "classe": "la fonte non dichiara la chiave",
+  "dominio_pubblico": true,
+  "licenza": "Public domain",
+  "valori": {
+   "Artist": "",
+   "Attribution": "",
+   "Credit": ""
+  }
+ },
+ "File:Red wine cap.jpg": {
+  "chiavi_con_valore": [
+   "Attribution"
+  ],
+  "chiavi_lette": [
+   "DateTime",
+   "ObjectName",
+   "CommonsMetadataExtension",
+   "Categories",
+   "Assessments",
+   "LicenseShortName",
+   "UsageTerms",
+   "AttributionRequired",
+   "Attribution",
+   "LicenseUrl",
+   "Copyrighted",
+   "Restrictions",
+   "License"
+  ],
+  "classe": "noi non lo leggevamo",
+  "dominio_pubblico": false,
+  "licenza": "CC BY 2.0",
+  "valori": {
+   "Artist": "",
+   "Attribution": "Wollombi",
+   "Credit": ""
+  }
+ },
+ "File:The Specials - Protest Songs.png": {
+  "chiavi_con_valore": [],
+  "chiavi_lette": [
+   "DateTime",
+   "ObjectName",
+   "CommonsMetadataExtension",
+   "Categories",
+   "Assessments",
+   "LicenseShortName",
+   "UsageTerms",
+   "AttributionRequired",
+   "Copyrighted",
+   "Restrictions",
+   "License"
+  ],
+  "classe": "la fonte non dichiara la chiave",
+  "dominio_pubblico": true,
+  "licenza": "Public domain",
+  "valori": {
+   "Artist": "",
+   "Attribution": "",
+   "Credit": ""
+  }
+ },
+ "File:Yersinia pestis 2.jpg": {
+  "chiavi_con_valore": [],
+  "chiavi_lette": [
+   "DateTime",
+   "ObjectName",
+   "CommonsMetadataExtension",
+   "Categories",
+   "Assessments",
+   "ImageDescription",
+   "LicenseShortName",
+   "UsageTerms",
+   "AttributionRequired",
+   "Copyrighted",
+   "Restrictions",
+   "License"
+  ],
+  "classe": "la fonte non dichiara la chiave",
+  "dominio_pubblico": true,
+  "licenza": "Public domain",
+  "valori": {
+   "Artist": "",
+   "Attribution": "",
+   "Credit": ""
+  }
+ },
+ "File:Yersinia pestis.jpg": {
+  "chiavi_con_valore": [],
+  "chiavi_lette": [
+   "DateTime",
+   "ObjectName",
+   "CommonsMetadataExtension",
+   "Categories",
+   "Assessments",
+   "LicenseShortName",
+   "UsageTerms",
+   "AttributionRequired",
+   "Copyrighted",
+   "Restrictions",
+   "License"
+  ],
+  "classe": "la fonte non dichiara la chiave",
+  "dominio_pubblico": true,
+  "licenza": "Public domain",
+  "valori": {
+   "Artist": "",
+   "Attribution": "",
+   "Credit": ""
+  }
+ }
+}

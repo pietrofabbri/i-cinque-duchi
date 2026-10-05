@@ -261,9 +261,15 @@ def cerca(termini, limite=8):
                 return (meta.get(k, {}) or {}).get("value", "") or ""
 
             lic = re.sub(r"<[^>]+>", " ", val("LicenseShortName")) or val("License")
-            autore = re.sub(r"<[^>]+>", " ", val("Artist")).strip()
-            if not autore:
-                autore = re.sub(r"<[^>]+>", " ", val("Credit")).strip()
+            # **tre chiavi, non due.** `Attribution` è quella che mancava:
+            # `File:Red wine cap.jpg` è CC BY 2.0 — dove l'attribuzione è
+            # obbligatoria per legge — e dichiara l'autore li'. Leggendone due
+            # si respinse un'immagine che la fonte attribuisce, ed è la stessa
+            # forma del difetto delle 385 fotografie CC BY-SA respinte per un
+            # trattino: non un giudizio, una chiave non guardata.
+            for chiave in ("Artist", "Credit", "Attribution"):
+                if not autore:
+                    autore = re.sub(r"<[^>]+>", " ", val(chiave)).strip()
             data = re.sub(r"<[^>]+>", " ", val("DateTimeOriginal")).strip()
             if LIB_NO.search(lic):
                 continue

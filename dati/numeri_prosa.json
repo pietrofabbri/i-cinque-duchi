@@ -9527,98 +9527,128 @@
    "soggetto": "fotografie"
   },
   {
+   "numero": 5,
+   "riga": 222,
+   "scritto": "cinque",
+   "soggetto": "rifiuti"
+  },
+  {
+   "numero": 5,
+   "riga": 222,
+   "scritto": "5",
+   "soggetto": "candidati"
+  },
+  {
+   "numero": 4,
+   "riga": 222,
+   "scritto": "quattro",
+   "soggetto": "sono"
+  },
+  {
+   "numero": 5,
+   "riga": 222,
+   "scritto": "5",
+   "soggetto": "ottobre"
+  },
+  {
+   "numero": 5,
+   "riga": 222,
+   "scritto": "cinque",
+   "soggetto": "che"
+  },
+  {
    "numero": 1120,
-   "riga": 225,
+   "riga": 227,
    "scritto": "1120",
    "soggetto": "candidati"
   },
   {
    "numero": 18,
-   "riga": 225,
+   "riga": 227,
    "scritto": "18",
    "soggetto": "fogli"
   },
   {
    "numero": 10,
-   "riga": 225,
+   "riga": 227,
    "scritto": "dieci",
    "soggetto": "voci"
   },
   {
    "numero": 3,
-   "riga": 225,
+   "riga": 227,
    "scritto": "tre",
    "soggetto": "candidati"
   },
   {
    "numero": 25,
-   "riga": 225,
+   "riga": 227,
    "scritto": "25",
    "soggetto": "caratteri"
   },
   {
    "numero": 30,
-   "riga": 227,
+   "riga": 229,
    "scritto": "trenta",
    "soggetto": "voci"
   },
   {
    "numero": 30,
-   "riga": 228,
+   "riga": 230,
    "scritto": "trenta",
    "soggetto": "voci"
   },
   {
    "numero": 27,
-   "riga": 231,
+   "riga": 233,
    "scritto": "27",
    "soggetto": "voci"
   },
   {
    "numero": 27,
-   "riga": 231,
+   "riga": 233,
    "scritto": "27",
    "soggetto": "voci"
   },
   {
    "numero": null,
-   "riga": 231,
+   "riga": 233,
    "scritto": "due",
    "soggetto": "corpi"
   },
   {
    "numero": 30,
-   "riga": 233,
+   "riga": 235,
    "scritto": "trenta",
    "soggetto": "voci"
   },
   {
    "numero": 30,
-   "riga": 234,
+   "riga": 236,
    "scritto": "trenta",
    "soggetto": "voci"
   },
   {
    "numero": 44,
-   "riga": 234,
+   "riga": 236,
    "scritto": "44",
    "soggetto": "emblemi"
   },
   {
    "numero": 900,
-   "riga": 237,
+   "riga": 239,
    "scritto": "900",
    "soggetto": "livelli"
   },
   {
    "numero": null,
-   "riga": 237,
+   "riga": 239,
    "scritto": "due",
    "soggetto": "cose"
   },
   {
    "numero": 72,
-   "riga": 240,
+   "riga": 242,
    "scritto": "72",
    "soggetto": "gli"
   }
