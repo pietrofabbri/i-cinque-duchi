@@ -1,6 +1,6 @@
 ---
 titolo: I luoghi e le sagome — che cosa serve per disegnarli davvero
-versione: 0.5
+versione: 0.6
 data: 2026-10-05
 autore: Buffy (per pietrofabbri)
 documenti collegati:
@@ -356,7 +356,7 @@ diversi, e il primo metodo — il titolo esatto — lasciava 7 edifici su
 
 ### 6.5 I controlli, e che cosa hanno visto
 
-Sei controlli in `sorgenti/verifica_interni.py`, tutti a exit 0:
+Sette controlli in `sorgenti/verifica_interni.py`, tutti a exit 0:
 
 | | |
 |---|---|
@@ -366,23 +366,38 @@ Sei controlli in `sorgenti/verifica_interni.py`, tutti a exit 0:
 | **I4** | le licenze sono fra quelle accettate e i numeri delle immagini tornano |
 | **I5** | ogni assenza dice perché, e nessuna è un edificio mai cercato |
 | **I6** | le categorie sono di Ferrara, e se stanno su più tappe il file lo dichiara |
+| **I7** | i numeri che questo capitolo dichiara sono quelli che il file ha |
 
-`--difetti` inietta **10 difetti** e li vede tutti. Sono voluti anche
+`--difetti` inietta **11 difetti** e li vede tutti. Sono voluti anche
 quelli che non riguardano il numero: una categoria di un'altra città spacciata
 per edificio, una categoria di opere spacciata per stanza, una categoria
 condivisa fra due tappe e non dichiarata. Un difetto che cambia una cifra si
 vede anche senza il difetto che cambia una parola.
 
-**Tre difetti veri, nessuno visibile a occhio.** Il più grave: il file
-scriveva, sotto il nome del museo che il gioco mostra, le stanze di un museo
-omonimo di un'altra città. Il numero di stanze era giusto e l'edificio falso.
+**I7 è nato da una riga di questo capitolo che era rimasta ferma.** La
+riga 6.6 diceva che il chiostro di Sant'Antonio in Polesine «era stato scartato
+per una regola sul nome» — vera quando fu scritta, e falsa quando la regola
+fu corretta e il chiostro tornò (tappa 1-14). Nessuno l'aveva riletta: è la
+malattia di questa sessione nella forma più semplice, **una riga scritta una
+volta e non riscritta**, e la cura non è rileggerla ogni volta: è un controllo
+che confronta i numeri del capitolo con quelli del file, per etichetta.
+
+Il difetto che lo prova è voluto, ed è l'unico che la prova non inietta nei
+dati: **scrive il capitolo alterato in un file temporaneo**, lo fa guardare e
+poi lo cancella. La prova non tocca mai il documento vero.
+
+**Quattro difetti veri, nessuno visibile a occhio**, tutti e quattro della
+stessa forma — un numero giusto e una frase sbagliata. Li elenca il registro
+qui sotto; il più grave è il terzo: il file scriveva, sotto il nome del museo
+che il gioco mostra, le stanze di un museo omonimo di un'altra città. Il
+numero di stanze era giusto e l'edificio falso.
 
 ### 6.6 Cosa c'è da fare con questi interni
 
 | | |
 |---|---|
 | **le 41 stanze come ambienti di gioco** | il campo che manca è `ambiente`: percorso, uscita, che cosa si può fare dentro |
-| i 12 edifici con categoria ma senza stanze | il chiostro di Sant'Antonio in Polesine c'è ma era stato scartato per una regola sul nome; va guardato caso per caso, non allargato alla cieca |
+| i 12 edifici con categoria ma senza stanze | le sottocategorie ci sono e sono scartate tutte, con il motivo in `non_stanze`. I motivi, contati sul file: nessuna parola di ambiente nel nome della stanza: il nome non dichiara che sia una stanza (22 volte), le immagini storiche non sono un interno (3 volte), il nome comincia col nome di un'istituzione: è la stessa cosa detta altrimenti, non un ambiente fra gli ambienti (3 volte). Le esclusioni si guardano una per una: il chiostro di Sant'Antonio in Polesine era fra le vittime di una regola sbagliata sul nome ed è tornato quando la regola è stata corretta (tappa 1-14) |
 | le **piante** | nessuna fonte libera le dà: il WFS del Comune dà sagomi, non muri interni |
 | **le fotografie scaricate** | qui si interroga e si decide, come in `cerca_ritratti.py`: il download è un'altra fase |
 
@@ -399,6 +414,33 @@ omonimo di un'altra città. Il numero di stanze era giusto e l'edificio falso.
 | le **dimensioni** delle piazze | nessuna fonte le dà per iscritto: o si rilevano dal WFS o restano vuote |
 
 ## 8. Il registro delle modifiche
+
+### v0.6 — 05/10/2026
+
+**Una riga di questo capitolo era rimasta ferma, e la cura è un controllo che
+confronta i numeri del capitolo con quelli del file.**
+
+La riga 6.6 — «i dodici edifici con categoria ma senza stanze» — diceva che il
+chiostro di Sant'Antonio in Polesine «c'è ma era stato scartato per una regola
+sul nome». La frase era vera quando fu scritta; la regola è stata corretta
+nello stesso giorno e il chiostro è tornato, nella tappa 1-14. Nessuno l'aveva
+riletta, perché **una riga scritta una volta e non riscritta non lascia traccia
+nei controlli dei numeri**: il dato muove, la frase no, e nessuno li confronta.
+
+Il **controllo I7** confronta i numeri che la sezione §6 dichiara con quelli
+che `dati/interni_edifici.json` ha, per etichetta e non per posizione, e li
+confronta anche quando il numero sta nella cella che porta l'etichetta («i 12
+edifici con categoria ma senza stanze») e non in quella dopo. Guarda anche il
+numero dei controlli che questo capitolo dichiara in prosa. Il difetto che lo
+prova scrive il capitolo alterato in un file temporaneo, lo fa guardare e poi
+lo cancella: **la prova non tocca mai il documento vero**.
+
+La riga 6.6 non è stata corretta a mano ma **riscritta dal file**: i motivi di
+esclusione degli edifici che hanno una categoria e nessuna stanza sono contati
+sul dato, così la riga non può invecchiare un secondo giro. E il paragrafo
+sui difetti diceva «Tre difetti veri» raccontandone uno solo, mentre il
+registro ne elenca quattro: due numeri che non tornavano fra loro nello stesso
+capitolo, che è la stessa malattia detta in un'altra lingua.
 
 ### v0.5 — 05/10/2026
 

@@ -16,6 +16,8 @@ uno zero.
 | **I3** | ogni stanza è una stanza per la regola dichiarata, e ogni esclusione porta il motivo |
 | **I4** | ogni licenza dichiarata è fra quelle accettate, e il numero delle immagini libere è contato |
 | **I5** | ogni assenza porta il perché, e nessun edificio è dichiarato assente per non averlo cercato |
+| **I6** | le categorie sono di Ferrara, e quelle condivise fra più tappe sono dichiarate |
+| **I7** | i numeri che il capitolo §6 dichiara sono quelli che il file ha |
 
 Uso:  python3 sorgenti/verifica_interni.py
       python3 sorgenti/verifica_interni.py --difetti    # prova che i controlli vedano
@@ -23,12 +25,33 @@ Uso:  python3 sorgenti/verifica_interni.py
 import io
 import json
 import os
+import re
 import sys
 
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INTERNI = os.path.join(RADICE, "dati", "interni_edifici.json")
 AMBIENTI = os.path.join(RADICE, "dati", "ambienti_livelli.json")
 GENERATORE = os.path.join(RADICE, "sorgenti", "interni_edifici.py")
+CAPITOLO = os.path.join(RADICE, "docs", "videogioco-5-duchi-luoghi-edifici.md")
+
+# Le etichette che il capitolo scrive, e il numero che ci deve essere dietro.
+# **La mappa è dichiarata qui e non nel capitolo**: il capitolo scrive
+# «stanze trovate», il file chiama la chiave `stanze`, e se le due cose
+# divergono nessuno se ne accorgerebbe finché i numeri non diventano falsi.
+NUMERI_IN_PAROLE = {"tre": 3, "quattro": 4, "cinque": 5, "sei": 6,
+                   "sette": 7, "otto": 8, "nove": 9, "dieci": 10}
+
+ETICHETTE = {
+    "edifici dell\'anno 1": "edifici",
+    "con una categoria di Commons": "edifici_con_categoria",
+    "con almeno una stanza": "edifici_con_stanze",
+    "stanze trovate": "stanze",
+    "stanze con almeno una fotografia libera": "stanze_con_immagine_libera",
+    "fotografie, tutte con licenza libera dichiarata": "immagini_libere",
+    "categorie di Commons condivise da più tappe": "categorie_condivise",
+    "edifici dichiarati senza categoria, con il perché": "senza_categoria",
+    "edifici con categoria ma senza stanze": "senza_stanze",
+}
 
 
 def leggi(percorso):
@@ -265,6 +288,105 @@ def i6_la_condivisione(dati, ambienti):
     return problemi
 
 
+# ---------------------------------------------------------------- I7
+def i7_il_capitolo(dati, ambienti):
+    """Il capitolo dichiara i numeri del file, e i numeri sono quelli.
+
+    Il capitolo §6 di `luoghi-edifici.md` scrive una tabella di numeri: sono
+    gli stessi del file, ma scritti in un altro posto. Senza un controllo che
+    li confronti sono due dichiarazioni indipendenti dello stesso fatto, e la
+    prima a muoversi muove la seconda — che è esattamente quello che è
+    successo con la riga sul chiostro di Sant'Antonio in Polesine: la frase
+    era vera quando fu scritta e falsa quando la regola fu corretta, e nessuno
+    l'aveva riletta.
+
+    Il confronto è per **etichetta**, non per posizione: una riga in più nel
+    capitolo non deve spostare il resto.
+    """
+    problemi = []
+    if not os.path.exists(CAPITOLO):
+        return ["I7 il capitolo %s non c'è: i numeri che dichiara non sono "
+                "controllati da nessuno" % CAPITOLO]
+    testo = io.open(CAPITOLO, encoding="utf-8").read()
+    i = testo.find("## 6. Gli interni")
+    if i < 0:
+        return ["I7 il capitolo non ha la sezione 6: i numeri che dichiara non "
+                "sono controllati da nessuno"]
+    sezione = testo[i:]
+    r = dati["riepilogo"]
+    valori = {
+        "edifici": r["edifici"],
+        "edifici_con_categoria": r["edifici_con_categoria"],
+        "edifici_con_stanze": r["edifici_con_stanze"],
+        "stanze": r["stanze"],
+        "stanze_con_immagine_libera": r["stanze_con_immagine_libera"],
+        "immagini_libere": r["immagini_libere"],
+        "categorie_condivise": r["categorie_condivise"],
+        "senza_categoria": len([e for e in dati["edifici"]
+                                if not e["categoria_commons"]]),
+        "senza_stanze": len([e for e in dati["edifici"]
+                             if e["categoria_commons"] and not e["stanze"]]),
+    }
+    visti = 0
+    for etichetta, chiave in sorted(ETICHETTE.items()):
+        # **la riga di tabella che porta quell'etichetta**, e il primo numero
+        # che c'è dentro. La cella del numero può essere la stessa che porta
+        # l'etichetta — «| i 12 edifici con categoria ma senza stanze | …» —
+        # o quella dopo — «| stanze trovate | 41 |» — e un confronto che
+        # cerca il numero solo nella cella successiva chiama «non dichiarato»
+        # una riga che lo dichiara.
+        riga = None
+        for candidato in sezione.splitlines():
+            if candidato.startswith("|") and etichetta in candidato:
+                riga = candidato
+                break
+        # l'etichetta si toglie prima: «edifici dell'anno 1» porta un numero
+        # dentro il nome, e senza toglierlo il confronto legge l'anno come se
+        # fosse il conto degli edifici
+        m = re.search(r"(\d+)", riga.replace(etichetta, " ")) if riga else None
+        if not m:
+            problemi.append("I7 il capitolo non dichiara nessun numero per "
+                            "«%s»: l'etichetta è nella mappa dei numeri e "
+                            "non è nella sezione" % etichetta)
+            continue
+        visti += 1
+        scritto = int(m.group(1))
+        if scritto != valori[chiave]:
+            problemi.append("I7 il capitolo dice %s = %d e il file ha %d"
+                            % (etichetta, scritto, valori[chiave]))
+    # e il numero dei difetti, che il capitolo dichiara e che sta in questo file
+    m = re.search(r"inietta \*\*(\d+) difetti\*\*", sezione)
+    if m:
+        visti += 1
+        if int(m.group(1)) != len(DIFETTI):
+            problemi.append("I7 il capitolo dice %s difetti iniettati e questo "
+                            "file ne ha %d" % (m.group(1), len(DIFETTI)))
+    else:
+        problemi.append("I7 il capitolo non dichiara quanti difetti inietta: "
+                        "il numero c'è e nessuno lo confronta")
+    # e il numero dei controlli, che il capitolo scrive in prosa: «Sette
+    # controlli in `verifica_interni.py`». È un numero come gli altri, e
+    # invecchia come gli altri — quindi anche lui viene guardato, con una mappa
+    # di parole dichiarata qui e non nel capitolo.
+    m = re.search(r"(?i)\b(tre|quattro|cinque|sei|sette|otto|nove|dieci)"
+                  r" controlli in `?sorgenti/verifica_interni\.py", sezione)
+    if m:
+        visti += 1
+        scritto = NUMERI_IN_PAROLE[m.group(1).lower()]
+        if scritto != len(CONTROLLI):
+            problemi.append("I7 il capitolo dice %s controlli e questo file ne "
+                            "ha %d" % (m.group(1).lower(), len(CONTROLLI)))
+    else:
+        problemi.append("I7 il capitolo non dichiara quanti controlli ha il "
+                        "verificatore: il numero c'è e nessuno lo confronta")
+
+    if visti < len(ETICHETTE):
+        problemi.append("I7 il capitolo dichiara %d numeri su %d: %d righe non "
+                        "hanno nessun controllo che le guardi"
+                        % (visti, len(ETICHETTE), len(ETICHETTE) - visti))
+    return problemi
+
+
 CONTROLLI = (
     ("I1", "ogni tappa dell'anno 1 c'è negli interni, una volta sola",
      i1_la_lista),
@@ -278,6 +400,8 @@ CONTROLLI = (
      i5_le_assenze),
     ("I6", "una categoria è di Ferrara, e se sta su più tappe il file lo dice",
      i6_la_condivisione),
+    ("I7", "i numeri che il capitolo dichiara sono quelli del file",
+     i7_il_capitolo),
 )
 
 
@@ -321,6 +445,10 @@ DIFETTI = (
      "non di un ambiente"),
     ("I6", "categoria condivisa non dichiarata",
      "si fa trovare la stessa categoria sotto due tappe senza dichiararlo"),
+    ("I7", "numero del capitolo fermo",
+     "si scrive nel capitolo un numero che il file non ha: la riga resta "
+     "vera finché il dato non si muove, e allora è falsa e nessuno la "
+     "rilette"),
 )
 
 
@@ -411,6 +539,43 @@ def main():
     if "--difetti" in sys.argv:
         visti = 0
         for controllo, nome, spiegazione in DIFETTI:
+            if controllo == "I7":
+                # **il difetto è nel capitolo, non nei dati.** Si scrive una
+                # copia alterata in un file temporaneo, si fa guardare quella,
+                # e si rimette tutto com'era: la prova non tocca mai il
+                # documento vero, che è la regola che vale per tutte le prove
+                # di questa famiglia.
+                import shutil
+                import tempfile
+                fd, copia_cap = tempfile.mkstemp(suffix=".md")
+                os.close(fd)
+                shutil.copyfile(CAPITOLO, copia_cap)
+                with io.open(copia_cap, encoding="utf-8") as f:
+                    testo = f.read()
+                numero = dati["riepilogo"]["stanze"]
+                alterato = testo.replace("| stanze trovate | %d |" % numero,
+                                         "| stanze trovate | %d |"
+                                         % (numero + 3), 1)
+                if alterato == testo:
+                    os.unlink(copia_cap)
+                    print("   NON PROVATO %-3s %s" % (controllo, nome))
+                    continue
+                with io.open(copia_cap, "w", encoding="utf-8") as f:
+                    f.write(alterato)
+                salvataggio = CAPITOLO
+                globals()["CAPITOLO"] = copia_cap
+                try:
+                    trovati = [p for c, p in problemi(dati, ambienti)
+                               if c == controllo]
+                finally:
+                    globals()["CAPITOLO"] = salvataggio
+                    os.unlink(copia_cap)
+                if trovati:
+                    visti += 1
+                    print("   visto   %-3s %s" % (controllo, nome))
+                else:
+                    print("   NON VISTO %-3s %s" % (controllo, nome))
+                continue
             copia, _ = inietta(dati, ambienti, (controllo, nome, spiegazione))
             trovati = [p for c, p in problemi(copia, ambienti)
                        if c == controllo]
