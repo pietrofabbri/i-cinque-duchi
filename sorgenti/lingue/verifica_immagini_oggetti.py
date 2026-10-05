@@ -16,7 +16,8 @@ I controlli:
   G3  misura      ogni candidato è abbastanza grande per la scheda del gioco
   G4  proporzione **per voce**: esiste almeno un candidato con la forma giusta
                   per entrare nella scheda senza essere straziato dal ritaglio
-  G5  completezza  autore e indirizzo ci sono in ogni candidato
+  G5  completezza  l'indirizzo c'è in ogni candidato, e l'autore c'è quando la
+                  licenza lo richiede: in pubblico dominio non lo richiede
   G6  pertinenza   dichiarata, non automatica: quante voci restano da guardare
                   a vista e quante rischiano di avere un'immagine sbagliata
   G7  scivolamento  **avviso, non problema**: nessun candidato della voce nomina
@@ -71,18 +72,31 @@ LIB_OK = re.compile(
     r"public domain|pubblico dominio|\bpd\b|cc0|no restrictions"
     r"|cc[- ]?by(?![a-ns])|cc[- ]?by[- ]sa|attribution", re.I)
 LIB_NO = re.compile(r"non[- ]?commercial|fair use|\bcc by[- ]nc|no deriv", re.I)
+# **Le licenze che obbligano a nominare l'autore.** Solo le Creative Commons con
+# attribuzione: in pubblico dominio e in CC0 l'opera si puo' usare senza dire di
+# chi e', e chiedere un autore che la legge non chiede respinse quattro
+# immagini che si potevano usare legittimamente.
+LICENZA_ATTRIBUZIONE = re.compile(r"cc[- ]?by", re.I)
 
 
 def candito_buono(c):
     """Un candidato che si può usare: licenza libera, abbastanza grande, con
-    autore e indirizzo. Non dice che sia l'oggetto giusto: quello lo dice una
-    persona."""
-    if LIB_NO.search(c.get("licenza", "")):
+    l'indirizzo, e con l'autore solo se la licenza lo richiede.
+
+    Non dice che sia l'oggetto giusto: quello lo dice una persona.
+    """
+    licenza = c.get("licenza", "")
+    if LIB_NO.search(licenza):
         return False, "licenza non libera"
-    if not LIB_OK.search(c.get("licenza", "")):
+    if not LIB_OK.search(licenza):
         return False, "licenza non riconosciuta"
-    if not c.get("autore") or not c.get("url"):
-        return False, "mancano autore o indirizzo"
+    # **L'indirizzo serve sempre**: e' la via per ritrovare il file e da' la
+    # provenienza. Senza indirizzo non si sa da dove venga un'immagine, e
+    # quello e' un difetto nostro, non della fonte.
+    if not c.get("url"):
+        return False, "manca l'indirizzo"
+    if LICENZA_ATTRIBUZIONE.search(licenza) and not c.get("autore"):
+        return False, "manca l'autore che la licenza richiede"
     larghezza = c.get("larghezza") or 0
     altezza = c.get("altezza") or 0
     if not larghezza or not altezza:
@@ -103,7 +117,8 @@ CLASSE = {
     "licenza non libera": ("G2", "merito"),
     "licenza non riconosciuta": ("G2", "fonte"),
     "troppo piccola": ("G3", "merito"),
-    "mancano autore o indirizzo": ("G5", "fonte"),
+    "manca l'indirizzo": ("G5", "fonte"),
+    "manca l'autore che la licenza richiede": ("G5", "fonte"),
     "mancano le dimensioni": ("G5", "fonte"),
 }
 DICHIARATO = re.compile(

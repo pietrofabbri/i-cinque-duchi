@@ -13,13 +13,24 @@ difetto produce: senza, la prova guarderebbe la prima riga dell'output, che
 puo' essere quella di un controllo diverso, e una prova che guarda la riga
 sbagliata verde e non sa niente.
 
-I difetti sono cinque e coprono i tre controlli:
+I difetti sono sei e coprono i quattro controlli:
 
   E1  un file promesso e non scritto            -> D1
   E2  un file che c'e' ma non e' un PNG        -> D1
   E3  una misura dichiarata diversa dalla vera  -> D2
   E4  due livelli con lo stesso disegno         -> D3
+  E6  il file si annuncia come un PNG e non lo e' -> D4
   E5  una tappa dell'anno 1 senza disegno       -> D1
+
+L'ordine e' quello in cui il codice li inietta, e non quello dei numeri perche'
+**E6 ed E5 sono gia' etichette del progetro**: in `anno1-ferrara.md` segnano le
+epoche di Ferrara (E5 Studio, E6 pontificia). Rinumerarli qui non romperebbe
+nessun riferimento — nessuno cita queste lettere della prova — ma due E5 che
+volgono dire cose diverse nello stesso progetto costano piu' di una numerazione
+disordinata. La prova li inietta nell'ordine del codice, e li dichiara tutti e sei:
+una prova che ne dichiara cinque e ne inietta sei e' una prova che mente sul
+proprio conto, ed e' la prima cosa che va letta quando si cerca di capire se ha
+guardato tutto.
 
 Uso:  python3 sorgenti/art/prova_difetto_disegni.py
 """
