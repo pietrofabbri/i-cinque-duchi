@@ -14,11 +14,11 @@
  "conti": {
   "mezzi": 21,
   "storici": 16,
-  "con_immagine": 6,
-  "storici_senza_immagine": 10,
-  "storici_senza_ricerca": 5,
+  "con_immagine": 11,
+  "storici_senza_immagine": 5,
+  "storici_senza_ricerca": 0,
   "fantastici_con_segno": 5,
-  "candidati_esaminati": 41
+  "candidati_esaminati": 46
  },
  "mezzi": [
   {
@@ -60,7 +60,7 @@
    "scelta_da": "ricerca del 02/10/2026, scelta sui metadati",
    "perche": "una mulattiera del San Gottardo: la strada delle mule che e' il modo di trasporto dell'Europa preferita dai merciai, ed e' italiana",
    "riserva": "1805 e non Quattrocento; il gioco descrive «la bestia da soma delle vie postali» e questa e' l'immagine che lo dice senza mentire",
-   "attribuzione": "Peter Birmann - The Devil's Bridge in the Schöllenen Gorge on the Way across the St. Gotthard Pass with a Mule Train, before 1805 - Google Art Project.jpg, Peter Birmann, 1805"
+   "attribuzione": "Peter Birmann - The Devil's Bridge in the Schöllenen Gorge on the Way across the St. Gotthard Pass with a Mule Train, before 1805 - Google Art Project.jpg, Peter Birmann, before 1805"
   },
   {
    "mezzo": "cavallo",
@@ -116,7 +116,7 @@
    "scelta_da": "ricerca del 02/10/2026, scelta sui metadati",
    "perche": "l'unica immagine di galera veneziana fra i candidati, e la Venezia e' il porto del gioco",
    "riserva": "autore ignoto nel file e 735x516 px: e' la piu' piccola del lotto, e l'attribuzione porta «autore non dichiarato»",
-   "attribuzione": "Galea veneziana del Provveditore d'Armata imbandierata.jpg, autore non dichiarato, 1700"
+   "attribuzione": "Galea veneziana del Provveditore d'Armata imbandierata.jpg, autore non dichiarato, 1700-01-01"
   },
   {
    "mezzo": "nave",
@@ -142,7 +142,7 @@
    "scelta_da": "ricerca del 02/10/2026, scelta sui metadati",
    "perche": "la rotta costiera dei velieri portoghesi, che e' il viaggio del gioco",
    "riserva": "circa 1540, e il gioco descrive un veliero latino: la somiglianza e' dichiarata, non nascosta",
-   "attribuzione": "Portuguese Carracks off a Rocky Coast.jpg, autore non dichiarato, 1540"
+   "attribuzione": "Portuguese Carracks off a Rocky Coast.jpg, autore non dichiarato, circa 1540"
   },
   {
    "mezzo": "carovana",
@@ -194,7 +194,7 @@
    "scelta_da": "ricerca del 02/10/2026, scelta sui metadati",
    "perche": "una diligenza di strada intera, non un dettaglio: 1888, e la diligenza del gioco e' delle poste",
    "riserva": "l'attribuzione porta «Vincent van Gogh,1888»; fra i candidati c'era anche una stampa di Abel Hold, che si e' scelto di non usare",
-   "attribuzione": "Vincent van Gogh - Tarascon Stagecoach - L.1988.62.11 - Princeton University Art Museum.jpg, Vincent van Gogh, 1888"
+   "attribuzione": "Vincent van Gogh - Tarascon Stagecoach - L.1988.62.11 - Princeton University Art Museum.jpg, Vincent van Gogh, October 1888"
   },
   {
    "mezzo": "pipa",
@@ -235,7 +235,7 @@
    "scelta_da": "ricerca del 02/10/2026, scelta sui metadati",
    "perche": "una ferrovia italiana del 1890, che e' la prima ferrovia del gioco",
    "riserva": "641x393 px e una foto di giornale: misura piccola dichiarata, l'immagine puo' stare solo come icona",
-   "attribuzione": "Ferrovia Marmifera Carrara -1890.jpg, L'Eco del Carrione - 1890, 1890"
+   "attribuzione": "Ferrovia Marmifera Carrara -1890.jpg, L'Eco del Carrione - 1890, 18/19 maggio 1890"
   },
   {
    "mezzo": "aereo",
@@ -244,13 +244,24 @@
    "km_giorno": 900,
    "persone": 300,
    "descrizione": "volo di linea, con il tempo di attesa all'aeroporto",
-   "immagine": null,
-   "vuoto": "**i due candidati sono il volo turistico sugli aerei da giardinaggio** del §5: nessuno dei due e' un aereo di linea",
+   "immagine": {
+    "file": "File:Lockheed L-1649 Constellation TWA.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Lockheed_L-1649_Constellation_TWA.jpg",
+    "licenza": "Public domain",
+    "autore": "NACA",
+    "data": "",
+    "px": [
+     2481,
+     1901
+    ],
+    "termine": null
+   },
+   "vuoto": null,
    "segno": null,
-   "scelta_da": "ricerca del 02/10/2026",
-   "perche": null,
-   "riserva": null,
-   "attribuzione": null
+   "scelta_da": "ricerca del 02/10/2026, scelta sui metadati",
+   "perche": "un aereo di linea della TWA in volo alla fine degli anni Cinquanta, che e' esattamente «volo di linea, con il tempo di attesa all'aeroporto»",
+   "riserva": "la pagina dichiara «Unknown date»: la data non c'e' e il file porta «senza data» invece di un anno inventato",
+   "attribuzione": "Lockheed L-1649 Constellation TWA.jpg, NACA, senza data"
   },
   {
    "mezzo": "crociera",
@@ -259,13 +270,24 @@
    "km_giorno": 200,
    "persone": 2000,
    "descrizione": "nave passeggeri: il tempo di attesa è il vero costo",
-   "immagine": null,
-   "vuoto": "nessuna ricerca: la ricerca del 02/10 ha coperto undici mezzi su ventuno e questa voce non e' fra quelle",
+   "immagine": {
+    "file": "File:Cunard White Star Queen Elizabeth.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Cunard_White_Star_Queen_Elizabeth.jpg",
+    "licenza": "Public domain",
+    "autore": "Cunard White Star Line",
+    "data": "1940s",
+    "px": [
+     3302,
+     2072
+    ],
+    "termine": null
+   },
+   "vuoto": null,
    "segno": null,
-   "scelta_da": "nessuna ricerca",
-   "perche": null,
-   "riserva": null,
-   "attribuzione": null
+   "scelta_da": "ricerca del 02/10/2026, scelta sui metadati",
+   "perche": "la Queen Elizabeth del 1940, che e' il primo transatlantico di linea che il gioco puo' mostrare: il tempo di attesa all'aeroporto e' il costo vero, e qui e' una nave",
+   "riserva": "**una cartolina degli anni Quaranta**, non una fotografia: la pagina lo dichiara e il progetto lo dichiara con lei",
+   "attribuzione": "Cunard White Star Queen Elizabeth.jpg, Cunard White Star Line, 1940s"
   },
   {
    "mezzo": "moto",
@@ -274,13 +296,24 @@
    "km_giorno": 250,
    "persone": 2,
    "descrizione": "moto: 500 km al giorno con due soste, e le soste sono il costo vero",
-   "immagine": null,
-   "vuoto": "nessuna ricerca, come la crociera",
+   "immagine": {
+    "file": "File:1953HondaCub.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:1953HondaCub.jpg",
+    "licenza": "CC BY 4.0",
+    "autore": "DrReload",
+    "data": "2016-10-02",
+    "px": [
+     5472,
+     3648
+    ],
+    "termine": null
+   },
+   "vuoto": null,
    "segno": null,
-   "scelta_da": "nessuna ricerca",
-   "perche": null,
-   "riserva": null,
-   "attribuzione": null
+   "scelta_da": "ricerca del 02/10/2026, scelta sui metadati",
+   "perche": "una Honda Cub del 1953, che e' la moto che copre cinquecento chilometri con due soste",
+   "riserva": "la foto e' del 2016 e il mezzo e' del 1953: la data che si dichiara e' quella della foto, e il 1953 resta nel nome del file",
+   "attribuzione": "1953HondaCub.jpg, DrReload, 2016-10-02"
   },
   {
    "mezzo": "sci",
@@ -289,13 +322,24 @@
    "km_giorno": 40,
    "persone": 2,
    "descrizione": "sci da montagna: 30 km/h di media, e la salita si paga",
-   "immagine": null,
-   "vuoto": "nessuna ricerca, come la crociera",
+   "immagine": {
+    "file": "File:Diagonal slalom turn by Rimfors in Riksgränsen 1950s.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Diagonal_slalom_turn_by_Rimfors_in_Riksgr%C3%A4nsen_1950s.jpg",
+    "licenza": "CC BY-SA 4.0",
+    "autore": "Fyyfabian",
+    "data": "1955-04-01",
+    "px": [
+     3487,
+     2678
+    ],
+    "termine": null
+   },
+   "vuoto": null,
    "segno": null,
-   "scelta_da": "nessuna ricerca",
-   "perche": null,
-   "riserva": null,
-   "attribuzione": null
+   "scelta_da": "ricerca del 02/10/2026, scelta sui metadati",
+   "perche": "uno slalom diagonale del 1955 con la scuola di sci: la salita si paga, e l'immagine e' una lezione",
+   "riserva": "la data 1955 e' dichiarata dalla pagina; il nome contiene una vocale scandinava e resta cosi' com'e'",
+   "attribuzione": "Diagonal slalom turn by Rimfors in Riksgränsen 1950s.jpg, Fyyfabian, 1955-04-01"
   },
   {
    "mezzo": "elicottero",
@@ -305,9 +349,9 @@
    "persone": 4,
    "descrizione": "volo interno: la rotta più breve in assoluto, il costo più alto",
    "immagine": null,
-   "vuoto": "nessuna ricerca, come la crociera",
+   "vuoto": "la ricerca del 05/10 ha trovato un Bell 47 a **455x319** e una squadriglia di elicotteri a **1109x785**: il gioco non mostra mezzi a due cifre di lato, e un'immagine che il motore deve ingrandire di sei volte e' un'immagine rotta",
    "segno": null,
-   "scelta_da": "nessuna ricerca",
+   "scelta_da": "ricerca del  05/10",
    "perche": null,
    "riserva": null,
    "attribuzione": null
@@ -319,13 +363,24 @@
    "km_giorno": 30,
    "persone": 1,
    "descrizione": "mezzo urbano: 20 km/h, e serve solo per l'ultimo tratto",
-   "immagine": null,
-   "vuoto": "nessuna ricerca, come la crociera",
+   "immagine": {
+    "file": "File:Vespa N 125cc 1953 b.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Vespa_N_125cc_1953_b.jpg",
+    "licenza": "CC BY-SA 4.0",
+    "autore": "Peprovira",
+    "data": "2016-06-14",
+    "px": [
+     4288,
+     3216
+    ],
+    "termine": null
+   },
+   "vuoto": null,
    "segno": null,
-   "scelta_da": "nessuna ricerca",
-   "perche": null,
-   "riserva": null,
-   "attribuzione": null
+   "scelta_da": "ricerca del 02/10/2026, scelta sui metadati",
+   "perche": "una Vespa del 1953, che e' il mezzo urbano dell'ultimo tratto",
+   "riserva": "foto del 2016, mezzo del 1953; la seconda Vespa dello stesso caricamento non e' stata scelta e la scelta e' dichiarata",
+   "attribuzione": "Vespa N 125cc 1953 b.jpg, Peprovira, 2016-06-14"
   },
   {
    "mezzo": "ippogrifo",

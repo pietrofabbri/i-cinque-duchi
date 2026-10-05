@@ -16,6 +16,8 @@ stesso dà verde su quel difetto: per questo `M1` confronta il file con
       oppure segno fantastico — mai due e mai nessuna
   M4  nessun mezzo fantastico ha un'immagine: sono creature
   M5  i numeri scritti in §3.1 del documento sono quelli del file
+  M7  le voci e i candidati della ricerca sono gli stessi nella tabella delle
+      categorie, nel frontespizio e nel riepilogo: tre posti, un numero solo
   M6  ogni immagine ha l'attribuzione calcolata, e la licenza libera
   E1  ogni voce epigrafa ha la sua immagine, scelta fra i candidati
   E2  **nessuna epigrafe entra nel gioco senza trascrizione e traduzione**
@@ -174,6 +176,51 @@ def controlla(problemi, iniettato=None):
                                 "un testo generato dal progetto e' vietato"
                                 % (campo, v["voce"]))
 
+    # M7: i numeri delle voci e dei candidati, che sono il numero piu'
+    # invecchiato del capitolo: la tabella delle categorie, il frontespizio e il
+    # riepilogo portavano tutti 27 voci e 125 candidati il giorno in cui cinque
+    # nuove voci sono entrate nel file di ricerca. Nessuno dei tre si muove da
+    # solo, e sono tre posti in cui un numero sbagliato non produce alcun
+    # errore: il file era giusto e il documento no.
+    voci_ricerca = candidati_ricerca = 0
+    for vv in ricerca.values():
+        voci_ricerca += len(vv)
+        for v in vv:
+            candidati_ricerca += len(v["candidati"])
+    # la riga del totale ha due numeri: il primo e' il totale delle voci
+    riga_tot = [r for r in testo.splitlines()
+                if r.strip().startswith("| **Totale** | **")]
+    if not riga_tot:
+        problemi.append("M7: non c'e' la riga del totale nella tabella delle "
+                        "categorie")
+    else:
+        numeri = [int(x) for x in __import__("re").findall(r"\*\*(\d+)\*\*",
+                                                           riga_tot[0])]
+        if numeri[:2] != [voci_ricerca, candidati_ricerca]:
+            problemi.append("M7: la tabella delle categorie dichiara %s voci e "
+                            "%s candidati, il file di ricerca ne ha %d e %d"
+                            % (numeri[0], numeri[1], voci_ricerca,
+                               candidati_ricerca))
+    m = __import__("re").search(r"Candidati cercati su Commons \| \*\*(\d+)\*\*, "
+                        r"in (\d+) voci", testo)
+    if not m:
+        problemi.append("M7: il riepilogo non dichiara i candidati cercati")
+    elif (int(m.group(1)), int(m.group(2))) != (candidati_ricerca, voci_ricerca):
+        problemi.append("M7: il riepilogo dichiara %s candidati in %s voci, il "
+                        "file di ricerca ne ha %d in %d"
+                        % (m.group(1), m.group(2), candidati_ricerca,
+                           voci_ricerca))
+    m = __import__("re").search(r"fonti_visive\.json \(v\d+, (\d+) voci, "
+                        r"(\d+) candidati\)", testo)
+    if not m:
+        problemi.append("M7: il frontespizio non dichiara le voci e i candidati "
+                        "del file di ricerca")
+    elif (int(m.group(1)), int(m.group(2))) != (voci_ricerca, candidati_ricerca):
+        problemi.append("M7: il frontespizio dichiara %s voci e %s candidati, "
+                        "il file ne ha %d e %d"
+                        % (m.group(1), m.group(2), voci_ricerca,
+                           candidati_ricerca))
+
     # E4: i numeri scritti in 3.3 sono quelli del file
     s33 = sezione(testo, "### 3.3 Le epigrafi", "### 3.4 ")
     for cella, chiave in (("Voci", "voci"),
@@ -220,6 +267,11 @@ def inietta(quale):
                 v["vuoto"] = "un drago dipinto del Quattrocento"
                 break
         return p, json.dumps(d, ensure_ascii=False, indent=1) + "\n"
+    if quale == "M7":
+        p = DOC
+        t = io.open(p, encoding="utf-8").read()
+        return p, t.replace("| **Totale** | **32** | **130**",
+                            "| **Totale** | **27** | **125**", 1)
     if quale == "E2":
         p = EPIGRAFI
         d = leggi(p)
@@ -253,15 +305,16 @@ def main():
         for p in problemi:
             print("   difetto %s" % p)
     else:
-        print("   ogni mezzo ha una forma, i numeri della sezione sono quelli "
-              "del file,\n   e nessuna epigrafe entra nel gioco senza testo")
+        print("   ogni mezzo ha una forma, i numeri delle due sezioni e del "
+              "frontespizio sono\n   quelli del file, e nessuna epigrafe entra "
+              "nel gioco senza testo")
 
     if not difetti_prova:
         return 1 if problemi else 0
 
     print("\nprova: un difetto alla volta, coi file rimessi a posto")
     iniettati = visti = 0
-    for quale in ("M1", "M2", "M4", "M5", "E2", "E3", "E4"):
+    for quale in ("M1", "M2", "M4", "M5", "M7", "E2", "E3", "E4"):
         percorso, nuovo = inietta(quale)
         prima = io.open(percorso, encoding="utf-8").read()
         if nuovo == prima:

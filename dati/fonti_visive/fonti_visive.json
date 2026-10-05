@@ -1,7 +1,7 @@
 {
  "versione": 1,
- "data": "2026-10-02",
- "nota": "Proposte, non scelte: la ricerca propone, una persona guarda e registra in attestazione.json.",
+ "data": "2026-10-05",
+ "nota": "Proposte, non scelte: la ricerca propone, una persona guarda e registra in attestazione.json. Il 05/10/2026 cinque voci sono state cercate con gli strumenti del pannello, perche' il processo non aveva rete: i candidati portano licenza, autore e misura presi dalla pagina del file. Nei candidati del 05/10 il campo `data` e' il valore breve e la spiegazione sta in `nota_data`: l'attribuzione non estrae cifre da un testo, perche' da una cartolina degli anni Quaranta avrebbe tirato fuori l'anno di caricamento.",
  "risultati": {
   "mezzo": [
    {
@@ -521,6 +521,101 @@
       "larghezza": 2500,
       "altezza": 3890,
       "url": "https://commons.wikimedia.org/wiki/File:Dactylethra_capensis_(Clawed_frog),_Pipa_americana_(Surinam_toad).jpg"
+     }
+    ]
+   },
+   {
+    "voce": "crociera",
+    "termini": [
+     "ocean liner Queen Elizabeth",
+     "ocean liner ship 1950s"
+    ],
+    "candidati": [
+     {
+      "file": "File:Cunard White Star Queen Elizabeth.jpg",
+      "termine": "ocean liner Queen Elizabeth",
+      "licenza": "Public domain",
+      "autore": "Cunard White Star Line",
+      "data": "1940s",
+      "larghezza": 3302,
+      "altezza": 2072,
+      "url": "https://commons.wikimedia.org/wiki/File:Cunard_White_Star_Queen_Elizabeth.jpg"
+     }
+    ]
+   },
+   {
+    "voce": "aereo",
+    "termini": [
+     "early airliner 1950s",
+     "Lockheed Constellation TWA aircraft"
+    ],
+    "candidati": [
+     {
+      "file": "File:Lockheed L-1649 Constellation TWA.jpg",
+      "termine": "early airliner 1950s",
+      "licenza": "Public domain",
+      "autore": "NACA",
+      "data": "",
+      "larghezza": 2481,
+      "altezza": 1901,
+      "url": "https://commons.wikimedia.org/wiki/File:Lockheed_L-1649_Constellation_TWA.jpg",
+      "nota_data": "la pagina dichiara «Unknown date»; la descrizione dice volo della fine degli anni Cinquanta"
+     }
+    ]
+   },
+   {
+    "voce": "moto",
+    "termini": [
+     "vintage motorcycle 1950s"
+    ],
+    "candidati": [
+     {
+      "file": "File:1953HondaCub.jpg",
+      "termine": "vintage motorcycle 1950s",
+      "licenza": "CC BY 4.0",
+      "autore": "DrReload",
+      "data": "2016-10-02",
+      "larghezza": 5472,
+      "altezza": 3648,
+      "url": "https://commons.wikimedia.org/wiki/File:1953HondaCub.jpg",
+      "nota_data": "fotografia; il mezzo e' del 1953"
+     }
+    ]
+   },
+   {
+    "voce": "sci",
+    "termini": [
+     "skiing 1950s skier"
+    ],
+    "candidati": [
+     {
+      "file": "File:Diagonal slalom turn by Rimfors in Riksgränsen 1950s.jpg",
+      "termine": "skiing 1950s skier",
+      "licenza": "CC BY-SA 4.0",
+      "autore": "Fyyfabian",
+      "data": "1955-04-01",
+      "larghezza": 3487,
+      "altezza": 2678,
+      "url": "https://commons.wikimedia.org/wiki/File:Diagonal_slalom_turn_by_Rimfors_in_Riksgr%C3%A4nsen_1950s.jpg"
+     }
+    ]
+   },
+   {
+    "voce": "monopattino",
+    "termini": [
+     "Vespa scooter 1950s"
+    ],
+    "candidati": [
+     {
+      "file": "File:Vespa N 125cc 1953 b.jpg",
+      "termine": "Vespa scooter 1950s",
+      "licenza": "CC BY-SA 4.0",
+      "autore": "Peprovira",
+      "data": "2016-06-14",
+      "larghezza": 4288,
+      "altezza": 3216,
+      "url": "https://commons.wikimedia.org/wiki/File:Vespa_N_125cc_1953_b.jpg",
+      "nota_data": "fotografia; il mezzo e' del 1953"
      }
     ]
    }

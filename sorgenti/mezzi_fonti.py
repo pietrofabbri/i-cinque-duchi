@@ -80,6 +80,37 @@ SCELTE = {
         "una ferrovia italiana del 1890, che e' la prima ferrovia del gioco",
         "641x393 px e una foto di giornale: misura piccola dichiarata, "
         "l'immagine puo' stare solo come icona"),
+    "crociera": (
+        "File:Cunard White Star Queen Elizabeth.jpg",
+        "la Queen Elizabeth del 1940, che e' il primo transatlantico di linea "
+        "che il gioco puo' mostrare: il tempo di attesa all'aeroporto e' il "
+        "costo vero, e qui e' una nave",
+        "**una cartolina degli anni Quaranta**, non una fotografia: la pagina "
+        "lo dichiara e il progetto lo dichiara con lei"),
+    "aereo": (
+        "File:Lockheed L-1649 Constellation TWA.jpg",
+        "un aereo di linea della TWA in volo alla fine degli anni Cinquanta, "
+        "che e' esattamente «volo di linea, con il tempo di attesa "
+        "all'aeroporto»",
+        "la pagina dichiara «Unknown date»: la data non c'e' e il file porta "
+        "«senza data» invece di un anno inventato"),
+    "moto": (
+        "File:1953HondaCub.jpg",
+        "una Honda Cub del 1953, che e' la moto che copre cinquecento "
+        "chilometri con due soste",
+        "la foto e' del 2016 e il mezzo e' del 1953: la data che si dichiara e' "
+        "quella della foto, e il 1953 resta nel nome del file"),
+    "sci": (
+        "File:Diagonal slalom turn by Rimfors in Riksgränsen 1950s.jpg",
+        "uno slalom diagonale del 1955 con la scuola di sci: la salita si paga, "
+        "e l'immagine e' una lezione",
+        "la data 1955 e' dichiarata dalla pagina; il nome contiene una vocale "
+        "scandinava e resta cosi' com'e'"),
+    "monopattino": (
+        "File:Vespa N 125cc 1953 b.jpg",
+        "una Vespa del 1953, che e' il mezzo urbano dell'ultimo tratto",
+        "foto del 2016, mezzo del 1953; la seconda Vespa dello stesso "
+        "caricamento non e' stata scelta e la scelta e' dichiarata"),
 }
 
 # I vuoti, e **la ragione** di ciascuno: un vuoto senza ragione è un buco che
@@ -102,13 +133,11 @@ VUOTI = {
     "pipa": ("l'unico candidato e' **il rospo del genere *Pipa*** del §5, cioe' "
              "l'animale e non la pianta",
              "cercata"),
-    "crociera": ("nessuna ricerca: la ricerca del 02/10 ha coperto undici "
-                 "mezzi su ventuno e questa voce non e' fra quelle",
-                 "non cercata"),
-    "moto": ("nessuna ricerca, come la crociera", "non cercata"),
-    "sci": ("nessuna ricerca, come la crociera", "non cercata"),
-    "elicottero": ("nessuna ricerca, come la crociera", "non cercata"),
-    "monopattino": ("nessuna ricerca, come la crociera", "non cercata"),
+    "elicottero": ("la ricerca del 05/10 ha trovato un Bell 47 a **455x319** e "
+                   "una squadriglia di elicotteri a **1109x785**: il gioco non "
+                   "mostra mezzi a due cifre di lato, e un'immagine che il "
+                   "motore deve ingrandire di sei volte e' un'immagine rotta",
+                   "cercata il 05/10"),
 }
 
 REGOLE = [
@@ -159,8 +188,25 @@ def attribuzione(c):
         autore = autore.split("(")[0].strip()
         if len(autore) > 40:
             autore = autore[:37] + "..."
-    anno = re.search(r"\b(\d{4})\b", str(c.get("data") or ""))
-    data = anno.group(1) if anno else "senza data"
+    # La data e' il **valore** del campo, non un numero cercato dentro: la
+    # prima versione faceva una regex e da «1940s (cartolina)» tirava fuori il
+    # primo anno a quattro cifre, che era **l'anno di caricamento del file**.
+    # Un'attribuzione con una data falsa e' peggio di un'attribuzione senza
+    # data, che almeno e' vera.
+    #
+    # E il valore va ripulito del **rumore tecnico** che Commons ci mette:
+    # «circa 1540 date QS:P571,+1540» e' l'anno 1540 con dentro un codice
+    # Wikidata. Si toglie tutto da « date QS» in poi, e si taglia a venti
+    # caratteri: la data intera resta nel file del candidato, che e' dove
+    # l'informazione completa deve stare.
+    data = str(c.get("data") or "").strip()
+    for rumore in (" date QS", " dateTime", " (", " ["):
+        data = data.split(rumore)[0]
+    data = data.strip(" ,;")
+    if not data or data.lower().startswith("senza data"):
+        data = "senza data"
+    elif len(data) > 20:
+        data = data[:20]
     return "%s, %s, %s" % (c["file"].replace("File:", ""), autore, data)
 
 
@@ -212,7 +258,7 @@ def costruisci():
             motivo, stato = VUOTI[nome]
             riga["vuoto"] = motivo
             riga["scelta_da"] = ("ricerca del 02/10/2026" if stato == "cercata"
-                                 else "nessuna ricerca")
+                                 else "ricerca del " + stato[10:])
         voci.append(riga)
     return voci
 
@@ -240,7 +286,7 @@ def main():
             "con_immagine": len(con_immagine),
             "storici_senza_immagine": len([v for v in storici if not v["immagine"]]),
             "storici_senza_ricerca": len([v for v in storici
-                                          if v["scelta_da"] == "nessuna ricerca"]),
+                                          if "nessuna" in v["scelta_da"]]),
             "fantastici_con_segno": len(con_segno),
             "candidati_esaminati": sum(len(c) for c in
                                       (v["candidati"] for v in cerca())),

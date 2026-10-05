@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — le fonti visive: che cosa il gioco non ha ancora una veste, e dove si prende
-versione: 0.13
+versione: 0.14
 data: 2026-10-05
 autore: Pietro Fabbri (con Claude)
 fonte: ricerca su Wikimedia Commons del 02/10/2026; tavolozza da Wikidata e Wikipedia del 03/10/2026; sagome e mura da OpenStreetMap via API standard OSM del 04/10/2026; cime e quote da Natural Earth `geography_regions_elevation_points` del 03/10/2026; verifica dei fondi già in dati/mappe/
 documenti collegati: videogioco-5-duchi-ritratti.md (v0.5), videogioco-5-duchi-lingue-immagini.md (v0.2), videogioco-5-duchi-percorsi.md (v0.5), videogioco-5-duchi-mappe.md (v1.3), videogioco-5-duchi-luoghi-edifici.md (v0.4), videogioco-5-duchi-audit.md (v0.23), videogioco-5-duchi-tappa-1-01.md (v0.4), AGENTS.md
-dati: dati/fonti_visive/fonti_visive.json (v1, 27 voci, 125 candidati), dati/fonti_visive/attestazione.json (v1, vuoto), dati/fonti_visive/tavolozza.json (v1, 18 voci), dati/edifici_footprint.json (v1, 7322 edifici su 203 aree), dati/ferrara_fondo.json (v1, 14 tratti di mura), dati/ambienti_livelli.json (v2, 150 ambienti), dati/fonti_visive/colori_cartografici.json (v1, 19 voci), dati/altitudine_manifest.json (v1, tre file di cime: 15, 2 e 26 punti)
+dati: dati/fonti_visive/fonti_visive.json (v1, 32 voci, 130 candidati), dati/fonti_visive/attestazione.json (v1, vuoto), dati/fonti_visive/tavolozza.json (v1, 18 voci), dati/edifici_footprint.json (v1, 7322 edifici su 203 aree), dati/ferrara_fondo.json (v1, 14 tratti di mura), dati/ambienti_livelli.json (v2, 150 ambienti), dati/fonti_visive/colori_cartografici.json (v1, 19 voci), dati/altitudine_manifest.json (v1, tre file di cime: 15, 2 e 26 punti)
 ---
 
 # Le fonti visive
@@ -16,7 +16,7 @@ Il gioco ha delle immagini per i **personaggi** (213 schede, 138 ritratti autent
 
 Questo documento fa quattro cose: **fa l'inventario** di che cosa ha e che cosa non ha una veste grafica; **cerca le fonti** per ciò che manca, con una ricerca vera su Wikimedia Commons; **costruisce** le sei derivazioni che erano solo un buco dichiarato — la tavolozza, i colori delle carte, le sagome degli edifici, il fondo di Ferrara, gli ambienti dei centocinquanta livelli e le cime con la loro quota; e **giudica l'accuratezza** di tutto questo su tre cose che il progetto chiama *proporzioni, colori, forme*, perché un'immagine «giusta» che viene stirata o scurita mente quanto un'immagine sbagliata.
 
-**Che cosa non è questo documento.** Non sceglie le fonti dei **125 candidati**: sono proposte, e nessuna è stata guardata a vista. Il file `dati/fonti_visive/attestazione.json` è pronto e vuoto, con tutti i campi dichiarati. E non disegna niente: i sei file che ha prodotto sono **dati**, non grafica, e ognuno dichiara la propria fonte e i propri vuoti.
+**Che cosa non è questo documento.** Non sceglie le fonti dei **130 candidati**: sono proposte, e nessuna è stata guardata a vista. Il file `dati/fonti_visive/attestazione.json` è pronto e vuoto, con tutti i campi dichiarati. E non disegna niente: i sei file che ha prodotto sono **dati**, non grafica, e ognuno dichiara la propria fonte e i propri vuoti.
 
 ---
 
@@ -72,18 +72,18 @@ Il conto reale, verificato sui file:
 
 ## 3. Le fonti cercate, e gli otto file costruiti
 
-La ricerca (`sorgenti/fonti_visive_cerca.py`) ha esaminato **27 voci** in cinque categorie, con termini scelti uno per uno e non tradotti alla cieca. Ha prodotto **125 candidati con licenza libera**. Le categorie che hanno prodotto un **file di dati** sono quelle degli edifici, dei colori e dei fondi (sagome §3.2, colore §3.4, mura di Ferrara §3.5, ambienti §3.6); quelle che non lo hanno prodotto sono i mezzi e le epigrafi, e il perché è dichiarato.
+La ricerca (`sorgenti/fonti_visive_cerca.py`) ha esaminato **32 voci** in cinque categorie, con termini scelti uno per uno e non tradotti alla cieca. Ha prodotto **130 candidati con licenza libera**. Le categorie che hanno prodotto un **file di dati** sono quelle degli edifici, dei colori e dei fondi (sagome §3.2, colore §3.4, mura di Ferrara §3.5, ambienti §3.6); quelle che non lo hanno prodotto sono i mezzi e le epigrafi, e il perché è dichiarato.
 
 A quei quattro file il 03/10/2026 se ne sono aggiunti **due che non vengono dalla ricerca su Commons** ma da un buco emerso documentando: i **colori delle carte** (§3.7) e le **cime con la loro quota** (§3.8). Sono sei, e sei è il numero che dice §8.
 
 | Categoria | Voci | Candidati | Voci senza immagine |
 |---|---|---|---|
-| **mezzo** | 11 | 41 | nessuna |
+| **mezzo** | 16 | 46 | nessuna |
 | **edificio** | 6 | 36 | nessuna |
 | **epigrafe** | 3 | 18 | nessuna |
 | **incidente** | 3 | 6 | **due** (`incendio`, `carestia`) |
 | **colore** | 4 | 24 | nessuna |
-| **Totale** | **27** | **125** | **due** |
+| **Totale** | **32** | **130** | **due** |
 
 ### 3.1 I mezzi di trasporto: il file è costruito il 05/10/2026, e i vuoti sono dieci su sedici
 
@@ -94,10 +94,10 @@ A quei quattro file il 03/10/2026 se ne sono aggiunti **due che non vengono dall
 | | |
 |---|---|
 | Mezzi del gioco | **21**: 16 storici e **5** fantastici (ippogrifo, drago, sirena, carro di delfini, carro di serpenti) |
-| Con immagine proposta | **6**: mulo, galera, nave, carovana, diligenza, treno |
-| Storici **senza** immagine | **10**, di cui **5** non hanno mai avuto una ricerca |
+| Con immagine proposta | **11**: mulo, galera, nave, carovana, diligenza, treno, crociera, aereo, moto, sci, monopattino |
+| Storici **senza** immagine | **5**, e nessuno dei cinque per mancanza di ricerca: **sono stati cercati tutti e cinque** |
 | Fantastici con segno dedicato | **5**, e nessuna immagine: sono creature |
-| Candidati esaminati | **41**, tutti quelli della ricerca del 02/10, nessuno nuovo |
+| Candidati esaminati | **46**, tutti quelli della ricerca del 02/10 più i cinque del 05/10 |
 
 **Le sei immagini, con l'attribuzione calcolata e la riserva dichiarata quando c'è.**
 
@@ -109,8 +109,21 @@ A quei quattro file il 03/10/2026 se ne sono aggiunti **due che non vengono dall
 | carovana | la **carovana del sale** dell'Adrar | autore non dichiarato, 1965 | **una fotografia del 1965**, non un dipinto: e il gioco non promette immagini d'epoca per la carovana |
 | diligenza | la **diligenza di Tarascon** di Van Gogh | Vincent van Gogh, 1888 | fra i candidati c'era anche la stampa di Abel Hold, che si è deciso di non usare |
 | treno | la **ferrovia marmifera di Carrara** del 1890 | L'Eco del Carrione, 1890 | 641×393 px: può stare solo come icona |
+| **crociera** | la **Queen Elizabeth** del 1940 | Cunard White Star Line, anni Quaranta | **una cartolina**, non una fotografia: la pagina lo dichiara |
+| **aereo** | la **Constellation della TWA** in volo | NACA, **senza data** | la pagina dichiara «Unknown date» e il file porta «senza data» invece di un anno inventato |
+| **moto** | una **Honda Cub del 1953** | DrReload, 2016 | la foto è del 2016 e il mezzo del 1953: la data dichiarata è quella della foto |
+| **sci** | uno **slalom diagonale del 1955** | Fyyfabian, 1955-04-01 | il nome contiene una vocale scandinava e resta com'è |
+| **monopattino** | una **Vespa 125 del 1953** | Peprovira, 2016 | della stessa coppia di fotografie ne esiste un'altra, scelta dichiarata |
 
-**I dieci vuoti, uno per mezzo e con la ragione.** Cinque sono vuoti che la ricerca aveva già visto e che il capitolo dichiarava: il **cavallo** (tre dei quattro candidati sono la Cappella dei Magi, che è un corteo di trecento persone, e il quarto è una batteria d'artiglieria: nessuno dei quattro è un cavallo), l'**aereo** (i due candidati sono il volo turistico sugli aerei da giardinaggio), la **carrozza** (quella americana del 1922 e tre guide turistiche), la **pipa** (l'unico candidato è il rospo del genere *Pipa*) e **a piedi** (un sentiero di pellegrini di oggi e un conchiglio: nessuno dei due è «un uomo solo, con la bisaccia»). Gli altri cinque sono **crociera, moto, sci, elicottero e monopattino**, e la loro ragione è una sola espiattata: nessuna ricerca, perché la sessione del 5 ottobre non ha rete.
+**I cinque vuoti, uno per mezzo e con la ragione.** Sono quelli che la ricerca **ha cercato e ha respinto**, e la ragione è diversa per ciascuno.
+
+| Mezzo | Che cosa è stato cercato e perché è stato respinto |
+|---|---|
+| **a piedi** | un sentiero di pellegrini di oggi e un conchiglio: nessuno dei due è «un uomo solo, con la bisaccia» |
+| **cavallo** | tre dei quattro candidati sono la Cappella dei Magi, che è un corteo di trecento persone, e il quarto è una batteria d'artiglieria: nessuno dei quattro è un cavallo |
+| **carrozza** | la carrozza americana del 1922 e tre guide turistiche: nessuna carrozza di corte |
+| **pipa** | l'unico candidato è **il rospo del genere *Pipa***: la parola che si cerca è la pianta, e il termine con le due parole che non si confondono ha dato solo cataloghi botanici e un erbario del 1901 |
+| **elicottero** | un Bell 47 a **455×319** e una squadriglia di elicotteri a **1109×785**: il gioco non mostra mezzi a due cifre di lato, e un'immagine che il motore deve ingrandire di sei volte è un'immagine rotta |
 
 **I cinque fantastici non hanno immagine e non la devono avere.** Ippogrifo, drago, sirena e i due carri sono creature del *Furioso*: la regola dei luoghi fantastici in `AGENTS.md` dice già che vanno disegnati a mano sulla carta del gioco con un segno dedicato. Il file porta quel segno in un campo suo, e il controllo vieta che un mezzo fantastico abbia un'immagine — perché la prima volta che si troverà un drago dipinto del Quattrocento, la tentazione sarà di metterlo, e sarà sbagliata in un modo che nessun numero registra.
 
@@ -204,7 +217,7 @@ Le quattro voci cercano appunto i **campionari**: le terre d'oliva del paesaggio
 2. **`P462` non è l'esadecimale: è un link a un oggetto «colore».** Il percorso giusto è a due tappe: pigmento → `P462` → oggetto colore → `P465` → esadecimale. E il valore di `P462` è un **dizionario** (`{"entity-type": "item", ...}`), non una stringa: senza controllarne il tipo finisce nel file come colore, e un dizionario non è un colore.
 3. **Cinque pigmenti su quindici non hanno esadecimale da nessuna parte**: il bianco di piombo, l'azzurrite, la malachite, l'orpimento e il giallo di piombo e stagno. Non si è tirata fuori una terna di cifre plausibili: sono in `pigmenti_senza_colore_macchina` con la prova, e le voci ricostruite su altri pigmenti.
 
-**Le due dichiarazioni che rendono il file onesto.** `senza_colore_dichiarato` è **vuoto**: nessuna voce ha un colore inventato. E `campioni_guardati` è **zero**, come i 125 candidati: i campionari non sono stati aperti, e il file non finge di averli guardati.
+**Le due dichiarazioni che rendono il file onesto.** `senza_colore_dichiarato` è **vuoto**: nessuna voce ha un colore inventato. E `campioni_guardati` è **zero**, come i 130 candidati: i campionari non sono stati aperti, e il file non finge di averli guardati.
 
 `dati/fonti_visive/tavolozza_candidati.json` porta, accanto alle 18 voci, le **altre dichiarazioni** trovate (per esempio il vermiglio è `E34234` su Wikidata e `FF4000` sull'infobox: due fonti che dicono cose diverse, entrambe vere, e la scelta va motivata) e le **famiglie di colori senza voce** (i tessili e gli affreschi): dichiarare che manca una voce è diverso dal non averci pensato.
 
@@ -413,6 +426,24 @@ La ricerca su Commons ha sbagliato in modi diversi, e sono tre, e vanno dichiara
 
 **E la correzione pratica, che è la più utile di tutte**: il termine di ricerca di una voce, quando la parola è ambigua, va riscritto con **due parole che non possono confondersi**. Per la pipa: *Tabernaemontana elegans botanical*, non *pipa*. Per l'aereo: *early airliner 1950s*, non *aereo*. Per la carrozza: *Renaissance court carriage*, non *carrozza*. La ricerca va rifatta su quei termini, e il risultato va nel file con i termini accanto, come è già (`fonti_visive.json`, campo `termini`).
 
+**La ricerca è stata rifatta il 5 ottobre, e l'istruzione era rimasta in sospeso perché non diceva di essere una scadenza.** Un'istruzione che non viene eseguita è un'istruzione che non esiste, e questa era scritta al passato come se fosse stata fatta: *la ricerca va rifatta* è un futuro, e in un documento che ha un registro delle modifiche un futuro non eseguito è un buco che non ha nome.
+
+| Voce | Termine prescritto | Che cosa è venuto fuori |
+|---|---|---|
+| **aereo** | *early airliner 1950s* | **una Constellation della TWA in volo** alla fine degli anni Cinquanta: il buco è chiuso, e i due candidati del volo giardinaggio erano davvero sbagliati |
+| **crociera** | *ocean liner* | **la Queen Elizabeth del 1940**, che è una cartolina: entra con la riserva scritta |
+| **moto** | *vintage motorcycle 1950s* | **una Honda Cub del 1953** in un museo: entra |
+| **sci** | *skiing 1950s* | **uno slalom diagonale del 1955** con la scuola di sci: entra |
+| **monopattino** | *Vespa scooter 1950s* | **una Vespa 125 del 1953**: entra |
+| **pipa** | *Tabernaemontana elegans botanical* | solo cataloghi botanici ed erbari: **il vuoto resta e la ragione è scritta** |
+| **carrozza** | *Renaissance court carriage* | nessun file che mostri una carrozza di corte: **il vuoto resta** |
+| **cavallo** | un cavallo, non un corteo | nessuna immagine utile: **il vuoto resta** |
+| **elicottero** | *helicopter 1950s* | un Bell 47 a 455×319 e una squadriglia a 1109×785: **il vuoto resta, e la ragione è la misura** |
+
+**Che cosa insegna, e perché conta più dei cinque mezzi.** Cinque bucci su nove si chiudono con una ricerca fatta bene, e i quattro che restano hanno tutti una ragione che non è «non ho trovato»: sono **una pianta cercata con il nome di un animale**, **una carrozza che è di un altro secolo**, **un cavallo che è un corteo**, **un elicottero che è troppo piccolo per essere mostrato**. Un buco con la ragione è un buco che aspetta una decisione; un buco senza ragione è un buco che aspetta che qualcuno se ne accorga, e di solito non succede.
+
+**Una cosa da dichiarare, perché è un limite della sessione e non del metodo**: la ricerca è stata fatta con gli strumenti che avevano rete, non con `fonti_visive_cerca.py`, che dal processo non ne aveva. I candidati portano licenza, autore e misura **presi dalla pagina del file**, non ricordati; e un candidato di cui la licenza non è stata verificata **non è entrato**, che è la regola del progetto. Il file di ricerca porta la nota che lo dice.
+
 ---
 
 ## 6. I due vuoti dichiarati, e come stanno adesso
@@ -431,7 +462,7 @@ Ma c'è una seconda possibilità, e va decisa: il progetto ha già deciso che **
 
 | Buco | Che cosa c'è adesso | Che cosa manca |
 |---|---|---|
-| **mezzi** | `dati/fonti_visive/mezzi.json`: **21 righe, una per mezzo del gioco**, con 6 immagini proposte, 10 vuoti motivati e 5 segni fantastici | **10 mezzi storici senza immagine**, di cui 5 non hanno mai avuto una ricerca: la ricerca serve, e la sessione non aveva rete |
+| **mezzi** | `dati/fonti_visive/mezzi.json`: **21 righe, una per mezzo del gioco**, con **11 immagini proposte**, 5 vuoti motivati e 5 segni fantastici | **cinque mezzi storici senza immagine**, tutti e cinque cercati il 05/10 e respinti con la ragione scritta |
 | **epigrafi** | `dati/fonti_visive/epigrafi.json`: 3 immagini scelte, **la regola** (niente epigrafe senza trascrizione e traduzione) e **la fonte** del testo | **il testo**: EDH risponde anti-robot, e quindi **zero** epigrafi entrano nel gioco, e i premi F del latino e C del greco restano senza immagine finche' non arriva |
 
 **Chiuso come dati** vuol dire che ogni voce ha una risposta scritta: un'immagine, un vuoto con la sua ragione, o un segno. Un buco chiuso come dati non si dimentica e non si confonde con uno chiuso come immagini, che è la forma più insidiosa di buco chiuso: sembra risolto e il motore non ha niente da mostrare.
@@ -471,9 +502,9 @@ I 19 file Natural Earth hanno proprietà e categorie, ma non colori: il colore l
 
 E `sorgenti/gis/verifica_mappe_disegno.py`, che **non scrive più i colori nel proprio codice ma li legge dal file**, ha reso dodici pagine di verifica. Il suo difetto di prima è instructive: scriveva `fill="F6FAFC"` invece di `fill="#F6FAFC"`, cioè dodici pagine bellissime e senza un colore, perché l'esadecimale senza il cancelletto in SVG non è un colore. È dichiarato nel suo docstring, perché un difetto che si corregge e si dimentica torna.
 
-**Q5 — Chi guarda i 125 candidati?**
+**Q5 — Chi guarda i 130 candidati?**
 
-Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file di attestazione è pronto e vuoto. La differenza rispetto agli oggetti è che qui i 125 candidati sono pochi e molto diversi fra loro, e sono **le fonti che decidono l'aspetto del gioco**: scegliere male la carrozza del Quattrocento si vede in tutto il secondo anno.
+Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file di attestazione è pronto e vuoto. La differenza rispetto agli oggetti è che qui i 130 candidati sono pochi e molto diversi fra loro, e sono **le fonti che decidono l'aspetto del gioco**: scegliere male la carrozza del Quattrocento si vede in tutto il secondo anno.
 
 ---
 
@@ -482,7 +513,7 @@ Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file d
 | | |
 |---|---|
 | Categorie senza veste grafica | il 02/10 erano **cinque**: mezzo, sagome, mappa di Ferrara, epigrafi, tavolozza. Il 03/10 sono **due**: mezzo ed epigrafi. Il 05/10 sono **zero senza una risposta scritta**: mezzo ed epigrafi hanno un file ciascuno, con i vuoti dichiarati dentro |
-| Candidati cercati su Commons | **125**, in 27 voci |
+| Candidati cercati su Commons | **130**, in 32 voci |
 | Voci senza immagine | **due**: l'incendio e la carestia |
 | Candidati scelti a vista | **zero**, e dichiarato |
 | Fondi geografici già pronti | **19 file**, 1,5 MB, Natural Earth, pubblico dominio |
@@ -495,14 +526,21 @@ Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file d
 | Quanti ambienti il motore ha disegnato | **uno**, la tappa 1-1 |
 | Emblemi dei premi | **fatti il 04/10/2026**: 1050 tessere in un foglio, undici forme dichiarate, 5 categorie in uso |
 | Disegni degli ambienti | **fatti il 05/10/2026**: **150 immagini schematiche su 150 tappe**, 2632 edifici disegnati, **16 tappe vuote dichiarate**, e D3 riscritto sul confronto fra **chiave dati e sha**: 107 chiavi dati, 107 sha distinti |
-| Mezzi di trasporto | **fatto il 05/10/2026 come dato**: 21 mezzi, 6 con immagine, 10 storici con il vuoto motivato (di cui 5 mai cercati), 5 fantastici con il segno |
+| Mezzi di trasporto | **fatto il 05/10/2026**: 21 mezzi, **11 con immagine** dopo la ricerca del 05/10, **5** storici con il vuoto motivato, 5 fantastici con il segno |
 | Epigrafi | **fatto il 05/10/2026 come dato**: 3 immagini, **zero** testi, la fonte dichiarata e il divieto di entrare senza testo |
-| Lavoro più grande che resta | i **125 candidati** da guardare a vista, i **10 mezzi** senza immagine (cinque dei quali mai cercati) e i **cinquantuno** ambienti senza coordinate |
+| Lavoro più grande che resta | i **130 candidati** da guardare a vista, i **cinque mezzi** senza immagine (tutti cercati e respinti) e i **cinquantuno** ambienti senza coordinate |
 | Lavoro più grande che manca *fra i dati* | nessuno: i sei file ci sono e sono verificati |
 
 ---
 
 ## 9. Registro delle modifiche
+
+- **v0.14 (05/10/2026)**: **la ricerca che il capitolo prescriveva era rimasta in sospeso, e nessuno se ne accorse perché era scritta al passato.** Il §5 fin dal 2 ottobre diceva *la ricerca va rifatta su quei termini*: un futuro, in un documento che ha un registro delle modifiche, e un futuro non eseguito è un buco che non ha nome. Rifatta il 5: **cinque buchi su nove si chiudono** e gli altri quattro hanno tutti una ragione che non è «non ho trovato».
+  - **cinque mezzi che non erano mai stati cercati** hanno un'immagine: la **crociera** è la Queen Elizabeth del 1940, l'**aereo** la Constellation della TWA in volo, la **moto** una Honda Cub del 1953, gli **sci** uno slalom diagonale del 1955, il **monopattino** una Vespa 125 del 1953. Il file dei mezzi passa da **6 a 11** immagini su 21;
+  - **i cinque vuoti che restano sono stati cercati e respinti**, e la ragione è diversa per ciascuno: un rospo al posto della pianta, una carrozza americana al posto di corte, la Cappella dei Magi al posto del cavallo, un conchiglio al posto del viandante, e un elicottero a **455×319** che il motore dovrebbe ingrandire di sei volte;
+  - **la ricerca è stata fatta con gli strumenti che avevano rete**, non con `fonti_visive_cerca.py`, che dal processo non ne aveva: il file di ricerca lo dichiara, e **un candidato di cui la licenza non è stata verificata non è entrato**;
+  - **i numeri delle voci e dei candidati sono passati da 27/125 a 32/130** in tre posti — la tabella delle categorie, il frontespizio e il riepilogo — e nessuno dei tre si sarebbe mosso da solo. È il **M7** nuovo in `verifica_fonti_visive.py`: tre posti, un numero solo, e il controllo li confronta tutti e tre col file. La prova ne inietta **otto** difetti e li vede **tutti e otto**;
+  - **due difetti trovati nella strada, dichiarati perché sono la regola nuova**: l'attribuzione tirava fuori l'anno con una regex, e da «1940s (cartolina)» ricavava **l'anno di caricamento del file** — un'attribuzione con una data falsa è peggio di un'attribuzione senza data; e nel file che avevo scritto c'era la parola **`per`** al posto di **`for`**, sette caratteri che lo rendono non compilabile. Non è un errore di logica e non si vede se non si compila: **dopo aver scritto un file, `py_compile` va girato sempre**, anche quando il file sembra giusto.
 
 - **v0.13 (05/10/2026)**: **gli ultimi due buchi chiusi come dati, e il numero che li nascondeva era vero.** I mezzi di trasporto avevano **undici** immagini proposte e il gioco ne usa **ventuno**: dieci storici non erano mai stati cercati, e nessuno se ne accorgeva, perché la tabella contava le voci cercate e non i mezzi del gioco. È la stessa malattia di un numero vero che guarda il numero sbagliato, e per questo il controllo nuovo confronta il file con **`percorsi_mezzi.py`**, non con se stesso.
   - **`dati/fonti_visive/mezzi.json`**, costruito da `sorgenti/mezzi_fonti.py`: **21 righe**, una per mezzo, e ogni riga è una delle tre forme ammesse — **6** immagini proposte con l'attribuzione **calcolata** e la riserva dichiarata, **10** storici con il vuoto e la sua ragione (fra cui i **5** mai cercati), **5** fantastici con il segno dedicato e nessuna immagine, perché sono creature;
