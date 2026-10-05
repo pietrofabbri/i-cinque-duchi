@@ -1,12 +1,12 @@
 ---
 titolo: Videogioco "I cinque duchi" — le immagini degli oggetti di interazione: dove vengono e perché si dichiarano
-versione: 0.4
+versione: 0.5
 data: 2026-10-05
 autore: Pietro Fabbri (con Claude)
 fonte: ricerca su Wikimedia Commons del 02/10/2026
 documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-ritratti.md (v0.5), videogioco-5-duchi-luoghi-edifici.md (v0.6), videogioco-5-duchi-esercizi.md (v0.1), AGENTS.md, FONTI-E-LICENZE.md
 dati: dati/lingue/associazioni.json (v1), dati/lingue/immagini_oggetti.json (v1, **il primo giro**, 180 voci, 1120 candidati), dati/lingue/immagini_2.json (v2, **il secondo giro** per il latino, il greco e il ferrarese: 90 voci, 547 candidati), dati/lingue/attestazione_oggetti.json (le scelte a vista; **vuota finché nessuno guarda**), dati/lingue/giudizi_oggetti.json (**da produrre**: i giudizi che Pietro scrive guardando i fogli, che `giudizi_oggetti.py` trasforma in attestazione)
-controllo: python3 sorgenti/lingue/verifica_immagini_oggetti.py (G1-G7: copertura, licenze, misura, proporzione, completezza, pertinenza e scivolamento), python3 sorgenti/lingue/cerca_immagini_2.py (il secondo giro, con un controllo di allineamento che si ferma se la tabella dei termini non ha esattamente le trenta voci), python3 sorgenti/lingue/fogli_oggetti.py (i 18 fogli di controllo), python3 sorgenti/lingue/giudizi_oggetti.py (registra i giudizi a vista e li applica all'attestazione)
+controllo: python3 sorgenti/lingue/verifica_immagini_oggetti.py (G1-G8: copertura, licenze, misura, proporzione, completezza, pertinenza e scivolamento), python3 sorgenti/lingue/cerca_immagini_2.py (il secondo giro, con un controllo di allineamento che si ferma se la tabella dei termini non ha esattamente le trenta voci), python3 sorgenti/lingue/fogli_oggetti.py (i 18 fogli di controllo), python3 sorgenti/lingue/giudizi_oggetti.py (registra i giudizi a vista e li applica all'attestazione)
 ---
 
 # Le immagini degli oggetti di interazione
@@ -202,21 +202,22 @@ Il controllo **G7** esiste per rendere questi casi visibili senza guardare le im
 
 ## 6. I controlli automatici e le questioni aperte
 
-### 6.1 I sette controlli
+### 6.1 Gli otto controlli
 
-`sorgenti/lingue/verifica_immagini_oggetti.py` esegue sette controlli su `dati/lingue/immagini_oggetti.json`:
+`sorgenti/lingue/verifica_immagini_oggetti.py` esegue otto controlli su `dati/lingue/immagini_oggetti.json`:
 
 | # | Controllo | Che cosa cerca | Esito |
 |---|---|---|---|
 | **G1** | Copertura | ogni voce ha candidati, e le trenta ferraresi dichiarano il motivo per cui non ne possono avere | 180 voci, tutte coperte o motivate |
 | **G2** | Licenze | ogni candidato ha una licenza libera riconosciuta, e nessuna non commerciale | tutte libere |
-| **G3** | Misura | nessun candidato sotto 160×120, che nel gioco verrebbe ingrandito | **4 respinti** |
+| **G3** | Misura | nessun candidato sotto 160×120, che nel gioco verrebbe ingrandito | **7 respinti** |
 | **G4** | Proporzione | ogni voce coperta ha almeno un candidato con la forma giusta per la scheda, senza ritaglio forzato | **146 su 146** |
-| **G5** | Completezza | autore e indirizzo ci sono in ogni candidato | **8 respinti** |
+| **G5** | Completezza | autore e indirizzo ci sono in ogni candidato | **5 respinti** |
 | **G6** | Pertinenza | quante voci restano da guardare a vista: **146**, perché il controllo automatico non può sapere se l'immagine è dell'oggetto giusto | dichiarato |
 | **G7** | Scivolamento | quante voci in cui nessun candidato nomina l'oggetto: **67**, da guardare per prime | avviso, non errore |
+| **G8** | Due classi | i candidati respinti si contano separati: per merito e per metadati mancanti della fonte | **7 e 5**, i due numeri di sopra, ricalcolati sul file |
 
-Il conto dei dodici problemi è **12 candidati respinti** su 1120, non dodici voci scoperte: tutte e dodici le voci hanno alternative. G7 non è un errore ed è per questo che non fa fallire lo script.
+Il conto dei dodici problemi è **12 candidati respinti** su 1120, non dodici voci scoperte: tutte e dodici le voci hanno alternative. **E i dodici non sono tutti uguali**: per merito **7** (misura sotto la soglia, il candidato è stato guardato e non entra) e per metadati mancanti della fonte **5** (manca autore o indirizzo, e nessun codice li può far comparire). Sono due problemi di natura diversa e portano a due posti diversi: il primo si rimedia scrivendo, il secondo solo con i metadati reali di Commons, ed è il secondo che tiene B4 aperta. Una licenza **non riconosciuta** conta fra i metadati e non fra il merito: non riconoscere una stringa non è un giudizio, è la stessa forma del difetto che respinse 385 fotografie CC BY-SA perché la chiave del progetto era `cc-by-sa-4.0` e la fonte scrive `CC BY-SA 4.0`. G7 non è un errore ed è per questo che non fa fallire lo script.
 
 ### 6.2 Le questioni aperte
 
@@ -244,6 +245,7 @@ Ridurre a 96×72 gli spinelli di Commons richiede un'immagine minima (§4.1), un
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 05/10/2026 | 0.5 | **I dodici candidati respinti erano due numeri, ed erano sbagliati.** §6.1 dichiarava «4 respinti» a G3 e «8 respinti» a G5: sul file sono **7** e **5**. La riga che li conteneva era un fascio — `G2/G3/G5 … — motivo` — e un fascio non si conta: ogni rifiuto porta adesso l'etichetta del controllo che l'ha fatto e la sua classe, per merito o per metadati mancanti. È la terza volta che la stessa forma di difetto compare — un numero giusto e una frase sbagliata — e la prima che compare perché un controllo ha diviso qualcosa che prima era uno. Il nuovo **G8** confronta i due conti con la riga che questo capitolo dichiara, e i due numeri non sono più scritti a mano: se il dato cambia, il capitolo cambia con lui o il controllo è rosso. |
 | 05/10/2026 | 0.4 | **Il rimando è l'unica cosa che cambia.** Un documento collegato è salito di versione e questo rimando è rimasto indietro: la riga è sbagliata e non sembra, perché un rimando che cita una versione superiore a quella vera sembra un rimando fermo. Qui dentro non cambia nient'altro — e si scrive lo stesso, perché una riga che cambia è una riga che cambia. |
 | 05/10/2026 | 0.3 | **Un rimando che puntava a una prova che non esiste, e la regola che ne nasce.** §2.2 escludeva l'immagine inventata «come sempre (`prova 5`)», e `premi.md` §3 dichiara **quattro** prove: il divieto di generare è nella **prima**, e il rimando è stato corretto indicando anche il documento. Il numero era giusto e la frase si leggeva come le altre, quindi nessuno se n'era accorto: è il difetto che `AGENTS.md` chiama *un numero vero che guarda il numero sbagliato*. Il controllo **P8** di `sorgenti/verifica_premi.py` legge le quattro righe della tabella delle prove e rifiuta ogni rimando a una prova inesistente. Il resto del capitolo non è cambiato: i duecentottanta voci e i numeri del secondo giro sono quelli della v0.2. |
 | 04/10/2026 | 0.2 | **Il secondo giro di ricerca, e i fogli di controllo che non esistevano.** Il latino, il greco e il ferrarese sono stati cercati di nuovo cercando **la cosa che si vede** e non la parola che la nomina: alla voce «gli auspici» il lituo dell'augure, non un file che contiene la parola. Le voci **senza nessun candidato** scendono da **34 a 6** — e a **3** nei fogli, che ripiegano sul primo giro — e i candidati delle novanta voci salgono da **417 a 547**. Il **numero** di voci coperte è migliorato, la **correttezza** no: alla voce «i riti funebri» il secondo giro ha restituito un'elimitrice funebre, e il campione dei nomi è in §2.1. Il primo giro **non è stato toccato**: è la prova di che cosa trovava una ricerca che cercava le parole. La Q1 era bloccante perché **manccavano i fogli di controllo** e senza fogli l'attestazione a vista è impossibile: ora ci sono, **18 fogli** da dieci voci, e la Q1 è risolta nel metodo — le immagini le guarda Pietro, io registro i giudizi e lo script **rifiuta** un giudizio senza motivo, con etichetta fra le nove e file fra i candidati guardati. La Q4 è chiusa: le trenta voci ferraresi associano **la cosa che il proverbio evoca**, se esiste ed è vera. Un difetto trovato in sé stesso: il primo tentativo faceva `zip(nomi, termini)` e quindi cercava **il nome italiano della voce** invece del termine inglese — la stessa malattia del primo giro, e l'ho scritta due volte. |

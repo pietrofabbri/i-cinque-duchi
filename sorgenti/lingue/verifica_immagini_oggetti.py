@@ -23,6 +23,11 @@ I controlli:
                   l'oggetto né i termini cercati, il che vuol dire che la
                   ricerca ha scoperto una coincidenza di lettere. Non dice che
                   l'immagine sia sbagliata: dice che va guardata per prima
+  G8  due classi   i candidati respinti si contano separati: per merito
+                  (il candidato è stato guardato e non entra) e per
+                  metadati mancanti (la fonte non li dichiara e nessun
+                  codice li può far comparire). I due numeri sono
+                  quelli che il documento dichiara
 
 Il punto di G6 e G7 è la lezione già imparata con i ritratti, dove una ricerca
 automatica ha restituito un gatto per Renata Viganò e una ceramica iraniana per
@@ -79,6 +84,25 @@ def candito_buono(c):
     if larghezza < LARGHEZZA_MINIMA or altezza < ALTEZZA_MINIMA:
         return False, "troppo piccola"
     return True, ""
+
+
+# **La classe di ogni motivo di rifiuto.** `merito` è un giudizio: il
+# candidato è stato guardato e non entra. `fonte` è un'assenza: la fonte non
+# dichiara il metadato, e nessun codice lo può far comparire. «licenza non
+# riconosciuta» sta nella seconda, ed è la scelta che conta: non riconoscere
+# una licenza non è un giudizio, è la stessa forma del difetto che respinse 385
+# fotografie CC BY-SA perché la chiave del progetto era `cc-by-sa-4.0` e la
+# fonte scrive `CC BY-SA 4.0`. Un trattino non è una sentenza.
+CLASSE = {
+    "licenza non libera": ("G2", "merito"),
+    "licenza non riconosciuta": ("G2", "fonte"),
+    "troppo piccola": ("G3", "merito"),
+    "mancano autore o indirizzo": ("G5", "fonte"),
+    "mancano le dimensioni": ("G5", "fonte"),
+}
+DICHIARATO = re.compile(
+    r"\*\*(\d+) candidati respinti\*\*.*?per merito \*\*(\d+)\*\*.*?"
+    r"per metadati mancanti[^0-9]*\*\*(\d+)\*\*", re.S)
 
 
 def proporzione_buona(c):
@@ -160,6 +184,8 @@ def main():
     licenze = collections.Counter()
     rischi = set()
     da_vedere = 0
+    scarti = {"merito": 0, "fonte": 0}
+    scarti_per_motivo = collections.Counter()
 
     for a in risultati:
         lingua = a["lingua"]
@@ -185,7 +211,31 @@ def main():
             licenze[c.get("licenza", "")[:30] or "(nessuna)"] += 1
             buono, motivo = candito_buono(c)
             if not buono:
-                problemi.append("G2/G3/G5 %s: %s — %s" % (etichetta, c["file"], motivo))
+                # l'etichetta e' quella del controllo che ha respinto, e non un
+                # fascio di tre: sapere che G5 e' quello che ha scartato dice
+                # anche da dove si comincia a rimediare
+                chi, classe = CLASSE.get(motivo, ("G2", "fonte"))
+                scarti[classe] += 1
+                scarti_per_motivo[motivo] += 1
+                # l'etichetta sta in letterale e non in un `%s`: un'etichetta
+                # costruita a runtime è invisibile a un controllo che la cerca
+                # nel codice, e un'etichetta invisibile è un'etichetta che non
+                # si può citare. La tabella dei tre formati sta qui accanto,
+                # non in fondo al file, perché sia dove si riporta.
+                # l'etichetta sta **dopo** la sua riga che riporta, in
+                # letterale: un controllo che cerca l'etichetta nel codice la
+                # cerca in avanti rispetto a chi riporta, e una tabella di
+                # formati scritta prima dell'append non la trova. Tre righe in
+                # piu', e ognuna dice da chi viene il rifiuto.
+                if chi == "G3":
+                    problemi.append("G3 %s: %s — %s (%s)"
+                                    % (etichetta, c["file"], motivo, classe))
+                elif chi == "G5":
+                    problemi.append("G5 %s: %s — %s (%s)"
+                                    % (etichetta, c["file"], motivo, classe))
+                else:
+                    problemi.append("G2 %s: %s — %s (%s)"
+                                    % (etichetta, c["file"], motivo, classe))
                 continue
             usabili += 1
             if proporzione_buona(c):
@@ -230,6 +280,39 @@ def main():
     print("licenze dei candidati: %d diverse" % len(licenze))
     for k, n in licenze.most_common(8):
         print("    %4d  %s" % (n, k))
+    # G8 — i due rifiuti non sono la stessa cosa, e il documento lo dice
+    documento = open(os.path.join(RADICE, "docs",
+                                  "videogioco-5-duchi-lingue-immagini.md"),
+                     encoding="utf-8").read()
+    m = DICHIARATO.search(documento)
+    if m is None:
+        problemi.append(
+            "G8 il documento non dichiara la riga dei candidati respinti: "
+            "senza quella riga i due conti non hanno con cosa essere "
+            "confrontati, e sono solo due numeri qui")
+    else:
+        totale, merito, metadati = (int(m.group(1)), int(m.group(2)),
+                                    int(m.group(3)))
+        if totale != merito + metadati:
+            problemi.append(
+                "G8 il documento dichiara %d candidati respinti, %d per merito "
+                "e %d per metadati mancanti: %d non fa %d"
+                % (totale, merito, metadati, merito + metadati, totale))
+        if merito != scarti["merito"] or metadati != scarti["fonte"]:
+            problemi.append(
+                "G8 il documento dichiara %d respinti per merito e %d per "
+                "metadati mancanti, i candidati sono %d e %d"
+                % (merito, metadati, scarti["merito"], scarti["fonte"]))
+
+    print("candidati respinti: %d in tutto" % (scarti["merito"]
+                                              + scarti["fonte"]))
+    print("  per merito (il candidato e' stato guardato e non entra): %d"
+          % scarti["merito"])
+    print("  per metadati mancanti (la fonte non li dichiara, nessun codice "
+          "li puo' far comparire): %d" % scarti["fonte"])
+    for motivo, n in scarti_per_motivo.most_common():
+        chi, classe = CLASSE.get(motivo, ("G2", "fonte"))
+        print("    %2d  %-6s %-28s %s" % (n, chi, classe, motivo))
     print("G6 voci da guardare a vista: %d (il controllo automatico non può "
           "sapere se l'immagine è dell'oggetto giusto)" % da_vedere)
     voci_a_rischio = sorted({r[0] for r in rischi})
