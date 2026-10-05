@@ -2,7 +2,7 @@
 
 **Che cosa è e che cosa non è questo disegno.** `premi.md` §4 ha deciso che
 ogni livello ha un premio, e sono 1050. L'**oggetto** del premio non esiste
-ancora: la prova 5 vieta che sia generato, e i campi `premio`, `fonte`,
+ancora: la prova 1 vieta che sia generato, e i campi `premio`, `fonte`,
 `licenza` sono `null` con il perché accanto in `dati/premi.json`. Quindi qui
 **non si disegna il premio**: si disegna il **simbolo del premio**, cioè la
 categoria — `A` figure, `B` pittura, `C` scultura, `D` architettura e così via
@@ -32,6 +32,7 @@ Uso:  python3 sorgenti/art/emblema_premi.py
 """
 import json
 import os
+import time
 import re
 import sys
 
@@ -153,6 +154,24 @@ def categorie_del_documento():
     return set(re.findall(r"^\| \*\*([A-Z])\*\* \| ", testo, re.M))
 
 
+def numero_della_firma(record):
+    """Il numero che le cinque caselle della firma portano.
+
+    **La regola in un posto solo**, e la scrive sia il disegnatore sia il
+    controllo: se i due la scrivessero per conto loro, un giorno uno direbbe
+    `elemento_numero` e l'altro `numero del livello`, e nessuno dei due
+    controllerebbe l'altro. Qui la parte indipendente è un'altra e vale di
+    più: il controllo **rilegge i pixel** e confronta il numero che trova con
+    quello che questa funzione dichiara.
+
+    La regola è di una riga: il numero dell'elemento interattivo, e per
+    l'informatica — che non ha una voce fra le trenta — il numero della tappa.
+    """
+    if record.get("elemento_numero"):
+        return int(record["elemento_numero"])
+    return int(record["livello"].split("-")[1])
+
+
 def tessera_premio(record, tav):
     """I pixel di un emblema di premio, e la categoria che l'ha disegnato.
 
@@ -210,7 +229,10 @@ def tessera_premio(record, tav):
                     metti(x0 + i * passo + c, emblema.INIZIALI_Y + riga,
                           inchiostro)
 
-    bit = emblema.firma(record["chiave"])
+    # **La firma porta il numero dell'elemento**, non un hash: cinque caselle e
+    # trenta elementi, e trenta ci stanno. `emblema.firma` resta per i
+    # ritratti delle persone, dove l'unica cosa da distinguere è il nome.
+    bit = numero_della_firma(record)
     x0 = (LATO - (5 * 4 + 4)) // 2
     for i in range(5):
         pieno = (bit >> i) & 1
@@ -305,6 +327,12 @@ def principale():
         indice.append({"chiave": p["chiave"], "livello": p["livello"],
                        "lingua": p["lingua"], "categoria": categoria,
                        "forma": FORME[categoria][0], "forma_perche": perche,
+                       "elemento": p["elemento_interattivo"],
+                       "elemento_numero": numero_della_firma(p),
+                       "firma": "le cinque caselle in basso portano il numero "
+                                "dell'elemento interattivo in base due; per "
+                                "l'informatica, che non ha voce fra le trenta, "
+                                "il numero della tappa",
                        "x": cx, "y": cy, "px": [LATO, ALTEZZA]})
         per_categoria[categoria] = per_categoria.get(categoria, 0) + 1
 
@@ -314,7 +342,7 @@ def principale():
     tela_f, larghezza_f, altezza_f, voci_forme, colonne_f = foglio_forme(tav)
     byte_f = scrivi_png(tela_f, FORME_PAGINA)
     with open(FORME_INDICE, "w", encoding="utf-8") as f:
-        json.dump({"versione": 1, "data": "2026-10-04",
+        json.dump({"versione": 2, "data": time.strftime("%Y-%m-%d"),
                    "foglio": os.path.relpath(FORME_PAGINA, RADICE),
                    "foglio_px": [larghezza_f, altezza_f],
                    "colonne": colonne_f, "scala": 1,
@@ -329,18 +357,23 @@ def principale():
                   ensure_ascii=False, separators=(",", ":"))
 
     with open(INDICE, "w", encoding="utf-8") as f:
-        json.dump({"versione": 1, "data": "2026-10-04",
+        json.dump({"versione": 2, "data": time.strftime("%Y-%m-%d"),
                    "foglio": os.path.relpath(FOGLIO, RADICE),
                    "foglio_px": [larghezza, altezza],
                    "tessera_px": [LATO, ALTEZZA],
                    "colonne": COLONNE, "margine": MARGINE,
                    "che_cosa_e": "il simbolo della **categoria** del premio, "
                                  "non l'oggetto: l'oggetto non esiste ancora e "
-                                 "la prova 5 vieta che sia generato "
-                                 "(dati/premi.json, campo vuoto)",
-                   "come": "segno della categoria in alto, numero della tappa "
-                           "al centro, firma di cinque caselle in basso. "
-                           "Come in emblema.py, e per la stessa ragione",
+                                 "la prova 1 vieta che sia generato "
+                                 "(dati/premi.json, campo vuoto). La firma in "
+                                 "basso porta il numero dell'elemento "
+                                 "interattivo, ed e' l'unica parte della "
+                                 "tessera che parla del livello",
+                   "come": "segno della categoria in alto, anno e numero della "
+                           "tappa con la sigla della lingua al centro, e le "
+                           "cinque caselle in basso con il numero "
+                           "dell'elemento interattivo in base due: trenta "
+                           "elementi e trenta caselle",
                    "foglio_unico_perche": "1050 file da 48x54 sono 1050 "
                                           "richieste solo per pubblicarli, e "
                                           "il rate limit di GitHub non le fa "

@@ -1,6 +1,6 @@
 """I controlli sugli emblemi dei premi, e i difetti che devono vedere.
 
-Sei controlli, e ognuno guarda una cosa che un altro non guarda:
+Sette controlli, e ognuno guarda una cosa che un altro non guarda:
 
   Q1  **Il catalogo ha 1050 chiavi distinte**, una per livello. Due record con
       la stessa chiave sono lo stesso premio due volte, ed e' esattamente il
@@ -18,6 +18,10 @@ Sei controlli, e ognuno guarda una cosa che un altro non guarda:
       pixel. Un disegno che non disegna niente e' una forma che non esiste.
   Q5  **Ogni tessera dice perche'** quella forma sta con quella categoria.
   Q6  **Ogni tessera corrisponde a un premio del catalogo**, per chiave.
+  Q7  **Le cinque caselle in fondo portano il numero dell'elemento
+      interattivo**, e il numero e' **riletto dai pixel** e confrontato col
+      catalogo, non chiesto all'indice: se lo chiedessimo all'indice, indice e
+      controllo direbbero la stessa frase e il difetto del disegno passerebbe.
 
 Uso:  python3 sorgenti/art/verifica_premi_emblemi.py
 """
@@ -32,11 +36,38 @@ sys.path.insert(0, os.path.join(RADICE, "sorgenti", "gis"))
 sys.path.insert(0, os.path.join(RADICE, "sorgenti", "art"))
 from png_terrarium import decodifica_png, misura_png       # noqa: E402
 import emblema                                              # noqa: E402
+import emblema_premi                                        # noqa: E402
+
+numero_della_firma = emblema_premi.numero_della_firma
 
 PREMI = os.path.join(RADICE, "dati", "premi.json")
 INDICE = os.path.join(RADICE, "sorgenti", "art", "out", "premi",
                       "premi_indice.json")
 CARDINALITA = 1050            # prem.md 4.0: 150 informatici piu' 900 linguistici
+
+
+def leggi_firma(t, tessere, colore):
+    """Il numero che le cinque caselle in fondo alla tessera portano.
+
+    Le caselle sono 4x3 pixel con un passo di 5, la prima a `x = (LATO - 24) // 2`
+    e alla riga `emblema.FIRMA_Y` — le stesse costanti del disegnatore, e sono
+    un posto solo: se il disegnatore cambiasse la geometria e il controllo no,
+    il controllo leggerebbe il bordo e non le caselle, che e' peggio che non
+    leggere niente. Per questo il valore viene **contato**, non fidato.
+    Ritorna `None` quando la tessera **esce dal foglio**: li' non c'e' nessuna
+    casella da contare, e far esplodere l'indice sarebbe un crash, non un
+    controllo. Il difetto e' gia' dichiarato da Q2, che guarda i bordi: qui si
+    rimanda, e non si scrive la stessa riga due volte.
+    """
+    numero = 0
+    for i in range(5):
+        x = t["x"] + (emblema.LATO - (5 * 4 + 4)) // 2 + i * 5 + 1
+        y = t["y"] + emblema.FIRMA_Y + 1
+        if not (0 <= y < len(tessere) and 0 <= x < len(tessere[y])):
+            return None
+        if tuple(tessere[y][x]) == tuple(colore):
+            numero |= 1 << i
+    return numero
 
 
 def controlla(catalogo=None, indice=None, tessere=None):
@@ -125,6 +156,36 @@ def controlla(catalogo=None, indice=None, tessere=None):
         solo_c = sorted(set(chiavi) - set(t["chiave"] for t in voci))[:2]
         problemi.append("Q6 tessere e premi non combaciano: solo nel foglio %s,"
                         " solo nel catalogo %s" % (solo_i, solo_c))
+
+    # Q7 — la firma porta il numero dell'elemento, **letto dai pixel**
+    tav = emblema.tavolozza(RADICE)
+    colore = emblema._hex(tav[emblema.FAMIGLIE["opera_non_persona"]["colore"]]
+                          ["hex"])
+    per_chiave = {p["chiave"]: p for p in catalogo["premi"]}
+    for t in voci:
+        record = per_chiave.get(t["chiave"])
+        if record is None:
+            continue                      # Q6 lo ha gia' detto
+        atteso = numero_della_firma(record)
+        if t.get("elemento") != record.get("elemento_interattivo"):
+            problemi.append("Q7 %s: l'indice dichiara l'elemento %r e il "
+                            "catalogo %r" % (t["chiave"], t.get("elemento"),
+                                             record.get("elemento_interattivo")))
+            break
+        if t.get("elemento_numero") != atteso:
+            problemi.append("Q7 %s: l'indice dichiara il numero %s e il "
+                            "catalogo dice %d" % (t["chiave"],
+                                                  t.get("elemento_numero"),
+                                                  atteso))
+            break
+        letto = leggi_firma(t, tessere, colore)
+        if letto is None:
+            continue                      # fuori dal foglio: lo dice Q2
+        if letto != atteso:
+            problemi.append("Q7 %s: le cinque caselle dicono %d e "
+                            "l'elemento interattivo e' il %d"
+                            % (t["chiave"], letto, atteso))
+            break
     return problemi
 
 
@@ -149,7 +210,7 @@ def main():
 
 
 def difetti():
-    """Sei difetti iniettati, uno per controllo, su file in memoria.
+    """Sette difetti iniettati, uno per controllo, su file in memoria.
 
     Non si rompono i file veri: qui i controlli prendono l'indice e il catalogo
     come dati, e il foglio come griglia di pixel. Un difetto qui e' una copia
@@ -208,6 +269,29 @@ def difetti():
     i["tessere"][9]["chiave"] = "9-99-XX"
     esiti.append(("F6 tessera senza il premio",
                   controlla(cat, i, griglia), "Q6"))
+
+    # F7: la firma di una tessera dice il numero di un'altra cosa — si
+    # **inverte** la prima casella, e il numero letto vale uno piu' o uno
+    # meno di quello dichiarato. Il difetto e' **nel disegno**: l'indice e il
+    # catalogo continuano a dire la verta', ed e' per questo che Q7 conta i
+    # pixel invece di chiedere. Invertire e' la mossa che regge sempre: una
+    # versione precedente svuotava la casella, e se il numero dell'elemento
+    # era pari la casella era gia' vuota — il difetto non esisteva e la prova
+    # diceva «non visto» senza che nessuno capisse perche'.
+    fondo = emblema._hex(emblema.tavolozza(RADICE)["bianco_calce"]["hex"])
+    colore = emblema._hex(emblema.tavolozza(RADICE)
+                          [emblema.FAMIGLIE["opera_non_persona"]["colore"]]
+                          ["hex"])
+    i = json.loads(json.dumps(ind))
+    tessera = i["tessere"][13]
+    x0 = tessera["x"] + (emblema.LATO - (5 * 4 + 4)) // 2
+    y0 = tessera["y"] + emblema.FIRMA_Y
+    alto = tuple(griglia[y0][x0]) == tuple(colore)
+    for dy in range(3):
+        for dx in range(4):
+            griglia[y0 + dy][x0 + dx] = fondo if alto else colore
+    esiti.append(("F7 firma con il numero di un'altra tessera",
+                  controlla(cat, i, griglia), "Q7"))
 
     visti, non = 0, 0
     for nome, problemi, cerca in esiti:

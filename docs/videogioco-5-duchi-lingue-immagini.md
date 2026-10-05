@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — le immagini degli oggetti di interazione: dove vengono e perché si dichiarano
-versione: 0.2
-data: 2026-10-04
+versione: 0.3
+data: 2026-10-05
 autore: Pietro Fabbri (con Claude)
 fonte: ricerca su Wikimedia Commons del 02/10/2026
 documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-ritratti.md (v0.5), videogioco-5-duchi-luoghi-edifici.md (v0.4), videogioco-5-duchi-esercizi.md (v0.1), AGENTS.md, FONTI-E-LICENZE.md
@@ -112,7 +112,7 @@ Le trenta voci ferraresi sono campi di proverbi e modi di dire, e un proverbio n
 
 **Pietro ha deciso il 04/10/2026 di associare «qualcosa di evocativo»**, e la scelta è dichiarata perche' è una scelta: alla voce «i proverbi sul tempo» non si mette un'immagine dei proverbi — che non esiste — ma **la Torre dell'Orologio di Ferrara**, che è la cosa di cui il campo parla. Non è l'immagine del proverbio: è **la cosa che il proverbio riguarda**, e quella si può fotografare per davvero.
 
-La regola che ne nasce è dichiarata perché qualcuno la riuserà: **a una voce che non ha un oggetto si può associare la cosa che la voce evoca, e solo se esiste ed è vera**. Un'immagine inventata è esclusa come sempre (`prova 5`): se per «i proverbi sulla fortuna» non ci fosse niente di ferrarese da fotografare, la risposta resta `nessuna` col motivo, e va detto che è una delle quattro categorie e non un buco.
+La regola che ne nasce è dichiarata perché qualcuno la riuserà: **a una voce che non ha un oggetto si può associare la cosa che la voce evoca, e solo se esiste ed è vera**. Un'immagine inventata è esclusa come sempre (`premi.md` §3, **prova 1**): se per «i proverbi sulla fortuna» non ci fosse niente di ferrarese da fotografare, la risposta resta `nessuna` col motivo, e va detto che è una delle quattro categorie e non un buco.
 
 
 ## 3. Le etichette, che sono la parte importante
@@ -244,5 +244,6 @@ Ridurre a 96×72 gli spinelli di Commons richiede un'immagine minima (§4.1), un
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 05/10/2026 | 0.3 | **Un rimando che puntava a una prova che non esiste, e la regola che ne nasce.** §2.2 escludeva l'immagine inventata «come sempre (`prova 5`)», e `premi.md` §3 dichiara **quattro** prove: il divieto di generare è nella **prima**, e il rimando è stato corretto indicando anche il documento. Il numero era giusto e la frase si leggeva come le altre, quindi nessuno se n'era accorto: è il difetto che `AGENTS.md` chiama *un numero vero che guarda il numero sbagliato*. Il controllo **P8** di `sorgenti/verifica_premi.py` legge le quattro righe della tabella delle prove e rifiuta ogni rimando a una prova inesistente. Il resto del capitolo non è cambiato: i duecentottanta voci e i numeri del secondo giro sono quelli della v0.2. |
 | 04/10/2026 | 0.2 | **Il secondo giro di ricerca, e i fogli di controllo che non esistevano.** Il latino, il greco e il ferrarese sono stati cercati di nuovo cercando **la cosa che si vede** e non la parola che la nomina: alla voce «gli auspici» il lituo dell'augure, non un file che contiene la parola. Le voci **senza nessun candidato** scendono da **34 a 6** — e a **3** nei fogli, che ripiegano sul primo giro — e i candidati delle novanta voci salgono da **417 a 547**. Il **numero** di voci coperte è migliorato, la **correttezza** no: alla voce «i riti funebri» il secondo giro ha restituito un'elimitrice funebre, e il campione dei nomi è in §2.1. Il primo giro **non è stato toccato**: è la prova di che cosa trovava una ricerca che cercava le parole. La Q1 era bloccante perché **manccavano i fogli di controllo** e senza fogli l'attestazione a vista è impossibile: ora ci sono, **18 fogli** da dieci voci, e la Q1 è risolta nel metodo — le immagini le guarda Pietro, io registro i giudizi e lo script **rifiuta** un giudizio senza motivo, con etichetta fra le nove e file fra i candidati guardati. La Q4 è chiusa: le trenta voci ferraresi associano **la cosa che il proverbio evoca**, se esiste ed è vera. Un difetto trovato in sé stesso: il primo tentativo faceva `zip(nomi, termini)` e quindi cercava **il nome italiano della voce** invece del termine inglese — la stessa malattia del primo giro, e l'ho scritta due volte. |
 | 02/10/2026 | 0.1 | Prima stesura. Ricerca su Wikimedia Commons delle **180 voci** degli oggetti di interazione, con termini scelti voce per voce: **1120 candidati** con licenza libera, di cui **12 respinti** per difetto automatico. La regola delle quattro categorie, le etichette, la misura 96×72 e la regola del ritaglio dichiarato. Il difetto della ricerca — 67 voci in cui nessun candidato nomina l'oggetto, fra cui il latino a 27 su 28 — dichiarato per esteso, con i sette controlli che lo rendono visibile. **Nessuna immagine scelta, nessuna guardata a vista**: è dichiarato, ed è la prima questione aperta. |

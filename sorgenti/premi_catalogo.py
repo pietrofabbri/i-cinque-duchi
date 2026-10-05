@@ -3,7 +3,7 @@
 **Che cosa c'è e che cosa non c'è, e perché.** `premi.md` §4 ha deciso la
 cardinalità — un premio per livello, 1050 — e §2 ha chiuso le undici
 categorie. Ma il **catalogo non esisteva**: `premi.md` §5 lo dava
-esplicitamente per *da produrre*, e la prova 5 vieta che un premio sia
+esplicitamente per *da produrre*, e la prova 1 vieta che un premio sia
 un'opera generata. Questo file produce la parte che si può produrre senza
 inventare niente: **il livello, la lingua, la disciplina e la categoria**, con
 la regola che assegna la categoria letta dalla tabella di `premi.md` §2 e non
@@ -26,11 +26,17 @@ Uso:  python3 sorgenti/premi_catalogo.py            # scrive dati/premi.json
 """
 import json
 import os
+import re
 import sys
+import time
 
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AMBIENTI = os.path.join(RADICE, "dati", "ambienti_livelli.json")
 USCITA = os.path.join(RADICE, "dati", "premi.json")
+LINGUE_MD = os.path.join(RADICE, "docs", "videogioco-5-duchi-lingue.md")
+ASSOCIAZIONI = os.path.join(RADICE, "dati", "lingue", "associazioni.json")
+IMMAGINI_OGGETTI = os.path.join(RADICE, "dati", "lingue",
+                                "immagini_oggetti.json")
 
 LINGUE = ["IT", "FE", "LA", "EN", "LIS", "EL"]
 
@@ -102,6 +108,105 @@ def categorie_da_tabella(documento):
     return set(_re.findall(r"^\| \*\*([A-Z])\*\* \| ", documento, _re.M))
 
 
+# Le sigle delle due fonti non sono le stesse: `associazioni.json` e
+# `immagini_oggetti.json` dicono **SI** per la lingua dei segni, e il catalogo
+# dei premi e gli emblemi dicono **LIS**. E' una terza declinazione della stessa
+# sigla, e senza dichiararla la mappa è un posto in cui un numero sembra
+# sbagliato.
+SIGLA_DALLA_PARTE = {"SI": "LIS"}
+
+
+def normalizza(testo):
+    """La cella di una tabella di `lingue.md`, senza il segno del facoltativo.
+
+    Il **†** sta in fondo a molte celle e vuol dire che la tappa è
+    facoltativa: non è parte dell'argomento, e se restasse attaccato due
+    letture dello stesso testo darebbero due stringhe diverse. La regola e'
+    dichiarata qui e ripetita nel controllo, e i due implementano la regola,
+    non il codice dell'altro.
+    """
+    return " ".join(testo.replace("\u2020", "").split())
+
+
+def sezione_di_lingua(documento, oggetto):
+    """Il pezzo di `lingue.md` §6.x la cui riga «Oggetto di interazione» porta
+    quell'oggetto.
+
+    **La sezione si trova per l'oggetto e non per la sua posizione.** Il numero
+    della sezione e la sigla della lingua sono due fatti che possono divergere
+    senza che nessuno se ne accorga; l'oggetto di interazione e' un nome che
+    `associazioni.json` porta per la stessa lingua, e i due insieme sono una
+    prova. Se un giorno l'ordine delle sezioni cambiasse, il file continuerebbe
+    a leggerle bene; se l'oggetto cambiasse, si fermerebbe.
+    """
+    for m in re.finditer(r"(?m)^### 6\.\d+ [^\n]*\n", documento):
+        j = documento.find("\n### ", m.end())
+        corpo = documento[m.end():j if j > 0 else len(documento)]
+        u = re.search(r"Oggetto di interazione: \*\*(.+?)\*\*", corpo)
+        if u and u.group(1).strip() == oggetto:
+            return corpo
+    raise SystemExit("lingue.md non ha una sezione con l'oggetto di "
+                     "interazione %r: le trenta voci non hanno dove essere "
+                     "legate ai livelli" % oggetto)
+
+
+def argomenti_del_livello(documento, oggetto):
+    """{anno, numero): argomento} dalla tabella della sezione.
+
+    Le cinque colonne sono gli anni 1..5 e le righe sono i trenta numeri dei
+    livelli: la cella (anno, numero) e' l'argomento di quel livello in quella
+    lingua.
+    """
+    corpo = sezione_di_lingua(documento, oggetto)
+    fuori = {}
+    for riga in corpo.splitlines():
+        m = re.match(r"^\| (\d{1,2}) \|(.*)\|\s*$", riga)
+        if not m:
+            continue
+        numero = int(m.group(1))
+        celle = [normalizza(c) for c in m.group(2).split("|")]
+        if len(celle) < 5:
+            raise SystemExit("la riga %d della tabella di %s ha %d colonne "
+                             "e non cinque" % (numero, oggetto, len(celle)))
+        for anno, testo in enumerate(celle[:5], 1):
+            fuori[(anno, numero)] = testo
+    if len(fuori) != 150:
+        raise SystemExit("la tabella di %s dà %d argomenti e non 150 "
+                         "(30 livelli per 5 anni)" % (oggetto, len(fuori)))
+    return fuori
+
+
+def elementi():
+    """Le trenta voci per lingua, e la verifica che i due file che le
+    dichiarano dicano la stessa cosa."""
+    with open(ASSOCIAZIONI, encoding="utf-8") as f:
+        proposte = json.load(f)["associazioni"]
+    with open(IMMAGINI_OGGETTI, encoding="utf-8") as f:
+        ricercate = json.load(f)["risultati"]
+    dalle_immagini = {}
+    for v in ricercate:
+        dalle_immagini[(SIGLA_DALLA_PARTE.get(v["lingua"], v["lingua"]),
+                        int(v["numero"]))] = v["voce"]
+    voci = {}
+    for a in proposte:
+        sigla = SIGLA_DALLA_PARTE.get(a["lingua"], a["lingua"])
+        voci[sigla] = {"oggetto": a["oggetto"], "voci": list(a["voci"])}
+        for numero, voce in enumerate(a["voci"], 1):
+            altra = dalle_immagini.get((sigla, numero))
+            if altra != voce:
+                raise SystemExit("la voce %s n.%d e' %r in associazioni.json "
+                                 "e %r in immagini_oggetti.json: i due file "
+                                 "dicono cose diverse e non si sa quale e' "
+                                 "quella giusta" % (sigla, numero, voce, altra))
+            if len(a["voci"]) != 30:
+                raise SystemExit("la lingua %s ha %d voci e non 30"
+                                 % (sigla, len(a["voci"])))
+    if len(dalle_immagini) != 180:
+        raise SystemExit("immagini_oggetti.json ha %d voci e non 180"
+                         % len(dalle_immagini))
+    return voci
+
+
 def principale():
     sola_prova = "--prova" in sys.argv
     percorso_doc = os.path.join(RADICE, "docs",
@@ -145,6 +250,20 @@ def principale():
         raise SystemExit("i livelli sono %d e non 1050: la cardinalità decisa "
                          "in prem.md 4.0 non torna" % totali)
 
+    # **Il legame fra livello, elemento e argomento**, letto dai documenti e non
+    # scritto qui. Senza questo blocco `argomento_del_livello` e
+    # `elemento_interattivo` non si possono dichiarare, e senza di loro la
+    # coerenza di cui parla il progetto non e' nemmeno esprimibile.
+    elementi_per_lingua = elementi()
+    with open(LINGUE_MD, encoding="utf-8") as f:
+        lingue_md = f.read()
+    argomenti = {}
+    for sigla, blocco in elementi_per_lingua.items():
+        argomenti.update({(sigla, anno, numero): testo
+                          for (anno, numero), testo in
+                          argomenti_del_livello(lingue_md,
+                                                blocco["oggetto"]).items()})
+
     voci = []
     for p in premiate:
         disciplina = DISCIPLINA[p["lingua"]]
@@ -163,16 +282,37 @@ def principale():
                             "documento da questo generatore",
             "argomento": p["argomento"],
             "voce": p["voce"],
+            "elemento_numero": (None if p["lingua"] == "INFO" else
+                                int(p["livello"].split("-")[1])),
+            "elemento_interattivo": (
+                None if p["lingua"] == "INFO" else
+                elementi_per_lingua[p["lingua"]]["voci"]
+                [int(p["livello"].split("-")[1]) - 1]),
+            "argomento_del_livello": argomenti.get(
+                (p["lingua"], int(p["livello"].split("-")[0]),
+                 int(p["livello"].split("-")[1]))),
+            "elemento_da": (
+                None if p["lingua"] == "INFO" else
+                "associazioni.json, voce %d delle trenta di %s; l'argomento "
+                "del livello e' la cella %s della tabella di lingue.md 6.x, "
+                "la sezione trovata per l'oggetto di interazione"
+                % (int(p["livello"].split("-")[1]),
+                   elementi_per_lingua[p["lingua"]]["oggetto"],
+                   p["livello"])),
             "premio": None,
             "fonte": None,
             "licenza": None,
             "perche_prova_2": None,
-            "vuoto": ["premio non ancora deciso: la prova 5 vieta che un "
+            "vuoto": ["premio non ancora deciso: la prova 1 vieta che un "
                       "premio sia generato, e la fonte va cercata",
                       "fonte assente per la stessa ragione",
                       "licenza assente per la stessa ragione",
                       "perche_prova_2 assente: le quattro prove non sono "
-                      "ancora state superate da nessun premio"],
+                      "ancora state superate da nessun premio"] +
+                     ([] if p["lingua"] != "INFO" else
+                      ["elemento interattivo assente perche' le trenta voci "
+                       "sono delle lingue: l'informatica non ne ha una, e non "
+                       "se la presta. Il suo argomento e' quello del livello"]),
         })
 
     # Le categorie che **nessun livello usa** non sono un difetto: sono le
@@ -190,9 +330,16 @@ def principale():
         per_disciplina[v["disciplina"]] = per_disciplina.get(
             v["disciplina"], 0) + 1
 
+    per_voce = {}
+    for v in voci:
+        if v["elemento_interattivo"]:
+            per_voce[(v["lingua"], v["elemento_numero"])] = \
+                per_voce.get((v["lingua"], v["elemento_numero"]), 0) + 1
+    usi = sorted(set(per_voce.values()))
+
     doc = {
-        "versione": 1,
-        "data": "2026-10-04",
+        "versione": 2,
+        "data": time.strftime("%Y-%m-%d"),
         "scopo": "un record per livello, con la categoria che prem.md 2 "
                  "assegna alla disciplina. L'oggetto del premio non e' qui: "
                  "manca e il file lo dice",
@@ -211,6 +358,20 @@ def principale():
         "discipline": DISCIPLINA,
         "primaria": PRIMARIA,
         "da_escludere": DA_ESCLUDERE,
+        "elementi": dict(
+            (sigla, {"oggetto": blocco["oggetto"], "voci": len(blocco["voci"]),
+                     "livelli": 5 * len(blocco["voci"])})
+            for sigla, blocco in sorted(elementi_per_lingua.items())),
+        "elementi_riepilogo": {
+            "voci": sum(len(b["voci"]) for b in elementi_per_lingua.values()),
+            "livelli_con_elemento": len(per_voce),
+            "usi_per_voce": usi,
+            "da": "associazioni.json, confrontato voce per voce con "
+                  "immagini_oggetti.json: i due file devono dire la stessa cosa",
+            "informatica": "nessuna voce: i centocinquanta livelli informatici "
+                           "non hanno un elemento fra le trenta, e non se lo "
+                           "prendono in prestito",
+        },
         "campi_vuoti": sorted({v for voce in voci for v in voce["vuoto"]}),
         "categorie_senza_livelli": sorted(
             lettere - set(per_categoria)),
@@ -230,6 +391,11 @@ def principale():
           % (len(voci), len(amb), len(amb), len(voci) - len(amb)))
     print("categorie usate: %s" % dict(sorted(per_categoria.items())))
     print("discipline: %s" % dict(sorted(per_disciplina.items())))
+    print("elementi interattivi: %d voci su %d lingue, %d livelli legati, "
+          "usi per voce %s"
+          % (doc["elementi_riepilogo"]["voci"], len(LINGUE),
+             doc["elementi_riepilogo"]["livelli_con_elemento"],
+             usi))
     print("campi vuoti dichiarati: %d" % len(doc["campi_vuoti"]))
     if sola_prova:
         return 0
