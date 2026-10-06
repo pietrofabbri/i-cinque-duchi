@@ -336,6 +336,12 @@ def controlla(sorgenti, documenti, problemi, esegui=None):
     for rel in sorted(documenti):
         confronti = 0
         testo = documenti[rel]
+        # Un documento di tipo `storico` e' tutto registro: ogni numero dice che
+        # cosa era vero il giorno in cui la voce e' stata scritta (06/10/2026,
+        # `storico.md` §0). Si salta per la stessa ragione per cui si salta il
+        # registro delle modifiche di ogni documento.
+        if re.search(r"(?m)^tipo:\s*storico\s*$", testo[:600]):
+            continue
         for numero_riga, riga in righe_utili(testo):
             if not riga.strip():
                 continue
