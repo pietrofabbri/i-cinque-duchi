@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — Storico: come ci si è arrivati
 tipo: storico
-versione: 0.2
+versione: 0.3
 data: 2026-10-06
 autore: Pietro Fabbri (con Claude)
 documenti collegati: videogioco-5-duchi-roadmap-documentazione.md (v0.2)
@@ -666,9 +666,264 @@ alla prima esecuzione segnalando **276 occorrenze contro 269**: il confronto
 sbagliato era suo, perché sei celle contengono due persone, e la correzione è stata
 farla confrontare una corrispondenza invece di un'aritmetica.
 
-## 2. Registro delle modifiche
+## 2. Dagli altri documenti
+
+Le sezioni che raccontavano il difetto da cui è nata una regola, o le versioni attraverso cui è passato un prototipo. Sono state tolte il 06/10/2026 (fase 1 della roadmap): nel documento d'origine resta la regola, o lo stato di oggi, al presente.
+
+### 2.1 Da `mappe.md`
+
+*Da `mappe.md` v1.5, sezione «6. I cinque difetti che la verifica ha trovato». Oggi: la sezione omonima del documento, al presente.*
+
+#### 6. I cinque difetti che la verifica ha trovato
+
+Sono qui perché **uno di questi li avrebbe trovati tutti a occhio**. Il primo file prodotto era ben formato, della dimensione giusta, e con la Sardegna ridotta a un segno.
+
+| # | Difetto | Come si manifestava | Come è stato trovato | Correzione |
+|---|---|---|---|---|
+| **1** | **Douglas-Peucker su anello chiuso** | il segmento che chiude l'anello ha lunghezza zero, l'algoritmo lo tratta come un punto e butta via quasi tutti i vertici: la Sardegna si riduceva a un segno e **Cagliari cadeva fuori dall'Italia** | punto-in-poligono su 58 città | `dp_chiuso()`, che toglie il vertice duplicato prima di semplificare |
+| **2** | **ritaglio geometrico dei poligoni** | ritagliare un poligono con il riquadro produce un anello **auto-intersecante** se il poligono esce e rientra: il controllo diceva che **Venezia era dentro la Baviera** | prova su Venezia | i poligoni non si ritagliano più: si tiene il poligono intero e lascia il ritaglio al motore |
+| **3** | **delta che non riparte a ogni anello** | il lettore ripartiva da zero, lo scrittore no: tutti gli anelli interni erano spostati | confronto fra primo e secondo vertice di ogni anello | il delta riparte a ogni anello, in scrittura e in lettura |
+| **4** | **città scartate** | in pyshp un punto ha `parts` vuoto, il ciclo non produceva segmenti, e tutte le città sparivano | il file città era vuoto, 0 punti | gestione esplicita del `PointShape` |
+| **5** | **tropleranza di semplificazione** | 0,012 gradi sono **1,3 km**: la costa si sposta e le città costiere finiscono fuori dal proprio Paese | Cagliari, Livorno, Marsala fuori | tolleranza abbassata a 0,002 (200 m) |
+
+*(aggiunta)* Il quinto difetto è il più importante per il progetto, e non perché fosse il più grave: **è quello che parla della differenza tra una mappa che sembra vera e una mappa che è vera alla scala giusta**. Una mappa con la Sardegna disegnata male sembra uguale a una corretta finché non ci metti dentro un punto.
+
+##### 6.1 Due cose che sembrano errori e non lo sono
+
+Segnate qui perché sono state scambiate per difetti due volte, e perché un controllo futuro le deve riconoscere:
+
+- **Città del Vaticano e San Marino cadono dentro il poligono dell'Italia.** Il poligono italiano di Natural Earth non ha un buco per le enclave. Non è un errore dei dati, è una scelta della fonte.
+- **L'estremo ovest d'Italia è a 6,6° E (Val d'Aosta), non a Capo Spartivento.** E l'estremo sud è **Lampedusa** (35,49° N), non Portopalo. Era un errore del controllo, non dei dati.
+
+
+
+### 2.2 Da `itinerari.md`
+
+*Da `itinerari.md` v0.4, sezione «5. Il difetto che ha fatto nascere tutto questo, e il controllo che lo tiene». Oggi: la sezione omonima del documento, al presente.*
+
+#### 5. Il difetto che ha fatto nascere tutto questo, e il controllo che lo tiene
+
+Il quinto anno dichiarava **due voci collettive su trenta**, e la tabella ne
+portava **tre**: la macchina (5-13), gli ingegneri delle reti (5-18) e **le mani
+che hanno approssimato √2** (5-6), tutte e tre marcate `collettivo C` nella
+propria casella. La frase del documento le contava a memoria invece di leggerle,
+e nessuno lo aveva visto.
+
+È il difetto che `AGENTS.md` chiama **un numero scritto a mano invecchia**, e
+questa volta la cosa che invecchiava era proprio il documento che descriveva il
+dato. Il numero è stato corretto in `anno5-mondo.md` (v0.6), che ora dice **tre** e
+le nomina tutte e tre.
+
+**Il controllo è C5**, in `sorgenti/verifica_incontri.py`: legge il numero che i
+quattro documenti degli anni dichiarano e lo confronta con il conto del dato. Gli
+altri quattro controlli sono dati contro dati; **C5 è l'unico che confronta il
+dato con quello che un documento scrive a mano**, ed è l'unico che avrebbe visto
+il difetto. Provato con difetto iniettato: riportando il quinto anno a «2 su 30»
+il controllo morde e lo dice.
+
+I cinque controlli, in una riga:
+
+| | Che cosa controlla |
+|---|---|
+| **C1** | le tappe sono esattamente 5 × 30, nessuna due volte, nessuna fuori schema |
+| **C2** | ogni tappa ha una voce, un luogo, e il mezzo o la sua dichiarazione di assenza |
+| **C3** | ogni voce porta **la prova** della sua classificazione, e la prova è una delle quattro dichiarate |
+| **C4** | i facoltativi non sono la voce obbligatoria, nessuno è ripetuto, nessuno è senza nome |
+| **C5** | il numero delle voci collettive è quello che i documenti dichiarano |
+
+### 2.3 Da `sequenza.md`
+
+*Da `sequenza.md` v0.3, sezione «1. Il difetto che questa sequenza ha trovato». Oggi: la sezione omonima del documento, al presente.*
+
+#### 1. Il difetto che questa sequenza ha trovato
+
+Costruire la fila ha fatto emergere una cosa che nessuno dei controlli precedenti vedeva, e che vale più della fila: **la tappa 4-16 ha due luoghi diversi in due file diversi, e quello che aveva nel registro era il posto sbagliato**.
+
+Il 2 ottobre 2026 Pietro sostituì Ibn Khaldun con Ashoka alla 4-16 e Ibn Khaldun divenne la facoltativa forte della stessa tappa. Il documento dell'anno 4 fu aggiornato — 4-16 = **Pataliputra**, che è il luogo di Ashoka — ma **il registro dei luoghi non fu rigenerato** e continuava a portare «Tunisi e Il Cairo», che era il luogo di Ibn Khaldun: Tunisiano, e al Cairo dove visse.
+
+Le **ipotesi di coordinata** del 3 ottobre costruirono sopra quel posto sbagliato una strada Tunisino-Cairo, con la fonte che diceva «partenza Tunisi, arrivo Il Cairo» e la frase che il gioco avrebbe mostrato al ragazzo attribuita ad **Ashoka**. Il record era internamente coerente, aveva due punti, aveva il tratto, aveva la fonte: e i sei controlli R1-R6 gli avevano dato il via libera. **Un controllo che verifica la forma non verifica la premessa**: io ho controllato che la strada fosse ben costruita e non che la strada fosse quella giusta.
+
+La 4-16 è ora **Pataliputra** e la strada Tunisino-Cairo sparisce con lei: i nomi doppi con il tratto passano da otto a sette, e la distanza dell'anno 3 è cambiata di 1108 km perché la 3-28 è passata da Manchester a Torino. Il punto viene dalla tabella del documento, non dalla mano.
+
+**La causa, e come è stata chiusa.** Il 3 ottobre la correzione era stata scritta **a mano** in `dati/luoghi_gioco.json`, perché il generatore del registro (`sorgenti/luoghi/classifica.py`, con `estrai_luoghi.py` e `coordinate.py`) riscrivendo il file avrebbe cancellato quattro cose che nessun comando rifa: il terreno misurato su SRTM, il campo `controllo`, i `dettagli` compilati a mano e il blocco `tappe` con i trenta binomi pin/stanza del quinto anno. Una correzione che non si può rigenerare è una correzione che nessuno può rifare: il 3 ottobre, infatti, il generatore **rifacendo il registro avrebbe rimesso il valore vecchio**, perché il file degli estratti era rimasto indietro rispetto ai documenti.
+
+Il 3 ottobre la catena è stata sistemata per bene, in quattro mosse, e ognuna ha un controllo suo (`sorgenti/verifica_catena_luoghi.py`, cinque):
+
+1. **`estrai_luoghi.py` legge le colonne per intestazione, non per numero.** Nell'anno 5 la tabella ha una colonna in più — la `Stanza`, fra il pin e la voce — e il numero fisso prendeva la stanza come se fosse la voce: in ventinove tappe su trenta il campo `voce` conteneva il filone del *Furioso* invece della persona. Il sintomo era che il nome sembrava già un titolo: «la strada della fuga di Rinaldo `F2` 1,32». Non se n'era accorto nessuno, perché nessuno leggeva centoventi nomi di persona in un colpo.
+2. **`aggiorna_registro.py` unisce invece di sovrascrivere**, e porta dietro i campi compilati a mano.
+3. **`dati/luoghi_correzioni.json` dichiara le correzioni che i controlli hanno trovato** — Baghdad e Karakorum — che prima vivevano solo nel JSON editato a mano e sparivano alla prima rigenerazione.
+4. **Il registro è stato rigenerato davvero**: la 4-16 prende Pataliputra dalla tabella, la 3-28 prende Torino, e **le divergenze fra registro e documento sono passate da una a zero**. La lista `DICHIARATE` di `sequenza_tappe.py` resta nel codice, vuota e dichiarata.
+
+La lezione che resta è quella che l'aveva fatto nascere: **un controllo che verifica la forma non verifica la premessa**, e un dato corretto a mano è un dato che nessuno può ricostruire.
+
+### 2.4 Da `ritratti.md`
+
+*Da `ritratti.md` v0.5, sezione «3. La ricerca, e il suo difetto più importante». Oggi: la sezione omonima del documento, al presente.*
+
+#### 3. La ricerca, e il suo difetto più importante
+
+La ricerca è in tre script, e si può rifare:
+
+1. `cerca_ritratti.py` interroga l'API di Wikipedia in blocchi da 40 titoli e
+   restituisce l'immagine in testa all'articolo;
+2. `cerca_ritratti_2.py` passa ai titoli scelti a mano e all'endpoint REST dei
+   riassunti per chi non è stato risolto;
+3. `cerca_commons.py` cerca direttamente **su Commons**, per i nomi in cui la
+   ricerca su Wikipedia non trova nulla.
+
+**Il difetto, da non ripetere.** La prima versione chiedeva 213 nomi di
+seguito e, quando la risposta non arrivava, semplicemente non aveva più
+immagini: scriveva allora «nessun ritratto in testa all'articolo di
+Wikipedia». Ma Wikipedia risponde **HTTP 429 Too Many Requests** quando le
+richieste si susseguono troppo veloce, e quel codice di errore finiva letto come
+«non esiste».
+
+Il risultato era che quindici personaggi con un ritratto celebre e documentato
+venivano dichiarati privi di ritratto: Albrecht Dürer, Alan Turing, Leibniz,
+John Snow, Alonzo Church, Josquin des Prez, Giovanni Bellini, Leon Battista
+Alberti, Federico II, Aldo Manuzio, William Caxton, Sergej Korolëv, Riccardo
+Bacchelli, Giulio Natta, Renata Viganò.
+
+Non era un errore di ricerca. Era **un fatto falso scritto come se fosse
+vero**, in un progetto la cui tesi è che i fatti vanno verificati.
+
+La correzione è in due righe di principio, e sta in tutti e tre gli script:
+
+- un client che aspetta un tempo minimo fra le richieste e, su 429, ascolta
+  l'`Retry-After` invece di arrendersi;
+- l'esito distingue `non_trovato` (risposta avuta, nessuna immagine) da
+  `richiesta_fallita` (nessuna risposta). **Una richiesta fallita non genera
+  mai una conclusione**: la scheda resta «da rivedere».
+
+Lo stesso difetto è ricomparso due volte dopo, in forma diverse: una volta
+perché la ricerca delle licenze cercava pagine invece che file (manca il
+prefisso `File:`), e una volta perché il ciclo di scaricamento non ascoltava il
+429 e sei immagini su centosessantanove finivano fuori con la scritta «download
+fallito», che sembrava un file corrotto. Tutte e tre le volte la causa era la
+stessa: **una risposta che non arriva è stata letta come una risposta negativa**.
+
+### 2.5 Da `luoghi-edifici.md`
+
+*Da `luoghi-edifici.md` v0.6, sezione «5. Una regola che si è fatta pagare quattro volte». Oggi: la sezione omonima del documento, al presente.*
+
+#### 5. Una regola che si è fatta pagare quattro volte
+
+**Una richiesta che non arriva non è una risposta negativa.**
+
+È successo quattro volte in due giorni, sempre nella stessa forma. Wikipedia
+risponde `HTTP 429` a raffica; l'errore non è un codice di stato ma un corpo
+vuoto; il codice che lo riceveva non lo distingueva da una risposta vera e
+scriveva l'assenza come un fatto. Le quattro volte:
+
+| Dove | Che cosa è stato scritto | Che cosa era vero |
+|---|---|---|
+| `cerca_ritratti.py` | «nessun ritratto in testa all'articolo» per 15 personaggi | Dürer, Turing, Leibniz, John Snow, Josquin, Bellini hanno tutti un ritratto |
+| `ripara_licenze.py` | «file non letto su Commons» per 8 file | i file c'erano, cercati come pagine invece che come file |
+| `ritratto_reale.py` | «download fallito» per 6 immagini | i file c'erano, era un 429 non ascoltato |
+| `coordinate.py` | «nessun articolo» per 30 luoghi | Uruk, Tebe, Xianyang, Qufu hanno le coordinate |
+
+La correzione è sempre la stessa, due righe: il client ascolta il `Retry-After`, e
+l'esito distingue **`non_trovato`** (risposta avuta, niente) da **`richiesta_fallita`**
+(nessuna risposta). Una richiesta fallita non chiude mai una scheda: la lascia
+`da_rifare`. È in `AGENTS.md`, e va tenuto in tutti gli script che parlano con
+qualcosa.
+
+### 2.6 Da `fonti-visive.md`
+
+*Da `fonti-visive.md` v0.20, sezione «5. Il difetto della ricerca, che è il più istruttivo del lavoro». Oggi: la sezione omonima del documento, al presente.*
+
+#### 5. Il difetto della ricerca, che è il più istruttivo del lavoro
+
+La ricerca su Commons ha sbagliato in modi diversi, e sono tre, e vanno dichiarati tutti.
+
+**Il primo difetto: la parola con due sensi.** Alla voce **«pipa»** (che nel Cinquecento è una pianta, la *Tabernaemontana elegans*, da cui si faceva la bevanda), la ricerca ha restituito **il rospo del genere *Pipa***, che è un anfibio sudamericano del Settecento. È lo stesso errore della «correggia» che diventava il pittore Correggio (`lingue-immagini.md` §5): una parola è una parola, non un oggetto.
+
+**Il secondo difetto: la parola giusta, il contesto sbagliato.** Alla voce **«aereo»** (il mezzo di trasporto) è arrivata una foto di un **volo turistico sugli aerei da giardinaggio** di un'azienda italiana. Alla voce **«carrozza»** è arrivata una carrozza **americana del 1922**, che è del gioco del quinto anno travestita di mezzo del Quattrocento. Alla voce **«tavolozza affreschi»** è arrivato un autoritratto di Alessandro Allori, che è un dipinto ma non una tavolozza.
+
+**Il terzo difetto, che è il più serio: la fonte giusta usata male.** Alla voce **«cavallo»** la ricerca ha restituito **la Cappella dei Magi di Benozzo Gozzoli** — che è una delle pitture più belle del Quattrocento italiano, ed è un *corteo di cavalieri a cavallo*, non un cavallo. Usata così com'è, l'immagine del mezzo di trasporto mostra un corteo di trecento persone.
+
+**La regola che ne nasce è la stessa di sempre, e questa volta è verificata su cinque categorie diverse**: una ricerca che restituisce un file non ha trovato l'oggetto, ha trovato una parola. Le tre regole del progetto su questo punto sono ora tutte prese, non dichiarate:
+
+| Progetto | Regola | Dove |
+|---|---|---|
+| Ritratti | un nome di file non è una prova | `ritratti.md` §1 |
+| Oggetti linguistici | nessun candidato nomina l'oggetto → va guardato per primo | `lingue-immagini.md` §5 |
+| **Fonti visive** | **una parola che ha due sensi va cercata con due parole** | questo documento, §5 |
+
+**E la correzione pratica, che è la più utile di tutte**: il termine di ricerca di una voce, quando la parola è ambigua, va riscritto con **due parole che non possono confondersi**. Per la pipa: *Tabernaemontana elegans botanical*, non *pipa*. Per l'aereo: *early airliner 1950s*, non *aereo*. Per la carrozza: *Renaissance court carriage*, non *carrozza*. La ricerca va rifatta su quei termini, e il risultato va nel file con i termini accanto, come è già (`fonti_visive.json`, campo `termini`).
+
+**La ricerca è stata rifatta il 5 ottobre, e l'istruzione era rimasta in sospeso perché non diceva di essere una scadenza.** Un'istruzione che non viene eseguita è un'istruzione che non esiste, e questa era scritta al passato come se fosse stata fatta: *la ricerca va rifatta* è un futuro, e in un documento che ha un registro delle modifiche un futuro non eseguito è un buco che non ha nome.
+
+| Voce | Termine prescritto | Che cosa è venuto fuori |
+|---|---|---|
+| **aereo** | *early airliner 1950s* | **una Constellation della TWA in volo** alla fine degli anni Cinquanta: il buco è chiuso, e i due candidati del volo giardinaggio erano davvero sbagliati |
+| **crociera** | *ocean liner* | **la Queen Elizabeth del 1940**, che è una cartolina: entra con la riserva scritta |
+| **moto** | *vintage motorcycle 1950s* | **una Honda Cub del 1953** in un museo: entra |
+| **sci** | *skiing 1950s* | **uno slalom diagonale del 1955** con la scuola di sci: entra |
+| **monopattino** | *Vespa scooter 1950s* | **una Vespa 125 del 1953**: entra |
+| **pipa** | *Tabernaemontana elegans botanical* | solo cataloghi botanici ed erbari: **il vuoto resta e la ragione è scritta** |
+| **carrozza** | *Renaissance court carriage* | nessun file che mostri una carrozza di corte: **il vuoto resta** |
+| **cavallo** | un cavallo, non un corteo | nessuna immagine utile: **il vuoto resta** |
+| **elicottero** | *helicopter 1950s* | un Bell 47 a 455×319 e una squadriglia a 1109×785: **il vuoto resta, e la ragione è la misura** |
+
+**Che cosa insegna, e perché conta più dei cinque mezzi.** Cinque bucci su nove si chiudono con una ricerca fatta bene, e i quattro che restano hanno tutti una ragione che non è «non ho trovato»: sono **una pianta cercata con il nome di un animale**, **una carrozza che è di un altro secolo**, **un cavallo che è un corteo**, **un elicottero che è troppo piccolo per essere mostrato**. Un buco con la ragione è un buco che aspetta una decisione; un buco senza ragione è un buco che aspetta che qualcuno se ne accorga, e di solito non succede.
+
+**Una cosa da dichiarare, perché è un limite della sessione e non del metodo**: la ricerca è stata fatta con gli strumenti che avevano rete, non con `fonti_visive_cerca.py`, che dal processo non ne aveva. I candidati portano licenza, autore e misura **presi dalla pagina del file**, non ricordati; e un candidato di cui la licenza non è stata verificata **non è entrato**, che è la regola del progetto. Il file di ricerca porta la nota che lo dice.
+
+
+
+### 2.7 Da `anno1-mappa.md`
+
+*Da `anno1-mappa.md` v0.9, sezioni «4bis. Prototipo della mappa (v0.5)», «4ter. Zone delle tappe e zona percorribile (v0.7)», «4quater. Geometria reale e nuova mappa della città (v0.8)», «5. Prossimi passi». Oggi: la sezione omonima del documento, al presente.*
+
+#### 4bis. Prototipo della mappa (v0.5)
+
+File: `videogioco-5-duchi-anno1-prototipo-mappa.html`. È una pagina singola, senza dipendenze esterne, di circa 190 kB.
+
+Come è fatta:
+
+- **Pianta.** Ci sono 16.582 civici del centro, disegnati come punti su canvas: formano gli isolati. Le 23 vie principali hanno l'asse ricavato dai civici (media per tratti di 40 m lungo la direzione principale) e un'etichetta.
+- **Nebbia.** Sono visibili solo i punti entro 120 m dalle tappe aperte. Il percorso compare man mano.
+- **Pannello della tappa.**
+  - Contenuto: personaggio, periodo, epoca, etichetta di attendibilità, linea del tempo con i personaggi già incontrati, argomento del livello, aggancio, domanda critica.
+  - Dopo la soglia, simulata con un pulsante: il rimando, il pulsante per la tappa successiva e le visioni di Borso A1 e A2 in sequenza.
+- **Interazione.** Spostamento e zoom con trascinamento e rotella o pizzico. Tema chiaro e scuro.
+- **Posizioni provvisorie.** Le tappe 1-27 e 1-30 (cerchio tratteggiato) sono vicine all'ingresso della Certosa, solo nel prototipo.
+- **Mura (v0.6).** Il perimetro è **tracciato a mano da Claude**, perché OpenStreetMap non è raggiungibile né dal cloud né dal computer di Pietro. Il tracciato è ricostruito dai civici, distinguendo le vie interne alla cinta (Rampari di San Rocco e di San Paolo, via Mura di Porta Po, via Carlo Mayr, via Porta d'Amore, i capi di corso Ercole I d'Este, corso Porta Mare e corso Porta Po) da quelle esterne (via dei Baluardi, viale Alfonso I d'Este, via Porta Catena, via Pomposa, corso Piave, via Bologna, via Porta Romana). Sul lato ovest, dove le mura non esistono più, il tracciato segue corso Isonzo. Risultato: poligono di 24 vertici, perimetro di circa 8,2 km (le mura reali superano i 9 km, per via dei bastioni), area di circa 4,1 km², tutte le tappe all'interno. È **schematico e da verificare** con OpenStreetMap o con la cartografia ufficiale. File: `videogioco-5-duchi-anno1-mura-stima.geojson`.
+- **Tappa 1-1 completa (v0.6).** Incontro, esercizi generati su 4 gradini, soglia con coerenza, carta, report esportabile, misure anti-copia. Specifica: `videogioco-5-duchi-tappa-1-01.md`.
+- **Tappa 1-1 (v0.7).** Zona percorribile, pool di esercizi (4 su 20 per gradino), pausa, visioni A1 e A2.
+- **Mancano:** il salvataggio fra sessioni e gli esercizi delle tappe 2–30.
+
+**Correzione emersa dai dati.** Via Mazzini corre a sud-est della Cattedrale, verso via delle Scienze, non fra il MEIS e il Municipio. Il rimando della tappa 1-6 è stato corretto.
+
+
+#### 4ter. Zone delle tappe e zona percorribile (v0.7)
+
+- **Zone.** Ogni tappa ha una zona: i punti più vicini a lei che a ogni altra tappa (cella di Voronoi), entro 150 m. Le zone **non si sovrappongono**. Nel prototipo la nebbia si dirada zona per zona.
+- **Zona percorribile.** Dentro la zona, Borso si muove su una mappa a tessere in stile Pokémon. Per ora esiste solo quella della tappa 1-1 (piazza della Cattedrale, 22 × 14 tessere): Maurelio, San Giorgio (visione A1), la lapide (visione A2), leoni, cartello dell'art. 9, facciata. Dettagli in `videogioco-5-duchi-tappa-1-01.md` §3.
+- **Dati.** Il JSON v0.7 ha i campi `protagonista` (Borso) e `zone` (raggio 150 m, metodo Voronoi).
+
+
+#### 4quater. Geometria reale e nuova mappa della città (v0.8)
+
+- **Sagome vere degli edifici.** La mappa della città non usa più i punti dei civici. Disegna 11 185 edifici del centro storico e il **perimetro ufficiale del centro storico**, lungo le mura. Il perimetro sostituisce il tracciato stimato a mano della v0.6. Fonte: WFS open data del Comune di Ferrara (dettagli in `videogioco-5-duchi-motore-e-grafica.md`).
+- **Nebbia chiara.** Le zone chiuse hanno edifici grigio-beige e un velo con nuvole che scorrono. Le zone aperte sono a colori, con bordo sfumato e tratteggio dorato. Dopo la soglia, la tappa successiva compare come «?».
+- **Fluidità.** Trascinamento con inerzia, zoom morbido, pizzico e volo animato verso la tappa successiva.
+- **Tappa 1-1 spostata** dal civico 9 (davanti all'Arcivescovado) a 10 m davanti al portale della Cattedrale: 44,835832 N, 11,61958 E. La zona 1 ora comprende la piazza davanti alla facciata.
+
+#### 5. Prossimi passi
+
+1. Pietro allega i civici; si calcolano le coordinate.
+2. Si disegna la pianta schematica SVG con il percorso.
+3. Si rivedono i 12 agganci medi e di scena.
+4. Si prototipano le prime tre tappe (Cattedrale, Loggia dei Merciai, Palazzo della Ragione) con incontro, carta e primo strumento.
+
+
+
+## 3. Registro delle modifiche
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 06/10/2026 | 0.3 | Il §2 accoglie, alla lettera, le sezioni di racconto di sette documenti: mappe, itinerari, sequenza, ritratti, luoghi-edifici, fonti-visive, anno1-mappa. |
 | 06/10/2026 | 0.2 | Il §1 accoglie, alla lettera, le sedici sezioni di racconto dell'audit (v0.25), ciascuna con la sezione da cui viene. |
 | 06/10/2026 | 0.1 | Prima stesura: la regola di come si scrive lo storico. Nasce con la fase 1 della roadmap della documentazione. |

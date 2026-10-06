@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — le fonti visive: che cosa il gioco non ha ancora una veste, e dove si prende
 tipo: normativo
-versione: 0.20
-data: 2026-10-05
+versione: 0.21
+data: 2026-10-06
 autore: Pietro Fabbri (con Claude)
 fonte: ricerca su Wikimedia Commons del 02/10/2026; tavolozza da Wikidata e Wikipedia del 03/10/2026; sagome e mura da OpenStreetMap via API standard OSM del 04/10/2026; cime e quote da Natural Earth `geography_regions_elevation_points` del 03/10/2026; verifica dei fondi già in dati/mappe/
-documenti collegati: videogioco-5-duchi-ritratti.md (v0.5), videogioco-5-duchi-lingue-immagini.md (v0.8), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-mappe.md (v1.5), videogioco-5-duchi-luoghi-edifici.md (v0.6), videogioco-5-duchi-audit.md (v0.26), videogioco-5-duchi-tappa-1-01.md (v0.4), AGENTS.md
+documenti collegati: videogioco-5-duchi-ritratti.md (v0.6), videogioco-5-duchi-lingue-immagini.md (v0.8), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-mappe.md (v1.6), videogioco-5-duchi-luoghi-edifici.md (v0.7), videogioco-5-duchi-audit.md (v0.26), videogioco-5-duchi-tappa-1-01.md (v0.4), AGENTS.md
 dati: dati/fonti_visive/fonti_visive.json (v1, 32 voci, 130 candidati), dati/fonti_visive/attestazione.json (v1, vuoto), dati/fonti_visive/incidenti.json (v1, 3 voci, 6 candidati), dati/fonti_visive/tavolozza.json (v1, 18 voci), dati/edifici_footprint.json (v1, 7322 edifici su 203 aree), dati/ferrara_fondo.json (v1, 14 tratti di mura), dati/ambienti_livelli.json (v2, 150 ambienti), dati/fonti_visive/colori_cartografici.json (v1, 19 voci), dati/altitudine_manifest.json (v1, tre file di cime: 15, 2 e 26 punti)
 ---
 
@@ -408,17 +408,9 @@ La forma è il contorno, e per il gioco è la cosa più difficile, perché **la 
 **La regola sulla forma, che è quella del progetto sui luoghi**: una forma che non è verificata **non si disegna**. Se di un edificio non si sa la pianta, si disegna un volume neutro e la scheda dice che è un volume neutro — che è la regola dei 41 luoghi che non hanno coordinate perché non sono luoghi (`luoghi-edifici.md` §1) e che ora vale anche per i **3385 edifici su 7322** che escono da OSM senza altezza.
 
 ---
-## 5. Il difetto della ricerca, che è il più istruttivo del lavoro
+## 5. La ricerca per parole, e come si corregge
 
-La ricerca su Commons ha sbagliato in modi diversi, e sono tre, e vanno dichiarati tutti.
-
-**Il primo difetto: la parola con due sensi.** Alla voce **«pipa»** (che nel Cinquecento è una pianta, la *Tabernaemontana elegans*, da cui si faceva la bevanda), la ricerca ha restituito **il rospo del genere *Pipa***, che è un anfibio sudamericano del Settecento. È lo stesso errore della «correggia» che diventava il pittore Correggio (`lingue-immagini.md` §5): una parola è una parola, non un oggetto.
-
-**Il secondo difetto: la parola giusta, il contesto sbagliato.** Alla voce **«aereo»** (il mezzo di trasporto) è arrivata una foto di un **volo turistico sugli aerei da giardinaggio** di un'azienda italiana. Alla voce **«carrozza»** è arrivata una carrozza **americana del 1922**, che è del gioco del quinto anno travestita di mezzo del Quattrocento. Alla voce **«tavolozza affreschi»** è arrivato un autoritratto di Alessandro Allori, che è un dipinto ma non una tavolozza.
-
-**Il terzo difetto, che è il più serio: la fonte giusta usata male.** Alla voce **«cavallo»** la ricerca ha restituito **la Cappella dei Magi di Benozzo Gozzoli** — che è una delle pitture più belle del Quattrocento italiano, ed è un *corteo di cavalieri a cavallo*, non un cavallo. Usata così com'è, l'immagine del mezzo di trasporto mostra un corteo di trecento persone.
-
-**La regola che ne nasce è la stessa di sempre, e questa volta è verificata su cinque categorie diverse**: una ricerca che restituisce un file non ha trovato l'oggetto, ha trovato una parola. Le tre regole del progetto su questo punto sono ora tutte prese, non dichiarate:
+Una ricerca che restituisce un file non ha trovato l'oggetto: ha trovato una parola. Su questo punto il progetto ha tre regole:
 
 | Progetto | Regola | Dove |
 |---|---|---|
@@ -426,9 +418,9 @@ La ricerca su Commons ha sbagliato in modi diversi, e sono tre, e vanno dichiara
 | Oggetti linguistici | nessun candidato nomina l'oggetto → va guardato per primo | `lingue-immagini.md` §5 |
 | **Fonti visive** | **una parola che ha due sensi va cercata con due parole** | questo documento, §5 |
 
-**E la correzione pratica, che è la più utile di tutte**: il termine di ricerca di una voce, quando la parola è ambigua, va riscritto con **due parole che non possono confondersi**. Per la pipa: *Tabernaemontana elegans botanical*, non *pipa*. Per l'aereo: *early airliner 1950s*, non *aereo*. Per la carrozza: *Renaissance court carriage*, non *carrozza*. La ricerca va rifatta su quei termini, e il risultato va nel file con i termini accanto, come è già (`fonti_visive.json`, campo `termini`).
+**La correzione pratica.** Quando la parola è ambigua, il termine di ricerca si riscrive con **due parole che non possono confondersi** — per la pipa *Tabernaemontana elegans botanical*, per l'aereo *early airliner 1950s*, per la carrozza *Renaissance court carriage* — e il risultato va nel file con i termini accanto (`fonti_visive.json`, campo `termini`).
 
-**La ricerca è stata rifatta il 5 ottobre, e l'istruzione era rimasta in sospeso perché non diceva di essere una scadenza.** Un'istruzione che non viene eseguita è un'istruzione che non esiste, e questa era scritta al passato come se fosse stata fatta: *la ricerca va rifatta* è un futuro, e in un documento che ha un registro delle modifiche un futuro non eseguito è un buco che non ha nome.
+**Le voci ricercate così, e come stanno** (05/10/2026):
 
 | Voce | Termine prescritto | Che cosa è venuto fuori |
 |---|---|---|
@@ -442,11 +434,7 @@ La ricerca su Commons ha sbagliato in modi diversi, e sono tre, e vanno dichiara
 | **cavallo** | un cavallo, non un corteo | nessuna immagine utile: **il vuoto resta** |
 | **elicottero** | *helicopter 1950s* | un Bell 47 a 455×319 e una squadriglia a 1109×785: **il vuoto resta, e la ragione è la misura** |
 
-**Che cosa insegna, e perché conta più dei cinque mezzi.** Cinque bucci su nove si chiudono con una ricerca fatta bene, e i quattro che restano hanno tutti una ragione che non è «non ho trovato»: sono **una pianta cercata con il nome di un animale**, **una carrozza che è di un altro secolo**, **un cavallo che è un corteo**, **un elicottero che è troppo piccolo per essere mostrato**. Un buco con la ragione è un buco che aspetta una decisione; un buco senza ragione è un buco che aspetta che qualcuno se ne accorga, e di solito non succede.
-
-**Una cosa da dichiarare, perché è un limite della sessione e non del metodo**: la ricerca è stata fatta con gli strumenti che avevano rete, non con `fonti_visive_cerca.py`, che dal processo non ne aveva. I candidati portano licenza, autore e misura **presi dalla pagina del file**, non ricordati; e un candidato di cui la licenza non è stata verificata **non è entrato**, che è la regola del progetto. Il file di ricerca porta la nota che lo dice.
-
----
+Un vuoto che resta ha sempre la sua ragione: una pianta cercata con il nome di un animale, una carrozza di un altro secolo, un cavallo che è un corteo, un elicottero troppo piccolo per essere mostrato. I candidati portano licenza, autore e misura presi dalla pagina del file, e un candidato la cui licenza non è verificata non entra. Gli errori della prima ricerca, da cui vengono le regole, sono in `storico.md` §2.
 
 ## 6. I due vuoti dichiarati, e come stanno adesso
 
@@ -564,6 +552,8 @@ Come per gli oggetti linguistici: nessuno è stato guardato a vista, e il file d
 ---
 
 ## 9. Registro delle modifiche
+
+- **v0.21 (06/10/2026)**: Il §5 dice le tre regole sulla ricerca per parole, la correzione con due parole e lo stato delle voci ricercate così; gli errori della prima ricerca sono in `storico.md` §2 (fase 1 della roadmap: il racconto esce, la regola resta).
 
 - **v0.20 (05/10/2026)**: **una riga che dichiarava cinque tappe e ne elencava sei, e un capitolo che non guardava i numeri della §6.** La riga «Tappe che nominano» era scritta quando la lista ne aveva cinque; la sesta tappa c'era gia' nella riga stessa, accanto al cinque, e nessuno dei sette controlli degli interni la guardava perche' il conteggio delle righe non e' il conteggio degli elementi di una riga. Il numero e' adesso **6**, e questa correzione l'ha trovata `sorgenti/verifica_prove.py`, che non fa nient'altro che chiedere ai numeri scritti in prosa di essere uguali a quelli del codice.
 - **v0.19 (05/10/2026)**: **Il rimando è l'unica cosa che cambia.** Un documento collegato è salito di versione e questo rimando è rimasto indietro: la riga è sbagliata e non sembra, perché un rimando che cita una versione superiore a quella vera sembra un rimando fermo. Qui dentro non cambia nient'altro — e si scrive lo stesso, perché una riga che cambia è una riga che cambia.

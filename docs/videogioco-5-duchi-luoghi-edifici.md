@@ -1,8 +1,8 @@
 ---
 titolo: I luoghi e le sagome — che cosa serve per disegnarli davvero
 tipo: normativo
-versione: 0.6
-data: 2026-10-05
+versione: 0.7
+data: 2026-10-06
 autore: Buffy (per pietrofabbri)
 documenti collegati:
   - docs/videogioco-5-duchi-mappe.md
@@ -233,27 +233,9 @@ giusto: `lidar` dove c'è, `osm` dove c'è, `stimata` altrove — **con la fonte
 dichiarata in faccia all'edificio**, come i campi `attendibilita` e `manca` del
 registro dell'anno 4.
 
-## 5. Una regola che si è fatta pagare quattro volte
+## 5. Una richiesta che non arriva non è una risposta negativa
 
-**Una richiesta che non arriva non è una risposta negativa.**
-
-È successo quattro volte in due giorni, sempre nella stessa forma. Wikipedia
-risponde `HTTP 429` a raffica; l'errore non è un codice di stato ma un corpo
-vuoto; il codice che lo riceveva non lo distingueva da una risposta vera e
-scriveva l'assenza come un fatto. Le quattro volte:
-
-| Dove | Che cosa è stato scritto | Che cosa era vero |
-|---|---|---|
-| `cerca_ritratti.py` | «nessun ritratto in testa all'articolo» per 15 personaggi | Dürer, Turing, Leibniz, John Snow, Josquin, Bellini hanno tutti un ritratto |
-| `ripara_licenze.py` | «file non letto su Commons» per 8 file | i file c'erano, cercati come pagine invece che come file |
-| `ritratto_reale.py` | «download fallito» per 6 immagini | i file c'erano, era un 429 non ascoltato |
-| `coordinate.py` | «nessun articolo» per 30 luoghi | Uruk, Tebe, Xianyang, Qufu hanno le coordinate |
-
-La correzione è sempre la stessa, due righe: il client ascolta il `Retry-After`, e
-l'esito distingue **`non_trovato`** (risposta avuta, niente) da **`richiesta_fallita`**
-(nessuna risposta). Una richiesta fallita non chiude mai una scheda: la lascia
-`da_rifare`. È in `AGENTS.md`, e va tenuto in tutti gli script che parlano con
-qualcosa.
+Vale per tutti gli script che parlano con un servizio in rete: il client ascolta il `Retry-After`, e l'esito distingue **`non_trovato`** (risposta avuta, niente) da **`richiesta_fallita`** (nessuna risposta). Una richiesta fallita non chiude mai una scheda: la lascia `da_rifare`. La regola generale è in `metodo.md`; le quattro volte in cui il progetto l'ha pagata sono in `storico.md` §2.
 
 ## 6. Gli interni: che cosa si può davvero attraversare
 
@@ -415,6 +397,10 @@ numero di stanze era giusto e l'edificio falso.
 | le **dimensioni** delle piazze | nessuna fonte le dà per iscritto: o si rilevano dal WFS o restano vuote |
 
 ## 8. Il registro delle modifiche
+
+### v0.7 — 06/10/2026
+
+Il §5 dice la regola della richiesta che non arriva; la tabella delle quattro volte in cui è stata pagata è in `storico.md` §2 (fase 1 della roadmap: il racconto esce, la regola resta).
 
 ### v0.6 — 05/10/2026
 

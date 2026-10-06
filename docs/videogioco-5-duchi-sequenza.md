@@ -1,13 +1,13 @@
 ---
 titolo: Videogioco "I cinque duchi" — la sequenza degli anni 2, 3 e 4: le trenta voci obbligatorie in fila, con i luoghi e le distanze
 tipo: catalogo
-versione: 0.3
-data: 2026-10-03
+versione: 0.4
+data: 2026-10-06
 autore: Pietro Fabbri (con Claude)
 fonte del materiale: richiesta di Pietro del 03/10/2026 («hai la sequenza dei livelli per i 4 anni, con relativi luoghi, quindi puoi mettere in sequenza i vari personaggi (almeno quelli non facoltativi)»), con le regole già prese sui percorsi, sui tipi di legame e sulle ipotesi di coordinata
 dati: dati/sequenza_tappe.json (v1, generato da sorgenti/sequenza_tappe.py: le novanta tappe degli anni 2, 3 e 4 con luogo, voce, mezzo, distanza e giorni); dati/luoghi_gioco.json (il registro, da cui vengono le coordinate); dati/ipotesi_luoghi.json (le quarantanove coordinate che il registro non puo' verificare)
 controllo: python3 sorgenti/sequenza_tappe.py (rigenera il JSON e le tre tabelle di questo documento); python3 sorgenti/verifica_sequenza.py (S1-S7: trenta tappe per anno in ordine, una voce obbligatoria per tappa e nessuna ripetuta, le facoltative fuori dalla sequenza, nessun punto mancante senza dichiarazione, e le distanze che combaciano con i km al giorno dichiarati nei percorsi)
-documenti collegati: videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-percorsi.md (v0.5, il percorso del duca, che qui non e' lo stesso), videogioco-5-duchi-luoghi.md (v0.6, i tipi di legame e le ipotesi), videogioco-5-duchi-ritratti.md (v0.5), AGENTS.md
+documenti collegati: videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-percorsi.md (v0.5, il percorso del duca, che qui non e' lo stesso), videogioco-5-duchi-luoghi.md (v0.6, i tipi di legame e le ipotesi), videogioco-5-duchi-ritratti.md (v0.6), AGENTS.md
 ---
 
 # La sequenza degli anni 2, 3 e 4
@@ -20,26 +20,16 @@ Qui c'è **una fila**: per ogni anno, le trenta tappe nell'ordine in cui il gioc
 
 **Le tabelle qui sotto non sono scritte a mano.** Le genera `sorgenti/sequenza_tappe.py` leggendo le tabelle delle trenta tappe dei tre documenti d'anno, e se il generatore non le aggiorna la tabella mente senza che nessuno se ne accorga. Il comando è in §5.
 
-## 1. Il difetto che questa sequenza ha trovato
+## 1. La catena da cui vengono i luoghi
 
-Costruire la fila ha fatto emergere una cosa che nessuno dei controlli precedenti vedeva, e che vale più della fila: **la tappa 4-16 ha due luoghi diversi in due file diversi, e quello che aveva nel registro era il posto sbagliato**.
+La sequenza prende i luoghi dal registro (`dati/luoghi_gioco.json`), e il registro viene da una catena che si può rifare da capo: `estrai_luoghi.py` → `coordinate.py` → `classifica.py`, unita da `aggiorna_registro.py` (in `sorgenti/luoghi/`). Quattro regole la tengono onesta, e `sorgenti/verifica_catena_luoghi.py` ne controlla cinque aspetti:
 
-Il 2 ottobre 2026 Pietro sostituì Ibn Khaldun con Ashoka alla 4-16 e Ibn Khaldun divenne la facoltativa forte della stessa tappa. Il documento dell'anno 4 fu aggiornato — 4-16 = **Pataliputra**, che è il luogo di Ashoka — ma **il registro dei luoghi non fu rigenerato** e continuava a portare «Tunisi e Il Cairo», che era il luogo di Ibn Khaldun: Tunisiano, e al Cairo dove visse.
+1. `estrai_luoghi.py` legge le colonne delle tabelle **per intestazione, non per numero**: le tabelle degli anni non hanno tutte le stesse colonne, e il quinto anno ha la `Stanza` fra il pin e la voce.
+2. `aggiorna_registro.py` **unisce invece di sovrascrivere**, e porta con sé i campi compilati a mano: il terreno, `controllo`, `dettagli` e il blocco `tappe` del quinto anno.
+3. Le correzioni che i controlli hanno trovato (Baghdad, Karakorum) stanno in `dati/luoghi_correzioni.json`, non scritte a mano nel registro.
+4. Il luogo di una tappa viene **dalla tabella del documento**, non dalla mano. Le divergenze fra registro e documento sono zero, e la lista `DICHIARATE` di `sequenza_tappe.py` resta nel codice, vuota.
 
-Le **ipotesi di coordinata** del 3 ottobre costruirono sopra quel posto sbagliato una strada Tunisino-Cairo, con la fonte che diceva «partenza Tunisi, arrivo Il Cairo» e la frase che il gioco avrebbe mostrato al ragazzo attribuita ad **Ashoka**. Il record era internamente coerente, aveva due punti, aveva il tratto, aveva la fonte: e i sei controlli R1-R6 gli avevano dato il via libera. **Un controllo che verifica la forma non verifica la premessa**: io ho controllato che la strada fosse ben costruita e non che la strada fosse quella giusta.
-
-La 4-16 è ora **Pataliputra** e la strada Tunisino-Cairo sparisce con lei: i nomi doppi con il tratto passano da otto a sette, e la distanza dell'anno 3 è cambiata di 1108 km perché la 3-28 è passata da Manchester a Torino. Il punto viene dalla tabella del documento, non dalla mano.
-
-**La causa, e come è stata chiusa.** Il 3 ottobre la correzione era stata scritta **a mano** in `dati/luoghi_gioco.json`, perché il generatore del registro (`sorgenti/luoghi/classifica.py`, con `estrai_luoghi.py` e `coordinate.py`) riscrivendo il file avrebbe cancellato quattro cose che nessun comando rifa: il terreno misurato su SRTM, il campo `controllo`, i `dettagli` compilati a mano e il blocco `tappe` con i trenta binomi pin/stanza del quinto anno. Una correzione che non si può rigenerare è una correzione che nessuno può rifare: il 3 ottobre, infatti, il generatore **rifacendo il registro avrebbe rimesso il valore vecchio**, perché il file degli estratti era rimasto indietro rispetto ai documenti.
-
-Il 3 ottobre la catena è stata sistemata per bene, in quattro mosse, e ognuna ha un controllo suo (`sorgenti/verifica_catena_luoghi.py`, cinque):
-
-1. **`estrai_luoghi.py` legge le colonne per intestazione, non per numero.** Nell'anno 5 la tabella ha una colonna in più — la `Stanza`, fra il pin e la voce — e il numero fisso prendeva la stanza come se fosse la voce: in ventinove tappe su trenta il campo `voce` conteneva il filone del *Furioso* invece della persona. Il sintomo era che il nome sembrava già un titolo: «la strada della fuga di Rinaldo `F2` 1,32». Non se n'era accorto nessuno, perché nessuno leggeva centoventi nomi di persona in un colpo.
-2. **`aggiorna_registro.py` unisce invece di sovrascrivere**, e porta dietro i campi compilati a mano.
-3. **`dati/luoghi_correzioni.json` dichiara le correzioni che i controlli hanno trovato** — Baghdad e Karakorum — che prima vivevano solo nel JSON editato a mano e sparivano alla prima rigenerazione.
-4. **Il registro è stato rigenerato davvero**: la 4-16 prende Pataliputra dalla tabella, la 3-28 prende Torino, e **le divergenze fra registro e documento sono passate da una a zero**. La lista `DICHIARATE` di `sequenza_tappe.py` resta nel codice, vuota e dichiarata.
-
-La lezione che resta è quella che l'aveva fatto nascere: **un controllo che verifica la forma non verifica la premessa**, e un dato corretto a mano è un dato che nessuno può ricostruire.
+La regola generale è in `metodo.md`: **un controllo che verifica la forma non verifica la premessa**, e un dato corretto a mano è un dato che nessuno può ricostruire. Il difetto che l'ha fatta nascere — la tappa 4-16 rimasta con il luogo di Ibn Khaldun dopo la sostituzione con Ashoka — è in `storico.md` §2.
 
 ## 2. Le tre sequenze, e che cosa dicono
 
@@ -210,6 +200,8 @@ Le tabelle stanno fra i due marcatori `<!-- SEQUENZA:INIZIO -->` e `<!-- SEQUENZ
 3. **Le trenta voci in sequenza**: questa pagina mette i nomi in fila, ma non mette in fila gli **argomenti** che ogni voce porta con sé. È il capitolo che manca, ed è il capitolo che rende la sequenza un percorso e non un elenco.
 
 ## 7. Registro delle modifiche
+
+- **v0.4 (06/10/2026)**: Il §1 dice le quattro regole della catena dei luoghi al presente; il difetto della tappa 4-16 che le ha fatte nascere è in `storico.md` §2 (fase 1 della roadmap: il racconto esce, la regola resta).
 
 - **v0.3 (05/10/2026)**: **tre numeri fermi al giorno in cui sono stati scritti.** Il blocco dei comandi diceva `S1-S6` quando i controlli sono sette (S7 e' nato dalla 4-16 e dalla 3-28), la riga sotto diceva «i sei controlli», e la voce 2 attribuiva alla catena quattro controlli quandi sono cinque. Nessuno dei sette controlli della sequenza guardava i numeri scritti su di lei, che e' la stessa malattia che I7 cura negli interni: X3 di `sorgenti/verifica_prove.py` lo fa per tutti i documenti.
 - **v0.2 (03/10/2026)**: **la divergenza dichiarata è chiusa, e chiusa come si deve: rigenerando.** Il registro dei luoghi è stato rifatto dalla catena `estrai_luoghi.py` → `coordinate.py` → `classifica.py`, e lungo la strada sono usciti quattro difetti veri. Il primo: **`estrai_luoghi.py` leggeva le colonne per numero**, e nell'anno 5 la colonna della stanza sta fra il pin e la voce — in ventinove tappe su trenta il campo `voce` aveva il filone del *Furioso* invece della persona. Ora la tabella si legge per **intestazione**. Il secondo: **le correzioni di Baghdad e Karakorum vivevano solo in un JSON editato a mano** e sparivano alla prima rigenerazione; ora stanno in `dati/luoghi_correzioni.json` e vengono riapplicate ogni volta. Il terzo: **`classifica.py` aveva due copie della regola che assegna lo stato della coordinata**, e le due copie erano già divergenti sulle sette ferraresi; ora c'è una definizione sola. Il quarto, che è la conseguenza: **`ambienti_livelli.json` era rimasto indietro** e la 4-16 aveva ancora il punto dall'ipotesi benché il registro avesse la coordinata. La correzione della 4-16 è così passata da **dato scritto a mano** a **dato che la catena produce**, che è la differenza fra una correzione e una riparazione. Le divergenze fra registro e documento sono **zero**, e `DICHIARATE` in `sequenza_tappe.py` resta vuota e dichiarata. Il percorso dell'anno 3 è passato da 18990 a 20098 km perché la 3-28 è diventata Torino.

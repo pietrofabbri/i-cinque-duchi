@@ -1,12 +1,12 @@
 ---
 titolo: Videogioco "I cinque duchi" — Le mappe: fondo geografico per gli anni 2, 3 e 4, e dove si prendono i dettagli delle tappe
 tipo: normativo
-versione: 1.5
-data: 2026-10-04
+versione: 1.6
+data: 2026-10-06
 autore: Pietro Fabbri (con Claude)
 fonte del materiale: richiesta di Pietro dell'01/10/2026 («recupera e archivia tutte le mappe che possono essere utili a questo e i prossimi anni»), con l'indicazione di due usi distinti: le mappe generali per costruire un percorso sensato, e le mappe di dettaglio per rappresentare ogni livello nella forma più reale possibile
 dati: dati/mappe/*.json (25 file: i 19 del 01/10/2026 da Natural Earth con `sorgenti/gis/mappe_formato.py`, piu `mondo_admin1.json`, i tre `*_altitudine.json` del 03/10/2026 e i due `rilievo_*.json` del 04/10/2026), dati/mappe_manifest.json (v1, da dove viene ogni file della cartella: sta in `dati/` e non in `dati/mappe/`, per la stessa regola del solo formato a delta), dati/mondo_admin1_copertura.json (v1, il conto della copertura: sta in `dati/` e non in `dati/mappe/`, perche' li' vale la regola del solo formato a delta), dati/edifici_footprint.json (v1, 5209 sagome su 54 luoghi), dati/ferrara_fondo.json (v1, 14 tratti di mura)
-documenti collegati: videogioco-5-duchi-motore-e-grafica.md (v0.1, la pipeline che questi dati alimentano), videogioco-5-duchi-luoghi.md (v0.6, la regola che decide *quali* luoghi servono e i tre gradi di ipotesi di coordinata), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-fonti-visive.md (v0.20), FONTI-E-LICENZE.md, AGENTS.md
+documenti collegati: videogioco-5-duchi-motore-e-grafica.md (v0.1, la pipeline che questi dati alimentano), videogioco-5-duchi-luoghi.md (v0.6, la regola che decide *quali* luoghi servono e i tre gradi di ipotesi di coordinata), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-fonti-visive.md (v0.21), FONTI-E-LICENZE.md, AGENTS.md
 ---
 
 # Le mappe
@@ -217,28 +217,18 @@ Trenta tappe all'anno, e per ognuna servirebbe una zona percorribile. Il WFS di 
 
 ---
 
-## 6. I cinque difetti che la verifica ha trovato
+## 6. Due cose che sembrano errori e non lo sono
 
-Sono qui perché **uno di questi li avrebbe trovati tutti a occhio**. Il primo file prodotto era ben formato, della dimensione giusta, e con la Sardegna ridotta a un segno.
+Un controllo le deve riconoscere come vere:
 
-| # | Difetto | Come si manifestava | Come è stato trovato | Correzione |
-|---|---|---|---|---|
-| **1** | **Douglas-Peucker su anello chiuso** | il segmento che chiude l'anello ha lunghezza zero, l'algoritmo lo tratta come un punto e butta via quasi tutti i vertici: la Sardegna si riduceva a un segno e **Cagliari cadeva fuori dall'Italia** | punto-in-poligono su 58 città | `dp_chiuso()`, che toglie il vertice duplicato prima di semplificare |
-| **2** | **ritaglio geometrico dei poligoni** | ritagliare un poligono con il riquadro produce un anello **auto-intersecante** se il poligono esce e rientra: il controllo diceva che **Venezia era dentro la Baviera** | prova su Venezia | i poligoni non si ritagliano più: si tiene il poligono intero e lascia il ritaglio al motore |
-| **3** | **delta che non riparte a ogni anello** | il lettore ripartiva da zero, lo scrittore no: tutti gli anelli interni erano spostati | confronto fra primo e secondo vertice di ogni anello | il delta riparte a ogni anello, in scrittura e in lettura |
-| **4** | **città scartate** | in pyshp un punto ha `parts` vuoto, il ciclo non produceva segmenti, e tutte le città sparivano | il file città era vuoto, 0 punti | gestione esplicita del `PointShape` |
-| **5** | **tropleranza di semplificazione** | 0,012 gradi sono **1,3 km**: la costa si sposta e le città costiere finiscono fuori dal proprio Paese | Cagliari, Livorno, Marsala fuori | tolleranza abbassata a 0,002 (200 m) |
+- **Città del Vaticano e San Marino cadono dentro il poligono dell'Italia.** Il poligono italiano di Natural Earth non ha un buco per le enclave: è una scelta della fonte, non un errore dei dati.
+- **L'estremo ovest d'Italia è a 6,6° E (Val d'Aosta), non a Capo Spartivento**, e l'estremo sud è **Lampedusa** (35,49° N), non Portopalo.
 
-*(aggiunta)* Il quinto difetto è il più importante per il progetto, e non perché fosse il più grave: **è quello che parla della differenza tra una mappa che sembra vera e una mappa che è vera alla scala giusta**. Una mappa con la Sardegna disegnata male sembra uguale a una corretta finché non ci metti dentro un punto.
+**Tre regole di costruzione**, nate dai difetti trovati quando i file sono stati prodotti (`storico.md` §2):
 
-### 6.1 Due cose che sembrano errori e non lo sono
-
-Segnate qui perché sono state scambiate per difetti due volte, e perché un controllo futuro le deve riconoscere:
-
-- **Città del Vaticano e San Marino cadono dentro il poligono dell'Italia.** Il poligono italiano di Natural Earth non ha un buco per le enclave. Non è un errore dei dati, è una scelta della fonte.
-- **L'estremo ovest d'Italia è a 6,6° E (Val d'Aosta), non a Capo Spartivento.** E l'estremo sud è **Lampedusa** (35,49° N), non Portopalo. Era un errore del controllo, non dei dati.
-
----
+- la semplificazione di un anello chiuso toglie il vertice duplicato prima di semplificare (`dp_chiuso()`), altrimenti l'anello collassa;
+- i poligoni non si ritagliano con il riquadro: si tiene il poligono intero e il ritaglio lo fa il motore;
+- la tolleranza di semplificazione è 0,002 gradi (circa 200 m): con una più larga le città costiere cadono fuori dal proprio Paese. Si verifica con il punto-in-poligono sulle città, non a occhio.
 
 ## 7. Che cosa manca, e da dove si prende
 
@@ -468,6 +458,8 @@ for proprieta, anelli in geometrie:
 ---
 
 ## 12. Registro modifiche
+
+- **v1.6 (06/10/2026)**: Il §6 dice le due cose che sembrano errori e non lo sono, e le tre regole di costruzione con la tolleranza di 0,002 gradi; la tabella dei cinque difetti trovati producendo i file è in `storico.md` §2 (fase 1 della roadmap: il racconto esce, la regola resta).
 
 - **v1.5 (05/10/2026)**: **due righe che contavano otto controlli quandone sono nove.** Il blocco dei comandi e la voce 8 di «cosa c'e' da fare» scrivevano `verifica_ambienti.py` con otto controlli e B1-B8: B9 c'era dal 3 ottobre, e una delle due righe scriveva anche A1-A8, che non sono etichette di quello script. Nessuno dei nove controlli degli ambienti guardava se i documenti che lo citano ne contano bene: e' il buco che X3 di `sorgenti/verifica_prove.py` chiude. La riga 514 di questo registro, che porta B1-B8, resta quella che era: un registro racconta il passato.
 - **v1.4 (05/10/2026)**: **Il rimando è l'unica cosa che cambia.** Un documento collegato è salito di versione e questo rimando è rimasto indietro: la riga è sbagliata e non sembra, perché un rimando che cita una versione superiore a quella vera sembra un rimando fermo. Qui dentro non cambia nient'altro — e si scrive lo stesso, perché una riga che cambia è una riga che cambia.  **E il registro era fuori ordine**: la riga **v1.0** stava fra la v0.8 e la v0.7, e nessuno dei cinque controlli dei registri lo poteva vedere — le righe di registro erano riconosciute solo nella forma `v0.x`, e un registro che passa da `v1` non aveva **nessuna** riga letta. È il secondo buco della stessa mattinata: un controllo che non riconosce il formato non controlla il documento.

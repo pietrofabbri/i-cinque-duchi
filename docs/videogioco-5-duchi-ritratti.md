@@ -1,8 +1,8 @@
 ---
 titolo: I ritratti dei personaggi — dove vengono e perché sono dichiarati
 tipo: normativo
-versione: 0.5
-data: 2026-10-04
+versione: 0.6
+data: 2026-10-06
 autore: Buffy (per pietrofabbri)
 documenti collegati:
   - docs/videogioco-5-duchi-mappe.md
@@ -85,7 +85,7 @@ doppione compare il numero dei file distinti torna sotto e il verde viene via.
 Le licenze sono **tutte libere**, e il conto esce dai dati senza arrotondare: 95 pubblico dominio, 13 CC BY-SA 3.0, 10 CC BY-SA 4.0, 4 CC BY-SA 2.0, 3 CC0, 2 Attribution, 2 CC BY 4.0, 2 CC BY 3.0 it, 2 CC BY 2.5, 1 CC BY-SA 2.0 de, 1 CC BY 2.0, 1 CC BY 3.0, 1 CC BY-SA 1.0, 1 No restrictions
 — 138 in tutto, tutte sui 138 ritratti accettati.
 
-## 3. La ricerca, e il suo difetto più importante
+## 3. La ricerca
 
 La ricerca è in tre script, e si può rifare:
 
@@ -96,36 +96,7 @@ La ricerca è in tre script, e si può rifare:
 3. `cerca_commons.py` cerca direttamente **su Commons**, per i nomi in cui la
    ricerca su Wikipedia non trova nulla.
 
-**Il difetto, da non ripetere.** La prima versione chiedeva 213 nomi di
-seguito e, quando la risposta non arrivava, semplicemente non aveva più
-immagini: scriveva allora «nessun ritratto in testa all'articolo di
-Wikipedia». Ma Wikipedia risponde **HTTP 429 Too Many Requests** quando le
-richieste si susseguono troppo veloce, e quel codice di errore finiva letto come
-«non esiste».
-
-Il risultato era che quindici personaggi con un ritratto celebre e documentato
-venivano dichiarati privi di ritratto: Albrecht Dürer, Alan Turing, Leibniz,
-John Snow, Alonzo Church, Josquin des Prez, Giovanni Bellini, Leon Battista
-Alberti, Federico II, Aldo Manuzio, William Caxton, Sergej Korolëv, Riccardo
-Bacchelli, Giulio Natta, Renata Viganò.
-
-Non era un errore di ricerca. Era **un fatto falso scritto come se fosse
-vero**, in un progetto la cui tesi è che i fatti vanno verificati.
-
-La correzione è in due righe di principio, e sta in tutti e tre gli script:
-
-- un client che aspetta un tempo minimo fra le richieste e, su 429, ascolta
-  l'`Retry-After` invece di arrendersi;
-- l'esito distingue `non_trovato` (risposta avuta, nessuna immagine) da
-  `richiesta_fallita` (nessuna risposta). **Una richiesta fallita non genera
-  mai una conclusione**: la scheda resta «da rivedere».
-
-Lo stesso difetto è ricomparso due volte dopo, in forma diverse: una volta
-perché la ricerca delle licenze cercava pagine invece che file (manca il
-prefisso `File:`), e una volta perché il ciclo di scaricamento non ascoltava il
-429 e sei immagini su centosessantanove finivano fuori con la scritta «download
-fallito», che sembrava un file corrotto. Tutte e tre le volte la causa era la
-stessa: **una risposta che non arriva è stata letta come una risposta negativa**.
+**La regola che ogni script rispetta.** Il client aspetta un tempo minimo fra le richieste e, su `HTTP 429`, ascolta il `Retry-After` invece di arrendersi; l'esito distingue `non_trovato` (risposta avuta, nessuna immagine) da `richiesta_fallita` (nessuna risposta). **Una richiesta fallita non genera mai una conclusione**: la scheda resta «da rivedere». Il difetto che ha fatto nascere la regola — quindici personaggi con un ritratto celebre dichiarati senza — è in `storico.md` §2.
 
 ## 3ter. I sessanta emblemi: forme che dicono il perché
 
@@ -270,6 +241,10 @@ come una fotografia.
 | rivedere la P80 | Renata Viganò potrebbe avere un ritratto sotto un'altra forma: la ricerca su Commons non ne ha trovato |
 
 ## 7. Il registro delle modifiche
+
+### v0.6 — 06/10/2026
+
+Il §3 dice i tre script di ricerca e la regola non_trovato / richiesta_fallita; il difetto dei quindici ritratti dichiarati assenti è in `storico.md` §2 (fase 1 della roadmap: il racconto esce, la regola resta).
 
 ### v0.5 — 04/10/2026
 

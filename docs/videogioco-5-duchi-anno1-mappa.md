@@ -1,8 +1,8 @@
 ---
 titolo: Videogioco "I cinque duchi" — Anno I sulla mappa di Ferrara: il percorso unico
 tipo: normativo
-versione: 0.9
-data: 2026-10-02
+versione: 0.10
+data: 2026-10-06
 autore: Pietro Fabbri (con Claude)
 dati: videogioco-5-duchi-anno1-mappa.json (30 tappe, v0.8); videogioco-5-duchi-anno1-personaggi.json (schede)
 documenti collegati: videogioco-5-duchi-gioco.md (interazione, strumenti, carte, memoria), videogioco-5-duchi-meccaniche.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-schema-livelli.md (v1.1)
@@ -195,49 +195,21 @@ In totale ci sono 18 agganci forti, 10 medi e 2 di scena: sono i primi candidati
 
 ---
 
-## 4bis. Prototipo della mappa (v0.5)
+## 4bis. La mappa della città nel prototipo
 
-File: `videogioco-5-duchi-anno1-prototipo-mappa.html`. È una pagina singola, senza dipendenze esterne, di circa 190 kB.
+La mappa della città disegna le sagome vere degli edifici del centro storico e il **perimetro ufficiale del centro storico**, lungo le mura, presi dal WFS open data del Comune di Ferrara (`motore-e-grafica.md` §1).
 
-Come è fatta:
+- **Zone.** Ogni tappa ha una zona: i punti più vicini a lei che a ogni altra tappa (cella di Voronoi), entro 150 m. Le zone non si sovrappongono, e la nebbia si dirada zona per zona. Il file `dati/videogioco-5-duchi-anno1-mappa.json` lo dichiara nei campi `protagonista` e `zone`.
+- **Nebbia.** Le zone chiuse hanno edifici grigio-beige sotto un velo con nuvole; quelle aperte sono a colori, con bordo sfumato e tratteggio dorato. Dopo la soglia, la tappa successiva compare come «?».
+- **Pannello della tappa.** Personaggio, periodo, epoca, etichetta di attendibilità, linea del tempo, argomento del livello, aggancio, domanda critica; dopo la soglia il rimando, il pulsante per la tappa successiva e le visioni A1 e A2.
+- **Che cosa si gioca.** È percorribile solo la zona della tappa 1-1 (`tappa-1-01.md` §3); per le altre tappe la soglia è simulata da un pulsante. Il salvataggio fra sessioni non c'è ancora.
+- **Posizioni provvisorie.** Le tappe 1-27 e 1-30 (cerchio tratteggiato) sono vicine all'ingresso della Certosa finché le loro coordinate non sono decise.
 
-- **Pianta.** Ci sono 16.582 civici del centro, disegnati come punti su canvas: formano gli isolati. Le 23 vie principali hanno l'asse ricavato dai civici (media per tratti di 40 m lungo la direzione principale) e un'etichetta.
-- **Nebbia.** Sono visibili solo i punti entro 120 m dalle tappe aperte. Il percorso compare man mano.
-- **Pannello della tappa.**
-  - Contenuto: personaggio, periodo, epoca, etichetta di attendibilità, linea del tempo con i personaggi già incontrati, argomento del livello, aggancio, domanda critica.
-  - Dopo la soglia, simulata con un pulsante: il rimando, il pulsante per la tappa successiva e le visioni di Borso A1 e A2 in sequenza.
-- **Interazione.** Spostamento e zoom con trascinamento e rotella o pizzico. Tema chiaro e scuro.
-- **Posizioni provvisorie.** Le tappe 1-27 e 1-30 (cerchio tratteggiato) sono vicine all'ingresso della Certosa, solo nel prototipo.
-- **Mura (v0.6).** Il perimetro è **tracciato a mano da Claude**, perché OpenStreetMap non è raggiungibile né dal cloud né dal computer di Pietro. Il tracciato è ricostruito dai civici, distinguendo le vie interne alla cinta (Rampari di San Rocco e di San Paolo, via Mura di Porta Po, via Carlo Mayr, via Porta d'Amore, i capi di corso Ercole I d'Este, corso Porta Mare e corso Porta Po) da quelle esterne (via dei Baluardi, viale Alfonso I d'Este, via Porta Catena, via Pomposa, corso Piave, via Bologna, via Porta Romana). Sul lato ovest, dove le mura non esistono più, il tracciato segue corso Isonzo. Risultato: poligono di 24 vertici, perimetro di circa 8,2 km (le mura reali superano i 9 km, per via dei bastioni), area di circa 4,1 km², tutte le tappe all'interno. È **schematico e da verificare** con OpenStreetMap o con la cartografia ufficiale. File: `videogioco-5-duchi-anno1-mura-stima.geojson`.
-- **Tappa 1-1 completa (v0.6).** Incontro, esercizi generati su 4 gradini, soglia con coerenza, carta, report esportabile, misure anti-copia. Specifica: `videogioco-5-duchi-tappa-1-01.md`.
-- **Tappa 1-1 (v0.7).** Zona percorribile, pool di esercizi (4 su 20 per gradino), pausa, visioni A1 e A2.
-- **Mancano:** il salvataggio fra sessioni e gli esercizi delle tappe 2–30.
-
-**Correzione emersa dai dati.** Via Mazzini corre a sud-est della Cattedrale, verso via delle Scienze, non fra il MEIS e il Municipio. Il rimando della tappa 1-6 è stato corretto.
-
-
-## 4ter. Zone delle tappe e zona percorribile (v0.7)
-
-- **Zone.** Ogni tappa ha una zona: i punti più vicini a lei che a ogni altra tappa (cella di Voronoi), entro 150 m. Le zone **non si sovrappongono**. Nel prototipo la nebbia si dirada zona per zona.
-- **Zona percorribile.** Dentro la zona, Borso si muove su una mappa a tessere in stile Pokémon. Per ora esiste solo quella della tappa 1-1 (piazza della Cattedrale, 22 × 14 tessere): Maurelio, San Giorgio (visione A1), la lapide (visione A2), leoni, cartello dell'art. 9, facciata. Dettagli in `videogioco-5-duchi-tappa-1-01.md` §3.
-- **Dati.** Il JSON v0.7 ha i campi `protagonista` (Borso) e `zone` (raggio 150 m, metodo Voronoi).
-
-
-## 4quater. Geometria reale e nuova mappa della città (v0.8)
-
-- **Sagome vere degli edifici.** La mappa della città non usa più i punti dei civici. Disegna 11 185 edifici del centro storico e il **perimetro ufficiale del centro storico**, lungo le mura. Il perimetro sostituisce il tracciato stimato a mano della v0.6. Fonte: WFS open data del Comune di Ferrara (dettagli in `videogioco-5-duchi-motore-e-grafica.md`).
-- **Nebbia chiara.** Le zone chiuse hanno edifici grigio-beige e un velo con nuvole che scorrono. Le zone aperte sono a colori, con bordo sfumato e tratteggio dorato. Dopo la soglia, la tappa successiva compare come «?».
-- **Fluidità.** Trascinamento con inerzia, zoom morbido, pizzico e volo animato verso la tappa successiva.
-- **Tappa 1-1 spostata** dal civico 9 (davanti all'Arcivescovado) a 10 m davanti al portale della Cattedrale: 44,835832 N, 11,61958 E. La zona 1 ora comprende la piazza davanti alla facciata.
+Come il prototipo è arrivato a questa forma, dalla v0.5 alla v0.8 di questo documento, è in `storico.md` §2.
 
 ## 5. Prossimi passi
 
-1. Pietro allega i civici; si calcolano le coordinate.
-2. Si disegna la pianta schematica SVG con il percorso.
-3. Si rivedono i 12 agganci medi e di scena.
-4. Si prototipano le prime tre tappe (Cattedrale, Loggia dei Merciai, Palazzo della Ragione) con incontro, carta e primo strumento.
-
----
+Il lavoro da fare sull'anno 1 è nella roadmap (`roadmap-documentazione.md`, fase 4). I passi che questa sezione elencava fino alla v0.9 sono fatti o superati, e sono nello storico.
 
 ## 6. Fonti
 
@@ -247,6 +219,8 @@ Come è fatta:
 - Wikimedia Commons, pianta di Andrea Bolzoni (1747): <https://commons.wikimedia.org/wiki/Category:Map_of_Ferrara_by_Andrea_Bolzoni>
 
 ## 7. Registro modifiche
+
+- **v0.10 (06/10/2026)**: Il §4bis descrive la mappa della città com'è oggi nel prototipo; il diario delle versioni dalla v0.5 alla v0.8 (§4bis, §4ter, §4quater) e i prossimi passi superati sono in `storico.md` §2, e il §5 rimanda alla roadmap (fase 1 della roadmap: il racconto esce, la regola resta).
 
 - **v0.9 (02/10/2026)**: controllo di coerenza: il rimando a `anno1-ferrara.md` era fermo alla v0.2, e quel documento è alla v0.3. Nessun'altra modifica al testo.
 

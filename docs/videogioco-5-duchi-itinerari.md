@@ -1,10 +1,10 @@
 ---
 titolo: "Gli itinerari: chi incontri, dove, e con quale mezzo"
 tipo: catalogo
-versione: 0.4
-data: 2026-10-03
+versione: 0.5
+data: 2026-10-06
 autore: "Progetto I cinque duchi"
-documenti collegati: videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-anno1-mappa.md (v0.9), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-itinerari.md (questo), AGENTS.md
+documenti collegati: videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-anno1-mappa.md (v0.10), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-itinerari.md (questo), AGENTS.md
 ---
 
 # Gli itinerari: chi incontri, dove, e con quale mezzo
@@ -329,27 +329,9 @@ marcatura è nella parentesi.
   della serie `Q`; gli altri sono **alias** e restano scritti perché i documenti
   degli anni li nominano.
 
-## 5. Il difetto che ha fatto nascere tutto questo, e il controllo che lo tiene
+## 5. I controlli
 
-Il quinto anno dichiarava **due voci collettive su trenta**, e la tabella ne
-portava **tre**: la macchina (5-13), gli ingegneri delle reti (5-18) e **le mani
-che hanno approssimato √2** (5-6), tutte e tre marcate `collettivo C` nella
-propria casella. La frase del documento le contava a memoria invece di leggerle,
-e nessuno lo aveva visto.
-
-È il difetto che `AGENTS.md` chiama **un numero scritto a mano invecchia**, e
-questa volta la cosa che invecchiava era proprio il documento che descriveva il
-dato. Il numero è stato corretto in `anno5-mondo.md` (v0.6), che ora dice **tre** e
-le nomina tutte e tre.
-
-**Il controllo è C5**, in `sorgenti/verifica_incontri.py`: legge il numero che i
-quattro documenti degli anni dichiarano e lo confronta con il conto del dato. Gli
-altri quattro controlli sono dati contro dati; **C5 è l'unico che confronta il
-dato con quello che un documento scrive a mano**, ed è l'unico che avrebbe visto
-il difetto. Provato con difetto iniettato: riportando il quinto anno a «2 su 30»
-il controllo morde e lo dice.
-
-I cinque controlli, in una riga:
+`sorgenti/verifica_incontri.py` tiene il dato con cinque controlli. **C5** è l'unico che confronta il dato con quello che un documento scrive a mano: legge il numero delle voci collettive che i quattro documenti degli anni dichiarano e lo confronta con il conto del dato. Il difetto che lo ha fatto nascere è in `storico.md` §2.
 
 | | Che cosa controlla |
 |---|---|
@@ -425,6 +407,8 @@ non c'è la riga viene **saltata e detta**.
    dimenticanza? Se sono un dato, va scritto perché sono cinque e non tre.
 
 ## 8. Registro delle modifiche
+
+- **v0.5 (06/10/2026)**: Il §5 si chiama «I controlli» e dice che cosa fanno C1-C5; il difetto delle voci collettive che ha fatto nascere C5 è in `storico.md` §2 (fase 1 della roadmap: il racconto esce, la regola resta).
 
 - **v0.4 (05/10/2026)**: **Il rimando è l'unica cosa che cambia.** Un documento collegato è salito di versione e questo rimando è rimasto indietro: la riga è sbagliata e non sembra, perché un rimando che cita una versione superiore a quella vera sembra un rimando fermo. Qui dentro non cambia nient'altro — e si scrive lo stesso, perché una riga che cambia è una riga che cambia.
 - **v0.3 (03/10/2026)**: **la Q1 del §7 è chiusa e la Q2 sale all'ultimo gradino.**
