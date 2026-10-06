@@ -242,12 +242,14 @@ def main():
                                       "| Di cui importanti (cambiano il gioco) | sedici |"), r),
             "sedici importanti")
 
-    # 9. il numero di chiuse in prosa, che è la via che il registro non copre
-    difetto("l'audit scrive «nessuna delle ventotto chiuse» in §6",
+    # 9. il numero di chiuse in prosa, che è la via che il registro non copre.
+    #    Fino al 06/10/2026 la frase stava anche nel §6; il §6 ora la dice
+    #    senza numero, e la frase che resta e' quella del §1.
+    difetto("l'audit scrive «nessuna delle ventotto chiuse» in §1",
             lambda t, r: (sostituisci(t,
-                                      porzione(t, r"nessuna delle \w+ chiuse le toccava",
-                                              "la frase sulle chiuse del §6"),
-                                      "nessuna delle ventotto chiuse le toccava"), r),
+                                      porzione(t, r"Nessuna delle \w+ chiuse è bloccante",
+                                              "la frase sulle chiuse del §1"),
+                                      "Nessuna delle ventotto chiuse è bloccante"), r),
             "ventotto chiuse")
 
     # 10. i numeri che il README copia, che è il buco vero di questa prova.

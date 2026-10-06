@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — audit delle questioni aperte: la lista operativa
 tipo: audit
-versione: 0.26
+versione: 0.27
 data: 2026-10-06
 autore: Pietro Fabbri (con Claude)
 fonte: lettura di tutti i documenti di progetto che portano una sezione «Questioni aperte» (sedici), verificata da sorgenti/lingue/conta_questioni.py, che confronta anche i numeri che il README copia da qui
@@ -255,17 +255,13 @@ Tre questioni compaiono in due documenti, e una è la stessa identica:
 
 ## 6. La sequenza che chiude tutto
 
-Le cinque bloccanti hanno una catena sola.
+Le quattro bloccanti hanno una catena sola.
 
 **B2** (voci confermate) viene **prima** di **B4** (chi guarda le immagini): cercare le immagini prima di aver confermato le voci è lavoro da rifare. **B1** (livelli linguistici o informatici) decide quanti tipi di tappa esistono, e quindi decide se B4 ha senso come domanda.
 
-La catena è: **B1 → B2 → B4**. **B3** (la LIS) è indipendente e parte in parallelo, ed è la più lenta. **B5** (i novanta pin) non aspettava nessuna e **è stata fatta il 02/10/2026**: otto controlli, due difetti corretti (§7); **il primo anno, che non era coperto, ha cinque controlli suoi dal 03/10** (`mappe.md` §8ter, A1-A5). Il 03/10/2026 è successa la stessa cosa quattro volte di fila con I2, I3, I4 e I19, e con dei file che non erano domande: **sei chiusure in due giorni, e cinque erano lavori** (§3bis).
+La catena è: **B1 → B2 → B4**. **B3** (la LIS) è indipendente e parte in parallelo, ed è la più lenta.
 
-E la regola che ne segue, che è quella che il lavoro ha reso vera:
-
-> **Mentre si decide, si costruisce quello che si può costruire.** Le quattro bloccanti aspettano una risposta e aspetteranno ancora: nessuna delle trentaquattro chiuse le toccava. Il conto di due giorni dice che la risposta non è l'unica cosa che si può fare mentre si aspetta — e non è una metafora: i controlli automatici hanno trovato due coordinate sbagliate che nessuno aveva lette, e i quattro file del 03/10 sono nati tutti da controlli che non avrebbero potuto dare torto.
-
----
+> **Mentre si decide, si costruisce quello che si può costruire.** Le tappe informatiche non aspettano le bloccanti: mappa, pin, ambienti, mezzi e luoghi si costruiscono senza le loro risposte, e molte delle chiusure del §7 erano lavori, non domande.
 
 ## 7. Le questioni chiuse
 
@@ -294,6 +290,7 @@ Il conto delle voci chiuse del §1 è un'altra cosa: lo fa `conta_questioni.py` 
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 06/10/2026 | 0.27 | Il §6 dice la catena delle bloccanti e la regola «mentre si decide, si costruisce» al presente; il racconto di B5 e delle chiusure del 03/10, con il rimando al §3bis che non esiste più, è in `storico.md` §1.17. Con questa versione l'audit è in ordine: sezioni da §0 a §8, una scheda per questione, le chiuse in §7 e il registro in fondo (fase 1 della roadmap). |
 | 06/10/2026 | 0.26 | **Il racconto esce, le questioni restano.** Le sedici sezioni aggiunte dopo ogni chiusura e ogni lezione di metodo (2bis, da 3bis a 3quinquagesim, 3octies), circa 59 000 caratteri, sono state spostate alla lettera in `storico.md` §1 (fase 1 della roadmap). Al loro posto c'è il §7, «Le questioni chiuse»: voce, data, esito in una riga e dove sta oggi il risultato. Il registro è il §8, e la riga della v0.1, rimasta in fondo al file dopo le sezioni di racconto, è tornata nel registro. I rimandi a §2bis e §3bis puntano al §7. |
 | 05/10/2026 | 0.25 | **Il rimando e' l'unica cosa che cambia.** `fonti-visive.md` e' salito a v0.20 e `mappe.md` a v1.5, e le due citazioni di questo frontmatter erano ferme alla versione di prima: un rimando fermo sembla un rimando fermo, e invece punta a un testo che non e' piu' quello. |
 | 05/10/2026 | 0.24 | **Il rimando è l'unica cosa che cambia.** Un documento collegato è salito di versione e questo rimando è rimasto indietro: la riga è sbagliata e non sembra, perché un rimando che cita una versione superiore a quella vera sembra un rimando fermo. Qui dentro non cambia nient'altro — e si scrive lo stesso, perché una riga che cambia è una riga che cambia. |

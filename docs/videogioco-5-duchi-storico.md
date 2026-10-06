@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — Storico: come ci si è arrivati
 tipo: storico
-versione: 0.4
+versione: 0.5
 data: 2026-10-06
 autore: Pietro Fabbri (con Claude)
 documenti collegati: videogioco-5-duchi-roadmap-documentazione.md (v0.2)
@@ -666,6 +666,22 @@ alla prima esecuzione segnalando **276 occorrenze contro 269**: il confronto
 sbagliato era suo, perché sei celle contengono due persone, e la correzione è stata
 farla confrontare una corrispondenza invece di un'aritmetica.
 
+### 1.17 La sequenza che chiude tutto, com'era
+
+*Da `audit.md` v0.26, il racconto che il §6 conteneva fino al 06/10/2026; il §6 dice ora la catena e la regola al presente.*
+
+#### 6. La sequenza che chiude tutto
+
+Le cinque bloccanti hanno una catena sola.
+
+**B2** (voci confermate) viene **prima** di **B4** (chi guarda le immagini): cercare le immagini prima di aver confermato le voci è lavoro da rifare. **B1** (livelli linguistici o informatici) decide quanti tipi di tappa esistono, e quindi decide se B4 ha senso come domanda.
+
+La catena è: **B1 → B2 → B4**. **B3** (la LIS) è indipendente e parte in parallelo, ed è la più lenta. **B5** (i novanta pin) non aspettava nessuna e **è stata fatta il 02/10/2026**: otto controlli, due difetti corretti (§7); **il primo anno, che non era coperto, ha cinque controlli suoi dal 03/10** (`mappe.md` §8ter, A1-A5). Il 03/10/2026 è successa la stessa cosa quattro volte di fila con I2, I3, I4 e I19, e con dei file che non erano domande: **sei chiusure in due giorni, e cinque erano lavori** (§3bis).
+
+E la regola che ne segue, che è quella che il lavoro ha reso vera:
+
+> **Mentre si decide, si costruisce quello che si può costruire.** Le quattro bloccanti aspettano una risposta e aspetteranno ancora: nessuna delle trentaquattro chiuse le toccava. Il conto di due giorni dice che la risposta non è l'unica cosa che si può fare mentre si aspetta — e non è una metafora: i controlli automatici hanno trovato due coordinate sbagliate che nessuno aveva lette, e i quattro file del 03/10 sono nati tutti da controlli che non avrebbero potuto dare torto.
+
 ## 2. Dagli altri documenti
 
 Le sezioni che raccontavano il difetto da cui è nata una regola, o le versioni attraverso cui è passato un prototipo. Sono state tolte il 06/10/2026 (fase 1 della roadmap): nel documento d'origine resta la regola, o lo stato di oggi, al presente.
@@ -1033,6 +1049,7 @@ Le due regole che ne vengono:
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 06/10/2026 | 0.5 | Il §1.17 accoglie il racconto che il §6 dell'audit conteneva. |
 | 06/10/2026 | 0.4 | Il §3 accoglie, alla lettera, le lezioni di metodo che AGENTS.md raccontava ciascuna con il suo difetto: le regole sono ora in `metodo.md`. |
 | 06/10/2026 | 0.3 | Il §2 accoglie, alla lettera, le sezioni di racconto di sette documenti: mappe, itinerari, sequenza, ritratti, luoghi-edifici, fonti-visive, anno1-mappa. |
 | 06/10/2026 | 0.2 | Il §1 accoglie, alla lettera, le sedici sezioni di racconto dell'audit (v0.25), ciascuna con la sezione da cui viene. |
