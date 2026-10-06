@@ -11199,6 +11199,62 @@
    "soggetto": "dicembre"
   }
  ],
+ "videogioco-5-duchi-metodo.md": [
+  {
+   "numero": 5,
+   "riga": 2,
+   "scritto": "cinque",
+   "soggetto": "duchi"
+  },
+  {
+   "numero": null,
+   "riga": 20,
+   "scritto": "uno",
+   "soggetto": "alla"
+  },
+  {
+   "numero": null,
+   "riga": 36,
+   "scritto": "uno",
+   "soggetto": "script"
+  },
+  {
+   "numero": 4,
+   "riga": 37,
+   "scritto": "quattro",
+   "soggetto": "bloccanti"
+  },
+  {
+   "numero": null,
+   "riga": 44,
+   "scritto": "uno",
+   "soggetto": "scarto"
+  },
+  {
+   "numero": null,
+   "riga": 72,
+   "scritto": "due",
+   "soggetto": "script"
+  },
+  {
+   "numero": null,
+   "riga": 80,
+   "scritto": "due",
+   "soggetto": "parole"
+  },
+  {
+   "numero": null,
+   "riga": 100,
+   "scritto": "due",
+   "soggetto": "righe"
+  },
+  {
+   "numero": null,
+   "riga": 100,
+   "scritto": "due",
+   "soggetto": "volte"
+  }
+ ],
  "videogioco-5-duchi-motore-e-grafica.md": [
   {
    "numero": 5,
@@ -16519,6 +16575,234 @@
    "riga": 919,
    "scritto": "tre",
    "soggetto": "tappe"
+  },
+  {
+   "numero": 5,
+   "riga": 929,
+   "scritto": "cinque",
+   "soggetto": "lezioni"
+  },
+  {
+   "numero": 5209,
+   "riga": 933,
+   "scritto": "5209",
+   "soggetto": "erano"
+  },
+  {
+   "numero": null,
+   "riga": 933,
+   "scritto": "uno",
+   "soggetto": "per"
+  },
+  {
+   "numero": null,
+   "riga": 940,
+   "scritto": "uno",
+   "soggetto": "scarto"
+  },
+  {
+   "numero": 3,
+   "riga": 953,
+   "scritto": "3",
+   "soggetto": "ottobre"
+  },
+  {
+   "numero": 99,
+   "riga": 954,
+   "scritto": "99",
+   "soggetto": "ambienti"
+  },
+  {
+   "numero": 69,
+   "riga": 954,
+   "scritto": "69",
+   "soggetto": "sagme"
+  },
+  {
+   "numero": 7,
+   "riga": 956,
+   "scritto": "sette",
+   "soggetto": "verifiche"
+  },
+  {
+   "numero": 3,
+   "riga": 960,
+   "scritto": "tre",
+   "soggetto": "regole"
+  },
+  {
+   "numero": 57,
+   "riga": 970,
+   "scritto": "57",
+   "soggetto": "controlli"
+  },
+  {
+   "numero": null,
+   "riga": 970,
+   "scritto": "uno",
+   "soggetto": "script"
+  },
+  {
+   "numero": 5,
+   "riga": 978,
+   "scritto": "5",
+   "soggetto": "ottobre"
+  },
+  {
+   "numero": 30,
+   "riga": 980,
+   "scritto": "trenta",
+   "soggetto": "tappe"
+  },
+  {
+   "numero": 43,
+   "riga": 981,
+   "scritto": "43",
+   "soggetto": "tappe"
+  },
+  {
+   "numero": 150,
+   "riga": 982,
+   "scritto": "150",
+   "soggetto": "hanno"
+  },
+  {
+   "numero": null,
+   "riga": 985,
+   "scritto": "due",
+   "soggetto": "regole"
+  },
+  {
+   "numero": null,
+   "riga": 989,
+   "scritto": "due",
+   "soggetto": "volte"
+  },
+  {
+   "numero": 107,
+   "riga": 992,
+   "scritto": "107",
+   "soggetto": "chiavi"
+  },
+  {
+   "numero": 107,
+   "riga": 992,
+   "scritto": "107",
+   "soggetto": "sha"
+  },
+  {
+   "numero": 4,
+   "riga": 995,
+   "scritto": "quattro",
+   "soggetto": "anni"
+  },
+  {
+   "numero": 5,
+   "riga": 999,
+   "scritto": "5",
+   "soggetto": "ottobre"
+  },
+  {
+   "numero": null,
+   "riga": 1002,
+   "scritto": "due",
+   "soggetto": "numeri"
+  },
+  {
+   "numero": null,
+   "riga": 1003,
+   "scritto": "due",
+   "soggetto": "confrontato"
+  },
+  {
+   "numero": null,
+   "riga": 1006,
+   "scritto": "due",
+   "soggetto": "regole"
+  },
+  {
+   "numero": null,
+   "riga": 1019,
+   "scritto": "due",
+   "soggetto": "punti"
+  },
+  {
+   "numero": 5,
+   "riga": 1021,
+   "scritto": "5",
+   "soggetto": "ottobre"
+  },
+  {
+   "numero": 15,
+   "riga": 1021,
+   "scritto": "quindici",
+   "soggetto": "minuti"
+  },
+  {
+   "numero": 13,
+   "riga": 1021,
+   "scritto": "tredici",
+   "soggetto": "numeri"
+  },
+  {
+   "numero": 6,
+   "riga": 1021,
+   "scritto": "sei",
+   "soggetto": "documenti"
+  },
+  {
+   "numero": null,
+   "riga": 1021,
+   "scritto": "uno",
+   "soggetto": "script"
+  },
+  {
+   "numero": 4,
+   "riga": 1022,
+   "scritto": "quattro",
+   "soggetto": "volte"
+  },
+  {
+   "numero": 4,
+   "riga": 1022,
+   "scritto": "quattro",
+   "soggetto": "giorni"
+  },
+  {
+   "numero": null,
+   "riga": 1022,
+   "scritto": "due",
+   "soggetto": "righe"
+  },
+  {
+   "numero": null,
+   "riga": 1022,
+   "scritto": "due",
+   "soggetto": "volte"
+  },
+  {
+   "numero": null,
+   "riga": 1022,
+   "scritto": "due",
+   "soggetto": "righe"
+  },
+  {
+   "numero": null,
+   "riga": 1022,
+   "scritto": "due",
+   "soggetto": "righe"
+  },
+  {
+   "numero": null,
+   "riga": 1029,
+   "scritto": "due",
+   "soggetto": "documenti"
+  },
+  {
+   "numero": 4,
+   "riga": 1029,
+   "scritto": "quattro",
+   "soggetto": "posti"
   }
  ],
  "videogioco-5-duchi-tappa-1-01.md": [

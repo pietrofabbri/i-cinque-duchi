@@ -11,6 +11,8 @@ Questo file serve a chiunque riprenda il lavoro senza il contesto delle conversa
 1. `docs/` è la **fonte di verità**. `dati/` contiene gli stessi contenuti in forma leggibile dai programmi. `prototipo/` si genera da `sorgenti/`.
 2. Ordine di lettura: `README.md` → `docs/videogioco-5-duchi-gioco.md` → `docs/videogioco-5-duchi-esercizi.md` → il documento del tema su cui lavori. Per gli anni 2, 3, 4 e 5, leggi prima la sezione §0 e le questioni aperte del documento dell'anno: contengono decisioni prese e limiti che non si possono dare per scontati. **Prima di assegnare un luogo a una tappa, leggi `docs/videogioco-5-duchi-luoghi.md`**: è trasversale e vale per tutti e cinque gli anni. **Prima di scrivere un livello linguistico, leggi `docs/videogioco-5-duchi-lingue.md`**: è trasversale, vale per tutti e cinque gli anni, e contiene i 900 titoli con la loro provenienza. **Prima di scegliere un'immagine per un oggetto o per un testo autentico, leggi `docs/videogioco-5-duchi-lingue-immagini.md`**: contiene la regola delle quattro categorie, le etichette, la misura 96×72 e i sette controlli.
 3. Se due documenti si contraddicono, vale quello con la data più recente. Conviene segnalare la contraddizione a Pietro.
+4. **Ogni documento dichiara il suo tipo** (`tipo:` nell'intestazione, §4). Per sapere che cosa è deciso si leggono i documenti `normativo`; il **come ci si è arrivati** è nello storico (`docs/videogioco-5-duchi-storico.md`) e non serve per lavorare; il lavoro in corso è nel `piano` (`docs/videogioco-5-duchi-roadmap-documentazione.md`).
+5. **Le regole di metodo** — come si scrivono i numeri, come si fanno i controlli, come si versionano i documenti — sono in `docs/videogioco-5-duchi-metodo.md`. Vanno lette prima di toccare un dato o un verificatore.
 
 ## 3. Decisioni di Pietro da rispettare (non cambiarle senza chiedere)
 
@@ -119,7 +121,7 @@ Questo file serve a chiunque riprenda il lavoro senza il contesto delle conversa
 - **Il dettaglio di un luogo ha sei campi**: `impianto`, `materiali`, `edifici`, `cronologia`, `terreno`, `vuoto`. Il campo `cronologia` non è decorativo: una tappa nel 1450 non può usare la piazza di oggi. Il campo `vuoto` dice **che cosa non si sa**, e va riempito come gli altri.
 - **Un campo vuoto non si stima.** Le dimensioni in metri di una piazza, se la fonte non le dà, restano vuote. Il default tipologico lo sceglie il motore e lo dichiara.
 - Il file dei luoghi si **rigenera** con `python3 sorgenti/luoghi/estrai_luoghi.py` e poi `classifica.py`: non si scrive a mano, perché un inventario scritto a parte diverge dai documenti, e un inventario che diverge è falso. **La tabella delle colonne va riletta** quando un documento cambia: nel 4º anno la colonna si chiama `Pin` e non `Luogo (pin)`, e la prima versione leggeva la colonna sbagliata trovandosi trenta nomi di persone al posto di trenta luoghi.
-- **Il rilievo si misura, non si stima**: `sorgenti/gis/rilievo.py`, verificato su 14 punti ad altitudine nota con errore medio di 12,6 m. Non usare `lon mod 16` per il pixel dentro un tassello: è l'indice di un tassello, non di un pixel (256 pixel, non 16).
+- **Il rilievo si misura, non si stima**: `sorgenti/gis/rilievo.py`, confrontato con le altitudini di riferimento di Wikidata su 32 punti, errore medio 32,9 m (`luoghi-edifici.md` §4; il numero di prima, 12,6 m su 14 punti, non era verificabile). Non usare `lon mod 16` per il pixel dentro un tassello: è l'indice di un tassello, non di un pixel (256 pixel, non 16).
 - **Le sagome degli edifici vengono da OSM**, dichiarando la provenienza edificio per edificio (`luoghi-edifici.md` §2); il codice del gioco non è obbligato a licenza libera, i dati derivati sì.
 
 **L'*Orlando furioso* nel quinto anno** (vedi `furioso.md`)
@@ -164,7 +166,7 @@ Questo file serve a chiunque riprenda il lavoro senza il contesto delle conversa
 - **La tavolozza esiste dal 03/10/2026**: `dati/fonti_visive/tavolozza.json`, **18 voci**, e la scelta dichiarata è **non ricolorare tutto a una tavolozza unica ma dichiarare i colori di ogni fonte**. Ogni voce porta da dove viene il colore (`wikidata_p465`, `wikipedia_infobox`, dichiarata, stato) e **un colore che non si trova in nessuna fonte non viene inventato**: i cinque pigmenti senza esadecimale sono in `pigmenti_senza_colore_macchina`. Prima di cambiare un colore, gira `python3 sorgenti/verifica_tavolozza.py` (sei controlli, A1–A6, con `--offline`).
 - **Le sagome degli edifici esistono dal 03/10/2026**: `dati/edifici_footprint.json`, **5209 edifici su 54 luoghi**, in formato delta. Ogni edificio porta `forma`, `altezza_m` e `fonte_altezza` (`osm_height`, `osm_levels`, `assente`): **3336 su 5209 non hanno altezza e diventano un volume neutro dichiarato**, mai una stima. Il file si rigenera con `python3 sorgenti/gis/edifici_footprint.py` (con `--riprendi`, `--prova`, `--luogo`): senza `--riprendi` un'interruzione fa perdere tutto il lavoro.
 - **Il fondo cittadino dell'anno 1 esiste dal 03/10/2026**: `dati/ferrara_fondo.json`, 14 tratti di mura OSM, 4,20 km² interni, con la tolleranza di 60 m scelta **come la più piccola in cui tutte e 28 le tappe del primo anno cadono dentro**. Rigenera con `python3 sorgenti/gis/ferrara_fondo.py`. Il vuoto di **1037 m** fra gli ultimi due estremi è dichiarato nel file e nessuna fonte lo disegna.
-- **Esiste `dati/ambienti_livelli.json`: un ambiente per ognuno dei 150 livelli**, costruito sul modello della tappa 1-1 e con tutti i vuoti dichiarati (99 con coordinate, 69 con sagome, **uno solo disegnato**). Ogni ambiente dichiara in `tipo_da` da dove viene il suo tipo. Rigenera con `python3 sorgenti/ambienti_livelli.py` e verifica con `python3 sorgenti/verifica_ambienti.py` (nove controlli, B1-B9–B6).
+- **Esiste `dati/ambienti_livelli.json`: un ambiente per ognuno dei 150 livelli**, costruito sul modello della tappa 1-1 e con tutti i vuoti dichiarati (99 con coordinate, 69 con sagome, **uno solo disegnato**). Ogni ambiente dichiara in `tipo_da` da dove viene il suo tipo. Rigenera con `python3 sorgenti/ambienti_livelli.py` e verifica con `python3 sorgenti/verifica_ambienti.py` (nove controlli, B1-B9).
 - **I colori delle carte stanno in un file dal 03/10/2026**: `dati/fonti_visive/colori_cartografici.json`, **19 voci**. Un colore entra in due modi e solo due: preso dalla tavolozza, e allora porta la `chiave_tavolozza` confrontata byte per byte; oppure dichiarato lì, e allora porta `motivo` e `criterio`. **Nessun colore entra perché stava già nel codice.** In più vale una regola che le carte hanno e le immagini non hanno: **una categoria con il riempimento ha anche il bordo**, e i due si dichiarano insieme.
 - **`dati/mappe/` contiene SOLO file nel formato a delta.** Un file in un altro formato li dentro fa crashare `mappe_lettore.leggi()`: è successo il 03/10/2026 con `mondo_admin1_copertura.json`, che sta in `dati/` e non li. Il lettore ora controlla la forma del file e solleva un `ValueError` che lo dice.
 - **Le cime con la loro quota sono in `dati/mappe/*_altitudine.json`** (15, 2 e 26 punti; il conto della fonte in `dati/altitudine_manifest.json`). La fonte è **mondiale in tutte e tre le scale** — il file chiamato «europa» elenca 86 cime da longitudine -167 a +160 — e **i tre file non sono annidati**: sono selezioni diverse della stessa fonte globale a dettagli diversi, non tre risoluzioni dello stesso elenco. Non è un modello del terreno e la quota è quella della fonte: l'Everest è a **8848 m**, il valore del 1954.
@@ -183,7 +185,7 @@ Questo file serve a chiunque riprenda il lavoro senza il contesto delle conversa
 
 **Questioni aperte** (trasversale, vedi `audit.md`)
 - **Tutte le questioni aperte stanno in `docs/videogioco-5-duchi-audit.md`.** Prima di aprire una discussione, guarda l'audit: è possibile che la domanda sia già chiusa in un altro documento, o che sia una delle quattro bloccanti e non si possa rispondere.
-- **Quattro bloccanti, e tre sono la stessa**: `lingue.md` Q1 (livelli linguistici o informatici), Q2 (le trenta voci confermate), Q4 (la LIS), e `lingue-immagini.md` Q1 (chi guarda le immagini). Le altre che un tempo erano in questa lista **erano lavori, non domande**, e sono fatte: i novanta pin il 02/10/2026 (`mappe.md` §8bis, `audit.md` §7), e il 03/10/2026 la tavolozza, le sagome degli edifici, il fondo di Ferrara, gli ambienti dei 150 livelli e il file amministrativo mondiale (`audit.md` §3bis).
+- **Quattro bloccanti, e tre sono la stessa**: `lingue.md` Q1 (livelli linguistici o informatici), Q2 (le trenta voci confermate), Q4 (la LIS), e `lingue-immagini.md` Q1 (chi guarda le immagini). Le altre che un tempo erano in questa lista **erano lavori, non domande**, e sono fatte: i novanta pin il 02/10/2026 (`mappe.md` §8bis, `audit.md` §7), e il 03/10/2026 la tavolozza, le sagome degli edifici, il fondo di Ferrara, gli ambienti dei 150 livelli e il file amministrativo mondiale (`audit.md` §7).
 - **Dal 02/10/2026 c'è anche `percorsi.md` Q1**, che non è bloccante ma è la decisione di progetto più importante aperta: se il percorso del duca è l'ordine delle tappe o un giro a parte.
 - **L'ordine è B1 → B2 → B4**: finché non si decide se le tappe sono 30 o 150 non ha senso scegliere le immagini, e finché non sono confermate le voci non ha senso scegliere le immagini.
 - **Una domanda nuova va aggiunta all'audit**, non lasciata in un documento. Se è chiusa, si sposta nel registro del documento suo e non si cancella.
@@ -232,9 +234,7 @@ Questo file serve a chiunque riprenda il lavoro senza il contesto delle conversa
 - **L'audio non entra nel file di consegna**: è dato personale di un minore. Nel `.txt` finisce la misura del parlato, non la voce.
 - **Il controllo è `sorgenti/verifica_parlato.py`** (A1–A4): i numeri del documento devono combaciare con il dato, e il livello del riconoscimento automatico deve restare dichiarato come non fatto — anche nel titolo.
 
-**Prima di dichiarare una lacuna, cerca**
-- Una riga `da_costruire` è la cosa più economica che si possa scrivere, e quasi sempre nasconde un difetto. Il 03/10/2026 `osservazione e attenzione` era dichiarato in due documenti come «un dominio che il progetto non ha ancora», e il gioco ci lavorava in quattro posti che nessuno aveva messi insieme. **La domanda vera è «dove lo abbiamo costruito senza accorgercene?»**, e va posta prima di scrivere che non esiste.
-- **Una cosa che il gioco fa senza dirlo non è una lacuna: è una riga rimasta indietro.**
+**Prima di dichiarare una lacuna, cerca** (`metodo.md` §2.7): la domanda è «dove lo abbiamo già costruito senza accorgercene?».
 
 ## 4. Convenzioni
 
@@ -250,8 +250,7 @@ Questo file serve a chiunque riprenda il lavoro senza il contesto delle conversa
   `verifica_coerenza.py` («tipi dei documenti») rifiuta un documento senza tipo, con due tipi o con un tipo fuori elenco.
 - **Per registrare una nuova versione si usa `python3 sorgenti/nuova_versione.py docs/<file>.md "che cosa è cambiato e perché"`**: alza la versione, aggiorna la data, scrive la riga nel registro nel formato e nel verso che quel registro già usa, aggiorna la tabella del `README.md` e i rimandi «`<file>.md (vN.N)`» negli altri documenti.
 - **Aggiornare un rimando di versione, o un campo dell'intestazione che non è il contenuto, non è una modifica** e non alza la versione del documento che lo contiene (decisione del 06/10/2026). Prima ogni rimando aggiornato generava una versione nuova, a catena, con righe di registro che dicevano solo «il rimando è l'unica cosa che cambia».
-- **Un controllo che non e' mai stato visto fallire non e' un controllo.** `python3 sorgenti/verifica_prove.py` (**X1-X6**) confronta i numeri che i documenti scrivono sui verificatori con le etichette che gli script dichiarano (**X3**), controlla che nessuna etichetta dichiarata resti senza codice che la guardi (**X2**), che nessun verificatore resti fuori dal conto senza un motivo scritto (**X4**), ed **esegue** le prove `--difetti` in processi nuovi invece di accettare che l'opzione esista (**X5**). Il numero dei controlli senza prova e' scritto nel README e non puo' crescere senza che il documento venga aggiornato (**X6**): e' un debito dichiarato, non una sparizione silenziosa. Lo ha trovato il 5 ottobre 2026, e in quindici minuti ha fatto registrare tredici numeri invecchiati in sei documenti e un difetto vero in uno script.
-- **Un registro che perde una riga è un documento che mente sul proprio lavoro**: la riga è la prova che il lavoro è stato fatto, e senza la riga il lavoro c'è ma non risulta. È successo quattro volte in quattro giorni — due righe scritte due volte, due righe mai scritte — e in tutti e quattro i casi i numeri erano giusti, quindi nessun controllo se n'era accorto. Il conteggio dei numeri non vede il conteggio delle righe: `python3 sorgenti/verifica_registri.py` (**R1–R5**) confronta le versione dichiarate con le righe che ci sono, e non accetta che una versione salti, che una versione abbia due righe, che un registro non sia in ordine o che una tabella di registro non abbia la riga di separazione.
+- **Un controllo che non è mai stato visto fallire non è un controllo**, e **un registro che perde una riga mente sul proprio lavoro**: le due regole, e i verificatori che le fanno rispettare (`verifica_prove.py`, X1-X6; `verifica_registri.py`, R1–R5), sono in `metodo.md` §1.1 e §3.2.
 
 **Codici**
 - **Livelli**: `anno-numero`, per esempio `1-1`.
@@ -267,91 +266,8 @@ Questo file serve a chiunque riprenda il lavoro senza il contesto delle conversa
 **Stile dei testi**
 Italiano semplice: frasi brevi, niente gergo non spiegato, niente tono infantile.
 
-**Un numero vero e una forma falsa possono stare nello stesso record**
-Il difetto più insidioso del 04/10/2026: il file delle sagome dichiarava 5209
-edifici e i 5209 erano veri, uno per uno, e la geometria di ognuno era un
-punto, perché la quantizzazione divideva per cento un numero già in metri.
-Nessuno lo vide perche' il numero — la parte che un umano guarda — era
-giusto. Due conseguenze, e sono regole: **(a)** un file che dichiara un
-conteggio deve avere un controllo che guarda anche *che cosa* ha contato, non
-solo *quanto*; **(b)** un difetto che entra nel file è un difetto che si
-propaga a ogni lettore, quindi va fermato **alla fonte**, e il fermo si scrive
-come uno scarto contato, non come un valore che non viene scritto.
-
-**Una prova che non rimette a posto il progetto è un danno**
-Le prove di difetto iniettato rompono il file vero e lo rimettono subito, con
-una copia di sicurezza che deve essere del file **sovrascritto**: una copia del
-file sorgente, ripristinata sul destinatario, lascia la coppia identica e la
-prova fallisce — e il sintomo (il verificatore non torna verde dopo) è della
-prova, non del progetto. Il backup vive fuori dal progetto, il ripristino
-avviene **prima** della prossima prova, e alla fine si richiede che il
-verificatore torni verde: una prova che non richiede il verde finale non
-dice se ha lasciato il mondo come l'ha trovato.
-
-**Un numero scritto a mano invecchia, un numero calcolato no**
-Questa regola nasce da un difetto vero del 3 ottobre 2026: `fonti-visive.md` §3.6
-dichiarava 99 ambienti con coordinate mentre il file ne aveva 100, 69 sagme OSM
-contro 68, e dava alla tappa 1-1 un orientamento che non ha come nessuno dei
-centocinquanta. Le sette verifiche degli ambienti passavano tutte, perché confrontano
-**i dati fra loro** e nessuna confronta un dato con **le frasi che il documento scrive
-su quel dato**.
-
-Le tre regole che ne vengono:
-
-1. **Un numero in un documento viene dal conto, non dalla memoria.** Se cambia il
-   dato, il numero cambia da solo: in `ambienti_livelli.py` le frasi che il file
-   scrive su se stesso sono costruite sui valori calcolati, non scritte a mano.
-2. **Se un documento riporta numeri di un file, un controllo li confronta col file.**
-   È il caso di **B8** in `verifica_ambienti.py`, che legge la sezione e confronta
-   ogni numero con il conto; quando si aggiunge una sezione con numeri, si aggiunge
-   anche il confronto.
-3. **Lo stesso vale per i percorsi e per i conteggi dei controlli.** Una riga di
-   comandi che dichiara «57 controlli» quando sono 61, o che indica uno script con
-   una directory che non gli appartiene, è un difetto della stessa natura.
-
-La forma del difetto è quasi sempre la stessa: **una riga di metodo, non un
-lavoro**. Il file era giusto e la catena che lo produceva era giusta; a mentire era
-la prosa che lo raccontava.
-
-**Un controllo scritto per un campione non copre l'insieme**
-Questa regola nasce da un difetto vero del 5 ottobre 2026: `verifica_disegni.py`
-chiedeva che i PNG dei disegni degli ambienti avessero **tutti sha diversi**. Sull'anno 1
-— trenta tappe, un campione scelto per guardare dentro il disegnatore — la richiesta
-era giusta. Estesi i disegni a tutte e centocinquanta le tappe, è impossibile: 43 tappe
-su 150 hanno le stesse sagome sulla stessa griglia e quindi lo stesso disegno. Un
-controllo che segnala come difetto la verità è un allarme spento, e spento non è verde.
-
-Le due regole che ne vengono:
-
-1. **Un controllo va riscritto quando il dato si allarga, non tarato.** La domanda da
-   porre non è «come faccio perché passi?» ma «che cosa deve essere vero quando il dato
-   è due volte più grande?». Qui la risposta è D3 in `sorgenti/art/verifica_disegni.py`,
-   che confronta la **chiave dei dati** (sagome e griglia, `chiave_dati()`) con lo **sha
-   del PNG**: stessi dati, stesso disegno; dati diversi, disegni diversi. Il conto torna,
-   107 chiavi dati e 107 sha distinti su 150.
-2. **Il comando che genera un indice può cancellare metà del lavoro senza dirlo.**
-   `disegna_ambienti.py --anno N` scrive lo stesso `indice.json` con dentro quell'anno
-   solo: si può perdere di vista che gli altri quattro anni non sono disegnati. Si usa
-   `--tutte`. Lo stesso vale per ogni generatore che scrive un manifesto unico.
-
-**Un numero vero che guarda il numero sbagliato non è un numero**
-Questa regola nasce da un difetto vero del 5 ottobre 2026: la ricerca delle
-fonti visive dichiarava **undici** mezzi di trasporto, e il gioco ne usa
-**ventuno**. Dieci non erano mai stati cercati e nessuno se ne accorse, perché
-la tabella contava le voci cercate e non i mezzi del gioco: due numeri veri,
-nessuno dei due confrontato con l'altro. È la stessa forma dei difetti dei
-giorni precedenti, con un nome nuovo, e vale per ogni elenco di voci.
-
-Le due regole che ne vengono:
-
-1. **Un elenco di voci si confronta con la fonte che le genera, non con
-   sé stesso.** `verifica_fonti_visive.py` fa così con il controllo **M1**:
-   legge `percorsi_mezzi.py` e pretende una riga per ogni mezzo. Un file che
-   confronta solo se stesso è verde anche quando manca metà del mondo.
-2. **Aggiungere una voce alla fonte aggiunge un difetto se l'elenco non
-   cresce.** Per questo ogni voce ha sempre una delle forme ammesse —
-   un'immagine, un vuoto con la sua ragione, o il segno di un mezzo fantastico —
-   e non esiste una quarta forma, che è «non ci ho pensato».
+**Metodo**
+Le regole con cui si lavora ai dati, ai controlli e ai documenti sono in `docs/videogioco-5-duchi-metodo.md`, e valgono come questa pagina: i numeri si calcolano e non si scrivono a mano, ogni controllo ha la prova del difetto, un controllo guarda che cosa conta e non solo quanto, un elenco si confronta con la fonte che lo genera, un dato generato non si corregge a mano, una richiesta che non arriva non è una risposta negativa. Le occasioni in cui ciascuna regola è nata sono in `storico.md` §3.
 
 ## 5. Vincoli tecnici e di contenuto
 
@@ -377,7 +293,8 @@ Le due regole che ne vengono:
 1. Leggi i documenti pertinenti e verifica che la modifica rispetti il §3.
 2. Modifica il documento in `docs/`, poi i dati in `dati/` se servono, poi il codice in `sorgenti/`.
 3. Rigenera il prototipo con `python3 build_mappa_html.py` da `sorgenti/`. Se hai Playwright, esegui i test in `sorgenti/test/`.
-4. Aggiorna versione e registro modifiche dei documenti toccati e, se serve, la tabella del `README.md`.
+4. Aggiorna versione e registro dei documenti toccati con `python3 sorgenti/nuova_versione.py docs/<file>.md "che cosa è cambiato e perché"`: aggiorna anche la tabella del `README.md` e i rimandi negli altri documenti.
+4bis. Fai girare **tutti** i verificatori, e se hai aggiunto o tolto un documento o un controllo `python3 sorgenti/allinea_conti_readme.py` (`metodo.md` §4).
 5. **Prima di dichiarare finito, passa `python3 sorgenti/verifica_coerenza.py`**: confronta le versioni fra intestazioni, tabella del README e rimandi incrociati, controlla che i file citati esistano (i file dichiarati «da produrre» sono un caso diverso e li riconosce), e riconcilia le cifre dichiarate con i dati. Se il checkout è parziale, aggiungi `--elenco` con l'elenco dei file del ramo remoto.
 6. Nel messaggio di commit, spiega **che cosa** è cambiato e **perché**.
 

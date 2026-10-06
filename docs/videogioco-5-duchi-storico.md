@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — Storico: come ci si è arrivati
 tipo: storico
-versione: 0.3
+versione: 0.4
 data: 2026-10-06
 autore: Pietro Fabbri (con Claude)
 documenti collegati: videogioco-5-duchi-roadmap-documentazione.md (v0.2)
@@ -920,10 +920,120 @@ Come è fatta:
 
 
 
-## 3. Registro delle modifiche
+## 3. Da `AGENTS.md`
+
+Le lezioni di metodo che `AGENTS.md` raccontava ciascuna con il difetto da cui era nata, fra il 03 e il 05/10/2026. Sono state tolte il 06/10/2026: le regole sono in `metodo.md`, al presente, con il controllo che le fa rispettare.
+
+### 3.1 Le lezioni di metodo del §4
+
+*Da `AGENTS.md`, §4, le cinque lezioni di metodo («Un numero vero e una forma falsa…», «Una prova che non rimette a posto…», «Un numero scritto a mano invecchia…», «Un controllo scritto per un campione…», «Un numero vero che guarda il numero sbagliato…»).*
+
+**Un numero vero e una forma falsa possono stare nello stesso record**
+Il difetto più insidioso del 04/10/2026: il file delle sagome dichiarava 5209
+edifici e i 5209 erano veri, uno per uno, e la geometria di ognuno era un
+punto, perché la quantizzazione divideva per cento un numero già in metri.
+Nessuno lo vide perche' il numero — la parte che un umano guarda — era
+giusto. Due conseguenze, e sono regole: **(a)** un file che dichiara un
+conteggio deve avere un controllo che guarda anche *che cosa* ha contato, non
+solo *quanto*; **(b)** un difetto che entra nel file è un difetto che si
+propaga a ogni lettore, quindi va fermato **alla fonte**, e il fermo si scrive
+come uno scarto contato, non come un valore che non viene scritto.
+
+**Una prova che non rimette a posto il progetto è un danno**
+Le prove di difetto iniettato rompono il file vero e lo rimettono subito, con
+una copia di sicurezza che deve essere del file **sovrascritto**: una copia del
+file sorgente, ripristinata sul destinatario, lascia la coppia identica e la
+prova fallisce — e il sintomo (il verificatore non torna verde dopo) è della
+prova, non del progetto. Il backup vive fuori dal progetto, il ripristino
+avviene **prima** della prossima prova, e alla fine si richiede che il
+verificatore torni verde: una prova che non richiede il verde finale non
+dice se ha lasciato il mondo come l'ha trovato.
+
+**Un numero scritto a mano invecchia, un numero calcolato no**
+Questa regola nasce da un difetto vero del 3 ottobre 2026: `fonti-visive.md` §3.6
+dichiarava 99 ambienti con coordinate mentre il file ne aveva 100, 69 sagme OSM
+contro 68, e dava alla tappa 1-1 un orientamento che non ha come nessuno dei
+centocinquanta. Le sette verifiche degli ambienti passavano tutte, perché confrontano
+**i dati fra loro** e nessuna confronta un dato con **le frasi che il documento scrive
+su quel dato**.
+
+Le tre regole che ne vengono:
+
+1. **Un numero in un documento viene dal conto, non dalla memoria.** Se cambia il
+   dato, il numero cambia da solo: in `ambienti_livelli.py` le frasi che il file
+   scrive su se stesso sono costruite sui valori calcolati, non scritte a mano.
+2. **Se un documento riporta numeri di un file, un controllo li confronta col file.**
+   È il caso di **B8** in `verifica_ambienti.py`, che legge la sezione e confronta
+   ogni numero con il conto; quando si aggiunge una sezione con numeri, si aggiunge
+   anche il confronto.
+3. **Lo stesso vale per i percorsi e per i conteggi dei controlli.** Una riga di
+   comandi che dichiara «57 controlli» quando sono 61, o che indica uno script con
+   una directory che non gli appartiene, è un difetto della stessa natura.
+
+La forma del difetto è quasi sempre la stessa: **una riga di metodo, non un
+lavoro**. Il file era giusto e la catena che lo produceva era giusta; a mentire era
+la prosa che lo raccontava.
+
+**Un controllo scritto per un campione non copre l'insieme**
+Questa regola nasce da un difetto vero del 5 ottobre 2026: `verifica_disegni.py`
+chiedeva che i PNG dei disegni degli ambienti avessero **tutti sha diversi**. Sull'anno 1
+— trenta tappe, un campione scelto per guardare dentro il disegnatore — la richiesta
+era giusta. Estesi i disegni a tutte e centocinquanta le tappe, è impossibile: 43 tappe
+su 150 hanno le stesse sagome sulla stessa griglia e quindi lo stesso disegno. Un
+controllo che segnala come difetto la verità è un allarme spento, e spento non è verde.
+
+Le due regole che ne vengono:
+
+1. **Un controllo va riscritto quando il dato si allarga, non tarato.** La domanda da
+   porre non è «come faccio perché passi?» ma «che cosa deve essere vero quando il dato
+   è due volte più grande?». Qui la risposta è D3 in `sorgenti/art/verifica_disegni.py`,
+   che confronta la **chiave dei dati** (sagome e griglia, `chiave_dati()`) con lo **sha
+   del PNG**: stessi dati, stesso disegno; dati diversi, disegni diversi. Il conto torna,
+   107 chiavi dati e 107 sha distinti su 150.
+2. **Il comando che genera un indice può cancellare metà del lavoro senza dirlo.**
+   `disegna_ambienti.py --anno N` scrive lo stesso `indice.json` con dentro quell'anno
+   solo: si può perdere di vista che gli altri quattro anni non sono disegnati. Si usa
+   `--tutte`. Lo stesso vale per ogni generatore che scrive un manifesto unico.
+
+**Un numero vero che guarda il numero sbagliato non è un numero**
+Questa regola nasce da un difetto vero del 5 ottobre 2026: la ricerca delle
+fonti visive dichiarava **undici** mezzi di trasporto, e il gioco ne usa
+**ventuno**. Dieci non erano mai stati cercati e nessuno se ne accorse, perché
+la tabella contava le voci cercate e non i mezzi del gioco: due numeri veri,
+nessuno dei due confrontato con l'altro. È la stessa forma dei difetti dei
+giorni precedenti, con un nome nuovo, e vale per ogni elenco di voci.
+
+Le due regole che ne vengono:
+
+1. **Un elenco di voci si confronta con la fonte che le genera, non con
+   sé stesso.** `verifica_fonti_visive.py` fa così con il controllo **M1**:
+   legge `percorsi_mezzi.py` e pretende una riga per ogni mezzo. Un file che
+   confronta solo se stesso è verde anche quando manca metà del mondo.
+2. **Aggiungere una voce alla fonte aggiunge un difetto se l'elenco non
+   cresce.** Per questo ogni voce ha sempre una delle forme ammesse —
+   un'immagine, un vuoto con la sua ragione, o il segno di un mezzo fantastico —
+   e non esiste una quarta forma, che è «non ci ho pensato».
+
+### 3.2 I due punti sui controlli e sui registri
+
+*Da `AGENTS.md`, §4 «Documenti», i due punti sui controlli e sui registri.*
+
+- **Un controllo che non e' mai stato visto fallire non e' un controllo.** `python3 sorgenti/verifica_prove.py` (**X1-X6**) confronta i numeri che i documenti scrivono sui verificatori con le etichette che gli script dichiarano (**X3**), controlla che nessuna etichetta dichiarata resti senza codice che la guardi (**X2**), che nessun verificatore resti fuori dal conto senza un motivo scritto (**X4**), ed **esegue** le prove `--difetti` in processi nuovi invece di accettare che l'opzione esista (**X5**). Il numero dei controlli senza prova e' scritto nel README e non puo' crescere senza che il documento venga aggiornato (**X6**): e' un debito dichiarato, non una sparizione silenziosa. Lo ha trovato il 5 ottobre 2026, e in quindici minuti ha fatto registrare tredici numeri invecchiati in sei documenti e un difetto vero in uno script.
+- **Un registro che perde una riga è un documento che mente sul proprio lavoro**: la riga è la prova che il lavoro è stato fatto, e senza la riga il lavoro c'è ma non risulta. È successo quattro volte in quattro giorni — due righe scritte due volte, due righe mai scritte — e in tutti e quattro i casi i numeri erano giusti, quindi nessun controllo se n'era accorto. Il conteggio dei numeri non vede il conteggio delle righe: `python3 sorgenti/verifica_registri.py` (**R1–R5**) confronta le versione dichiarate con le righe che ci sono, e non accetta che una versione salti, che una versione abbia due righe, che un registro non sia in ordine o che una tabella di registro non abbia la riga di separazione.
+
+### 3.3 Prima di dichiarare una lacuna, cerca
+
+*Da `AGENTS.md`, §3, «Prima di dichiarare una lacuna, cerca».*
+
+**Prima di dichiarare una lacuna, cerca**
+- Una riga `da_costruire` è la cosa più economica che si possa scrivere, e quasi sempre nasconde un difetto. Il 03/10/2026 `osservazione e attenzione` era dichiarato in due documenti come «un dominio che il progetto non ha ancora», e il gioco ci lavorava in quattro posti che nessuno aveva messi insieme. **La domanda vera è «dove lo abbiamo costruito senza accorgercene?»**, e va posta prima di scrivere che non esiste.
+- **Una cosa che il gioco fa senza dirlo non è una lacuna: è una riga rimasta indietro.**
+
+## 4. Registro delle modifiche
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 06/10/2026 | 0.4 | Il §3 accoglie, alla lettera, le lezioni di metodo che AGENTS.md raccontava ciascuna con il suo difetto: le regole sono ora in `metodo.md`. |
 | 06/10/2026 | 0.3 | Il §2 accoglie, alla lettera, le sezioni di racconto di sette documenti: mappe, itinerari, sequenza, ritratti, luoghi-edifici, fonti-visive, anno1-mappa. |
 | 06/10/2026 | 0.2 | Il §1 accoglie, alla lettera, le sedici sezioni di racconto dell'audit (v0.25), ciascuna con la sezione da cui viene. |
 | 06/10/2026 | 0.1 | Prima stesura: la regola di come si scrive lo storico. Nasce con la fase 1 della roadmap della documentazione. |
