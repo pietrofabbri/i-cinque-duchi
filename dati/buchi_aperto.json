@@ -209,9 +209,16 @@
    "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
    "motivo": "una tappa sola: i suoi numeri sono un esempio, non un conteggio",
    "natura": "il documento non ha un controllo che confronti i suoi numeri"
+  },
+  {
+   "chiave": "videogioco-5-duchi-roadmap-documentazione.md",
+   "elenco": "SENZA",
+   "guardato_da": "sorgenti/verifica_numeri.py, controllo N2",
+   "motivo": "e' un piano di lavoro: i suoi numeri sono lo stato del progetto il giorno in cui la diagnosi e' stata scritta, e la data li accompagna",
+   "natura": "il documento non ha un controllo che confronti i suoi numeri"
   }
  ],
  "che_cosa": "I buchi conosciuti del progetto: cioe' le cose che un controllo dichiara di non poter guardare, con il motivo. Un buco che non e' qui non e' un buco che qualcuno sta guardando.",
- "data": "2026-10-05",
+ "data": "2026-10-06",
  "versione": 3
 }
