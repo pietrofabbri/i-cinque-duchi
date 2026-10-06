@@ -1,8 +1,8 @@
 ---
 titolo: Videogioco "I cinque duchi" — Salvataggio, consegna e integrità del punteggio
 tipo: normativo
-versione: 0.3
-data: 2026-09-28
+versione: 0.4
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: requisiti di Pietro (28/09/2026), già emersi nel progetto "piattaforma gamificata"
 documenti collegati: videogioco-5-duchi-curricolo.md, videogioco-5-duchi-schema-livelli.md, videogioco-5-duchi-anno1-ferrara.md
@@ -151,7 +151,7 @@ punti = difficoltà × E × P
 - f, g e h valgono 1 nel caso ideale e calano gradualmente (per esempio f(A) = 1 / A).
 - h(T) penalizza sia i tempi **troppo lunghi** sia quelli **implausibilmente brevi** rispetto alla difficoltà.
 - **La coerenza pesa più di tutto.** Chi indovina l'esito ma sbaglia sistematicamente i passaggi (segno di un esito copiato senza seguire il ragionamento) ottiene un punteggio **inferiore** a chi arriva più lentamente ma con un percorso coerente.
-- **Soglia di sblocco** di un livello: *k* istanze consecutive con E = 1 **e** C ≥ θ. Valori iniziali: *k* = 3, θ = 0,7; per le prove di corte *k* = 5. Senza coerenza, l'esito da solo non sblocca il livello.
+- **Soglia di un livello**: 4 esercizi validi all'ultimo gradino della bottega, dove un esercizio è valido se E = 1 **e** C ≥ θ, con θ = 0,7; per le prove di corte 5 (provvisorio). Senza coerenza, l'esito da solo non sblocca il livello. I numeri sono in `modello-di-livello.md` §3, che sostituisce le *k* = 3 istanze consecutive scritte qui fino alla v0.3.
 - **Calibrazione.** I pesi e le soglie sono provvisori e vanno tarati sul prototipo, con dati di gioco reali.
 
 ### 2.4 Indicatori da guardare
@@ -221,6 +221,8 @@ Non ci sono modalità separate. Gli studenti giocano **sempre, anche a casa**; *
 7. Specifica della modalità accessibile (§2.6.5).
 
 ## 4. Registro modifiche
+
+- **v0.4 (07/10/2026)**: La soglia del §2.3 è quella del modello di livello: 4 esercizi validi all'ultimo gradino (5 per le prove, provvisorio), al posto delle k = 3 istanze consecutive (fase 2 della roadmap: allineamento al modello di livello).
 
 - **v0.3 (28/09/2026)**: eliminate le due modalità (allenamento e prova): si gioca sempre anche a casa e occasionalmente in classe.
 - **v0.2 (28/09/2026)**: aggiunto §2.6 su occhiali smart, IA, copia e incolla e screenshot (modalità allenamento e prova, misure tecniche e organizzative, Safe Exam Browser, limiti e accessibilità). Aggiunta la verifica di coerenza della catena nel codice di ripresa (vedi `videogioco-5-duchi-anno1-mappa.md`, regola R6).

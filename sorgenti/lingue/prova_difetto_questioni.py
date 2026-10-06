@@ -183,15 +183,17 @@ def main():
         shutil.copy(os.path.join(BASE, README), os.path.join(radice, README))
 
     # 1. il numero delle sezioni, indietro di uno: il difetto del 04/10
-    difetto("le sezioni dichiarate sono 15 su 16",
-            lambda t, r: (sostituisci(t, "| Documenti con una sezione «Questioni aperte» | **16** |",
-                                      "| Documenti con una sezione «Questioni aperte» | **15** |"), r),
+    #    Il numero si legge dal documento (`_meno_uno`): fino al 07/10/2026 era
+    #    scritto qui, e ogni nuova sezione di questioni rompeva la prova.
+    difetto("le sezioni dichiarate sono una di meno",
+            lambda t, r: (_meno_uno(t, r"\| Documenti con una sezione «Questioni aperte» \| \*\*\d+\*\* \|",
+                                    "la riga delle sezioni", 1), r),
             "sezioni")
 
     # 2. il numero delle voci, che nessuno ricalcola a mano
-    difetto("le voci enumerate sono 119",
-            lambda t, r: (sostituisci(t, "| Voci enumerate | **118** |",
-                                      "| Voci enumerate | **119** |"), r),
+    difetto("le voci enumerate sono una di meno",
+            lambda t, r: (_meno_uno(t, r"\| Voci enumerate \| \*\*\d+\*\* \|",
+                                    "la riga delle voci", 1), r),
             "voci")
 
     # 3. una cella della tabella passa dalla cifra alla parola: il numero c'è
@@ -227,7 +229,7 @@ def main():
             lambda t, r: (sostituisci(t, "### Luoghi (`luoghi.md` 2)", "### Luoghi (`luoghi.md` 4)"), r),
             "il §4 dichiara 4 per luoghi.md")
     difetto("il §4 dichiara 5 altre per `gioco.md` invece di 5 (somma rotta)",
-            lambda t, r: (sostituisci(t, "gioco (`gioco.md` 5)", "gioco (`gioco.md` 6)"), r),
+            lambda t, r: (_sposta(t, r"gioco \(`gioco\.md` \d+\)", "il numero di gioco.md nel §4", 0, 1), r),
             "sommano")
 
     # 7. il numero in lettere del §2, che è un titolo e non un conteggio libero
@@ -237,10 +239,13 @@ def main():
             "cinque bloccanti")
 
     # 8. il numero di importanti in lettere, senza che nessuna voce I cambi
-    difetto("il §1 dichiara sedici importanti con quindici voci I aperte",
-            lambda t, r: (sostituisci(t, "| Di cui importanti (cambiano il gioco) | quindici |",
-                                      "| Di cui importanti (cambiano il gioco) | sedici |"), r),
-            "sedici importanti")
+    #    La riga si cerca, non si sa: dal 07/10/2026 le importanti sono
+    #    diciotto, e la parola iniettata («sette») e' scelta lontana dal conto.
+    difetto("il §1 dichiara sette importanti con piu' voci I aperte",
+            lambda t, r: (sostituisci(t, porzione(t, r"\| Di cui importanti \(cambiano il gioco\) \| \w+ \|",
+                                                  "la riga delle importanti"),
+                                      "| Di cui importanti (cambiano il gioco) | sette |"), r),
+            "sette importanti")
 
     # 9. il numero di chiuse in prosa, che è la via che il registro non copre.
     #    Fino al 06/10/2026 la frase stava anche nel §6; il §6 ora la dice
@@ -273,13 +278,17 @@ def main():
                                        "i numeri che il README copia", 2)),
             "l'audit dice")
 
-    difetto("il README scrive «117 voci enumerate»",
-            lambda t, r: (t, sostituisci(r, "118 voci enumerate in sedici sezioni",
-                                         "117 voci enumerate in sedici sezioni")),
-            "117 voci enumerate")
+    difetto("il README scrive una voce enumerata di meno",
+            lambda t, r: (t, _meno_uno(r, r"\d+ voci enumerate in \w+ sezioni",
+                                       "le voci che il README copia", 1)),
+            "voci enumerate")
 
     difetto("il README scrive «quindici sezioni»",
-            lambda t, r: (t, sostituisci(r, "in sedici sezioni", "in quindici sezioni")),
+            lambda t, r: (t, sostituisci(r, porzione(r, r"in \w+ sezioni, \*\*\d+ chiuse",
+                                                     "le sezioni in lettere del README"),
+                                         "in quindici sezioni, **%s chiuse" % porzione(
+                                             r, r"(?<=sezioni, \*\*)\d+(?= chiuse)",
+                                             "le chiuse del README"))),
             "quindici sezioni")
 
     difetto("il README scrive «il progetto ha sedici documenti»",

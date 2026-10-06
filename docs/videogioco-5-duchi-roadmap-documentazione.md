@@ -4,7 +4,7 @@ tipo: piano
 versione: 0.3
 data: 2026-10-06
 autore: Pietro Fabbri (con Claude)
-documenti collegati: videogioco-5-duchi-audit.md (v0.27), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-esercizi.md (v0.1), videogioco-5-duchi-meccaniche.md (v0.3), videogioco-5-duchi-tappa-1-01.md (v0.4)
+documenti collegati: videogioco-5-duchi-audit.md (v0.28), videogioco-5-duchi-gioco.md (v0.6), videogioco-5-duchi-esercizi.md (v0.2), videogioco-5-duchi-meccaniche.md (v0.4), videogioco-5-duchi-tappa-1-01.md (v0.5)
 ---
 
 # Roadmap: risistemare la documentazione

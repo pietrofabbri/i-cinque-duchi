@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — audit delle questioni aperte: la lista operativa
 tipo: audit
-versione: 0.27
-data: 2026-10-06
+versione: 0.28
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: lettura di tutti i documenti di progetto che portano una sezione «Questioni aperte» (sedici), verificata da sorgenti/lingue/conta_questioni.py, che confronta anche i numeri che il README copia da qui
-documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-lingue-immagini.md (v0.8), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-fonti-visive.md (v0.21), videogioco-5-duchi-furioso.md (v0.7), videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-mappe.md (v1.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.1), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-meccaniche.md (v0.3), AGENTS.md
+documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-lingue-immagini.md (v0.8), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-fonti-visive.md (v0.21), videogioco-5-duchi-furioso.md (v0.7), videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-mappe.md (v1.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.2), videogioco-5-duchi-gioco.md (v0.6), videogioco-5-duchi-meccaniche.md (v0.4), AGENTS.md
 ---
 
 # Audit delle questioni aperte: la lista
@@ -22,19 +22,19 @@ Il documento è verificato da `sorgenti/lingue/conta_questioni.py`, che confront
 
 | | |
 |---|---|
-| Documenti con una sezione «Questioni aperte» | **16** |
-| Voci enumerate | **118** |
-| **Chiuse** | **34** |
-| **Aperte** | **84** |
+| Documenti con una sezione «Questioni aperte» | **17** |
+| Voci enumerate | **123** |
+| **Chiuse** | **35** |
+| **Aperte** | **88** |
 | Di cui bloccanti | quattro |
-| Di cui importanti (cambiano il gioco) | quindici |
+| Di cui importanti (cambiano il gioco) | diciotto |
 | Di cui minori (si possono rimandare) | le altre |
 
 **Il criterio**, dichiarato perché un numero senza criterio non è un dato. Una **voce** è un punto numerato, un `### Q1` o una riga di tabella della sezione «Questioni aperte». Una voce è **chiusa** se porta la marcatura nella sua **prima riga** — «chiusa», «risolto», «ratificata», «confermata» — e non in tutto il corpo, perché una voce aperta spiega dentro il corpo quale parte è stata chiusa.
 
-**Una voce non è sempre una domanda.** In `lingue.md` Q3 ci sono due sotto-voci dentro una sola domanda. Le **118 voci non sono 118 domande**.
+**Una voce non è sempre una domanda.** In `lingue.md` Q3 ci sono due sotto-voci dentro una sola domanda. Le **123 voci non sono 123 domande**.
 
-**Nessuna delle trentaquattro chiuse è bloccante**, e due delle quattro bloccanti rimaste non sono mai state domande: erano lavori, e sono stati fatti — i novanta pin il 02/10/2026, la tavolozza, le sagome, il fondo di Ferrara e i colori delle carte il 03/10/2026 (§7). Le decisioni prese hanno tolto lavoro, non lo hanno aggiunto.
+**Nessuna delle trentacinque chiuse è bloccante**, e due delle quattro bloccanti rimaste non sono mai state domande: erano lavori, e sono stati fatti — i novanta pin il 02/10/2026, la tavolozza, le sagome, il fondo di Ferrara e i colori delle carte il 03/10/2026 (§7). Le decisioni prese hanno tolto lavoro, non lo hanno aggiunto.
 
 
 ## 2. Le quattro bloccanti
@@ -110,7 +110,7 @@ Le tre proposte diventano quindi:
 Non è più una bloccante: l'esito è in **§7**, il racconto nello storico (`storico.md` §1). Era l'unica delle cinque che non aspettava nessuna decisione, ed è l'unica che il progetto poteva chiudere da solo.
 
 
-## 3. Le quindici importanti
+## 3. Le diciotto importanti
 
 Quelle che, se risposte male, cambiano il gioco. In ordine di peso.
 
@@ -135,6 +135,9 @@ Quelle che, se risposte male, cambiano il gioco. In ordine di peso.
 | I17 | **Il formato del file di consegna.** (`meccaniche.md`) | `.txt` è la proposta, ed è leggibile ovunque | Il PDF è più sicuro contro le manomissioni | `.txt` con firma, e la firma è ciò che rende la consegna verificabile | Pietro |
 | I18 | **Il gioco è un modulo della piattaforma gamificata o un prodotto a sé?** (`meccaniche.md`, `curricolo.md`) | Le due scelte danno requisiti diversi su privacy, punteggio, consegna | Rimandarla non blocca niente subito | Prodotto a sé, con i requisiti della piattaforma come caso particolare | Pietro |
 | I19 | ~~**I colori dei fondi geografici.**~~ **chiusa il 03/10/2026** (`fonti-visive.md` Q4) | — | — | **Fatto**: `dati/fonti_visive/colori_cartografici.json`, 17 voci (16 dichiarate con motivo e criterio, 3 prese dalla tavolozza con l'esadecimale confrontato byte per byte), la regola che **una categoria con il riempimento ha anche il bordo**, e `verifica_colori.py` (C1–C7). **Cercandoli è saltato fuori un difetto che non era di colori**: `mondo_admin1_copertura.json` stava dentro `dati/mappe/` e faceva crashare il lettore | Il progetto |
+| I20 | **La carta del personaggio e il premio: restano tutti e due?** (`modello-di-livello.md` Q1) | La carta è il personaggio e regge il ripasso a distanza; il premio è un oggetto che il personaggio non è | L'inventario chiuso dei sette elementi non nomina la carta né le visioni, e due collezioni possono sembrare una ripetizione | Tenerle tutte e due, con ruoli diversi, e aggiungerle all'inventario; è anche la regola provvisoria | Pietro |
+| I21 | **Prove di corte e tappe a mani nude sono la stessa cosa?** (`modello-di-livello.md` Q3) | I dati hanno 15 prove (x-10, x-20, x-30), `pedagogia.md` 10 tappe a mani nude (x-15, x-30): coincidono solo alle x-30 | Fonderle cambia la cadenza che il modello pedagogico chiede; tenerle separate fa della x-15 un livello con due nature | Tenerle distinte e decidere che cosa diventa la x-15 prima di scriverla | Pietro |
+| I22 | **«Nessuna risposta scritta» e gli strumenti veri** (`modello-di-livello.md` Q4) | Il divieto rende inutile incollare una risposta da un'IA | Python, formule e comandi si scrivono, e le lingue chiedono esercizi di produzione | Il divieto vale per il testo libero; codice e formule si scrivono e si verificano eseguendoli sui dati di quello studente | Pietro |
 
 
 ## 4. Le altre, in sintesi
@@ -215,7 +218,7 @@ Le **restanti**: minori, o già decise nella sostanza e che aspettano solo l'ese
 | Le previsioni con la data: si rileggono fra dieci anni, e con quale formato | Pietro |
 | Il posto di F11 nel registro del gioco | Pietro |
 
-### Luoghi (`luoghi.md` 2), mappe (`mappe.md` 3), *Furioso* (`furioso.md` 1), gioco (`gioco.md` 5), meccaniche (`meccaniche.md` 5)
+### Luoghi (`luoghi.md` 2), mappe (`mappe.md` 3), *Furioso* (`furioso.md` 1), gioco (`gioco.md` 4), meccaniche (`meccaniche.md` 5)
 
 | Domanda | Chi decide |
 |---|---|
@@ -234,6 +237,13 @@ Le **restanti**: minori, o già decise nella sostanza e che aspettano solo l'ese
 | Lo strumento del docente: subito o dopo il prototipo | Pietro |
 | Safe Exam Browser e la proposta al regolamento d'istituto sui dispositivi indossabili | Pietro **e l'istituto** |
 | La specifica della modalità accessibile | Il progetto **e il progetto di accessibilità del gioco** |
+
+### Modello di livello (`modello-di-livello.md` 2)
+
+| Domanda | Chi decide |
+|---|---|
+| Il ripasso Leitner all'inizio della tappa resta obbligatorio accanto ai test di ingresso, diventa facoltativo, o i test lo sostituiscono? | Pietro |
+| I campi `Modalità` e «processi di pensiero» proposti da `pedagogia.md` entrano nella scheda del livello? | Pietro |
 
 ### Itinerari (`itinerari.md` 1)
 
@@ -290,6 +300,7 @@ Il conto delle voci chiuse del §1 è un'altra cosa: lo fa `conta_questioni.py` 
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 07/10/2026 | 0.28 | Tre importanti nuove, I20–I22 (carta e premio, prove e tappe a mani nude, risposte scritte e strumenti veri), e una sezione del §4 per le altre due domande del modello di livello; il conto passa a 123 voci in 17 sezioni, 35 chiuse e 88 aperte, perché il modello aggiunge cinque voci e in `gioco.md` la ricerca dei ritratti è chiusa. |
 | 06/10/2026 | 0.27 | Il §6 dice la catena delle bloccanti e la regola «mentre si decide, si costruisce» al presente; il racconto di B5 e delle chiusure del 03/10, con il rimando al §3bis che non esiste più, è in `storico.md` §1.17. Con questa versione l'audit è in ordine: sezioni da §0 a §8, una scheda per questione, le chiuse in §7 e il registro in fondo (fase 1 della roadmap). |
 | 06/10/2026 | 0.26 | **Il racconto esce, le questioni restano.** Le sedici sezioni aggiunte dopo ogni chiusura e ogni lezione di metodo (2bis, da 3bis a 3quinquagesim, 3octies), circa 59 000 caratteri, sono state spostate alla lettera in `storico.md` §1 (fase 1 della roadmap). Al loro posto c'è il §7, «Le questioni chiuse»: voce, data, esito in una riga e dove sta oggi il risultato. Il registro è il §8, e la riga della v0.1, rimasta in fondo al file dopo le sezioni di racconto, è tornata nel registro. I rimandi a §2bis e §3bis puntano al §7. |
 | 05/10/2026 | 0.25 | **Il rimando e' l'unica cosa che cambia.** `fonti-visive.md` e' salito a v0.20 e `mappe.md` a v1.5, e le due citazioni di questo frontmatter erano ferme alla versione di prima: un rimando fermo sembla un rimando fermo, e invece punta a un testo che non e' piu' quello. |

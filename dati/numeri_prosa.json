@@ -3457,15 +3457,15 @@
    "soggetto": "sotto-voci"
   },
   {
-   "numero": 118,
+   "numero": 123,
    "riga": 35,
-   "scritto": "118",
+   "scritto": "123",
    "soggetto": "voci"
   },
   {
-   "numero": 118,
+   "numero": 123,
    "riga": 35,
-   "scritto": "118",
+   "scritto": "123",
    "soggetto": "domande"
   },
   {
@@ -3908,13 +3908,13 @@
   },
   {
    "numero": null,
-   "riga": 247,
+   "riga": 257,
    "scritto": "due",
    "soggetto": "documenti"
   },
   {
    "numero": 4,
-   "riga": 258,
+   "riga": 268,
    "scritto": "quattro",
    "soggetto": "bloccanti"
   }
@@ -3994,37 +3994,37 @@
   },
   {
    "numero": 3,
-   "riga": 115,
+   "riga": 117,
    "scritto": "tre",
    "soggetto": "strati"
   },
   {
    "numero": 3,
-   "riga": 118,
+   "riga": 120,
    "scritto": "3",
    "soggetto": "per"
   },
   {
    "numero": 5,
-   "riga": 118,
+   "riga": 120,
    "scritto": "5",
    "soggetto": "per"
   },
   {
    "numero": 5,
-   "riga": 383,
+   "riga": 385,
    "scritto": "5",
    "soggetto": "minuti"
   },
   {
    "numero": 2,
-   "riga": 383,
+   "riga": 385,
    "scritto": "2",
    "soggetto": "ore"
   },
   {
    "numero": 66,
-   "riga": 383,
+   "riga": 385,
    "scritto": "66",
    "soggetto": "ore"
   }
@@ -4050,19 +4050,19 @@
   },
   {
    "numero": 4,
-   "riga": 36,
+   "riga": 37,
    "scritto": "4",
    "soggetto": "schermate"
   },
   {
    "numero": null,
-   "riga": 77,
+   "riga": 78,
    "scritto": "due",
    "soggetto": "volte"
   },
   {
    "numero": 3,
-   "riga": 108,
+   "riga": 109,
    "scritto": "tre",
    "soggetto": "livelli"
   }
@@ -7163,128 +7163,128 @@
    "soggetto": "strumento"
   },
   {
-   "numero": 5,
+   "numero": 4,
    "riga": 79,
-   "scritto": "cinque",
+   "scritto": "quattro",
    "soggetto": "gradini"
   },
   {
    "numero": null,
-   "riga": 89,
+   "riga": 83,
    "scritto": "due",
    "soggetto": "errori"
   },
   {
-   "numero": 48,
-   "riga": 103,
-   "scritto": "48",
-   "soggetto": "pixel"
-  },
-  {
-   "numero": 16,
-   "riga": 103,
-   "scritto": "16",
-   "soggetto": "colori"
-  },
-  {
-   "numero": 3,
-   "riga": 116,
-   "scritto": "tre",
-   "soggetto": "fatti"
-  },
-  {
    "numero": 54,
-   "riga": 124,
+   "riga": 97,
    "scritto": "54",
    "soggetto": "pixel"
   },
   {
    "numero": 16,
-   "riga": 124,
+   "riga": 97,
+   "scritto": "16",
+   "soggetto": "colori"
+  },
+  {
+   "numero": 3,
+   "riga": 110,
+   "scritto": "tre",
+   "soggetto": "fatti"
+  },
+  {
+   "numero": 54,
+   "riga": 118,
+   "scritto": "54",
+   "soggetto": "pixel"
+  },
+  {
+   "numero": 16,
+   "riga": 118,
    "scritto": "16",
    "soggetto": "colori"
   },
   {
    "numero": null,
-   "riga": 124,
+   "riga": 118,
    "scritto": "uno",
    "soggetto": "script"
   },
   {
    "numero": null,
-   "riga": 157,
+   "riga": 151,
    "scritto": "due",
    "soggetto": "visioni"
   },
   {
    "numero": null,
-   "riga": 165,
+   "riga": 159,
    "scritto": "due",
    "soggetto": "errori"
   },
   {
    "numero": 4,
-   "riga": 165,
+   "riga": 159,
    "scritto": "4",
    "soggetto": "secondi"
   },
   {
    "numero": 4,
-   "riga": 189,
+   "riga": 183,
    "scritto": "4",
    "soggetto": "domande"
   },
   {
    "numero": 30,
-   "riga": 191,
+   "riga": 185,
    "scritto": "30",
    "soggetto": "giorni"
   },
   {
    "numero": 6,
-   "riga": 192,
+   "riga": 186,
    "scritto": "6",
    "soggetto": "per"
   },
   {
    "numero": 30,
-   "riga": 193,
+   "riga": 187,
    "scritto": "30",
    "soggetto": "giorni"
   },
   {
    "numero": 8,
-   "riga": 199,
+   "riga": 193,
    "scritto": "otto",
    "soggetto": "torri"
   },
   {
    "numero": 10,
-   "riga": 202,
+   "riga": 196,
    "scritto": "10",
    "soggetto": "tappe"
   },
   {
    "numero": 30,
-   "riga": 207,
+   "riga": 201,
    "scritto": "30",
    "soggetto": "carte"
   },
   {
    "numero": null,
-   "riga": 220,
+   "riga": 214,
    "scritto": "due",
    "soggetto": "personaggi"
   },
   {
    "numero": 30,
-   "riga": 223,
+   "riga": 217,
    "scritto": "30",
    "soggetto": "carte"
   },
   {
    "numero": 30,
-   "riga": 235,
+   "riga": 229,
    "scritto": "30",
    "soggetto": "tappe"
   }
@@ -11121,6 +11121,18 @@
    "soggetto": "nel"
   },
   {
+   "numero": 4,
+   "riga": 154,
+   "scritto": "4",
+   "soggetto": "esercizi"
+  },
+  {
+   "numero": 3,
+   "riga": 154,
+   "scritto": "3",
+   "soggetto": "istanze"
+  },
+  {
    "numero": null,
    "riga": 163,
    "scritto": "uno",
@@ -11205,6 +11217,170 @@
    "riga": 100,
    "scritto": "due",
    "soggetto": "volte"
+  }
+ ],
+ "videogioco-5-duchi-modello-di-livello.md": [
+  {
+   "numero": 5,
+   "riga": 2,
+   "scritto": "cinque",
+   "soggetto": "duchi"
+  },
+  {
+   "numero": 150,
+   "riga": 15,
+   "scritto": "150",
+   "soggetto": "livelli"
+  },
+  {
+   "numero": 150,
+   "riga": 17,
+   "scritto": "150",
+   "soggetto": "livelli"
+  },
+  {
+   "numero": 9,
+   "riga": 17,
+   "scritto": "nove",
+   "soggetto": "componenti"
+  },
+  {
+   "numero": null,
+   "riga": 17,
+   "scritto": "due",
+   "soggetto": "stanno"
+  },
+  {
+   "numero": null,
+   "riga": 19,
+   "scritto": "due",
+   "soggetto": "documenti"
+  },
+  {
+   "numero": 2,
+   "riga": 48,
+   "scritto": "2",
+   "soggetto": "errori"
+  },
+  {
+   "numero": 6,
+   "riga": 56,
+   "scritto": "sei",
+   "soggetto": "per"
+  },
+  {
+   "numero": null,
+   "riga": 77,
+   "scritto": "due",
+   "soggetto": "volte"
+  },
+  {
+   "numero": 1,
+   "riga": 107,
+   "scritto": "1",
+   "soggetto": "tessera"
+  },
+  {
+   "numero": 5,
+   "riga": 121,
+   "scritto": "cinque",
+   "soggetto": "gli"
+  },
+  {
+   "numero": 7,
+   "riga": 133,
+   "scritto": "sette",
+   "soggetto": "sono"
+  },
+  {
+   "numero": 4,
+   "riga": 141,
+   "scritto": "quattro",
+   "soggetto": "prove"
+  },
+  {
+   "numero": 3,
+   "riga": 141,
+   "scritto": "tre",
+   "soggetto": "righe"
+  },
+  {
+   "numero": 20,
+   "riga": 142,
+   "scritto": "20",
+   "soggetto": "senza"
+  },
+  {
+   "numero": null,
+   "riga": 144,
+   "scritto": "due",
+   "soggetto": "visioni"
+  },
+  {
+   "numero": null,
+   "riga": 144,
+   "scritto": "due",
+   "soggetto": "approfondimenti"
+  },
+  {
+   "numero": 12,
+   "riga": 151,
+   "scritto": "dodici",
+   "soggetto": "punti"
+  },
+  {
+   "numero": 5,
+   "riga": 151,
+   "scritto": "cinque",
+   "soggetto": "sono"
+  },
+  {
+   "numero": 7,
+   "riga": 167,
+   "scritto": "sette",
+   "soggetto": "elementi"
+  },
+  {
+   "numero": 3,
+   "riga": 167,
+   "scritto": "3",
+   "soggetto": "vieta"
+  },
+  {
+   "numero": 4,
+   "riga": 168,
+   "scritto": "4",
+   "soggetto": "domande"
+  },
+  {
+   "numero": 10,
+   "riga": 168,
+   "scritto": "dieci",
+   "soggetto": "domande"
+  },
+  {
+   "numero": 15,
+   "riga": 169,
+   "scritto": "15",
+   "soggetto": "prove"
+  },
+  {
+   "numero": 10,
+   "riga": 169,
+   "scritto": "10",
+   "soggetto": "tappe"
+  },
+  {
+   "numero": null,
+   "riga": 169,
+   "scritto": "due",
+   "soggetto": "cose"
+  },
+  {
+   "numero": null,
+   "riga": 169,
+   "scritto": "due",
+   "soggetto": "cose"
   }
  ],
  "videogioco-5-duchi-motore-e-grafica.md": [

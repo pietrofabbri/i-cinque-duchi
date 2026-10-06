@@ -5,7 +5,7 @@ versione: 0.8
 data: 2026-10-05
 autore: Pietro Fabbri (con Claude)
 fonte: ricerca su Wikimedia Commons del 02/10/2026
-documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-ritratti.md (v0.6), videogioco-5-duchi-luoghi-edifici.md (v0.7), videogioco-5-duchi-esercizi.md (v0.1), AGENTS.md, FONTI-E-LICENZE.md
+documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-ritratti.md (v0.6), videogioco-5-duchi-luoghi-edifici.md (v0.7), videogioco-5-duchi-esercizi.md (v0.2), AGENTS.md, FONTI-E-LICENZE.md
 dati: dati/lingue/associazioni.json (v1), dati/lingue/immagini_oggetti.json (v1, **il primo giro**, 180 voci, 1120 candidati), dati/lingue/immagini_2.json (v2, **il secondo giro** per il latino, il greco e il ferrarese: 90 voci, 547 candidati), dati/lingue/attestazione_oggetti.json (le scelte a vista; **vuota finché nessuno guarda**), dati/lingue/giudizi_oggetti.json (**da produrre**: i giudizi che Pietro scrive guardando i fogli, che `giudizi_oggetti.py` trasforma in attestazione)
 controllo: python3 sorgenti/lingue/verifica_immagini_oggetti.py (G1-G9: copertura, licenze, misura, proporzione, completezza, pertinenza, scivolamento, due classi e l'estrattore eseguito), python3 sorgenti/lingue/aggiorna_metadati_oggetti.py (rilegge gli autori che Commons dichiara, senza ripetere le ricerche: ventitré richieste, non centottanta), python3 sorgenti/lingue/cerca_immagini_2.py (il secondo giro, con un controllo di allineamento che si ferma se la tabella dei termini non ha esattamente le trenta voci), python3 sorgenti/lingue/fogli_oggetti.py (i 18 fogli di controllo), python3 sorgenti/lingue/giudizi_oggetti.py (registra i giudizi a vista e li applica all'attestazione)
 ---

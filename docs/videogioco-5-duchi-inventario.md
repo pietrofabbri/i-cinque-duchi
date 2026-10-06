@@ -1,8 +1,8 @@
 ---
 titolo: Videogioco "I cinque duchi" — l'inventario: che cosa si tocca a ogni livello, che cosa dà in cambio, e che cosa il giocatore si porta via
 tipo: normativo
-versione: 0.2
-data: 2026-10-03
+versione: 0.3
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte del materiale: richiesta di Pietro del 03/10/2026 («fammi un recap dei vari elementi del gioco con cui si può interagire in ogni livello e una volta risposti tutti i quiz, cosa danno in cambio, che l'utente deve salvarsi e può consultarsi?»), con le regole già prese su oggetti di interazione, test di ingresso, premi e file di consegna
 dati: dati/lingue/associazioni.json (v1, le 180 voci degli oggetti di interazione: trenta per lingua); dati/sequenza_tappe.json (v1, le novanta tappe degli anni 2-4 con la voce che si incontra); dati/ambienti_livelli.json (v2, i centocinquanta ambienti); dati/premi.json (da generare, dopo la cardinalità decisa: un premio per livello)
@@ -28,7 +28,7 @@ Il documento esiste perché quelle risposte erano sparse in sei file e nessuno l
 | **4** | **il test di ingresso** | dieci domande sulle voci già superate, due o tre minuti | l'**elenco dei dieci nomi** con l'origine di ciascuno: che cosa sai e che cosa no | **sì** |
 | **5** | **il richiamo all'origine** | il livello da cui una di quelle dieci cose era imparata, aperto lì dove si è | la possibilità di **rifare quel livello** e tornare indietro quando si vuole, senza perdere niente | sì, e non si può disattivare |
 | **6** | **il premio** | un oggetto vero con tre righe di spiegazione | l'oggetto, che va nella **salvadanaio** | no, uno per livello |
-| **7** | **la fascia bianca** | la striscia in cui il giocatore scrive a mano | la **previsione**: che cosa secondo lui succederà, e con quale incertezza | sì, ma è **dato personale** e non esce mai dal file |
+| **7** | **la fascia bianca** | la striscia in cui il giocatore scrive a mano; esiste **solo nell'anno 5**, alla tappa 5-30 (`anno5-mondo.md` §7.3) | la **previsione**: che cosa secondo lui succederà, e con quale incertezza | sì, ma è **dato personale** e non esce mai dal file |
 
 **Cinque cose su sette sono facoltative**, e non per generosità: sono le cinque che il progetto può permettersi di rendere opzionali senza che il livello perda il suo nucleo. Il nucleo e la soglia non sono facoltativi, e i due elementi non facoltativi che non sono la voce sono il viaggio e il premio.
 
@@ -80,7 +80,7 @@ Il file contiene i quattro registri e i numeri del percorso. **Non** contiene: n
 | voci incontrate (l'elemento 1) | 30 | 150 |
 | oggetti di interazione (l'elemento 2) | 30 per lingua, sei lingue | 180 voci, apribili in ogni livello |
 | test di ingresso possibili | uno per oggetto toccato | fino a 180 |
-| **premi** (l'elemento 6) | **uno per livello**, meno l'informatica | **1050** (`premi.md` §4.0) |
+| **premi** (l'elemento 6) | **uno per livello**, informatica compresa | **1050** (`premi.md` §4.0) |
 | registri personali | quattro | quattro |
 
 I **1050 premi** sono la cifra che rende questo documento pesante: sono la decisione di oggi (`premi.md` §4) e sono anche il motivo per cui la prova 3 dei premi — *non è già nella storia* — è la più difficile da soddisfare. Un premio per livello significa che **non si possono regalare gli stessi venti oggetti venti volte**, e il catalogo deve avere novanta fonti diverse.
@@ -89,9 +89,12 @@ I **1050 premi** sono la cifra che rende questo documento pesante: sono la decis
 
 1. ~~**Il numero dei livelli trasversali**~~ **chiusa il 03/10/2026**: sono **zero** — il trasversale è un aggancio dentro i livelli, non un livello (`quadro-trasversale.md` §1.3) — e il conto è **1050**, non «circa 900»: la cifra vecchia contava i soli livelli linguistici e dimenticava i centocinquanta informatici.
 2. **La mappa degli scambi in ogni sua cella**: le sette righe della tabella di §2 dicono che cosa dà ogni elemento, ma non c'è ancora un controllo che verifichi che ogni elemento dia davvero quello che promette. Le righe che oggi sarebbero false sono quelle del premio, perché il catalogo non esiste.
-3. **Le fasce bianche nel ciclo della tappa**: sono dichiarate da `gioco.md`, ma non hanno una schermata né un posto nell'inventario delle schermate. Se sono la previsione del giocatore, sono il quinto elemento che dà qualcosa.
+3. **Le fasce bianche nel ciclo della tappa**: esistono solo nell'anno 5, alla tappa 5-30 (`anno5-mondo.md` §7.3), e non hanno ancora una schermata.
+4. **La carta del personaggio e le visioni** non sono nell'elenco dei sette, e il prototipo le ha: se entrano, o se la carta è assorbita dal premio, è la domanda Q1 di `modello-di-livello.md` §9.
 
 ## 6. Registro delle modifiche
 
 - **v0.1 (03/10/2026)**: prima stesione, e nasce da una domanda che nessun documento aveva raccolto: **a che cosa gioco, che cosa ne ricavo, e che cosa mi porto via**. Sette elementi interattivi, ognuno con che cosa dà e se è facoltativo; la tabella degli scambi; i quattro registri personali e la regola che il gioco deve poter rileggerli; e le cifre, con i **circa 900 premi** che la decisione di oggi rende esatti e che la prova «non è già nella storia» rende difficili. La riga vuota è quella delle fasce: **è l'unico scambio in cui il gioco non dà niente**, ed è l'unico in cui il giocatore scrive.
 - **v0.2 (03/10/2026)**: **il numero dei premi è chiuso, ed era sbagliato.** I livelli sono **1050**, non «circa 900»: i quattro ambiti trasversali non aggiungono livelli (`quadro-trasversale.md` §1.3, che chiude anche la riga `osservazione e attenzione` che due documenti davano per assente) e la cifra precedente contava i soli livelli linguistici. Le due cose da fare scendono a una: scrivere il catalogo dei premi.
+
+- **v0.3 (07/10/2026)**: La fascia bianca esiste solo nell'anno 5, alla tappa 5-30; i premi sono uno per livello informatica compresa, come premi.md §4.0 dal 04/10; carta e visioni sono fra le cose che mancano, con il rimando alla domanda del modello di livello (fase 2 della roadmap: allineamento al modello di livello).

@@ -1,8 +1,8 @@
 ---
 titolo: Videogioco "I cinque duchi" — Esercizi, meccaniche, testo e linguaggio
 tipo: normativo
-versione: 0.1
-data: 2026-09-30
+versione: 0.2
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: indicazioni di Pietro del 30/09/2026
 documenti collegati: videogioco-5-duchi-gioco.md, videogioco-5-duchi-tappa-1-01.md, videogioco-5-duchi-quadro-trasversale.md, videogioco-5-duchi-meccaniche.md
@@ -29,6 +29,7 @@ documenti collegati: videogioco-5-duchi-gioco.md, videogioco-5-duchi-tappa-1-01.
 | Equivalenza | Tutti gli esercizi di un gradino allenano **la stessa abilità allo stesso livello di difficoltà**, con meccanismi diversi |
 | Unicità | Dentro una pool non ci sono due esercizi con lo stesso contenuto |
 | Ultimo gradino | Un esercizio conta solo se l'esito è giusto **e** la coerenza dei passaggi è almeno del 70% |
+| Soglia del livello | **4 esercizi validi all'ultimo gradino**; per le prove, 5 (provvisorio). È la soglia che vale: sostituisce le *k* istanze consecutive di `curricolo.md` §3.1 e `meccaniche.md` §2.3 (`modello-di-livello.md` §3 e §8) |
 | Errori | Due errori consecutivi fanno scattare la **pausa di autoregolazione**. Nei gradini dopo il primo, dopo la pausa si torna al gradino precedente |
 | Semi | Ogni pool è generata da un seme casuale diverso per ogni studente e per ogni rigenerazione |
 
@@ -42,7 +43,7 @@ documenti collegati: videogioco-5-duchi-gioco.md, videogioco-5-duchi-tappa-1-01.
 
 ## 2. Catalogo dei meccanismi
 
-Ogni meccanismo ha un **aspetto proprio** (colore, forma, disposizione), così lo studente vede sempre qualcosa di nuovo. Si usano con il tocco o il clic, senza trascinamenti obbligatori, così funzionano anche sul telefono. Nessun meccanismo richiede di scrivere testo, quindi non si può incollare una risposta presa da un'IA.
+Ogni meccanismo ha un **aspetto proprio** (colore, forma, disposizione), così lo studente vede sempre qualcosa di nuovo. Si usano con il tocco o il clic, senza trascinamenti obbligatori, così funzionano anche sul telefono. Nessun meccanismo della bottega richiede di scrivere testo libero, quindi non si può incollare una risposta presa da un'IA. Come questa regola sta insieme agli strumenti veri di `gioco.md` §2 (codice, formule, comandi) è la domanda Q4 di `modello-di-livello.md` §9.
 
 | Codice | Meccanismo | Forma visiva | Passaggi | Usato in |
 |---|---|---|---|---|
@@ -108,8 +109,10 @@ Ogni meccanismo ha un **aspetto proprio** (colore, forma, disposizione), così l
 - **Colori dei tre livelli del sapere (anno 1):** dato arancio, informazione blu, conoscenza verde, saggezza viola. Sono gli stessi in tutti i meccanismi, per costruire un'abitudine visiva.
 - **Feedback:** contorno verde per il giusto, contorno rosso e barrato per l'errore, riquadro verde o rosa per il messaggio.
 - **Visioni di Borso:** tono seppia, per distinguerle dagli incontri reali.
-- **Zona percorribile:** stile a tessere, figure in pixel 12 × 16, dialoghi in un riquadro con bordo spesso (vedi `videogioco-5-duchi-gioco.md` §3.5).
+- **Zona percorribile:** stile a tessere, figure in pixel 16 × 24, dialoghi in un riquadro con bordo spesso (vedi `videogioco-5-duchi-gioco.md` §3.5 e `motore-e-grafica.md` §0).
 
 ## 6. Registro modifiche
+
+- **v0.2 (07/10/2026)**: La soglia del livello è scritta nella tabella del §1 (4 esercizi validi all'ultimo gradino); il divieto di scrivere vale per il testo libero della bottega, con il rimando alla domanda sugli strumenti veri; le figure della zona sono 16×24 (fase 2 della roadmap: allineamento al modello di livello).
 
 - **v0.1 (30/09/2026)**: prima versione: pool per gradino, catalogo dei meccanismi, quantità di testo per anno, regole di linguaggio e colore.

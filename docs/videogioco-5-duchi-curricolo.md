@@ -1,8 +1,8 @@
 ---
 titolo: Videogioco "I cinque duchi" — curricolo dei 150 livelli (bozza)
 tipo: normativo
-versione: 0.1
-data: 2026-09-27
+versione: 0.2
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 stato: bozza di lavoro, da integrare con il materiale di Pietro sui duchi e con le nuove Indicazioni nazionali 2026 (sezione Informatica non ancora acquisita)
 documenti collegati: mappa-informatica.md (ID dei nodi usati qui), mappa-informatica-A.md
@@ -111,6 +111,8 @@ Fonte: Schema di regolamento delle Indicazioni nazionali per i licei (DPR 89/201
 ## 3. Modello di livello
 
 ### 3.1 Struttura di un livello
+
+> **Questa sezione è la proposta del 27/09/2026.** Lo schema che vale oggi è `modello-di-livello.md`; la soglia in particolare non è più *k* istanze consecutive ma 4 esercizi validi all'ultimo gradino della bottega (`modello-di-livello.md` §3). La scheda di ogni livello è in `schema-livelli.md` §1 e in `dati/videogioco-5-duchi-livelli.json`.
 
 Ogni livello ha tre strati:
 
@@ -392,3 +394,10 @@ Ogni voce delle Indicazioni 2010 ha almeno un livello. Livelli oltre le Indicazi
 - Fascicolo della bozza per le scienze applicate (non ancora letto integralmente): <https://www.orizzontescuola.it/wp-content/uploads/2026/04/LS-SCIENZE-APPLICATE.pdf>
 - Calendario di entrata in vigore (fonte di stampa): <https://edunews24.it/scuola/scuola-e-attualit-come-cambieranno-i-programmi-dei-licei-dal-2027>
 - `mappa-informatica.md` v0.3 (progetto Scuola).
+
+## 9. Registro delle modifiche
+
+| Data | Versione | Che cosa è cambiato |
+|---|---|---|
+| 27/09/2026 | 0.1 | Prima stesura: requisiti, quadro normativo, modello di livello, cornice dei cinque anni, elenco dei 150 livelli. |
+| 07/10/2026 | 0.2 | Il §3.1 è dichiarato come la proposta del 27/09/2026: lo schema che vale è `modello-di-livello.md`, e la soglia non è più k istanze consecutive (fase 2 della roadmap: allineamento al modello di livello). Il documento non aveva un registro delle modifiche: questa è la prima riga. |

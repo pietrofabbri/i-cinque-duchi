@@ -1,8 +1,8 @@
 ---
 titolo: Videogioco "I cinque duchi" — Motore, dati geografici e grafica (zone percorribili e mappa della città)
 tipo: normativo
-versione: 0.1
-data: 2026-09-30
+versione: 0.2
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: richieste di Pietro del 30/09/2026 («mappa non realistica, troppo piccola, cattedrale e personaggi non riconoscibili, nebbia non chiara, più fluido»)
 implementazione: videogioco-5-duchi-anno1-prototipo-mappa.html (sorgenti zona1.js, zona1_dati.js, esercizi1.js, mappa_proto_template.html)
@@ -63,7 +63,7 @@ Per la tappa 1-1:
 - `gis/zona1_build.py`: calcola rotazione, zona, edifici con altezza e falde, e scrive `gis/zona1_mappa.json`;
 - `gis/zona1_pack.py`: assegna le falde agli edifici e impacchetta dati e immagini in `zona1_dati.js`, con gli oggetti `Z1DATA` e `Z1ART`.
 
-**Per una nuova tappa** basta:
+**Per una nuova tappa** (la lista di controllo completa del livello è in `modello-di-livello.md` §7) basta:
 1. scegliere il monumento e il suo lato "facciata";
 2. riusare i due script cambiando l'identificativo del poligono e il rettangolo di mappa;
 3. disegnare solo le facciate speciali (come quella della Cattedrale).
@@ -144,5 +144,7 @@ Tutto il resto (edifici, finestre, tetti, collisioni, nebbia) viene generato in 
 5. **Mappa della città.** Aggiungere il verde pubblico e l'acqua.
 
 ## 7. Registro modifiche
+
+- **v0.2 (07/10/2026)**: Il §2 rimanda alla lista di controllo del modello di livello per le nuove tappe (fase 2 della roadmap: allineamento al modello di livello).
 
 - **v0.1 (30/09/2026)**: prima versione. Motore canvas in 3/4, geometria reale dal WFS del Comune, grafica dei personaggi, nebbia e fluidità della mappa della città.

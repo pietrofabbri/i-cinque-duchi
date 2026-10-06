@@ -102,6 +102,7 @@ GUARDATO = {
     "videogioco-5-duchi-lingue-immagini.md": [
         "sorgenti/lingue/verifica_immagini_oggetti.py"],
     "videogioco-5-duchi-ritratti.md": ["sorgenti/art/verifica_immagini.py"],
+    "videogioco-5-duchi-modello-di-livello.md": ["sorgenti/verifica_modello.py"],
 }
 
 # I documenti senza un controllo dei loro numeri, e i motivi.

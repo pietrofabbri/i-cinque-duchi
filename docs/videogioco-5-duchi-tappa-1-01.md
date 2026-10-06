@@ -1,16 +1,16 @@
 ---
 titolo: Videogioco "I cinque duchi" — Tappa 1-1 (San Maurelio, Cattedrale): specifica completa
 tipo: normativo
-versione: 0.4
-data: 2026-10-04
+versione: 0.5
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
-implementazione: videogioco-5-duchi-anno1-prototipo-mappa.html (sorgenti esercizi1.js, zona1.js, zona1_dati.js, incorporati dallo script build_mappa_html.py)
+implementazione: prototipo/index.html (sorgenti esercizi1.js, zona1.js, zona1_dati.js, incorporati dallo script build_mappa_html.py)
 documenti collegati: videogioco-5-duchi-motore-e-grafica.md, videogioco-5-duchi-esercizi.md, videogioco-5-duchi-quadro-trasversale.md, videogioco-5-duchi-anno1-mappa.md, videogioco-5-duchi-gioco.md, videogioco-5-duchi-meccaniche.md
 ---
 
 # Tappa 1-1 — San Maurelio alla Cattedrale
 
-È la **prima tappa costruita per intero** e fa da modello per le altre 29.
+È la **prima tappa costruita per intero**. Lo schema generale di un livello, che vale per tutte, è `modello-di-livello.md`; questo documento è la sua applicazione alla tappa 1-1, e sarà riscritto con quel modello.
 
 ## 1. Scheda
 
@@ -128,8 +128,8 @@ Dentro una pool non ci sono due esercizi uguali (controllo di unicità in `build
 
 | Visione | Dove | Meccanismo | Contenuto |
 |---|---|---|---|
-| A1 · Metadati | San Giorgio, (16, 3) | `coppie`: collega campo e valore | Autore → Nicholaus, scultore · Anno → 1135 · Opera → Portale della Cattedrale · Soggetto → San Giorgio e il drago |
-| A2 · Piramide DIKW | Lapide, (14, 10) | `piramide`: impila dal basso | Dato (arancio) → Informazione (blu) → Conoscenza (verde) → Saggezza (viola) |
+| A1 · Metadati | San Giorgio, (3,6; 2,6) | `coppie`: collega campo e valore | Autore → Nicholaus, scultore · Data → 1135 · Luogo → Portale della Cattedrale · Soggetto → San Giorgio e il drago |
+| A2 · Piramide DIKW | Lapide, (−13; 1,6) | `piramide`: impila dal basso | Dati (arancio) → Informazioni (blu) → Conoscenza (verde) → Saggezza (viola) |
 
 Le visioni sono consecutive (A2 solo dopo A1), non servono per proseguire e restano disponibili anche dopo.
 
@@ -146,13 +146,15 @@ Il pulsante «Esporta il report» scarica un `.txt` con riepilogo, indicatori da
 
 ## 9. Da completare
 
-1. **Ripasso a distanza:** la carta entra nel sistema di Leitner; il primo ripasso è all'inizio della tappa 1-2.
+1. **Ripasso a distanza:** la carta entra nel sistema di Leitner; il primo ripasso è all'inizio della tappa 1-2 (provvisorio: `modello-di-livello.md` §9 Q1 e Q2).
 2. **Dialoghi:** rivederli con Pietro per tono e registro.
 3. **Grafica della zona:** alberi, passanti e suoni (vedi `motore-e-grafica.md` §6).
 4. **Altre chicche** della piazza (da decidere con Pietro).
 5. **Spazio vuoto** in alto nel riquadro degli esercizi su alcuni schermi (difetto grafico minore).
 
 ## 10. Registro modifiche
+
+- **v0.5 (07/10/2026)**: Il documento rimanda al modello di livello; l'implementazione è prototipo/index.html; nel §6 le posizioni e i campi delle visioni sono quelli della tabella del §3 e del codice, che il §6 contraddiceva (fase 2 della roadmap: allineamento al modello di livello).
 
 - **v0.4 (04/10/2026)**: **gli sprite di questa piazza sono dichiarati, e prima non lo erano.**
   - undici file in `sorgenti/art/out/` descrivevano questa zona — la facciata, il cartello, la lapide, due statue, il protagonista in quattro fotogrammi, tre ritratti disegnati a mano — e nessun codice li caricava e nessun dato li nominava. Il controllo 2 di `art/verifica_immagini.py` li dichiarava file morti, e aveva ragione;

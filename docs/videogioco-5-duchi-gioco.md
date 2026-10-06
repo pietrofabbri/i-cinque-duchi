@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — Come si gioca: interazione, strumenti veri, carte dei personaggi, memoria, contesto
 tipo: normativo
-versione: 0.5
-data: 2026-10-02
+versione: 0.6
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
-documenti collegati: videogioco-5-duchi-esercizi.md (v0.1), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-tappa-1-01.md (v0.4), videogioco-5-duchi-anno1-mappa.md (v0.10), videogioco-5-duchi-meccaniche.md (v0.3), videogioco-5-duchi-schema-livelli.md (v1.1), videogioco-5-duchi-anno1-ferrara.md (v0.3)
+documenti collegati: videogioco-5-duchi-esercizi.md (v0.2), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-tappa-1-01.md (v0.5), videogioco-5-duchi-anno1-mappa.md (v0.10), videogioco-5-duchi-meccaniche.md (v0.4), videogioco-5-duchi-schema-livelli.md (v1.1), videogioco-5-duchi-anno1-ferrara.md (v0.3)
 ---
 
 # Come si gioca
@@ -76,17 +76,11 @@ Una formula scritta nel gioco è una formula vera, che funziona anche in LibreOf
 
 ### 2.4 Gradualità dentro ogni tappa
 
-Ogni argomento segue una **scala a cinque gradini**, dal molto facile al raffinato:
+La bottega di ogni tappa ha **quattro gradini**, dal molto facile al più ricco: **0** esempio animato, **1** riconosci, **2** trasforma, **3** collega. La soglia per proseguire sta al gradino 3. I gradini, le pool, la soglia e i loro numeri sono in `modello-di-livello.md` §3 e in `esercizi.md` §1.
 
-1. **Esempio svolto**, mostrato dal personaggio.
-2. **Esempio da completare**: manca un solo passaggio.
-3. **Esercizio guidato**, con suggerimenti disponibili.
-4. **Esercizio autonomo** su un'istanza nuova.
-5. **Trasferimento**: lo stesso concetto in un contesto diverso, per esempio dalla bilancia alla console Python.
+Il **trasferimento** — lo stesso concetto in un contesto diverso, per esempio dalla bilancia alla console Python — non è un gradino della bottega: sta negli approfondimenti, cioè nelle visioni.
 
-La soglia per proseguire sta al gradino 4. Il gradino 5 e i gradi superiori sono negli approfondimenti.
-
-**Obiettivo di tasso di successo: circa 80–85%.** La difficoltà si adatta: dopo due errori sullo stesso gradino si torna al gradino precedente con un'istanza nuova.
+**Obiettivo di tasso di successo: circa 80–85%.** La difficoltà si adatta: dopo due errori consecutivi c'è la pausa (§3.6), e nei gradini 2 e 3 si torna al gradino precedente con un'istanza nuova.
 
 ---
 
@@ -94,13 +88,13 @@ La soglia per proseguire sta al gradino 4. Il gradino 5 e i gradi superiori sono
 
 ### 3.1 Formato: le carte da collezione
 
-Ogni personaggio incontrato diventa una **carta**, nello spirito delle carte da collezione (Pokémon, figurine), ma sobria.
+Ogni personaggio incontrato diventa una **carta**, nello spirito delle carte da collezione (Pokémon, figurine), ma sobria. La carta è distinta dal **premio** del livello (`premi.md` §4): se restino tutti e due è la domanda Q1 di `modello-di-livello.md` §9, e fino alla risposta restano tutti e due.
 
 **Fronte**
 
 ```text
 ┌──────────────────────────┐
-│  [ritratto 48×48 pixel]  │   ← ritratto simbolico, 16 colori
+│  [ritratto 48×54 pixel]  │   ← ritratto simbolico, 16 colori
 │  GUIDO MONACO     XI sec │
 │  ▓▓▓ epoca E2  · luogo 4 │   ← fascia colorata dell'epoca, numero della tappa
 │  Etichetta: D            │   ← documentato / interpretato / memoria / leggenda…
@@ -120,7 +114,7 @@ Ogni personaggio incontrato diventa una **carta**, nello spirito delle carte da 
 
 ### 3.2 I ritratti
 
-- **Fonte.** Dipinti, miniature, medaglie o foto **in pubblico dominio o con licenza libera**. La ricerca strutturata delle immagini è rinviata, come chiesto da Pietro.
+- **Fonte.** Dipinti, miniature, medaglie o foto **in pubblico dominio o con licenza libera**. La ricerca è fatta e ogni immagine è stata giudicata a vista: le regole, i numeri e il catalogo sono in `ritratti.md` e in `dati/immagini_gioco.json`.
 - **Stile.** Ogni ritratto viene ridotto a **48×54 pixel con 16 colori**, con uno script automatico (ridimensionamento e media k-means dei colori). Primo esempio: Borso, dal ritratto di profilo del 1469-71. Il risultato è riconoscibile ma simbolico; ogni file pesa pochi kB e lo stile è uniforme per tutti.
 - **Aggancio didattico.** La riduzione di un'immagine a pochi pixel e pochi colori è proprio l'argomento dei livelli 1-12 e 1-13. Un approfondimento può chiedere allo studente di **creare lui stesso** la carta di un personaggio facoltativo.
 - **Personaggi senza immagine libera** (per esempio le figure del Novecento con foto protette, le persone viventi o i gruppi): un **emblema simbolico** al posto del volto, come una macchina da presa per Antonioni, una chitarra per Brondi o un pallone per Mazza.
@@ -186,7 +180,7 @@ Principi usati, con le relative fonti, e come si traducono nel gioco.
 
 ### 4.2 Ripasso integrato nella strada (senza obiettivi paralleli)
 
-- **All'inizio di ogni tappa** il personaggio pone **2–4 domande di ripasso** sulle carte "in scadenza", cioè le tappe precedenti il cui intervallo è trascorso.
+- **All'inizio di ogni tappa** il personaggio pone **2–4 domande di ripasso** sulle carte "in scadenza", cioè le tappe precedenti il cui intervallo è trascorso. Accanto a questo ripasso ci sono i **test di ingresso** di `ripassi.md`, facoltativi e per le lingue e gli ambiti trasversali; se il ripasso Leitner resti obbligatorio è la domanda Q2 di `modello-di-livello.md` §9.
 - **Il ripasso fa parte della soglia.** Non è una missione a parte, quindi la strada resta unica.
 - **Sistema di Leitner.** Ogni carta sale di livello (bronzo → argento → oro) quando il ripasso riesce e scende quando fallisce. Una carta d'oro torna in ripasso dopo 30 giorni.
 - **Lunghe pause.** Se lo studente non gioca per giorni, alla ripresa trova più carte in scadenza, ma **al massimo 6 per sessione**, per non scoraggiarlo.
@@ -233,10 +227,12 @@ Si gioca **sempre**, anche a casa. **In classe** si gioca occasionalmente, con g
 ## 7. Questioni aperte
 
 1. Scrivere motti e dialoghi delle 30 tappe (il tono di voce di ogni personaggio), rispettando i limiti di testo dell'anno (`esercizi.md` §3).
-5. Confermare la tappa 1-30: con Borso giocante, la proposta è **P93 La città** (vedi `anno1-mappa.md`).
-2. Ricerca strutturata dei ritratti, quando Pietro darà il via: fonti, licenze, scelta dell'immagine.
+2. **Chiusa il 03/10/2026**: la ricerca strutturata dei ritratti è fatta, e tutte le immagini sono giudicate (`ritratti.md`).
 3. Verificare che v86 e Pyodide funzionino sui computer del laboratorio e sui Chromebook.
 4. Decidere se per 1-25 e 1-26 usare lo strumento nel gioco, il file caricato o entrambi.
+5. Confermare la tappa 1-30: con Borso giocante, la proposta è **P93 La città** (vedi `anno1-mappa.md`).
+
+Le domande sul modello di livello nate dall'allineamento del 07/10/2026 (carta e premio, ripasso, prove e tappe a mani nude, risposte scritte e strumenti veri) sono in `modello-di-livello.md` §9.
 
 ## 8. Riferimenti
 
@@ -252,6 +248,8 @@ Si gioca **sempre**, anche a casa. **In classe** si gioca occasionalmente, con g
 - Strumenti: Pyodide (pyodide.org), v86 (github.com/copy/v86), sql.js, SheetJS: tutti software libero.
 
 ## 9. Registro modifiche
+
+- **v0.6 (07/10/2026)**: La bottega ha i quattro gradini di `esercizi.md` e il trasferimento va negli approfondimenti (§2.4); il ritratto della carta è 48×54 e la carta è distinta dal premio (§3.1); la ricerca dei ritratti è fatta (§3.2); il ripasso Leitner convive con i test di ingresso (§4.2); la questione 2 è chiusa e le domande nuove sono in `modello-di-livello.md` §9 (fase 2 della roadmap: allineamento al modello di livello).
 
 - **v0.5 (02/10/2026)**: controllo di coerenza: tre rimandi di versione erano fermi a prima della loro ultima revisione (`tappa-1-01.md` v0.2, `anno1-mappa.md` v0.7, `anno1-ferrara.md` v0.2). Il testo non cambia.
 
