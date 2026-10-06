@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — Anno III, i personaggi d'Europa: la corte di Ferrara e la carta a strati
+tipo: normativo
 versione: 0.5
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)

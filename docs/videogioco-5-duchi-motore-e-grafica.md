@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — Motore, dati geografici e grafica (zone percorribili e mappa della città)
+tipo: normativo
 versione: 0.1
 data: 2026-09-30
 autore: Pietro Fabbri (con Claude)

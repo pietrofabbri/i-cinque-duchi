@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — Salvataggio, consegna e integrità del punteggio
+tipo: normativo
 versione: 0.3
 data: 2026-09-28
 autore: Pietro Fabbri (con Claude)

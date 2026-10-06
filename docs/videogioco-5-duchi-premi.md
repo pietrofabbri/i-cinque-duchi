@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — i premi: undici categorie di oggetti, undisciplina ciascuna, e le quattro prove che un premio deve superare
+tipo: normativo
 versione: 0.8
 data: 2026-10-05
 autore: Pietro Fabbri (con Claude)

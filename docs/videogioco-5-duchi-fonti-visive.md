@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — le fonti visive: che cosa il gioco non ha ancora una veste, e dove si prende
+tipo: normativo
 versione: 0.20
 data: 2026-10-05
 autore: Pietro Fabbri (con Claude)

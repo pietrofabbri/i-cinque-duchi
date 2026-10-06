@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — Esercizi, meccaniche, testo e linguaggio
+tipo: normativo
 versione: 0.1
 data: 2026-09-30
 autore: Pietro Fabbri (con Claude)

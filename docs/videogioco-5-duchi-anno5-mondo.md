@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — Anno V, il mondo contemporaneo: il cantiere dell'Addizione Erculea e la carta della stima
+tipo: normativo
 versione: 0.7
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)

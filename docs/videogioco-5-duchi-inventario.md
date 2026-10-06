@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — l'inventario: che cosa si tocca a ogni livello, che cosa dà in cambio, e che cosa il giocatore si porta via
+tipo: normativo
 versione: 0.2
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)

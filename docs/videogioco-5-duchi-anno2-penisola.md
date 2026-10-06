@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — Anno II, la penisola attraverso le persone: strati, percorso, personaggi
+tipo: normativo
 versione: 0.3
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)

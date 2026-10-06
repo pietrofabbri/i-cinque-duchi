@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — Ascolto e parlato (la parte orale delle sei lingue)
+tipo: normativo
 versione: 0.3
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)

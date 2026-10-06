@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — Anno I, Ferrara: narrazione, personaggi, luoghi
+tipo: normativo
 versione: 0.3
 data: 2026-09-30
 autore: Pietro Fabbri (con Claude)

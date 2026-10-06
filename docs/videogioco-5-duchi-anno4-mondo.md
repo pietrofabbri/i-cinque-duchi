@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — Anno IV, il mondo oltre l'Europa: l'archivio di Ferrara e il pianeta a strati
+tipo: normativo
 versione: 0.6
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)

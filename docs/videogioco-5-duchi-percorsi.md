@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — i percorsi del duca: mezzi di trasporto, copertura della mappa e ritorni
+tipo: normativo
 versione: 0.6
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)

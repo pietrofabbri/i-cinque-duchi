@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — schema dei 150 livelli con propedeuticità e approfondimenti
+tipo: normativo
 versione: 1.1
 data: 2026-09-27
 autore: Pietro Fabbri (con Claude)

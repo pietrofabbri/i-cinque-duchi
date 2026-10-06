@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — La regola dei luoghi: i tipi di legame fra personaggio e luogo, catalogo per anno e mappa del quinto anno
+tipo: normativo
 versione: 0.7
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)

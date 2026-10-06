@@ -1,5 +1,6 @@
 ---
 titolo: I ritratti dei personaggi — dove vengono e perché sono dichiarati
+tipo: normativo
 versione: 0.5
 data: 2026-10-04
 autore: Buffy (per pietrofabbri)

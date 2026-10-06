@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — la sequenza degli anni 2, 3 e 4: le trenta voci obbligatorie in fila, con i luoghi e le distanze
+tipo: catalogo
 versione: 0.3
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)

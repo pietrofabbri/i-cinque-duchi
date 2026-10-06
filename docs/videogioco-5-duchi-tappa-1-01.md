@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — Tappa 1-1 (San Maurelio, Cattedrale): specifica completa
+tipo: normativo
 versione: 0.4
 data: 2026-10-04
 autore: Pietro Fabbri (con Claude)

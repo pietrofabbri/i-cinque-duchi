@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — le immagini degli oggetti di interazione: dove vengono e perché si dichiarano
+tipo: normativo
 versione: 0.8
 data: 2026-10-05
 autore: Pietro Fabbri (con Claude)

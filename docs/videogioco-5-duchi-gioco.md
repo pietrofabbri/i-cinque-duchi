@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — Come si gioca: interazione, strumenti veri, carte dei personaggi, memoria, contesto
+tipo: normativo
 versione: 0.5
 data: 2026-10-02
 autore: Pietro Fabbri (con Claude)

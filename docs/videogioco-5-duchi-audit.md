@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — audit delle questioni aperte: la lista operativa
+tipo: audit
 versione: 0.25
 data: 2026-10-05
 autore: Pietro Fabbri (con Claude)

@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — Anno I sulla mappa di Ferrara: il percorso unico
+tipo: normativo
 versione: 0.9
 data: 2026-10-02
 autore: Pietro Fabbri (con Claude)

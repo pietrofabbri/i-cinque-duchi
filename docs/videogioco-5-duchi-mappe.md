@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — Le mappe: fondo geografico per gli anni 2, 3 e 4, e dove si prendono i dettagli delle tappe
+tipo: normativo
 versione: 1.5
 data: 2026-10-04
 autore: Pietro Fabbri (con Claude)

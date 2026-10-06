@@ -90,6 +90,7 @@ riferimenti/mappa-informatica/   mappa delle propedeuticità dell'informatica (2
 | 30 | `videogioco-5-duchi-parlato.md` | **Trasversale**: la **parte orale** — che cosa si può ascoltare e che cosa si può far dire davvero a un gioco senza server: i numeri delle registrazioni libere per lingua (inglese 89 381, italiano 9 179, **ferrarese zero**), la Web Speech API esclusa perché manda l'audio fuori, i **cinque livelli** della parte orale di cui uno dichiarato non fatto, e le quattro misure che permettono di allenare il parlato senza riconoscere la voce | 0.3 |
 | 31 | `videogioco-5-duchi-itinerari.md` | **Trasversale**: gli **itinerari dei personaggi sui cinque anni** — per ogni tappa **dove si va, con quale mezzo e chi si incontra**, con la voce obbligatoria e i facoltativi distinti: **150 tappe, 141 nomi distinti, 269 facoltativi, 9 voci collettive**. Le tabelle sono **generate**, e il mezzo del quinto anno è dichiarato su **due strati** — il viaggio reale e quello di stanza — senza scegliere al posto di chi decide | 0.4 |
 | 32 | `videogioco-5-duchi-roadmap-documentazione.md` | **Lavoro in corso**: la roadmap per risistemare la documentazione prima di rifare i livelli — diagnosi, sei fasi con criterio di chiusura e stato | 0.2 |
+| 33 | `videogioco-5-duchi-storico.md` | **Storico**: come ci si è arrivati — i difetti trovati, le prove e le lezioni, spostati alla lettera dai documenti normativi con l'indicazione di dove stavano e di dove sta oggi la regola | 0.1 |
 I nomi dei file conservano il prefisso storico `videogioco-5-duchi-`, perché i documenti si citano a vicenda con questi nomi. Il titolo del gioco è **«I cinque duchi»**.
 **Ordine di lettura degli anni 2, 3 e 4.** I documenti dal secondo anno in poi sono nati dopo gli altri e contengono una sezione iniziale con le decisioni prese e le questioni aperte. **Prima di costruire le tappe di quegli anni, vanno letti `anno2-penisola.md` §13, `anno3-europa.md` §13 e `anno4-mondo.md` §13**: contengono le decisioni che il lettore non può dare per scontate — in particolare il catalogo dei personaggi fuori percorso, il Novecento (anno 3) e il buco dell'Asia meridionale antica e il presente (anno 4).
 **Nota sulle mappe (documento trasversale).** `videogioco-5-duchi-mappe.md` raccoglie il fondo geografico degli anni dal secondo in poi: **25 file** in `dati/mappe/` (1,5 MB), tolti da Natural Earth (pubblico dominio) in tre scale — 110m per il mondo, 50m per l'Europa, 10m per la penisola, metà metro di risoluzione sulla costa italiana. Non sono GeoJSON: sono in un **formato a delta** con quantizzazione, e si leggono con `sorgenti/gis/mappe_lettore.py`. Da dove viene **ogni** file è in `dati/mappe_manifest.json`, e `sorgenti/gis/verifica_inventario_mappe.py` confronta il conto che ne fa con i numeri che i documenti riportano: era quello che nessuno faceva, e i quattro documenti che parlano di quella cartella avevano dato **quattro numeri diversi** (19, 21, 23, 25) e due pesi diversi. Il motivo è che **nessun file di quella cartella dichiarava la propria fonte**: il generatore la sapeva, ma la teneva in una lista Python e il dato non la portava con sé. `prova_difetto_mappe_manifest.py` inietta dieci difetti e richiede che siano tutti visti. Sono passati per **61 controlli automatici**, che hanno trovato cinque difetti reali (fra cui la Sardegna ridotta a un segno, che a occhio non si vedeva). I **pin degli anni dal secondo in poi** hanno poi un controllo loro, `sorgenti/gis/verifica_pin.py`, con altri otto controlli: dei 71 che hanno coordinate, **due erano sbagliati** e sono stati corretti, e il quinto anno è risultato pulito. Il 3 ottobre sono entrati anche `mondo_admin1.json`, il **file amministrativo del mondo** (50 unità di primo livello, che coprono 54 pin su 54): chiude il buco di copertura che lasciava fuori diciannove pin, fra cui Agra, Chicago, New York e Princeton; e i **tre file delle cime** con la loro quota (15, 2 e 26 punti, con il conto della fonte in `dati/altitudine_manifest.json`). La scoperta che vale più dei tre file: la fonte è **mondiale in tutte e tre le scale** e i tre file **non sono annidati**, quindi non sono tre risoluzioni dello stesso elenco. Le **sagome** degli edifici sono in `dati/edifici_footprint.json` (5209 su 54 luoghi) e le **altezze non esistono come dato** — 588 edifici su 5209 hanno l'altezza misurata, 1285 si ricavano dai piani, e **3336 diventano un volume neutro dichiarato** invece di una stima.
@@ -213,7 +214,7 @@ Fino al 5 ottobre 2026 nessuno guardava questi numeri. `python3 sorgenti/verific
 | Prove eseguite da questo controllo | **10** |
 | Numeri in prosa confrontati con il codice | **86** |
 | Documenti confrontati almeno una volta | **14** |
-| Documenti senza nessun confronto | **19** |
+| Documenti senza nessun confronto | **20** |
 
 **I tredici verificatori che non dichiarano i loro controlli** sono in `TACITI`, dentro `verifica_prove.py`, ciascuno con il motivo. Sono un buco dichiarato, non un buco nascosto: senza quella tabella sarebbero tredici script che il conto non guarda, ed e' la forma piu' comune di una sparizione silenziosa. **I 67 controlli senza prova** sono il debito vero: passano, ma nessuno li ha mai visti fallire. Il numero e' scritto qui perche' sia fermo: quando qualcuno aggiunge una prova, questa riga va aggiornata nello stesso commit, e X6 e' rosso se non e' successo. **I primi due debiti chiusi** sono `verifica_tavolozza.py` (sei controlli, sei difetti) e `verifica_parlato.py` (quattro, quattro). Il metodo e' sempre lo stesso: i controlli prendono i loro input dalla chiamata — `controlla(doc)`, `controlla(doc, dati, lingue)` — invece di leggerli da soli, e la prova fa girare gli stessi controlli su una copia rotta. **Un controllo che legge il file dentro `main()` non ha una prova: non c'e' modo di dargliela.** Con `verifica_parlato.py` e' comparso anche un difetto vero: la frase in testa al file prometteva gia' «quattro controlli, tutti morroni (provati con difetti iniettati)», e nessun difetto era mai stato iniettato. Un numero giusto e una frase sbagliata, la stessa malattia dei numeri invecchiati dei documenti — e a dirlo non era stato nessun controllo.
 
@@ -228,8 +229,8 @@ I7 confronta i numeri che **una** sezione dichiara con il suo file. La regola ch
 | | |
 |---|---|
 | Documenti con un controllo dichiarato | **14** |
-| Documenti senza controllo | **18** |
-| Numeri in prosa contati | **2620** |
+| Documenti senza controllo | **19** |
+| Numeri in prosa contati | **2621** |
 | Documenti interamente guardati | **0** |
 | Dichiarazioni senza riscontro nel codice | **0** |
 
@@ -245,9 +246,9 @@ I buchi conosciuti — le cose che un controllo dichiara di non poter guardare �
 
 | | |
 |---|---|
-| Buchi dichiarati | **31** |
+| Buchi dichiarati | **32** |
 | Verificatori che non dichiarano i controlli | **13** |
-| Documenti senza un controllo dei numeri | **18** |
+| Documenti senza un controllo dei numeri | **19** |
 | Dichiarazioni senza riscontro nel codice | **0** |
 
 **Un nome con il prefisso giusto non è una faccenda di gusto.** `verifica_livelli.py` genera i centocinquanta livelli: scrive `lv.json`, `corpo.md` e il catalogo, non ha guardia `if __name__`, importa con `exec` un altro file e scrive su un percorso assoluto di un'altra macchina. Ma `albero()` prende per verificatori i file che cominciano per `verifica`, quindi il generatore era **nel conto dei controlli**, e il conto — che serve a dire «so dove non guardo» — prometteva di guardare qualcosa che non è un controllo. Si chiama ora `genera_livelli.py`. Il nome è stato corretto invece che dichiarato: una voce nel registro che descrive un buco già chiuso è peggio di una voce assente, perché fa dire che si guarda qualcosa che non c'è.

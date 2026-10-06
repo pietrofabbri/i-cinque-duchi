@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — il modello pedagogico applicato al gioco: sei principi, quattro strati, e che cosa non entra
+tipo: normativo
 versione: 0.2
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)

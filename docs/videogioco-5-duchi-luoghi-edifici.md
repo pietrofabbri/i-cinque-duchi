@@ -1,5 +1,6 @@
 ---
 titolo: I luoghi e le sagome — che cosa serve per disegnarli davvero
+tipo: normativo
 versione: 0.6
 data: 2026-10-05
 autore: Buffy (per pietrofabbri)

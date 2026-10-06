@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — curricolo dei 150 livelli (bozza)
+tipo: normativo
 versione: 0.1
 data: 2026-09-27
 autore: Pietro Fabbri (con Claude)

@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — Quadro trasversale (Diritto, Etica, Filosofia, Psicologia, Arti)
+tipo: normativo
 versione: 0.2
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)

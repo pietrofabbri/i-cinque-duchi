@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — I filoni dell'Orlando furioso: i luoghi del quinto anno e le citazioni delle trenta tappe
+tipo: normativo
 versione: 0.7
 data: 2026-10-03
 autore: Pietro Fabbri (con Claude)

@@ -1,5 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — Roadmap per la risistemazione della documentazione
+tipo: piano
 versione: 0.2
 data: 2026-10-06
 autore: Pietro Fabbri (con Claude)

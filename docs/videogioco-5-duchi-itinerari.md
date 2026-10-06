@@ -1,5 +1,6 @@
 ---
 titolo: "Gli itinerari: chi incontri, dove, e con quale mezzo"
+tipo: catalogo
 versione: 0.4
 data: 2026-10-03
 autore: "Progetto I cinque duchi"

@@ -352,6 +352,43 @@ def controlla_pubblicati():
     return problemi
 
 
+# I tipi di documento (decisione del 06/10/2026, `AGENTS.md` §4). Il tipo dice
+# come si legge un documento e che cosa ci si puo' scrivere: un documento
+# normativo dice il presente, uno storico racconta come ci si e' arrivati, e
+# mescolarli e' cio' che rendeva la parte decisa difficile da trovare.
+TIPI = {
+    "normativo": "che cosa e' deciso, al presente",
+    "catalogo": "tabelle generate dai dati, con la prosa che le spiega",
+    "audit": "le domande aperte e le chiuse, una scheda per domanda",
+    "storico": "come ci si e' arrivati: i difetti trovati e le lezioni",
+    "piano": "il lavoro in corso, con le fasi e il loro stato",
+}
+
+
+def controlla_tipi(cartella=None):
+    """Ogni documento dichiara nell'intestazione YAML un tipo, e uno solo fra TIPI."""
+    cartella = cartella or DOCS
+    problemi = []
+    for nome in sorted(os.listdir(cartella)):
+        if not nome.endswith(".md"):
+            continue
+        testo = open(os.path.join(cartella, nome), encoding="utf-8").read()
+        m = re.match(r"---\n(.*?)\n---\n", testo, re.S)
+        if not m:
+            problemi.append("%s: non ha l'intestazione YAML" % nome)
+            continue
+        tipi = re.findall(r"^tipo:\s*(\S+)\s*$", m.group(1), re.M)
+        if not tipi:
+            problemi.append("%s: l'intestazione non dichiara il tipo (uno fra %s)"
+                            % (nome, ", ".join(TIPI)))
+        elif len(tipi) > 1:
+            problemi.append("%s: l'intestazione dichiara %d tipi" % (nome, len(tipi)))
+        elif tipi[0] not in TIPI:
+            problemi.append("%s: il tipo %r non e' fra %s"
+                            % (nome, tipi[0], ", ".join(TIPI)))
+    return problemi
+
+
 if __name__ == "__main__":
     ver = versioni_reali()
     insiemi = [("versioni", controlla_versioni(ver))]
@@ -365,7 +402,8 @@ if __name__ == "__main__":
                     ("cifre dichiarate", controlla_cifre()),
                     ("tappe dell'anno 5", controlla_tappe()),
                     ("personaggi obbligatori", controlla_personaggi()),
-                    ("file pubblicati", controlla_pubblicati())]
+                    ("file pubblicati", controlla_pubblicati()),
+                    ("tipi dei documenti", controlla_tipi())]
     totale = 0
     for nome, problemi in insiemi:
         print("%-24s %d" % (nome, len(problemi)))
