@@ -132,6 +132,25 @@ def controlla(doc, offline=False, fonti=None):
     return problemi, a4
 
 
+def fonte_raggiungibile(attesa=15):
+    """Una sola domanda alla fonte, prima delle diciotto di A4.
+
+    Senza questa prova, una macchina senza rete verso Wikidata restava appesa
+    per ore: cinque tentativi da sessanta secondi, piu' le attese, per ogni
+    voce — e il 6 ottobre 2026 il controllo e' stato interrotto dopo dieci
+    minuti senza aver scritto una riga. Un controllo che non puo' guardare
+    deve dirlo subito, non farsi credere al lavoro.
+    """
+    import urllib.request
+    url = tc.WD + "?action=wbgetentities&ids=Q42&props=info&format=json"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": tc.UA})
+        with urllib.request.urlopen(req, timeout=attesa) as f:
+            return f.status == 200
+    except Exception:  # noqa: BLE001 - qualunque errore vuol dire «non risponde»
+        return False
+
+
 def main():
     sola_prova = "--difetti" in sys.argv
     with open(TAV, encoding="utf-8") as f:
@@ -139,6 +158,14 @@ def main():
     if sola_prova:
         return difetti(doc)
     offline = "--offline" in sys.argv
+    if not offline and not fonte_raggiungibile():
+        # Codice 2, non 1 e non 0: il file non ha un difetto dimostrato, ma
+        # A4 non e' stato eseguito, e un verde qui direbbe il falso.
+        print("A4 NON ESEGUITO: Wikidata non risponde da questa macchina.")
+        print("   I controlli che non vanno in rete (A1-A3, A5, A6) si "
+              "eseguono con --offline; A4 va rifatto da una macchina che "
+              "raggiunge wikidata.org e en.wikipedia.org.")
+        return 2
     problemi, a4 = controlla(doc, offline)
     voci = doc["voci"]
     stato = [v for v in voci if v["origine"] == "stato"]

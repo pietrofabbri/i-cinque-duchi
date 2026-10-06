@@ -335,6 +335,7 @@ def main():
     da_vedere = 0
     scarti = {"merito": 0, "fonte": 0}
     scarti_per_motivo = collections.Counter()
+    respinti = []
 
     for a in risultati:
         lingua = a["lingua"]
@@ -376,7 +377,21 @@ def main():
                 # cerca in avanti rispetto a chi riporta, e una tabella di
                 # formati scritta prima dell'append non la trova. Tre righe in
                 # piu', e ognuna dice da chi viene il rifiuto.
-                if chi == "G3":
+                # Uno scarto **per merito** e' il controllo che ha fatto il suo
+                # lavoro: il candidato e' stato misurato e non entra, e il
+                # documento lo conta (G8). Non e' un difetto del progetto, e
+                # metterlo fra i problemi rende il verificatore rosso per
+                # sempre: fra il 5 e il 6 ottobre 2026 lo era per sette
+                # immagini troppo piccole che il capitolo dichiara respinte.
+                # Uno scarto **per fonte** resta un problema: e' un metadato
+                # che nessuno ha deciso, e qualcuno deve rimediare.
+                if chi == "G3" and classe == "merito":
+                    respinti.append("G3 %s: %s — %s (%s)"
+                                    % (etichetta, c["file"], motivo, classe))
+                elif chi == "G2" and classe == "merito":
+                    respinti.append("G2 %s: %s — %s (%s)"
+                                    % (etichetta, c["file"], motivo, classe))
+                elif chi == "G3":
                     problemi.append("G3 %s: %s — %s (%s)"
                                     % (etichetta, c["file"], motivo, classe))
                 elif chi == "G5":
@@ -465,6 +480,8 @@ def main():
     for motivo, n in scarti_per_motivo.most_common():
         chi, classe = CLASSE.get(motivo, ("G2", "fonte"))
         print("    %2d  %-6s %-28s %s" % (n, chi, classe, motivo))
+    for r in respinti:
+        print("    respinto  " + r)
     print("G6 voci da guardare a vista: %d (il controllo automatico non può "
           "sapere se l'immagine è dell'oggetto giusto)" % da_vedere)
     voci_a_rischio = sorted({r[0] for r in rischi})

@@ -165,12 +165,24 @@ def controlla(problemi, risultati=None):
     if risultati is None:
         risultati = leggi(ESITO) or {}
         risultati = risultati.get("risultati", [])
-    senza = candidati_senza_autore()
-    if len(senza) != len(risultati):
-        problemi.append(
-            "M1 i candidati senza autore sono %d e gli esiti registrati %d: "
-            "ogni candidato respinto ha una risposta, e sono %d/%d"
-            % (len(senza), len(risultati), len(risultati), len(senza)))
+    # M1 confronta gli insiemi, non i conti. Gli esiti registrano i rifiuti
+    # del giorno in cui la domanda e' stata posta; un rifiuto che era
+    # «noi non lo leggevamo» si chiude leggendo la chiave, e da quel momento
+    # il candidato ha l'autore e non e' piu' fra i respinti. Fino al
+    # 06/10/2026 M1 confrontava 4 respinti di oggi con 5 esiti di ieri ed era
+    # rosso per un difetto chiuso.
+    senza = set(candidati_senza_autore())
+    registrati = {r["file"]: r["esito"].get("classe", NON_VERIFICATO)
+                  for r in risultati}
+    for f in sorted(senza - set(registrati)):
+        problemi.append("M1 %s e' respinto per l'autore e non ha una "
+                        "risposta dalla fonte" % f)
+    for f in sorted(set(registrati) - senza):
+        if registrati[f] != "noi non lo leggevamo":
+            problemi.append(
+                "M1 %s ha ora l'autore, ma il suo esito e' «%s»: solo un "
+                "rifiuto nostro si chiude leggendo, uno della fonte no"
+                % (f, registrati[f]))
     c = conta(risultati)
 
     # ---- M2: nessuna risposta mancasa

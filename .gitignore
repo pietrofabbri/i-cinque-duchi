@@ -8,3 +8,6 @@ __pycache__/
 *.pyc
 node_modules/
 .DS_Store
+
+# pagine di verifica delle carte, rigenerate da sorgenti/gis/verifica_mappe_disegno.py
+verifica/

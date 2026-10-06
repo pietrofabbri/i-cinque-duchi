@@ -1,6 +1,6 @@
 ---
 titolo: Videogioco "I cinque duchi" — Roadmap per la risistemazione della documentazione
-versione: 0.1
+versione: 0.2
 data: 2026-10-06
 autore: Pietro Fabbri (con Claude)
 documenti collegati: videogioco-5-duchi-audit.md (v0.25), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-esercizi.md (v0.1), videogioco-5-duchi-meccaniche.md (v0.3), videogioco-5-duchi-tappa-1-01.md (v0.4)
@@ -29,7 +29,7 @@ Quattro problemi, in ordine di peso.
 
 | Fase | Che cosa | Criterio di chiusura | Stato |
 |---|---|---|---|
-| 0 | Punto di partenza pulito | Tutti i verificatori verdi, o il motivo scritto per cui uno non può esserlo | in corso |
+| 0 | Punto di partenza pulito | Tutti i verificatori verdi, o il motivo scritto per cui uno non può esserlo | **fatta il 06/10/2026** (§3) |
 | 1 | Architettura della documentazione | Ogni documento ha un tipo dichiarato; i documenti normativi dicono il presente; lo storico è separato; `AGENTS.md` contiene solo decisioni, convenzioni e procedura | da fare |
 | 2 | Allineare il nucleo di gioco e scrivere il modello di livello | Nessuna contraddizione fra `gioco`, `esercizi`, `meccaniche`, `motore-e-grafica`, `ripassi`, `premi`, `inventario`, `pedagogia`; esiste `modello-di-livello.md` | da fare |
 | 3 | Le decisioni di Pietro | Ogni domanda bloccante o importante ha una risposta registrata, oppure è dichiarata rinviata con il perché | da fare |
@@ -78,8 +78,22 @@ Un README breve (che cos'è, come si gioca, mappa dei documenti, stato), i numer
 
 Tutti i verificatori verdi, e una prova a freddo: un agente senza contesto legge solo la documentazione e deve specificare la tappa 1-2. Dove sbaglia o deve indovinare, c'è un buco.
 
-## 3. Registro delle modifiche
+## 3. Linea di base (fase 0, 06/10/2026)
+
+Su 35 verificatori, **34 sono verdi** e **uno esce con il codice 2**, che vuol dire «non eseguito, e lo dico»: è `verifica_tavolozza.py`, il cui controllo A4 rilegge i colori su Wikidata e Wikipedia, e la macchina su cui è stata fatta la fase 0 non raggiunge quei siti. Con `--offline` i suoi altri cinque controlli sono verdi, e la prova del difetto ne vede sei su sei. A4 va rifatto da una macchina con la rete.
+
+I quattro rossi del 06/10/2026 e che cosa erano:
+
+| Verificatore | Che cosa era | Che cosa è stato fatto |
+|---|---|---|
+| `verifica_coerenza.py` | Il controllo «file pubblicati» leggeva gli elenchi di `_commit_coerenza.py`, uno script di pubblicazione locale di una sessione precedente che non è mai entrato nel repository | Da quando si pubblica con git, l'elenco dei pubblicabili è `git ls-files`: un file che git non traccia non arriva nel ramo. La prova con un file non tracciato in `docs/` lo vede |
+| `lingue/verifica_metadati_mancanti.py` | M1 confrontava i 4 candidati respinti oggi con i 5 esiti registrati il 05/10: il quinto, `Red wine cap.jpg`, era un rifiuto nostro chiuso leggendo la chiave `Attribution`, e da allora ha l'autore | M1 confronta gli insiemi: ogni respinto di oggi ha un esito, e un esito che non è più respinto deve essere un rifiuto nostro. Le due prove (un esito tolto, una classe falsa) sono viste |
+| `lingue/verifica_immagini_oggetti.py` | Dal 05/10 i 7 candidati troppo piccoli, che il capitolo dichiara respinti per merito, erano contati fra i problemi: il verificatore era rosso per sempre | Uno scarto per merito è un esito elencato e contato (G8); uno scarto per fonte resta un problema |
+| `verifica_tavolozza.py` | Senza rete verso Wikidata restava appeso per ore (cinque tentativi da 60 s per ogni voce) | Una sola prova di raggiungibilità prima di A4: se la fonte non risponde, lo dice subito ed esce con 2 |
+
+## 4. Registro delle modifiche
 
 | Data | Versione | Modifica |
 |---|---|---|
 | 06/10/2026 | 0.1 | Prima stesura: diagnosi e sei fasi, approvate da Pietro. Fase 0 avviata. |
+| 06/10/2026 | 0.2 | Fase 0 chiusa: linea di base (§3), quattro verificatori rossi riportati a verde o dichiarati. |

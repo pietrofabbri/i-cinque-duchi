@@ -33,6 +33,7 @@ file c'è sul ramo è un controllo che non viene letto.
 import json
 import os
 import re
+import subprocess
 import sys
 
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -284,17 +285,20 @@ def controlla_personaggi():
 def controlla_pubblicati():
     """Ogni file che il progetto ha deve poter essere pubblicato.
 
-    Il progetto non usa `git add`: pubblica con `_commit_coerenza.py`, che ha
-    degli elenchi di file da caricare. Un file che non e' in nessun elenco
-    **non si aggiorna mai**, e non se ne accorge nessuno: il file c'e', tutti i
-    controlli sono verdi, e le modifiche restano in questa cartella. E' successo
-    a otto documenti di `docs/` — compreso `tappa-1-01.md`, che i controlli 10 e
-    B9 leggono e che il 4 ottobre non sarebbe arrivato nel ramo — e a quattro
-    file di `sorgenti/art/`.
+    Fino al 5 ottobre 2026 il progetto non usava `git add`: pubblicava con
+    `_commit_coerenza.py`, uno script locale con gli elenchi dei file da
+    caricare, che non e' mai entrato nel repository. Un file che non era in
+    nessun elenco **non si aggiornava mai**, e non se ne accorgeva nessuno: e'
+    successo a otto documenti di `docs/` — compreso `tappa-1-01.md` — e a
+    quattro file di `sorgenti/art/`.
+
+    Dal 6 ottobre 2026 si pubblica con git, e il difetto ha la stessa forma
+    con un nome nuovo: un file che git non traccia non arriva nel ramo. Quindi
+    l'elenco dei pubblicabili e' `git ls-files`, e senza git il controllo non
+    puo' rispondere e lo dice.
 
     Un file che si esclude lo dichiara e dice perche'.
     """
-    COMMIT = os.path.join(RADICE, "_commit_coerenza.py")
     # Ogni esclusione e' una regola con **prefisso e suffisso**, e il suo perche'.
     # Il prefisso da solo non basta: la regola «non si pubblica l'output di
     # `fogli_controllo.py`» e' `foglio_` + `.html`, e senza il suffisso prendeva
@@ -313,11 +317,13 @@ def controlla_pubblicati():
          "decisione del 2 ottobre: serve per vedere che cosa e' cambiato e non "
          "per far funzionare niente"),
     ]
-    if not os.path.exists(COMMIT):
-        return ["nessun %s: nessun file e' pubblicabile" % COMMIT]
-    with open(COMMIT, encoding="utf-8") as f:
-        testo = f.read()
-    elencati = set(re.findall(r'"([\w./-]+\.(?:py|json|md|txt|csv|html))"', testo))
+    try:
+        uscita = subprocess.run(["git", "-C", RADICE, "ls-files"],
+                                capture_output=True, text=True, check=True)
+    except (OSError, subprocess.CalledProcessError):
+        return ["%s non e' un repository git: non si sa quali file sono "
+                "pubblicati" % RADICE]
+    elencati = set(r.strip() for r in uscita.stdout.splitlines() if r.strip())
     problemi = []
     for cartella, estensioni in (("docs", (".md",)),
                                  ("sorgenti/art", (".py", ".txt", ".json",
@@ -329,7 +335,7 @@ def controlla_pubblicati():
             if not nome.endswith(estensioni):
                 continue
             rel = cartella + "/" + nome
-            if rel in elencati or nome in elencati:
+            if rel in elencati:
                 continue
             escluso = False
             for prefisso, suffisso, _perche in ESCLUSI:
@@ -341,7 +347,7 @@ def controlla_pubblicati():
                 break
             if escluso:
                 continue
-            problemi.append("%s: nessuno script lo pubblica, e quindi nessuna "
+            problemi.append("%s: git non lo traccia, e quindi nessuna "
                             "sua modifica arrivera' mai nel ramo" % rel)
     return problemi
 

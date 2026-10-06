@@ -15037,6 +15037,42 @@
    "riga": 75,
    "scritto": "67",
    "soggetto": "controlli"
+  },
+  {
+   "numero": 35,
+   "riga": 83,
+   "scritto": "35",
+   "soggetto": "verificatori"
+  },
+  {
+   "numero": 34,
+   "riga": 83,
+   "scritto": "34",
+   "soggetto": "sono"
+  },
+  {
+   "numero": null,
+   "riga": 83,
+   "scritto": "uno",
+   "soggetto": "esce"
+  },
+  {
+   "numero": 0,
+   "riga": 83,
+   "scritto": "0",
+   "soggetto": "non"
+  },
+  {
+   "numero": 5,
+   "riga": 83,
+   "scritto": "cinque",
+   "soggetto": "controlli"
+  },
+  {
+   "numero": 4,
+   "riga": 85,
+   "scritto": "quattro",
+   "soggetto": "rossi"
   }
  ],
  "videogioco-5-duchi-schema-livelli.md": [
