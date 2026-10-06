@@ -13677,6 +13677,30 @@
    "riga": 86,
    "scritto": "quattro",
    "soggetto": "rossi"
+  },
+  {
+   "numero": 9,
+   "riga": 100,
+   "scritto": "nove",
+   "soggetto": "documenti"
+  },
+  {
+   "numero": 744,
+   "riga": 101,
+   "scritto": "744",
+   "soggetto": "caratteri"
+  },
+  {
+   "numero": 32,
+   "riga": 104,
+   "scritto": "32",
+   "soggetto": "punti"
+  },
+  {
+   "numero": 1,
+   "riga": 106,
+   "scritto": "1",
+   "soggetto": "lascia"
   }
  ],
  "videogioco-5-duchi-schema-livelli.md": [

@@ -89,7 +89,7 @@ riferimenti/mappa-informatica/   mappa delle propedeuticità dell'informatica (2
 | 29 | `videogioco-5-duchi-inventario.md` | **Trasversale**: l'inventario — i sette elementi con cui si interagisce a ogni livello, che cosa dà in ciascuno, la mappa degli scambi, e i quattro registri personali che il giocatore si porta via: la salvadanaio dei premi, il quaderno dei segni, il registro dei ripassi e la fascia | 0.2 |
 | 30 | `videogioco-5-duchi-parlato.md` | **Trasversale**: la **parte orale** — che cosa si può ascoltare e che cosa si può far dire davvero a un gioco senza server: i numeri delle registrazioni libere per lingua (inglese 89 381, italiano 9 179, **ferrarese zero**), la Web Speech API esclusa perché manda l'audio fuori, i **cinque livelli** della parte orale di cui uno dichiarato non fatto, e le quattro misure che permettono di allenare il parlato senza riconoscere la voce | 0.3 |
 | 31 | `videogioco-5-duchi-itinerari.md` | **Trasversale**: gli **itinerari dei personaggi sui cinque anni** — per ogni tappa **dove si va, con quale mezzo e chi si incontra**, con la voce obbligatoria e i facoltativi distinti: **150 tappe, 141 nomi distinti, 269 facoltativi, 9 voci collettive**. Le tabelle sono **generate**, e il mezzo del quinto anno è dichiarato su **due strati** — il viaggio reale e quello di stanza — senza scegliere al posto di chi decide | 0.5 |
-| 32 | `videogioco-5-duchi-roadmap-documentazione.md` | **Lavoro in corso**: la roadmap per risistemare la documentazione prima di rifare i livelli — diagnosi, sei fasi con criterio di chiusura e stato | 0.2 |
+| 32 | `videogioco-5-duchi-roadmap-documentazione.md` | **Lavoro in corso**: la roadmap per risistemare la documentazione prima di rifare i livelli — diagnosi, sei fasi con criterio di chiusura e stato | 0.3 |
 | 33 | `videogioco-5-duchi-storico.md` | **Storico**: come ci si è arrivati — i difetti trovati, le prove e le lezioni, spostati alla lettera dai documenti normativi con l'indicazione di dove stavano e di dove sta oggi la regola | 0.5 |
 | 34 | `videogioco-5-duchi-metodo.md` | **Trasversale**: le regole con cui si lavora ai dati, ai controlli e ai documenti — numeri calcolati e non scritti a mano, la prova del difetto per ogni controllo, i dati generati che non si correggono a mano, i tipi di documento, le versioni — ciascuna con il controllo che la fa rispettare | 0.1 |
 I nomi dei file conservano il prefisso storico `videogioco-5-duchi-`, perché i documenti si citano a vicenda con questi nomi. Il titolo del gioco è **«I cinque duchi»**.
@@ -231,7 +231,7 @@ I7 confronta i numeri che **una** sezione dichiara con il suo file. La regola ch
 |---|---|
 | Documenti con un controllo dichiarato | **14** |
 | Documenti senza controllo | **20** |
-| Numeri in prosa contati | **2815** |
+| Numeri in prosa contati | **2819** |
 | Documenti interamente guardati | **0** |
 | Dichiarazioni senza riscontro nel codice | **0** |
 

@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — Roadmap per la risistemazione della documentazione
 tipo: piano
-versione: 0.2
+versione: 0.3
 data: 2026-10-06
 autore: Pietro Fabbri (con Claude)
 documenti collegati: videogioco-5-duchi-audit.md (v0.27), videogioco-5-duchi-gioco.md (v0.5), videogioco-5-duchi-esercizi.md (v0.1), videogioco-5-duchi-meccaniche.md (v0.3), videogioco-5-duchi-tappa-1-01.md (v0.4)
@@ -31,7 +31,7 @@ Quattro problemi, in ordine di peso.
 | Fase | Che cosa | Criterio di chiusura | Stato |
 |---|---|---|---|
 | 0 | Punto di partenza pulito | Tutti i verificatori verdi, o il motivo scritto per cui uno non può esserlo | **fatta il 06/10/2026** (§3) |
-| 1 | Architettura della documentazione | Ogni documento ha un tipo dichiarato; i documenti normativi dicono il presente; lo storico è separato; `AGENTS.md` contiene solo decisioni, convenzioni e procedura | da fare |
+| 1 | Architettura della documentazione | Ogni documento ha un tipo dichiarato; i documenti normativi dicono il presente; lo storico è separato; `AGENTS.md` contiene solo decisioni, convenzioni e procedura | **fatta il 06/10/2026** (§4) |
 | 2 | Allineare il nucleo di gioco e scrivere il modello di livello | Nessuna contraddizione fra `gioco`, `esercizi`, `meccaniche`, `motore-e-grafica`, `ripassi`, `premi`, `inventario`, `pedagogia`; esiste `modello-di-livello.md` | da fare |
 | 3 | Le decisioni di Pietro | Ogni domanda bloccante o importante ha una risposta registrata, oppure è dichiarata rinviata con il perché | da fare |
 | 4 | Colmare i buchi di contenuto | Anno 1 completo nelle schede delle 30 tappe; correzioni già decise applicate; verifiche storiche aperte chiuse o dichiarate | da fare |
@@ -92,9 +92,31 @@ I quattro rossi del 06/10/2026 e che cosa erano:
 | `lingue/verifica_immagini_oggetti.py` | Dal 05/10 i 7 candidati troppo piccoli, che il capitolo dichiara respinti per merito, erano contati fra i problemi: il verificatore era rosso per sempre | Uno scarto per merito è un esito elencato e contato (G8); uno scarto per fonte resta un problema |
 | `verifica_tavolozza.py` | Senza rete verso Wikidata restava appeso per ore (cinque tentativi da 60 s per ogni voce) | Una sola prova di raggiungibilità prima di A4: se la fonte non risponde, lo dice subito ed esce con 2 |
 
-## 4. Registro delle modifiche
+## 4. Bilancio della fase 1 (06/10/2026)
+
+**Che cosa è fatto.**
+
+- **Ogni documento dichiara il suo tipo** (`tipo:` nell'intestazione): `normativo`, `catalogo`, `audit`, `storico`, `piano`. `verifica_coerenza.py` lo controlla («tipi dei documenti»).
+- **Lo storico esiste** (`storico.md`) e contiene, alla lettera e con la provenienza, il racconto tolto da nove documenti e da `AGENTS.md`. Nei documenti d'origine resta la regola o lo stato di oggi. Un controllo riga per riga ha confermato, a ogni spostamento, che nessuna riga si è persa.
+- **L'audit è in ordine**: §0–§6 come prima, §7 «Le questioni chiuse» con esito e posto di ogni chiusura, §8 il registro. Da 120 585 a 63 744 caratteri.
+- **Le regole di metodo sono in `metodo.md`**, al presente e ciascuna con il controllo che la fa rispettare. `AGENTS.md` le richiama e torna a decisioni, convenzioni e procedura.
+- **Due strumenti nuovi**: `sorgenti/nuova_versione.py` (versione, registro, README e rimandi in un colpo) e `sorgenti/allinea_conti_readme.py` (i conti del README dai verificatori, non a mano). E una regola nuova: aggiornare un rimando di versione non alza la versione di chi lo contiene.
+- **Tre errori di fatto corretti in `AGENTS.md`**: l'errore del rilievo (32,9 m su 32 punti, non 12,6 m su 14), un'etichetta illeggibile, un rimando a una sezione che non esiste più.
+
+**Che cosa la fase 1 lascia, e dove va.**
+
+| Che cosa | Perché non ora | Dove va |
+|---|---|---|
+| Paragrafi di racconto **dentro** sezioni normative (non sezioni intere) | Toglierli senza riscrivere la sezione lascerebbe frasi monche | Fase 2 per il nucleo di gioco, fase 5 per gli altri documenti, quando ogni documento viene riscritto |
+| I registri delle modifiche molto lunghi (`fonti-visive`, `mappe`, `luoghi-edifici`, `ritratti`) | Sono storia per costruzione, stanno in fondo e sono esclusi dai confronti | Restano dove sono |
+| Le «Note» del `README.md` | Il README si riscrive per intero | Fase 5 |
+| `AGENTS.md` §3 mescola decisioni di Pietro e istruzioni operative datate | Separarle richiede di decidere, per ognuna, se è ancora valida: è il lavoro della fase 2 | Fase 2 |
+| `lingue-immagini.md` §5 e `luoghi-edifici.md` §2 hanno titoli da racconto | Il contenuto è normativo, e i numeri sono letti dai controlli | Fase 5, solo il titolo |
+
+## 5. Registro delle modifiche
 
 | Data | Versione | Modifica |
 |---|---|---|
 | 06/10/2026 | 0.1 | Prima stesura: diagnosi e sei fasi, approvate da Pietro. Fase 0 avviata. |
 | 06/10/2026 | 0.2 | Fase 0 chiusa: linea di base (§3), quattro verificatori rossi riportati a verde o dichiarati. |
+| 06/10/2026 | 0.3 | Fase 1 chiusa: il bilancio (§4) dice che cosa è fatto e che cosa la fase lascia alle fasi successive, con il perché. |

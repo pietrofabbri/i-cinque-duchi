@@ -4,7 +4,7 @@ tipo: storico
 versione: 0.5
 data: 2026-10-06
 autore: Pietro Fabbri (con Claude)
-documenti collegati: videogioco-5-duchi-roadmap-documentazione.md (v0.2)
+documenti collegati: videogioco-5-duchi-roadmap-documentazione.md (v0.3)
 ---
 
 # Storico del progetto
