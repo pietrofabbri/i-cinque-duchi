@@ -13877,6 +13877,36 @@
    "riga": 106,
    "scritto": "1",
    "soggetto": "lascia"
+  },
+  {
+   "numero": 15,
+   "riga": 120,
+   "scritto": "quindici",
+   "soggetto": "parti"
+  },
+  {
+   "numero": 7,
+   "riga": 121,
+   "scritto": "sette",
+   "soggetto": "risolte"
+  },
+  {
+   "numero": 5,
+   "riga": 121,
+   "scritto": "cinque",
+   "soggetto": "diventate"
+  },
+  {
+   "numero": 3,
+   "riga": 121,
+   "scritto": "tre",
+   "soggetto": "importanti"
+  },
+  {
+   "numero": 2,
+   "riga": 125,
+   "scritto": "2",
+   "soggetto": "lascia"
   }
  ],
  "videogioco-5-duchi-schema-livelli.md": [
@@ -17009,6 +17039,84 @@
    "riga": 1045,
    "scritto": "quattro",
    "soggetto": "posti"
+  },
+  {
+   "numero": 4,
+   "riga": 1053,
+   "scritto": "quattro",
+   "soggetto": "bloccanti"
+  },
+  {
+   "numero": 3,
+   "riga": 1054,
+   "scritto": "tre",
+   "soggetto": "sono"
+  },
+  {
+   "numero": 30,
+   "riga": 1054,
+   "scritto": "trenta",
+   "soggetto": "voci"
+  },
+  {
+   "numero": null,
+   "riga": 1054,
+   "scritto": "novanta",
+   "soggetto": "pin"
+  },
+  {
+   "numero": 150,
+   "riga": 1054,
+   "scritto": "150",
+   "soggetto": "livelli"
+  },
+  {
+   "numero": 150,
+   "riga": 1056,
+   "scritto": "150",
+   "soggetto": "non"
+  },
+  {
+   "numero": null,
+   "riga": 1058,
+   "scritto": "due",
+   "soggetto": "non"
+  },
+  {
+   "numero": 6,
+   "riga": 1058,
+   "scritto": "sei",
+   "soggetto": "cose"
+  },
+  {
+   "numero": null,
+   "riga": 1058,
+   "scritto": "due",
+   "soggetto": "frasi"
+  },
+  {
+   "numero": 4,
+   "riga": 1059,
+   "scritto": "quattro",
+   "soggetto": "bloccanti"
+  },
+  {
+   "numero": 3,
+   "riga": 1059,
+   "scritto": "tre",
+   "soggetto": "forme"
+  },
+  {
+   "numero": 15,
+   "riga": 1060,
+   "scritto": "quindici",
+   "soggetto": "difetti"
+  },
+  {
+   "numero": null,
+   "riga": 1060,
+   "scritto": "uno",
+   "soggetto": "alla"
   }
  ],
  "videogioco-5-duchi-tappa-1-01.md": [

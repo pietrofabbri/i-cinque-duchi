@@ -4,7 +4,7 @@ tipo: normativo
 versione: 0.1
 data: 2026-10-06
 autore: Pietro Fabbri (con Claude)
-documenti collegati: videogioco-5-duchi-storico.md (v0.5)
+documenti collegati: videogioco-5-duchi-storico.md (v0.6)
 ---
 
 # Metodo

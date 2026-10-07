@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — Storico: come ci si è arrivati
 tipo: storico
-versione: 0.5
-data: 2026-10-06
+versione: 0.6
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
-documenti collegati: videogioco-5-duchi-roadmap-documentazione.md (v0.3)
+documenti collegati: videogioco-5-duchi-roadmap-documentazione.md (v0.4)
 ---
 
 # Storico del progetto
@@ -1045,10 +1045,25 @@ Le due regole che ne vengono:
 - Una riga `da_costruire` è la cosa più economica che si possa scrivere, e quasi sempre nasconde un difetto. Il 03/10/2026 `osservazione e attenzione` era dichiarato in due documenti come «un dominio che il progetto non ha ancora», e il gioco ci lavorava in quattro posti che nessuno aveva messi insieme. **La domanda vera è «dove lo abbiamo costruito senza accorgercene?»**, e va posta prima di scrivere che non esiste.
 - **Una cosa che il gioco fa senza dirlo non è una lacuna: è una riga rimasta indietro.**
 
+### 3.4 Lo stato delle questioni come lo scriveva `AGENTS.md`
+
+*Da `AGENTS.md` §3, il blocco «Questioni aperte» fino al 07/10/2026. Lo stato delle questioni si scrive ora solo nell'audit; `AGENTS.md` tiene le regole per lavorarci.*
+
+**Questioni aperte** (trasversale, vedi `audit.md`)
+- **Tutte le questioni aperte stanno in `docs/videogioco-5-duchi-audit.md`.** Prima di aprire una discussione, guarda l'audit: è possibile che la domanda sia già chiusa in un altro documento, o che sia una delle quattro bloccanti e non si possa rispondere.
+- **Quattro bloccanti, e tre sono la stessa**: `lingue.md` Q1 (livelli linguistici o informatici), Q2 (le trenta voci confermate), Q4 (la LIS), e `lingue-immagini.md` Q1 (chi guarda le immagini). Le altre che un tempo erano in questa lista **erano lavori, non domande**, e sono fatte: i novanta pin il 02/10/2026 (`mappe.md` §8bis, `audit.md` §7), e il 03/10/2026 la tavolozza, le sagome degli edifici, il fondo di Ferrara, gli ambienti dei 150 livelli e il file amministrativo mondiale (`audit.md` §7).
+- **Dal 02/10/2026 c'è anche `percorsi.md` Q1**, che non è bloccante ma è la decisione di progetto più importante aperta: se il percorso del duca è l'ordine delle tappe o un giro a parte.
+- **L'ordine è B1 → B2 → B4**: finché non si decide se le tappe sono 30 o 150 non ha senso scegliere le immagini, e finché non sono confermate le voci non ha senso scegliere le immagini.
+- **Una domanda nuova va aggiunta all'audit**, non lasciata in un documento. Se è chiusa, si sposta nel registro del documento suo e non si cancella.
+- **`conta_questioni.py` confronta il proprio conto con i numeri dell'audit e con quelli che il README ne copia**: se i due non concordano, è l'audit che ha torto. Non correggere il numero a mano senza far girare lo script. Dal 04/10/2026 confronta sei cose: la tabella del §1, le due frasi in prosa, il numero delle sezioni, i numeri **per documento** delle intestazioni del §4, i numeri **in lettere** (i titoli delle sezioni 2 e 3 e «nessuna delle N chiuse») e i numeri del `README.md`. Il **registro delle modifiche non viene confrontato**, perché i suoi numeri sono quelli di quando sono scritti.
+- **Un numero in lettere va convertito, non letto.** «le quattro bloccanti» e «nessuna delle trentuno chiuse» sono numeri che un programma deve saper leggere, e le tre forme in cui l'italiano non somma — `ventuno`, `ventotto`, `trentuno` — erano proprio quelle che il dizionario non riconosceva: il confronto tornava verde **perché non guardava**. Se aggiungi un numero in lettere, il confronto lo copre; se aggiungi un documento con questioni aperte, va in un'intestazione del §4 o è contato e non elencato.
+- **La prova dei difetti è `sorgenti/lingue/prova_difetto_questioni.py`**: quindici difetti iniettati uno alla volta su una **copia** dei documenti, tutti richiesti a essere visti, più la prova che il registro **non** viene morso. Come per `verifica_immagini.py`, un difetto che non viene visto è un difetto della prova o del controllo, e va dichiarato.
+
 ## 4. Registro delle modifiche
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 07/10/2026 | 0.6 | Il §3.4 accoglie il blocco «Questioni aperte» di AGENTS.md, che scriveva lo stato delle questioni: lo stato si scrive ora solo nell'audit. |
 | 06/10/2026 | 0.5 | Il §1.17 accoglie il racconto che il §6 dell'audit conteneva. |
 | 06/10/2026 | 0.4 | Il §3 accoglie, alla lettera, le lezioni di metodo che AGENTS.md raccontava ciascuna con il suo difetto: le regole sono ora in `metodo.md`. |
 | 06/10/2026 | 0.3 | Il §2 accoglie, alla lettera, le sezioni di racconto di sette documenti: mappe, itinerari, sequenza, ritratti, luoghi-edifici, fonti-visive, anno1-mappa. |

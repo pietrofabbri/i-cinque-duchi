@@ -1,8 +1,8 @@
 ---
 titolo: Videogioco "I cinque duchi" — Roadmap per la risistemazione della documentazione
 tipo: piano
-versione: 0.3
-data: 2026-10-06
+versione: 0.4
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 documenti collegati: videogioco-5-duchi-audit.md (v0.28), videogioco-5-duchi-gioco.md (v0.6), videogioco-5-duchi-esercizi.md (v0.2), videogioco-5-duchi-meccaniche.md (v0.4), videogioco-5-duchi-tappa-1-01.md (v0.5)
 ---
@@ -32,7 +32,7 @@ Quattro problemi, in ordine di peso.
 |---|---|---|---|
 | 0 | Punto di partenza pulito | Tutti i verificatori verdi, o il motivo scritto per cui uno non può esserlo | **fatta il 06/10/2026** (§3) |
 | 1 | Architettura della documentazione | Ogni documento ha un tipo dichiarato; i documenti normativi dicono il presente; lo storico è separato; `AGENTS.md` contiene solo decisioni, convenzioni e procedura | **fatta il 06/10/2026** (§4) |
-| 2 | Allineare il nucleo di gioco e scrivere il modello di livello | Nessuna contraddizione fra `gioco`, `esercizi`, `meccaniche`, `motore-e-grafica`, `ripassi`, `premi`, `inventario`, `pedagogia`; esiste `modello-di-livello.md` | da fare |
+| 2 | Allineare il nucleo di gioco e scrivere il modello di livello | Nessuna contraddizione fra `gioco`, `esercizi`, `meccaniche`, `motore-e-grafica`, `ripassi`, `premi`, `inventario`, `pedagogia`; esiste `modello-di-livello.md` | **fatta il 07/10/2026** (§5) |
 | 3 | Le decisioni di Pietro | Ogni domanda bloccante o importante ha una risposta registrata, oppure è dichiarata rinviata con il perché | da fare |
 | 4 | Colmare i buchi di contenuto | Anno 1 completo nelle schede delle 30 tappe; correzioni già decise applicate; verifiche storiche aperte chiuse o dichiarate | da fare |
 | 5 | Rifinitura e README | README breve; numeri e refusi corretti; rimandi chiusi | da fare |
@@ -113,10 +113,28 @@ I quattro rossi del 06/10/2026 e che cosa erano:
 | `AGENTS.md` §3 mescola decisioni di Pietro e istruzioni operative datate | Separarle richiede di decidere, per ognuna, se è ancora valida: è il lavoro della fase 2 | Fase 2 |
 | `lingue-immagini.md` §5 e `luoghi-edifici.md` §2 hanno titoli da racconto | Il contenuto è normativo, e i numeri sono letti dai controlli | Fase 5, solo il titolo |
 
-## 5. Registro delle modifiche
+## 5. Bilancio della fase 2 (07/10/2026)
+
+**Che cosa è fatto.**
+
+- **`modello-di-livello.md` esiste**: le quindici parti di un livello con la fonte di ognuna, il flusso della tappa, i numeri della bottega e della soglia, i tipi di livello e gli anni, e la **lista di controllo** con cui si riscrive la tappa 1-1. Lo tiene fermo un verificatore nuovo, `verifica_modello.py` (K1–K4), con la prova del difetto.
+- **Dodici contraddizioni fra il nucleo di gioco e i documenti successivi**: sette risolte e scritte nel §8 del modello, cinque diventate domande (§9 del modello), di cui tre importanti nell'audit (I20–I22); la dodicesima è B1. `gioco`, `esercizi`, `meccaniche`, `inventario`, `tappa-1-01`, `curricolo` e `motore-e-grafica` sono allineati e rimandano al modello.
+- **`AGENTS.md` §3 è diviso** in decisioni di Pietro (§3.1) e regole per tema (§3.2). Tre decisioni scritte come questioni aperte erano chiuse dal 02/10/2026 (il Novecento nell'anno 3, `S66` e il presente nell'anno 4) e ora dicono la decisione. Lo stato delle questioni non si scrive più lì ma solo nell'audit.
+- **`prova_difetto_questioni.py` non ha più numeri scritti dentro**: li legge dall'audit, e una nuova sezione di questioni non la rompe più.
+
+**Che cosa la fase 2 lascia, e dove va.**
+
+| Che cosa | Dove va |
+|---|---|
+| Le cinque domande del modello e le altre bloccanti e importanti | Fase 3: è la lista da portare a Pietro, in ordine: B1, poi I20–I22, poi le due del §4 dell'audit sul modello |
+| La riscrittura completa di `gioco.md` ed `esercizi.md` al presente, togliendo le parti che il modello ormai dice meglio | Dopo la fase 3: senza le risposte, riscriverle significherebbe decidere al posto di Pietro |
+| I paragrafi di racconto rimasti dentro le sezioni normative degli altri documenti | Fase 5 |
+
+## 6. Registro delle modifiche
 
 | Data | Versione | Modifica |
 |---|---|---|
 | 06/10/2026 | 0.1 | Prima stesura: diagnosi e sei fasi, approvate da Pietro. Fase 0 avviata. |
 | 06/10/2026 | 0.2 | Fase 0 chiusa: linea di base (§3), quattro verificatori rossi riportati a verde o dichiarati. |
 | 06/10/2026 | 0.3 | Fase 1 chiusa: il bilancio (§4) dice che cosa è fatto e che cosa la fase lascia alle fasi successive, con il perché. |
+| 07/10/2026 | 0.4 | Fase 2 chiusa: il bilancio (§5) dice che cosa è fatto e che cosa resta per le fasi successive. |

@@ -14,12 +14,17 @@ Questo file serve a chiunque riprenda il lavoro senza il contesto delle conversa
 4. **Ogni documento dichiara il suo tipo** (`tipo:` nell'intestazione, §4). Per sapere che cosa è deciso si leggono i documenti `normativo`; il **come ci si è arrivati** è nello storico (`docs/videogioco-5-duchi-storico.md`) e non serve per lavorare; il lavoro in corso è nel `piano` (`docs/videogioco-5-duchi-roadmap-documentazione.md`).
 5. **Le regole di metodo** — come si scrivono i numeri, come si fanno i controlli, come si versionano i documenti — sono in `docs/videogioco-5-duchi-metodo.md`. Vanno lette prima di toccare un dato o un verificatore.
 
-## 3. Decisioni di Pietro da rispettare (non cambiarle senza chiedere)
+## 3. Decisioni di Pietro e regole per tema (non cambiarle senza chiedere)
+
+Il §3.1 contiene le **decisioni di Pietro**, cioè le scelte di progetto: non si cambiano senza chiedere. Il §3.2 contiene le **regole per tema**, cioè come si lavora ai dati di ciascun tema: discendono dalle decisioni e dal metodo (`metodo.md`), e ognuna rimanda al documento che la spiega. **Lo stato delle questioni aperte non è scritto qui**: è nell'audit (`docs/videogioco-5-duchi-audit.md`), che è l'unico posto dove si aggiorna.
+
+### 3.1 Decisioni di Pietro
 
 **Struttura**
 - **30 livelli per anno**, in sequenza. Ogni livello ha una **soglia minima** per passare al successivo e **due approfondimenti facoltativi**, che non sono mai propedeutici a nulla.
 - **Nessuna competenza in ingresso presupposta.** Ciò che non è informatica ma serve, il gioco lo costruisce.
 - **Una sola modalità di gioco.** Si gioca sempre, anche a casa, e occasionalmente in classe.
+- **Il modello di livello** — le parti di un livello, la bottega in quattro gradini con pool di 20, la soglia di 4 esercizi validi all'ultimo gradino — è in `docs/videogioco-5-duchi-modello-di-livello.md`. Le regole segnate lì come **provvisorie** aspettano una decisione (§9 di quel documento).
 
 **Anno 1**
 - Un **percorso unico**: 30 tappe contigue dentro le mura di Ferrara, non cronologiche. Ogni personaggio rimanda al successivo solo dopo la soglia.
@@ -37,17 +42,17 @@ Questo file serve a chiunque riprenda il lavoro senza il contesto delle conversa
 - **Dal terzo anno il duca non è il personaggio giocante ma la guida.** Chi gioca attraversa; il duca commenta e non viaggia mai. La regola «il duca è il personaggio giocante» vale per gli anni 1 e 2, non per il 3.
 - **La corte di Ferrara è l'unico luogo percorribile.** Ogni tappa è una **risorsa che arriva** sulla tavola (ambasciatore, volume, opera, orefice, musica, carta geografica, mestiere). Le risorse di fuori entrano da una **porta**.
 - **Carta d'Europa a strati**, con 15 strati. Alfonso **non sa** ciò che arriva dalle epoche che non ha vissuto, e il gioco lo dichiara.
-- **Le 30 tappe coprono tutta l'Europa, da Atene a Torino.** Da cui una conseguenza da tenere presente: il Novecento **non ha tappe obbligatorie** (vedi `anno3-europa.md` §13 Q1).
+- **Le 30 tappe coprono tutta l'Europa, da Atene a Torino.** Il Novecento entra con una sostituzione — la 3-28 passa da Turing a **Levi**, con Turing facoltativa forte — e con un **atlante di tredici voci** (decisione del 02/10/2026, `anno3-europa.md` §13 Q1).
 - **Il decreto di espulsione degli ebrei del 1510** entra nel gioco con la fonte, confrontando tre voci (vedi `anno3-europa.md` §5, «3.10 bis»). **Non usarlo finché la verifica V1 non è fatta.**
 
 **Anno 4** (vedi `anno4-mondo.md` §0.2–§3.5)
 - **L'archivio della corte è l'unico luogo percorribile**, come la corte nell'anno 3. Ogni tappa è **un documento che entra** e che il giocatore **cataloga**: tavoletta, papiro, iscrizione, registro, lettera, diagramma. L'unità di gioco non è la risorsa, è il documento.
 - **Il giocatore costruisce un registro**: ogni tappa deposita una riga con i campi `id`, `titolo`, `autore`, `data`, `luogo`, `strato`, `porta`, `tradotto_da`, `manca`, `attendibilita`. I campi `tradotto_da` e `manca` sono l'innovazione dell'anno. Alla tappa 4-30 il registro si stampa e **una riga resta vuota**.
-- **Il pianeta a strati** con 16 strati `S60`–`S75`, in **scala logaritmica dichiarata**; due strati sono vuoti per costruzione (`S60`, prima delle città: non ci sono documenti; `S66`, India antica: scelta da rivedere).
+- **Il pianeta a strati** con 16 strati `S60`–`S75`, in **scala logaritmica dichiarata**. Un solo strato è vuoto per costruzione: `S60`, prima delle città, perché non ci sono documenti. `S66`, l'India antica, ha la tappa 4-16 con **Ashoka** dal 02/10/2026 (`anno4-mondo.md` §0.4).
 - **Le sette porte** dell'archivio (`PT-SCR`, `PT-ORR`, `PT-CRR`, `PT-MAR`, `PT-REG`, `PT-LAB`, `PT-VOC`) dicono **come** è arrivato ogni documento. `PT-VOC` non si apre mai prima della fine.
 - **Ercole II non viaggia e non sa**: commenta il documento, e la sua domanda è «a chi serve?». Non spiega mai la tappa.
 - **La regola dei ritorni è più stretta**: il materiale dell'anno 4 contiene molti nomi già obbligatori negli anni 1–3 (Omero, Cesare, Marco Polo, Colombo, Leonardo, Gutenberg, Maometto, Carlo Magno…): nessuno di questi può essere obbligatorio nell'anno 4 (`anno4-mondo.md` §6.4).
-- **Due questioni aperte bloccanti**: il buco dell'Asia meridionale antica (§13 Q1) e il peso del presente (§13 Q2).
+- **Il presente entra come facoltative forti**: Berners-Lee alla 4-11 e Malala alla 4-29 (decisione del 02/10/2026, `anno4-mondo.md` §13 Q2).
 
 **Anno 5** (decisioni del 01/10/2026, vedi `anno5-mondo.md` §0.2–§3.6)
 - **Il quinto duca è Alfonso II d'Este, e il luogo è un cantiere**: la sala da progetto degli ingegneri ducali davanti alla pianta dell'**Addizione Erculea** (1592). È l'unico luogo percorribile dell'anno.
@@ -60,6 +65,8 @@ Questo file serve a chiunque riprenda il lavoro senza il contesto delle conversa
 - **Sei persone viventi su trenta** (Fei-Fei Li, LeCun, Buolamwini, Hinton, Gebru, Hassabis): solo emblema, scheda `in formazione`, **nessuna affermazione di correttezza**.
 - **Nessuna frase che contenga il futuro come dato**: non «l'IA sostituirà molti lavori» ma «dal 2015 esistono sistemi che scrivono testi».
 - **Personaggi** `Q301`…`Q330`. Codici definitivi fino a nuova indicazione.
+
+### 3.2 Regole per tema
 
 **Regola dei luoghi** (trasversale, vedi `luoghi.md`, valida dal 01/10/2026)
 - **Ogni associazione fra una persona e un luogo dichiara un tipo di legame**: `B` biografico (nato, vissuto, morto lì), `A` dell'azione (lì è successo qualcosa di decisivo), `S` simbolico (il luogo fa capire l'eredità), `I` interpretativo (solo per i luoghi che **non esistono**), `C` di crescita (cresciuto lì, non nato).
@@ -174,7 +181,7 @@ Questo file serve a chiunque riprenda il lavoro senza il contesto delle conversa
 - **Una parola ambigua si cerca con due parole**: alla voce «pipa» (la pianta del Cinquecento) Commons restituisce il rospo del genere *Pipa*. I termini corretti sono nel campo `termini` di `dati/fonti_visive/fonti_visive.json`.
 - **Un incidente non si disegna: si mostra l'oggetto che resta.** Le tre tappe che nominano un incendio (4-3, 4-10, 4-13) hanno per emblema un peso di bronzo, uno scaffale vuoto con un cartellino scritto a metà e un frammento di stele: **nessuna delle tre ha una fiamma**. Il gioco rappresenta l'oggetto che l'incendio ha lasciato, ed è la forma «il testo al posto dell'immagine» che vale anche per l'Africa del *Furioso*.
 - **Un vuoto si dichiara, non si riempie**, e una voce che il gioco non usa si dichiara con la prova: la **carestia** non è nominata da nessuna delle centocinquanta tappe, e `dati/fonti_visive/incidenti.json` porta la scansione dei cinque documenti degli anni che lo dimostra (`fonti-visive.md` §6). Una voce cercata e non usata è la malattia di M1 nella categoria sbagliata: il numero che si guardava era un altro.
-- **La ricerca propone, una persona decide**, in ogni categoria: ritratti, oggetti, fonti visive. La decisione si registra nei rispettivi file `attestazione*.json`, che sono tutti vuoti.
+- **La ricerca propone, una persona decide**, in ogni categoria: ritratti, oggetti, fonti visive. La decisione si registra nei rispettivi file di attestazione: `sorgenti/art/attestazione_immagini.json` ha i giudizi su tutte le 195 immagini dei ritratti; `dati/lingue/attestazione_oggetti.json` e `dati/fonti_visive/attestazione.json` non hanno ancora nessuna scelta.
 
 **Percorsi del duca** (trasversale, vedi `percorsi.md`)
 - **L'ordine dei numeri di tappa non è un ordine di viaggio.** I pin sono sparsi su un continente, e l'ordine degli argomenti li fa attraversare avanti e indietro: nell'anno 3 il percorso delle tappe è **18 318 km e 539 giorni** a cavallo, il giro che copre tutti i luoghi è **9 308 km e 275 giorni**. Non correggere i numeri di tappa per far quadrare il viaggio: sono due ordini diversi, e la proposta è tenerli separati (`percorsi.md` §3).
@@ -184,14 +191,10 @@ Questo file serve a chiunque riprenda il lavoro senza il contesto delle conversa
 - **I buchi geografici degli anni 2 e 3 sono continentali** (Sardegna, Inghilterra, Scozia, Portogallo, Balcani), non solo continentali: vanno trattati come facoltative (`luoghi.md` §4.7).
 
 **Questioni aperte** (trasversale, vedi `audit.md`)
-- **Tutte le questioni aperte stanno in `docs/videogioco-5-duchi-audit.md`.** Prima di aprire una discussione, guarda l'audit: è possibile che la domanda sia già chiusa in un altro documento, o che sia una delle quattro bloccanti e non si possa rispondere.
-- **Quattro bloccanti, e tre sono la stessa**: `lingue.md` Q1 (livelli linguistici o informatici), Q2 (le trenta voci confermate), Q4 (la LIS), e `lingue-immagini.md` Q1 (chi guarda le immagini). Le altre che un tempo erano in questa lista **erano lavori, non domande**, e sono fatte: i novanta pin il 02/10/2026 (`mappe.md` §8bis, `audit.md` §7), e il 03/10/2026 la tavolozza, le sagome degli edifici, il fondo di Ferrara, gli ambienti dei 150 livelli e il file amministrativo mondiale (`audit.md` §7).
-- **Dal 02/10/2026 c'è anche `percorsi.md` Q1**, che non è bloccante ma è la decisione di progetto più importante aperta: se il percorso del duca è l'ordine delle tappe o un giro a parte.
-- **L'ordine è B1 → B2 → B4**: finché non si decide se le tappe sono 30 o 150 non ha senso scegliere le immagini, e finché non sono confermate le voci non ha senso scegliere le immagini.
-- **Una domanda nuova va aggiunta all'audit**, non lasciata in un documento. Se è chiusa, si sposta nel registro del documento suo e non si cancella.
-- **`conta_questioni.py` confronta il proprio conto con i numeri dell'audit e con quelli che il README ne copia**: se i due non concordano, è l'audit che ha torto. Non correggere il numero a mano senza far girare lo script. Dal 04/10/2026 confronta sei cose: la tabella del §1, le due frasi in prosa, il numero delle sezioni, i numeri **per documento** delle intestazioni del §4, i numeri **in lettere** (i titoli delle sezioni 2 e 3 e «nessuna delle N chiuse») e i numeri del `README.md`. Il **registro delle modifiche non viene confrontato**, perché i suoi numeri sono quelli di quando sono scritti.
-- **Un numero in lettere va convertito, non letto.** «le quattro bloccanti» e «nessuna delle trentuno chiuse» sono numeri che un programma deve saper leggere, e le tre forme in cui l'italiano non somma — `ventuno`, `ventotto`, `trentuno` — erano proprio quelle che il dizionario non riconosceva: il confronto tornava verde **perché non guardava**. Se aggiungi un numero in lettere, il confronto lo copre; se aggiungi un documento con questioni aperte, va in un'intestazione del §4 o è contato e non elencato.
-- **La prova dei difetti è `sorgenti/lingue/prova_difetto_questioni.py`**: quindici difetti iniettati uno alla volta su una **copia** dei documenti, tutti richiesti a essere visti, più la prova che il registro **non** viene morso. Come per `verifica_immagini.py`, un difetto che non viene visto è un difetto della prova o del controllo, e va dichiarato.
+- **Tutte le questioni aperte stanno in `docs/videogioco-5-duchi-audit.md`**, ed è l'unico posto in cui se ne scrive lo stato. Prima di aprire una discussione, guarda l'audit: la domanda può essere già chiusa, o essere una delle bloccanti (§2 dell'audit), a cui non si risponde senza Pietro.
+- **Una domanda nuova va nell'audit**, non lasciata in un documento. Quando si chiude, l'esito va nella tabella delle chiuse dell'audit e il racconto della chiusura nello storico (`metodo.md` §3.3).
+- **`conta_questioni.py` confronta il proprio conto con i numeri dell'audit e con quelli che il README ne copia**, anche in lettere: se non concordano, è l'audit che ha torto. Non correggere un numero a mano senza far girare lo script; la prova del difetto è `sorgenti/lingue/prova_difetto_questioni.py`.
+- **La prima riga di una voce decide se è chiusa**: le parole «chiusa», «chiuso», «risolta», «ratificata», «confermata» in quella riga la contano come chiusa. In una domanda aperta non si usano, neanche in un altro senso («un elenco chiuso»).
 
 **Immagini degli oggetti linguistici** (trasversale, vedi `lingue-immagini.md`, decisioni del 02/10/2026)
 - **Quattro categorie, non una**: `foto`, `dipinto`, `stampa`, `nessuna`. Un oggetto che non ha immagine libera va **dichiarato** (`nessuna`), non disegnato. Nel gioco **non entra un'immagine generata** per nessun oggetto, come per i volti.
