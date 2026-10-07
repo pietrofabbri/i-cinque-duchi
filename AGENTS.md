@@ -25,6 +25,9 @@ Il §3.1 contiene le **decisioni di Pietro**, cioè le scelte di progetto: non s
 - **Nessuna competenza in ingresso presupposta.** Ciò che non è informatica ma serve, il gioco lo costruisce.
 - **Una sola modalità di gioco.** Si gioca sempre, anche a casa, e occasionalmente in classe.
 - **Il modello di livello** — le parti di un livello, la bottega in quattro gradini con pool di 20, la soglia di 4 esercizi validi all'ultimo gradino — è in `docs/videogioco-5-duchi-modello-di-livello.md`. Le regole segnate lì come **provvisorie** aspettano una decisione (§9 di quel documento).
+- **Una tappa contiene sette livelli**: quello di informatica e uno per ciascuna delle sei lingue, ognuno con la sua soglia, e il ragazzo li fa tutti (07/10/2026, `lingue.md` Q1). Che cosa apre la tappa successiva e in che ordine si fanno sono ancora aperti (`lingue.md` Q10, Q11).
+- **La carta del personaggio e il premio restano tutti e due** (07/10/2026): la carta è il personaggio e regge il ripasso, il premio è l'oggetto del livello. **Il ripasso a distanza (Leitner) è obbligatorio** e fa parte della soglia; i test di ingresso restano facoltativi.
+- **Le risposte in testo libero sono ammesse** (07/10/2026): il gioco non le valuta, le mette nel file di consegna e le valuta il docente. Per la soglia contano solo risposte che il gioco corregge da solo; codice, formule e comandi si verificano eseguendoli.
 
 **Anno 1**
 - Un **percorso unico**: 30 tappe contigue dentro le mura di Ferrara, non cronologiche. Ogni personaggio rimanda al successivo solo dopo la soglia.
@@ -81,9 +84,9 @@ Il §3.1 contiene le **decisioni di Pietro**, cioè le scelte di progetto: non s
 - **Nessuna stanza ha un disegno proprio** (`furioso.md` §4.12): la stanza del filone prende il **pin reale e verificato** del personaggio e ne cambia solo l'etichetta. Non illustrare le stanze e non disegnare una carta per esse.
 
 **L'inventario** (trasversale, vedi `inventario.md`, del 03/10/2026)
-- **Gli elementi con cui si gioca sono un elenco chiuso di sette**: la voce, l'oggetto di interazione, il pin e la strada, il test di ingresso, il richiamo all'origine, il premio, la fascia. Ognuno dichiara **che cosa dà in cambio** e **se è facoltativo**: se un nuovo elemento non ha le due cose, non entra.
-- **Cinque su sette sono facoltativi**, e non è generosità: sono i cinci che il progetto può rendere opzionali senza che il livello perda il nucleo.
-- **Un premio per livello, e va nella salvadanaio**: la salvadanaio contiene i premi, **non le loro immagini**, e i quattro registri personali devono essere **rileggibili dal gioco** (un registro che il gioco non sa rileggere si perde alla prima reinstallazione).
+- **Gli elementi con cui si gioca sono un elenco chiuso di nove**: la voce, l'oggetto di interazione, il pin e la strada, il test di ingresso, il richiamo all'origine, il premio, la fascia, la carta del personaggio, le visioni (`inventario.md` §1). Ognuno dichiara **che cosa dà in cambio** e **se è facoltativo**: se un nuovo elemento non ha le due cose, non entra.
+- **Cinque su nove sono facoltativi**, e non è generosità: sono i cinque che il progetto può rendere opzionali senza che il livello perda il nucleo.
+- **Un premio per livello, e va nella salvadanaio**: la salvadanaio contiene i premi, **non le loro immagini**, e i cinque registri personali devono essere **rileggibili dal gioco** (un registro che il gioco non sa rileggere si perde alla prima reinstallazione).
 - **Ogni premio porta tre righe** — `chi`, `cosa`, `riflessione` — e la terza è una **prova, non una formula**: «se non ci fosse stato lui oggi non potremmo…» è la forma, e vale solo per i premi che sono persone. Se la riflessione si può scrivere senza pensarci, il premio è decorativo e non entra.
 - **La lingua dei segni ha una categoria tutta sua, la K**: la scheda che il giocatore ha prodotto. Non esistono centocinquanta figure sorde storiche documentabili, e comunque **il gioco non sa disegnare la propria lingua dei segni**: è il più grande limite che ha, ed è dichiarato.
 - **Nessun elemento promette un vantaggio futuro**: l'unica riga in cui il gioco non dà niente è quella della fascia, ed è l'unica in cui il giocatore scrive.

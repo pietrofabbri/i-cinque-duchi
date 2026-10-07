@@ -339,7 +339,10 @@ def confronta_audit(testo, per_documento, aperte, chiuse, problemi):
     if m and int(m.group(1)) != aperte + chiuse:
         problemi.append("il §1 scrive «%s voci non sono … domande», la somma è %d"
                         % (m.group(1), aperte + chiuse))
-    for m in re.finditer(r"nessuna delle (\w+) chiuse", senza_registro(testo), re.I):
+    # Due forme: «nessuna delle N chiuse» e, dal 07/10/2026 quando B1 e' stata
+    # la prima bloccante chiusa, «una sola delle N chiuse». Il numero in lettere
+    # si confronta in tutte e due.
+    for m in re.finditer(r"(?:nessuna|una sola) delle (\w+) chiuse", senza_registro(testo), re.I):
         n = parola_numero(m.group(1))
         if n is not None and n != chiuse:
             problemi.append("l'audit scrive «nessuna delle %s chiuse», "

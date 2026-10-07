@@ -11,11 +11,12 @@ stessa cosa, non che il gioco esista.
 
   I1  gli elementi interattivi sono un elenco chiuso e numerato senza buchi
   I2  ogni elemento dichiara che cosa dà e se è facoltativo
-  I3  i quattro registri personali sono dichiarati e il gioco deve poter rileggerli
+  I3  i cinque registri personali sono dichiarati e il gioco deve poter rileggerli
   I4  nessun elemento promette un vantaggio che non compare nella riga «dà in cambio»
   I5  la mappa degli scambi ha una riga e una colonna per ogni elemento
 
 Uso:  python3 sorgenti/verifica_inventario.py
+      python3 sorgenti/verifica_inventario.py --difetti   # un difetto per ciascuno dei cinque controlli, su una copia
 """
 import io
 import os
@@ -29,7 +30,8 @@ PREMI = os.path.join(RADICE, "docs", "videogioco-5-duchi-premi.md")
 MECCANICHE = os.path.join(RADICE, "docs", "videogioco-5-duchi-meccaniche.md")
 LINGUE = os.path.join(RADICE, "docs", "videogioco-5-duchi-lingue.md")
 
-REGISTRI = ("salvadanaio", "quaderno dei segni", "registro dei ripassi", "fascia")
+REGISTRI = ("salvadanaio", "quaderno dei segni", "registro dei ripassi", "fascia",
+            "collezione delle carte")
 
 
 def leggi(path):
@@ -79,12 +81,22 @@ def main():
             or "facoltativo in tutti i 900 livelli" in b):
         problemi.append("I2: lingue.md non dichiara piu' che l'oggetto e' facoltativo ovunque")
 
-    print("\n== I3. i quattro registri personali sono dichiarati e rileggibili ==")
+    print("\n== I3. i cinque registri personali sono dichiarati e rileggibili ==")
     # il documento scrive i registri con l'articolo dentro i grassetti
     # («la salvadanaio»), quindi si cerca il nome dentro, non il nome intero
+    # Il registro si cerca nella **prima colonna di una riga di tabella**, non in
+    # un grassetto qualsiasi: l'espressione di prima, `\*\*[^*]*nome[^*]*\*\*`,
+    # poteva partire dal grassetto che si chiude e arrivare al successivo, e
+    # trovava il nome in una frase fra due grassetti. Il 07/10/2026, togliendo la
+    # riga del quinto registro, il controllo restava verde per una frase del §5.
+    # E solo nella tabella dei registri (§3): «la fascia bianca» e' anche il
+    # nome di un elemento nella tabella del §1, e lo trovava li'.
+    m3 = re.search(r"(?ms)^## 3\..*?(?=^## )", doc)
+    sezione3 = m3.group(0) if m3 else ""
+    prime_colonne = [c.strip().strip("*").strip().lower()
+                     for c in re.findall(r"^\|([^|]+)\|", sezione3, re.M)]
     for r in REGISTRI:
-        presente = bool(re.search(r"\*\*[^*]*%s[^*]*\*\*" % re.escape(r), doc, re.I)) \
-            or ("| %s |" % r) in doc
+        presente = any(r.lower() in c for c in prime_colonne)
         print("   %-22s %s" % (r, "dichiarato" if presente else "ASSENTE"))
         if not presente:
             problemi.append("I3: il registro «%s» non e' nell'inventario" % r)
@@ -96,7 +108,7 @@ def main():
     print("\n== I4. nessun elemento promette piu' di quanto il gioco fa ==")
     # gli elementi che danno qualcosa devono avere una riga nella mappa degli scambi
     scambi = re.findall(r"^\| (alla voce|all'oggetto|al viaggio|al test|al richiamo|al premio|"
-                        r"alla fascia) \| ([^|]+) \| ([^|]+) \|$", doc, re.M)
+                        r"alla fascia|alla carta|alle visioni) \| ([^|]+) \| ([^|]+) \|$", doc, re.M)
     print("   righe della mappa degli scambi: %d" % len(scambi))
     if len(scambi) != len(elementi):
         problemi.append("I4: la mappa degli scambi ha %d righe e gli elementi sono %d"
@@ -150,10 +162,64 @@ def main():
         print("\nproblemi: %d" % len(problemi))
         return 1
     print("   nessun difetto: gli elementi sono chiusi, ognuno dice che cosa dà e se è "
-          "facoltativo, i quattro registri si possono rileggere")
+          "facoltativo, i cinque registri si possono rileggere")
     print("\n==== controlli superati: 5/5 ====")
     return 0
 
 
+# Un difetto per controllo, ciascuno su una copia del documento: il file vero
+# non si tocca. Ogni voce e' (controllo, che cosa si rompe, come).
+DIFETTI = [
+    ("I1", "un buco nella numerazione degli elementi",
+     lambda t: t.replace("| **9** | **le visioni** |", "| **10** | **le visioni** |", 1)),
+    ("I2", "un elemento che non dice che cosa da'",
+     lambda t: re.sub(r"(?m)^(\| \*\*8\*\* \| \*\*[^*]+\*\* \| [^|]+ \| )[^|]+( \|)",
+                      r"\g<1> \g<2>", t, count=1)),
+    ("I3", "il quinto registro tolto dalla tabella dei registri",
+     lambda t: re.sub(r"(?m)^\| \*\*la collezione delle carte\*\* \|.*\n", "", t, count=1)),
+    ("I3", "un registro tolto, il cui nome compare anche fra gli elementi",
+     lambda t: re.sub(r"(?m)^\| \*\*la fascia\*\* \|.*\n", "", t, count=1)),
+    ("I4", "una riga tolta dalla mappa degli scambi",
+     lambda t: re.sub(r"(?m)^\| alle visioni \|.*\n", "", t, count=1)),
+    ("I5", "la riga in cui il gioco non da' niente non e' piu' dichiarata",
+     lambda t: t.replace("non dà niente", "dà poco")),
+]
+
+
+def prova_difetti():
+    import contextlib
+    import tempfile
+    global DOC
+    vero = DOC
+    originale = leggi(vero)
+    visti = non_visti = 0
+    try:
+        with tempfile.TemporaryDirectory() as cartella:
+            copia = os.path.join(cartella, "inventario.md")
+            for etichetta, che_cosa, rompi in DIFETTI:
+                rotto = rompi(originale)
+                if rotto == originale:
+                    print("   NON INIETTATO %s: %s" % (etichetta, che_cosa))
+                    non_visti += 1
+                    continue
+                with io.open(copia, "w", encoding="utf-8") as f:
+                    f.write(rotto)
+                DOC = copia
+                uscita = io.StringIO()
+                with contextlib.redirect_stdout(uscita):
+                    esito = main()
+                visto = esito == 1 and ("%s" % etichetta) in uscita.getvalue()
+                print("   %-10s %s: %s" % ("visto" if visto else "NON VISTO", etichetta, che_cosa))
+                visti += 1 if visto else 0
+                non_visti += 0 if visto else 1
+    finally:
+        DOC = vero
+    print("\ndifetti iniettati: %d, visti: %d, non visti: %d"
+          % (len(DIFETTI), visti, non_visti))
+    return 0 if non_visti == 0 else 1
+
+
 if __name__ == "__main__":
+    if "--difetti" in sys.argv:
+        sys.exit(prova_difetti())
     sys.exit(main())

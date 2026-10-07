@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — Storico: come ci si è arrivati
 tipo: storico
-versione: 0.6
+versione: 0.7
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
-documenti collegati: videogioco-5-duchi-roadmap-documentazione.md (v0.4)
+documenti collegati: videogioco-5-duchi-roadmap-documentazione.md (v0.5)
 ---
 
 # Storico del progetto
@@ -682,6 +682,63 @@ E la regola che ne segue, che è quella che il lavoro ha reso vera:
 
 > **Mentre si decide, si costruisce quello che si può costruire.** Le quattro bloccanti aspettano una risposta e aspetteranno ancora: nessuna delle trentaquattro chiuse le toccava. Il conto di due giorni dice che la risposta non è l'unica cosa che si può fare mentre si aspetta — e non è una metafora: i controlli automatici hanno trovato due coordinate sbagliate che nessuno aveva lette, e i quattro file del 03/10 sono nati tutti da controlli che non avrebbero potuto dare torto.
 
+### 1.18 La scheda di B1 com'era, prima della decisione
+
+*Da `audit.md` v0.28, §2. B1 è chiusa il 07/10/2026 con la decisione di Pietro (sette livelli per tappa); la scheda, con la spiegazione in parole semplici scritta per lui il 03/10/2026 e le tre proposte, è conservata qui. Seguono le righe di I20 e I22 com'erano nel §3.*
+
+##### B1 · I livelli linguistici e quelli informatici sono lo stesso livello o due?
+
+`lingue.md` §7 Q1 · **pro**: due sistemi paralleli nella stessa tappa dà 7 livelli per tappa (uno di informatica e uno per ciascuna delle sei lingue) ed è l'unica forma in cui i due percorsi si incontrano. **contro**: rende ogni tappa enorme, e le trenta tappe coprirebbero 150 informatici più 900 linguistici in un'ora di lezione; l'alternativa «lingue dentro l'informatica» cancella le 900 unità di gioco. **valutazione**: è la decisione con la conseguenza più grande e la meno reversibile; va presa con la stima delle schermate per tappa, che nessuno ha fatto. **responsabilità**: Pietro. **blocca**: i dati dei livelli, la scelta delle immagini, tutte le tappe linguistiche, i testi autentici, la progressione.
+
+###### B1 in parole semplici
+
+*(03/10/2026 — Pietro ha chiesto di capire la B1 «meglio, con parole più semplici». Questa è la spiegazione; quella sopra è la scheda operativa. Nessuna delle due chiude la domanda: la decisione è di Pietro.)*
+
+**Il gioco insegna due cose: l'informatica e le lingue.** Dell'informatica hai deciso **150 livelli**: cinque anni, trenta tappe all'anno. Delle lingue ne hai immaginati **900**: sei lingue, trenta livelli per lingua, cinque anni.
+
+Le due cose non possono stare nella stessa lista. La domanda è una sola, e si può fare in italiano di tutti i giorni:
+
+> **Quando il ragazzo è dentro la tappa 5-12, quante cose deve fare?**
+
+- **Oppure una.** Solo il livello di informatica. E i 900 livelli di lingue spariscono come unità di gioco: diventano contenuti che compaiono dentro alcuni livelli di informatica (l'inglese che serve a una tappa, il latino che serve a un'altra). Questo è «lingue dentro l'informatica».
+- **Oppure tante in fila.** Nella stessa tappa c'è il livello di informatica **e** un livello per ciascuna delle sei lingue: **7 livelli in una tappa sola** (1 + 6, non 32: il conto è stato rifatto il 03/10/2026 sui dati e ogni tappa linguistica porta esattamente sei lingue). È l'unica forma in cui i due percorsi si incontrano davvero. Con sette livelli, non con trentadue, la tappa **non diventa enorme**: i 150 informatici più i 900 linguistici sono **1050**, cioè 1050/150 = **7 per tappa**, e i dati dei 900 titoli sono già costruiti esattamente su questa forma — ogni tappa (anno, numero) ha sei righe, una per lingua. Il vero costo non è il numero di livelli, è che in un'ora di lezione ne facciamo sette invece di uno.
+- **Oppure a tappe alterne.** Le trenta tappe di un anno sono metà linguistiche e metà informatiche. Allora le tappe raddoppiano (diventano 300 in tutto), oppure se ne copre solo una parte e il progetto si presenta come un gioco di 150 livelli che in realtà ne copre 75.
+
+**Che cosa è già costruito e che cosa è bloccato.** Le 150 tappe informatiche esistono già quasi tutte: mappa, pin, ambienti, mezzi, luoghi. Quelle non aspettano la B1. I **900 livelli linguistici**, invece, non esistono come dati, e non possono esistere finché la domanda non è risolta: non si sa in che stanza stanno, e senza quello non si possono scrivere i testi né scegliere le immagini. **È questa la differenza fra «blocca tutto» e «blocca metà» che l'audit dichiarava e che questa scheda non ripete.**
+
+**Perché non la decido io, e perché è la decisione giusta che ti spetta.** Le tre scelte danno giochi diversi, non giochi uguali con dettagli diversi, e la differenza la si vede dopo: nel motore, nel tempo di lezione, nel numero di schermate. La stima delle schermate per tappa — che è ciò che servirebbe per scegliere — dipende da un prototipo che non esiste ancora. Quindi la domanda giusta non è «quale delle tre è giusta», ma:
+
+> **quando entri in una tappa, vedi un compito solo o un compito per ciascuna lingua?**
+
+###### Le tre proposte, e il conto che le rende diverse (03/10/2026)
+
+*(Pietro ha chiesto delle proposte. Il numero che le rende diverse è stato rifatto: la scheda sopra diceva **32 livelli per tappa**, ed è un errore — sono **sette**.)*
+
+**Il conto.** Una tappa vale **un livello di informatica e uno per ciascuna delle sei lingue**: 1 + 6 = **7**. Le trenta tappe di ogni anno per cinque anni sono 150 tappe, e 150 × 7 = **1050**, che è esattamente il numero dei premi che Pietro ha deciso il 03/10/2026. **La B1 e il numero dei premi sono la stessa domanda**, e la risposta che hai già dato — 1050 — è la risposta alla B1: *sette livelli per tappa, tutti nella stessa tappa*. Non è una coincidenza: i 900 titoli sono già costruiti su questa forma, ogni tappa (anno, numero) ha sei righe, una per lingua.
+
+Le tre proposte diventano quindi:
+
+| | Che cosa fa il giocatore in una tappa | Cosa costa | Rischio |
+|---|---|---|---|
+| **A. Sette in fila** | Sceglie la lingua del giorno, fa il livello di informatica e **un** livello linguistico. Gli altri cinque restano lì. | Niente: è la forma dei dati. | Che il gioco prometta sei lingue e ne faccia una sola. |
+| **B. Tutte e sette** | Li fa tutti, o li fa a scelta fra quelli che gli sono da rimettere. | Il tempo di una tappa raddoppia: da un'ora a due, o da un livello a sette in un'ora. | Che in un'ora di lezione non si arrivi in fondo, e che la tappa sembri un muro. |
+| **C. Una lingua per tappa, e le altre in ricorrenza** | Ogni tappa porta una lingua principale; le altre cinque si incontrano ogni sei tappe, a rotazione, con le tappe che passano. | Una rotazione da scrivere, e le linguistiche diventano sei filoni invece di uno. | Che le sei lingue restino separate e non si incontrino mai, che è la cosa che il progetto voleva evitare. |
+
+**La mia proposta è A, con una correzione che la rende onesta.** In A la scelta della lingua è del giocatore, e questo è il punto: **un ragazzo di un liceo scientifico a Ferrara studia due lingue straniere, non sei**. Le sei lingue sono il progetto del professore, non la giornata dello studente. Quindi A è la forma giusta se il gioco **dichiara** che in una tappa si fa l'informatica e una lingua a scelta, e che le altre cinque si incontrano a rotazione — cioè A e C insieme, con la rotazione dichiarata e non nascosta.
+
+**Perché non B.** Non perché sia impossibile, ma perché mette nella stessa ora **sette livelli con sette soglie diverse**, e la difficoltà di una tappa smette di essere una cosa che si misura. La `pedagogia.md` chiede una **sfida a mani nude ogni quindici livelli**: con sette livelli in fila, la sfida arriva ogni due tappe e perde il senso. Con uno, arriva ogni quindici tappe, come è scritto.
+
+**Che cosa non cambia con nessuna delle tre**: i 1050 premi (uno per livello, come hai deciso), le nove componenti del livello, il file `.txt` di consegna, e le tappe informatiche già costruite — che non aspettano questa risposta da nessuna delle tre.
+
+---
+
+**Quello che si può fare intanto, e che è già stato fatto.** Nessuna delle trenta tappe di informatica aspetta questa risposta: i 150 ambienti, le coordinate, i mezzi e i luoghi sono costruiti senza di lei. È la stessa regola che vale per le altre tre bloccanti: **mentre si decide, si costruisce quello che si può costruire** (`percorsi.md` §1.2 dice perché i mezzi dell'anno 4 sono stati scelti senza aspettare nessuna decisione).
+
+| # | Domanda | Pro | Contro | Valutazione | Chi decide |
+|---|---|---|---|---|---|
+| I20 | **La carta del personaggio e il premio: restano tutti e due?** (`modello-di-livello.md` Q1) | La carta è il personaggio e regge il ripasso a distanza; il premio è un oggetto che il personaggio non è | L'inventario chiuso dei sette elementi non nomina la carta né le visioni, e due collezioni possono sembrare una ripetizione | Tenerle tutte e due, con ruoli diversi, e aggiungerle all'inventario; è anche la regola provvisoria | Pietro |
+| I22 | **«Nessuna risposta scritta» e gli strumenti veri** (`modello-di-livello.md` Q4) | Il divieto rende inutile incollare una risposta da un'IA | Python, formule e comandi si scrivono, e le lingue chiedono esercizi di produzione | Il divieto vale per il testo libero; codice e formule si scrivono e si verificano eseguendoli sui dati di quello studente | Pietro |
+
 ## 2. Dagli altri documenti
 
 Le sezioni che raccontavano il difetto da cui è nata una regola, o le versioni attraverso cui è passato un prototipo. Sono state tolte il 06/10/2026 (fase 1 della roadmap): nel documento d'origine resta la regola, o lo stato di oggi, al presente.
@@ -1063,6 +1120,7 @@ Le due regole che ne vengono:
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 07/10/2026 | 0.7 | Il §1.18 accoglie la scheda di B1 com'era prima della decisione del 07/10/2026, con le righe di I20 e I22. |
 | 07/10/2026 | 0.6 | Il §3.4 accoglie il blocco «Questioni aperte» di AGENTS.md, che scriveva lo stato delle questioni: lo stato si scrive ora solo nell'audit. |
 | 06/10/2026 | 0.5 | Il §1.17 accoglie il racconto che il §6 dell'audit conteneva. |
 | 06/10/2026 | 0.4 | Il §3 accoglie, alla lettera, le lezioni di metodo che AGENTS.md raccontava ciascuna con il suo difetto: le regole sono ora in `metodo.md`. |

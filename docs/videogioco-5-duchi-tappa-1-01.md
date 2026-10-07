@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — Tappa 1-1 (San Maurelio, Cattedrale): specifica completa
 tipo: normativo
-versione: 0.5
+versione: 0.6
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 implementazione: prototipo/index.html (sorgenti esercizi1.js, zona1.js, zona1_dati.js, incorporati dallo script build_mappa_html.py)
@@ -138,7 +138,7 @@ Le visioni sono consecutive (A2 solo dopo A1), non servono per proseguire e rest
 - Selezione, copia, taglia, menu contestuale e trascinamento disattivati.
 - Filigrana con nome, numero dell'istanza e ora.
 - Esercizi diversi per ogni studente e a ogni tentativo.
-- Nessuna risposta scritta: solo scelte con tocco o clic.
+- Nella bottega di questa tappa le risposte sono scelte con tocco o clic. Le risposte in testo libero sono ammesse dal 07/10/2026 e le valuta il docente (`modello-di-livello.md` §3): se la tappa riscritta ne avrà, l'incolla nei loro campi è bloccato.
 
 ## 8. Report
 
@@ -153,6 +153,8 @@ Il pulsante «Esporta il report» scarica un `.txt` con riepilogo, indicatori da
 5. **Spazio vuoto** in alto nel riquadro degli esercizi su alcuni schermi (difetto grafico minore).
 
 ## 10. Registro modifiche
+
+- **v0.6 (07/10/2026)**: §7: la regola delle risposte scritte segue la decisione del 07/10/2026 (testo libero ammesso, valutato dal docente).
 
 - **v0.5 (07/10/2026)**: Il documento rimanda al modello di livello; l'implementazione è prototipo/index.html; nel §6 le posizioni e i campi delle visioni sono quelli della tabella del §3 e del codice, che il §6 contraddiceva (fase 2 della roadmap: allineamento al modello di livello).
 

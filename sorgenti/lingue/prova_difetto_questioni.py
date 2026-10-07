@@ -233,8 +233,8 @@ def main():
             "sommano")
 
     # 7. il numero in lettere del §2, che è un titolo e non un conteggio libero
-    difetto("il §2 si intitola «cinque bloccanti» con quattro schede aperte",
-            lambda t, r: (sostituisci(t, "## 2. Le quattro bloccanti",
+    difetto("il §2 si intitola «cinque bloccanti» con tre schede aperte",
+            lambda t, r: (sostituisci(t, "## 2. Le tre bloccanti",
                                       "## 2. Le cinque bloccanti"), r),
             "cinque bloccanti")
 
@@ -252,9 +252,9 @@ def main():
     #    senza numero, e la frase che resta e' quella del §1.
     difetto("l'audit scrive «nessuna delle ventotto chiuse» in §1",
             lambda t, r: (sostituisci(t,
-                                      porzione(t, r"Nessuna delle \w+ chiuse è bloccante",
+                                      porzione(t, r"Una sola delle \w+ chiuse è bloccante",
                                               "la frase sulle chiuse del §1"),
-                                      "Nessuna delle ventotto chiuse è bloccante"), r),
+                                      "Una sola delle ventotto chiuse è bloccante"), r),
             "ventotto chiuse")
 
     # 10. i numeri che il README copia, che è il buco vero di questa prova.
@@ -268,7 +268,7 @@ def main():
     #     cifra dentro si rompe da sola alla prima chiusura — che e' gia'
     #     successo una volta su questi due difetti.
     difetto("il README scrive un numero di importanti diverso dall'audit",
-            lambda t, r: (t, _piu_uno(r, r"\d+ chiuse, \d+ aperte\*\*, 4 bloccanti e "
+            lambda t, r: (t, _piu_uno(r, r"\d+ chiuse, \d+ aperte\*\*, \d+ bloccanti e "
                                       r"\d+ importanti",
                                       "i numeri che il README copia")),
             "importanti")

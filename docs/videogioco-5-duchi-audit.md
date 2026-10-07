@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — audit delle questioni aperte: la lista operativa
 tipo: audit
-versione: 0.28
+versione: 0.29
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: lettura di tutti i documenti di progetto che portano una sezione «Questioni aperte» (sedici), verificata da sorgenti/lingue/conta_questioni.py, che confronta anche i numeri che il README copia da qui
-documenti collegati: videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-lingue-immagini.md (v0.8), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-fonti-visive.md (v0.21), videogioco-5-duchi-furioso.md (v0.7), videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-mappe.md (v1.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.2), videogioco-5-duchi-gioco.md (v0.6), videogioco-5-duchi-meccaniche.md (v0.4), AGENTS.md
+documenti collegati: videogioco-5-duchi-lingue.md (v0.3), videogioco-5-duchi-lingue-immagini.md (v0.8), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-fonti-visive.md (v0.21), videogioco-5-duchi-furioso.md (v0.7), videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-mappe.md (v1.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.2), videogioco-5-duchi-gioco.md (v0.7), videogioco-5-duchi-meccaniche.md (v0.5), AGENTS.md
 ---
 
 # Audit delle questioni aperte: la lista
@@ -23,73 +23,29 @@ Il documento è verificato da `sorgenti/lingue/conta_questioni.py`, che confront
 | | |
 |---|---|
 | Documenti con una sezione «Questioni aperte» | **17** |
-| Voci enumerate | **123** |
-| **Chiuse** | **35** |
-| **Aperte** | **88** |
-| Di cui bloccanti | quattro |
+| Voci enumerate | **125** |
+| **Chiuse** | **39** |
+| **Aperte** | **86** |
+| Di cui bloccanti | tre |
 | Di cui importanti (cambiano il gioco) | diciotto |
 | Di cui minori (si possono rimandare) | le altre |
 
 **Il criterio**, dichiarato perché un numero senza criterio non è un dato. Una **voce** è un punto numerato, un `### Q1` o una riga di tabella della sezione «Questioni aperte». Una voce è **chiusa** se porta la marcatura nella sua **prima riga** — «chiusa», «risolto», «ratificata», «confermata» — e non in tutto il corpo, perché una voce aperta spiega dentro il corpo quale parte è stata chiusa.
 
-**Una voce non è sempre una domanda.** In `lingue.md` Q3 ci sono due sotto-voci dentro una sola domanda. Le **123 voci non sono 123 domande**.
+**Una voce non è sempre una domanda.** In `lingue.md` Q3 ci sono due sotto-voci dentro una sola domanda. Le **125 voci non sono 125 domande**.
 
-**Nessuna delle trentacinque chiuse è bloccante**, e due delle quattro bloccanti rimaste non sono mai state domande: erano lavori, e sono stati fatti — i novanta pin il 02/10/2026, la tavolozza, le sagome, il fondo di Ferrara e i colori delle carte il 03/10/2026 (§7). Le decisioni prese hanno tolto lavoro, non lo hanno aggiunto.
+**Una sola delle trentanove chiuse è bloccante**: **B1**, chiusa il 07/10/2026 con la decisione di Pietro sui sette livelli per tappa. Delle bloccanti di un tempo, altre due non sono mai state domande: erano lavori, e sono stati fatti — i novanta pin il 02/10/2026, la tavolozza, le sagome, il fondo di Ferrara e i colori delle carte il 03/10/2026 (§7). Le decisioni prese hanno tolto lavoro, non lo hanno aggiunto.
 
 
-## 2. Le quattro bloccanti
+## 2. Le tre bloccanti
 
-Sono le uniche che fermano qualcosa, e sono le quattro che aspettano una **risposta**. Ognuna ha una scheda. La quinta, **B5**, era un lavoro e non una domanda: è fra le chiuse (§7).
-
----
-
-### B1 · I livelli linguistici e quelli informatici sono lo stesso livello o due?
-
-`lingue.md` §7 Q1 · **pro**: due sistemi paralleli nella stessa tappa dà 7 livelli per tappa (uno di informatica e uno per ciascuna delle sei lingue) ed è l'unica forma in cui i due percorsi si incontrano. **contro**: rende ogni tappa enorme, e le trenta tappe coprirebbero 150 informatici più 900 linguistici in un'ora di lezione; l'alternativa «lingue dentro l'informatica» cancella le 900 unità di gioco. **valutazione**: è la decisione con la conseguenza più grande e la meno reversibile; va presa con la stima delle schermate per tappa, che nessuno ha fatto. **responsabilità**: Pietro. **blocca**: i dati dei livelli, la scelta delle immagini, tutte le tappe linguistiche, i testi autentici, la progressione.
-
-#### B1 in parole semplici
-
-*(03/10/2026 — Pietro ha chiesto di capire la B1 «meglio, con parole più semplici». Questa è la spiegazione; quella sopra è la scheda operativa. Nessuna delle due chiude la domanda: la decisione è di Pietro.)*
-
-**Il gioco insegna due cose: l'informatica e le lingue.** Dell'informatica hai deciso **150 livelli**: cinque anni, trenta tappe all'anno. Delle lingue ne hai immaginati **900**: sei lingue, trenta livelli per lingua, cinque anni.
-
-Le due cose non possono stare nella stessa lista. La domanda è una sola, e si può fare in italiano di tutti i giorni:
-
-> **Quando il ragazzo è dentro la tappa 5-12, quante cose deve fare?**
-
-- **Oppure una.** Solo il livello di informatica. E i 900 livelli di lingue spariscono come unità di gioco: diventano contenuti che compaiono dentro alcuni livelli di informatica (l'inglese che serve a una tappa, il latino che serve a un'altra). Questo è «lingue dentro l'informatica».
-- **Oppure tante in fila.** Nella stessa tappa c'è il livello di informatica **e** un livello per ciascuna delle sei lingue: **7 livelli in una tappa sola** (1 + 6, non 32: il conto è stato rifatto il 03/10/2026 sui dati e ogni tappa linguistica porta esattamente sei lingue). È l'unica forma in cui i due percorsi si incontrano davvero. Con sette livelli, non con trentadue, la tappa **non diventa enorme**: i 150 informatici più i 900 linguistici sono **1050**, cioè 1050/150 = **7 per tappa**, e i dati dei 900 titoli sono già costruiti esattamente su questa forma — ogni tappa (anno, numero) ha sei righe, una per lingua. Il vero costo non è il numero di livelli, è che in un'ora di lezione ne facciamo sette invece di uno.
-- **Oppure a tappe alterne.** Le trenta tappe di un anno sono metà linguistiche e metà informatiche. Allora le tappe raddoppiano (diventano 300 in tutto), oppure se ne copre solo una parte e il progetto si presenta come un gioco di 150 livelli che in realtà ne copre 75.
-
-**Che cosa è già costruito e che cosa è bloccato.** Le 150 tappe informatiche esistono già quasi tutte: mappa, pin, ambienti, mezzi, luoghi. Quelle non aspettano la B1. I **900 livelli linguistici**, invece, non esistono come dati, e non possono esistere finché la domanda non è risolta: non si sa in che stanza stanno, e senza quello non si possono scrivere i testi né scegliere le immagini. **È questa la differenza fra «blocca tutto» e «blocca metà» che l'audit dichiarava e che questa scheda non ripete.**
-
-**Perché non la decido io, e perché è la decisione giusta che ti spetta.** Le tre scelte danno giochi diversi, non giochi uguali con dettagli diversi, e la differenza la si vede dopo: nel motore, nel tempo di lezione, nel numero di schermate. La stima delle schermate per tappa — che è ciò che servirebbe per scegliere — dipende da un prototipo che non esiste ancora. Quindi la domanda giusta non è «quale delle tre è giusta», ma:
-
-> **quando entri in una tappa, vedi un compito solo o un compito per ciascuna lingua?**
-
-#### Le tre proposte, e il conto che le rende diverse (03/10/2026)
-
-*(Pietro ha chiesto delle proposte. Il numero che le rende diverse è stato rifatto: la scheda sopra diceva **32 livelli per tappa**, ed è un errore — sono **sette**.)*
-
-**Il conto.** Una tappa vale **un livello di informatica e uno per ciascuna delle sei lingue**: 1 + 6 = **7**. Le trenta tappe di ogni anno per cinque anni sono 150 tappe, e 150 × 7 = **1050**, che è esattamente il numero dei premi che Pietro ha deciso il 03/10/2026. **La B1 e il numero dei premi sono la stessa domanda**, e la risposta che hai già dato — 1050 — è la risposta alla B1: *sette livelli per tappa, tutti nella stessa tappa*. Non è una coincidenza: i 900 titoli sono già costruiti su questa forma, ogni tappa (anno, numero) ha sei righe, una per lingua.
-
-Le tre proposte diventano quindi:
-
-| | Che cosa fa il giocatore in una tappa | Cosa costa | Rischio |
-|---|---|---|---|
-| **A. Sette in fila** | Sceglie la lingua del giorno, fa il livello di informatica e **un** livello linguistico. Gli altri cinque restano lì. | Niente: è la forma dei dati. | Che il gioco prometta sei lingue e ne faccia una sola. |
-| **B. Tutte e sette** | Li fa tutti, o li fa a scelta fra quelli che gli sono da rimettere. | Il tempo di una tappa raddoppia: da un'ora a due, o da un livello a sette in un'ora. | Che in un'ora di lezione non si arrivi in fondo, e che la tappa sembri un muro. |
-| **C. Una lingua per tappa, e le altre in ricorrenza** | Ogni tappa porta una lingua principale; le altre cinque si incontrano ogni sei tappe, a rotazione, con le tappe che passano. | Una rotazione da scrivere, e le linguistiche diventano sei filoni invece di uno. | Che le sei lingue restino separate e non si incontrino mai, che è la cosa che il progetto voleva evitare. |
-
-**La mia proposta è A, con una correzione che la rende onesta.** In A la scelta della lingua è del giocatore, e questo è il punto: **un ragazzo di un liceo scientifico a Ferrara studia due lingue straniere, non sei**. Le sei lingue sono il progetto del professore, non la giornata dello studente. Quindi A è la forma giusta se il gioco **dichiara** che in una tappa si fa l'informatica e una lingua a scelta, e che le altre cinque si incontrano a rotazione — cioè A e C insieme, con la rotazione dichiarata e non nascosta.
-
-**Perché non B.** Non perché sia impossibile, ma perché mette nella stessa ora **sette livelli con sette soglie diverse**, e la difficoltà di una tappa smette di essere una cosa che si misura. La `pedagogia.md` chiede una **sfida a mani nude ogni quindici livelli**: con sette livelli in fila, la sfida arriva ogni due tappe e perde il senso. Con uno, arriva ogni quindici tappe, come è scritto.
-
-**Che cosa non cambia con nessuna delle tre**: i 1050 premi (uno per livello, come hai deciso), le nove componenti del livello, il file `.txt` di consegna, e le tappe informatiche già costruite — che non aspettano questa risposta da nessuna delle tre.
+Sono le uniche che fermano qualcosa, e sono le tre che aspettano una **risposta**. Ognuna ha una scheda. **B1** è chiusa il 07/10/2026 con una decisione di Pietro; **B5** era un lavoro e non una domanda. Tutte e due sono anche fra le chiuse (§7).
 
 ---
 
-**Quello che si può fare intanto, e che è già stato fatto.** Nessuna delle trenta tappe di informatica aspetta questa risposta: i 150 ambienti, le coordinate, i mezzi e i luoghi sono costruiti senza di lei. È la stessa regola che vale per le altre tre bloccanti: **mentre si decide, si costruisce quello che si può costruire** (`percorsi.md` §1.2 dice perché i mezzi dell'anno 4 sono stati scelti senza aspettare nessuna decisione).
+### B1 · I livelli linguistici e quelli informatici sono lo stesso livello o due? — **chiusa il 07/10/2026**
+
+`lingue.md` §7 Q1 · **Decisione di Pietro**: due sistemi paralleli nella stessa tappa. **Ogni tappa contiene sette livelli**, quello di informatica e uno per ciascuna delle sei lingue, ognuno con la propria soglia, e il ragazzo li fa tutti. Il conto dei premi resta 1050. Le due conseguenze ancora da decidere sono fra le importanti: **I23** (che cosa apre la tappa successiva) e **I24** (l'ordine dei sette livelli e il tempo di una tappa). La scheda com'era, con la spiegazione in parole semplici e le tre proposte, è nello storico (`storico.md` §1.18).
 
 ---
 
@@ -135,9 +91,11 @@ Quelle che, se risposte male, cambiano il gioco. In ordine di peso.
 | I17 | **Il formato del file di consegna.** (`meccaniche.md`) | `.txt` è la proposta, ed è leggibile ovunque | Il PDF è più sicuro contro le manomissioni | `.txt` con firma, e la firma è ciò che rende la consegna verificabile | Pietro |
 | I18 | **Il gioco è un modulo della piattaforma gamificata o un prodotto a sé?** (`meccaniche.md`, `curricolo.md`) | Le due scelte danno requisiti diversi su privacy, punteggio, consegna | Rimandarla non blocca niente subito | Prodotto a sé, con i requisiti della piattaforma come caso particolare | Pietro |
 | I19 | ~~**I colori dei fondi geografici.**~~ **chiusa il 03/10/2026** (`fonti-visive.md` Q4) | — | — | **Fatto**: `dati/fonti_visive/colori_cartografici.json`, 17 voci (16 dichiarate con motivo e criterio, 3 prese dalla tavolozza con l'esadecimale confrontato byte per byte), la regola che **una categoria con il riempimento ha anche il bordo**, e `verifica_colori.py` (C1–C7). **Cercandoli è saltato fuori un difetto che non era di colori**: `mondo_admin1_copertura.json` stava dentro `dati/mappe/` e faceva crashare il lettore | Il progetto |
-| I20 | **La carta del personaggio e il premio: restano tutti e due?** (`modello-di-livello.md` Q1) | La carta è il personaggio e regge il ripasso a distanza; il premio è un oggetto che il personaggio non è | L'inventario chiuso dei sette elementi non nomina la carta né le visioni, e due collezioni possono sembrare una ripetizione | Tenerle tutte e due, con ruoli diversi, e aggiungerle all'inventario; è anche la regola provvisoria | Pietro |
+| I20 | ~~**La carta del personaggio e il premio: restano tutti e due?**~~ **chiusa il 07/10/2026** (`modello-di-livello.md` Q1) | — | — | **Decisione di Pietro: tutti e due.** La carta è il personaggio e regge il ripasso, il premio è l'oggetto del livello; carta e visioni sono nell'elenco dell'inventario, e la collezione delle carte è il quinto registro (`inventario.md` §1, §3) | Pietro |
 | I21 | **Prove di corte e tappe a mani nude sono la stessa cosa?** (`modello-di-livello.md` Q3) | I dati hanno 15 prove (x-10, x-20, x-30), `pedagogia.md` 10 tappe a mani nude (x-15, x-30): coincidono solo alle x-30 | Fonderle cambia la cadenza che il modello pedagogico chiede; tenerle separate fa della x-15 un livello con due nature | Tenerle distinte e decidere che cosa diventa la x-15 prima di scriverla | Pietro |
-| I22 | **«Nessuna risposta scritta» e gli strumenti veri** (`modello-di-livello.md` Q4) | Il divieto rende inutile incollare una risposta da un'IA | Python, formule e comandi si scrivono, e le lingue chiedono esercizi di produzione | Il divieto vale per il testo libero; codice e formule si scrivono e si verificano eseguendoli sui dati di quello studente | Pietro |
+| I22 | ~~**«Nessuna risposta scritta» e gli strumenti veri**~~ **chiusa il 07/10/2026** (`modello-di-livello.md` Q4) | — | — | **Decisione di Pietro: si accetta anche il testo libero.** Lo valuta il docente nel report, non il gioco; per la soglia contano solo risposte che il gioco corregge da solo, e codice, formule e comandi si verificano eseguendoli (`modello-di-livello.md` §3) | Pietro |
+| I23 | **Che cosa apre la tappa successiva: la soglia di informatica, o tutte e sette?** (`lingue.md` Q10) | Con la sola informatica il percorso non si ferma per una lingua, e l'informatica è il centro del gioco | Le lingue possono restare indietro senza che il gioco lo dica; con tutte e sette, una sola lingua difficile ferma tutto | Va decisa prima di costruire la seconda tappa: decide come si legge «tappa superata» nel file di consegna | Pietro |
+| I24 | **L'ordine dei sette livelli in una tappa, e il tempo di una tappa** (`lingue.md` Q11) | Un ordine fisso (prima l'informatica, che porta il personaggio) dà a ogni tappa la stessa forma | Sette livelli non stanno in una sessione di 10–20 minuti, e un ordine fisso può non adattarsi a chi gioca | Dopo I23; il tempo si misura sul prototipo, come I12 | Pietro |
 
 
 ## 4. Le altre, in sintesi
@@ -146,7 +104,7 @@ Le **restanti**: minori, o già decise nella sostanza e che aspettano solo l'ese
 
 **Il numero di ogni intestazione è il conto delle voci aperte di quel documento meno le importanti che il §3 elenca già**, e `sorgenti/lingue/conta_questioni.py` lo confronta: il §4 si intitola «Le altre», e un numero che contasse anche le importanti sarebbe doppio. Ogni documento con voci aperte deve comparire in un'intestazione — `itinerari.md` c'era rimasto fuori fino al 04/10/2026, e la sua voce era contata ma non elencata da nessuna parte. Le cifre fuori dalle parentesi sono nomi, non conteggi: il 3 di «Anno 3» non è un numero di voci.
 
-### Sistema linguistico (`lingue.md` 8, `lingue-immagini.md` 1)
+### Sistema linguistico (`lingue.md` 7, `lingue-immagini.md` 1)
 
 | Domanda | Chi decide |
 |---|---|
@@ -238,11 +196,10 @@ Le **restanti**: minori, o già decise nella sostanza e che aspettano solo l'ese
 | Safe Exam Browser e la proposta al regolamento d'istituto sui dispositivi indossabili | Pietro **e l'istituto** |
 | La specifica della modalità accessibile | Il progetto **e il progetto di accessibilità del gioco** |
 
-### Modello di livello (`modello-di-livello.md` 2)
+### Modello di livello (`modello-di-livello.md` 1)
 
 | Domanda | Chi decide |
 |---|---|
-| Il ripasso Leitner all'inizio della tappa resta obbligatorio accanto ai test di ingresso, diventa facoltativo, o i test lo sostituiscono? | Pietro |
 | I campi `Modalità` e «processi di pensiero» proposti da `pedagogia.md` entrano nella scheda del livello? | Pietro |
 
 ### Itinerari (`itinerari.md` 1)
@@ -265,11 +222,11 @@ Tre questioni compaiono in due documenti, e una è la stessa identica:
 
 ## 6. La sequenza che chiude tutto
 
-Le quattro bloccanti hanno una catena sola.
+Le tre bloccanti hanno una catena sola.
 
-**B2** (voci confermate) viene **prima** di **B4** (chi guarda le immagini): cercare le immagini prima di aver confermato le voci è lavoro da rifare. **B1** (livelli linguistici o informatici) decide quanti tipi di tappa esistono, e quindi decide se B4 ha senso come domanda.
+**B2** (voci confermate) viene **prima** di **B4** (chi guarda le immagini): cercare le immagini prima di aver confermato le voci è lavoro da rifare. **B1**, che decideva quanti tipi di tappa esistono e quindi se B4 aveva senso, è chiusa il 07/10/2026: ogni tappa ha sei livelli linguistici, e le immagini degli oggetti servono a tutti e sei.
 
-La catena è: **B1 → B2 → B4**. **B3** (la LIS) è indipendente e parte in parallelo, ed è la più lenta.
+La catena è: **B2 → B4**. **B3** (la LIS) è indipendente e parte in parallelo, ed è la più lenta.
 
 > **Mentre si decide, si costruisce quello che si può costruire.** Le tappe informatiche non aspettano le bloccanti: mappa, pin, ambienti, mezzi e luoghi si costruiscono senza le loro risposte, e molte delle chiusure del §7 erano lavori, non domande.
 
@@ -282,6 +239,10 @@ Il conto delle voci chiuse del §1 è un'altra cosa: lo fa `conta_questioni.py` 
 | Voce | Chiusa il | Esito | Dove sta oggi |
 |---|---|---|---|
 | **B5** · i pin degli anni 2, 3 e 4 sono verificati? | 02/10/2026 | Era un lavoro e non una domanda: i pin sono slot, uno per tappa, e dietro ci sono meno posti distinti; otto controlli automatici e due coordinate corrette (Baghdad, Karakorum) | `mappe.md` §8bis, `sorgenti/gis/verifica_pin.py` |
+| **B1** · i livelli linguistici e quelli informatici sono lo stesso livello o due? | 07/10/2026 | Decisione di Pietro: sette livelli per tappa, informatica e sei lingue, ognuno con la sua soglia; il ragazzo li fa tutti | `lingue.md` Q1, `modello-di-livello.md` §0–§2 |
+| **I20** · la carta del personaggio e il premio | 07/10/2026 | Decisione di Pietro: tutti e due; carta e visioni entrano nell'inventario, la collezione delle carte è il quinto registro | `modello-di-livello.md` §9 Q1, `inventario.md` §1, §3 |
+| **I22** · «nessuna risposta scritta» e gli strumenti veri | 07/10/2026 | Decisione di Pietro: testo libero ammesso, valutato dal docente; per la soglia solo risposte corrette dal gioco | `modello-di-livello.md` §3, §9 Q4 |
+| Il ripasso a distanza accanto ai test di ingresso | 07/10/2026 | Decisione di Pietro: tutti e due, con ruoli diversi; il ripasso Leitner è obbligatorio nella soglia, i test sono facoltativi | `modello-di-livello.md` §9 Q2, `gioco.md` §4.2 |
 | **I2** · la tavolozza | 03/10/2026 | Si dichiarano i colori di ogni fonte invece di ricolorare tutto: ogni colore ha la sua fonte | `dati/fonti_visive/tavolozza.json`, `fonti-visive.md` §3 |
 | **I3** · le sagome degli edifici | 03/10/2026 | Sagome da OpenStreetMap; un edificio senza altezza misurata diventa un volume neutro dichiarato, non una stima | `dati/edifici_footprint.json`, `fonti-visive.md` §3 |
 | **I4** · il fondo di Ferrara | 03/10/2026 | Le mura da OpenStreetMap, con la tolleranza più piccola che tiene dentro tutte le tappe del primo anno | `dati/ferrara_fondo.json`, `fonti-visive.md` §3 |
@@ -300,6 +261,7 @@ Il conto delle voci chiuse del §1 è un'altra cosa: lo fa `conta_questioni.py` 
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 07/10/2026 | 0.29 | **Le decisioni di Pietro del 07/10/2026.** B1 chiusa: sette livelli per tappa, e le bloccanti passano da quattro a tre, con la catena B2 → B4. I20 (carta e premio) e I22 (testo libero) chiuse; nuove importanti I23 (che cosa apre la tappa successiva) e I24 (ordine dei sette livelli e tempo della tappa), da `lingue.md` Q10 e Q11. Il ripasso a distanza esce dal §4. Le quattro chiusure sono nella tabella del §7; la scheda di B1 com'era è in `storico.md` §1.18. Conto: 125 voci, 39 chiuse, 86 aperte. |
 | 07/10/2026 | 0.28 | Tre importanti nuove, I20–I22 (carta e premio, prove e tappe a mani nude, risposte scritte e strumenti veri), e una sezione del §4 per le altre due domande del modello di livello; il conto passa a 123 voci in 17 sezioni, 35 chiuse e 88 aperte, perché il modello aggiunge cinque voci e in `gioco.md` la ricerca dei ritratti è chiusa. |
 | 06/10/2026 | 0.27 | Il §6 dice la catena delle bloccanti e la regola «mentre si decide, si costruisce» al presente; il racconto di B5 e delle chiusure del 03/10, con il rimando al §3bis che non esiste più, è in `storico.md` §1.17. Con questa versione l'audit è in ordine: sezioni da §0 a §8, una scheda per questione, le chiuse in §7 e il registro in fondo (fase 1 della roadmap). |
 | 06/10/2026 | 0.26 | **Il racconto esce, le questioni restano.** Le sedici sezioni aggiunte dopo ogni chiusura e ogni lezione di metodo (2bis, da 3bis a 3quinquagesim, 3octies), circa 59 000 caratteri, sono state spostate alla lettera in `storico.md` §1 (fase 1 della roadmap). Al loro posto c'è il §7, «Le questioni chiuse»: voce, data, esito in una riga e dove sta oggi il risultato. Il registro è il §8, e la riga della v0.1, rimasta in fondo al file dopo le sezioni di racconto, è tornata nel registro. I rimandi a §2bis e §3bis puntano al §7. |

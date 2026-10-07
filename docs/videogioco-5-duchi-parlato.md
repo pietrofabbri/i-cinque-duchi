@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — Ascolto e parlato (la parte orale delle sei lingue)
 tipo: normativo
-versione: 0.3
-data: 2026-10-03
+versione: 0.4
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: richiesta di Pietro del 03/10/2026 («per ferrarese, inglese e meno spesso in italiano, occorrerà anche una parte cospicua di speaking e di listening: occorre un modo per rendere questo possibile nel gioco»); fatti tecnici e fonti verificati il 03/10/2026 con le API di Wikimedia
-documenti collegati: videogioco-5-duchi-lingue.md (v0.2, le sei lingue e i 900 livelli), videogioco-5-duchi-meccaniche.md (v0.3, il file unico e la privacy), videogioco-5-duchi-gioco.md (v0.5, gli strumenti che girano nel browser), videogioco-5-duchi-esercizi.md (v0.1, le famiglie di esercizi), videogioco-5-duchi-pedagogia.md (v0.2), videogioco-5-duchi-premi.md (v0.8)
+documenti collegati: videogioco-5-duchi-lingue.md (v0.2, le sei lingue e i 900 livelli), videogioco-5-duchi-meccaniche.md (v0.3, il file unico e la privacy), videogioco-5-duchi-gioco.md (v0.5, gli strumenti che girano nel browser), videogioco-5-duchi-esercizi.md (v0.1, le famiglie di esercizi), videogioco-5-duchi-pedagogia.md (v0.2), videogioco-5-duchi-premi.md (v0.9)
 ---
 
 # Ascolto e parlato: come si rende possibile nel gioco
@@ -116,7 +116,7 @@ non è registrato da nessuna parte; l'unico modo di averlo è **chiedere a chi l
 
 Il gioco può quindi chiedere a uno studente (o alla classe, o al gruppo di famiglia) di
 **registrare una frase della propria lingua** e di metterla nel **quaderno dei segni e
-delle voci**, che è già uno dei quattro registri personali (`inventario.md` §3). Da quel
+delle voci**, che è già uno dei cinque registri personali (`inventario.md` §3). Da quel
 momento il gioco ha un pezzo di ferrarese autentico che **non poteva esistere prima**,
 e che è di un ragazzo di quindici anni.
 
@@ -233,6 +233,8 @@ Cosa si può costruire senza aspettare nessuna decisione:
 4. **Le cinque decisioni** di §6.
 
 ## 8. Registro delle modifiche
+
+- **v0.4 (07/10/2026)**: I registri personali sono cinque dal 07/10/2026 (la collezione delle carte).
 
 - **v0.3 (05/10/2026)**: **Il rimando è l'unica cosa che cambia.** Un documento collegato è salito di versione e questo rimando è rimasto indietro: la riga è sbagliata e non sembra, perché un rimando che cita una versione superiore a quella vera sembra un rimando fermo. Qui dentro non cambia nient'altro — e si scrive lo stesso, perché una riga che cambia è una riga che cambia.  **E il registro aveva perso una versione**: il documento era a v0.2 e le sue righe erano v0.1 e — da oggi — v0.3, con la v0.2 fuori. R1 non lo vedeva perché confrontava gli intervalli fra le versioni **presenti**, e fra 0.1 e 0.1 non c'è intervallo: il controllo guardava il buco solo dopo che un buco gli era stato messo sotto gli occhi. Ora R1 confronta anche la versione **dichiarata** nel frontespizio, che è il numero che il documento dichiara di sé e che nessuno dei cinque controlli leggeva.
 - **v0.2 (03/10/2026)**: **i cinque livelli e il conto delle registrazioni.** Il documento passa dalla stesione alla parte preparata: la Web Speech API è esclusa perché manda l'audio ai server di Google e il gioco non ha un server, L5 (riconoscimento automatico) è **dichiarata non fatta** perché i modelli locali funzionano offline ma non hanno un modello del ferrarese, e `verifica_parlato.py` morde se qualcuno la scrive come fatta. I numeri sono contati su `dati/lingue/audio_disponibile.json` e non ricordati: inglese **89 381**, italiano **9 179**, greco 79, latino 24, **ferrarese 0** — e questa è la conseguenza che decide l'architettura: per il ferrarese l'ascolto è voce della famiglia registrata a mano. La parte che regge il gioco è L3 (durata, pause, ritmo, riascolto), quattro misure che sono un dato e non un giudizio, e funzionano anche per chi non può parlare.

@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — Esercizi, meccaniche, testo e linguaggio
 tipo: normativo
-versione: 0.2
+versione: 0.3
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: indicazioni di Pietro del 30/09/2026
@@ -43,7 +43,7 @@ documenti collegati: videogioco-5-duchi-gioco.md, videogioco-5-duchi-tappa-1-01.
 
 ## 2. Catalogo dei meccanismi
 
-Ogni meccanismo ha un **aspetto proprio** (colore, forma, disposizione), così lo studente vede sempre qualcosa di nuovo. Si usano con il tocco o il clic, senza trascinamenti obbligatori, così funzionano anche sul telefono. Nessun meccanismo della bottega richiede di scrivere testo libero, quindi non si può incollare una risposta presa da un'IA. Come questa regola sta insieme agli strumenti veri di `gioco.md` §2 (codice, formule, comandi) è la domanda Q4 di `modello-di-livello.md` §9.
+Ogni meccanismo ha un **aspetto proprio** (colore, forma, disposizione), così lo studente vede sempre qualcosa di nuovo. Si usano con il tocco o il clic, senza trascinamenti obbligatori, così funzionano anche sul telefono. I meccanismi che contano per la soglia sono a scelta, ordine, collegamento e manipolazione: il gioco deve sapere da solo se la risposta è giusta. **Le risposte in testo libero sono ammesse** (decisione di Pietro del 07/10/2026): il gioco non le valuta, le mette nel file di consegna e le valuta il docente; nei campi di risposta l'incolla è bloccato (`meccaniche.md` §2.6). Codice, formule e comandi si scrivono e il gioco li verifica eseguendoli sui dati generati per quello studente (`modello-di-livello.md` §3).
 
 | Codice | Meccanismo | Forma visiva | Passaggi | Usato in |
 |---|---|---|---|---|
@@ -112,6 +112,8 @@ Ogni meccanismo ha un **aspetto proprio** (colore, forma, disposizione), così l
 - **Zona percorribile:** stile a tessere, figure in pixel 16 × 24, dialoghi in un riquadro con bordo spesso (vedi `videogioco-5-duchi-gioco.md` §3.5 e `motore-e-grafica.md` §0).
 
 ## 6. Registro modifiche
+
+- **v0.3 (07/10/2026)**: Le risposte in testo libero sono ammesse (decisione di Pietro del 07/10/2026): non contano per la soglia, le valuta il docente, e nei loro campi l'incolla è bloccato.
 
 - **v0.2 (07/10/2026)**: La soglia del livello è scritta nella tabella del §1 (4 esercizi validi all'ultimo gradino); il divieto di scrivere vale per il testo libero della bottega, con il rimando alla domanda sugli strumenti veri; le figure della zona sono 16×24 (fase 2 della roadmap: allineamento al modello di livello).
 

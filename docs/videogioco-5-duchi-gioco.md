@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — Come si gioca: interazione, strumenti veri, carte dei personaggi, memoria, contesto
 tipo: normativo
-versione: 0.6
+versione: 0.7
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
-documenti collegati: videogioco-5-duchi-esercizi.md (v0.2), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-tappa-1-01.md (v0.5), videogioco-5-duchi-anno1-mappa.md (v0.10), videogioco-5-duchi-meccaniche.md (v0.4), videogioco-5-duchi-schema-livelli.md (v1.1), videogioco-5-duchi-anno1-ferrara.md (v0.3)
+documenti collegati: videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-tappa-1-01.md (v0.6), videogioco-5-duchi-anno1-mappa.md (v0.10), videogioco-5-duchi-meccaniche.md (v0.5), videogioco-5-duchi-schema-livelli.md (v1.1), videogioco-5-duchi-anno1-ferrara.md (v0.3)
 ---
 
 # Come si gioca
@@ -232,7 +232,7 @@ Si gioca **sempre**, anche a casa. **In classe** si gioca occasionalmente, con g
 4. Decidere se per 1-25 e 1-26 usare lo strumento nel gioco, il file caricato o entrambi.
 5. Confermare la tappa 1-30: con Borso giocante, la proposta è **P93 La città** (vedi `anno1-mappa.md`).
 
-Le domande sul modello di livello nate dall'allineamento del 07/10/2026 (carta e premio, ripasso, prove e tappe a mani nude, risposte scritte e strumenti veri) sono in `modello-di-livello.md` §9.
+Le domande sul modello di livello nate dall'allineamento del 07/10/2026 sono in `modello-di-livello.md` §9. Lo stesso giorno Pietro ne ha decise tre: **la carta del personaggio resta accanto al premio** (§3 qui), **il ripasso a distanza resta obbligatorio** nella soglia accanto ai test di ingresso facoltativi (§4.2 qui), e **le risposte in testo libero sono ammesse**, valutate dal docente. Restano aperte le prove di corte e le tappe a mani nude, e i due campi nuovi della scheda.
 
 ## 8. Riferimenti
 
@@ -248,6 +248,8 @@ Le domande sul modello di livello nate dall'allineamento del 07/10/2026 (carta e
 - Strumenti: Pyodide (pyodide.org), v86 (github.com/copy/v86), sql.js, SheetJS: tutti software libero.
 
 ## 9. Registro modifiche
+
+- **v0.7 (07/10/2026)**: Le tre decisioni di Pietro del 07/10/2026 sul modello di livello: la carta resta accanto al premio, il ripasso a distanza resta obbligatorio, il testo libero è ammesso.
 
 - **v0.6 (07/10/2026)**: La bottega ha i quattro gradini di `esercizi.md` e il trasferimento va negli approfondimenti (§2.4); il ritratto della carta è 48×54 e la carta è distinta dal premio (§3.1); la ricerca dei ritratti è fatta (§3.2); il ripasso Leitner convive con i test di ingresso (§4.2); la questione 2 è chiusa e le domande nuove sono in `modello-di-livello.md` §9 (fase 2 della roadmap: allineamento al modello di livello).
 

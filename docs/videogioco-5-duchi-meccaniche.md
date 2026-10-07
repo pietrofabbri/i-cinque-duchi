@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — Salvataggio, consegna e integrità del punteggio
 tipo: normativo
-versione: 0.4
+versione: 0.5
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: requisiti di Pietro (28/09/2026), già emersi nel progetto "piattaforma gamificata"
@@ -26,6 +26,8 @@ Lo studente scarica **un solo file**, che è insieme:
 1. **il compito da consegnare** su Classroom;
 2. **un report leggibile** a colpo d'occhio dal docente;
 3. **il salvataggio** che il gioco rilegge per far ripartire lo studente esattamente da dove aveva lasciato.
+
+Dentro il file ci sono anche i cinque registri personali (`inventario.md` §3) e, dal 07/10/2026, **le risposte in testo libero** con la consegna a cui rispondono: il gioco non le valuta, il docente le legge nel report (`modello-di-livello.md` §3).
 
 ### 1.1 Formato
 
@@ -183,7 +185,7 @@ Non ci sono modalità separate. Gli studenti giocano **sempre, anche a casa**; *
 | Minaccia | Misura | Efficacia | Costo o effetti collaterali |
 |---|---|---|---|
 | Copia e incolla del testo verso un'IA | Disattivare selezione, copia, taglia e menu contestuale sui contenuti degli esercizi | Bassa (si aggira facilmente), ma elimina il gesto più comodo | Nessuno |
-| Incolla di risposte generate altrove | Bloccare l'incolla nei campi di risposta; comunque quasi tutte le risposte sono manipolazioni, non testo digitato (§2.1) | Media | Nessuno |
+| Incolla di risposte generate altrove | Bloccare l'incolla nei campi di risposta, compresi quelli di testo libero. Le risposte che contano per la soglia sono manipolazioni, non testo digitato (§2.1); il testo libero, ammesso dal 07/10/2026, non conta per la soglia e lo valuta il docente | Media | Nessuno |
 | Assistenti IA integrati nel browser, che leggono il testo della pagina | Disegnare le consegne degli esercizi su **canvas** invece che come testo della pagina | Media: l'assistente deve passare da uno screenshot, non può leggere il testo | **Rende la pagina illeggibile agli screen reader**: serve una modalità accessibile per gli studenti con PDP o PEI (§2.6.5) |
 | Screenshot o foto dati in pasto a un'IA | Istanze procedurali, interazione manipolativa, "prevedi prima di vedere" (§2.1–2.2); **un solo passo visibile alla volta**, così che uno screenshot non contenga mai l'intero problema | Media-alta: lo scambio diventa lento e costoso | Nessuno |
 | Condivisione di screenshot fra compagni | **Filigrana dinamica** sullo schermo con nome inserito, seme dell'istanza e ora | Deterrente: ogni immagine è riconducibile a chi l'ha prodotta e all'istanza, che comunque è diversa per ciascuno | Nessuno |
@@ -221,6 +223,8 @@ Non ci sono modalità separate. Gli studenti giocano **sempre, anche a casa**; *
 7. Specifica della modalità accessibile (§2.6.5).
 
 ## 4. Registro modifiche
+
+- **v0.5 (07/10/2026)**: Il file di consegna contiene i cinque registri e le risposte in testo libero (decisione del 07/10/2026); il blocco dell'incolla vale anche per i campi di testo libero, che non contano per la soglia.
 
 - **v0.4 (07/10/2026)**: La soglia del §2.3 è quella del modello di livello: 4 esercizi validi all'ultimo gradino (5 per le prove, provvisorio), al posto delle k = 3 istanze consecutive (fase 2 della roadmap: allineamento al modello di livello).
 

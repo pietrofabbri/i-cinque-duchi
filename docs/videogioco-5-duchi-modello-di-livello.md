@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — Il modello di livello: le parti di un livello, il loro ordine, le regole e la lista di controllo
 tipo: normativo
-versione: 0.1
+versione: 0.2
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 controllo: python3 sorgenti/verifica_modello.py (K1-K4: NEED e POOL contro il codice degli esercizi, i tipi di livello contro i dati, le parti numerate e i documenti che citano, il numero delle domande)
-documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.1), videogioco-5-duchi-gioco.md (v0.6), videogioco-5-duchi-esercizi.md (v0.2), videogioco-5-duchi-meccaniche.md (v0.4), videogioco-5-duchi-tappa-1-01.md (v0.5), videogioco-5-duchi-premi.md (v0.8), videogioco-5-duchi-inventario.md (v0.3), videogioco-5-duchi-ripassi.md (v0.3), videogioco-5-duchi-pedagogia.md (v0.2), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-lingue.md (v0.2), videogioco-5-duchi-audit.md (v0.28)
+documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.1), videogioco-5-duchi-gioco.md (v0.7), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-meccaniche.md (v0.5), videogioco-5-duchi-tappa-1-01.md (v0.6), videogioco-5-duchi-premi.md (v0.9), videogioco-5-duchi-inventario.md (v0.4), videogioco-5-duchi-ripassi.md (v0.4), videogioco-5-duchi-pedagogia.md (v0.2), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-lingue.md (v0.3), videogioco-5-duchi-audit.md (v0.29)
 ---
 
 # Il modello di livello
@@ -14,7 +14,7 @@ documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.1), videogioco-5-d
 
 Questo documento dice **di che cosa è fatto un livello** del gioco, in che ordine il giocatore ne attraversa le parti, quali numeri lo regolano e quando un livello si può dire pronto. È la lista di controllo con cui si scrivono, o si riscrivono, i 150 livelli. Il primo a essere riscritto con questo modello è la tappa 1-1.
 
-**Che cosa copre.** Il **livello informatico** (`schema-livelli.md`, 150 livelli), nella forma completa dell'anno 1, e che cosa cambia negli anni 2–5 (§6). Il **livello linguistico** ha la sua anatomia in `lingue.md` §2 (nove componenti); **come i due stanno nella stessa tappa** è la domanda bloccante B1 (`audit.md` §2), e questo documento non la decide.
+**Che cosa copre.** Il **livello informatico** (`schema-livelli.md`, 150 livelli), nella forma completa dell'anno 1, e che cosa cambia negli anni 2–5 (§6). Il **livello linguistico** ha la sua anatomia in `lingue.md` §2 (nove componenti). **Una tappa contiene sette livelli**: quello di informatica e uno per ciascuna delle sei lingue, ognuno con la propria soglia, e il ragazzo li fa tutti (decisione di Pietro del 07/10/2026, `lingue.md` Q1). Che cosa apre la tappa successiva e in che ordine si fanno i sette livelli sono ancora da decidere (`lingue.md` Q10 e Q11).
 
 **Come si legge.** Ogni regola dice da quale documento viene. Le regole di dettaglio restano nei documenti d'origine: qui ci sono le regole che servono per costruire un livello, con il rimando. Dove due documenti si contraddicevano, qui c'è la regola che vale e il §8 dice perché. Dove la scelta spetta a Pietro, la regola è indicata come **provvisoria** e la domanda è nel §9.
 
@@ -26,16 +26,16 @@ Questo documento dice **di che cosa è fatto un livello** del gioco, in che ordi
 | 2 | **Tappa** | Il luogo (pin), il personaggio obbligatorio (la voce), la zona percorribile, l'aggancio fra personaggio e argomento | sì | anno 1: `anno1-mappa.md` §2; luoghi: `luoghi.md`; zona: `motore-e-grafica.md` §2 |
 | 3 | **Scheda di contesto** | Linea del tempo, tre righe (dove, quando, che cosa succede intorno), chi viene prima e dopo nel tempo, etichetta di attendibilità con la sua frase | sì | `gioco.md` §5 |
 | 4 | **Incontro** | Il personaggio parla di sé e della sua epoca, in prima persona, e propone la bottega | sì | `gioco.md` §3.5, `esercizi.md` §3–§4 |
-| 5 | **Ripasso a distanza** | 2–4 domande sulle carte delle tappe precedenti il cui intervallo è scaduto, prima della bottega | sì, **provvisoria** (§9 Q2) | `gioco.md` §4.2 |
+| 5 | **Ripasso a distanza** | 2–4 domande sulle carte delle tappe precedenti il cui intervallo è scaduto, prima della bottega | sì (decisione del 07/10/2026, §9 Q2) | `gioco.md` §4.2 |
 | 6 | **Bottega** | Gli esercizi, in quattro gradini con pool casuali | sì | `esercizi.md` §1–§2, §3 qui |
 | 7 | **Soglia** | La condizione per proseguire | sì | §3 qui |
 | 8 | **Pausa di autoregolazione** | Il cerchio che respira dopo due errori consecutivi | sì (scatta da sola) | `gioco.md` §3.6, `quadro-trasversale.md` §2.2 |
-| 9 | **Carta del personaggio** | Ritratto o emblema, motto, concetto, etichetta; entra nella collezione e nel ripasso | sì, **provvisoria** (§9 Q1) | `gioco.md` §3.1, §4.3 |
+| 9 | **Carta del personaggio** | Ritratto o emblema, motto, concetto, etichetta; entra nella collezione e nel ripasso | sì (decisione del 07/10/2026, §9 Q1) | `gioco.md` §3.1, §4.3; `inventario.md` §1 |
 | 10 | **Premio** | Un oggetto vero con tre righe (`chi`, `cosa`, `riflessione`), che va nella salvadanaio | sì, uno per livello | `premi.md` §3–§4 |
 | 11 | **Rimando** | La battuta che indica la tappa successiva; si sente solo dopo la soglia | sì | `anno1-mappa.md` §2 |
 | 12 | **Visioni** | I due approfondimenti del livello, uno dopo l'altro, con un personaggio facoltativo | no | `gioco.md` §3.4 |
 | 13 | **Chicche** | Oggetti da guardare nella zona; al massimo una porta l'aggancio trasversale | no | `quadro-trasversale.md` §2.2 |
-| 14 | **Oggetto di interazione e test di ingresso** | La voce di una delle sei lingue e le dieci domande di ripasso | no | `inventario.md` §1, `ripassi.md`; la loro collocazione nella tappa dipende da B1 |
+| 14 | **Livelli linguistici, oggetto di interazione e test di ingresso** | I sei livelli linguistici della tappa, uno per lingua, ciascuno con le sue nove componenti e la sua soglia; in ciascuno la voce dell'oggetto e le dieci domande del test di ingresso | i sei livelli sì; l'oggetto e il test no | `lingue.md` §2, Q1; `inventario.md` §1; `ripassi.md`. L'ordine nella tappa e che cosa apre la tappa successiva: `lingue.md` Q10, Q11 |
 | 15 | **Registrazione** | Che cosa del livello finisce nel file di consegna | sì (automatica) | `meccaniche.md` §1, §4 qui |
 
 **Due cose che non sono parti del livello.** Il **viaggio** (pin, strada e mezzo, `percorsi.md`) è il passaggio da una tappa all'altra, non un pezzo della tappa. La **fascia bianca** (`inventario.md` §1, elemento 7) esiste solo nel quinto anno, alla tappa 5-30 (`anno5-mondo.md` §7.3).
@@ -57,6 +57,8 @@ MAPPA ─▶ ENTRA ─▶ CONTESTO ─▶ INCONTRO ─▶ RIPASSO ─▶ BOTTEGA
 5. **Bottega**, fino alla soglia (§3).
 6. **Carta e premio**, poi il **rimando**. Dopo la soglia si apre l'uscita verso la tappa successiva e compaiono le visioni.
 7. **Visioni.** A1 si apre dopo la soglia, A2 dopo A1. Non servono per proseguire e restano disponibili anche dopo.
+
+Il flusso disegnato qui è quello del **livello informatico**. Nella stessa tappa ci sono i **sei livelli linguistici** (§1, parte 14); dove si collocano rispetto a questo flusso, e se la tappa successiva si apre prima che siano finiti, è `lingue.md` Q10 e Q11.
 8. **Uscita.** Attraversando il confine nel punto segnato si torna alla mappa, dove la tappa successiva compare come «?».
 
 ## 3. La bottega e la soglia: i numeri
@@ -76,7 +78,7 @@ MAPPA ─▶ ENTRA ─▶ CONTESTO ─▶ INCONTRO ─▶ RIPASSO ─▶ BOTTEGA
 
 **Meccanismi.** Si usano con il tocco o il clic, senza trascinamenti obbligatori, così funzionano anche sul telefono. In una tappa nessun meccanismo compare più di due volte di fila, e ogni tappa introduce almeno un meccanismo nuovo rispetto alla precedente. Il catalogo è in `esercizi.md` §2. **Il principio «prevedi prima di vedere»** vale ovunque si possa: il giocatore si impegna su una previsione prima che il gioco mostri il risultato, e la previsione entra nella coerenza (`meccaniche.md` §2.1).
 
-**Risposte.** Nei meccanismi della bottega non si scrive testo libero: si sceglie, si ordina, si collega, si manipola (`esercizi.md` §2). Come questa regola sta insieme agli strumenti veri — codice, formule, comandi — è la domanda §9 Q4.
+**Risposte** (decisione di Pietro del 07/10/2026, §9 Q4). Le risposte possono essere anche **in testo libero**. Il testo libero non lo valuta il gioco: finisce nel file di consegna e lo **valuta il docente**, nel report. Codice, formule e comandi si scrivono e il gioco li verifica **eseguendoli** sui dati generati per quello studente (`gioco.md` §2.2). I meccanismi a scelta, ordine, collegamento e manipolazione (`esercizi.md` §2) restano la forma della bottega dove il gioco deve sapere da solo se la risposta è giusta, cioè sempre per la soglia.
 
 **Il quinto gradino.** Il trasferimento dello stesso concetto in un contesto diverso, che `gioco.md` §2.4 chiamava quinto gradino, non è un gradino della bottega: sta negli approfondimenti, cioè nelle visioni.
 
@@ -88,6 +90,7 @@ MAPPA ─▶ ENTRA ─▶ CONTESTO ─▶ INCONTRO ─▶ RIPASSO ─▶ BOTTEGA
 | Il premio, con le tre righe | salvadanaio | `premi.md` §4.1–§4.2 |
 | Stato, punti, indice di processo, tempo, tentativi, errori, suggerimenti del livello | file di consegna, dettaglio per livello | `meccaniche.md` §1.2–§1.3 |
 | I semi delle istanze affrontate | file di consegna (per rigenerarle in classe) | `meccaniche.md` §2.2, §2.5 |
+| Le risposte in testo libero, con la consegna a cui rispondono | file di consegna, per la valutazione del docente; il gioco non le valuta | §3 qui |
 | Gli indicatori da guardare (esito giusto con coerenza bassa, tempi implausibili) | file di consegna, come spunti per un colloquio e mai come sanzioni | `meccaniche.md` §2.4 |
 
 ## 5. Testo, linguaggio, grafica
@@ -162,16 +165,17 @@ Il 07/10/2026 il nucleo di gioco e i documenti scritti dopo si contraddicevano i
 
 ## 9. Questioni aperte
 
-Sono domande per Pietro, emerse allineando il nucleo di gioco. Fino alla risposta valgono le regole provvisorie indicate. La prima, la terza e la quarta cambiano il gioco, e sono anche nell'audit fra le importanti (`audit.md` §3, I20–I22).
+Sono domande per Pietro, emerse allineando il nucleo di gioco. Fino alla risposta valgono le regole provvisorie indicate. La prima, la terza e la quarta cambiano il gioco, e sono anche nell'audit fra le importanti (`audit.md` §3, I20–I22). Il 07/10/2026 Pietro ha risposto alla prima, alla seconda e alla quarta; restano aperte la terza e la quinta.
 
-1. **La carta del personaggio e il premio: restano tutti e due?** Il prototipo dà una carta per ogni personaggio incontrato (`gioco.md` §3.1), con il motto e il livello di padronanza per il ripasso. Il 03/10 sono arrivati il premio di ogni livello e la salvadanaio (`premi.md` §4), e l'elenco dei sette elementi dell'inventario (`inventario.md` §1) non nomina né la carta né le visioni. *Provvisorio:* tutti e due. La carta è il personaggio e serve al ripasso; il premio è un oggetto che il personaggio non è, perché la prova 3 vieta che il premio sia già nella storia (`premi.md` §3). *Da decidere:* tenerli entrambi e aggiungere carta e visioni all'inventario, oppure far assorbire la carta dal premio, e allora va deciso su che cosa poggia il ripasso.
-2. **Il ripasso all'inizio della tappa resta accanto ai test di ingresso?** `gioco.md` §4.2 mette 2–4 domande sulle carte in scadenza (Leitner) dentro la soglia di ogni tappa; `ripassi.md` ha introdotto dieci domande facoltative ai punti di interazione, per le lingue e gli ambiti trasversali, e dice che non sono la soglia dei livelli informatici (§4). *Provvisorio:* tutti e due, con ruoli diversi. *Da decidere:* se il ripasso Leitner resta obbligatorio, se diventa facoltativo come i test, o se i test lo sostituiscono.
+1. **La carta del personaggio e il premio: restano tutti e due?** — **chiusa il 07/10/2026: tutti e due.** La carta è il personaggio e regge il ripasso; il premio è l'oggetto del livello. Carta e visioni entrano nell'elenco dell'inventario, e la collezione delle carte è un registro personale (`inventario.md` §1, §3). *La domanda com'era posta:* Il prototipo dà una carta per ogni personaggio incontrato (`gioco.md` §3.1), con il motto e il livello di padronanza per il ripasso. Il 03/10 sono arrivati il premio di ogni livello e la salvadanaio (`premi.md` §4), e l'elenco dei sette elementi dell'inventario (`inventario.md` §1) non nomina né la carta né le visioni. *Provvisorio:* tutti e due. La carta è il personaggio e serve al ripasso; il premio è un oggetto che il personaggio non è, perché la prova 3 vieta che il premio sia già nella storia (`premi.md` §3). *Da decidere:* tenerli entrambi e aggiungere carta e visioni all'inventario, oppure far assorbire la carta dal premio, e allora va deciso su che cosa poggia il ripasso.
+2. **Il ripasso all'inizio della tappa resta accanto ai test di ingresso?** — **chiusa il 07/10/2026: tutti e due, con ruoli diversi.** Il ripasso Leitner resta obbligatorio e fa parte della soglia della tappa; i test di ingresso restano facoltativi, per le lingue e gli ambiti trasversali (`ripassi.md` §4). *La domanda com'era posta:* `gioco.md` §4.2 mette 2–4 domande sulle carte in scadenza (Leitner) dentro la soglia di ogni tappa; `ripassi.md` ha introdotto dieci domande facoltative ai punti di interazione, per le lingue e gli ambiti trasversali, e dice che non sono la soglia dei livelli informatici (§4). *Provvisorio:* tutti e due, con ruoli diversi. *Da decidere:* se il ripasso Leitner resta obbligatorio, se diventa facoltativo come i test, o se i test lo sostituiscono.
 3. **Prove di corte e tappe a mani nude sono la stessa cosa?** I dati hanno 15 prove (x-10, x-20, x-30); `pedagogia.md` §3 vuole 10 tappe a mani nude (x-15, x-30), che nei dati non ci sono. Coincidono solo alle x-30. *Provvisorio:* sono due cose distinte; la prova ha la soglia di 5 (`meccaniche.md` §2.3) e le tappe a mani nude non sono ancora costruite. *Da decidere:* se la tappa x-15 resta un livello normale con in più la sfida, se diventa un tipo nuovo, o se le due cose si fondono.
-4. **«Nessuna risposta scritta» e gli strumenti veri.** `esercizi.md` §2 e `tappa-1-01.md` §7 vietano le risposte scritte, perché si incollerebbero da un'IA; `gioco.md` §2 chiede di scrivere codice Python, formule, comandi di shell, e `lingue.md` §2 chiede esercizi di produzione. *Provvisorio:* il divieto vale per le risposte in testo libero; codice, formule e comandi si scrivono e si verificano eseguendoli sui dati generati per quello studente (`gioco.md` §2.2). *Da decidere:* se è questa la regola, e come si fa la produzione nelle lingue.
+4. **«Nessuna risposta scritta» e gli strumenti veri.** — **chiusa il 07/10/2026: si accetta anche il testo libero**, valutato dal docente nel report e non dal gioco; codice, formule e comandi si verificano eseguendoli (§3). La produzione nelle lingue si fa così. *La domanda com'era posta:* `esercizi.md` §2 e `tappa-1-01.md` §7 vietano le risposte scritte, perché si incollerebbero da un'IA; `gioco.md` §2 chiede di scrivere codice Python, formule, comandi di shell, e `lingue.md` §2 chiede esercizi di produzione. *Provvisorio:* il divieto vale per le risposte in testo libero; codice, formule e comandi si scrivono e si verificano eseguendoli sui dati generati per quello studente (`gioco.md` §2.2). *Da decidere:* se è questa la regola, e come si fa la produzione nelle lingue.
 5. **Due campi nuovi nella scheda del livello.** `pedagogia.md` §1.4 e §2 propongono `Modalità` (individuale, a coppie, piccolo gruppo) e un catalogo fisso di **processi di pensiero** esercitati. *Da decidere:* se entrano nello schema, prima della riscrittura della tappa 1-1.
 
 ## 10. Registro delle modifiche
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 07/10/2026 | 0.2 | **Tre domande chiuse dalle decisioni di Pietro del 07/10/2026.** Q1: carta e premio restano tutti e due, e carta e visioni entrano nell'inventario. Q2: il ripasso Leitner resta obbligatorio nella soglia, i test di ingresso restano facoltativi. Q4: si accetta anche il testo libero, valutato dal docente nel report; codice, formule e comandi si verificano eseguendoli. E B1: una tappa contiene sette livelli (§0, §1 parte 14, §2). Restano aperte Q3 e Q5. |
 | 07/10/2026 | 0.1 | Prima stesura (fase 2 della roadmap): le quindici parti di un livello, il flusso della tappa, i numeri della bottega e della soglia, che cosa resta al giocatore e al docente, testo e grafica, i tipi di livello e gli anni, la lista di controllo, le sette contraddizioni risolte e le cinque domande per Pietro. |

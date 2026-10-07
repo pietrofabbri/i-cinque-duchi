@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — il sistema linguistico: sei lingue, novecento livelli
 tipo: normativo
-versione: 0.2
-data: 2026-10-03
+versione: 0.3
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: indicazioni di Pietro del 02/10/2026
-documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.1), videogioco-5-duchi-esercizi.md (v0.2), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-anno1-ferrara.md (v0.3), AGENTS.md
+documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.1), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-anno1-ferrara.md (v0.3), AGENTS.md
 dati: dati/lingue/associazioni.json (v1), sorgenti/lingue/titoli_livelli.txt (900 record)
 ---
 
@@ -506,7 +506,12 @@ Oggetto di interazione: **bevande** (§5). Trenta livelli all'anno, cinque blocc
 
 Sono le questioni che il documento **non** risolve. Alcune bloccano la costruzione delle tappe, altre no, e ognuna dichiara la sua priorità. Una questione chiusa non si cancella: si sposta in `videogioco-5-duchi-quadro-trasversale.md` §2.2 con la decisione che l'ha chiusa.
 
-### Q1 — I livelli linguistici e quelli informatici sono lo stesso livello o due? **(bloccante, per tutte le tappe)**
+### Q1 — I livelli linguistici e quelli informatici sono lo stesso livello o due? — **chiusa il 07/10/2026: due sistemi paralleli nella stessa tappa, sette livelli per tappa**
+
+**La decisione di Pietro (07/10/2026).** Ogni tappa contiene il livello di informatica **e un livello per ciascuna delle sei lingue**: sette livelli, ognuno con la propria soglia. Il ragazzo li fa tutti e sette; non sceglie una lingua sola. I 150 livelli informatici e i 900 linguistici restano due sistemi distinti, che si incontrano nella tappa, e il conto dei premi resta **1050** (150 × 7, `premi.md` §4.0). Le conseguenze che la decisione apre sono Q10 e Q11 qui sotto.
+
+*Il testo che segue è la domanda com'era posta prima della decisione.*
+
 
 Il gioco ha 150 livelli informatici (`schema-livelli.md` v1.1) e qui 900 livelli linguistici. Le due cose non possono stare nella stessa lista. Le possibilità sono tre, e la scelta cambia il motore:
 
@@ -574,6 +579,14 @@ Un oggetto con trenta voci e una pool per gradino (`esercizi.md` §1: pool di 20
 §2 dice che il confronto filologico è facoltativo «come componente, ma non privo di contenuto». Il vincolo è voluto: un confronto presente a metà è peggio di un confronto assente. Ma allora **anche il confronto va protetto da un controllo automatico**, come l'occhio del linguista (§4.4), e va detto quali sono i 900 livelli che non lo hanno. La lista non è ancora stata fatta.
 
 ---
+
+### Q10 — Che cosa apre la tappa successiva: la soglia di informatica, o tutte e sette? **(importante)**
+
+Con sette livelli per tappa (Q1) le soglie sono sette. Le possibilità: **(a)** la tappa successiva si apre con la soglia del livello informatico, e i sei linguistici restano da finire senza fermare il percorso; **(b)** si apre solo quando tutte e sette le soglie sono superate; **(c)** si apre con l'informatica più un numero minimo di lingue. Con (b) una difficoltà in una sola lingua ferma tutto il percorso, anche l'informatica, che è il centro del gioco; con (a) le lingue rischiano di restare indietro senza che nessuno se ne accorga, se non il docente nel report. *Decide Pietro.*
+
+### Q11 — L'ordine dei sette livelli in una tappa, e il tempo di una tappa **(importante)**
+
+Una tappa di sette livelli dura più di una sessione di 10–20 minuti (`gioco.md` §1). Da decidere: se i sette livelli hanno un ordine fisso (per esempio prima l'informatica, che porta il personaggio e l'argomento) o libero, e se il gioco propone di spezzarli su più sessioni. Il livello informatico porta l'incontro con il personaggio della tappa; i livelli linguistici hanno l'anatomia del §2 e il loro oggetto (§5). *Decide Pietro, dopo la Q10.*
 
 ## 8. I dati, gli script e i controlli
 
@@ -644,4 +657,6 @@ python3 sorgenti/lingue/compila_titoli.py --verifica  # conta i titoli per fonte
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 07/10/2026 | 0.3 | **Q1 chiusa (decisione di Pietro del 07/10/2026): sette livelli per tappa**, uno di informatica e uno per ciascuna delle sei lingue, ognuno con la propria soglia; il ragazzo li fa tutti. Nascono due domande importanti: Q10, che cosa apre la tappa successiva, e Q11, l'ordine dei sette livelli e il tempo di una tappa. |
+| 03/10/2026 | 0.2 | La Q1 aveva il conto sbagliato: con due sistemi paralleli nella stessa tappa i livelli sono **sette** per tappa (uno di informatica e uno per lingua), non trentadue. Nuova Q4bis sulla LIS: che cosa si può guardare (55 video liberi su Commons) e che cosa non si può decodificare. *(Riga ricostruita il 07/10/2026 dal commit 6785485: la versione era stata alzata senza scrivere la riga.)* |
 | 02/10/2026 | 0.1 | Prima stesura. Le decisioni di Pietro del 02/10/2026 sulla progressione linguistica quinquennale, i novecento livelli, l'anatomia del livello, i cinque blocchi, il principio dell'occhio del linguista e le sei associazioni con gli oggetti di interazione. I 900 titoli raccolti in `sorgenti/lingue/`, verificati con cinque controlli automatici a esito zero. Nove questioni aperte dichiarate. |

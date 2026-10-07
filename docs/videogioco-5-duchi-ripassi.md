@@ -1,8 +1,8 @@
 ---
 titolo: Videogioco "I cinque duchi" — i test di ingresso: dieci domande, due minuti, e il poter tornare indietro
 tipo: normativo
-versione: 0.3
-data: 2026-10-03
+versione: 0.4
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte del materiale: richiesta di Pietro del 03/10/2026 («ogni volta che si interagisce con personaggio/emblema/monumento/cibo ecc ci siano max 10 domande su tutto ciò che è stato affrontato fino ad allora, prese randomicamente, su quella disciplina, idealmente max 2 minuti, per validare il ripasso; se tenti diverse volte puoi temporaneamente evocare il personaggio o l'oggetto da cui hai imparato quelle cose per rifare il livello, che puoi interrompere quando vuoi per tornare al momento presente; per gli anni dal secondo in poi il tempo massimo sale a 3 minuti, perché devi poter verificare in un minuto anche ciò che è stato fatto negli anni precedenti»), con le regole già prese su etichette, oggetti di interazione e vuoti dichiarati
 dati: dati/lingue/associazioni.json (v1, le 180 voci: trenta per lingua, sei lingue); dati/lingue/immagini_oggetti.json (le 180 schede con etichetta e licenza); dati/ripassi.json (v1, le banche di domande e le finestre di tempo: ancora da generare, perché i livelli non esistono)
@@ -99,11 +99,13 @@ La schermata 5 è l'unica che non ha un numero: **il ritorno non è una schermat
 
 ## 5. Le domande aperte
 
-1. **Il formato della domanda.** Il progetto vieta le risposte scritte (`esercizi.md`), e una domanda a scelta multipla da ricordare è più facile di una domanda che richiede di produrre: il test potrebbe diventare un esame di riconoscimento, cioè di niente. Le alternative sono il riordino, il collegamento, il «quale di questi è l'epigrafe di…», che sono tutte risposte **da costruire**. È una decisione di Pietro.
+1. **Il formato della domanda.** Le risposte in testo libero sono ammesse dal 07/10/2026, ma le valuta il docente e non il gioco (`modello-di-livello.md` §3): il test, che dà subito l'elenco dei nomi, ha bisogno di risposte che il gioco corregge da solo. E una domanda a scelta multipla da ricordare è più facile di una domanda che richiede di produrre: il test potrebbe diventare un esame di riconoscimento, cioè di niente. Le alternative sono il riordino, il collegamento, il «quale di questi è l'epigrafe di…», che sono tutte risposte **da costruire**. È una decisione di Pietro.
 2. **Le 180 voci sono trenta per lingua, ma i livelli sono trenta per lingua per anno**: le stesse trenta voci si attraversano cinque volte, ognuna più in profondità. La banca deve quindi contenere **900 voci di livello**, non 180: il campione è sul livello, non sull'oggetto. La relazione fra le due cose va scritta nei dati.
 3. **I quattro ambiti trasversali** (diritto, etica, filosofia, psicologia) non hanno ancore oggettuali come le 180 voci: non si sa ancora su quali oggetti si tocchi per fare un test di filosofia. Va deciso se il test esiste anche per loro e con quali punti.
 
 ## 6. Registro delle modifiche
+
+- **v0.4 (07/10/2026)**: La premessa della domanda 1 del §5 segue la decisione del 07/10/2026: il testo libero è ammesso ma lo valuta il docente, e il test ha bisogno di risposte che il gioco corregge da solo. La domanda resta aperta.
 
 - **v0.3 (05/10/2026)**: **il rimando e' l'unica cosa che cambia.** `fonti-visive.md` e' salito a v0.20 e questa citazione era ferma a v0.19.
 - **v0.2 (05/10/2026)**: **Il rimando è l'unica cosa che cambia.** Un documento collegato è salito di versione e questo rimando è rimasto indietro: la riga è sbagliata e non sembra, perché un rimando che cita una versione superiore a quella vera sembra un rimando fermo. Qui dentro non cambia nient'altro — e si scrive lo stesso, perché una riga che cambia è una riga che cambia.

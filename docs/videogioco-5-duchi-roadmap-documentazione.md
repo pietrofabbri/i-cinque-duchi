@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — Roadmap per la risistemazione della documentazione
 tipo: piano
-versione: 0.4
+versione: 0.5
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
-documenti collegati: videogioco-5-duchi-audit.md (v0.28), videogioco-5-duchi-gioco.md (v0.6), videogioco-5-duchi-esercizi.md (v0.2), videogioco-5-duchi-meccaniche.md (v0.4), videogioco-5-duchi-tappa-1-01.md (v0.5)
+documenti collegati: videogioco-5-duchi-audit.md (v0.29), videogioco-5-duchi-gioco.md (v0.7), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-meccaniche.md (v0.5), videogioco-5-duchi-tappa-1-01.md (v0.6)
 ---
 
 # Roadmap: risistemare la documentazione
@@ -33,7 +33,7 @@ Quattro problemi, in ordine di peso.
 | 0 | Punto di partenza pulito | Tutti i verificatori verdi, o il motivo scritto per cui uno non può esserlo | **fatta il 06/10/2026** (§3) |
 | 1 | Architettura della documentazione | Ogni documento ha un tipo dichiarato; i documenti normativi dicono il presente; lo storico è separato; `AGENTS.md` contiene solo decisioni, convenzioni e procedura | **fatta il 06/10/2026** (§4) |
 | 2 | Allineare il nucleo di gioco e scrivere il modello di livello | Nessuna contraddizione fra `gioco`, `esercizi`, `meccaniche`, `motore-e-grafica`, `ripassi`, `premi`, `inventario`, `pedagogia`; esiste `modello-di-livello.md` | **fatta il 07/10/2026** (§5) |
-| 3 | Le decisioni di Pietro | Ogni domanda bloccante o importante ha una risposta registrata, oppure è dichiarata rinviata con il perché | da fare |
+| 3 | Le decisioni di Pietro | Ogni domanda bloccante o importante ha una risposta registrata, oppure è dichiarata rinviata con il perché | **in corso** (§6) |
 | 4 | Colmare i buchi di contenuto | Anno 1 completo nelle schede delle 30 tappe; correzioni già decise applicate; verifiche storiche aperte chiuse o dichiarate | da fare |
 | 5 | Rifinitura e README | README breve; numeri e refusi corretti; rimandi chiusi | da fare |
 | 6 | Collaudo di portabilità | Verificatori verdi; un agente senza contesto specifica la tappa 1-2 leggendo solo i documenti, e dove indovina si apre un buco | da fare |
@@ -130,7 +130,22 @@ I quattro rossi del 06/10/2026 e che cosa erano:
 | La riscrittura completa di `gioco.md` ed `esercizi.md` al presente, togliendo le parti che il modello ormai dice meglio | Dopo la fase 3: senza le risposte, riscriverle significherebbe decidere al posto di Pietro |
 | I paragrafi di racconto rimasti dentro le sezioni normative degli altri documenti | Fase 5 |
 
-## 6. Registro delle modifiche
+## 6. Fase 3: le decisioni (in corso)
+
+**Decise da Pietro il 07/10/2026**, e scritte nei documenti:
+
+| Domanda | Decisione | Dove è scritta |
+|---|---|---|
+| B1 · livelli linguistici e informatici | Sette livelli per tappa: informatica e sei lingue, ognuno con la sua soglia, tutti da fare | `lingue.md` Q1, `modello-di-livello.md` §0–§2, `audit.md` §2 e §7 |
+| I20 · carta e premio | Tutti e due; carta e visioni entrano nell'inventario, la collezione delle carte è il quinto registro | `modello-di-livello.md` §9, `inventario.md` §1 e §3 |
+| Ripasso a distanza e test di ingresso | Tutti e due: il ripasso Leitner è obbligatorio nella soglia, i test sono facoltativi | `modello-di-livello.md` §9, `gioco.md` |
+| I22 · risposte scritte | Testo libero ammesso, valutato dal docente; per la soglia solo risposte che il gioco corregge da solo | `modello-di-livello.md` §3, `esercizi.md`, `meccaniche.md` |
+
+**Domande nate dalle decisioni**: I23 (che cosa apre la tappa successiva) e I24 (ordine dei sette livelli e tempo della tappa), in `lingue.md` Q10 e Q11.
+
+**Da portare a Pietro, in quest'ordine**: I23 e I24, perché decidono la forma della tappa che si riscrive; I21 (prove di corte e tappe a mani nude) e il §9 Q5 del modello (campi `Modalità` e processi di pensiero), perché toccano lo schema del livello; poi B2, B3 e B4 e le altre importanti dell'audit.
+
+## 7. Registro delle modifiche
 
 | Data | Versione | Modifica |
 |---|---|---|
@@ -138,3 +153,4 @@ I quattro rossi del 06/10/2026 e che cosa erano:
 | 06/10/2026 | 0.2 | Fase 0 chiusa: linea di base (§3), quattro verificatori rossi riportati a verde o dichiarati. |
 | 06/10/2026 | 0.3 | Fase 1 chiusa: il bilancio (§4) dice che cosa è fatto e che cosa la fase lascia alle fasi successive, con il perché. |
 | 07/10/2026 | 0.4 | Fase 2 chiusa: il bilancio (§5) dice che cosa è fatto e che cosa resta per le fasi successive. |
+| 07/10/2026 | 0.5 | Fase 3 in corso: le quattro decisioni di Pietro del 07/10/2026, le due domande nate da B1 e l'ordine delle prossime (§6). |
