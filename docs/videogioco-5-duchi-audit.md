@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — audit delle questioni aperte: la lista operativa
 tipo: audit
-versione: 0.29
+versione: 0.30
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: lettura di tutti i documenti di progetto che portano una sezione «Questioni aperte» (sedici), verificata da sorgenti/lingue/conta_questioni.py, che confronta anche i numeri che il README copia da qui
-documenti collegati: videogioco-5-duchi-lingue.md (v0.3), videogioco-5-duchi-lingue-immagini.md (v0.8), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-fonti-visive.md (v0.21), videogioco-5-duchi-furioso.md (v0.7), videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-mappe.md (v1.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.2), videogioco-5-duchi-gioco.md (v0.7), videogioco-5-duchi-meccaniche.md (v0.5), AGENTS.md
+documenti collegati: videogioco-5-duchi-lingue.md (v0.4), videogioco-5-duchi-lingue-immagini.md (v0.8), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-fonti-visive.md (v0.21), videogioco-5-duchi-furioso.md (v0.7), videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-mappe.md (v1.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.2), videogioco-5-duchi-gioco.md (v0.8), videogioco-5-duchi-meccaniche.md (v0.5), AGENTS.md
 ---
 
 # Audit delle questioni aperte: la lista
@@ -23,18 +23,18 @@ Il documento è verificato da `sorgenti/lingue/conta_questioni.py`, che confront
 | | |
 |---|---|
 | Documenti con una sezione «Questioni aperte» | **17** |
-| Voci enumerate | **125** |
-| **Chiuse** | **39** |
-| **Aperte** | **86** |
+| Voci enumerate | **127** |
+| **Chiuse** | **42** |
+| **Aperte** | **85** |
 | Di cui bloccanti | tre |
-| Di cui importanti (cambiano il gioco) | diciotto |
+| Di cui importanti (cambiano il gioco) | diciassette |
 | Di cui minori (si possono rimandare) | le altre |
 
 **Il criterio**, dichiarato perché un numero senza criterio non è un dato. Una **voce** è un punto numerato, un `### Q1` o una riga di tabella della sezione «Questioni aperte». Una voce è **chiusa** se porta la marcatura nella sua **prima riga** — «chiusa», «risolto», «ratificata», «confermata» — e non in tutto il corpo, perché una voce aperta spiega dentro il corpo quale parte è stata chiusa.
 
-**Una voce non è sempre una domanda.** In `lingue.md` Q3 ci sono due sotto-voci dentro una sola domanda. Le **125 voci non sono 125 domande**.
+**Una voce non è sempre una domanda.** In `lingue.md` Q3 ci sono due sotto-voci dentro una sola domanda. Le **127 voci non sono 127 domande**.
 
-**Una sola delle trentanove chiuse è bloccante**: **B1**, chiusa il 07/10/2026 con la decisione di Pietro sui sette livelli per tappa. Delle bloccanti di un tempo, altre due non sono mai state domande: erano lavori, e sono stati fatti — i novanta pin il 02/10/2026, la tavolozza, le sagome, il fondo di Ferrara e i colori delle carte il 03/10/2026 (§7). Le decisioni prese hanno tolto lavoro, non lo hanno aggiunto.
+**Una sola delle quarantadue chiuse è bloccante**: **B1**, chiusa il 07/10/2026 con la decisione di Pietro sui sette livelli per tappa. Delle bloccanti di un tempo, altre due non sono mai state domande: erano lavori, e sono stati fatti — i novanta pin il 02/10/2026, la tavolozza, le sagome, il fondo di Ferrara e i colori delle carte il 03/10/2026 (§7). Le decisioni prese hanno tolto lavoro, non lo hanno aggiunto.
 
 
 ## 2. Le tre bloccanti
@@ -66,7 +66,7 @@ Sono le uniche che fermano qualcosa, e sono le tre che aspettano una **risposta*
 Non è più una bloccante: l'esito è in **§7**, il racconto nello storico (`storico.md` §1). Era l'unica delle cinque che non aspettava nessuna decisione, ed è l'unica che il progetto poteva chiudere da solo.
 
 
-## 3. Le diciotto importanti
+## 3. Le diciassette importanti
 
 Quelle che, se risposte male, cambiano il gioco. In ordine di peso.
 
@@ -94,8 +94,9 @@ Quelle che, se risposte male, cambiano il gioco. In ordine di peso.
 | I20 | ~~**La carta del personaggio e il premio: restano tutti e due?**~~ **chiusa il 07/10/2026** (`modello-di-livello.md` Q1) | — | — | **Decisione di Pietro: tutti e due.** La carta è il personaggio e regge il ripasso, il premio è l'oggetto del livello; carta e visioni sono nell'elenco dell'inventario, e la collezione delle carte è il quinto registro (`inventario.md` §1, §3) | Pietro |
 | I21 | **Prove di corte e tappe a mani nude sono la stessa cosa?** (`modello-di-livello.md` Q3) | I dati hanno 15 prove (x-10, x-20, x-30), `pedagogia.md` 10 tappe a mani nude (x-15, x-30): coincidono solo alle x-30 | Fonderle cambia la cadenza che il modello pedagogico chiede; tenerle separate fa della x-15 un livello con due nature | Tenerle distinte e decidere che cosa diventa la x-15 prima di scriverla | Pietro |
 | I22 | ~~**«Nessuna risposta scritta» e gli strumenti veri**~~ **chiusa il 07/10/2026** (`modello-di-livello.md` Q4) | — | — | **Decisione di Pietro: si accetta anche il testo libero.** Lo valuta il docente nel report, non il gioco; per la soglia contano solo risposte che il gioco corregge da solo, e codice, formule e comandi si verificano eseguendoli (`modello-di-livello.md` §3) | Pietro |
-| I23 | **Che cosa apre la tappa successiva: la soglia di informatica, o tutte e sette?** (`lingue.md` Q10) | Con la sola informatica il percorso non si ferma per una lingua, e l'informatica è il centro del gioco | Le lingue possono restare indietro senza che il gioco lo dica; con tutte e sette, una sola lingua difficile ferma tutto | Va decisa prima di costruire la seconda tappa: decide come si legge «tappa superata» nel file di consegna | Pietro |
-| I24 | **L'ordine dei sette livelli in una tappa, e il tempo di una tappa** (`lingue.md` Q11) | Un ordine fisso (prima l'informatica, che porta il personaggio) dà a ogni tappa la stessa forma | Sette livelli non stanno in una sessione di 10–20 minuti, e un ordine fisso può non adattarsi a chi gioca | Dopo I23; il tempo si misura sul prototipo, come I12 | Pietro |
+| I23 | ~~**Che cosa apre la tappa successiva: la soglia di informatica, o tutte e sette?**~~ **chiusa il 07/10/2026** (`lingue.md` Q10) | — | — | **Decisione di Pietro**: la tappa successiva si apre con la soglia di informatica; per il livello *n* di una lingua servono tutti i premi precedenti di quella lingua, e si può tornare indietro con un espediente narrativo per anno (I25) | Pietro |
+| I24 | ~~**L'ordine dei sette livelli in una tappa, e il tempo di una tappa**~~ **chiusa il 07/10/2026** (`lingue.md` Q11) | — | — | **Decisione di Pietro**: nessun ordine; i sette livelli sono sparsi nell'ambiente, ognuno con una freccia del suo colore, accanto a chicche interattive brevi. Il tempo si misura sul prototipo (I12) | Pietro |
+| I25 | **L'espediente narrativo per tornare indietro, anno per anno** (`modello-di-livello.md` Q7) | Rende credibile il ritorno a una tappa passata per finire una lingua, in ognuno dei cinque modi di attraversare l'anno | Sono cinque storie da scrivere, e un ritorno mal giustificato rompe il patto narrativo dell'anno | Scriverne una proposta per anno, legata a come l'anno si attraversa, e farla approvare | Pietro |
 
 
 ## 4. Le altre, in sintesi
@@ -200,7 +201,7 @@ Le **restanti**: minori, o già decise nella sostanza e che aspettano solo l'ese
 
 | Domanda | Chi decide |
 |---|---|
-| I campi `Modalità` e «processi di pensiero» proposti da `pedagogia.md` entrano nella scheda del livello? | Pietro |
+| Come entrano i processi di pensiero e la modalità senza che si possano saltare: la proposta del modello (Q6) va approvata o corretta | Pietro |
 
 ### Itinerari (`itinerari.md` 1)
 
@@ -242,6 +243,9 @@ Il conto delle voci chiuse del §1 è un'altra cosa: lo fa `conta_questioni.py` 
 | **B1** · i livelli linguistici e quelli informatici sono lo stesso livello o due? | 07/10/2026 | Decisione di Pietro: sette livelli per tappa, informatica e sei lingue, ognuno con la sua soglia; il ragazzo li fa tutti | `lingue.md` Q1, `modello-di-livello.md` §0–§2 |
 | **I20** · la carta del personaggio e il premio | 07/10/2026 | Decisione di Pietro: tutti e due; carta e visioni entrano nell'inventario, la collezione delle carte è il quinto registro | `modello-di-livello.md` §9 Q1, `inventario.md` §1, §3 |
 | **I22** · «nessuna risposta scritta» e gli strumenti veri | 07/10/2026 | Decisione di Pietro: testo libero ammesso, valutato dal docente; per la soglia solo risposte corrette dal gioco | `modello-di-livello.md` §3, §9 Q4 |
+| **I23** · che cosa apre la tappa successiva | 07/10/2026 | Decisione di Pietro: la soglia di informatica; le lingue hanno una propedeuticità loro e si può tornare indietro | `lingue.md` Q10, `modello-di-livello.md` §2 |
+| **I24** · ordine dei sette livelli e tempo della tappa | 07/10/2026 | Decisione di Pietro: ordine libero, ingressi sparsi nell'ambiente con frecce colorate, chicche interattive brevi | `lingue.md` Q11, `modello-di-livello.md` §1–§2 |
+| I campi `Modalità` e processi di pensiero | 07/10/2026 | Decisione di Pietro: entrano, e non si possono saltare; il *come* è una proposta da approvare (`modello-di-livello.md` Q6) | `modello-di-livello.md` §9 Q5 |
 | Il ripasso a distanza accanto ai test di ingresso | 07/10/2026 | Decisione di Pietro: tutti e due, con ruoli diversi; il ripasso Leitner è obbligatorio nella soglia, i test sono facoltativi | `modello-di-livello.md` §9 Q2, `gioco.md` §4.2 |
 | **I2** · la tavolozza | 03/10/2026 | Si dichiarano i colori di ogni fonte invece di ricolorare tutto: ogni colore ha la sua fonte | `dati/fonti_visive/tavolozza.json`, `fonti-visive.md` §3 |
 | **I3** · le sagome degli edifici | 03/10/2026 | Sagome da OpenStreetMap; un edificio senza altezza misurata diventa un volume neutro dichiarato, non una stima | `dati/edifici_footprint.json`, `fonti-visive.md` §3 |
@@ -261,6 +265,7 @@ Il conto delle voci chiuse del §1 è un'altra cosa: lo fa `conta_questioni.py` 
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 07/10/2026 | 0.30 | **Altre decisioni di Pietro del 07/10/2026.** I23 chiusa: la tappa successiva si apre con la soglia di informatica, le lingue hanno una propedeuticità loro. I24 chiusa: i sette livelli non hanno ordine e sono sparsi nell'ambiente. I campi Modalità e processi di pensiero entrano. Nuova I25: l'espediente narrativo per tornare indietro, anno per anno; nel §4 la proposta Q6 del modello da approvare. Conto: 127 voci, 42 chiuse, 85 aperte, 3 bloccanti, 17 importanti. |
 | 07/10/2026 | 0.29 | **Le decisioni di Pietro del 07/10/2026.** B1 chiusa: sette livelli per tappa, e le bloccanti passano da quattro a tre, con la catena B2 → B4. I20 (carta e premio) e I22 (testo libero) chiuse; nuove importanti I23 (che cosa apre la tappa successiva) e I24 (ordine dei sette livelli e tempo della tappa), da `lingue.md` Q10 e Q11. Il ripasso a distanza esce dal §4. Le quattro chiusure sono nella tabella del §7; la scheda di B1 com'era è in `storico.md` §1.18. Conto: 125 voci, 39 chiuse, 86 aperte. |
 | 07/10/2026 | 0.28 | Tre importanti nuove, I20–I22 (carta e premio, prove e tappe a mani nude, risposte scritte e strumenti veri), e una sezione del §4 per le altre due domande del modello di livello; il conto passa a 123 voci in 17 sezioni, 35 chiuse e 88 aperte, perché il modello aggiunge cinque voci e in `gioco.md` la ricerca dei ritratti è chiusa. |
 | 06/10/2026 | 0.27 | Il §6 dice la catena delle bloccanti e la regola «mentre si decide, si costruisce» al presente; il racconto di B5 e delle chiusure del 03/10, con il rimando al §3bis che non esiste più, è in `storico.md` §1.17. Con questa versione l'audit è in ordine: sezioni da §0 a §8, una scheda per questione, le chiuse in §7 e il registro in fondo (fase 1 della roadmap). |

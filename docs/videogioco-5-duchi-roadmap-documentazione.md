@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — Roadmap per la risistemazione della documentazione
 tipo: piano
-versione: 0.5
+versione: 0.6
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
-documenti collegati: videogioco-5-duchi-audit.md (v0.29), videogioco-5-duchi-gioco.md (v0.7), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-meccaniche.md (v0.5), videogioco-5-duchi-tappa-1-01.md (v0.6)
+documenti collegati: videogioco-5-duchi-audit.md (v0.30), videogioco-5-duchi-gioco.md (v0.8), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-meccaniche.md (v0.5), videogioco-5-duchi-tappa-1-01.md (v0.6)
 ---
 
 # Roadmap: risistemare la documentazione
@@ -141,9 +141,15 @@ I quattro rossi del 06/10/2026 e che cosa erano:
 | Ripasso a distanza e test di ingresso | Tutti e due: il ripasso Leitner è obbligatorio nella soglia, i test sono facoltativi | `modello-di-livello.md` §9, `gioco.md` |
 | I22 · risposte scritte | Testo libero ammesso, valutato dal docente; per la soglia solo risposte che il gioco corregge da solo | `modello-di-livello.md` §3, `esercizi.md`, `meccaniche.md` |
 
-**Domande nate dalle decisioni**: I23 (che cosa apre la tappa successiva) e I24 (ordine dei sette livelli e tempo della tappa), in `lingue.md` Q10 e Q11.
+**Decise da Pietro nel pomeriggio del 07/10/2026**:
 
-**Da portare a Pietro, in quest'ordine**: I23 e I24, perché decidono la forma della tappa che si riscrive; I21 (prove di corte e tappe a mani nude) e il §9 Q5 del modello (campi `Modalità` e processi di pensiero), perché toccano lo schema del livello; poi B2, B3 e B4 e le altre importanti dell'audit.
+| Domanda | Decisione | Dove è scritta |
+|---|---|---|
+| I23 · che cosa apre la tappa successiva | La soglia di informatica; il livello *n* di una lingua richiede tutti i premi precedenti di quella lingua; si può tornare indietro, con un espediente narrativo per anno | `lingue.md` Q10, `modello-di-livello.md` §2 |
+| I24 · ordine dei sette livelli | Nessun ordine: ingressi sparsi nell'ambiente, segnati da frecce di sette colori, accanto a chicche interattive brevi che intrattengono | `lingue.md` Q11, `modello-di-livello.md` §1–§2 |
+| Modalità e processi di pensiero | Entrano nella scheda, non si possono saltare, e il giocatore deve capire perché li fa | `modello-di-livello.md` §9 Q5 |
+
+**Da portare a Pietro, in quest'ordine**: la proposta Q6 del modello (come entrano processi e modalità); I25, l'espediente narrativo per anno, di cui va scritta una proposta; I21, prove di corte e tappe a mani nude; poi B2, B3, B4 e le altre importanti dell'audit. **Lavoro del progetto, senza decisioni**: i sette colori delle frecce, dalla tavolozza.
 
 ## 7. Registro delle modifiche
 
@@ -154,3 +160,4 @@ I quattro rossi del 06/10/2026 e che cosa erano:
 | 06/10/2026 | 0.3 | Fase 1 chiusa: il bilancio (§4) dice che cosa è fatto e che cosa la fase lascia alle fasi successive, con il perché. |
 | 07/10/2026 | 0.4 | Fase 2 chiusa: il bilancio (§5) dice che cosa è fatto e che cosa resta per le fasi successive. |
 | 07/10/2026 | 0.5 | Fase 3 in corso: le quattro decisioni di Pietro del 07/10/2026, le due domande nate da B1 e l'ordine delle prossime (§6). |
+| 07/10/2026 | 0.6 | Fase 3: le decisioni del pomeriggio del 07/10/2026 (I23, I24, modalità e processi) e il nuovo ordine delle domande. |

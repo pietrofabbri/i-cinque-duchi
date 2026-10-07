@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — il sistema linguistico: sei lingue, novecento livelli
 tipo: normativo
-versione: 0.3
+versione: 0.4
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: indicazioni di Pietro del 02/10/2026
@@ -580,11 +580,17 @@ Un oggetto con trenta voci e una pool per gradino (`esercizi.md` §1: pool di 20
 
 ---
 
-### Q10 — Che cosa apre la tappa successiva: la soglia di informatica, o tutte e sette? **(importante)**
+### Q10 — Che cosa apre la tappa successiva: la soglia di informatica, o tutte e sette? — **chiusa il 07/10/2026**
+
+**La decisione di Pietro.** **La tappa successiva si apre con la soglia del livello di informatica.** Le lingue hanno una propedeuticità loro: per fare il livello *n* di una lingua servono **tutti i premi precedenti di quella lingua**. Chi è rimasto indietro in una lingua può farsi **riportare indietro** alla tappa dove quella lingua si è fermata, se lo desidera; per ogni anno serve un **espediente narrativo** che renda credibile il ritorno (`modello-di-livello.md` §9 Q7). *La domanda com'era posta:*
+
 
 Con sette livelli per tappa (Q1) le soglie sono sette. Le possibilità: **(a)** la tappa successiva si apre con la soglia del livello informatico, e i sei linguistici restano da finire senza fermare il percorso; **(b)** si apre solo quando tutte e sette le soglie sono superate; **(c)** si apre con l'informatica più un numero minimo di lingue. Con (b) una difficoltà in una sola lingua ferma tutto il percorso, anche l'informatica, che è il centro del gioco; con (a) le lingue rischiano di restare indietro senza che nessuno se ne accorga, se non il docente nel report. *Decide Pietro.*
 
-### Q11 — L'ordine dei sette livelli in una tappa, e il tempo di una tappa **(importante)**
+### Q11 — L'ordine dei sette livelli in una tappa, e il tempo di una tappa — **chiusa il 07/10/2026**
+
+**La decisione di Pietro.** **I sette livelli non hanno un ordine: sono sparsi nell'ambiente della tappa.** Ognuno ha il suo punto di ingresso, un elemento interattivo segnato da una **freccia colorata** sopra di esso, con un colore per l'informatica e uno per ciascuna lingua. Nell'ambiente ci sono anche altre **chicche interattive** — informazioni sul luogo, piccole riflessioni di contorno — **molto veloci, intelligibili e interattive**, che devono intrattenere oltre che portare stimoli culturali (`modello-di-livello.md` §1–§2). Il tempo di una tappa si misura sul prototipo (`audit.md` I12). *La domanda com'era posta:*
+
 
 Una tappa di sette livelli dura più di una sessione di 10–20 minuti (`gioco.md` §1). Da decidere: se i sette livelli hanno un ordine fisso (per esempio prima l'informatica, che porta il personaggio e l'argomento) o libero, e se il gioco propone di spezzarli su più sessioni. Il livello informatico porta l'incontro con il personaggio della tappa; i livelli linguistici hanno l'anatomia del §2 e il loro oggetto (§5). *Decide Pietro, dopo la Q10.*
 
@@ -657,6 +663,7 @@ python3 sorgenti/lingue/compila_titoli.py --verifica  # conta i titoli per fonte
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 07/10/2026 | 0.4 | **Q10 e Q11 chiuse (decisioni di Pietro del 07/10/2026).** La tappa successiva si apre con la soglia di informatica; per il livello *n* di una lingua servono tutti i premi precedenti di quella lingua, e chi è indietro può farsi riportare indietro, con un espediente narrativo per ogni anno. I sette livelli non hanno ordine: sono sparsi nell'ambiente, ognuno segnato da una freccia del suo colore, accanto a chicche interattive brevi. |
 | 07/10/2026 | 0.3 | **Q1 chiusa (decisione di Pietro del 07/10/2026): sette livelli per tappa**, uno di informatica e uno per ciascuna delle sei lingue, ognuno con la propria soglia; il ragazzo li fa tutti. Nascono due domande importanti: Q10, che cosa apre la tappa successiva, e Q11, l'ordine dei sette livelli e il tempo di una tappa. |
 | 03/10/2026 | 0.2 | La Q1 aveva il conto sbagliato: con due sistemi paralleli nella stessa tappa i livelli sono **sette** per tappa (uno di informatica e uno per lingua), non trentadue. Nuova Q4bis sulla LIS: che cosa si può guardare (55 video liberi su Commons) e che cosa non si può decodificare. *(Riga ricostruita il 07/10/2026 dal commit 6785485: la versione era stata alzata senza scrivere la riga.)* |
 | 02/10/2026 | 0.1 | Prima stesura. Le decisioni di Pietro del 02/10/2026 sulla progressione linguistica quinquennale, i novecento livelli, l'anatomia del livello, i cinque blocchi, il principio dell'occhio del linguista e le sei associazioni con gli oggetti di interazione. I 900 titoli raccolti in `sorgenti/lingue/`, verificati con cinque controlli automatici a esito zero. Nove questioni aperte dichiarate. |

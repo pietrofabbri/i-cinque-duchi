@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — Storico: come ci si è arrivati
 tipo: storico
-versione: 0.7
+versione: 0.8
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
-documenti collegati: videogioco-5-duchi-roadmap-documentazione.md (v0.5)
+documenti collegati: videogioco-5-duchi-roadmap-documentazione.md (v0.6)
 ---
 
 # Storico del progetto
@@ -739,6 +739,15 @@ Le tre proposte diventano quindi:
 | I20 | **La carta del personaggio e il premio: restano tutti e due?** (`modello-di-livello.md` Q1) | La carta è il personaggio e regge il ripasso a distanza; il premio è un oggetto che il personaggio non è | L'inventario chiuso dei sette elementi non nomina la carta né le visioni, e due collezioni possono sembrare una ripetizione | Tenerle tutte e due, con ruoli diversi, e aggiungerle all'inventario; è anche la regola provvisoria | Pietro |
 | I22 | **«Nessuna risposta scritta» e gli strumenti veri** (`modello-di-livello.md` Q4) | Il divieto rende inutile incollare una risposta da un'IA | Python, formule e comandi si scrivono, e le lingue chiedono esercizi di produzione | Il divieto vale per il testo libero; codice e formule si scrivono e si verificano eseguendoli sui dati di quello studente | Pietro |
 
+### 1.19 Le righe di I23 e I24 com'erano
+
+*Da `audit.md` §3: le due importanti nate da B1 e chiuse lo stesso giorno, il 07/10/2026, con le decisioni di Pietro.*
+
+| # | Domanda | Pro | Contro | Valutazione | Chi decide |
+|---|---|---|---|---|---|
+| I23 | **Che cosa apre la tappa successiva: la soglia di informatica, o tutte e sette?** (`lingue.md` Q10) | Con la sola informatica il percorso non si ferma per una lingua, e l'informatica è il centro del gioco | Le lingue possono restare indietro senza che il gioco lo dica; con tutte e sette, una sola lingua difficile ferma tutto | Va decisa prima di costruire la seconda tappa: decide come si legge «tappa superata» nel file di consegna | Pietro |
+| I24 | **L'ordine dei sette livelli in una tappa, e il tempo di una tappa** (`lingue.md` Q11) | Un ordine fisso (prima l'informatica, che porta il personaggio) dà a ogni tappa la stessa forma | Sette livelli non stanno in una sessione di 10–20 minuti, e un ordine fisso può non adattarsi a chi gioca | Dopo I23; il tempo si misura sul prototipo, come I12 | Pietro |
+
 ## 2. Dagli altri documenti
 
 Le sezioni che raccontavano il difetto da cui è nata una regola, o le versioni attraverso cui è passato un prototipo. Sono state tolte il 06/10/2026 (fase 1 della roadmap): nel documento d'origine resta la regola, o lo stato di oggi, al presente.
@@ -1120,6 +1129,7 @@ Le due regole che ne vengono:
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 07/10/2026 | 0.8 | Il §1.19 accoglie le righe di I23 e I24 com'erano. |
 | 07/10/2026 | 0.7 | Il §1.18 accoglie la scheda di B1 com'era prima della decisione del 07/10/2026, con le righe di I20 e I22. |
 | 07/10/2026 | 0.6 | Il §3.4 accoglie il blocco «Questioni aperte» di AGENTS.md, che scriveva lo stato delle questioni: lo stato si scrive ora solo nell'audit. |
 | 06/10/2026 | 0.5 | Il §1.17 accoglie il racconto che il §6 dell'audit conteneva. |

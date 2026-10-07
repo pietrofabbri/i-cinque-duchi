@@ -13,7 +13,7 @@ cambia la sua fonte (`metodo.md` §1.4), quindi qui si confronta.
   K3  le parti del livello (§1) sono numerate senza buchi, e ogni documento
       che la colonna «Dove si specifica» nomina esiste in `docs/`
   K4  il numero di domande che il §8 annuncia in lettere è il numero di voci
-      del §9
+      del §9 prima del §9.1
 
 Uso:  python3 sorgenti/verifica_modello.py
       python3 sorgenti/verifica_modello.py --difetti   # ne inietta quattro, uno per volta
@@ -96,6 +96,10 @@ def controlla(doc, codice, livelli, documenti):
     # K4
     s8, s9 = sezione(doc, 8), sezione(doc, 9)
     m = re.search(r"Gli altri (\w+) sono domande per Pietro", s8)
+    # Solo la parte del §9 prima del §9.1: dal 07/10/2026 il §9.1 raccoglie le
+    # domande nate dopo l'allineamento, nella forma «### Q6», e il loro testo
+    # ha elenchi numerati che non sono domande.
+    s9 = s9.split("### 9.1")[0]
     voci = re.findall(r"^\d+\. \*\*", s9, re.M)
     if not m:
         problemi.append("K4 il §8 non annuncia quante sono le domande")

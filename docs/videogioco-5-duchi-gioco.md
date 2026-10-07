@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — Come si gioca: interazione, strumenti veri, carte dei personaggi, memoria, contesto
 tipo: normativo
-versione: 0.7
+versione: 0.8
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 documenti collegati: videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-tappa-1-01.md (v0.6), videogioco-5-duchi-anno1-mappa.md (v0.10), videogioco-5-duchi-meccaniche.md (v0.5), videogioco-5-duchi-schema-livelli.md (v1.1), videogioco-5-duchi-anno1-ferrara.md (v0.3)
@@ -148,7 +148,7 @@ Decisione di Pietro del 30/09/2026.
 
 - **Borso è chi gioca.** Il giocatore è Borso d'Este: si muove nella città, parla con i personaggi, immagina le visioni. Non è più un narratore da incontrare all'ultima tappa.
 - **I personaggi parlano di sé.** Ognuno racconta la propria vita e la propria epoca, in prima persona. Non commentano Borso e non parlano di lui.
-- **Zona percorribile.** Il pulsante «Entra» apre una piccola mappa a tessere, in stile Pokémon, con il personaggio obbligatorio, le due visioni facoltative e alcune **chicche** (oggetti da guardare, mai valutati).
+- **Zona percorribile.** Il pulsante «Entra» apre una piccola mappa a tessere, in stile Pokémon, con il personaggio obbligatorio, le due visioni facoltative, gli ingressi dei sei livelli linguistici della tappa (ognuno con una freccia del suo colore) e alcune **chicche**: elementi interattivi molto veloci e intelligibili — informazioni sul luogo, piccole riflessioni di contorno — che devono intrattenere oltre che portare uno stimolo culturale, mai valutati (`modello-di-livello.md` §1–§2, decisione del 07/10/2026).
 - **Confini.** La zona è la cella di Voronoi della tappa entro 150 m: non si sovrappone alle zone vicine. Si esce da un cancello che si apre solo dopo la soglia.
 - **Comandi.** Frecce o WASD, pulsanti a croce sullo schermo del telefono; A o spazio per parlare.
 - **Grafica (v0.4).** Vista dall'alto in 3/4, stile GBA, con la geometria reale degli edifici (open data del Comune): tessere da 16 px pari a 1,25 m, figure 16 × 24 px, ritratti 48 × 54 px nei dialoghi. Movimento continuo e fluido. Le visioni restano in seppia. Dettagli: `videogioco-5-duchi-motore-e-grafica.md`.
@@ -248,6 +248,8 @@ Le domande sul modello di livello nate dall'allineamento del 07/10/2026 sono in 
 - Strumenti: Pyodide (pyodide.org), v86 (github.com/copy/v86), sql.js, SheetJS: tutti software libero.
 
 ## 9. Registro modifiche
+
+- **v0.8 (07/10/2026)**: La zona percorribile ha gli ingressi dei sei livelli linguistici, con le frecce colorate, e le chicche diventano interattive, brevi, e devono intrattenere (decisioni del 07/10/2026).
 
 - **v0.7 (07/10/2026)**: Le tre decisioni di Pietro del 07/10/2026 sul modello di livello: la carta resta accanto al premio, il ripasso a distanza resta obbligatorio, il testo libero è ammesso.
 
