@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — il sistema linguistico: sei lingue, novecento livelli
 tipo: normativo
-versione: 0.5
+versione: 0.6
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: indicazioni di Pietro del 02/10/2026
@@ -240,7 +240,9 @@ Le famiglie di esercizi, con l'esempio in italiano (cibi):
 
 ### 5.4 Le trenta voci di ogni associazione
 
-Ogni associazione ha **trenta voci**, una per livello di ogni anno, in `dati/lingue/associazioni.json` (v1). Sono **proposte**, non voci confermate: servono a dare un nome all'oggetto con cui il giocatore interagisce nel livello, e vanno discusse una per una.
+**I cibi dell'italiano dipendono dal luogo** (decisione di Pietro del 07/10/2026). Per l'italiano la lista fissa di trenta voci uguali per tutti gli anni **non vale più**: ogni tappa ha **un piatto tipico del suo luogo**, quindi le voci italiane sono **centocinquanta, una per tappa**, in `dati/lingue/cibi_per_tappa.json`. Due vincoli, sempre di Pietro: **niente nomi dialettali** (il piatto si chiama con il suo nome italiano: «pampepato», non «pampapato»; «ciambella ferrarese», non «brazadela») e **niente bevande**, che sono l'oggetto del greco. Il file è una proposta del progetto con le segnalazioni dove il legame con il luogo è debole o il luogo non è indicato; la rivede Pietro sulla stessa pagina delle altre voci. Le altre cinque lingue restano a trenta voci.
+
+Ogni associazione ha **trenta voci**, una per livello di ogni anno, in `dati/lingue/associazioni.json` (v1). *Per l'italiano questa lista è superata dal paragrafo qui sopra e resta come storia.* Sono **proposte**, non voci confermate: servono a dare un nome all'oggetto con cui il giocatore interagisce nel livello, e vanno discusse una per una.
 
 Le trenta voci italiane sono piatti e ingredienti: *pizza*, *ragù*, *cacio e pepe*, *tiramisù*, *polenta*, *carbonara*, *saltimbocca*, *mortadella*, *aceto balsamico*, *prosciutto*, *focaccia*, *sabaion*, *zuppa di lenticchie*, *piadina*, *risotto*, *gnocco*, *tagliatelle*, *bagna cauda*, *panna cotta*, *bistecca*, *olive*, *pesto*, *pandoro*, *grana*, *confetto*, *amaretti*, *limoncello*, *lambrusco*, *budino*, *pane*.
 
@@ -527,7 +529,7 @@ Il gioco ha 150 livelli informatici (`schema-livelli.md` v1.1) e qui 900 livelli
 
 Le trenta voci per lingua in `dati/lingue/associazioni.json` sono **proposte** (§5.4). Vanno discusse una per una. Il caso più serio è il ferrarese, dove la voce non è un testo ma un campo da rilevare, e dove la fonte dei proverbi non è ancora stabilita: chi li raccoglie, con quale metodo, con quale consenso. **Finché Q2 non è risolta, le tappe dell'oggetto non si scrivono.**
 
-**Decisioni di Pietro del 07/10/2026, in attesa della revisione voce per voce.** Le 150 voci delle cinque lingue non ferraresi le rivede Pietro su una pagina che le mostra tutte, con accanto le segnalazioni del progetto, e per ognuna dice se la conferma, la cambia o la scarta (`roadmap-documentazione.md`). **Il ferrarese lo raccoglie il progetto e lo rivede Pietro**: proverbi e modi di dire presi da fonti pubblicate e citate (vocabolari e raccolte dialettali), mai scritti a tavolino, ciascuno con la fonte e la pagina; le registrazioni di parlanti vengono dopo, con il consenso. La domanda si chiude quando la revisione è fatta.
+**Decisioni di Pietro del 07/10/2026, in attesa della revisione voce per voce.** Le 150 voci delle cinque lingue non ferraresi le rivede Pietro su una pagina che le mostra tutte, con accanto le segnalazioni del progetto, e per ognuna dice se la conferma, la cambia o la scarta (`roadmap-documentazione.md`). **Il ferrarese lo raccoglie il progetto e lo rivede Pietro**: proverbi e modi di dire presi da fonti pubblicate e citate (vocabolari e raccolte dialettali), mai scritti a tavolino, ciascuno con la fonte e la pagina; le registrazioni di parlanti vengono dopo, con il consenso. Per l'italiano la revisione è sulle centocinquanta voci per luogo (§5.4). La domanda si chiude quando la revisione è fatta.
 
 ### Q3 — Che cosa è un «testo autentico» nelle sei lingue? — **chiusa il 07/10/2026**
 
@@ -693,6 +695,7 @@ python3 sorgenti/lingue/compila_titoli.py --verifica  # conta i titoli per fonte
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 07/10/2026 | 0.6 | I cibi dell'italiano dipendono dal luogo (decisione di Pietro del 07/10/2026): un piatto tipico per ogni tappa, centocinquanta voci in dati/lingue/cibi_per_tappa.json, senza nomi dialettali e senza bevande. La lista fissa di trenta voci italiane resta come storia. |
 | 07/10/2026 | 0.5 | Q3 chiusa: la regola del testo autentico e le ipotesi per lingua, sempre interattive. Q4 chiusa: LIS solo da materiali online, comunità sorda dopo l'anno 1. Q5 chiusa: niente linea del greco moderno, il greco punta su etimologia, radici, indoeuropeo, cultura e filosofia. Q7 chiusa: modulo d'ingresso con Niccolò III, dopo l'anno 1. Q8 chiusa: trenta voci, conto per livello. Q2: il ferrarese lo raccoglie il progetto, le altre voci le rivede Pietro (decisioni di Pietro del 07/10/2026). |
 | 07/10/2026 | 0.4 | **Q10 e Q11 chiuse (decisioni di Pietro del 07/10/2026).** La tappa successiva si apre con la soglia di informatica; per il livello *n* di una lingua servono tutti i premi precedenti di quella lingua, e chi è indietro può farsi riportare indietro, con un espediente narrativo per ogni anno. I sette livelli non hanno ordine: sono sparsi nell'ambiente, ognuno segnato da una freccia del suo colore, accanto a chicche interattive brevi. |
 | 07/10/2026 | 0.3 | **Q1 chiusa (decisione di Pietro del 07/10/2026): sette livelli per tappa**, uno di informatica e uno per ciascuna delle sei lingue, ognuno con la propria soglia; il ragazzo li fa tutti. Nascono due domande importanti: Q10, che cosa apre la tappa successiva, e Q11, l'ordine dei sette livelli e il tempo di una tappa. |

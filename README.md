@@ -77,7 +77,7 @@ riferimenti/mappa-informatica/   mappa delle propedeuticità dell'informatica (2
 | 17 | `videogioco-5-duchi-ritratti.md` | **Trasversale**: i ritratti dei 213 personaggi, la regola fra ritratto autentico ed emblema, i **60 emblemi disegnati** con la famiglia del loro motivo, le **195 immagini giudicate una per una e nessuna rimasta aperta**, e le etichette che il gioco deve dichiarare | 0.6 |
 | 18 | `videogioco-5-duchi-luoghi-edifici.md` | **Trasversale**: i 95 luoghi del gioco classificati in sette tipi, lo schema del dettaglio per luogo, la decisione su ODbL, il rilievo del terreno come risposta alle altezze mancanti e gli interni degli edifici dell'anno 1 | 0.7 |
 | 19 | `videogioco-5-duchi-furioso.md` | **Anno 5**: i dodici filoni dell'*Orlando furioso*, la regola dei due strati (pin reale, stanza del filone), il tipo `N` del non luogo, le **trenta citazioni** dei livelli più la facoltativa `5-22F`, e la **regola che nessuna stanza ha un disegno proprio** (§4.12) | 0.7 |
-| 20 | `videogioco-5-duchi-lingue.md` | **Trasversale**: il sistema linguistico — sei lingue (italiano, ferrarese, latino, inglese, LIS, greco) per cinque anni, **900 livelli**, l'anatomia di un livello, l'occhio del linguista, le sei associazioni con gli oggetti di interazione e i 900 titoli | 0.5 |
+| 20 | `videogioco-5-duchi-lingue.md` | **Trasversale**: il sistema linguistico — sei lingue (italiano, ferrarese, latino, inglese, LIS, greco) per cinque anni, **900 livelli**, l'anatomia di un livello, l'occhio del linguista, le sei associazioni con gli oggetti di interazione e i 900 titoli | 0.6 |
 | 21 | `videogioco-5-duchi-lingue-immagini.md` | **Trasversale**: le **180 immagini degli oggetti di interazione** — 1120 candidati con licenza libera trovati su Commons, la regola delle quattro categorie, le etichette, la misura e la regola del ritaglio, e il difetto della ricerca automatica | 0.9 |
 | 22 | `videogioco-5-duchi-audit.md` | **Trasversale**: la **lista operativa** di tutte le questioni aperte — 128 voci in **17 sezioni**, **60 chiuse, 68 aperte**, 1 bloccante e 2 importanti, ognuna con pro, contro, valutazione e responsabilità; la **B1 spiegata in parole semplici**. I numeri che questa tabella riporta sono **controllati**, anche quelli in lettere: `sorgenti/lingue/conta_questioni.py` confronta l'audit, i numeri per documento del §4 e i numeri che il `README.md` ne copia, e `prova_difetto_questioni.py` inietta quindici difetti e richiede che siano tutti visti | 0.33 |
 | 23 | `videogioco-5-duchi-percorsi.md` | **Trasversale**: i **percorsi del duca** — i **22 mezzi** con l'anno di attestazione e il controllo di anacronismo per tappa, le tre varianti di percorso, il ritorno come momento degli incontri, e la copertura della mappa con i suoi buhi | 0.7 |
@@ -233,7 +233,7 @@ I7 confronta i numeri che **una** sezione dichiara con il suo file. La regola ch
 |---|---|
 | Documenti con un controllo dichiarato | **15** |
 | Documenti senza controllo | **20** |
-| Numeri in prosa contati | **2954** |
+| Numeri in prosa contati | **2957** |
 | Documenti interamente guardati | **0** |
 | Dichiarazioni senza riscontro nel codice | **0** |
 

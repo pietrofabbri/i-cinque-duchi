@@ -1,0 +1,1209 @@
+{
+ "versione": "v1",
+ "data": "2026-10-07",
+ "stato": "proposta del progetto, da rivedere con Pietro",
+ "regola": "Decisioni di Pietro del 07/10/2026: i cibi dell'italiano dipendono dal luogo. Ogni tappa ha un piatto tipico del suo luogo; la lista fissa di trenta voci uguali per tutti gli anni non vale più per l'italiano. Niente nomi dialettali e niente bevande (le bevande sono l'oggetto del greco).",
+ "fonte_luoghi": "dati/luoghi_gioco.json (pin), dati/sequenza_tappe.json, tabella delle tappe di docs/videogioco-5-duchi-anno1-ferrara.md",
+ "tappe": [
+  {
+   "tappa": "1-1",
+   "anno": 1,
+   "numero": 1,
+   "luogo": "Po, Voghenza, Cattedrale",
+   "piatto": "l'aglio di Voghiera",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "1-2",
+   "anno": 1,
+   "numero": 2,
+   "luogo": "Pomposa",
+   "piatto": "le vongole di Goro",
+   "segnalazione": "Goro è vicina a Pomposa, non è Pomposa."
+  },
+  {
+   "tappa": "1-3",
+   "anno": 1,
+   "numero": 3,
+   "luogo": "Piazza e Palazzo comunale",
+   "piatto": "la coppia ferrarese",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "1-4",
+   "anno": 1,
+   "numero": 4,
+   "luogo": "Piazza delle Erbe",
+   "piatto": "la zucca violina",
+   "segnalazione": "La piazza era il mercato delle erbe: la zucca è l'ortaggio ferrarese per eccellenza."
+  },
+  {
+   "tappa": "1-5",
+   "anno": 1,
+   "numero": 5,
+   "luogo": "Sant'Antonio in Polesine",
+   "piatto": "la torta di riso",
+   "segnalazione": "Legame con il punto debole: è un piatto ferrarese, non di questo luogo preciso."
+  },
+  {
+   "tappa": "1-6",
+   "anno": 1,
+   "numero": 6,
+   "luogo": "Palazzo della signoria",
+   "piatto": "il pasticcio di maccheroni",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "1-7",
+   "anno": 1,
+   "numero": 7,
+   "luogo": "Castello",
+   "piatto": "la salama da sugo",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "1-8",
+   "anno": 1,
+   "numero": 8,
+   "luogo": "Studio (memoria a Palazzo Paradiso)",
+   "piatto": "i cappelletti",
+   "segnalazione": "Legame con il punto debole: è un piatto ferrarese, non di questo luogo preciso."
+  },
+  {
+   "tappa": "1-9",
+   "anno": 1,
+   "numero": 9,
+   "luogo": "Corte e Studio",
+   "piatto": "la torta di tagliatelle",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "1-10",
+   "anno": 1,
+   "numero": 10,
+   "luogo": "Palazzo di corte",
+   "piatto": "un piatto dei Banchetti di Messisbugo",
+   "segnalazione": "Il ricettario dello scalco estense (1549): il piatto preciso va scelto leggendolo."
+  },
+  {
+   "tappa": "1-11",
+   "anno": 1,
+   "numero": 11,
+   "luogo": "Ex ghetto, MEIS",
+   "piatto": "il salame d'oca",
+   "segnalazione": "Della cucina ebraica ferrarese."
+  },
+  {
+   "tappa": "1-12",
+   "anno": 1,
+   "numero": 12,
+   "luogo": "Schifanoia",
+   "piatto": "le pere",
+   "segnalazione": "Schifanoia ha il ciclo dei Mesi: i frutti delle stagioni. La pera ferrarese è IGP."
+  },
+  {
+   "tappa": "1-13",
+   "anno": 1,
+   "numero": 13,
+   "luogo": "Pinacoteca, Certosa",
+   "piatto": "la polenta",
+   "segnalazione": "Legame con il punto debole: è un piatto ferrarese, non di questo luogo preciso."
+  },
+  {
+   "tappa": "1-14",
+   "anno": 1,
+   "numero": 14,
+   "luogo": "Addizione Erculea",
+   "piatto": "i cappellacci di zucca",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "1-15",
+   "anno": 1,
+   "numero": 15,
+   "luogo": "Palazzo Paradiso",
+   "piatto": "la ciambella ferrarese",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "1-16",
+   "anno": 1,
+   "numero": 16,
+   "luogo": "Castello, Corpus Domini",
+   "piatto": "il pampepato",
+   "segnalazione": "La tradizione lo fa nascere nel monastero del Corpus Domini: da verificare."
+  },
+  {
+   "tappa": "1-17",
+   "anno": 1,
+   "numero": 17,
+   "luogo": "Casa di Ariosto",
+   "piatto": "la rapa",
+   "segnalazione": "Ariosto, Satira III: preferisce una rapa cotta a casa sua alla tavola dei signori. Da verificare il verso."
+  },
+  {
+   "tappa": "1-18",
+   "anno": 1,
+   "numero": 18,
+   "luogo": "Castello",
+   "piatto": "la zia ferrarese",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "1-19",
+   "anno": 1,
+   "numero": 19,
+   "luogo": "Palazzo Paradiso",
+   "piatto": "la torta tenerina",
+   "segnalazione": "Legame con il punto debole: è un piatto ferrarese, non di questo luogo preciso."
+  },
+  {
+   "tappa": "1-20",
+   "anno": 1,
+   "numero": 20,
+   "luogo": "Castello",
+   "piatto": "la zuppa inglese",
+   "segnalazione": "Una leggenda la lega alla corte estense: è una leggenda, va detto."
+  },
+  {
+   "tappa": "1-21",
+   "anno": 1,
+   "numero": 21,
+   "luogo": "Castello, Sant'Anna",
+   "piatto": "i mandorlini del ponte",
+   "segnalazione": "Legame con il punto debole: è un piatto ferrarese, non di questo luogo preciso."
+  },
+  {
+   "tappa": "1-22",
+   "anno": 1,
+   "numero": 22,
+   "luogo": "Palazzo Municipale, mura",
+   "piatto": "l'asparago verde di Mesola",
+   "segnalazione": "Legame con il punto debole: è un piatto ferrarese, non di questo luogo preciso."
+  },
+  {
+   "tappa": "1-23",
+   "anno": 1,
+   "numero": 23,
+   "luogo": "Vicolo del Chiozzino",
+   "piatto": "le rane fritte",
+   "segnalazione": "Legame con il punto debole: è un piatto ferrarese, non di questo luogo preciso."
+  },
+  {
+   "tappa": "1-24",
+   "anno": 1,
+   "numero": 24,
+   "luogo": "Territorio del Po, Certosa",
+   "piatto": "lo storione del Po",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "1-25",
+   "anno": 1,
+   "numero": 25,
+   "luogo": "Teatro Comunale",
+   "piatto": "",
+   "segnalazione": "Da proporre: non trovo un piatto legato al teatro."
+  },
+  {
+   "tappa": "1-26",
+   "anno": 1,
+   "numero": 26,
+   "luogo": "Museo del Risorgimento, mura",
+   "piatto": "",
+   "segnalazione": "Da proporre."
+  },
+  {
+   "tappa": "1-27",
+   "anno": 1,
+   "numero": 27,
+   "luogo": "Terre di bonifica, polo chimico",
+   "piatto": "il riso del Delta del Po",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "1-28",
+   "anno": 1,
+   "numero": 28,
+   "luogo": "MEIS, cimitero di via delle Vigne, muretto del Castello",
+   "piatto": "",
+   "segnalazione": "Da proporre: un piatto della cucina ebraica ferrarese con un nome italiano."
+  },
+  {
+   "tappa": "1-29",
+   "anno": 1,
+   "numero": 29,
+   "luogo": "Vicolo del Chiozzino, Largo Vancini",
+   "piatto": "",
+   "segnalazione": "Da proporre."
+  },
+  {
+   "tappa": "1-30",
+   "anno": 1,
+   "numero": 30,
+   "luogo": "Tutta la mappa, Lido di Spina, stadio",
+   "piatto": "l'anguilla di Comacchio",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-1",
+   "anno": 2,
+   "numero": 1,
+   "luogo": "Bolzano, Museo archeologico altoatesino",
+   "piatto": "i canederli",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-2",
+   "anno": 2,
+   "numero": 2,
+   "luogo": "Crotone",
+   "piatto": "il pecorino crotonese",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-3",
+   "anno": 2,
+   "numero": 3,
+   "luogo": "Roma, area del Campidoglio",
+   "piatto": "la carbonara",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-4",
+   "anno": 2,
+   "numero": 4,
+   "luogo": "Squillace, monastero di Vivarium",
+   "piatto": "la cipolla rossa di Tropea",
+   "segnalazione": "Calabria, ma Tropea non è vicina a Squillace: da verificare."
+  },
+  {
+   "tappa": "2-5",
+   "anno": 2,
+   "numero": 5,
+   "luogo": "Roma",
+   "piatto": "la cacio e pepe",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-6",
+   "anno": 2,
+   "numero": 6,
+   "luogo": "Elea (Velia)",
+   "piatto": "i fichi bianchi del Cilento",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-7",
+   "anno": 2,
+   "numero": 7,
+   "luogo": "Roma, Tuscolo",
+   "piatto": "la porchetta di Ariccia",
+   "segnalazione": "Tuscolo è nei Castelli Romani, come Ariccia."
+  },
+  {
+   "tappa": "2-8",
+   "anno": 2,
+   "numero": 8,
+   "luogo": "Milano",
+   "piatto": "il risotto alla milanese",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-9",
+   "anno": 2,
+   "numero": 9,
+   "luogo": "Roma, Curia",
+   "piatto": "i saltimbocca alla romana",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-10",
+   "anno": 2,
+   "numero": 10,
+   "luogo": "Roma, villa dei Gracchi",
+   "piatto": "i carciofi alla giudia",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-11",
+   "anno": 2,
+   "numero": 11,
+   "luogo": "Elea (Velia)",
+   "piatto": "le alici di menaica",
+   "segnalazione": "Si pescano a Pisciotta, nel Cilento vicino a Velia."
+  },
+  {
+   "tappa": "2-12",
+   "anno": 2,
+   "numero": 12,
+   "luogo": "Porta `PT-CAR` (Ferrara)",
+   "piatto": "la coppia ferrarese",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-13",
+   "anno": 2,
+   "numero": 13,
+   "luogo": "Roma",
+   "piatto": "l'amatriciana",
+   "segnalazione": "Amatrice è nel Lazio, non a Roma."
+  },
+  {
+   "tappa": "2-14",
+   "anno": 2,
+   "numero": 14,
+   "luogo": "Firenze",
+   "piatto": "la bistecca alla fiorentina",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-15",
+   "anno": 2,
+   "numero": 15,
+   "luogo": "Palermo",
+   "piatto": "le arancine",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-16",
+   "anno": 2,
+   "numero": 16,
+   "luogo": "Taranto",
+   "piatto": "le cozze tarantine",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-17",
+   "anno": 2,
+   "numero": 17,
+   "luogo": "Roma",
+   "piatto": "i supplì",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-18",
+   "anno": 2,
+   "numero": 18,
+   "luogo": "Roma",
+   "piatto": "la coda alla vaccinara",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-19",
+   "anno": 2,
+   "numero": 19,
+   "luogo": "Chiusi",
+   "piatto": "i pici",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-20",
+   "anno": 2,
+   "numero": 20,
+   "luogo": "Roma",
+   "piatto": "il maritozzo",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-21",
+   "anno": 2,
+   "numero": 21,
+   "luogo": "Porta `PT-AQU` (Ferrara)",
+   "piatto": "il pampepato",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-22",
+   "anno": 2,
+   "numero": 22,
+   "luogo": "Venezia",
+   "piatto": "il baccalà mantecato",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-23",
+   "anno": 2,
+   "numero": 23,
+   "luogo": "Roma, Curia",
+   "piatto": "l'abbacchio",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-24",
+   "anno": 2,
+   "numero": 24,
+   "luogo": "Firenze",
+   "piatto": "la ribollita",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-25",
+   "anno": 2,
+   "numero": 25,
+   "luogo": "Ferrara, zona dell'Addizione Erculea",
+   "piatto": "i cappellacci di zucca",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-26",
+   "anno": 2,
+   "numero": 26,
+   "luogo": "Ferrara, corte",
+   "piatto": "il pasticcio di maccheroni",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-27",
+   "anno": 2,
+   "numero": 27,
+   "luogo": "Porta `PT-CON` (Ferrara)",
+   "piatto": "la zia ferrarese",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-28",
+   "anno": 2,
+   "numero": 28,
+   "luogo": "Ferrara, corte",
+   "piatto": "la torta di tagliatelle",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-29",
+   "anno": 2,
+   "numero": 29,
+   "luogo": "Porta `PT-COL` (Ferrara)",
+   "piatto": "la salama da sugo",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "2-30",
+   "anno": 2,
+   "numero": 30,
+   "luogo": "Ferrara, corte",
+   "piatto": "la ciambella ferrarese",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-1",
+   "anno": 3,
+   "numero": 1,
+   "luogo": "Alessandria",
+   "piatto": "il ful medames",
+   "segnalazione": "Alessandria d'Egitto: fuori dall'Europa, ma è la tappa."
+  },
+  {
+   "tappa": "3-2",
+   "anno": 3,
+   "numero": 2,
+   "luogo": "Frombork",
+   "piatto": "i pierogi",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-3",
+   "anno": 3,
+   "numero": 3,
+   "luogo": "Roma",
+   "piatto": "le puntarelle",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-4",
+   "anno": 3,
+   "numero": 4,
+   "luogo": "Atene",
+   "piatto": "la moussakà",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-5",
+   "anno": 3,
+   "numero": 5,
+   "luogo": "Atene",
+   "piatto": "il souvlaki",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-6",
+   "anno": 3,
+   "numero": 6,
+   "luogo": "Atene",
+   "piatto": "la spanakopita",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-7",
+   "anno": 3,
+   "numero": 7,
+   "luogo": "Ravenna",
+   "piatto": "la piadina",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-8",
+   "anno": 3,
+   "numero": 8,
+   "luogo": "Castel del Monte",
+   "piatto": "la burrata di Andria",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-9",
+   "anno": 3,
+   "numero": 9,
+   "luogo": "Pella",
+   "piatto": "la bougatsa",
+   "segnalazione": "È di Salonicco, la grande città della Macedonia greca vicino a Pella."
+  },
+  {
+   "tappa": "3-10",
+   "anno": 3,
+   "numero": 10,
+   "luogo": "Ferrara, fonderia",
+   "piatto": "la salama da sugo",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-11",
+   "anno": 3,
+   "numero": 11,
+   "luogo": "Ferrara, corte",
+   "piatto": "il pasticcio di maccheroni",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-12",
+   "anno": 3,
+   "numero": 12,
+   "luogo": "Aquisgrana",
+   "piatto": "i Printen di Aquisgrana",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-13",
+   "anno": 3,
+   "numero": 13,
+   "luogo": "Milano",
+   "piatto": "la cotoletta alla milanese",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-14",
+   "anno": 3,
+   "numero": 14,
+   "luogo": "Firenze",
+   "piatto": "il lampredotto",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-15",
+   "anno": 3,
+   "numero": 15,
+   "luogo": "Ferrara, Camerino d'alabastro",
+   "piatto": "la zuppa inglese",
+   "segnalazione": "Una leggenda la lega alla corte estense: è una leggenda, va detto."
+  },
+  {
+   "tappa": "3-16",
+   "anno": 3,
+   "numero": 16,
+   "luogo": "Magonza",
+   "piatto": "lo Handkäs",
+   "segnalazione": "Formaggio della zona di Magonza e dell'Assia: da verificare."
+  },
+  {
+   "tappa": "3-17",
+   "anno": 3,
+   "numero": 17,
+   "luogo": "Ferrara, cappella",
+   "piatto": "i mandorlini del ponte",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-18",
+   "anno": 3,
+   "numero": 18,
+   "luogo": "Alcalá de Henares",
+   "piatto": "la costrada di Alcalá",
+   "segnalazione": "Dolce tipico di Alcalá de Henares: da verificare."
+  },
+  {
+   "tappa": "3-19",
+   "anno": 3,
+   "numero": 19,
+   "luogo": "Basilea",
+   "piatto": "i Läckerli di Basilea",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-20",
+   "anno": 3,
+   "numero": 20,
+   "luogo": "Ferrara, Camerino",
+   "piatto": "il pampepato",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-21",
+   "anno": 3,
+   "numero": 21,
+   "luogo": "Aquisgrana",
+   "piatto": "il Sauerbraten",
+   "segnalazione": "È renano in generale, non solo di Aquisgrana."
+  },
+  {
+   "tappa": "3-22",
+   "anno": 3,
+   "numero": 22,
+   "luogo": "Certaldo",
+   "piatto": "la cipolla di Certaldo",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-23",
+   "anno": 3,
+   "numero": 23,
+   "luogo": "Parigi",
+   "piatto": "la baguette",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-24",
+   "anno": 3,
+   "numero": 24,
+   "luogo": "Norimberga",
+   "piatto": "le salsicce di Norimberga",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-25",
+   "anno": 3,
+   "numero": 25,
+   "luogo": "Venezia",
+   "piatto": "il fegato alla veneziana",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-26",
+   "anno": 3,
+   "numero": 26,
+   "luogo": "Westminster",
+   "piatto": "il fish and chips",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-27",
+   "anno": 3,
+   "numero": 27,
+   "luogo": "Parigi",
+   "piatto": "la zuppa di cipolle",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-28",
+   "anno": 3,
+   "numero": 28,
+   "luogo": "Torino",
+   "piatto": "il vitello tonnato",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-29",
+   "anno": 3,
+   "numero": 29,
+   "luogo": "Roma, Curia",
+   "piatto": "i carciofi alla romana",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "3-30",
+   "anno": 3,
+   "numero": 30,
+   "luogo": "Mantova",
+   "piatto": "i tortelli di zucca",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "4-1",
+   "anno": 4,
+   "numero": 1,
+   "luogo": "Uruk",
+   "piatto": "il masgouf",
+   "segnalazione": "Pesce alla brace dell'Iraq di oggi: Uruk è nell'Iraq meridionale."
+  },
+  {
+   "tappa": "4-2",
+   "anno": 4,
+   "numero": 2,
+   "luogo": "Il Cairo e le carovane",
+   "piatto": "il koshari",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "4-3",
+   "anno": 4,
+   "numero": 3,
+   "luogo": "Xianyang",
+   "piatto": "il roujiamo",
+   "segnalazione": "Il «panino» dello Shaanxi, dove è Xianyang."
+  },
+  {
+   "tappa": "4-4",
+   "anno": 4,
+   "numero": 4,
+   "luogo": "Tebe",
+   "piatto": "il pane del sole",
+   "segnalazione": "L'aish shamsi dell'Alto Egitto, dove è Tebe."
+  },
+  {
+   "tappa": "4-5",
+   "anno": 4,
+   "numero": 5,
+   "luogo": "Agra",
+   "piatto": "il petha di Agra",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "4-6",
+   "anno": 4,
+   "numero": 6,
+   "luogo": "Karakorum",
+   "piatto": "i buuz",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "4-7",
+   "anno": 4,
+   "numero": 7,
+   "luogo": "Hannover",
+   "piatto": "la Welfenspeise",
+   "segnalazione": "Dolce di Hannover: da verificare."
+  },
+  {
+   "tappa": "4-8",
+   "anno": 4,
+   "numero": 8,
+   "luogo": "Uppsala",
+   "piatto": "le köttbullar",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "4-9",
+   "anno": 4,
+   "numero": 9,
+   "luogo": "Il Cairo `A`, con Timbuctù `S`",
+   "piatto": "lo stufato di arachidi del Mali",
+   "segnalazione": "Per Timbuctù: da verificare il nome."
+  },
+  {
+   "tappa": "4-10",
+   "anno": 4,
+   "numero": 10,
+   "luogo": "Ferrara, corte",
+   "piatto": "i cappellacci di zucca",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "4-11",
+   "anno": 4,
+   "numero": 11,
+   "luogo": "Baghdad",
+   "piatto": "le kubba",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "4-12",
+   "anno": 4,
+   "numero": 12,
+   "luogo": "Qufu",
+   "piatto": "il jianbing",
+   "segnalazione": "Crêpe dello Shandong, dove è Qufu."
+  },
+  {
+   "tappa": "4-13",
+   "anno": 4,
+   "numero": 13,
+   "luogo": "Alessandria",
+   "piatto": "la sayadeya",
+   "segnalazione": "Riso e pesce di Alessandria."
+  },
+  {
+   "tappa": "4-14",
+   "anno": 4,
+   "numero": 14,
+   "luogo": "Tenochtitlán",
+   "piatto": "i tamales",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "4-15",
+   "anno": 4,
+   "numero": 15,
+   "luogo": "Chio e la Ionia",
+   "piatto": "il mastice di Chio",
+   "segnalazione": "È una resina usata nei dolci, non un piatto."
+  },
+  {
+   "tappa": "4-16",
+   "anno": 4,
+   "numero": 16,
+   "luogo": "Pataliputra",
+   "piatto": "il litti chokha",
+   "segnalazione": "Piatto del Bihar, dove è Patna (Pataliputra)."
+  },
+  {
+   "tappa": "4-17",
+   "anno": 4,
+   "numero": 17,
+   "luogo": "Bombay e Delhi",
+   "piatto": "il vada pav",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "4-18",
+   "anno": 4,
+   "numero": 18,
+   "luogo": "Costantinopoli",
+   "piatto": "la baklava",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "4-19",
+   "anno": 4,
+   "numero": 19,
+   "luogo": "Il Cairo",
+   "piatto": "i falafel",
+   "segnalazione": "Al Cairo si chiamano ta'ameya e si fanno con le fave."
+  },
+  {
+   "tappa": "4-20",
+   "anno": 4,
+   "numero": 20,
+   "luogo": "Ferrara e il regno",
+   "piatto": "la salama da sugo",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "4-21",
+   "anno": 4,
+   "numero": 21,
+   "luogo": "Toledo",
+   "piatto": "il marzapane di Toledo",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "4-22",
+   "anno": 4,
+   "numero": 22,
+   "luogo": "Babilonia",
+   "piatto": "i datteri",
+   "segnalazione": "Un frutto più che un piatto."
+  },
+  {
+   "tappa": "4-23",
+   "anno": 4,
+   "numero": 23,
+   "luogo": "Lisbona e Calicut",
+   "piatto": "il pastel de nata",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "4-24",
+   "anno": 4,
+   "numero": 24,
+   "luogo": "Nanchang e il mare",
+   "piatto": "i noodle di riso di Nanchang",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "4-25",
+   "anno": 4,
+   "numero": 25,
+   "luogo": "Annapolis e Baltimora",
+   "piatto": "le crab cakes del Maryland",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "4-26",
+   "anno": 4,
+   "numero": 26,
+   "luogo": "Spagna e Tenochtitlán",
+   "piatto": "il pomodoro",
+   "segnalazione": "Dalle Americhe alla Spagna: è la storia di questa tappa."
+  },
+  {
+   "tappa": "4-27",
+   "anno": 4,
+   "numero": 27,
+   "luogo": "Scutari e Costantinopoli",
+   "piatto": "i lokum",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "4-28",
+   "anno": 4,
+   "numero": 28,
+   "luogo": "Motihari e Londra",
+   "piatto": "il curry anglo-indiano",
+   "segnalazione": "Fra Motihari e Londra: da precisare quale piatto."
+  },
+  {
+   "tappa": "4-29",
+   "anno": 4,
+   "numero": 29,
+   "luogo": "Parigi e Varsavia",
+   "piatto": "il bigos",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "4-30",
+   "anno": 4,
+   "numero": 30,
+   "luogo": "Ferrara, archivio",
+   "piatto": "il pasticcio di maccheroni",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-1",
+   "anno": 5,
+   "numero": 1,
+   "luogo": "Chicago",
+   "piatto": "la deep dish pizza",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-2",
+   "anno": 5,
+   "numero": 2,
+   "luogo": "Vienna",
+   "piatto": "la Sachertorte",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-3",
+   "anno": 5,
+   "numero": 3,
+   "luogo": "Londra",
+   "piatto": "il roast beef",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-4",
+   "anno": 5,
+   "numero": 4,
+   "luogo": "Bethesda",
+   "piatto": "la Smith Island cake",
+   "segnalazione": "Dolce del Maryland: da verificare."
+  },
+  {
+   "tappa": "5-5",
+   "anno": 5,
+   "numero": 5,
+   "luogo": "Los Alamos",
+   "piatto": "il chile verde del Nuovo Messico",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-6",
+   "anno": 5,
+   "numero": 6,
+   "luogo": "Babilonia",
+   "piatto": "il pane del tannur",
+   "segnalazione": "Da verificare: un piatto dell'Iraq di oggi."
+  },
+  {
+   "tappa": "5-7",
+   "anno": 5,
+   "numero": 7,
+   "luogo": "Londra",
+   "piatto": "gli scones",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-8",
+   "anno": 5,
+   "numero": 8,
+   "luogo": "Bajkonur",
+   "piatto": "il beshbarmak",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-9",
+   "anno": 5,
+   "numero": 9,
+   "luogo": "Londra, Broad Street",
+   "piatto": "il pie and mash",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-10",
+   "anno": 5,
+   "numero": 10,
+   "luogo": "Stoccolma",
+   "piatto": "il gravlax",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-11",
+   "anno": 5,
+   "numero": 11,
+   "luogo": "Princeton",
+   "piatto": "il pork roll",
+   "segnalazione": "Piatto del New Jersey: da verificare."
+  },
+  {
+   "tappa": "5-12",
+   "anno": 5,
+   "numero": 12,
+   "luogo": "Buenos Aires",
+   "piatto": "l'asado",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-13",
+   "anno": 5,
+   "numero": 13,
+   "luogo": "Cambridge",
+   "piatto": "il Chelsea bun di Cambridge",
+   "segnalazione": "Da verificare: quale Cambridge è la tappa."
+  },
+  {
+   "tappa": "5-14",
+   "anno": 5,
+   "numero": 14,
+   "luogo": "Princeton",
+   "piatto": "la torta di mirtilli",
+   "segnalazione": "Il mirtillo è il frutto del New Jersey: da verificare."
+  },
+  {
+   "tappa": "5-15",
+   "anno": 5,
+   "numero": 15,
+   "luogo": "New York",
+   "piatto": "il bagel",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-16",
+   "anno": 5,
+   "numero": 16,
+   "luogo": "Seattle",
+   "piatto": "il salmone del Pacifico",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-17",
+   "anno": 5,
+   "numero": 17,
+   "luogo": "Los Angeles",
+   "piatto": "il French dip",
+   "segnalazione": "Panino nato a Los Angeles: da verificare."
+  },
+  {
+   "tappa": "5-18",
+   "anno": 5,
+   "numero": 18,
+   "luogo": "una sala di riunione, 1983",
+   "piatto": "",
+   "segnalazione": "Il luogo non è indicato («una sala di riunione, 1983»): va precisato prima del piatto."
+  },
+  {
+   "tappa": "5-19",
+   "anno": 5,
+   "numero": 19,
+   "luogo": "Londra",
+   "piatto": "le anguille in gelatina",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-20",
+   "anno": 5,
+   "numero": 20,
+   "luogo": "Ferrara",
+   "piatto": "i cappellacci di zucca",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-21",
+   "anno": 5,
+   "numero": 21,
+   "luogo": "Rotterdam",
+   "piatto": "le aringhe",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-22",
+   "anno": 5,
+   "numero": 22,
+   "luogo": "un documento del 2008",
+   "piatto": "",
+   "segnalazione": "Il luogo non è indicato («un documento del 2008»): va precisato prima del piatto."
+  },
+  {
+   "tappa": "5-23",
+   "anno": 5,
+   "numero": 23,
+   "luogo": "Ginevra",
+   "piatto": "la longeole di Ginevra",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-24",
+   "anno": 5,
+   "numero": 24,
+   "luogo": "un ufficio riservato, 1970",
+   "piatto": "",
+   "segnalazione": "Il luogo non è indicato («un ufficio riservato, 1970»): va precisato prima del piatto."
+  },
+  {
+   "tappa": "5-25",
+   "anno": 5,
+   "numero": 25,
+   "luogo": "Murray Hill, 1948",
+   "piatto": "il pomodoro del New Jersey",
+   "segnalazione": "Murray Hill è nel New Jersey: da verificare."
+  },
+  {
+   "tappa": "5-26",
+   "anno": 5,
+   "numero": 26,
+   "luogo": "Boston, 2018",
+   "piatto": "la clam chowder",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-27",
+   "anno": 5,
+   "numero": 27,
+   "luogo": "Toronto, 2012",
+   "piatto": "il peameal bacon sandwich",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-28",
+   "anno": 5,
+   "numero": 28,
+   "luogo": "Seattle, 2020",
+   "piatto": "il teriyaki di Seattle",
+   "segnalazione": "Da verificare."
+  },
+  {
+   "tappa": "5-29",
+   "anno": 5,
+   "numero": 29,
+   "luogo": "Londra, 2020",
+   "piatto": "la colazione inglese",
+   "segnalazione": ""
+  },
+  {
+   "tappa": "5-30",
+   "anno": 5,
+   "numero": 30,
+   "luogo": "Ferrara, sala di progetto",
+   "piatto": "la coppia ferrarese",
+   "segnalazione": ""
+  }
+ ]
+}

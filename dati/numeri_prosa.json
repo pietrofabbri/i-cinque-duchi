@@ -8335,6 +8335,18 @@
    "soggetto": "voci"
   },
   {
+   "numero": 5,
+   "riga": 243,
+   "scritto": "cinque",
+   "soggetto": "lingue"
+  },
+  {
+   "numero": 30,
+   "riga": 243,
+   "scritto": "trenta",
+   "soggetto": "voci"
+  },
+  {
    "numero": 30,
    "riga": 245,
    "scritto": "trenta",
@@ -8359,422 +8371,428 @@
    "soggetto": "voci"
   },
   {
+   "numero": 30,
+   "riga": 253,
+   "scritto": "trenta",
+   "soggetto": "voci"
+  },
+  {
    "numero": 900,
-   "riga": 259,
+   "riga": 261,
    "scritto": "900",
    "soggetto": "record"
   },
   {
    "numero": null,
-   "riga": 279,
+   "riga": 281,
    "scritto": "uno",
    "soggetto": "per"
   },
   {
    "numero": null,
-   "riga": 281,
+   "riga": 283,
    "scritto": "due",
    "soggetto": "liste"
   },
   {
    "numero": 5,
-   "riga": 285,
+   "riga": 287,
    "scritto": "cinque",
    "soggetto": "blocchi"
   },
   {
    "numero": 5,
-   "riga": 322,
+   "riga": 324,
    "scritto": "cinque",
    "soggetto": "blocchi"
   },
   {
    "numero": 5,
-   "riga": 359,
+   "riga": 361,
    "scritto": "cinque",
    "soggetto": "blocchi"
   },
   {
    "numero": 5,
-   "riga": 396,
+   "riga": 398,
    "scritto": "cinque",
    "soggetto": "blocchi"
   },
   {
    "numero": 5,
-   "riga": 433,
+   "riga": 435,
    "scritto": "cinque",
    "soggetto": "blocchi"
   },
   {
    "numero": 5,
-   "riga": 470,
+   "riga": 472,
    "scritto": "cinque",
    "soggetto": "blocchi"
   },
   {
    "numero": 6,
-   "riga": 511,
+   "riga": 513,
    "scritto": "sei",
    "soggetto": "lingue"
   },
   {
    "numero": 7,
-   "riga": 511,
+   "riga": 513,
    "scritto": "sette",
    "soggetto": "livelli"
   },
   {
    "numero": 150,
-   "riga": 511,
+   "riga": 513,
    "scritto": "150",
    "soggetto": "livelli"
   },
   {
    "numero": 900,
-   "riga": 511,
+   "riga": 513,
    "scritto": "900",
    "soggetto": "linguistici"
   },
   {
    "numero": null,
-   "riga": 511,
+   "riga": 513,
    "scritto": "due",
    "soggetto": "sistemi"
   },
   {
    "numero": 150,
-   "riga": 516,
+   "riga": 518,
    "scritto": "150",
    "soggetto": "livelli"
   },
   {
    "numero": 900,
-   "riga": 516,
+   "riga": 518,
    "scritto": "900",
    "soggetto": "livelli"
   },
   {
    "numero": null,
-   "riga": 516,
+   "riga": 518,
    "scritto": "due",
    "soggetto": "cose"
   },
   {
    "numero": 30,
-   "riga": 528,
+   "riga": 530,
    "scritto": "trenta",
    "soggetto": "voci"
   },
   {
    "numero": 150,
-   "riga": 530,
+   "riga": 532,
    "scritto": "150",
    "soggetto": "voci"
   },
   {
    "numero": 5,
-   "riga": 530,
+   "riga": 532,
    "scritto": "cinque",
    "soggetto": "lingue"
   },
   {
    "numero": 6,
-   "riga": 550,
+   "riga": 552,
    "scritto": "sei",
    "soggetto": "lingue"
   },
   {
    "numero": null,
-   "riga": 550,
+   "riga": 552,
    "scritto": "due",
    "soggetto": "problemi"
   },
   {
    "numero": 30,
-   "riga": 560,
+   "riga": 562,
    "scritto": "trenta",
    "soggetto": "livelli"
   },
   {
    "numero": null,
-   "riga": 566,
+   "riga": 568,
    "scritto": "due",
    "soggetto": "problemi"
   },
   {
    "numero": 55,
-   "riga": 568,
+   "riga": 570,
    "scritto": "55",
    "soggetto": "video"
   },
   {
    "numero": null,
-   "riga": 568,
+   "riga": 570,
    "scritto": "zero",
    "soggetto": "non"
   },
   {
    "numero": 49,
-   "riga": 568,
+   "riga": 570,
    "scritto": "49",
    "soggetto": "hanno"
   },
   {
    "numero": 49,
-   "riga": 568,
+   "riga": 570,
    "scritto": "49",
    "soggetto": "articoli"
   },
   {
    "numero": 49,
-   "riga": 570,
+   "riga": 572,
    "scritto": "49",
    "soggetto": "sono"
   },
   {
    "numero": 180,
-   "riga": 570,
+   "riga": 572,
    "scritto": "180",
    "soggetto": "immagini"
   },
   {
    "numero": null,
-   "riga": 572,
+   "riga": 574,
    "scritto": "due",
    "soggetto": "progetti"
   },
   {
    "numero": 0,
-   "riga": 575,
+   "riga": 577,
    "scritto": "000",
    "soggetto": "segni"
   },
   {
    "numero": 23,
-   "riga": 575,
+   "riga": 577,
    "scritto": "23",
    "soggetto": "lingue"
   },
   {
    "numero": null,
-   "riga": 584,
+   "riga": 586,
    "scritto": "due",
    "soggetto": "lezioni"
   },
   {
    "numero": 3,
-   "riga": 587,
+   "riga": 589,
    "scritto": "tre",
    "soggetto": "anni"
   },
   {
    "numero": null,
-   "riga": 587,
+   "riga": 589,
    "scritto": "due",
    "soggetto": "anni"
   },
   {
    "numero": 3,
-   "riga": 587,
+   "riga": 589,
    "scritto": "tre",
    "soggetto": "siano"
   },
   {
    "numero": 30,
-   "riga": 587,
+   "riga": 589,
    "scritto": "trenta",
    "soggetto": "livelli"
   },
   {
    "numero": 2,
-   "riga": 591,
+   "riga": 593,
    "scritto": "2",
    "soggetto": "dice"
   },
   {
    "numero": 30,
-   "riga": 591,
+   "riga": 593,
    "scritto": "30",
    "soggetto": "livelli"
   },
   {
    "numero": 30,
-   "riga": 602,
+   "riga": 604,
    "scritto": "trenta",
    "soggetto": "per"
   },
   {
    "numero": null,
-   "riga": 602,
+   "riga": 604,
    "scritto": "due",
    "soggetto": "personaggi"
   },
   {
    "numero": 4,
-   "riga": 602,
+   "riga": 604,
    "scritto": "quattro",
    "soggetto": "domande"
   },
   {
    "numero": 7,
-   "riga": 602,
+   "riga": 604,
    "scritto": "sette",
    "soggetto": "ambiti"
   },
   {
    "numero": 30,
-   "riga": 605,
+   "riga": 607,
    "scritto": "trenta",
    "soggetto": "voci"
   },
   {
    "numero": 20,
-   "riga": 605,
+   "riga": 607,
    "scritto": "20",
    "soggetto": "esercizi"
   },
   {
    "numero": 600,
-   "riga": 605,
+   "riga": 607,
    "scritto": "600",
    "soggetto": "esercizi"
   },
   {
    "numero": 600,
-   "riga": 605,
+   "riga": 607,
    "scritto": "600",
    "soggetto": "per"
   },
   {
    "numero": 30,
-   "riga": 605,
+   "riga": 607,
    "scritto": "trenta",
    "soggetto": "voci"
   },
   {
    "numero": 900,
-   "riga": 609,
+   "riga": 611,
    "scritto": "900",
    "soggetto": "livelli"
   },
   {
    "numero": 7,
-   "riga": 618,
+   "riga": 620,
    "scritto": "sette",
    "soggetto": "livelli"
   },
   {
    "numero": 6,
-   "riga": 618,
+   "riga": 620,
    "scritto": "sei",
    "soggetto": "linguistici"
   },
   {
    "numero": 7,
-   "riga": 622,
+   "riga": 624,
    "scritto": "sette",
    "soggetto": "livelli"
   },
   {
    "numero": null,
-   "riga": 622,
+   "riga": 624,
    "scritto": "uno",
    "soggetto": "per"
   },
   {
    "numero": 7,
-   "riga": 625,
+   "riga": 627,
    "scritto": "sette",
    "soggetto": "livelli"
   },
   {
    "numero": 20,
-   "riga": 625,
+   "riga": 627,
    "scritto": "20",
    "soggetto": "minuti"
   },
   {
    "numero": 7,
-   "riga": 625,
+   "riga": 627,
    "scritto": "sette",
    "soggetto": "livelli"
   },
   {
    "numero": 900,
-   "riga": 640,
+   "riga": 642,
    "scritto": "900",
    "soggetto": "titoli"
   },
   {
    "numero": 6,
-   "riga": 640,
+   "riga": 642,
    "scritto": "sei",
    "soggetto": "parti"
   },
   {
    "numero": 6,
-   "riga": 640,
+   "riga": 642,
    "scritto": "sei",
    "soggetto": "sistemi"
   },
   {
    "numero": 6,
-   "riga": 640,
+   "riga": 642,
    "scritto": "sei",
    "soggetto": "lingue"
   },
   {
    "numero": 5,
-   "riga": 664,
+   "riga": 666,
    "scritto": "cinque",
    "soggetto": "controlli"
   },
   {
    "numero": 900,
-   "riga": 664,
+   "riga": 666,
    "scritto": "900",
    "soggetto": "titoli"
   },
   {
    "numero": 0,
-   "riga": 664,
+   "riga": 666,
    "scritto": "0",
    "soggetto": "problemi"
   },
   {
    "numero": 6,
-   "riga": 674,
+   "riga": 676,
    "scritto": "sei",
    "soggetto": "parti"
   },
   {
    "numero": 93,
-   "riga": 682,
+   "riga": 684,
    "scritto": "93",
    "soggetto": "righe"
   },
   {
    "numero": null,
-   "riga": 682,
+   "riga": 684,
    "scritto": "due",
    "soggetto": "titoli"
   },
   {
    "numero": 150,
-   "riga": 686,
+   "riga": 688,
    "scritto": "150",
    "soggetto": "livelli"
   },
   {
    "numero": 900,
-   "riga": 686,
+   "riga": 688,
    "scritto": "900",
    "soggetto": "linguistici"
   },
   {
    "numero": 900,
-   "riga": 687,
+   "riga": 689,
    "scritto": "novecento",
    "soggetto": "livelli"
   }

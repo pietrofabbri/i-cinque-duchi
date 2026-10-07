@@ -1,0 +1,192 @@
+<title>Revisione delle voci</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,500;0,700;1,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#f6f1e7; --carta:#fffcf5; --fg:#2a241c; --tenue:#6f6556; --linea:#ddd2bf;
+  --accento:#8a2f1d; --accento-tenue:#f3e2d9;
+  --ok:#2f6b3a; --ok-tenue:#e1eedf; --cambio:#9a6a08; --cambio-tenue:#f6ebcf; --no:#8a2f1d; --no-tenue:#f3dfd9;
+  --segnala:#7a5a12; --segnala-fondo:#fbf3dc;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1c1915; --carta:#25211b; --fg:#ece4d6; --tenue:#a99d8a; --linea:#3d362c;
+  --accento:#e08a6c; --accento-tenue:#3f2a22;
+  --ok:#86c58f; --ok-tenue:#22352a; --cambio:#e2b65a; --cambio-tenue:#3a3020; --no:#e08a6c; --no-tenue:#3f2a22;
+  --segnala:#e2c27a; --segnala-fondo:#2e2a1e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1c1915; --carta:#25211b; --fg:#ece4d6; --tenue:#a99d8a; --linea:#3d362c;
+  --accento:#e08a6c; --accento-tenue:#3f2a22;
+  --ok:#86c58f; --ok-tenue:#22352a; --cambio:#e2b65a; --cambio-tenue:#3a3020; --no:#e08a6c; --no-tenue:#3f2a22;
+  --segnala:#e2c27a; --segnala-fondo:#2e2a1e; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 "IBM Plex Sans",system-ui,sans-serif}
+.pagina{max-width:860px;margin:0 auto;padding-inline:16px;padding-block:28px 64px}
+h1{font:700 2rem/1.15 Spectral,Georgia,serif;margin:0 0 6px;text-wrap:balance}
+.sopra{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--tenue);margin:0 0 6px}
+.intro{color:var(--tenue);max-width:65ch;margin:0 0 18px}
+.stato{font-size:.8rem;color:var(--tenue);display:flex;gap:8px;align-items:center;margin-bottom:18px}
+.stato .punto{width:8px;height:8px;border-radius:50%;background:var(--tenue)}
+.stato.ok .punto{background:var(--ok)} .stato.errore .punto{background:var(--no)}
+.schede{display:flex;flex-wrap:wrap;gap:6px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding-block:8px;z-index:2;border-bottom:1px solid var(--linea)}
+.scheda{border:1px solid var(--linea);background:var(--carta);color:var(--fg);border-radius:999px;padding:6px 12px;font:inherit;font-size:.85rem;cursor:pointer;display:flex;gap:6px;align-items:baseline}
+.scheda .conto{font-size:.75rem;color:var(--tenue);font-variant-numeric:tabular-nums}
+.scheda[aria-selected="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.scheda[aria-selected="true"] .conto{color:var(--bg);opacity:.75}
+.testa{margin:22px 0 10px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;align-items:end}
+.testa h2{font:700 1.4rem/1.2 Spectral,Georgia,serif;margin:0}
+.testa h2 em{font-weight:500;color:var(--accento)}
+.motivo{color:var(--tenue);font-size:.9rem;max-width:65ch;margin:4px 0 0}
+.filtro{font-size:.85rem;color:var(--tenue);display:flex;gap:6px;align-items:center;cursor:pointer}
+.avviso{background:var(--segnala-fondo);border-left:3px solid var(--segnala);padding:10px 14px;margin:0 0 14px;font-size:.9rem;max-width:72ch}
+ol.voci{list-style:none;margin:0;padding:0;border-top:1px solid var(--linea)}
+.voce{display:grid;grid-template-columns:2.2rem minmax(0,1fr) auto;gap:4px 12px;padding:12px 4px;border-bottom:1px solid var(--linea);align-items:start}
+.voce .n{font:500 .85rem Spectral,Georgia,serif;color:var(--tenue);font-variant-numeric:tabular-nums;padding-top:3px}
+.voce .nome{font:500 1.08rem/1.35 Spectral,Georgia,serif}
+.voce .seg{grid-column:2/4;font-size:.85rem;color:var(--segnala);background:var(--segnala-fondo);padding:6px 10px;border-radius:4px}
+.voce .seg::before{content:"Segnalazione · ";font-weight:600}
+.scelte{display:flex;gap:4px}
+.scelte button{font:inherit;font-size:.8rem;padding:5px 10px;border:1px solid var(--linea);background:var(--carta);color:var(--fg);border-radius:4px;cursor:pointer}
+.scelte button[aria-pressed="true"][data-s="conferma"]{background:var(--ok-tenue);border-color:var(--ok);color:var(--ok);font-weight:600}
+.scelte button[aria-pressed="true"][data-s="cambia"]{background:var(--cambio-tenue);border-color:var(--cambio);color:var(--cambio);font-weight:600}
+.scelte button[aria-pressed="true"][data-s="scarta"]{background:var(--no-tenue);border-color:var(--no);color:var(--no);font-weight:600}
+.voce .nota{grid-column:2/4}
+.voce input,.generale textarea{width:100%;font:inherit;font-size:.9rem;padding:7px 10px;border:1px solid var(--linea);border-radius:4px;background:var(--carta);color:var(--fg)}
+.voce[data-stato="scarta"] .nome{text-decoration:line-through;color:var(--tenue)}
+.generale{margin-top:22px}
+.generale label{display:block;font:500 1rem Spectral,Georgia,serif;margin-bottom:6px}
+.generale textarea{min-height:5.5em;resize:vertical}
+.regola{background:var(--accento-tenue);border-left:4px solid var(--accento);padding:12px 16px;margin:0 0 16px;font-size:.95rem;max-width:72ch}
+li.anno{font:700 1.05rem Spectral,Georgia,serif;color:var(--accento);padding:18px 4px 6px;border-bottom:1px solid var(--linea)}
+.voce .luogo{display:block;font:400 .78rem "IBM Plex Sans",system-ui,sans-serif;color:var(--tenue);margin-top:2px}
+.vuoto{color:var(--tenue);padding:16px 4px}
+@media (max-width:560px){.voce{grid-template-columns:2rem minmax(0,1fr)}.scelte{grid-column:2/3}.voce .seg,.voce .nota{grid-column:2/3}}
+</style>
+
+<div class="pagina">
+  <p class="sopra">I cinque duchi · revisione B2</p>
+  <h1>Le voci di ogni lingua</h1>
+  <p class="intro">Ogni lingua ha un oggetto e le sue voci, una per tappa: trenta uguali per tutti gli anni, tranne l'italiano, che ha un piatto per ogni luogo. Per ciascuna scegli <b>Confermo</b>, <b>Cambio</b> (e scrivi la tua proposta) o <b>Scarto</b>. Dove una voce mi convince poco c'è la mia segnalazione. Le scelte si salvano da sole; in fondo a ogni lingua c'è spazio per un commento generale.</p>
+  <div class="stato" id="stato"><span class="punto"></span><span id="stato-testo">Collegamento all'archivio…</span></div>
+  <div class="schede" role="tablist" id="schede"></div>
+  <section id="corpo"></section>
+</div>
+
+<script>
+const LINGUE = /*DATI*/;
+const scelte = {};      // id -> {stato, nota}
+let db = null, attiva = LINGUE[0].sig, soloSegnalate = false;
+try { const h = location.hash.slice(1); if (LINGUE.some(l => l.sig === h)) attiva = h; } catch (e) {}
+const id = (sig, n, anno) => sig + "-" + (anno ? anno + "-" : "") + String(n).padStart(2, "0");
+
+function stato(testo, tipo) {
+  const s = document.getElementById("stato");
+  s.className = "stato " + (tipo || "");
+  document.getElementById("stato-testo").textContent = testo;
+}
+
+function contoFatte(l) { return l.voci.filter(v => scelte[id(l.sig, v.n, v.anno)]?.stato).length; }
+
+function disegnaSchede() {
+  const el = document.getElementById("schede");
+  el.replaceChildren(...LINGUE.map(l => {
+    const b = document.createElement("button");
+    b.className = "scheda"; b.setAttribute("role", "tab");
+    b.setAttribute("aria-selected", l.sig === attiva);
+    b.innerHTML = `<span></span><span class="conto">${contoFatte(l)}/${l.voci.length}</span>`;
+    b.firstChild.textContent = l.nome;
+    b.onclick = () => { attiva = l.sig; try { history.replaceState(null, "", "#" + l.sig); } catch (e) {} disegna(); };
+    return b;
+  }));
+}
+
+function salva(chiave, dati) {
+  scelte[chiave] = { ...(scelte[chiave] || {}), ...dati };
+  if (!db) return;
+  stato("Salvataggio…");
+  db.collection("revisione").doc(chiave).set({ ...scelte[chiave], aggiornato: new Date().toISOString() })
+    .then(() => stato("Scelte salvate nell'archivio", "ok"))
+    .catch(e => stato(e && e.code === "permission_denied" ? "Non hai il permesso di salvare: le scelte restano solo in questa vista" : "Salvataggio non riuscito: riprova fra poco", "errore"));
+}
+
+function disegnaCorpo() {
+  const l = LINGUE.find(x => x.sig === attiva);
+  const corpo = document.getElementById("corpo");
+  corpo.replaceChildren();
+  const testa = document.createElement("div"); testa.className = "testa";
+  testa.innerHTML = `<div><h2></h2><p class="motivo"></p></div><label class="filtro"><input type="checkbox"> solo le voci segnalate (${l.voci.filter(v => v.s).length})</label>`;
+  testa.querySelector("h2").innerHTML = "";
+  const h2 = testa.querySelector("h2"); h2.append(l.nome[0].toUpperCase() + l.nome.slice(1) + " · "); const em = document.createElement("em"); em.textContent = l.oggetto; h2.append(em);
+  testa.querySelector(".motivo").textContent = l.motivo;
+  const cb = testa.querySelector("input"); cb.checked = soloSegnalate; cb.onchange = () => { soloSegnalate = cb.checked; disegnaCorpo(); };
+  corpo.append(testa);
+  if (l.sig === "IT") {
+    const a = document.createElement("div"); a.className = "regola";
+    a.innerHTML = "<b>La regola nuova, decisa da te il 07/10/2026: i cibi dipendono dal luogo.</b> Ogni tappa ha un piatto tipico del suo luogo, quindi le voci non sono più trenta uguali per tutti gli anni ma <b>centocinquanta, una per tappa</b>. Niente nomi dialettali e niente bevande, che sono l'oggetto del greco. Sotto ogni piatto c'è il luogo della tappa; dove il legame è debole o il luogo non è indicato, c'è la mia segnalazione.";
+    corpo.append(a);
+  }
+  if (l.sig === "FE") {
+    const a = document.createElement("p"); a.className = "avviso";
+    a.textContent = "Per il ferrarese le voci sono campi, non testi: dentro ognuno il progetto raccoglierà proverbi e modi di dire da vocabolari e raccolte dialettali pubblicate, con la fonte e la pagina, e te li porterà da rivedere. Qui decidi solo se il campo va tenuto.";
+    corpo.append(a);
+  }
+  const ol = document.createElement("ol"); ol.className = "voci";
+  const voci = l.voci.filter(v => !soloSegnalate || v.s);
+  let annoCorr = null;
+  for (const v of voci) {
+    if (v.anno && v.anno !== annoCorr) {
+      annoCorr = v.anno;
+      const h = document.createElement("li"); h.className = "anno";
+      h.textContent = "Anno " + v.anno + " · " + ["", "Ferrara", "la penisola", "l'Europa", "il mondo", "il mondo contemporaneo"][v.anno];
+      ol.append(h);
+    }
+    const k = id(l.sig, v.n, v.anno), sc = scelte[k] || {};
+    const li = document.createElement("li"); li.className = "voce"; li.dataset.stato = sc.stato || "";
+    li.innerHTML = `<span class="n">${v.n}</span><span class="nome"></span><div class="scelte" role="group">
+      <button data-s="conferma">Confermo</button><button data-s="cambia">Cambio</button><button data-s="scarta">Scarto</button></div>`;
+    li.querySelector(".nome").textContent = v.v;
+    if (v.luogo) { const lu = document.createElement("span"); lu.className = "luogo"; lu.textContent = v.anno + "-" + v.n + " · " + v.luogo.replace(/`[^`]*`/g, "").replace(/\s+/g, " ").trim(); li.querySelector(".nome").append(lu); }
+    li.querySelectorAll(".scelte button").forEach(b => {
+      b.setAttribute("aria-pressed", sc.stato === b.dataset.s);
+      b.onclick = () => {
+        const nuovo = scelte[k]?.stato === b.dataset.s ? "" : b.dataset.s;
+        salva(k, { stato: nuovo, voce: v.v, lingua: l.sig });
+        disegnaCorpo(); disegnaSchede();
+        if (nuovo === "cambia") document.querySelector(`[data-nota="${k}"]`)?.focus();
+      };
+    });
+    if (v.s) { const s = document.createElement("div"); s.className = "seg"; s.textContent = v.s; li.append(s); }
+    if (sc.stato === "cambia" || sc.stato === "scarta" || sc.nota) {
+      const d = document.createElement("div"); d.className = "nota";
+      const inp = document.createElement("input"); inp.dataset.nota = k;
+      inp.placeholder = sc.stato === "cambia" ? "La tua proposta: che voce metteresti al suo posto?" : "Una nota (facoltativa)";
+      inp.value = sc.nota || "";
+      inp.onchange = () => salva(k, { nota: inp.value.trim(), voce: v.v, lingua: l.sig });
+      d.append(inp); li.append(d);
+    }
+    ol.append(li);
+  }
+  corpo.append(ol);
+  if (!voci.length) { const p = document.createElement("p"); p.className = "vuoto"; p.textContent = "Nessuna voce segnalata in questa lingua."; corpo.append(p); }
+  const g = document.createElement("div"); g.className = "generale";
+  const kg = l.sig + "-generale";
+  g.innerHTML = `<label for="g">Un commento sull'intera lista del ${l.nome}</label><textarea id="g" placeholder="Per esempio: manca una voce, l'ordine non va, l'oggetto stesso va ripensato…"></textarea>`;
+  const ta = g.querySelector("textarea"); ta.value = scelte[kg]?.nota || "";
+  ta.onchange = () => salva(kg, { nota: ta.value.trim(), lingua: l.sig, voce: "(commento generale)" });
+  corpo.append(g);
+}
+
+function disegna() { disegnaSchede(); disegnaCorpo(); }
+disegna();
+
+(async () => {
+  try { db = await window.claude?.use("db"); } catch (e) { db = null; }
+  if (!db) { stato("L'archivio non è raggiungibile da questa vista: le scelte restano solo qui e si perdono chiudendo la pagina", "errore"); return; }
+  stato("Archivio collegato", "ok");
+  db.collection("revisione").onSnapshot(snap => {
+    const attivo = document.activeElement?.dataset?.nota || (document.activeElement?.id === "g" ? "g" : null);
+    for (const d of snap.docs) { const x = d.data() || {}; scelte[d.id] = { stato: x.stato || "", nota: x.nota || "" }; }
+    disegnaSchede();
+    if (!attivo) disegnaCorpo();
+  }, e => stato("L'archivio si è scollegato: ricarica la pagina", "errore"));
+})();
+</script>

@@ -1,0 +1,58 @@
+{
+ "IT": {
+  "sabaion": "È la forma piemontese: in italiano è «zabaione». Tenere il dialettale è una scelta, va detta.",
+  "lambrusco": "È un vino: una bevanda nella lista dei cibi, e le bevande sono l'oggetto del greco.",
+  "limoncello": "È una bevanda alcolica: stesso dubbio del lambrusco, e in più è un oggetto delicato per ragazzi di 14 anni.",
+  "gnocco": "In Emilia «gnocco» è il gnocco fritto; altrove si capisce «gnocchi». Va precisato quale."
+ },
+ "LA": {
+  "i haruspici": "Refuso: «gli aruspici». E si sovrappone a «l'ispezione delle interiora», che è la stessa pratica.",
+  "l'ispezione delle interiora": "È la pratica degli aruspici: una delle due voci è di troppo.",
+  "la peste": "È una malattia, non una superstizione: va bene solo come «la peste come presagio».",
+  "i miracoli": "Rischia di portare nel cristianesimo, mentre le altre voci sono romane: va deciso il periodo.",
+  "la vita quotidiana": "Troppo generica per essere un oggetto: quale superstizione della vita quotidiana?",
+  "i proverbi": "Un proverbio non è una superstizione: si sovrappone all'oggetto del ferrarese.",
+  "i mesi": "Si sovrappone a «il calendario e i giorni»."
+ },
+ "EN": {
+  "il blues": "Si sovrappone a «il delta blues».",
+  "il rock": "Si sovrappone a «il rock and roll».",
+  "il rap": "Si sovrappone a «l'hip hop».",
+  "la musica classica": "Il legame con la lingua inglese è debole: va scelto un testo inglese vero.",
+  "l'opera": "L'opera è soprattutto italiana: il legame con l'inglese va spiegato o la voce cambiata.",
+  "la musica da camera": "Legame debole con l'inglese.",
+  "il lied": "Il lied è tedesco: non è un oggetto della lingua inglese.",
+  "il canto gregoriano": "Il canto gregoriano è in latino: non è un oggetto della lingua inglese.",
+  "i testi delle canzoni": "Non è un genere ma un materiale; e i testi moderni sono coperti da diritti.",
+  "le interviste ai musicisti": "Non è un genere ma un materiale, e servono interviste con licenza libera."
+ },
+ "SI": {
+  "la calzolaio": "Refuso: «la calzoleria» o «il calzolaio».",
+  "il clarinetto": "È uno strumento, non un mestiere: rientra nella liuteria.",
+  "gli occhiali": "Ha senso solo come mestiere (l'occhialeria): va precisato.",
+  "la pasta": "Se è la pasta fatta a mano, si sovrappone ai cibi dell'italiano.",
+  "il ricamo a punto": "Si sovrappone a «il ricamo».",
+  "la lavorazione del legno d'albero": "Si sovrappone all'intaglio del legno e all'ebanisteria, e la forma è strana.",
+  "i lavori d'agro": "Non è chiaro che cosa indichi: va riscritta.",
+  "la vernice": "Troppo generica: quale mestiere?",
+  "il gesto e l'oggetto": "È un tema, non un mestiere: forse è il filo che lega tutte le voci, non una voce.",
+  "la trasmissione della tecnica": "È un tema, non un mestiere: stesso dubbio della voce precedente."
+ },
+ "EL": {
+  "il caffè": "Anacronistico: i Greci antichi non lo conoscevano, e la linea del greco moderno non c'è più.",
+  "il tè": "Anacronistico, come il caffè.",
+  "la birra": "Va bene solo se si parla di come i Greci vedevano la birra dei popoli vicini: va precisato.",
+  "vini di Creta": "Manca l'articolo: «i vini di Creta».",
+  "i vini dirottati": "Non è chiaro che cosa indichi: va riscritta.",
+  "il brindisi degli atleti": "Si sovrappone a «il brindisi».",
+  "il trasporto delle botti": "I Greci trasportavano il vino in anfore, non in botti: «il trasporto nelle anfore».",
+  "il consumo rituale": "Generica, e si sovrappone a «il simposio» e alle libagioni.",
+  "la tavola": "Troppo generica: quale tavola?",
+  "la sete": "Generica; è anche la voce dove la ricerca delle immagini aveva trovato la città di Sète."
+ },
+ "FE": {
+  "la parlata dei bambini": "Registrare minori non si fa: questa voce si raccoglie solo da fonti pubblicate.",
+  "i soprannomi dei quartieri": "È toponomastica più che detti popolari: va bene, ma è un campo diverso dagli altri.",
+  "i nomi delle porte e delle piazze": "Come la voce precedente: toponomastica."
+ }
+}
