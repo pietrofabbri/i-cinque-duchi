@@ -44,6 +44,9 @@ ol.voci{list-style:none;margin:0;padding:0;border-top:1px solid var(--linea)}
 .voce .nome{font:500 1.08rem/1.35 Spectral,Georgia,serif}
 .voce .seg{grid-column:2/4;font-size:.85rem;color:var(--segnala);background:var(--segnala-fondo);padding:6px 10px;border-radius:4px}
 .voce .seg::before{content:"Segnalazione · ";font-weight:600}
+.voce .cur{grid-column:2/4;font-size:.85rem;color:var(--ok);background:var(--ok-tenue);padding:6px 10px;border-radius:4px}
+.voce .cur::before{content:"Curiosità · ";font-weight:600}
+@media (max-width:560px){.voce .cur{grid-column:2/3}}
 .scelte{display:flex;gap:4px}
 .scelte button{font:inherit;font-size:.8rem;padding:5px 10px;border:1px solid var(--linea);background:var(--carta);color:var(--fg);border-radius:4px;cursor:pointer}
 .scelte button[aria-pressed="true"][data-s="conferma"]{background:var(--ok-tenue);border-color:var(--ok);color:var(--ok);font-weight:600}
@@ -121,7 +124,7 @@ function disegnaCorpo() {
   corpo.append(testa);
   if (l.sig === "IT") {
     const a = document.createElement("div"); a.className = "regola";
-    a.innerHTML = "<b>La regola nuova, decisa da te il 07/10/2026: i cibi dipendono dal luogo.</b> Ogni tappa ha un piatto tipico del suo luogo, quindi le voci non sono più trenta uguali per tutti gli anni ma <b>centocinquanta, una per tappa</b>. Niente nomi dialettali e niente bevande, che sono l'oggetto del greco. Sotto ogni piatto c'è il luogo della tappa; dove il legame è debole o il luogo non è indicato, c'è la mia segnalazione.";
+    a.innerHTML = "<b>La regola nuova, decisa da te il 07/10/2026: i cibi dipendono dal luogo.</b> Ogni tappa ha un piatto tipico del suo luogo: <b>centocinquanta voci, una per tappa</b>, senza nomi dialettali e senza bevande. <b>Seconda versione (08/10):</b> le voci senza nota le hai confermate; ho tolto le ripetizioni ferraresi (Ferrara è in 48 tappe, e nessun piatto si ripete), proposto le voci che mancavano e verificato i dubbi. In verde le <b>curiosità</b>, fatti veri da usare nel gioco; in giallo le <b>segnalazioni</b> ancora aperte (la casella le filtra).";
     corpo.append(a);
   }
   if (l.sig === "FE") {
@@ -154,6 +157,7 @@ function disegnaCorpo() {
         if (nuovo === "cambia") document.querySelector(`[data-nota="${k}"]`)?.focus();
       };
     });
+    if (v.c) { const c = document.createElement("div"); c.className = "cur"; c.textContent = v.c; li.append(c); }
     if (v.s) { const s = document.createElement("div"); s.className = "seg"; s.textContent = v.s; li.append(s); }
     if (sc.stato === "cambia" || sc.stato === "scarta" || sc.nota) {
       const d = document.createElement("div"); d.className = "nota";

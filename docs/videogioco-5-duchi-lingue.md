@@ -1,8 +1,8 @@
 ---
 titolo: Videogioco "I cinque duchi" — il sistema linguistico: sei lingue, novecento livelli
 tipo: normativo
-versione: 0.6
-data: 2026-10-07
+versione: 0.7
+data: 2026-10-08
 autore: Pietro Fabbri (con Claude)
 fonte: indicazioni di Pietro del 02/10/2026
 documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.2), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-anno1-ferrara.md (v0.3), AGENTS.md
@@ -240,7 +240,7 @@ Le famiglie di esercizi, con l'esempio in italiano (cibi):
 
 ### 5.4 Le trenta voci di ogni associazione
 
-**I cibi dell'italiano dipendono dal luogo** (decisione di Pietro del 07/10/2026). Per l'italiano la lista fissa di trenta voci uguali per tutti gli anni **non vale più**: ogni tappa ha **un piatto tipico del suo luogo**, quindi le voci italiane sono **centocinquanta, una per tappa**, in `dati/lingue/cibi_per_tappa.json`. Due vincoli, sempre di Pietro: **niente nomi dialettali** (il piatto si chiama con il suo nome italiano: «pampepato», non «pampapato»; «ciambella ferrarese», non «brazadela») e **niente bevande**, che sono l'oggetto del greco. Il file è una proposta del progetto con le segnalazioni dove il legame con il luogo è debole o il luogo non è indicato; la rivede Pietro sulla stessa pagina delle altre voci. Le altre cinque lingue restano a trenta voci.
+**I cibi dell'italiano dipendono dal luogo** (decisione di Pietro del 07/10/2026). Per l'italiano la lista fissa di trenta voci uguali per tutti gli anni **non vale più**: ogni tappa ha **un piatto tipico del suo luogo**, quindi le voci italiane sono **centocinquanta, una per tappa**, in `dati/lingue/cibi_per_tappa.json`. Due vincoli, sempre di Pietro: **niente nomi dialettali** (il piatto si chiama con il suo nome italiano: «pampepato», non «pampapato»; «ciambella ferrarese», non «brazadela») e **niente bevande**, che sono l'oggetto del greco. Il file è una proposta del progetto con le segnalazioni dove il legame con il luogo è debole o il luogo non è indicato; la rivede Pietro sulla stessa pagina delle altre voci. **Revisione di Pietro dell'08/10/2026** (v2 del file): confermate tutte le voci su cui non ha scritto niente; **nessun piatto si ripete**, nemmeno a Ferrara, che compare in 48 tappe: l'anno 1 usa i prodotti del territorio ferrarese, gli anni dopo i piatti e i cibi della corte estense documentati (Messisbugo, Michele Savonarola) e altri prodotti ferraresi; le voci che mancavano le ha fatte proporre al progetto, «anche generiche ferraresi». Ogni voce ha tre campi: il **piatto** (nome italiano), la **curiosità** (un fatto vero e verificato, con le fonti nel file, da usare nella tappa: per esempio la rapa della Satira III di Ariosto al 1-17, o il caviale ferrarese di Nuta Ascoli al 1-28) e la **segnalazione** (un dubbio ancora aperto). Le altre cinque lingue restano a trenta voci.
 
 Ogni associazione ha **trenta voci**, una per livello di ogni anno, in `dati/lingue/associazioni.json` (v1). *Per l'italiano questa lista è superata dal paragrafo qui sopra e resta come storia.* Sono **proposte**, non voci confermate: servono a dare un nome all'oggetto con cui il giocatore interagisce nel livello, e vanno discusse una per una.
 
@@ -695,6 +695,7 @@ python3 sorgenti/lingue/compila_titoli.py --verifica  # conta i titoli per fonte
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 08/10/2026 | 0.7 | Revisione di Pietro dell'08/10/2026 dei cibi per tappa: confermate le voci senza nota, nessun piatto ripetuto (Ferrara in 48 tappe), proposte le voci mancanti, curiosità verificate separate dalle segnalazioni (dati/lingue/cibi_per_tappa.json v2). |
 | 07/10/2026 | 0.6 | I cibi dell'italiano dipendono dal luogo (decisione di Pietro del 07/10/2026): un piatto tipico per ogni tappa, centocinquanta voci in dati/lingue/cibi_per_tappa.json, senza nomi dialettali e senza bevande. La lista fissa di trenta voci italiane resta come storia. |
 | 07/10/2026 | 0.5 | Q3 chiusa: la regola del testo autentico e le ipotesi per lingua, sempre interattive. Q4 chiusa: LIS solo da materiali online, comunità sorda dopo l'anno 1. Q5 chiusa: niente linea del greco moderno, il greco punta su etimologia, radici, indoeuropeo, cultura e filosofia. Q7 chiusa: modulo d'ingresso con Niccolò III, dopo l'anno 1. Q8 chiusa: trenta voci, conto per livello. Q2: il ferrarese lo raccoglie il progetto, le altre voci le rivede Pietro (decisioni di Pietro del 07/10/2026). |
 | 07/10/2026 | 0.4 | **Q10 e Q11 chiuse (decisioni di Pietro del 07/10/2026).** La tappa successiva si apre con la soglia di informatica; per il livello *n* di una lingua servono tutti i premi precedenti di quella lingua, e chi è indietro può farsi riportare indietro, con un espediente narrativo per ogni anno. I sette livelli non hanno ordine: sono sparsi nell'ambiente, ognuno segnato da una freccia del suo colore, accanto a chicche interattive brevi. |

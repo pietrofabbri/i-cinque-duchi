@@ -5,7 +5,7 @@ versione: 0.5
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 controllo: python3 sorgenti/verifica_modello.py (K1-K4: NEED e POOL contro il codice degli esercizi, i tipi di livello contro i dati, le parti numerate e i documenti che citano, il numero delle domande)
-documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.2), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-meccaniche.md (v0.7), videogioco-5-duchi-tappa-1-01.md (v0.6), videogioco-5-duchi-premi.md (v0.9), videogioco-5-duchi-inventario.md (v0.4), videogioco-5-duchi-ripassi.md (v0.5), videogioco-5-duchi-pedagogia.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-lingue.md (v0.6), videogioco-5-duchi-audit.md (v0.33)
+documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.2), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-meccaniche.md (v0.7), videogioco-5-duchi-tappa-1-01.md (v0.6), videogioco-5-duchi-premi.md (v0.9), videogioco-5-duchi-inventario.md (v0.4), videogioco-5-duchi-ripassi.md (v0.5), videogioco-5-duchi-pedagogia.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-lingue.md (v0.7), videogioco-5-duchi-audit.md (v0.33)
 ---
 
 # Il modello di livello

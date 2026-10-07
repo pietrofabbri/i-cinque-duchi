@@ -15,7 +15,7 @@ for sig in ordine:
     if sig == "IT":
         c = json.load(open(R + "dati/lingue/cibi_per_tappa.json"))["tappe"]
         lingue.append({"sig": sig, "nome": x["nome"], "oggetto": "un piatto tipico per ogni luogo", "motivo": x.get("motivo", ""),
-                       "voci": [{"n": t["numero"], "anno": t["anno"], "luogo": t["luogo"], "v": t["piatto"] or "(da proporre)", "s": t["segnalazione"]} for t in c]})
+                       "voci": [{"n": t["numero"], "anno": t["anno"], "luogo": t["luogo"], "v": t["piatto"] or "(da proporre)", "s": t["segnalazione"], "c": t.get("curiosita", "")} for t in c]})
         continue
     lingue.append({"sig": sig, "nome": x["nome"], "oggetto": x["oggetto"], "motivo": x.get("motivo", ""),
                    "voci": [{"n": i + 1, "v": v, "s": s.get(v, "")} for i, v in enumerate(x["voci"])]})
