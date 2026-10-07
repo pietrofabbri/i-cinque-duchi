@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — audit delle questioni aperte: la lista operativa
 tipo: audit
-versione: 0.32
+versione: 0.33
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: lettura di tutti i documenti di progetto che portano una sezione «Questioni aperte» (sedici), verificata da sorgenti/lingue/conta_questioni.py, che confronta anche i numeri che il README copia da qui
-documenti collegati: videogioco-5-duchi-lingue.md (v0.4), videogioco-5-duchi-lingue-immagini.md (v0.8), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-fonti-visive.md (v0.21), videogioco-5-duchi-furioso.md (v0.7), videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-mappe.md (v1.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.3), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-meccaniche.md (v0.6), AGENTS.md
+documenti collegati: videogioco-5-duchi-lingue.md (v0.5), videogioco-5-duchi-lingue-immagini.md (v0.9), videogioco-5-duchi-percorsi.md (v0.7), videogioco-5-duchi-fonti-visive.md (v0.21), videogioco-5-duchi-furioso.md (v0.7), videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-mappe.md (v1.6), videogioco-5-duchi-anno5-mondo.md (v0.8), videogioco-5-duchi-percorsi.md (v0.7), videogioco-5-duchi-anno4-mondo.md (v0.7), videogioco-5-duchi-anno3-europa.md (v0.6), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.4), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-meccaniche.md (v0.7), AGENTS.md
 ---
 
 # Audit delle questioni aperte: la lista
@@ -24,22 +24,22 @@ Il documento è verificato da `sorgenti/lingue/conta_questioni.py`, che confront
 |---|---|
 | Documenti con una sezione «Questioni aperte» | **17** |
 | Voci enumerate | **128** |
-| **Chiuse** | **46** |
-| **Aperte** | **82** |
-| Di cui bloccanti | tre |
-| Di cui importanti (cambiano il gioco) | quindici |
+| **Chiuse** | **60** |
+| **Aperte** | **68** |
+| Di cui bloccanti | una |
+| Di cui importanti (cambiano il gioco) | due |
 | Di cui minori (si possono rimandare) | le altre |
 
 **Il criterio**, dichiarato perché un numero senza criterio non è un dato. Una **voce** è un punto numerato, un `### Q1` o una riga di tabella della sezione «Questioni aperte». Una voce è **chiusa** se porta la marcatura nella sua **prima riga** — «chiusa», «risolto», «ratificata», «confermata» — e non in tutto il corpo, perché una voce aperta spiega dentro il corpo quale parte è stata chiusa.
 
 **Una voce non è sempre una domanda.** In `lingue.md` Q3 ci sono due sotto-voci dentro una sola domanda. Le **128 voci non sono 128 domande**.
 
-**Una sola delle quarantasei chiuse è bloccante**: **B1**, chiusa il 07/10/2026 con la decisione di Pietro sui sette livelli per tappa. Delle bloccanti di un tempo, altre due non sono mai state domande: erano lavori, e sono stati fatti — i novanta pin il 02/10/2026, la tavolozza, le sagome, il fondo di Ferrara e i colori delle carte il 03/10/2026 (§7). Le decisioni prese hanno tolto lavoro, non lo hanno aggiunto.
+**Una sola delle sessanta chiuse è bloccante**: **B1**, chiusa il 07/10/2026 con la decisione di Pietro sui sette livelli per tappa. Delle bloccanti di un tempo, altre due non sono mai state domande: erano lavori, e sono stati fatti — i novanta pin il 02/10/2026, la tavolozza, le sagome, il fondo di Ferrara e i colori delle carte il 03/10/2026 (§7). Le decisioni prese hanno tolto lavoro, non lo hanno aggiunto.
 
 
-## 2. Le tre bloccanti
+## 2. Una bloccante
 
-Sono le uniche che fermano qualcosa, e sono le tre che aspettano una **risposta**. Ognuna ha una scheda. **B1** è chiusa il 07/10/2026 con una decisione di Pietro; **B5** era un lavoro e non una domanda. Tutte e due sono anche fra le chiuse (§7).
+È l'unica che ferma qualcosa: le tappe dell'oggetto aspettano la revisione delle voci. Ognuna delle bloccanti ha una scheda. **B1, B3 e B4** sono chiuse con decisioni di Pietro, l'ultima il 07/10/2026; **B5** era un lavoro e non una domanda. Tutte sono anche fra le chiuse (§7).
 
 ---
 
@@ -53,43 +53,45 @@ Sono le uniche che fermano qualcosa, e sono le tre che aspettano una **risposta*
 
 `lingue.md` §7 Q2 e `lingue-immagini.md` §6.2 Q2 · **pro**: le voci esistono e sono lavorate; confermarle sblocca 1120 candidati già cercati. **contro**: per il ferrarese non sono un elenco ma **campi da rilevare**, e la fonte non è stabilita (chi raccoglie, con che metodo, con quale consenso); un proverbo scritto a tavolino è un proverbo italiano in maschera. **valutazione**: va chiusa **prima** di scegliere le immagini, altrimenti si rifà la ricerca; per le altre cinque lingue è una revisione di trenta voci, per il ferrarese è un progetto. **responsabilità**: Pietro, e per il ferrarese **anche chi raccoglierà i proverbi**. **blocca**: B4, e le tappe facoltative degli oggetti.
 
-### B3 · La LIS nel gioco: chi insegna, e con quali materiali?
+**Decisioni di Pietro del 07/10/2026, per chiuderla.** Le voci delle cinque lingue le rivede lui su una pagina con le segnalazioni del progetto; **il ferrarese lo raccoglie il progetto** da fonti pubblicate e citate, e lui lo rivede (`lingue.md` Q2). La domanda si chiude con la revisione.
 
-`lingue.md` §7 Q4 · **pro**: la lingua dei segni è la scelta che rende il progetto serio; le trenta voci ci sono. **contro**: non si scrive a tavolino; servono collaborazione con la comunità sorda, video, trascrizioni, competenze che il progetto non dichiara di avere. **valutazione**: la più lenta di tutte, perché un rapporto con la comunità non si scrive in un pomeriggio; è l'unica che non si può sblocare con una decisione. **responsabilità**: Pietro **e la comunità sorda** — non è una decisione che il progetto può prendere da solo, e questa è la ragione per cui la domanda è bloccante e non importante. **blocca**: i trenta livelli LIS.
+### B3 · La LIS nel gioco: chi insegna, e con quali materiali? — **chiusa il 07/10/2026**
 
-### B4 · Chi guarda le 1120 immagini degli oggetti?
+`lingue.md` §7 Q4 · **Decisione di Pietro**: la LIS usa **soltanto materiali online**, con licenza libera e il testo italiano accanto quando c'è. Pietro ha un contatto con persone sorde, e **la comunità si coinvolge dopo l'anno 1**. La scheda com'era è nello storico (`storico.md` §1.21).
 
-`lingue-immagini.md` §6.2 Q1 · **pro**: guardarle è lavoro di ore, non di minuti; i candidati sono già tutti e hanno licenza libera. **contro**: nessuna è stata guardata; 67 su 146 sono a rischio (G7). **valutazione**: l'opzione realistica è **un campione** — i 146 migliori per voce — dichiarando che un campione non attesta il resto; le tre opzioni sono guardarle tutte, guardarle un campione, o non guardarle. **responsabilità**: io (l'IA) o Pietro; la decisione di *quanto* guardare è di Pietro. **blocca**: le tappe facoltative degli oggetti, e nient'altro.
+### B4 · Chi guarda le 1120 immagini degli oggetti? — **chiusa il 07/10/2026**
+
+`lingue-immagini.md` §6.2 Q1 · **Decisione di Pietro**: le guarda lui, già dal 04/10, e il progetto gli prepara **uno strumento pratico e veloce** per scegliere: una pagina con le candidate di ogni voce affiancate e la scelta con un tocco. Si usa dopo la revisione delle voci (B2). La scheda com'era è nello storico (`storico.md` §1.21).
 
 ### B5 · I novanta pin degli anni 2, 3 e 4 sono verificati? — **chiusa il 02/10/2026**
 
 Non è più una bloccante: l'esito è in **§7**, il racconto nello storico (`storico.md` §1). Era l'unica delle cinque che non aspettava nessuna decisione, ed è l'unica che il progetto poteva chiudere da solo.
 
 
-## 3. Le quindici importanti
+## 3. Le due importanti
 
 Quelle che, se risposte male, cambiano il gioco. In ordine di peso.
 
 | # | Domanda | Pro | Contro | Valutazione | Chi decide |
 |---|---|---|---|---|---|
-| I1 | **Il percorso del duca è l'ordine delle tappe o un giro a parte?** (`percorsi.md` Q1) | Il giro copre tutta la mappa e dimezza il viaggio (−31/−49/−43/−58%) | Richiede di cambiare il modo in cui la mappa si disegna: due sequenze invece di una | Il giro: è ciò che rende la mappa un percorso e non una distribuzione di punti | Pietro |
+| I1 | ~~**Il percorso del duca è l'ordine delle tappe o un giro a parte?**~~ **chiusa il 07/10/2026** (`percorsi.md` Q1) | — | — | **Decisione di Pietro: il percorso segue l'ordine delle tappe.** Nessun giro a parte; la storia di ogni anno deve dare un senso ai posti e al loro ordine | Pietro |
 | I2 | ~~**La tavolozza va prodotta?**~~ **chiusa il 03/10/2026** (`fonti-visive.md` Q1) | — | — | **Fatta**: 18 voci in `dati/fonti_visive/tavolozza.json`, e la scelta è quella prevista: dichiarare i colori di ogni fonte, non ricolorare tutto | Il progetto |
 | I3 | ~~**Le sagome degli edifici si costruiscono?**~~ **chiusa il 03/10/2026** (`fonti-visive.md` Q2) | — | — | **Fatte**: 5209 sagome su 54 luoghi in `dati/edifici_footprint.json`, nell'ordine previsto (prima la tavolozza) | Il progetto |
 | I4 | ~~**Il fondo di Ferrara si costruisce?**~~ **chiusa il 03/10/2026** (`fonti-visive.md` Q3) | — | — | **Fatto**: 14 tratti di mura, 4,20 km², in `dati/ferrara_fondo.json`; il perimetro ufficiale non esisteva in nessuna fonte e l'anello è stato ricostruito con la tolleranza che contiene tutte le tappe | Il progetto |
-| I5 | **Che cosa è un «testo autentico» nelle sei lingue?** (`lingue.md` Q3) | Il progetto vieta i testi inventati; per il greco la regola è chiara | Per il ferrarese è una trascrizione di parlante, e lì si aprono consenso e varietà | Serve una regola scritta **prima** di registrare chiunque, non dopo | Pietro, e chi parla per il ferrarese |
-| I6 | **Il greco moderno ha una linea propria?** (`lingue.md` Q5) | Tremila anni in tre anni di percorso rischiano di essere un elenco di argomenti | Aggiunge una settima linea a un sistema già largo | Una linea dentro i blocchi 4 e 5, come l'atlante per gli anni 3 e 4 | Pietro |
-| I7 | **Che cosa succede se il giocatore non sa l'italiano?** (`lingue.md` Q7) | Il gioco è in italiano, e il percorso presuppone che si perdano punti sui livelli d'italiano | Una soglia diversa per chi l'italiano non ce l'ha è una scelta che va dichiarata, non fatta implicitamente | Una soglia minima per i livelli d'italiano, la stessa soglia alta per chi ce l'ha già; è la regola «nessuna competenza in ingresso» applicata alle lingue | Pietro |
-| I8 | **Quanti esercizi fanno le trenta voci?** (`lingue.md` Q8) | Con pool da 20 per gradino sono 3 600 esercizi: è il lavoro più grande del progetto | Se le voci fossero venti, il conto calerebbe di un terzo | Il conto va detto prima di promettere; 3 600 è tanto ma il gioco è tanto | Pietro |
-| I9 | **Le fonti del latino e del greco vanno cercate altrove?** (`lingue-immagini.md` Q3) | Il controllo G7 dice che 27 voci latine su 28 hanno solo proposte scoperte per caso | Commons ha le immagini degli oggetti, non le fonti filologiche: servono EDCS, EDR, biblioteche digitali | Sì: per il latino Commons è il posto sbagliato, e va detto | Pietro |
-| I10 | **Le immagini servono solo per le facoltative?** (`lingue-immagini.md` Q5) | Le tappe sui testi autentici hanno bisogno di immagini diverse (la pagina di Cesare, non una coppa) | Sono almeno 900 immagini, e nessuna è stata cercata | Sì, e va detto subito: è il buco più grande dopo le sagome | Il progetto |
-| I11 | **Le Nuove Indicazioni 2026 vanno acquisite?** (`curricolo.md`) | Sono il riferimento normativo del liceo scientifico | Il fascicolo non è stato acquisito e il §6 è rifatto sul vecchio | Prima di costruire il curricolo, non prima del gioco: è una settimana di lavoro | Pietro |
-| I12 | **Quanto dura un livello?** (`curricolo.md`) | Ogni livello deve durare da 5 minuti a qualche ora; senza stima non si sa se 150 livelli stanno in 5 anni | La stima dipende dal prototipo, che non c'è | Stimare sul primo prototipo, non prima | Il progetto |
-| I13 | **Il 1945 non è una tappa.** (`anno5-mondo.md` §13) | Il materiale ci mette Roosevelt, Cassin, Lauterpacht, e i livelli non li chiedono | Sostituirlo significa scegliere un'altra tappa che i livelli non coprono | Va deciso con il buco della biologia (I14), e sono lo stesso problema | Pietro |
-| I14 | **Il buco della biologia nel quinto anno.** (`anno5-mondo.md` §13) | Il materiale dedica quindici voci a medicina, vaccini, DNA e nessun livello le copre | Levare voci dal materiale è una decisione sua, non del progetto | È il buco tematico più grosso del quinto anno | Pietro |
-| I15 | **La tratta e l'imperialismo nell'anno 3.** (`anno3-europa.md` §13) | È un buco reale: nessun personaggio obbligatorio porta l'Europa fuori dall'Europa | Aggiungere una scheda di atlante che i livelli non chiedono, o dichiarare il limite | Dichiarare il limite è più onesto; una scheda di atlante sul colonialismo è giusta ma è un atlante | Pietro |
-| I16 | **Leonardo in due anni.** (`anno3-europa.md` §13) | È il caso più bello del percorso: la stessa persona è «il linguaggio delle figure» e poi «la scomposizione del metodo» | Viola la regola dei ritorni che il progetto si è data | Si tiene: il ritorno forte vale più della regola, e la regola va corretta con l'eccezione | Pietro |
-| I17 | **Il formato del file di consegna.** (`meccaniche.md`) | `.txt` è la proposta, ed è leggibile ovunque | Il PDF è più sicuro contro le manomissioni | `.txt` con firma, e la firma è ciò che rende la consegna verificabile | Pietro |
-| I18 | **Il gioco è un modulo della piattaforma gamificata o un prodotto a sé?** (`meccaniche.md`, `curricolo.md`) | Le due scelte danno requisiti diversi su privacy, punteggio, consegna | Rimandarla non blocca niente subito | Prodotto a sé, con i requisiti della piattaforma come caso particolare | Pietro |
+| I5 | ~~**Che cosa è un «testo autentico» nelle sei lingue?**~~ **chiusa il 07/10/2026** (`lingue.md` Q3) | — | — | **Decisione di Pietro**: un testo che esiste fuori dal gioco, con la sua fonte; mai scritto dal progetto; e sempre usato con un'azione, perché l'attenzione è rara. Le ipotesi per lingua sono in `lingue.md` Q3 | Pietro |
+| I6 | ~~**Il greco moderno ha una linea propria?**~~ **chiusa il 07/10/2026** (`lingue.md` Q5) | — | — | **Decisione di Pietro: nessuna linea propria**; al più un accenno in una o due lezioni. Il greco punta su etimologia, radici, indoeuropeo, cultura e filosofia | Pietro |
+| I7 | ~~**Che cosa succede se il giocatore non sa l'italiano?**~~ **chiusa il 07/10/2026** (`lingue.md` Q7) | — | — | **Decisione di Pietro**: un modulo d'ingresso più semplice con Niccolò III, prima di Borso, per qualsiasi lingua di partenza; si costruisce dopo l'anno 1 | Pietro |
+| I8 | ~~**Quanti esercizi fanno le trenta voci?**~~ **chiusa il 07/10/2026** (`lingue.md` Q8) | — | — | **Decisione di Pietro: trenta voci, sapendo il costo.** I facoltativi di informatica hanno quattro domande per gradino senza pool; il conto si fa livello per livello, per ciascun ambito | Pietro |
+| I9 | ~~**Le fonti del latino e del greco vanno cercate altrove?**~~ **chiusa il 07/10/2026** (`lingue-immagini.md` Q3) | — | — | **Decisione di Pietro: sì**, corpus epigrafici (EDCS, EDR) e biblioteche digitali | Pietro |
+| I10 | **Le immagini servono solo per le facoltative?** (`lingue-immagini.md` Q5) | Le tappe sui testi autentici hanno bisogno di immagini diverse (la pagina di Cesare, non una coppa) | Sono almeno 900 immagini, e nessuna è stata cercata | **Rinviata il 07/10/2026, ed è un lavoro del progetto, non una domanda**: le immagini dei testi autentici si cercano livello per livello, quando si scrive il testo | Il progetto |
+| I11 | ~~**Le Nuove Indicazioni 2026 vanno acquisite?**~~ **chiusa il 07/10/2026** (`curricolo.md`) | — | — | **Decisione di Pietro: si acquisiscono.** È un lavoro: trovare il testo ufficiale della sezione Informatica, rifare il §6 del curricolo e la verifica di copertura | Pietro |
+| I12 | **Quanto dura un livello?** (`curricolo.md`) | Ogni livello deve durare da 5 minuti a qualche ora; senza stima non si sa se 150 livelli stanno in 5 anni | La stima dipende dal prototipo, che non c'è | **Rinviata il 07/10/2026**: la durata si misura sul prototipo della tappa 1-1 riscritta; prima non c'è niente da misurare | Il progetto |
+| I13 | ~~**Il 1945 non è una tappa.**~~ **chiusa il 07/10/2026** (`anno5-mondo.md` §13) | — | — | **Decisione di Pietro**: Roosevelt, Cassin e Lauterpacht entrano come facoltativi | Pietro |
+| I14 | ~~**Il buco della biologia nel quinto anno.**~~ **chiusa il 07/10/2026** (`anno5-mondo.md` §13) | — | — | **Decisione di Pietro**: medicina, vaccini, antibiotici, DNA e genetica entrano come facoltativi | Pietro |
+| I15 | ~~**La tratta e l'imperialismo nell'anno 3.**~~ **chiusa il 07/10/2026** (`anno3-europa.md` §13) | — | — | **Decisione di Pietro**: il limite si dichiara, e si aggiunge una scheda d'atlante sul colonialismo | Pietro |
+| I16 | ~~**Leonardo in due anni.**~~ **chiusa il 07/10/2026** (`anno3-europa.md` §13) | — | — | **Decisione di Pietro: è perfetto così.** I ritorni sono una risorsa: il gioco fa riferimento agli anni passati, nella storia e negli argomenti, e altri ritorni vanno bene | Pietro |
+| I17 | ~~**Il formato del file di consegna.**~~ **chiusa il 07/10/2026** (`meccaniche.md`) | — | — | **Decisione di Pietro**: `.txt` con una firma che rende la consegna verificabile | Pietro |
+| I18 | ~~**Il gioco è un modulo della piattaforma gamificata o un prodotto a sé?**~~ **chiusa il 07/10/2026** (`meccaniche.md`, `curricolo.md`) | — | — | **Decisione di Pietro: prodotto a sé**, con i requisiti della piattaforma come caso particolare | Pietro |
 | I19 | ~~**I colori dei fondi geografici.**~~ **chiusa il 03/10/2026** (`fonti-visive.md` Q4) | — | — | **Fatto**: `dati/fonti_visive/colori_cartografici.json`, 17 voci (16 dichiarate con motivo e criterio, 3 prese dalla tavolozza con l'esadecimale confrontato byte per byte), la regola che **una categoria con il riempimento ha anche il bordo**, e `verifica_colori.py` (C1–C7). **Cercandoli è saltato fuori un difetto che non era di colori**: `mondo_admin1_copertura.json` stava dentro `dati/mappe/` e faceva crashare il lettore | Il progetto |
 | I20 | ~~**La carta del personaggio e il premio: restano tutti e due?**~~ **chiusa il 07/10/2026** (`modello-di-livello.md` Q1) | — | — | **Decisione di Pietro: tutti e due.** La carta è il personaggio e regge il ripasso, il premio è l'oggetto del livello; carta e visioni sono nell'elenco dell'inventario, e la collezione delle carte è il quinto registro (`inventario.md` §1, §3) | Pietro |
 | I21 | ~~**Prove di corte e tappe a mani nude sono la stessa cosa?**~~ **chiusa il 07/10/2026** (`modello-di-livello.md` Q3) | — | — | **Decisione di Pietro: le prove di corte sono abolite.** I 15 livelli diventano normali e vanno riscritti con un argomento proprio; restano le tappe a mani nude alle x-15 e x-30, e la loro forma concreta è la proposta Q8 del modello | Pietro |
@@ -105,7 +107,7 @@ Le **restanti**: minori, o già decise nella sostanza e che aspettano solo l'ese
 
 **Il numero di ogni intestazione è il conto delle voci aperte di quel documento meno le importanti che il §3 elenca già**, e `sorgenti/lingue/conta_questioni.py` lo confronta: il §4 si intitola «Le altre», e un numero che contasse anche le importanti sarebbe doppio. Ogni documento con voci aperte deve comparire in un'intestazione — `itinerari.md` c'era rimasto fuori fino al 04/10/2026, e la sua voce era contata ma non elencata da nessuna parte. Le cifre fuori dalle parentesi sono nomi, non conteggi: il 3 di «Anno 3» non è un numero di voci.
 
-### Sistema linguistico (`lingue.md` 7, `lingue-immagini.md` 1)
+### Sistema linguistico (`lingue.md` 6, `lingue-immagini.md` 2)
 
 | Domanda | Chi decide |
 |---|---|
@@ -132,7 +134,7 @@ Le **restanti**: minori, o già decise nella sostanza e che aspettano solo l'ese
 | Chi guarda i 125 candidati delle fonti visive | Io o Pietro |
 | Le due facoltative continentali dell'anno 4 si aprono sul ritorno | Pietro |
 
-### Anno 1 (`anno1-ferrara.md` 7) e curricolo (`curricolo.md` 5)
+### Anno 1 (`anno1-ferrara.md` 7) e curricolo (`curricolo.md` 4)
 
 | Domanda | Chi decide |
 |---|---|
@@ -217,11 +219,11 @@ Tre questioni compaiono in due documenti, e una è la stessa identica:
 
 ## 6. La sequenza che chiude tutto
 
-Le tre bloccanti hanno una catena sola.
+Resta una bloccante, e la catena si è accorciata.
 
 **B2** (voci confermate) viene **prima** di **B4** (chi guarda le immagini): cercare le immagini prima di aver confermato le voci è lavoro da rifare. **B1**, che decideva quanti tipi di tappa esistono e quindi se B4 aveva senso, è chiusa il 07/10/2026: ogni tappa ha sei livelli linguistici, e le immagini degli oggetti servono a tutti e sei.
 
-La catena è: **B2 → B4**. **B3** (la LIS) è indipendente e parte in parallelo, ed è la più lenta.
+La catena è: **B2 → la scelta delle immagini**. B4 è chiusa (le immagini le guarda Pietro, con uno strumento che il progetto prepara) e B3 anche (la LIS usa materiali online; la comunità si coinvolge dopo l'anno 1).
 
 > **Mentre si decide, si costruisce quello che si può costruire.** Le tappe informatiche non aspettano le bloccanti: mappa, pin, ambienti, mezzi e luoghi si costruiscono senza le loro risposte, e molte delle chiusure del §7 erano lavori, non domande.
 
@@ -244,6 +246,21 @@ Il conto delle voci chiuse del §1 è un'altra cosa: lo fa `conta_questioni.py` 
 | Come entrano processi di pensiero e modalità | 07/10/2026 | Decisione di Pietro: proposta approvata; 5 livelli su 30 a coppie o di gruppo per ciascuno dei sette ambiti, anche in informatica | `modello-di-livello.md` §9 Q6 |
 | **I25** · l'espediente narrativo per tornare indietro | 07/10/2026 | Decisione di Pietro: approvate le cinque proposte (paggio, dispaccio, risorsa in tavola, fascicolo, Luna di Astolfo); restano tre verifiche di fatto | `modello-di-livello.md` §9 Q7 |
 | La tappa a mani nude in concreto | 07/10/2026 | Decisione di Pietro: approvata la proposta (sfida obbligatoria dentro la tappa, conta averla fatta, due o tre minuti senza strumenti) | `modello-di-livello.md` §9 Q8 |
+| **B3** · la LIS: chi insegna, con quali materiali | 07/10/2026 | Solo materiali online; la comunità sorda si coinvolge dopo l'anno 1 | `lingue.md` Q4 |
+| **B4** · chi guarda le immagini degli oggetti | 07/10/2026 | Pietro, con uno strumento di scelta che il progetto prepara | `lingue-immagini.md` §6.2 Q1 |
+| **I1** · il percorso del duca | 07/10/2026 | Il percorso segue l'ordine delle tappe | `percorsi.md` Q1 |
+| **I5** · il testo autentico | 07/10/2026 | Un testo che esiste fuori dal gioco, con la sua fonte; mai scritto dal progetto; e sempre usato con un'azione, perché l'attenzione è rara | `lingue.md` Q3 |
+| **I6** · il greco moderno | 07/10/2026 | Nessuna linea propria; al più un accenno in una o due lezioni | `lingue.md` Q5 |
+| **I7** · chi non sa l'italiano | 07/10/2026 | Un modulo d'ingresso più semplice con Niccolò III, prima di Borso, per qualsiasi lingua di partenza; si costruisce dopo l'anno 1 | `lingue.md` Q7 |
+| **I8** · il numero degli esercizi degli oggetti | 07/10/2026 | Trenta voci, sapendo il costo | `lingue.md` Q8 |
+| **I9** · le fonti del latino e del greco | 07/10/2026 | Sì, corpus epigrafici (EDCS, EDR) e biblioteche digitali | `lingue-immagini.md` §6.2 Q3 |
+| **I11** · le Nuove Indicazioni 2026 | 07/10/2026 | Si acquisiscono | `curricolo.md` §7 |
+| **I13** · anno 5: il 1945 | 07/10/2026 | Roosevelt, Cassin e Lauterpacht entrano come facoltativi | `anno5-mondo.md` §13 |
+| **I14** · anno 5: la biologia | 07/10/2026 | Medicina, vaccini, antibiotici, DNA e genetica entrano come facoltativi | `anno5-mondo.md` §13 |
+| **I15** · anno 3: la tratta e l'imperialismo | 07/10/2026 | Il limite si dichiara, e si aggiunge una scheda d'atlante sul colonialismo | `anno3-europa.md` §13 |
+| **I16** · Leonardo in due anni, e i ritorni | 07/10/2026 | Resta obbligatorio in due anni: i ritorni sono una risorsa, con riferimenti agli anni passati | `anno3-europa.md` §13 Q7, §6.4 |
+| **I17** · il formato del file di consegna | 07/10/2026 | `.txt` con una firma che rende la consegna verificabile | `meccaniche.md` §3 |
+| **I18** · modulo o prodotto a sé | 07/10/2026 | Prodotto a sé, con i requisiti della piattaforma come caso particolare | `meccaniche.md` §3 |
 | Il ripasso a distanza accanto ai test di ingresso | 07/10/2026 | Decisione di Pietro: tutti e due, con ruoli diversi; il ripasso Leitner è obbligatorio nella soglia, i test sono facoltativi | `modello-di-livello.md` §9 Q2, `gioco.md` §4.2 |
 | **I2** · la tavolozza | 03/10/2026 | Si dichiarano i colori di ogni fonte invece di ricolorare tutto: ogni colore ha la sua fonte | `dati/fonti_visive/tavolozza.json`, `fonti-visive.md` §3 |
 | **I3** · le sagome degli edifici | 03/10/2026 | Sagome da OpenStreetMap; un edificio senza altezza misurata diventa un volume neutro dichiarato, non una stima | `dati/edifici_footprint.json`, `fonti-visive.md` §3 |
@@ -263,6 +280,7 @@ Il conto delle voci chiuse del §1 è un'altra cosa: lo fa `conta_questioni.py` 
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 07/10/2026 | 0.33 | **La fase 3 si chiude quasi tutta.** B3 e B4 chiuse; chiuse tredici importanti (I1, I5–I9, I11, I13–I18); I10 e I12 rinviate con il motivo. Resta una bloccante, B2, che si chiude con la revisione delle voci. Conto: 128 voci, 60 chiuse, 68 aperte, 1 bloccante, 2 importanti (decisioni di Pietro del 07/10/2026). |
 | 07/10/2026 | 0.32 | I25 chiusa e la tappa a mani nude decisa (approvazioni di Pietro del 07/10/2026); il modello di livello non ha più domande aperte e il suo blocco esce dal §4. Conto: 128 voci, 46 chiuse, 82 aperte, 3 bloccanti, 15 importanti. |
 | 07/10/2026 | 0.31 | **Decisioni di Pietro della sera del 07/10/2026.** I21 chiusa: prove di corte abolite, restano le tappe a mani nude. Approvata la proposta su processi di pensiero e modalità, con 5 livelli su 30 a coppie o di gruppo per ciascuno dei sette ambiti. I25 ha le cinque proposte di espediente narrativo, da approvare; nel §4 la proposta Q8 sulla tappa a mani nude. Conto: 128 voci, 44 chiuse, 84 aperte, 3 bloccanti, 16 importanti. |
 | 07/10/2026 | 0.30 | **Altre decisioni di Pietro del 07/10/2026.** I23 chiusa: la tappa successiva si apre con la soglia di informatica, le lingue hanno una propedeuticità loro. I24 chiusa: i sette livelli non hanno ordine e sono sparsi nell'ambiente. I campi Modalità e processi di pensiero entrano. Nuova I25: l'espediente narrativo per tornare indietro, anno per anno; nel §4 la proposta Q6 del modello da approvare. Conto: 127 voci, 42 chiuse, 85 aperte, 3 bloccanti, 17 importanti. |

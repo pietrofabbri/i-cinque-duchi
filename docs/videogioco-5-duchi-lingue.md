@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — il sistema linguistico: sei lingue, novecento livelli
 tipo: normativo
-versione: 0.4
+versione: 0.5
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: indicazioni di Pietro del 02/10/2026
@@ -527,14 +527,35 @@ Il gioco ha 150 livelli informatici (`schema-livelli.md` v1.1) e qui 900 livelli
 
 Le trenta voci per lingua in `dati/lingue/associazioni.json` sono **proposte** (§5.4). Vanno discusse una per una. Il caso più serio è il ferrarese, dove la voce non è un testo ma un campo da rilevare, e dove la fonte dei proverbi non è ancora stabilita: chi li raccoglie, con quale metodo, con quale consenso. **Finché Q2 non è risolta, le tappe dell'oggetto non si scrivono.**
 
-### Q3 — Che cosa è un «testo autentico» nelle sei lingue? **(non bloccante)**
+**Decisioni di Pietro del 07/10/2026, in attesa della revisione voce per voce.** Le 150 voci delle cinque lingue non ferraresi le rivede Pietro su una pagina che le mostra tutte, con accanto le segnalazioni del progetto, e per ognuna dice se la conferma, la cambia o la scarta (`roadmap-documentazione.md`). **Il ferrarese lo raccoglie il progetto e lo rivede Pietro**: proverbi e modi di dire presi da fonti pubblicate e citate (vocabolari e raccolte dialettali), mai scritti a tavolino, ciascuno con la fonte e la pagina; le registrazioni di parlanti vengono dopo, con il consenso. La domanda si chiude quando la revisione è fatta.
+
+### Q3 — Che cosa è un «testo autentico» nelle sei lingue? — **chiusa il 07/10/2026**
+
+**La regola, decisa da Pietro.** Un testo autentico è un testo che **esiste fuori dal gioco, con la sua fonte**: pubblicato, un'epigrafe, la registrazione di un parlante con il suo consenso. **Mai un testo scritto dal progetto.** E poiché l'attenzione dei ragazzi è merce rara, **il testo non si legge e basta: si usa**. Ogni testo autentico entra con almeno un'azione — riordinarlo, ricostruirlo, collegarlo, scoprire che cosa nasconde — e mai come un blocco da leggere prima dell'esercizio.
+
+**Le ipotesi per lingua** (07/10/2026), da verificare una per una quando si scrivono i livelli:
+
+| Lingua | Da dove vengono i testi | Che cosa ci fa il giocatore |
+|---|---|---|
+| Italiano (cibi) | ricettari a stampa in pubblico dominio: i *Banchetti* di Cristoforo da Messisbugo, scalco alla corte estense (1549), e *La scienza in cucina* di Pellegrino Artusi (1891); menu ed etichette storiche | rimette in ordine i passi di una ricetta del Cinquecento, trova la parola che oggi non si usa più e indovina che cosa voleva dire, segue un nome di piatto fino alla sua origine |
+| Ferrarese (detti) | i proverbi raccolti dal progetto da vocabolari e raccolte dialettali pubblicate, con la fonte (Q2); più avanti registrazioni con consenso | abbina il proverbio al suo significato, lo ricompone a tessere, lo confronta con il proverbio italiano che gli somiglia |
+| Latino (superstizioni) | epigrafi dai corpus (EDCS, EDR) e passi di autori sulla divinazione, come il *De divinatione* di Cicerone | scioglie le abbreviazioni di un'epigrafe vera, sceglie fra tre traduzioni, riconosce il presagio descritto |
+| Inglese (musiche) | testi in pubblico dominio — ballate e canti tradizionali, blues e canzoni anteriori al 1929 — e materiali con licenza libera; i testi moderni coperti da diritti non si riproducono, se ne parla | completa un verso ascoltando, trova la parola di gergo e la sua origine, abbina un testo al suo genere |
+| LIS (artigianato) | solo materiali online con licenza libera e con il testo italiano accanto (Q4bis) | guarda un segno e lo collega all'oggetto o al gesto del mestiere, e lo registra nel quaderno dei segni |
+| Greco (bevande) | Omero (il vino di Marone nel libro IX dell'*Odissea*), il *Simposio* di Platone e quello di Senofonte, epigrafi e nomi dei vasi | trova la radice greca dentro parole italiane di oggi, ricostruisce un nome di vaso dai pezzi, collega una parola greca al concetto filosofico che porta (Q5) |
+
+*La domanda com'era posta:*
+
 
 Ogni livello ha un testo autentico (§2), ma «autentico» non significa la stessa cosa nelle sei lingue. Per il latino e il greco significa un testo antico, ed è chiaro. Per l'inglese significa un testo vero, oggi: una canzone, un articolo, una trascrizione. Per il ferrarese significa **una trascrizione di un parlante**, e qui si aprono due problemi che non sono tecnici:
 
 1. **Il consenso di chi parla.** Una trascrizione del ferrarese di una persona viva è una cosa delicata, e il gioco è pubblico. La regola va scritta prima che si registri qualcuno, non dopo.
 2. **La varietà.** Un proverbo raccolto da una persona di settant'anni non è «il ferrarese»: è il ferrarese di quella persona, di quell'età, di quella zona. Il documento deve dirlo ogni volta, come già fa per i luoghi (`videogioco-5-duchi-luoghi.md` §4.1: la frase deve essere vera senza metafore).
 
-### Q4 — La LIS nel gioco: chi insegna, e con quali materiali? **(bloccante per la LIS)**
+### Q4 — La LIS nel gioco: chi insegna, e con quali materiali? — **chiusa il 07/10/2026**
+
+**La decisione di Pietro.** Per la LIS il gioco usa **soltanto materiali online** (con licenza libera e, quando c'è, il testo italiano accanto: Q4bis). Pietro ha un contatto con persone sorde, e **la comunità si coinvolge dopo l'anno 1**: prima si costruisce il primo anno, poi si chiede a chi la lingua la parla di rivederla e di arricchirla. *La domanda com'era posta:*
+
 
 Il percorso della LIS presuppone cose che il progetto non ha ancora: un milieu collaborativo con la comunità sorda, i materiali video, la trascrizione, e una competenza del docente che Pietro non ha dichiarato di avere. I trenta livelli LIS sono i più difficili da scrivere di tutti i novecento, perché **non si può scrivere una lingua dei segni a tavolino**. La sequenza dei titoli c'è, il metodo no.
 
@@ -558,7 +579,10 @@ Il riconoscimento automatico della LIS in tempo reale, poi, è un problema di ri
 
 **Quindi la risposta è una, ed è la stessa forma della categoria K.** Il gioco può **mostrare** la LIS, con il testo italiano accanto che la fonte fornisce; non può **produrla**, e non può **riconoscere** ciò che il giocatore segna. Esattamente come per il ferrarese, che si registra invece di essere cercato: **la parte che il gioco non sa fare la mette dentro la cosa che non sa fare il giocatore**. Per la LIS questo significa che il livello si chiude con il giocatore che guarda il video, sceglie fra le alternative, e **produce il segno** — che è il premio, ed è l'unico premio che non si può copiare.
 
-### Q5 — Il greco moderno attraversa quattro periodi: un percorso solo o sei? **(non bloccante)**
+### Q5 — Il greco moderno attraversa quattro periodi: un percorso solo o sei? — **chiusa il 07/10/2026**
+
+**La decisione di Pietro.** Il greco moderno **non ha una linea propria**: al più un breve accenno in una o due lezioni. Il percorso del greco punta su **etimologia, radici, indoeuropeo, e la cultura e la filosofia greca attraverso la lingua**. *La domanda com'era posta:*
+
 
 Il percorso greco va dal greco arcaico al greco moderno, e i tre anni dal terzo al quinto coprono una distanza enorme (dall'attico al greco contemporaneo, con il koinè e il bizantino in mezzo). Il rischio è che i primi due anni siano ottimi e gli ultimi tre siano un elenco di argomenti. La domanda è se il greco moderno debba avere una **linea propria** o stare dentro i trenta livelli come temi dei blocchi 4 e 5.
 
@@ -566,11 +590,17 @@ Il percorso greco va dal greco arcaico al greco moderno, e i tre anni dal terzo 
 
 §1.4 regola 2 dice che **almeno un livello per lingua all'anno** è dedicato al confronto con un'altra delle sei. Questo dà 30 livelli di confronto all'anno, il 17% del totale. È la decisione giusta? Il confronto è la parte più ambiziosa del progetto ed è anche la più difficile da scrivere, perché un confronto serio richiede di sapere entrambe le lingue.
 
-### Q7 — Che cosa succede quando il giocatore non sa l'italiano? **(non bloccante, ma importante)**
+### Q7 — Che cosa succede quando il giocatore non sa l'italiano? — **chiusa il 07/10/2026**
+
+**La decisione di Pietro.** Chi non sa l'italiano parte da un **modulo d'ingresso molto più semplice, con Niccolò III d'Este**, che viene **prima di Borso** e vale per qualsiasi lingua di partenza. Il modulo si costruisce **dopo l'anno 1**: ora si dichiara e si rinvia. *La domanda com'era posta:*
+
 
 Il gioco è in italiano, per la scuola italiana. Ma il percorso presuppone che il giocatore perda dei punti sui livelli d'italiano, e chi non ha l'italiano come prima lingua li perderà tutti. Serve una **soglia minima** per i livelli d'italiano — non un percorso diverso, ma una soglia più bassa, con la stessa soglia alta per chi l'italiano lo ha già. La regola esiste già nel gioco per l'informatica (nessuna competenza in ingresso presupposta, `AGENTS.md` §3) e va applicata anche qui.
 
-### Q8 — Le trenta voci e i trecento esercizi dell'oggetto: quanti sono davvero? **(non bloccante)**
+### Q8 — Le trenta voci e i trecento esercizi dell'oggetto: quanti sono davvero? — **chiusa il 07/10/2026**
+
+**La decisione di Pietro.** Le voci restano trenta per lingua, sapendo il costo. In più vanno contati i **facoltativi di informatica**: due personaggi o elementi interattivi per livello, che non hanno la pool ma **quattro domande per gradino**. Il conto degli esercizi **si fa livello per livello**, per ciascuno dei sette ambiti, quando il livello si scrive. *La domanda com'era posta:*
+
 
 Un oggetto con trenta voci e una pool per gradino (`esercizi.md` §1: pool di 20 esercizi per gradino) fa **600 esercizi per lingua**, **3 600 per tutte e sei**, senza contare i livelli. È una quantità che va detta prima di promettere: il lavoro di scrittura è il più grande del progetto, e nessun altro sistema del gioco è grande quanto questo. Se le trenta voci per lingua fossero venti, il conto calerebbe di un terzo.
 
@@ -663,6 +693,7 @@ python3 sorgenti/lingue/compila_titoli.py --verifica  # conta i titoli per fonte
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 07/10/2026 | 0.5 | Q3 chiusa: la regola del testo autentico e le ipotesi per lingua, sempre interattive. Q4 chiusa: LIS solo da materiali online, comunità sorda dopo l'anno 1. Q5 chiusa: niente linea del greco moderno, il greco punta su etimologia, radici, indoeuropeo, cultura e filosofia. Q7 chiusa: modulo d'ingresso con Niccolò III, dopo l'anno 1. Q8 chiusa: trenta voci, conto per livello. Q2: il ferrarese lo raccoglie il progetto, le altre voci le rivede Pietro (decisioni di Pietro del 07/10/2026). |
 | 07/10/2026 | 0.4 | **Q10 e Q11 chiuse (decisioni di Pietro del 07/10/2026).** La tappa successiva si apre con la soglia di informatica; per il livello *n* di una lingua servono tutti i premi precedenti di quella lingua, e chi è indietro può farsi riportare indietro, con un espediente narrativo per ogni anno. I sette livelli non hanno ordine: sono sparsi nell'ambiente, ognuno segnato da una freccia del suo colore, accanto a chicche interattive brevi. |
 | 07/10/2026 | 0.3 | **Q1 chiusa (decisione di Pietro del 07/10/2026): sette livelli per tappa**, uno di informatica e uno per ciascuna delle sei lingue, ognuno con la propria soglia; il ragazzo li fa tutti. Nascono due domande importanti: Q10, che cosa apre la tappa successiva, e Q11, l'ordine dei sette livelli e il tempo di una tappa. |
 | 03/10/2026 | 0.2 | La Q1 aveva il conto sbagliato: con due sistemi paralleli nella stessa tappa i livelli sono **sette** per tappa (uno di informatica e uno per lingua), non trentadue. Nuova Q4bis sulla LIS: che cosa si può guardare (55 video liberi su Commons) e che cosa non si può decodificare. *(Riga ricostruita il 07/10/2026 dal commit 6785485: la versione era stata alzata senza scrivere la riga.)* |

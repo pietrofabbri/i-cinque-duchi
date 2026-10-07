@@ -1,13 +1,13 @@
 ---
 titolo: Videogioco "I cinque duchi" — Anno V, il mondo contemporaneo: il cantiere dell'Addizione Erculea e la carta della stima
 tipo: normativo
-versione: 0.7
-data: 2026-10-03
+versione: 0.8
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 revisioni: v0.1 (prima stesione del 01/10/2026); v0.2 (le nove persone viventi erano sei: tre nomi senza stato); v0.3 (rimandi di versione); v0.4 (le sedici decisioni di Pietro del 02/10/2026: il giocatore è dentro il *Furioso* e la tabella delle tappe ha la colonna della stanza e del filone, i codici `Q` sono confermati, `F11` entra come facoltativa, e i buchi geografici degli anni 2-4 diventano facoltative continentali; v0.7 (le 30 schede dei personaggi dell'anno sono in `dati/`, con i campi `stato` e `aggiunta` portati in dati))
 fonte del materiale: due documenti di progettazione storico-pedagogica di Pietro ("ANNO V — IL MONDO CONTEMPORANEO, primo percorso" e "ANNO V — IL MONDO CONTEMPORANEO, secondo percorso"), 01/10/2026
 dati: videogioco-5-duchi-anno5-personaggi.json (v0.7, le 30 schede del §5 con `stato` e `aggiunta`); videogioco-5-duchi-anno5-mondo.json e videogioco-5-duchi-anno5-stime.json (da generare, v0.1); dati/furioso/citazioni.json (v3, le trenta citazioni del *Furioso* e la facoltativa `5-22F`); dati/luoghi_gioco.json (blocco `tappe`: i trenta pin e le trenta stanze)
-documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.1, livelli 5-1…5-30), videogioco-5-duchi-curricolo.md (v0.1, §4 cornice narrativa e §5.5 elenco dei livelli dell'anno 5), videogioco-5-duchi-luoghi.md (v0.6, la regola dei luoghi e i due strati), videogioco-5-duchi-furioso.md (v0.6, i filoni e le citazioni che questo documento applica alle trenta tappe), videogioco-5-duchi-anno4-mondo.md (v0.6, da cui questo documento continua le convenzioni), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-anno1-mappa.md (v0.10), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-meccaniche.md (v0.6)
+documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.1, livelli 5-1…5-30), videogioco-5-duchi-curricolo.md (v0.1, §4 cornice narrativa e §5.5 elenco dei livelli dell'anno 5), videogioco-5-duchi-luoghi.md (v0.6, la regola dei luoghi e i due strati), videogioco-5-duchi-furioso.md (v0.6, i filoni e le citazioni che questo documento applica alle trenta tappe), videogioco-5-duchi-anno4-mondo.md (v0.6, da cui questo documento continua le convenzioni), videogioco-5-duchi-anno3-europa.md (v0.6), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-anno1-mappa.md (v0.10), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-meccaniche.md (v0.7)
 ---
 # Anno V — Il mondo contemporaneo
 
@@ -834,8 +834,8 @@ Il quinto anno è l'anno del **metodo**: apparentemente è il meno politico dei 
 
 **Aperte, e sono sette.**
 
-1. **Il 1945 non è una tappa.** Le prime tre voci del percorso I sono Eleanor Roosevelt, René Cassin e Hersch Lauterpacht, e i livelli dell'anno cominciano dai numeri. Le opzioni: **(a)** tenere i trenta come sono e dichiarare il 1945 come **contesto** del primo percorso, non come tappa; **(b)** sostituire una tappa con una voce giuridica; **(c)** aprire il capitolo dell'anno con una **tappa zero** non numerata. La (c) è la più bella e la più costosa
-2. **Il buco della biologia.** Il materiale dedica quindici voci a medicina, vaccini, antibiotici, DNA e genetica, e **nessun livello dell'anno 5 le copre**. Le opzioni: tenere il buco e dirlo, o aggiungere facoltative forti che si aprano dai livelli vicini (5-4 e 5-26 sono i più adatti)
+1. **Il 1945 non è una tappa** — **chiusa il 07/10/2026: Roosevelt, Cassin e Lauterpacht entrano come facoltativi** (decisione di Pietro). *La domanda com'era posta:* **Il 1945 non è una tappa.** Le prime tre voci del percorso I sono Eleanor Roosevelt, René Cassin e Hersch Lauterpacht, e i livelli dell'anno cominciano dai numeri. Le opzioni: **(a)** tenere i trenta come sono e dichiarare il 1945 come **contesto** del primo percorso, non come tappa; **(b)** sostituire una tappa con una voce giuridica; **(c)** aprire il capitolo dell'anno con una **tappa zero** non numerata. La (c) è la più bella e la più costosa
+2. **Il buco della biologia** — **chiusa il 07/10/2026: medicina, vaccini, antibiotici, DNA e genetica entrano come facoltativi** dell'anno (decisione di Pietro). *La domanda com'era posta:* **Il buco della biologia.** Il materiale dedica quindici voci a medicina, vaccini, antibiotici, DNA e genetica, e **nessun livello dell'anno 5 le copre**. Le opzioni: tenere il buco e dirlo, o aggiungere facoltative forti che si aprano dai livelli vicini (5-4 e 5-26 sono i più adatti)
 3. **I facoltativi «che il gioco non può mettere in tabella».** Turing, Shannon, Wiener, Bardeen, Brattain, Shockley, Feynman, Oppenheimer sono nel materiale e non sono tappe. La proposta è che il gioco **dica loro esplicitamente perché** non sono obbligatori. Va deciso se diventa una schermata fissa o una voce di atlante
 5. **I quattro agganci da rivedere.** 5-5 (Monte Carlo e von Neumann), 5-12 (Borges e gli automi), 5-25 (Shannon e la capacità del canale) e 5-30 (Kahneman e la prova finale) sono forse **troppo** ovvii. Segnalo questi quattro; 5-1 (Fermi) e 5-23 (Berners-Lee) mi sembrano i più solidi
 7. **La sesta tappa del `PT-FUT`.** La porta che non porta niente è la chiusa dell'anno. Va deciso se il giocatore può **scrivere** nelle fasce o solo guardarle
@@ -869,6 +869,8 @@ Il quinto anno è l'anno del **metodo**: apparentemente è il meno politico dei 
 ---
 
 ## 15. Registro modifiche
+
+- **v0.8 (07/10/2026)**: §13: il 1945 e la biologia entrano come facoltativi (decisioni di Pietro del 07/10/2026).
 
 - **v0.7 (03/10/2026)**: le **30 schede dei personaggi dell'anno sono state generate in `dati/`** (`videogioco-5-duchi-anno5-personaggi.json`), con i due campi che questo anno introduce (`stato` e `aggiunta`) portati nei dati: i sei `in formazione`, i `def`, e i tre collettivi con i loro stati (`anonimo`, `senza nome`, `senza volto`). Le **27 verifiche storiche** della §12 sono abbinate per codice. Il confronto automatico fra i **tre** collettivi del catalogo e i **tre** dichiarati dal §4 è verde, e il generatore lo rifà a ogni esecuzione.
 

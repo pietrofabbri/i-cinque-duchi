@@ -233,8 +233,8 @@ def main():
             "sommano")
 
     # 7. il numero in lettere del §2, che è un titolo e non un conteggio libero
-    difetto("il §2 si intitola «cinque bloccanti» con tre schede aperte",
-            lambda t, r: (sostituisci(t, "## 2. Le tre bloccanti",
+    difetto("il §2 si intitola «cinque bloccanti» con una scheda aperta",
+            lambda t, r: (sostituisci(t, "## 2. Una bloccante",
                                       "## 2. Le cinque bloccanti"), r),
             "cinque bloccanti")
 
@@ -268,7 +268,7 @@ def main():
     #     cifra dentro si rompe da sola alla prima chiusura — che e' gia'
     #     successo una volta su questi due difetti.
     difetto("il README scrive un numero di importanti diverso dall'audit",
-            lambda t, r: (t, _piu_uno(r, r"\d+ chiuse, \d+ aperte\*\*, \d+ bloccanti e "
+            lambda t, r: (t, _piu_uno(r, r"\d+ chiuse, \d+ aperte\*\*, \d+ bloccant[ei] e "
                                       r"\d+ importanti",
                                       "i numeri che il README copia")),
             "importanti")

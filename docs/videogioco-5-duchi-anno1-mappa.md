@@ -5,7 +5,7 @@ versione: 0.10
 data: 2026-10-06
 autore: Pietro Fabbri (con Claude)
 dati: videogioco-5-duchi-anno1-mappa.json (30 tappe, v0.8); videogioco-5-duchi-anno1-personaggi.json (schede)
-documenti collegati: videogioco-5-duchi-gioco.md (interazione, strumenti, carte, memoria), videogioco-5-duchi-meccaniche.md (v0.6), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-schema-livelli.md (v1.2)
+documenti collegati: videogioco-5-duchi-gioco.md (interazione, strumenti, carte, memoria), videogioco-5-duchi-meccaniche.md (v0.7), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-schema-livelli.md (v1.2)
 ---
 
 # Anno I sulla mappa di Ferrara: il percorso unico

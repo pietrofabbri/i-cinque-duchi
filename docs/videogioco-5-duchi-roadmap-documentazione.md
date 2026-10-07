@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — Roadmap per la risistemazione della documentazione
 tipo: piano
-versione: 0.8
+versione: 0.9
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
-documenti collegati: videogioco-5-duchi-audit.md (v0.32), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-meccaniche.md (v0.6), videogioco-5-duchi-tappa-1-01.md (v0.6)
+documenti collegati: videogioco-5-duchi-audit.md (v0.33), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-meccaniche.md (v0.7), videogioco-5-duchi-tappa-1-01.md (v0.6)
 ---
 
 # Roadmap: risistemare la documentazione
@@ -33,7 +33,7 @@ Quattro problemi, in ordine di peso.
 | 0 | Punto di partenza pulito | Tutti i verificatori verdi, o il motivo scritto per cui uno non può esserlo | **fatta il 06/10/2026** (§3) |
 | 1 | Architettura della documentazione | Ogni documento ha un tipo dichiarato; i documenti normativi dicono il presente; lo storico è separato; `AGENTS.md` contiene solo decisioni, convenzioni e procedura | **fatta il 06/10/2026** (§4) |
 | 2 | Allineare il nucleo di gioco e scrivere il modello di livello | Nessuna contraddizione fra `gioco`, `esercizi`, `meccaniche`, `motore-e-grafica`, `ripassi`, `premi`, `inventario`, `pedagogia`; esiste `modello-di-livello.md` | **fatta il 07/10/2026** (§5) |
-| 3 | Le decisioni di Pietro | Ogni domanda bloccante o importante ha una risposta registrata, oppure è dichiarata rinviata con il perché | **in corso** (§6) |
+| 3 | Le decisioni di Pietro | Ogni domanda bloccante o importante ha una risposta registrata, oppure è dichiarata rinviata con il perché | **quasi chiusa** (§6): manca la revisione delle voci, B2 |
 | 4 | Colmare i buchi di contenuto | Anno 1 completo nelle schede delle 30 tappe; correzioni già decise applicate; verifiche storiche aperte chiuse o dichiarate | da fare |
 | 5 | Rifinitura e README | README breve; numeri e refusi corretti; rimandi chiusi | da fare |
 | 6 | Collaudo di portabilità | Verificatori verdi; un agente senza contesto specifica la tappa 1-2 leggendo solo i documenti, e dove indovina si apre un buco | da fare |
@@ -151,7 +151,13 @@ I quattro rossi del 06/10/2026 e che cosa erano:
 
 **Decise da Pietro la sera del 07/10/2026**: la proposta Q6 su processi di pensiero e modalità, con 5 livelli su 30 a coppie o di gruppo per ciascuno dei sette ambiti, anche in informatica; l'abolizione delle prove di corte (I21).
 
-**Approvate da Pietro la sera del 07/10/2026**: le cinque proposte di espediente narrativo (I25) e la tappa a mani nude in concreto (Q8). **Restano per chiudere la fase 3**: le tre bloccanti B2, B3, B4 e le quindici importanti aperte dell'audit.
+**Approvate da Pietro la sera del 07/10/2026**: le cinque proposte di espediente narrativo (I25) e la tappa a mani nude in concreto (Q8). 
+
+**Decise da Pietro la sera del 07/10/2026**, e con loro la fase 3 si chiude quasi tutta: B3 (LIS da materiali online, comunità dopo l'anno 1), B4 (le immagini le sceglie Pietro con uno strumento del progetto), e tredici importanti — il percorso segue le tappe con un senso narrativo (I1), il testo autentico (I5), il greco (I6), il modulo con Niccolò III (I7), il conto degli esercizi (I8), le fonti del latino e del greco (I9), le Nuove Indicazioni (I11), il 1945 e la biologia come facoltativi (I13, I14), la tratta (I15), i ritorni come risorsa (I16), il `.txt` con firma (I17), il prodotto a sé (I18). I10 e I12 sono rinviate con il motivo. Principio di Pietro: **ora si decide l'ossatura; i dettagli si esplorano livello per livello.**
+
+**Resta per chiudere la fase 3**: B2, la revisione delle voci degli oggetti, su una pagina preparata dal progetto.
+
+**Lavoro per la fase 4 nato da queste decisioni**: raccogliere i proverbi ferraresi da fonti pubblicate, perché Pietro li riveda; lo strumento per scegliere le immagini, con le miniature scaricate da una macchina che raggiunge Commons; acquisire le Nuove Indicazioni 2026 e rifare la verifica di copertura; scrivere per ogni anno il senso narrativo del percorso; le facoltative del 1945 e della biologia nell'anno 5 e la scheda d'atlante sul colonialismo nell'anno 3; il modulo con Niccolò III, dopo l'anno 1.
 
 **Lavoro per la fase 4 nato da queste decisioni**, senza altre domande: riscrivere i 15 livelli ex prova di corte come livelli normali con un argomento proprio (`schema-livelli.md` §6); scegliere in ogni anno i 5 livelli su 30 a coppie o di gruppo per ciascun ambito; scegliere i sette colori delle frecce dalla tavolozza; scrivere i campi `processi` e `modalità` nella scheda di ogni livello.
 
@@ -167,3 +173,4 @@ I quattro rossi del 06/10/2026 e che cosa erano:
 | 07/10/2026 | 0.6 | Fase 3: le decisioni del pomeriggio del 07/10/2026 (I23, I24, modalità e processi) e il nuovo ordine delle domande. |
 | 07/10/2026 | 0.7 | Fase 3: le decisioni della sera del 07/10/2026, le due proposte da approvare e il lavoro che ne viene per la fase 4. |
 | 07/10/2026 | 0.8 | Approvate le due proposte; restano B2, B3, B4 e le quindici importanti per chiudere la fase 3. |
+| 07/10/2026 | 0.9 | Fase 3 quasi chiusa: le decisioni della sera del 07/10/2026, resta B2; il lavoro per la fase 4. |

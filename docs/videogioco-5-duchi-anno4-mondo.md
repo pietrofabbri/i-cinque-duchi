@@ -1,13 +1,13 @@
 ---
 titolo: Videogioco "I cinque duchi" — Anno IV, il mondo oltre l'Europa: l'archivio di Ferrara e il pianeta a strati
 tipo: normativo
-versione: 0.6
-data: 2026-10-03
+versione: 0.7
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 revisioni: v0.1 (prima stesione dell'01/10/2026); v0.2 (la regola di Newton al 4-7); v0.3 (rimandi); v0.4 (rimandi); v0.5 (le sedici decisioni di Pietro del 02/10/2026: il buco di `S66` è chiuso con una sostituzione — la 4-16 passa da Ibn Khaldun ad Ashoka —, il presente entra come facoltative forti, i due collettivi restano due tappe distinte, i codici `Q` sono confermati, e i buchi geografici dell'anno diventano facoltative continentali; v0.6 (le 30 schede dei personaggi dell'anno sono in `dati/`, estratte dal §5))
 fonte del materiale: due documenti di progettazione storico-pedagogica di Pietro ("ANNO IV — IL MONDO OLTRE L'EUROPA" e "ANNO IV — LE CIVILTÀ DEL MONDO"), 01/10/2026
 dati: videogioco-5-duchi-anno4-personaggi.json (v0.6, le 30 schede del §5); videogioco-5-duchi-anno4-mondo.json (da generare, v0.1)
-documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.1, livelli 4-1…4-30), videogioco-5-duchi-curricolo.md (v0.1, §4 cornice narrativa e §5.4 elenco dei livelli dell'anno 4), videogioco-5-duchi-luoghi.md (v0.6, la regola dei luoghi e i buchi geografici come facoltative continentali), videogioco-5-duchi-anno3-europa.md (v0.5, da cui questo documento continua le convenzioni), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-anno1-mappa.md (v0.10), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-meccaniche.md (v0.6)
+documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.1, livelli 4-1…4-30), videogioco-5-duchi-curricolo.md (v0.1, §4 cornice narrativa e §5.4 elenco dei livelli dell'anno 4), videogioco-5-duchi-luoghi.md (v0.6, la regola dei luoghi e i buchi geografici come facoltative continentali), videogioco-5-duchi-anno3-europa.md (v0.5, da cui questo documento continua le convenzioni), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-anno1-mappa.md (v0.10), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-meccaniche.md (v0.7)
 ---
 # Anno IV — Il mondo oltre l'Europa
 
@@ -537,6 +537,9 @@ Le sei funzioni del materiale diventano sei **tipi di tappa**, dichiarati nella 
 
 ### 6.4 I ritorni: la stessa persona, un'altra voce
 
+> **Dal 07/10/2026 i ritorni sono una risorsa** (decisione di Pietro, `anno3-europa.md` §13 Q7): una persona già obbligatoria in un anno precedente **può** tornare obbligatoria, e quando torna il gioco fa riferimento agli anni passati, nella storia e negli argomenti. La regola di questa sezione resta come preferenza, non come divieto.
+
+
 *(aggiunta — problema più grave che negli anni precedenti, perché il materiale del quarto anno contiene molti nomi già obbligatori nei primi tre anni)*
 
 Con quattro anni di percorso, alcune persone **compaiono due volte**. Non è un difetto, è una risorsa, purché valgano tre regole:
@@ -780,6 +783,8 @@ Il quarto anno è l'anno più difficile del progetto: porta **schiavitù, conqui
 ---
 
 ## 15. Registro modifiche
+
+- **v0.7 (07/10/2026)**: §6.4: i ritorni sono una risorsa, e la regola più stretta resta come preferenza (decisioni di Pietro del 07/10/2026).
 
 - **v0.6 (03/10/2026)**: le **30 schede dei personaggi dell'anno sono state generate in `dati/`** (`videogioco-5-duchi-anno4-personaggi.json`), con le **25 verifiche storiche** della §12 abbinate per codice. L'anno 4 è quello senza alcuna immagine attestata a vista: le 28 immagini che ci sono sono **file trovati, non ritratti certificati**, e il file lo dice voce per voce.
 

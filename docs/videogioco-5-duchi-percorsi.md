@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — i percorsi del duca: mezzi di trasporto, copertura della mappa e ritorni
 tipo: normativo
-versione: 0.6
-data: 2026-10-03
+versione: 0.7
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: calcolo sulle coordinate di dati/luoghi_gioco.json
-documenti collegati: videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-audit.md (v0.32), AGENTS.md
+documenti collegati: videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.6), videogioco-5-duchi-anno4-mondo.md (v0.7), videogioco-5-duchi-anno5-mondo.md (v0.8), videogioco-5-duchi-audit.md (v0.33), AGENTS.md
 ---
 
 # I percorsi del duca
@@ -289,7 +289,10 @@ Il percorso dell'anno 1 è quindi il **modello** degli altri: trenta tappe conti
 
 ## 8. Le questioni aperte
 
-### Q1 — Il percorso del duca è l'ordine delle tappe o è un giro a parte? **(la decisione più importante)**
+### Q1 — Il percorso del duca è l'ordine delle tappe o è un giro a parte? — **chiusa il 07/10/2026**
+
+**La decisione di Pietro: il percorso segue l'ordine delle tappe.** Non c'è un giro a parte. In compenso **la storia deve dare un senso al percorso**: il motivo per cui il duca va proprio in quei posti, in quell'ordine, si scrive nella narrazione di ogni anno, tappa per tappa. Le ipotesi del §3 che proponevano il giro restano come analisi. *La domanda com'era posta:*
+
 
 È la prima ipotesi contro la seconda di §3. La prima non costa niente e non copre la mappa; la seconda copre la mappa e costa un lavoro di motore. La raccomandazione è la seconda, ma la decisione è di Pietro.
 
@@ -319,6 +322,7 @@ Se fra due tappe ci sono dodici giorni di strada, il gioco può (a) mostrarne un
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 07/10/2026 | 0.7 | Q1 chiusa: il percorso del duca segue l'ordine delle tappe, e la storia di ogni anno deve dargli un senso (decisioni di Pietro del 07/10/2026). |
 | 05/10/2026 | 0.6 | **Il rimando è l'unica cosa che cambia.** Un documento collegato è salito di versione e questo rimando è rimasto indietro: la riga è sbagliata e non sembra, perché un rimando che cita una versione superiore a quella vera sembra un rimando fermo. Qui dentro non cambia nient'altro — e si scrive lo stesso, perché una riga che cambia è una riga che cambia. |
 | 03/10/2026 | 0.5 | **Il mezzo del quinto anno è dichiarato, su due strati.** Ventidue mezzi possibili e cinque del testo erano la ragione di una colonna `non_dichiarato` che tornava a ogni revisione. La risposta non è scegliere: è dichiarare due regole senza autore. Il mezzo reale lo sceglie l'archivio, che è il presente (aereo 30); quello dentro la stanza lo sceglie **il canto**, perché ogni mezzo del *Furioso* è attestato in un canto e in un verso che il capitolo già porta, e la tabella canto → mezzo non è una scelta ma la traduzione degli indici. Dove il canto non dà un mezzo si va a piedi, e anche questo è dichiarato. Il carro di delfini (c. XI) e il drago (c. XVIII) **non hanno tappa** nell'anno 5, e si dice. Il conto della §1.2 copriva 27 tappe su trenta perché tre venivano scartate da un `continue` che non diceva niente: adesso il conto le nomina. |
 | 03/10/2026 | 0.4 | **I mezzi diventano ventidue e il capitolo acquista tre sezioni.** Otto mezzi storici nuovi — treno e aereo passano anche all'anno 4, e arrivano crociera, **moto**, **sci**, **elicottero** e **monopattino**; e cinque mezzi **del testo** per il quinto anno, con il canto e l'ottava accanto: l'ippogrifo (c. IV, 18), il drago (c. XVIII, 12), la sirena (c. VI, 40), il carro di delfini (c. XI, 44) e il carro di serpenti (c. XII, 2). Ogni mezzo porta due campi nuovi, `tipo` (`storico` o `gioco`) e `dal` (l'anno di attestazione). **Il `dal` è la ragione della modifica**: senza di esso un elicottero in una tappa del 1300 passerebbe inosservato. Il controllo degli anacronismi è diventato **per tappa** (§1.2), perché l'anno 4 non è un'epoca, e il primo calcolo ha trovato un difetto vero nella propria impostazione: cercava un mezzo inesistente alla data della tappa e segnalava l'anno 5 di Alfonso II, dove non c'era né treno né aereo — ma il mezzo di cui si parla è quello **con cui il materiale arriva all'archivio**, che è del presente. Il controllo giusto confronta il mezzo di allora con quello di oggi e cerca un difetto solo: che quello di oggi non sia più lento. La ripartizione che ne esce è la tabella più informativa del capitolo (anno 4: nave 23, aereo 5, treno 1, moto 1) ed è **calcolata dalle date, non scritta a mano**. |

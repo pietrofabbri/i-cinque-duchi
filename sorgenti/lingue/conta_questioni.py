@@ -160,6 +160,9 @@ def parola_numero(s):
     """Il valore di un numero in lettere, o None se non è un numero."""
     s = unicodedata.normalize("NFKD", s.lower().strip())
     s = "".join(c for c in s if not unicodedata.combining(c))
+    # «una bloccante», «una sola»: il femminile di «uno», dal 07/10/2026
+    if s == "una":
+        s = "uno"
     return PAROLE.get(s)
 
 
@@ -354,7 +357,7 @@ def confronta_audit(testo, per_documento, aperte, chiuse, problemi):
     titolo2 = re.search(r"^##\s*2\.\s*(.*)$", sezione2, re.M)
     schede, bloccanti = schede_bloccanti(sezione2)
     if titolo2:
-        m = re.search(r"(\w+)\s+bloccanti", titolo2.group(1), re.I)
+        m = re.search(r"(\w+)\s+bloccant[ei]", titolo2.group(1), re.I)
         n = parola_numero(m.group(1)) if m else None
         if n is not None and n != bloccanti:
             problemi.append("il §2 si intitola «%s bloccanti», le schede B aperte "
@@ -444,7 +447,7 @@ def confronta_readme(testo, per_documento, reale, in_lettere, radice_docs, probl
     # tollera, perché un controllo che smette di guardare una riga perché il
     # grassetto è cambiato è un controllo che non guarda.
     for m in re.finditer(r"(\d+) voci\b.{0,40}?\**(\d+) chiuse, (\d+) aperte\**, "
-                         r"(\d+) bloccanti e (\d+) importanti", testo):
+                         r"(\d+) bloccant[ei] e (\d+) importanti", testo):
         voci, chiuse_r, aperte_r, blocchi, importanti = (int(g) for g in m.groups())
         if (voci, chiuse_r, aperte_r) != (reale["voci"], reale["chiuse"], reale["aperte"]):
             problemi.append("il README scrive «%d voci, %d chiuse, %d aperte», "
@@ -466,7 +469,7 @@ def confronta_readme(testo, per_documento, reale, in_lettere, radice_docs, probl
     # la nota sull'audit: «118 voci enumerate in sedici sezioni, **31 chiuse** e
     # **87 aperte**, delle quali **4 bloccanti**», e «il progetto ha … documenti»
     for m in re.finditer(r"(\d+) voci enumerate in (\w+) sezioni, \**(\d+) chiuse\** "
-                         r"e \**(\d+) aperte\**, delle quali \**(\d+) bloccanti\**", testo):
+                         r"e \**(\d+) aperte\**, delle quali \**(\d+) bloccant[ei]\**", testo):
         voci = int(m.group(1))
         sezioni = parola_numero(m.group(2))
         chiuse_r, aperte_r, blocchi = (int(g) for g in m.groups()[2:])

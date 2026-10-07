@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — curricolo dei 150 livelli (bozza)
 tipo: normativo
-versione: 0.3
+versione: 0.4
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 stato: bozza di lavoro, da integrare con il materiale di Pietro sui duchi e con le nuove Indicazioni nazionali 2026 (sezione Informatica non ancora acquisita)
@@ -378,9 +378,9 @@ Ogni voce delle Indicazioni 2010 ha almeno un livello. Livelli oltre le Indicazi
 ## 7. Questioni aperte
 
 1. **Materiale sui duchi.** È da integrare il materiale di Pietro (chat "2B" e "informatica knowledge tree"). La cornice del §4 è una proposta sostituibile.
-2. **Nuove Indicazioni 2026.** Serve acquisire il fascicolo `LS-SCIENZE-APPLICATE` (sezione Informatica) e rifare il §6. Serve anche decidere se il gioco segue le Indicazioni 2010, quelle 2026 o entrambe (per esempio le prime fino alle coorti che iniziano nel 2026/27, poi le nuove).
+2. **Nuove Indicazioni 2026** — **chiusa il 07/10/2026: si acquisiscono** (decisione di Pietro). È un lavoro: trovare il testo ufficiale della sezione Informatica, rifare il §6 e la verifica di copertura. *Il testo di prima:* **Nuove Indicazioni 2026.** Serve acquisire il fascicolo `LS-SCIENZE-APPLICATE` (sezione Informatica) e rifare il §6. Serve anche decidere se il gioco segue le Indicazioni 2010, quelle 2026 o entrambe (per esempio le prime fino alle coorti che iniziano nel 2026/27, poi le nuove).
 3. **Linguaggio di programmazione.** Python è previsto per tutti gli anni. Va deciso se introdurre un secondo linguaggio tipizzato (C++ o Java) al 3° o 4° anno, per la programmazione a oggetti e i tipi.
-4. **Rapporto con la piattaforma gamificata.** Il gioco può essere un modulo della piattaforma, con gli stessi requisiti (privacy, Classroom, punteggio sul processo), oppure un prodotto a sé.
+4. **Rapporto con la piattaforma gamificata** — **chiusa il 07/10/2026: prodotto a sé**, con i requisiti della piattaforma come caso particolare (decisione di Pietro, `meccaniche.md` §3). *Il testo di prima:* **Rapporto con la piattaforma gamificata.** Il gioco può essere un modulo della piattaforma, con gli stessi requisiti (privacy, Classroom, punteggio sul processo), oppure un prodotto a sé.
 5. **Allineamento interdisciplinare.** I collegamenti con matematica, fisica e scienze vanno verificati sulle programmazioni reali di classe. In particolare vanno controllati la tempistica di analisi, probabilità e onde nel quarto e quinto anno e lo sfasamento tra i livelli che richiedono un prerequisito matematico e il momento in cui quel prerequisito viene insegnato.
 6. **Granularità.** Ogni livello deve durare da 5 minuti a qualche ora. Va stimata la durata media per anno e confrontata con le ore curricolari (2 ore settimanali, circa 66 ore annue).
 7. **Fonti storiche.** Date e fatti del §4 vanno verificati su fonti storiche prima dell'uso nel gioco.
@@ -402,3 +402,4 @@ Ogni voce delle Indicazioni 2010 ha almeno un livello. Livelli oltre le Indicazi
 | 27/09/2026 | 0.1 | Prima stesura: requisiti, quadro normativo, modello di livello, cornice dei cinque anni, elenco dei 150 livelli. |
 | 07/10/2026 | 0.2 | Il §3.1 è dichiarato come la proposta del 27/09/2026: lo schema che vale è `modello-di-livello.md`, e la soglia non è più k istanze consecutive (fase 2 della roadmap: allineamento al modello di livello). Il documento non aveva un registro delle modifiche: questa è la prima riga. |
 | 07/10/2026 | 0.3 | Le prove di corte sono abolite dal 07/10/2026: la riga della legenda lo dice. |
+| 07/10/2026 | 0.4 | §7: le Nuove Indicazioni 2026 si acquisiscono, e il gioco è un prodotto a sé (decisioni di Pietro del 07/10/2026). |

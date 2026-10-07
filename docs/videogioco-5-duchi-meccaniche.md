@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — Salvataggio, consegna e integrità del punteggio
 tipo: normativo
-versione: 0.6
+versione: 0.7
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: requisiti di Pietro (28/09/2026), già emersi nel progetto "piattaforma gamificata"
@@ -214,8 +214,8 @@ Non ci sono modalità separate. Gli studenti giocano **sempre, anche a casa**; *
 
 ## 3. Questioni aperte
 
-1. Formato del file: `.txt` (proposta) oppure PDF.
-2. Il gioco è un modulo della piattaforma gamificata o un prodotto a sé? I requisiti di questo documento valgono in entrambi i casi.
+1. Formato del file — **chiusa il 07/10/2026**: `.txt` con una firma che rende la consegna verificabile (decisione di Pietro, §1.1 e §1.4).
+2. Modulo della piattaforma o prodotto a sé — **chiusa il 07/10/2026**: **prodotto a sé**, con i requisiti della piattaforma gamificata come caso particolare (decisione di Pietro).
 3. Pesi e soglie del §2.3 vanno calibrati sul prototipo.
 4. Quanti eventi di dettaglio conservare nel codice di ripresa (§1.4).
 5. Strumento del docente (§1.6): da realizzare subito o dopo il prototipo del gioco?
@@ -223,6 +223,8 @@ Non ci sono modalità separate. Gli studenti giocano **sempre, anche a casa**; *
 7. Specifica della modalità accessibile (§2.6.5).
 
 ## 4. Registro modifiche
+
+- **v0.7 (07/10/2026)**: §3: chiuse le questioni 1 e 2, file di consegna .txt con firma e gioco come prodotto a sé (decisioni di Pietro del 07/10/2026).
 
 - **v0.6 (07/10/2026)**: La soglia delle prove di corte non c'è più: sono abolite dal 07/10/2026.
 

@@ -1,15 +1,15 @@
 ---
 titolo: Videogioco "I cinque duchi" — Anno III, i personaggi d'Europa: la corte di Ferrara e la carta a strati
 tipo: normativo
-versione: 0.5
-data: 2026-10-03
+versione: 0.6
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 revisioni: v0.1 (prima stesione dell'01/10/2026); v0.2 (correzione di un errore di calcolo sulla morte di Alfonso I); v0.3 (rimandi di versione); v0.4 (le sedici decisioni di Pietro del 02/10/2026: il vuoto del Novecento è risolto con (d)+(b), una sostituzione e un atlante di tredici voci; i codici `Q` sono confermati; le tre facoltative continentali dell'Europa centro-orientale, nordica e balcanica sono assegnate; v0.5 (le 30 schede dei personaggi dell'anno sono in `dati/`, estratte dal §5))
 data: 2026-10-01
 autore: Pietro Fabbri (con Claude)
 fonte del materiale: due documenti di progettazione storico-pedagogica di Pietro ("ANNO III — I PERSONAGGI D'EUROPA" e "ANNO III — L'EUROPA ATTRAVERSO I SECOLI"), 01/10/2026
 dati: videogioco-5-duchi-anno3-personaggi.json (v0.5, le 30 schede del §5); videogioco-5-duchi-anno3-europa.json (da generare, v0.1)
-documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.1, livelli 3-1…3-30), videogioco-5-duchi-curricolo.md (v0.1, §4 cornice narrativa e §5.3 elenco dei livelli dell'anno 3), videogioco-5-duchi-luoghi.md (v0.6, §4.7 i buchi geografici come facoltative continentali), videogioco-5-duchi-anno5-mondo.md (v0.7, che riprende il Novecento che qui era un vuoto), videogioco-5-duchi-anno2-penisola.md (v0.3, da cui questo documento continua le convenzioni), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-anno1-mappa.md (v0.10), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-meccaniche.md (v0.6)
+documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.1, livelli 3-1…3-30), videogioco-5-duchi-curricolo.md (v0.1, §4 cornice narrativa e §5.3 elenco dei livelli dell'anno 3), videogioco-5-duchi-luoghi.md (v0.6, §4.7 i buchi geografici come facoltative continentali), videogioco-5-duchi-anno5-mondo.md (v0.7, che riprende il Novecento che qui era un vuoto), videogioco-5-duchi-anno2-penisola.md (v0.3, da cui questo documento continua le convenzioni), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-anno1-mappa.md (v0.10), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-meccaniche.md (v0.7)
 ---
 # Anno III — I personaggi d'Europa
 
@@ -575,6 +575,9 @@ Le sei funzioni del materiale di Pietro diventano sei **tipi di tappa**, dichiar
 
 ### 6.4 I ritorni: la stessa persona, un'altra voce
 
+> **Dal 07/10/2026 i ritorni sono una risorsa** (decisione di Pietro, `anno3-europa.md` §13 Q7): una persona già obbligatoria in un anno precedente **può** tornare obbligatoria, e quando torna il gioco fa riferimento agli anni passati, nella storia e negli argomenti. La regola di questa sezione resta come preferenza, non come divieto.
+
+
 *(aggiunta — problema specifico di un percorso su tre epoche)*
 
 Con tre anni di percorso, alcune persone **compaiono due volte**. Non è un difetto, è una risorsa, purché valgano tre regole:
@@ -795,12 +798,12 @@ Il terzo anno introduce i temi più pesanti dell'intero progetto, e le regole de
 *(da decidere con Pietro; le decisioni dell'01/10/2026 sono al §0.1)*
 
 1. **Il vuoto del Novecento.** **→ chiusa il 02/10/2026** con **(d)+(b)**: una sostituzione (la 3-28, che passa da Turing a **Levi**, con Turing come facoltativa forte) e un **atlante di tredici voci** (§4.2) che comprende Curie, Freud e Arendt più le tre facoltative continentali che chiudono i buchi di Ungheria, Scandinavia e Balcani. L'applicazione di (d) è **più piccola** della proposta — tre tappe su trenta diventano una — perché la condizione posta da Pietro, «senza snaturare l'anno», è vera sui quattro livelli candidati: 3-24, 3-26 e 3-30 hanno ciascuno un aggancio documentato e verificato, e 3-28 è già nel Novecento. Il bilancio delle cifre è in §0.3
-2. **La tratta e l'imperialismo.** Nessun personaggio obbligatorio porta l'Europa fuori dall'Europa. Il catalogo di Pietro cita Colombo e Vespucci, che sono nell'Anno II e non nell'anno 3. Va deciso se aggiungere una scheda di atlante esplicita sul colonialismo (che è un buco tematico reale), o se dichiarare il limite.
+2. **La tratta e l'imperialismo** — **chiusa il 07/10/2026**: il limite si dichiara, e si aggiunge una scheda d'atlante sul colonialismo (decisione di Pietro). *La domanda com'era posta:* **La tratta e l'imperialismo.** Nessun personaggio obbligatorio porta l'Europa fuori dall'Europa. Il catalogo di Pietro cita Colombo e Vespucci, che sono nell'Anno II e non nell'anno 3. Va deciso se aggiungere una scheda di atlante esplicita sul colonialismo (che è un buco tematico reale), o se dichiarare il limite.
 3. **Il bilancio degli agganci.** 21 forti, 9 medi. Migliore dell'Anno II, e per una ragione che vale la pena verificare con te: il tema dell'anno è la trasmissione della conoscenza, e il suo terreno naturale è il XV–XVI secolo. Se qualche aggancio forte ti sembra **troppo** forte (è il rischio opposto a quello dell'Anno II), segnalo: 3-1 (Eratostene), 3-8 (Castel del Monte) e 3-24 (Dürer) sono i tre più discussi.
 4. **Persone viventi.** von der Leyen, Merkel, Macron: solo emblemi, e la decisione su Q1 li rende o no giocabili.
 5. **Le aggiunte.** Sei personaggi aggiunti perché i livelli li richiedevano e il catalogo non li aveva: **Josquin** (3-17), **Bellini** (3-20), **Dürer** (3-24), **Manuzio** (3-25), **Caxton** (3-26), **Levi** (3-28, che sostituisce Turing). Sono tutti europei, tutti con una ragione didattica precisa e tutti verificabili. *(La v0.3 ne dichiarava cinque e ne elencava sei: la cifra era sbagliata, ed è il tipo di errore che nasce quando si conta a memoria invece di contare sul testo.)*
 6. **I codici `Q`.** **Confermati il 02/10/2026**: la serie è **`Q101…Q130`** per l'anno III, `Q201…Q230` per l'anno IV e `Q301…Q330` per l'anno V. Non collide e da qui in poi la numerazione è nel repository.
-7. **I ritorni.** Leonardo è **obbligatorio in due anni** (2-8 e 3-13), contro la regola che ho proposto in §6.4. Va deciso: si tiene il ritorno forte (è il caso più bello del percorso, perché la stessa persona è «il linguaggio delle figure» e poi «la scomposizione del metodo»), oppure una delle due tappe diventa facoltativa.
+7. **I ritorni** — **chiusa il 07/10/2026: Leonardo resta obbligatorio in due anni, ed è perfetto così.** Pietro ha deciso che i ritorni sono una risorsa: il gioco fa **riferimento agli anni passati**, nella storia e negli argomenti, e altri ritorni dello stesso tipo vanno bene. La regola del §6.4 vale come preferenza, non come divieto. *La domanda com'era posta:* **I ritorni.** Leonardo è **obbligatorio in due anni** (2-8 e 3-13), contro la regola che ho proposto in §6.4. Va deciso: si tiene il ritorno forte (è il caso più bello del percorso, perché la stessa persona è «il linguaggio delle figure» e poi «la scomposizione del metodo»), oppure una delle due tappe diventa facoltativa.
 8. **La corte come unico luogo percorribile.** È il prezzo della decisione 2. Se l'anno 3 risultasse piatto, l'alternativa è il **visitatore-inviato** (§7.3).
 9. **La regola di `AGENTS.md`.** Va aggiornata: dal terzo anno il duca non è il personaggio giocante ma la guida. La modifica va scritta in `AGENTS.md` §3, non solo in questo documento.
 10. **Le fonti del materiale.** Come per l'Anno II, il catalogo cita fonti ottime (Treccani, Britannica, ODNB, archivi) ma non le ha ancora consultate sistematicamente. Serve un abbozzo di bibliografia per i 30 obbligatori prima della stesura delle schede in `dati/`.
@@ -827,6 +830,8 @@ Il terzo anno introduce i temi più pesanti dell'intero progetto, e le regole de
 ---
 
 ## 15. Registro modifiche
+
+- **v0.6 (07/10/2026)**: §13: la tratta si dichiara con una scheda d'atlante; Leonardo resta obbligatorio in due anni e i ritorni diventano una risorsa (§6.4) (decisioni di Pietro del 07/10/2026).
 
 - **v0.5 (03/10/2026)**: le **30 schede dei personaggi dell'anno sono state generate in `dati/`** (`videogioco-5-duchi-anno3-personaggi.json`). Il file porta anche le **24 verifiche storiche** della §12, abbinate per codice, e la `forza` di ogni tappa presa dalla colonna della tabella §4 (il §5 la scriveva una volta su trenta).
 

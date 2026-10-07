@@ -6,7 +6,7 @@ data: 2026-09-30
 autore: Pietro Fabbri (con Claude)
 fonte del materiale: due documenti di progettazione storico-culturale di Pietro ("Una città, molte Ferrara" e "Personaggi, luoghi, memoria e spirito critico"), 28/09/2026
 dati: videogioco-5-duchi-anno1-personaggi.json (93 schede di personaggi e 32 luoghi, stesso contenuto del §10 in formato leggibile da programmi)
-documenti collegati: videogioco-5-duchi-curricolo.md (v0.3), videogioco-5-duchi-schema-livelli.md (v1.2), videogioco-5-duchi-meccaniche.md
+documenti collegati: videogioco-5-duchi-curricolo.md (v0.4), videogioco-5-duchi-schema-livelli.md (v1.2), videogioco-5-duchi-meccaniche.md
 ---
 
 # Anno I — Ferrara: narrazione, personaggi, luoghi

@@ -4,7 +4,7 @@ tipo: catalogo
 versione: 0.5
 data: 2026-10-06
 autore: "Progetto I cinque duchi"
-documenti collegati: videogioco-5-duchi-percorsi.md (v0.6), videogioco-5-duchi-anno1-mappa.md (v0.10), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.5), videogioco-5-duchi-anno4-mondo.md (v0.6), videogioco-5-duchi-anno5-mondo.md (v0.7), videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-itinerari.md (questo), AGENTS.md
+documenti collegati: videogioco-5-duchi-percorsi.md (v0.7), videogioco-5-duchi-anno1-mappa.md (v0.10), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno3-europa.md (v0.6), videogioco-5-duchi-anno4-mondo.md (v0.7), videogioco-5-duchi-anno5-mondo.md (v0.8), videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-itinerari.md (questo), AGENTS.md
 ---
 
 # Gli itinerari: chi incontri, dove, e con quale mezzo
