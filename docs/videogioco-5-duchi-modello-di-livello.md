@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — Il modello di livello: le parti di un livello, il loro ordine, le regole e la lista di controllo
 tipo: normativo
-versione: 0.3
+versione: 0.4
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 controllo: python3 sorgenti/verifica_modello.py (K1-K4: NEED e POOL contro il codice degli esercizi, i tipi di livello contro i dati, le parti numerate e i documenti che citano, il numero delle domande)
-documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.1), videogioco-5-duchi-gioco.md (v0.8), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-meccaniche.md (v0.5), videogioco-5-duchi-tappa-1-01.md (v0.6), videogioco-5-duchi-premi.md (v0.9), videogioco-5-duchi-inventario.md (v0.4), videogioco-5-duchi-ripassi.md (v0.4), videogioco-5-duchi-pedagogia.md (v0.2), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-lingue.md (v0.4), videogioco-5-duchi-audit.md (v0.30)
+documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.2), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-meccaniche.md (v0.6), videogioco-5-duchi-tappa-1-01.md (v0.6), videogioco-5-duchi-premi.md (v0.9), videogioco-5-duchi-inventario.md (v0.4), videogioco-5-duchi-ripassi.md (v0.5), videogioco-5-duchi-pedagogia.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-lingue.md (v0.4), videogioco-5-duchi-audit.md (v0.31)
 ---
 
 # Il modello di livello
@@ -76,7 +76,7 @@ Il flusso disegnato qui è quello del **livello informatico**. La tappa intera f
 | Pool di ogni gradino (`POOL`) | **5 × NEED = 20** esercizi equivalenti, estratti a caso senza ripetizioni; nessun contenuto ripetuto nella pool; seme diverso per studente e per rigenerazione | `esercizi.md` §1 |
 | Quando un esercizio conta | gradini 1 e 2: se è giusto; gradino 3: se l'esito è giusto (E = 1) **e** la coerenza dei passaggi è almeno 0,7 | `tappa-1-01.md` §5 |
 | **Soglia del livello** | **4 esercizi validi al gradino 3** | `tappa-1-01.md` §5 |
-| Soglia di una prova | **5 esercizi validi al gradino 3**, **provvisoria** (§9 Q3) | `meccaniche.md` §2.3 |
+| Soglia di una prova | **non c'è più**: le prove di corte sono abolite (07/10/2026, §9 Q3) | — |
 | Errori | due errori consecutivi aprono la pausa (il pulsante per ripartire si attiva dopo 4 s); nei gradini 2 e 3, dopo la pausa si torna al gradino precedente con un'istanza nuova | `esercizi.md` §1, `tappa-1-01.md` §5 |
 | Risposte troppo veloci | al gradino 3, una risposta in meno di 6 s è segnalata nel report, senza penalità | `tappa-1-01.md` §5 |
 | Punteggio dell'istanza | indice di processo P = 0,50·C + 0,20·f(A) + 0,15·g(H) + 0,15·h(T); punti = difficoltà × E × P. Pesi da tarare sul prototipo | `meccaniche.md` §2.3 |
@@ -126,8 +126,8 @@ Il flusso disegnato qui è quello del **livello informatico**. La tappa intera f
 | Tipo | Quanti | Che cosa cambia |
 |---|---|---|
 | `normale` | 135 | il modello di questo documento |
-| `prova` (prova di corte) | 15: x-10, x-20, x-30 di ogni anno | integra i livelli precedenti; alcune hanno anche un argomento nuovo (`schema-livelli.md` §6); soglia più alta (§3); nell'anno 1 ogni prova è anche il momento di «ripercorrere la strada» (`gioco.md` §4.3) |
-| tappa **a mani nude** | 10: x-15 e x-30 (`pedagogia.md` §3) | due o tre minuti, nessun aiuto, nessuno strumento; si riparte senza penalità. **Non è ancora nei dati**, e il suo rapporto con le prove è la domanda §9 Q3 |
+| `prova` (prova di corte) — **abolito il 07/10/2026** | 15: x-10, x-20, x-30 di ogni anno | Il tipo non esiste più (§9 Q3). I 15 livelli restano al loro posto, con il loro luogo e il loro personaggio, ma vanno **riscritti come livelli normali con un argomento proprio**: fino ad allora i dati portano ancora `prova`, e questa riga dice quanti sono. È lavoro della fase 4 (`roadmap-documentazione.md`) |
+| tappa **a mani nude** | 10: x-15 e x-30 (`pedagogia.md` §3) | Non è un tipo di livello: è **una sfida in più dentro la tappa**, che resta una tappa normale con i suoi sette livelli. Come si fa in concreto è la proposta §9 Q8 |
 
 **Gli anni.** Il modello vale per tutti e cinque gli anni; cambiano il protagonista, il luogo che si attraversa e il modo in cui la tappa arriva:
 
@@ -177,13 +177,21 @@ Sono domande per Pietro, emerse allineando il nucleo di gioco. Fino alla rispost
 
 1. **La carta del personaggio e il premio: restano tutti e due?** — **chiusa il 07/10/2026: tutti e due.** La carta è il personaggio e regge il ripasso; il premio è l'oggetto del livello. Carta e visioni entrano nell'elenco dell'inventario, e la collezione delle carte è un registro personale (`inventario.md` §1, §3). *La domanda com'era posta:* Il prototipo dà una carta per ogni personaggio incontrato (`gioco.md` §3.1), con il motto e il livello di padronanza per il ripasso. Il 03/10 sono arrivati il premio di ogni livello e la salvadanaio (`premi.md` §4), e l'elenco dei sette elementi dell'inventario (`inventario.md` §1) non nomina né la carta né le visioni. *Provvisorio:* tutti e due. La carta è il personaggio e serve al ripasso; il premio è un oggetto che il personaggio non è, perché la prova 3 vieta che il premio sia già nella storia (`premi.md` §3). *Da decidere:* tenerli entrambi e aggiungere carta e visioni all'inventario, oppure far assorbire la carta dal premio, e allora va deciso su che cosa poggia il ripasso.
 2. **Il ripasso all'inizio della tappa resta accanto ai test di ingresso?** — **chiusa il 07/10/2026: tutti e due, con ruoli diversi.** Il ripasso Leitner resta obbligatorio e fa parte della soglia della tappa; i test di ingresso restano facoltativi, per le lingue e gli ambiti trasversali (`ripassi.md` §4). *La domanda com'era posta:* `gioco.md` §4.2 mette 2–4 domande sulle carte in scadenza (Leitner) dentro la soglia di ogni tappa; `ripassi.md` ha introdotto dieci domande facoltative ai punti di interazione, per le lingue e gli ambiti trasversali, e dice che non sono la soglia dei livelli informatici (§4). *Provvisorio:* tutti e due, con ruoli diversi. *Da decidere:* se il ripasso Leitner resta obbligatorio, se diventa facoltativo come i test, o se i test lo sostituiscono.
-3. **Prove di corte e tappe a mani nude sono la stessa cosa?** I dati hanno 15 prove (x-10, x-20, x-30); `pedagogia.md` §3 vuole 10 tappe a mani nude (x-15, x-30), che nei dati non ci sono. Coincidono solo alle x-30. *Provvisorio:* sono due cose distinte; la prova ha la soglia di 5 (`meccaniche.md` §2.3) e le tappe a mani nude non sono ancora costruite. *Da decidere:* se la tappa x-15 resta un livello normale con in più la sfida, se diventa un tipo nuovo, o se le due cose si fondono.
+3. **Prove di corte e tappe a mani nude sono la stessa cosa?** — **chiusa il 07/10/2026: le prove di corte sono abolite**, e restano le tappe a mani nude, alle x-15 e x-30 (§6; la proposta concreta è Q8). *La domanda com'era posta:* I dati hanno 15 prove (x-10, x-20, x-30); `pedagogia.md` §3 vuole 10 tappe a mani nude (x-15, x-30), che nei dati non ci sono. Coincidono solo alle x-30. *Provvisorio:* sono due cose distinte; la prova ha la soglia di 5 (`meccaniche.md` §2.3) e le tappe a mani nude non sono ancora costruite. *Da decidere:* se la tappa x-15 resta un livello normale con in più la sfida, se diventa un tipo nuovo, o se le due cose si fondono.
 4. **«Nessuna risposta scritta» e gli strumenti veri.** — **chiusa il 07/10/2026: si accetta anche il testo libero**, valutato dal docente nel report e non dal gioco; codice, formule e comandi si verificano eseguendoli (§3). La produzione nelle lingue si fa così. *La domanda com'era posta:* `esercizi.md` §2 e `tappa-1-01.md` §7 vietano le risposte scritte, perché si incollerebbero da un'IA; `gioco.md` §2 chiede di scrivere codice Python, formule, comandi di shell, e `lingue.md` §2 chiede esercizi di produzione. *Provvisorio:* il divieto vale per le risposte in testo libero; codice, formule e comandi si scrivono e si verificano eseguendoli sui dati generati per quello studente (`gioco.md` §2.2). *Da decidere:* se è questa la regola, e come si fa la produzione nelle lingue.
 5. **Due campi nuovi nella scheda del livello.** — **chiusa il 07/10/2026: entrano tutti e due**, e in modo pedagogicamente efficace: il giocatore non li può saltare, li deve fare, e deve capire ed essere motivato sul perché. *Come* entrano è la proposta di Q6 qui sotto. *La domanda com'era posta:* `pedagogia.md` §1.4 e §2 propongono `Modalità` (individuale, a coppie, piccolo gruppo) e un catalogo fisso di **processi di pensiero** esercitati. *Da decidere:* se entrano nello schema, prima della riscrittura della tappa 1-1.
 
 ### 9.1 Domande nate dalle decisioni del 07/10/2026
 
-### Q6 — Come entrano i processi di pensiero e la modalità: la proposta **(da approvare)**
+### Q6 — Come entrano i processi di pensiero e la modalità — **chiusa il 07/10/2026**
+
+**La decisione di Pietro.** La proposta qui sotto è approvata, con una correzione sulla modalità: **coppie e gruppi ci sono anche in informatica**. In ogni anno, per **ciascuno dei sette ambiti** (informatica e le sei lingue), **5 livelli su 30** si fanno a coppie o in piccolo gruppo; gli altri 25 sono individuali. Il terzo punto della modalità qui sotto (informatica sempre individuale) è quindi **superato**, e vale questo:
+
+- **Il compagno può essere anche a distanza.** Ognuno riceve sul suo dispositivo una parte dei dati, generata dal suo seme, e i due si scambiano un codice breve a voce o per messaggio: il gioco lo verifica senza server. Così un livello a coppie si può fare anche a casa.
+- **Un livello di informatica a coppie fa parte della soglia** come gli altri, e quindi la tappa successiva aspetta che sia fatto. Il report dice al docente quali livelli aspettano un compagno.
+- **Quali livelli** sono a coppie e di gruppo si sceglie guardando l'obiettivo (un livello di argomentazione sì, uno di esercizio individuale no), mai alle tappe a mani nude, e si scrive nella scheda: è lavoro della fase 4.
+
+*La proposta com'era scritta:*
 
 Pietro ha deciso che i due campi entrano e che il giocatore non li deve poter saltare (Q5). Questa è la proposta di come, da approvare o correggere.
 
@@ -202,12 +210,59 @@ Pietro ha deciso che i due campi entrano e che il giocatore non li deve poter sa
 
 ### Q7 — L'espediente narrativo per tornare indietro, anno per anno **(importante)**
 
-Chi è rimasto indietro in una lingua può farsi riportare alla tappa dove si è fermato (§2). Pietro ha chiesto un **espediente narrativo per ogni anno**, coerente con come l'anno si attraversa: Borso a piedi per Ferrara (anno 1), Ercole I sulla carta d'Italia a strati (anno 2), la corte dove arrivano le risorse (anno 3), l'archivio dove arrivano i documenti (anno 4), il cantiere che si sposta nel tempo (anno 5). Vanno scritti cinque espedienti, uno per anno, e Pietro li approva.
+Chi è rimasto indietro in una lingua può farsi riportare alla tappa dove si è fermato (§2). Pietro ha chiesto un **espediente narrativo per ogni anno**, coerente con come l'anno si attraversa. Queste sono le cinque proposte (07/10/2026), da approvare o correggere.
+
+**Le regole comuni.** Il ritorno è **sempre una scelta del giocatore**, mai imposto. Lo offre la freccia della lingua rimasta indietro, che nella tappa nuova dice che cosa manca e dove. Il ritorno porta **solo** alla tappa in cui quella lingua si è fermata, e da lì si torna con un gesto alla tappa da cui si era partiti. Nessun espediente cambia le regole dell'anno: negli anni 3, 4 e 5 il duca non viaggia, e il ritorno non lo fa viaggiare.
+
+| Anno | Come si attraversa | L'espediente | Che cosa vede il giocatore |
+|---|---|---|---|
+| anno 1 | Borso a piedi per Ferrara | **Il paggio con il registro.** Un paggio della corte, figura collettiva e senza nome, segue Borso e tiene il conto di ciò che è rimasto in sospeso. Ferrara si attraversa a piedi, e le zone già aperte restano aperte: tornare è solo camminare | Il paggio si avvicina: «Messere, alla Loggia dei Merciai il latino è rimasto a metà». Sulla mappa la zona si illumina e Borso ci va a piedi |
+| anno 2 | Ercole I sulla carta d'Italia a strati | **Il dispaccio senza risposta.** La corte estense corrispondeva con gli ambasciatori per lettera; nel gioco una lettera rimasta senza risposta richiama Ercole al pin da cui era partita, letto alla stessa profondità | Arriva una lettera sigillata; aprendola, la carta torna allo strato e al pin di quella tappa |
+| anno 3 | La corte, dove le risorse arrivano sulla tavola; Alfonso I guida | **La risorsa riportata in tavola.** Ciò che è passato dalla corte è annotato nel suo inventario, e il guardarobiere lo riporta sulla tavola. Il duca non si muove: è la risorsa che torna | Il guardarobiere entra con l'oggetto della tappa passata e lo posa sulla tavola; la tappa si riapre lì |
+| anno 4 | L'archivio, dove arrivano i documenti; Ercole II commenta | **Il fascicolo riaperto.** Nel registro che il giocatore costruisce la riga della lingua rimasta indietro è incompleta; l'archivio conserva tutto, e il fascicolo si riprende dallo scaffale | Una riga del registro lampeggia a metà; cliccandola, il fascicolo esce dallo scaffale e la tappa si riapre |
+| anno 5 | Il cantiere che si sposta nel tempo; le stanze del *Furioso* | **La Luna di Astolfo.** Nel *Furioso* Astolfo sale sulla Luna, dove si trova tutto ciò che si è perso in terra, e recupera il senno di Orlando (canto XXXIV). Il livello lasciato indietro è una cosa persa: si va a riprenderla sulla Luna | Un'ampolla con il nome della lingua; toccandola si sale sulla Luna — nel poema Astolfo ci arriva dal Paradiso terrestre sul carro di Elia — e da lì si scende nella stanza della tappa da cui la lingua manca |
+
+**Da verificare prima di scriverli nei dati.** Per l'anno 2, che la corrispondenza diplomatica degli Este sia documentata nella forma usata (i dispacci degli ambasciatori); per l'anno 5, la citazione del canto XXXIV si sceglie e si verifica con `sorgenti/furioso/costruisci_citazioni.py` e `verifica_citazioni.py`, come le altre trenta, e non si scrive a memoria (`furioso.md`); il carro di Elia non è fra i mezzi del quinto anno (`percorsi.md` §1) e va aggiunto, o il viaggio va mostrato senza mezzo. Per l'anno 3, che la Guardaroba estense e il suo inventario siano documentati nella forma usata.
+
+### Q8 — La tappa a mani nude in concreto: la proposta **(da approvare)**
+
+Le tappe a mani nude sono dieci, alla quindicesima e alla trentesima di ogni anno (`pedagogia.md` §3). Questa è la proposta di come si giocano.
+
+**Che cos'è.** Una sfida breve **dentro** la tappa, che resta una tappa normale con i suoi sette livelli. Serve a richiamare dalla memoria, senza aiuti, quello che si è imparato fin lì: è l'effetto test (`gioco.md` §4) nella sua forma più pura.
+
+**Le regole.**
+
+- **Dove.** Ha un suo ingresso nell'ambiente, segnato da un segno proprio diverso dalle sette frecce dei livelli. Per la narrazione è una sfida della corte, con una forma diversa in ogni anno.
+- **Quando conta.** È **obbligatoria**: la tappa successiva si apre quando la soglia di informatica è superata **e** la sfida è stata fatta. Conta **averla fatta**, non il punteggio: nessuna soglia di risposte giuste.
+- **Durata.** Due minuti nel primo anno, tre dal secondo, come i test di ingresso (`ripassi.md`).
+- **A mani nude vuol dire:** niente console Python, niente foglio di calcolo, niente calcolatrice, niente suggerimenti, niente richiamo all'origine, niente carte da consultare. Una domanda alla volta, risposte con il tocco.
+- **Che cosa chiede.** Domande estratte a caso dai livelli già superati, di **tutti e sette gli ambiti**, e dai sei domini della banca di `pedagogia.md` §3: logica, calcolo mentale e stime, informatica, linguistica e testo, Costituzione e cittadinanza, osservazione e attenzione. L'ultima domanda è sempre **«ripercorri la strada»**: rimettere in ordine sulla mappa luoghi e personaggi della mezza annata. È il metodo dei loci (`gioco.md` §4.3), che prima stava nelle prove di corte.
+- **Durante, nessuna reazione.** Il gioco non dice «giusto» o «sbagliato» domanda per domanda. Alla fine mostra l'elenco: che cosa sai, che cosa no, e per ogni domanda il livello da cui viene, come i test di ingresso.
+- **Interruzione.** Si riparte senza penalità e senza reazione visibile (`ripassi.md` R5).
+- **Nel file di consegna.** Risposte, tempi e il confronto con la sfida precedente: è il dato che il docente guarda per vedere che cosa resta senza aiuti.
+
+**Esempi.**
+
+*Tappa 1-15 (anno 1, dopo i livelli da 1-1 a 1-14; due minuti):*
+
+- *Informatica.* Otto interruttori: «Accendi i bit per scrivere 13». (1-3, 1-5)
+- *Calcolo mentale.* «1 KiB sono quanti byte?» — 1000 · 1024 · 1048. (1-7)
+- *Stime.* «Con 8 bit per canale RGB, quanti colori diversi?» — circa 256 · circa 65 mila · circa 16 milioni. (1-12)
+- *Logica.* «Sommi due numeri di 8 bit e il risultato ha 9 cifre: che cosa è successo?» — overflow · errore di battitura · niente. (1-8)
+- *Osservazione.* La facciata della Cattedrale compare per cinque secondi e sparisce: «Di che colore erano i leoni del protiro?» (zona della 1-1)
+- *Costituzione.* «La Repubblica tutela il paesaggio e il … della Nazione» — patrimonio storico e artistico · territorio · popolo. (chicca della 1-1, art. 9)
+- *Linguistica.* Una domanda da un livello linguistico già superato, per esempio dall'italiano: «Quale di queste parole è un verbo?» — *tavolo* · *correre* · *veloce*.
+- *Ripercorri la strada.* I personaggi delle tappe 1-1–1-14 su una striscia: rimettili nell'ordine in cui li hai incontrati.
+
+*Tappa 1-30 (fine del primo anno):* «In `=A1*$B$1` copiata una riga più in basso, che cosa diventa?» (1-26); «`chmod 755`: chi può scrivere?» (1-24); «FF in esadecimale vale…» (1-6); un'immagine di 100 × 100 pixel a 24 bit: circa quanti kB? (1-7, 1-13); e la strada delle tappe 1-15–1-29.
+
+*Tappa 5-15 (anno 5, tre minuti):* «Un algoritmo quadratico impiega 1 s su 1000 elementi: su 10 000?» — 10 s · 100 s · 1000 s; «2 alla 40 è circa…» — mille miliardi · un milione · un miliardo; e, come vuole l'anno 5, una stima con il suo errore da scegliere fra tre intervalli (`anno5-mondo.md` §6).
 
 ## 10. Registro delle modifiche
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 07/10/2026 | 0.4 | **Decisioni di Pietro della sera del 07/10/2026.** Q3 chiusa: le prove di corte sono abolite; i 15 livelli diventano normali, da riscrivere (§6). Q6 chiusa: la proposta su processi e modalità è approvata, con 5 livelli su 30 a coppie o di gruppo per ciascuno dei sette ambiti, anche in informatica, e il compagno anche a distanza. Q7: le cinque proposte di espediente narrativo, da approvare. Nuova Q8: la tappa a mani nude in concreto, con esempi per 1-15, 1-30 e 5-15. |
 | 07/10/2026 | 0.3 | **Decisioni di Pietro del 07/10/2026 sulla forma della tappa.** La tappa è un ambiente con sette ingressi segnati da frecce colorate, in ordine libero; la tappa successiva si apre con la soglia di informatica; ogni lingua ha la sua propedeuticità e si può tornare indietro (§2). Le chicche sono interattive, brevi, e devono intrattenere (§1). Ogni livello dice al giocatore perché lo fa (§3). Q5 chiusa: modalità e processi di pensiero entrano e non si saltano. Nuove: Q6, la proposta di come entrano, e Q7, l'espediente narrativo per tornare indietro in ogni anno. |
 | 07/10/2026 | 0.2 | **Tre domande chiuse dalle decisioni di Pietro del 07/10/2026.** Q1: carta e premio restano tutti e due, e carta e visioni entrano nell'inventario. Q2: il ripasso Leitner resta obbligatorio nella soglia, i test di ingresso restano facoltativi. Q4: si accetta anche il testo libero, valutato dal docente nel report; codice, formule e comandi si verificano eseguendoli. E B1: una tappa contiene sette livelli (§0, §1 parte 14, §2). Restano aperte Q3 e Q5. |
 | 07/10/2026 | 0.1 | Prima stesura (fase 2 della roadmap): le quindici parti di un livello, il flusso della tappa, i numeri della bottega e della soglia, che cosa resta al giocatore e al docente, testo e grafica, i tipi di livello e gli anni, la lista di controllo, le sette contraddizioni risolte e le cinque domande per Pietro. |

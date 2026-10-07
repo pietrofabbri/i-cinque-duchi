@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — curricolo dei 150 livelli (bozza)
 tipo: normativo
-versione: 0.2
+versione: 0.3
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 stato: bozza di lavoro, da integrare con il materiale di Pietro sui duchi e con le nuove Indicazioni nazionali 2026 (sezione Informatica non ancora acquisita)
@@ -27,7 +27,7 @@ Il documento è pensato per essere usato anche senza il contesto della conversaz
 - `B2.1`, `E7.3`… sono gli ID dei nodi di `mappa-informatica.md`. Servono a generare prerequisiti e contenuti procedurali.
 - `AC SO AL DE RC IS CS BD` sono le aree tematiche delle Indicazioni 2010 (vedi §2).
 - ★ indica un contenuto **oltre le Indicazioni**, cioè il "fare di più". Nel livello è comunque obbligatorio, ma si può spostare negli approfondimenti se serve alleggerire.
-- **Prova di corte** indica un livello-traguardo, presente ogni 10 livelli. È integrativo: riprende e combina i 9 livelli precedenti.
+- **Prova di corte** indicava un livello-traguardo, presente ogni 10 livelli, che riprendeva e combinava i 9 livelli precedenti. **Le prove di corte sono abolite dal 07/10/2026** (`modello-di-livello.md` §9 Q3): i 15 livelli diventano normali e vanno riscritti con un argomento proprio (`schema-livelli.md` §6). Il richiamo senza aiuti lo fanno le tappe a mani nude, alle x-15 e x-30.
 - I collegamenti interdisciplinari sono **proposte da verificare** con le programmazioni dei colleghi del consiglio di classe.
 
 ---
@@ -401,3 +401,4 @@ Ogni voce delle Indicazioni 2010 ha almeno un livello. Livelli oltre le Indicazi
 |---|---|---|
 | 27/09/2026 | 0.1 | Prima stesura: requisiti, quadro normativo, modello di livello, cornice dei cinque anni, elenco dei 150 livelli. |
 | 07/10/2026 | 0.2 | Il §3.1 è dichiarato come la proposta del 27/09/2026: lo schema che vale è `modello-di-livello.md`, e la soglia non è più k istanze consecutive (fase 2 della roadmap: allineamento al modello di livello). Il documento non aveva un registro delle modifiche: questa è la prima riga. |
+| 07/10/2026 | 0.3 | Le prove di corte sono abolite dal 07/10/2026: la riga della legenda lo dice. |

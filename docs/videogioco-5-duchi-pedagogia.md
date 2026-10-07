@@ -1,8 +1,8 @@
 ---
 titolo: Videogioco "I cinque duchi" — il modello pedagogico applicato al gioco: sei principi, quattro strati, e che cosa non entra
 tipo: normativo
-versione: 0.2
-data: 2026-10-03
+versione: 0.3
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte del materiale: «Modello pedagogico generale — esiti», documento di sintesi prodotto nel percorso di lavoro di Pietro (IPSIA trattata in altra sede), con la richiesta del 03/10/2026: «il gioco deve, quando non viene denaturato per quello che è as is, osservare anche questi principi pedagogici»
 dati: nessuno: questo documento non aggiunge dati e non li inventa; dove manca una dichiarazione, la dice e la dichiara mancante
@@ -86,6 +86,8 @@ Il numero della prima riga è un risultato, non una lode: **tre livelli non dich
 
 ## 3. La sfida a mani nude, tradotta in una meccanica del gioco
 
+*Come si gioca in concreto — dove sta nella tappa, che cosa chiede, che cosa resta — è la proposta di `modello-di-livello.md` §9 Q8 (07/10/2026), con esempi per le tappe 1-15, 1-30 e 5-15. Dallo stesso giorno le prove di corte sono abolite, e la sfida a mani nude è l'unico momento di richiamo senza aiuti.*
+
 Il modello la descrive in classe: ogni quindici giorni, due o tre minuti, senza aiuti. Nel gioco la stessa cosa diventa **una tappa**, ed è la regola più semplice da scrivere di tutto il documento:
 
 > **Una tappa ogni quindici livelli è «a mani nude»: due o tre minuti, nessun aiuto, nessuno strumento.**
@@ -150,3 +152,5 @@ L'ultima riga contiene l'unica cosa che merita di passare dall'aula al gioco, e 
 
 - **v0.1 (03/10/2026)**: prima stesione. I sei principi del modello entrano tutti e sei nel gioco (§1); i quattro strati, di cui uno **fatto**, uno **da costruire** e due fatti (§2); la sfida a mani nude tradotta in **dieci tappe su centocinquanta**, due per anno, con la stessa regola di ripresa senza penalità dei test di ingresso (§3); i cinque segnali di tracciamento, **cinque su cinque del docente**, e la ragione per cui il gioco non deve costruirli (§4); l'elenco chiuso di ciò che non entra, con la ragione per ciascuna riga (§5). La regola che governa il documento è una sola e sta in testa: **una pratica entra nel gioco solo se conserva il principio e resta ciò che è**.
 - **v0.2 (03/10/2026)**: **la sesta riga della banca era un difetto, non una scoperta.** «Osservazione e attenzione» era dichiarato `da_costruire` con la frase che «il gioco non ha mai lavorato sull'attenzione e sull'osservazione come oggetto», e il gioco ci lavora in quattro posti che nessuno aveva messi insieme: il nucleo `Q8.2` del livello 3-27 (attenzione, percezione, memoria), l'osservazione linguistica di tutti i novecento livelli, le tappe 1-23 e 1-29, e la 5-11 con la frase sul campione. La scoperta vera è un'altra, ed è nella regola: **una cosa che il gioco fa senza dirlo non è una lacuna, è una riga rimasta indietro**. La riga è riempita, il dominio ha il suo premio (la categoria `D`) in `quadro-trasversale.md` §1.3, e il punto 3 delle cose da fare è chiuso.
+
+- **v0.3 (07/10/2026)**: Il §3 rimanda alla proposta concreta della sfida a mani nude (`modello-di-livello.md` §9 Q8) e dice che le prove di corte sono abolite (07/10/2026).

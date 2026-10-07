@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — Come si gioca: interazione, strumenti veri, carte dei personaggi, memoria, contesto
 tipo: normativo
-versione: 0.8
+versione: 0.9
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
-documenti collegati: videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-tappa-1-01.md (v0.6), videogioco-5-duchi-anno1-mappa.md (v0.10), videogioco-5-duchi-meccaniche.md (v0.5), videogioco-5-duchi-schema-livelli.md (v1.1), videogioco-5-duchi-anno1-ferrara.md (v0.3)
+documenti collegati: videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-tappa-1-01.md (v0.6), videogioco-5-duchi-anno1-mappa.md (v0.10), videogioco-5-duchi-meccaniche.md (v0.6), videogioco-5-duchi-schema-livelli.md (v1.2), videogioco-5-duchi-anno1-ferrara.md (v0.3)
 ---
 
 # Come si gioca
@@ -193,7 +193,7 @@ Principi usati, con le relative fonti, e come si traducono nel gioco.
   - «Otto bit, un byte: come otto torri per un castello» (1-7).
 - **Acronimi** dove servono, per esempio la triade di sicurezza RID: Riservatezza, Integrità, Disponibilità.
 - **Parole chiave e immagini** per i termini difficili.
-- **Ripercorri la strada.** Ogni 10 tappe, durante la prova di corte, lo studente ricostruisce la sequenza di luoghi, personaggi e concetti: è il metodo dei loci applicato.
+- **Ripercorri la strada.** Alle tappe a mani nude (x-15 e x-30) lo studente ricostruisce a memoria la sequenza di luoghi e personaggi della mezza annata: è il metodo dei loci applicato. Fino al 07/10/2026 lo faceva la prova di corte, che è abolita (`modello-di-livello.md` §9 Q8).
 
 ### 4.4 Divertimento
 
@@ -248,6 +248,8 @@ Le domande sul modello di livello nate dall'allineamento del 07/10/2026 sono in 
 - Strumenti: Pyodide (pyodide.org), v86 (github.com/copy/v86), sql.js, SheetJS: tutti software libero.
 
 ## 9. Registro modifiche
+
+- **v0.9 (07/10/2026)**: «Ripercorri la strada» passa dalle prove di corte, abolite, alle tappe a mani nude (07/10/2026).
 
 - **v0.8 (07/10/2026)**: La zona percorribile ha gli ingressi dei sei livelli linguistici, con le frecce colorate, e le chicche diventano interattive, brevi, e devono intrattenere (decisioni del 07/10/2026).
 

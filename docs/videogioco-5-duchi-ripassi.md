@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — i test di ingresso: dieci domande, due minuti, e il poter tornare indietro
 tipo: normativo
-versione: 0.4
+versione: 0.5
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte del materiale: richiesta di Pietro del 03/10/2026 («ogni volta che si interagisce con personaggio/emblema/monumento/cibo ecc ci siano max 10 domande su tutto ciò che è stato affrontato fino ad allora, prese randomicamente, su quella disciplina, idealmente max 2 minuti, per validare il ripasso; se tenti diverse volte puoi temporaneamente evocare il personaggio o l'oggetto da cui hai imparato quelle cose per rifare il livello, che puoi interrompere quando vuoi per tornare al momento presente; per gli anni dal secondo in poi il tempo massimo sale a 3 minuti, perché devi poter verificare in un minuto anche ciò che è stato fatto negli anni precedenti»), con le regole già prese su etichette, oggetti di interazione e vuoti dichiarati
@@ -93,7 +93,7 @@ La schermata 5 è l'unica che non ha un numero: **il ritorno non è una schermat
 
 ## 4. Che cosa non è questo test
 
-- **non è la soglia minima dei 150 livelli di informatica**: quelli hanno già la loro soglia (`schema-livelli.md` §1) e la loro prova di corte ogni dieci livelli. Il test di ingresso nasce per le **sei lingue e i quattro ambiti trasversali**, che non hanno ancora nessuna soglia dichiarata;
+- **non è la soglia minima dei 150 livelli di informatica**: quelli hanno già la loro soglia (`schema-livelli.md` §1) e, alle x-15 e x-30, la sfida a mani nude (`modello-di-livello.md` §9 Q8; le prove di corte sono abolite dal 07/10/2026). Il test di ingresso nasce per le **sei lingue e i quattro ambiti trasversali**, che non hanno ancora nessuna soglia dichiarata;
 - **non è una verifica**: non entra nel curriculum, non ha voto, non viene confrontato fra compagni. Un confronto pubblico dei punteggi è l'opposto di ciò che il progetto dichiara su privacy e integrità (`meccaniche.md` §2.4);
 - **non aggiunge contenuti**: dieci domande su cose già viste. Se per un domanda serve un contenuto nuovo, **quel livello non è pronto** e il problema è del livello, non del test.
 
@@ -104,6 +104,8 @@ La schermata 5 è l'unica che non ha un numero: **il ritorno non è una schermat
 3. **I quattro ambiti trasversali** (diritto, etica, filosofia, psicologia) non hanno ancore oggettuali come le 180 voci: non si sa ancora su quali oggetti si tocchi per fare un test di filosofia. Va deciso se il test esiste anche per loro e con quali punti.
 
 ## 6. Registro delle modifiche
+
+- **v0.5 (07/10/2026)**: Le prove di corte sono abolite (07/10/2026): il rimando va alla sfida a mani nude.
 
 - **v0.4 (07/10/2026)**: La premessa della domanda 1 del §5 segue la decisione del 07/10/2026: il testo libero è ammesso ma lo valuta il docente, e il test ha bisogno di risposte che il gioco corregge da solo. La domanda resta aperta.
 

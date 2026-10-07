@@ -1,8 +1,8 @@
 ---
 titolo: Videogioco "I cinque duchi" — schema dei 150 livelli con propedeuticità e approfondimenti
 tipo: normativo
-versione: 1.1
-data: 2026-09-27
+versione: 1.2
+data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 deriva_da: videogioco-5-duchi-curricolo.md v0.1 (scansione dei livelli)
 dipende_da: mappa-informatica.md v0.5 e file di area mappa-informatica-A…W.md (ID dei nodi)
@@ -947,11 +947,13 @@ Conseguenze:
 
 **Questioni aperte**
 1. **Carico dei livelli di matematica del quinto anno.** Costruire nel gioco limiti, derivate, integrali ed equazioni differenziali (5-2…5-9) richiede sottolivelli dedicati. Vanno progettati "al minimo necessario" per il metodo numerico di ogni livello.
-2. **Prove di corte senza argomenti nuovi.** 1-30, 2-10, 2-20, 2-30, 3-10, 3-20, 3-30, 4-10, 4-20, 4-30 integrano i livelli precedenti. Le prove 1-10, 1-20, 5-10, 5-20 e 5-30 contengono invece anche un argomento nuovo, già presente nel curricolo v0.1.
+2. **Le quindici ex prove di corte hanno bisogno di un argomento proprio.** Il 07/10/2026 Pietro ha abolito le prove di corte (`modello-di-livello.md` §9 Q3): i 15 livelli restano al loro posto, con il loro luogo e il loro personaggio, e diventano livelli normali. Dieci non hanno un argomento nuovo (1-30, 2-10, 2-20, 2-30, 3-10, 3-20, 3-30, 4-10, 4-20, 4-30) e ne serve uno; cinque ce l'hanno già (1-10, 1-20, 5-10, 5-20, 5-30) e diventano quell'argomento. Fino alla riscrittura, i titoli qui sopra restano quelli delle prove. *Il testo com'era:* **Prove di corte senza argomenti nuovi.** 1-30, 2-10, 2-20, 2-30, 3-10, 3-20, 3-30, 4-10, 4-20, 4-30 integrano i livelli precedenti. Le prove 1-10, 1-20, 5-10, 5-20 e 5-30 contengono invece anche un argomento nuovo, già presente nel curricolo v0.1.
 3. **Granularità disomogenea.** Alcuni livelli hanno un solo nodo di nucleo, altri molti, anche per via dei prerequisiti costruiti (es. 1-2, 1-27, 5-2). La durata va stimata in fase di prototipo e i livelli più densi vanno articolati nella loro scala interna.
 4. **Nuove Indicazioni nazionali 2026.** Valgono le avvertenze del curricolo v0.1: acquisita la sezione di Informatica, si rifà la verifica di copertura e si rieseguono gli script.
 
 ## 7. Registro modifiche
+
+- **v1.2 (07/10/2026)**: La questione 2 del §6 segue l'abolizione delle prove di corte (07/10/2026): i 15 livelli diventano normali, e dieci hanno bisogno di un argomento proprio.
 
 - **v1.1 (27/09/2026)**: recepite le decisioni di Pietro (§6). Nessuna competenza in ingresso presupposta: 87 prerequisiti di altre discipline costruiti nel gioco (i 66 richiami della v1.0 più le 21 competenze prima date per acquisite; luce e suono, B5.1.1 e B7.1, sono contati fra le altre discipline). Aggiunte le note didattiche per 1-27 e 2-28. Approfondimenti di 1-12 e 1-27 riassegnati (B5.3.2; B5.2.4) perché restino accessibili. Verifica: 0 prerequisiti mancanti, 0 violazioni.
 

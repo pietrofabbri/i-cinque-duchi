@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — Storico: come ci si è arrivati
 tipo: storico
-versione: 0.8
+versione: 0.9
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
-documenti collegati: videogioco-5-duchi-roadmap-documentazione.md (v0.6)
+documenti collegati: videogioco-5-duchi-roadmap-documentazione.md (v0.7)
 ---
 
 # Storico del progetto
@@ -748,6 +748,14 @@ Le tre proposte diventano quindi:
 | I23 | **Che cosa apre la tappa successiva: la soglia di informatica, o tutte e sette?** (`lingue.md` Q10) | Con la sola informatica il percorso non si ferma per una lingua, e l'informatica è il centro del gioco | Le lingue possono restare indietro senza che il gioco lo dica; con tutte e sette, una sola lingua difficile ferma tutto | Va decisa prima di costruire la seconda tappa: decide come si legge «tappa superata» nel file di consegna | Pietro |
 | I24 | **L'ordine dei sette livelli in una tappa, e il tempo di una tappa** (`lingue.md` Q11) | Un ordine fisso (prima l'informatica, che porta il personaggio) dà a ogni tappa la stessa forma | Sette livelli non stanno in una sessione di 10–20 minuti, e un ordine fisso può non adattarsi a chi gioca | Dopo I23; il tempo si misura sul prototipo, come I12 | Pietro |
 
+### 1.20 La riga di I21 com'era
+
+*Da `audit.md` §3, chiusa il 07/10/2026 con l'abolizione delle prove di corte.*
+
+| # | Domanda | Pro | Contro | Valutazione | Chi decide |
+|---|---|---|---|---|---|
+| I21 | **Prove di corte e tappe a mani nude sono la stessa cosa?** (`modello-di-livello.md` Q3) | I dati hanno 15 prove (x-10, x-20, x-30), `pedagogia.md` 10 tappe a mani nude (x-15, x-30): coincidono solo alle x-30 | Fonderle cambia la cadenza che il modello pedagogico chiede; tenerle separate fa della x-15 un livello con due nature | Tenerle distinte e decidere che cosa diventa la x-15 prima di scriverla | Pietro |
+
 ## 2. Dagli altri documenti
 
 Le sezioni che raccontavano il difetto da cui è nata una regola, o le versioni attraverso cui è passato un prototipo. Sono state tolte il 06/10/2026 (fase 1 della roadmap): nel documento d'origine resta la regola, o lo stato di oggi, al presente.
@@ -1129,6 +1137,7 @@ Le due regole che ne vengono:
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 07/10/2026 | 0.9 | Il §1.20 accoglie la riga di I21 com'era. |
 | 07/10/2026 | 0.8 | Il §1.19 accoglie le righe di I23 e I24 com'erano. |
 | 07/10/2026 | 0.7 | Il §1.18 accoglie la scheda di B1 com'era prima della decisione del 07/10/2026, con le righe di I20 e I22. |
 | 07/10/2026 | 0.6 | Il §3.4 accoglie il blocco «Questioni aperte» di AGENTS.md, che scriveva lo stato delle questioni: lo stato si scrive ora solo nell'audit. |

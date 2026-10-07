@@ -3457,15 +3457,15 @@
    "soggetto": "sotto-voci"
   },
   {
-   "numero": 127,
+   "numero": 128,
    "riga": 35,
-   "scritto": "127",
+   "scritto": "128",
    "soggetto": "voci"
   },
   {
-   "numero": 127,
+   "numero": 128,
    "riga": 35,
-   "scritto": "127",
+   "scritto": "128",
    "soggetto": "domande"
   },
   {
@@ -3648,6 +3648,12 @@
    "numero": 9,
    "riga": 30,
    "scritto": "9",
+   "soggetto": "livelli"
+  },
+  {
+   "numero": 15,
+   "riga": 30,
+   "scritto": "15",
    "soggetto": "livelli"
   },
   {
@@ -6963,12 +6969,6 @@
    "riga": 193,
    "scritto": "otto",
    "soggetto": "torri"
-  },
-  {
-   "numero": 10,
-   "riga": 196,
-   "scritto": "10",
-   "soggetto": "tappe"
   },
   {
    "numero": 30,
@@ -11221,46 +11221,190 @@
    "soggetto": "cose"
   },
   {
-   "numero": null,
+   "numero": 7,
    "riga": 188,
+   "scritto": "sette",
+   "soggetto": "ambiti"
+  },
+  {
+   "numero": 6,
+   "riga": 188,
+   "scritto": "sei",
+   "soggetto": "lingue"
+  },
+  {
+   "numero": 5,
+   "riga": 188,
+   "scritto": "5",
+   "soggetto": "livelli"
+  },
+  {
+   "numero": 25,
+   "riga": 188,
+   "scritto": "25",
+   "soggetto": "sono"
+  },
+  {
+   "numero": null,
+   "riga": 196,
    "scritto": "due",
    "soggetto": "campi"
   },
   {
    "numero": null,
-   "riga": 192,
+   "riga": 200,
    "scritto": "due",
    "soggetto": "processi"
   },
   {
    "numero": 3,
-   "riga": 194,
+   "riga": 202,
    "scritto": "3",
    "soggetto": "almeno"
   },
   {
    "numero": 6,
-   "riga": 194,
+   "riga": 202,
    "scritto": "sei",
    "soggetto": "arrivato"
   },
   {
    "numero": null,
-   "riga": 195,
+   "riga": 203,
    "scritto": "due",
    "soggetto": "domini"
   },
   {
    "numero": 5,
-   "riga": 205,
+   "riga": 213,
    "scritto": "cinque",
-   "soggetto": "espedienti"
+   "soggetto": "proposte"
+  },
+  {
+   "numero": 7,
+   "riga": 231,
+   "scritto": "sette",
+   "soggetto": "livelli"
+  },
+  {
+   "numero": 7,
+   "riga": 235,
+   "scritto": "sette",
+   "soggetto": "frecce"
+  },
+  {
+   "numero": 3,
+   "riga": 237,
+   "scritto": "tre",
+   "soggetto": "dal"
+  },
+  {
+   "numero": 7,
+   "riga": 239,
+   "scritto": "sette",
+   "soggetto": "gli"
+  },
+  {
+   "numero": 6,
+   "riga": 239,
+   "scritto": "sei",
+   "soggetto": "domini"
   },
   {
    "numero": null,
-   "riga": 205,
-   "scritto": "uno",
-   "soggetto": "per"
+   "riga": 246,
+   "scritto": "due",
+   "soggetto": "minuti"
+  },
+  {
+   "numero": 1,
+   "riga": 249,
+   "scritto": "1",
+   "soggetto": "KiB"
+  },
+  {
+   "numero": 8,
+   "riga": 250,
+   "scritto": "8",
+   "soggetto": "bit"
+  },
+  {
+   "numero": 65,
+   "riga": 250,
+   "scritto": "65",
+   "soggetto": "mila"
+  },
+  {
+   "numero": 16,
+   "riga": 250,
+   "scritto": "16",
+   "soggetto": "milioni"
+  },
+  {
+   "numero": null,
+   "riga": 251,
+   "scritto": "due",
+   "soggetto": "numeri"
+  },
+  {
+   "numero": 8,
+   "riga": 251,
+   "scritto": "8",
+   "soggetto": "bit"
+  },
+  {
+   "numero": 9,
+   "riga": 251,
+   "scritto": "9",
+   "soggetto": "cifre"
+  },
+  {
+   "numero": 5,
+   "riga": 252,
+   "scritto": "cinque",
+   "soggetto": "secondi"
+  },
+  {
+   "numero": 100,
+   "riga": 257,
+   "scritto": "100",
+   "soggetto": "pixel"
+  },
+  {
+   "numero": 24,
+   "riga": 257,
+   "scritto": "24",
+   "soggetto": "bit"
+  },
+  {
+   "numero": 3,
+   "riga": 259,
+   "scritto": "tre",
+   "soggetto": "minuti"
+  },
+  {
+   "numero": 1000,
+   "riga": 259,
+   "scritto": "1000",
+   "soggetto": "elementi"
+  },
+  {
+   "numero": 2,
+   "riga": 259,
+   "scritto": "2",
+   "soggetto": "alla"
+  },
+  {
+   "numero": 1000,
+   "riga": 259,
+   "scritto": "mille",
+   "soggetto": "miliardi"
+  },
+  {
+   "numero": 3,
+   "riga": 259,
+   "scritto": "tre",
+   "soggetto": "intervalli"
   }
  ],
  "videogioco-5-duchi-motore-e-grafica.md": [
@@ -11582,79 +11726,79 @@
   },
   {
    "numero": 15,
-   "riga": 89,
+   "riga": 91,
    "scritto": "quindici",
    "soggetto": "giorni"
   },
   {
    "numero": 3,
-   "riga": 89,
+   "riga": 91,
    "scritto": "tre",
    "soggetto": "minuti"
   },
   {
    "numero": 10,
-   "riga": 93,
+   "riga": 95,
    "scritto": "dieci",
    "soggetto": "tappe"
   },
   {
    "numero": null,
-   "riga": 93,
+   "riga": 95,
    "scritto": "due",
    "soggetto": "volte"
   },
   {
    "numero": 5,
-   "riga": 108,
+   "riga": 110,
    "scritto": "cinque",
    "soggetto": "domini"
   },
   {
    "numero": 6,
-   "riga": 108,
+   "riga": 110,
    "scritto": "sei",
    "soggetto": "hanno"
   },
   {
    "numero": 4,
-   "riga": 108,
+   "riga": 110,
    "scritto": "quattro",
    "soggetto": "posti"
   },
   {
    "numero": 900,
-   "riga": 108,
+   "riga": 110,
    "scritto": "novecento",
    "soggetto": "livelli"
   },
   {
    "numero": 5,
-   "riga": 120,
+   "riga": 122,
    "scritto": "cinque",
    "soggetto": "sono"
   },
   {
    "numero": 3,
-   "riga": 144,
+   "riga": 146,
    "scritto": "tre",
    "soggetto": "valori"
   },
   {
    "numero": 4,
-   "riga": 146,
+   "riga": 148,
    "scritto": "quattro",
    "soggetto": "prove"
   },
   {
    "numero": 10,
-   "riga": 147,
+   "riga": 149,
    "scritto": "dieci",
    "soggetto": "tappe"
   },
   {
    "numero": null,
-   "riga": 147,
+   "riga": 149,
    "scritto": "due",
    "soggetto": "volte"
   }
@@ -13161,12 +13305,6 @@
    "soggetto": "livelli"
   },
   {
-   "numero": 10,
-   "riga": 96,
-   "scritto": "dieci",
-   "soggetto": "livelli"
-  },
-  {
    "numero": 6,
    "riga": 96,
    "scritto": "sei",
@@ -13789,8 +13927,50 @@
    "soggetto": "lascia"
   },
   {
+   "numero": 5,
+   "riga": 152,
+   "scritto": "5",
+   "soggetto": "livelli"
+  },
+  {
    "numero": 7,
    "riga": 152,
+   "scritto": "sette",
+   "soggetto": "ambiti"
+  },
+  {
+   "numero": 5,
+   "riga": 154,
+   "scritto": "cinque",
+   "soggetto": "proposte"
+  },
+  {
+   "numero": null,
+   "riga": 154,
+   "scritto": "due",
+   "soggetto": "scritte"
+  },
+  {
+   "numero": 4,
+   "riga": 156,
+   "scritto": "4",
+   "soggetto": "nato"
+  },
+  {
+   "numero": 15,
+   "riga": 156,
+   "scritto": "15",
+   "soggetto": "livelli"
+  },
+  {
+   "numero": 5,
+   "riga": 156,
+   "scritto": "5",
+   "soggetto": "livelli"
+  },
+  {
+   "numero": 7,
+   "riga": 156,
    "scritto": "sette",
    "soggetto": "colori"
   }
@@ -13981,6 +14161,12 @@
    "riga": 916,
    "scritto": "uno",
    "soggetto": "scalare"
+  },
+  {
+   "numero": 15,
+   "riga": 950,
+   "scritto": "15",
+   "soggetto": "livelli"
   }
  ],
  "videogioco-5-duchi-sequenza.md": [
@@ -16754,631 +16940,631 @@
   },
   {
    "numero": 1,
-   "riga": 753,
+   "riga": 761,
    "scritto": "1",
    "soggetto": "della"
   },
   {
    "numero": 5,
-   "riga": 757,
+   "riga": 765,
    "scritto": "cinque",
    "soggetto": "difetti"
   },
   {
    "numero": null,
-   "riga": 775,
+   "riga": 783,
    "scritto": "due",
    "soggetto": "volte"
   },
   {
    "numero": null,
-   "riga": 788,
+   "riga": 796,
    "scritto": "due",
    "soggetto": "voci"
   },
   {
    "numero": 3,
-   "riga": 790,
+   "riga": 798,
    "scritto": "tre",
    "soggetto": "marcate"
   },
   {
    "numero": 4,
-   "riga": 800,
+   "riga": 808,
    "scritto": "quattro",
    "soggetto": "documenti"
   },
   {
    "numero": 4,
-   "riga": 801,
+   "riga": 809,
    "scritto": "quattro",
    "soggetto": "controlli"
   },
   {
    "numero": 5,
-   "riga": 806,
+   "riga": 814,
    "scritto": "cinque",
    "soggetto": "controlli"
   },
   {
    "numero": null,
-   "riga": 822,
+   "riga": 830,
    "scritto": "due",
    "soggetto": "luoghi"
   },
   {
    "numero": null,
-   "riga": 822,
+   "riga": 830,
    "scritto": "due",
    "soggetto": "file"
   },
   {
    "numero": 2,
-   "riga": 824,
+   "riga": 832,
    "scritto": "2",
    "soggetto": "ottobre"
   },
   {
    "numero": 2026,
-   "riga": 824,
+   "riga": 832,
    "scritto": "2026",
    "soggetto": "Pietro"
   },
   {
    "numero": 3,
-   "riga": 826,
+   "riga": 834,
    "scritto": "3",
    "soggetto": "ottobre"
   },
   {
    "numero": null,
-   "riga": 826,
+   "riga": 834,
    "scritto": "due",
    "soggetto": "punti"
   },
   {
    "numero": 6,
-   "riga": 826,
+   "riga": 834,
    "scritto": "sei",
    "soggetto": "controlli"
   },
   {
    "numero": 3,
-   "riga": 830,
+   "riga": 838,
    "scritto": "3",
    "soggetto": "ottobre"
   },
   {
    "numero": 4,
-   "riga": 830,
+   "riga": 838,
    "scritto": "quattro",
    "soggetto": "cose"
   },
   {
    "numero": 30,
-   "riga": 830,
+   "riga": 838,
    "scritto": "trenta",
    "soggetto": "binomi"
   },
   {
    "numero": 3,
-   "riga": 830,
+   "riga": 838,
    "scritto": "3",
    "soggetto": "ottobre"
   },
   {
    "numero": 3,
-   "riga": 832,
+   "riga": 840,
    "scritto": "3",
    "soggetto": "ottobre"
   },
   {
    "numero": 4,
-   "riga": 832,
+   "riga": 840,
    "scritto": "quattro",
    "soggetto": "mosse"
   },
   {
    "numero": null,
-   "riga": 834,
+   "riga": 842,
    "scritto": "ventinove",
    "soggetto": "tappe"
   },
   {
    "numero": 3,
-   "riga": 847,
+   "riga": 855,
    "scritto": "tre",
    "soggetto": "script"
   },
   {
    "numero": 40,
-   "riga": 849,
+   "riga": 857,
    "scritto": "40",
    "soggetto": "titoli"
   },
   {
    "numero": 213,
-   "riga": 856,
+   "riga": 864,
    "scritto": "213",
    "soggetto": "nomi"
   },
   {
    "numero": 429,
-   "riga": 859,
+   "riga": 867,
    "scritto": "429",
    "soggetto": "Too"
   },
   {
    "numero": 15,
-   "riga": 863,
+   "riga": 871,
    "scritto": "quindici",
    "soggetto": "personaggi"
   },
   {
    "numero": null,
-   "riga": 872,
+   "riga": 880,
    "scritto": "due",
    "soggetto": "righe"
   },
   {
    "numero": 3,
-   "riga": 872,
+   "riga": 880,
    "scritto": "tre",
    "soggetto": "gli"
   },
   {
    "numero": null,
-   "riga": 880,
+   "riga": 888,
    "scritto": "due",
    "soggetto": "volte"
   },
   {
    "numero": 6,
-   "riga": 883,
+   "riga": 891,
    "scritto": "sei",
    "soggetto": "immagini"
   },
   {
    "numero": 4,
-   "riga": 889,
+   "riga": 897,
    "scritto": "quattro",
    "soggetto": "volte"
   },
   {
    "numero": 4,
-   "riga": 895,
+   "riga": 903,
    "scritto": "quattro",
    "soggetto": "volte"
   },
   {
    "numero": null,
-   "riga": 895,
+   "riga": 903,
    "scritto": "due",
    "soggetto": "giorni"
   },
   {
    "numero": 4,
-   "riga": 898,
+   "riga": 906,
    "scritto": "quattro",
    "soggetto": "volte"
   },
   {
    "numero": null,
-   "riga": 907,
+   "riga": 915,
    "scritto": "due",
    "soggetto": "righe"
   },
   {
    "numero": null,
-   "riga": 921,
+   "riga": 929,
    "scritto": "due",
    "soggetto": "sensi"
   },
   {
    "numero": 300,
-   "riga": 925,
+   "riga": 933,
    "scritto": "trecento",
    "soggetto": "persone"
   },
   {
    "numero": 5,
-   "riga": 927,
+   "riga": 935,
    "scritto": "cinque",
    "soggetto": "categorie"
   },
   {
    "numero": 3,
-   "riga": 927,
+   "riga": 935,
    "scritto": "tre",
    "soggetto": "regole"
   },
   {
    "numero": null,
-   "riga": 935,
+   "riga": 943,
    "scritto": "due",
    "soggetto": "parole"
   },
   {
    "numero": 5,
-   "riga": 937,
+   "riga": 945,
    "scritto": "5",
    "soggetto": "ottobre"
   },
   {
    "numero": 5,
-   "riga": 951,
+   "riga": 959,
    "scritto": "cinque",
    "soggetto": "mezzi"
   },
   {
    "numero": 4,
-   "riga": 951,
+   "riga": 959,
    "scritto": "quattro",
    "soggetto": "che"
   },
   {
    "numero": 23,
-   "riga": 967,
+   "riga": 975,
    "scritto": "23",
    "soggetto": "vie"
   },
   {
    "numero": 24,
-   "riga": 974,
+   "riga": 982,
    "scritto": "24",
    "soggetto": "vertici"
   },
   {
    "numero": 1,
-   "riga": 974,
+   "riga": 982,
    "scritto": "1",
    "soggetto": "km²"
   },
   {
    "numero": 4,
-   "riga": 975,
+   "riga": 983,
    "scritto": "4",
    "soggetto": "gradini"
   },
   {
    "numero": 20,
-   "riga": 976,
+   "riga": 984,
    "scritto": "20",
    "soggetto": "per"
   },
   {
    "numero": 14,
-   "riga": 985,
+   "riga": 993,
    "scritto": "14",
    "soggetto": "tessere"
   },
   {
    "numero": 185,
-   "riga": 991,
+   "riga": 999,
    "scritto": "185",
    "soggetto": "edifici"
   },
   {
    "numero": 1,
-   "riga": 994,
+   "riga": 1002,
    "scritto": "1",
    "soggetto": "ora"
   },
   {
    "numero": 12,
-   "riga": 1000,
+   "riga": 1008,
    "scritto": "12",
    "soggetto": "agganci"
   },
   {
    "numero": 3,
-   "riga": 1001,
+   "riga": 1009,
    "scritto": "tre",
    "soggetto": "tappe"
   },
   {
    "numero": 5,
-   "riga": 1011,
+   "riga": 1019,
    "scritto": "cinque",
    "soggetto": "lezioni"
   },
   {
    "numero": 5209,
-   "riga": 1015,
+   "riga": 1023,
    "scritto": "5209",
    "soggetto": "erano"
   },
   {
    "numero": null,
-   "riga": 1015,
+   "riga": 1023,
    "scritto": "uno",
    "soggetto": "per"
   },
   {
    "numero": null,
-   "riga": 1022,
+   "riga": 1030,
    "scritto": "uno",
    "soggetto": "scarto"
   },
   {
    "numero": 3,
-   "riga": 1035,
+   "riga": 1043,
    "scritto": "3",
    "soggetto": "ottobre"
   },
   {
    "numero": 99,
-   "riga": 1036,
+   "riga": 1044,
    "scritto": "99",
    "soggetto": "ambienti"
   },
   {
    "numero": 69,
-   "riga": 1036,
+   "riga": 1044,
    "scritto": "69",
    "soggetto": "sagme"
   },
   {
    "numero": 7,
-   "riga": 1038,
+   "riga": 1046,
    "scritto": "sette",
    "soggetto": "verifiche"
   },
   {
    "numero": 3,
-   "riga": 1042,
+   "riga": 1050,
    "scritto": "tre",
    "soggetto": "regole"
   },
   {
    "numero": 57,
-   "riga": 1052,
+   "riga": 1060,
    "scritto": "57",
    "soggetto": "controlli"
   },
   {
    "numero": null,
-   "riga": 1052,
+   "riga": 1060,
    "scritto": "uno",
    "soggetto": "script"
   },
   {
    "numero": 5,
-   "riga": 1060,
+   "riga": 1068,
    "scritto": "5",
    "soggetto": "ottobre"
   },
   {
    "numero": 30,
-   "riga": 1062,
+   "riga": 1070,
    "scritto": "trenta",
    "soggetto": "tappe"
   },
   {
    "numero": 43,
-   "riga": 1063,
+   "riga": 1071,
    "scritto": "43",
    "soggetto": "tappe"
   },
   {
    "numero": 150,
-   "riga": 1064,
+   "riga": 1072,
    "scritto": "150",
    "soggetto": "hanno"
   },
   {
    "numero": null,
-   "riga": 1067,
+   "riga": 1075,
    "scritto": "due",
    "soggetto": "regole"
   },
   {
    "numero": null,
-   "riga": 1071,
+   "riga": 1079,
    "scritto": "due",
    "soggetto": "volte"
   },
   {
    "numero": 107,
-   "riga": 1074,
+   "riga": 1082,
    "scritto": "107",
    "soggetto": "chiavi"
   },
   {
    "numero": 107,
-   "riga": 1074,
+   "riga": 1082,
    "scritto": "107",
    "soggetto": "sha"
   },
   {
    "numero": 4,
-   "riga": 1077,
+   "riga": 1085,
    "scritto": "quattro",
    "soggetto": "anni"
   },
   {
    "numero": 5,
-   "riga": 1081,
+   "riga": 1089,
    "scritto": "5",
    "soggetto": "ottobre"
   },
   {
    "numero": null,
-   "riga": 1084,
+   "riga": 1092,
    "scritto": "due",
    "soggetto": "numeri"
   },
   {
    "numero": null,
-   "riga": 1085,
+   "riga": 1093,
    "scritto": "due",
    "soggetto": "confrontato"
   },
   {
    "numero": null,
-   "riga": 1088,
+   "riga": 1096,
    "scritto": "due",
    "soggetto": "regole"
   },
   {
    "numero": null,
-   "riga": 1101,
+   "riga": 1109,
    "scritto": "due",
    "soggetto": "punti"
   },
   {
    "numero": 5,
-   "riga": 1103,
+   "riga": 1111,
    "scritto": "5",
    "soggetto": "ottobre"
   },
   {
    "numero": 15,
-   "riga": 1103,
+   "riga": 1111,
    "scritto": "quindici",
    "soggetto": "minuti"
   },
   {
    "numero": 13,
-   "riga": 1103,
+   "riga": 1111,
    "scritto": "tredici",
    "soggetto": "numeri"
   },
   {
    "numero": 6,
-   "riga": 1103,
+   "riga": 1111,
    "scritto": "sei",
    "soggetto": "documenti"
   },
   {
    "numero": null,
-   "riga": 1103,
+   "riga": 1111,
    "scritto": "uno",
    "soggetto": "script"
   },
   {
    "numero": 4,
-   "riga": 1104,
+   "riga": 1112,
    "scritto": "quattro",
    "soggetto": "volte"
   },
   {
    "numero": 4,
-   "riga": 1104,
+   "riga": 1112,
    "scritto": "quattro",
    "soggetto": "giorni"
   },
   {
    "numero": null,
-   "riga": 1104,
+   "riga": 1112,
    "scritto": "due",
    "soggetto": "righe"
   },
   {
    "numero": null,
-   "riga": 1104,
+   "riga": 1112,
    "scritto": "due",
    "soggetto": "volte"
   },
   {
    "numero": null,
-   "riga": 1104,
+   "riga": 1112,
    "scritto": "due",
    "soggetto": "righe"
   },
   {
    "numero": null,
-   "riga": 1104,
+   "riga": 1112,
    "scritto": "due",
    "soggetto": "righe"
   },
   {
    "numero": null,
-   "riga": 1111,
+   "riga": 1119,
    "scritto": "due",
    "soggetto": "documenti"
   },
   {
    "numero": 4,
-   "riga": 1111,
+   "riga": 1119,
    "scritto": "quattro",
    "soggetto": "posti"
   },
   {
    "numero": 4,
-   "riga": 1119,
+   "riga": 1127,
    "scritto": "quattro",
    "soggetto": "bloccanti"
   },
   {
    "numero": 3,
-   "riga": 1120,
+   "riga": 1128,
    "scritto": "tre",
    "soggetto": "sono"
   },
   {
    "numero": 30,
-   "riga": 1120,
+   "riga": 1128,
    "scritto": "trenta",
    "soggetto": "voci"
   },
   {
    "numero": null,
-   "riga": 1120,
+   "riga": 1128,
    "scritto": "novanta",
    "soggetto": "pin"
   },
   {
    "numero": 150,
-   "riga": 1120,
+   "riga": 1128,
    "scritto": "150",
    "soggetto": "livelli"
   },
   {
    "numero": 150,
-   "riga": 1122,
+   "riga": 1130,
    "scritto": "150",
    "soggetto": "non"
   },
   {
    "numero": null,
-   "riga": 1124,
+   "riga": 1132,
    "scritto": "due",
    "soggetto": "non"
   },
   {
    "numero": 6,
-   "riga": 1124,
+   "riga": 1132,
    "scritto": "sei",
    "soggetto": "cose"
   },
   {
    "numero": null,
-   "riga": 1124,
+   "riga": 1132,
    "scritto": "due",
    "soggetto": "frasi"
   },
   {
    "numero": 4,
-   "riga": 1125,
+   "riga": 1133,
    "scritto": "quattro",
    "soggetto": "bloccanti"
   },
   {
    "numero": 3,
-   "riga": 1125,
+   "riga": 1133,
    "scritto": "tre",
    "soggetto": "forme"
   },
   {
    "numero": 15,
-   "riga": 1126,
+   "riga": 1134,
    "scritto": "quindici",
    "soggetto": "difetti"
   },
   {
    "numero": null,
-   "riga": 1126,
+   "riga": 1134,
    "scritto": "uno",
    "soggetto": "alla"
   }

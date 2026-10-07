@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — Salvataggio, consegna e integrità del punteggio
 tipo: normativo
-versione: 0.5
+versione: 0.6
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: requisiti di Pietro (28/09/2026), già emersi nel progetto "piattaforma gamificata"
@@ -153,7 +153,7 @@ punti = difficoltà × E × P
 - f, g e h valgono 1 nel caso ideale e calano gradualmente (per esempio f(A) = 1 / A).
 - h(T) penalizza sia i tempi **troppo lunghi** sia quelli **implausibilmente brevi** rispetto alla difficoltà.
 - **La coerenza pesa più di tutto.** Chi indovina l'esito ma sbaglia sistematicamente i passaggi (segno di un esito copiato senza seguire il ragionamento) ottiene un punteggio **inferiore** a chi arriva più lentamente ma con un percorso coerente.
-- **Soglia di un livello**: 4 esercizi validi all'ultimo gradino della bottega, dove un esercizio è valido se E = 1 **e** C ≥ θ, con θ = 0,7; per le prove di corte 5 (provvisorio). Senza coerenza, l'esito da solo non sblocca il livello. I numeri sono in `modello-di-livello.md` §3, che sostituisce le *k* = 3 istanze consecutive scritte qui fino alla v0.3.
+- **Soglia di un livello**: 4 esercizi validi all'ultimo gradino della bottega, dove un esercizio è valido se E = 1 **e** C ≥ θ, con θ = 0,7; le prove di corte, che avevano 5, sono abolite dal 07/10/2026. Senza coerenza, l'esito da solo non sblocca il livello. I numeri sono in `modello-di-livello.md` §3, che sostituisce le *k* = 3 istanze consecutive scritte qui fino alla v0.3.
 - **Calibrazione.** I pesi e le soglie sono provvisori e vanno tarati sul prototipo, con dati di gioco reali.
 
 ### 2.4 Indicatori da guardare
@@ -223,6 +223,8 @@ Non ci sono modalità separate. Gli studenti giocano **sempre, anche a casa**; *
 7. Specifica della modalità accessibile (§2.6.5).
 
 ## 4. Registro modifiche
+
+- **v0.6 (07/10/2026)**: La soglia delle prove di corte non c'è più: sono abolite dal 07/10/2026.
 
 - **v0.5 (07/10/2026)**: Il file di consegna contiene i cinque registri e le risposte in testo libero (decisione del 07/10/2026); il blocco dell'incolla vale anche per i campi di testo libero, che non contano per la soglia.
 
