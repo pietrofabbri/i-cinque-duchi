@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — Il modello di livello: le parti di un livello, il loro ordine, le regole e la lista di controllo
 tipo: normativo
-versione: 0.4
+versione: 0.5
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 controllo: python3 sorgenti/verifica_modello.py (K1-K4: NEED e POOL contro il codice degli esercizi, i tipi di livello contro i dati, le parti numerate e i documenti che citano, il numero delle domande)
-documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.2), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-meccaniche.md (v0.6), videogioco-5-duchi-tappa-1-01.md (v0.6), videogioco-5-duchi-premi.md (v0.9), videogioco-5-duchi-inventario.md (v0.4), videogioco-5-duchi-ripassi.md (v0.5), videogioco-5-duchi-pedagogia.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-lingue.md (v0.4), videogioco-5-duchi-audit.md (v0.31)
+documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.2), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-meccaniche.md (v0.6), videogioco-5-duchi-tappa-1-01.md (v0.6), videogioco-5-duchi-premi.md (v0.9), videogioco-5-duchi-inventario.md (v0.4), videogioco-5-duchi-ripassi.md (v0.5), videogioco-5-duchi-pedagogia.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-lingue.md (v0.4), videogioco-5-duchi-audit.md (v0.32)
 ---
 
 # Il modello di livello
@@ -208,7 +208,9 @@ Pietro ha deciso che i due campi entrano e che il giocatore non li deve poter sa
 - **Un livello a coppie o di gruppo non si può fare da soli**: ogni giocatore riceve sul suo dispositivo una parte diversa dei dati (dal suo seme), e la soluzione richiede di metterle insieme. Il gioco verifica con un codice breve che ciascuno inserisce, senza server.
 - **Una tensione da decidere.** A casa un livello a coppie non si può fare, e la tappa successiva si apre con la soglia di informatica. *Proposta*: i livelli di **informatica restano individuali**, e le modalità a coppie e di gruppo si usano nei **livelli linguistici e nelle parti trasversali**, che non fermano il percorso; il report dice al docente quali livelli aspettano un compagno, e in classe si fanno insieme.
 
-### Q7 — L'espediente narrativo per tornare indietro, anno per anno **(importante)**
+### Q7 — L'espediente narrativo per tornare indietro, anno per anno — **chiusa il 07/10/2026: le cinque proposte sono approvate**
+
+Pietro le ha approvate così come sono scritte qui sotto. Prima di metterle nei dati vanno fatte le tre verifiche indicate in fondo.
 
 Chi è rimasto indietro in una lingua può farsi riportare alla tappa dove si è fermato (§2). Pietro ha chiesto un **espediente narrativo per ogni anno**, coerente con come l'anno si attraversa. Queste sono le cinque proposte (07/10/2026), da approvare o correggere.
 
@@ -224,7 +226,9 @@ Chi è rimasto indietro in una lingua può farsi riportare alla tappa dove si è
 
 **Da verificare prima di scriverli nei dati.** Per l'anno 2, che la corrispondenza diplomatica degli Este sia documentata nella forma usata (i dispacci degli ambasciatori); per l'anno 5, la citazione del canto XXXIV si sceglie e si verifica con `sorgenti/furioso/costruisci_citazioni.py` e `verifica_citazioni.py`, come le altre trenta, e non si scrive a memoria (`furioso.md`); il carro di Elia non è fra i mezzi del quinto anno (`percorsi.md` §1) e va aggiunto, o il viaggio va mostrato senza mezzo. Per l'anno 3, che la Guardaroba estense e il suo inventario siano documentati nella forma usata.
 
-### Q8 — La tappa a mani nude in concreto: la proposta **(da approvare)**
+### Q8 — La tappa a mani nude in concreto — **chiusa il 07/10/2026: la proposta è approvata**
+
+Pietro l'ha approvata così come è scritta qui sotto.
 
 Le tappe a mani nude sono dieci, alla quindicesima e alla trentesima di ogni anno (`pedagogia.md` §3). Questa è la proposta di come si giocano.
 
@@ -262,6 +266,7 @@ Le tappe a mani nude sono dieci, alla quindicesima e alla trentesima di ogni ann
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 07/10/2026 | 0.5 | Q7 e Q8 chiuse: Pietro ha approvato le cinque proposte di espediente narrativo e la proposta della tappa a mani nude (07/10/2026). Il modello non ha più domande aperte. |
 | 07/10/2026 | 0.4 | **Decisioni di Pietro della sera del 07/10/2026.** Q3 chiusa: le prove di corte sono abolite; i 15 livelli diventano normali, da riscrivere (§6). Q6 chiusa: la proposta su processi e modalità è approvata, con 5 livelli su 30 a coppie o di gruppo per ciascuno dei sette ambiti, anche in informatica, e il compagno anche a distanza. Q7: le cinque proposte di espediente narrativo, da approvare. Nuova Q8: la tappa a mani nude in concreto, con esempi per 1-15, 1-30 e 5-15. |
 | 07/10/2026 | 0.3 | **Decisioni di Pietro del 07/10/2026 sulla forma della tappa.** La tappa è un ambiente con sette ingressi segnati da frecce colorate, in ordine libero; la tappa successiva si apre con la soglia di informatica; ogni lingua ha la sua propedeuticità e si può tornare indietro (§2). Le chicche sono interattive, brevi, e devono intrattenere (§1). Ogni livello dice al giocatore perché lo fa (§3). Q5 chiusa: modalità e processi di pensiero entrano e non si saltano. Nuove: Q6, la proposta di come entrano, e Q7, l'espediente narrativo per tornare indietro in ogni anno. |
 | 07/10/2026 | 0.2 | **Tre domande chiuse dalle decisioni di Pietro del 07/10/2026.** Q1: carta e premio restano tutti e due, e carta e visioni entrano nell'inventario. Q2: il ripasso Leitner resta obbligatorio nella soglia, i test di ingresso restano facoltativi. Q4: si accetta anche il testo libero, valutato dal docente nel report; codice, formule e comandi si verificano eseguendoli. E B1: una tappa contiene sette livelli (§0, §1 parte 14, §2). Restano aperte Q3 e Q5. |

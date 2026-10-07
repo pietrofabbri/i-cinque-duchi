@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — Roadmap per la risistemazione della documentazione
 tipo: piano
-versione: 0.7
+versione: 0.8
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
-documenti collegati: videogioco-5-duchi-audit.md (v0.31), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-meccaniche.md (v0.6), videogioco-5-duchi-tappa-1-01.md (v0.6)
+documenti collegati: videogioco-5-duchi-audit.md (v0.32), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-meccaniche.md (v0.6), videogioco-5-duchi-tappa-1-01.md (v0.6)
 ---
 
 # Roadmap: risistemare la documentazione
@@ -151,7 +151,7 @@ I quattro rossi del 06/10/2026 e che cosa erano:
 
 **Decise da Pietro la sera del 07/10/2026**: la proposta Q6 su processi di pensiero e modalità, con 5 livelli su 30 a coppie o di gruppo per ciascuno dei sette ambiti, anche in informatica; l'abolizione delle prove di corte (I21).
 
-**Da portare a Pietro, in quest'ordine**: le cinque proposte di espediente narrativo (I25, `modello-di-livello.md` Q7) e la tappa a mani nude in concreto (Q8), tutte e due scritte e da approvare; poi B2, B3, B4 e le altre importanti dell'audit.
+**Approvate da Pietro la sera del 07/10/2026**: le cinque proposte di espediente narrativo (I25) e la tappa a mani nude in concreto (Q8). **Restano per chiudere la fase 3**: le tre bloccanti B2, B3, B4 e le quindici importanti aperte dell'audit.
 
 **Lavoro per la fase 4 nato da queste decisioni**, senza altre domande: riscrivere i 15 livelli ex prova di corte come livelli normali con un argomento proprio (`schema-livelli.md` §6); scegliere in ogni anno i 5 livelli su 30 a coppie o di gruppo per ciascun ambito; scegliere i sette colori delle frecce dalla tavolozza; scrivere i campi `processi` e `modalità` nella scheda di ogni livello.
 
@@ -166,3 +166,4 @@ I quattro rossi del 06/10/2026 e che cosa erano:
 | 07/10/2026 | 0.5 | Fase 3 in corso: le quattro decisioni di Pietro del 07/10/2026, le due domande nate da B1 e l'ordine delle prossime (§6). |
 | 07/10/2026 | 0.6 | Fase 3: le decisioni del pomeriggio del 07/10/2026 (I23, I24, modalità e processi) e il nuovo ordine delle domande. |
 | 07/10/2026 | 0.7 | Fase 3: le decisioni della sera del 07/10/2026, le due proposte da approvare e il lavoro che ne viene per la fase 4. |
+| 07/10/2026 | 0.8 | Approvate le due proposte; restano B2, B3, B4 e le quindici importanti per chiudere la fase 3. |

@@ -1,7 +1,7 @@
 ---
 titolo: Videogioco "I cinque duchi" — audit delle questioni aperte: la lista operativa
 tipo: audit
-versione: 0.31
+versione: 0.32
 data: 2026-10-07
 autore: Pietro Fabbri (con Claude)
 fonte: lettura di tutti i documenti di progetto che portano una sezione «Questioni aperte» (sedici), verificata da sorgenti/lingue/conta_questioni.py, che confronta anche i numeri che il README copia da qui
@@ -24,17 +24,17 @@ Il documento è verificato da `sorgenti/lingue/conta_questioni.py`, che confront
 |---|---|
 | Documenti con una sezione «Questioni aperte» | **17** |
 | Voci enumerate | **128** |
-| **Chiuse** | **44** |
-| **Aperte** | **84** |
+| **Chiuse** | **46** |
+| **Aperte** | **82** |
 | Di cui bloccanti | tre |
-| Di cui importanti (cambiano il gioco) | sedici |
+| Di cui importanti (cambiano il gioco) | quindici |
 | Di cui minori (si possono rimandare) | le altre |
 
 **Il criterio**, dichiarato perché un numero senza criterio non è un dato. Una **voce** è un punto numerato, un `### Q1` o una riga di tabella della sezione «Questioni aperte». Una voce è **chiusa** se porta la marcatura nella sua **prima riga** — «chiusa», «risolto», «ratificata», «confermata» — e non in tutto il corpo, perché una voce aperta spiega dentro il corpo quale parte è stata chiusa.
 
 **Una voce non è sempre una domanda.** In `lingue.md` Q3 ci sono due sotto-voci dentro una sola domanda. Le **128 voci non sono 128 domande**.
 
-**Una sola delle quarantaquattro chiuse è bloccante**: **B1**, chiusa il 07/10/2026 con la decisione di Pietro sui sette livelli per tappa. Delle bloccanti di un tempo, altre due non sono mai state domande: erano lavori, e sono stati fatti — i novanta pin il 02/10/2026, la tavolozza, le sagome, il fondo di Ferrara e i colori delle carte il 03/10/2026 (§7). Le decisioni prese hanno tolto lavoro, non lo hanno aggiunto.
+**Una sola delle quarantasei chiuse è bloccante**: **B1**, chiusa il 07/10/2026 con la decisione di Pietro sui sette livelli per tappa. Delle bloccanti di un tempo, altre due non sono mai state domande: erano lavori, e sono stati fatti — i novanta pin il 02/10/2026, la tavolozza, le sagome, il fondo di Ferrara e i colori delle carte il 03/10/2026 (§7). Le decisioni prese hanno tolto lavoro, non lo hanno aggiunto.
 
 
 ## 2. Le tre bloccanti
@@ -66,7 +66,7 @@ Sono le uniche che fermano qualcosa, e sono le tre che aspettano una **risposta*
 Non è più una bloccante: l'esito è in **§7**, il racconto nello storico (`storico.md` §1). Era l'unica delle cinque che non aspettava nessuna decisione, ed è l'unica che il progetto poteva chiudere da solo.
 
 
-## 3. Le sedici importanti
+## 3. Le quindici importanti
 
 Quelle che, se risposte male, cambiano il gioco. In ordine di peso.
 
@@ -96,7 +96,7 @@ Quelle che, se risposte male, cambiano il gioco. In ordine di peso.
 | I22 | ~~**«Nessuna risposta scritta» e gli strumenti veri**~~ **chiusa il 07/10/2026** (`modello-di-livello.md` Q4) | — | — | **Decisione di Pietro: si accetta anche il testo libero.** Lo valuta il docente nel report, non il gioco; per la soglia contano solo risposte che il gioco corregge da solo, e codice, formule e comandi si verificano eseguendoli (`modello-di-livello.md` §3) | Pietro |
 | I23 | ~~**Che cosa apre la tappa successiva: la soglia di informatica, o tutte e sette?**~~ **chiusa il 07/10/2026** (`lingue.md` Q10) | — | — | **Decisione di Pietro**: la tappa successiva si apre con la soglia di informatica; per il livello *n* di una lingua servono tutti i premi precedenti di quella lingua, e si può tornare indietro con un espediente narrativo per anno (I25) | Pietro |
 | I24 | ~~**L'ordine dei sette livelli in una tappa, e il tempo di una tappa**~~ **chiusa il 07/10/2026** (`lingue.md` Q11) | — | — | **Decisione di Pietro**: nessun ordine; i sette livelli sono sparsi nell'ambiente, ognuno con una freccia del suo colore, accanto a chicche interattive brevi. Il tempo si misura sul prototipo (I12) | Pietro |
-| I25 | **L'espediente narrativo per tornare indietro, anno per anno** (`modello-di-livello.md` Q7) | Rende credibile il ritorno a una tappa passata per finire una lingua, in ognuno dei cinque modi di attraversare l'anno | Sono cinque storie da scrivere, e un ritorno mal giustificato rompe il patto narrativo dell'anno | **Le cinque proposte sono scritte** (`modello-di-livello.md` Q7): il paggio con il registro, il dispaccio senza risposta, la risorsa riportata in tavola, il fascicolo riaperto, la Luna di Astolfo. Vanno approvate, e per gli anni 2, 3 e 5 c'è un fatto da verificare | Pietro |
+| I25 | ~~**L'espediente narrativo per tornare indietro, anno per anno**~~ **chiusa il 07/10/2026** (`modello-di-livello.md` Q7) | — | — | **Decisione di Pietro: le cinque proposte sono approvate.** Prima di metterle nei dati restano tre verifiche di fatto (anni 2, 3 e 5) | Pietro |
 
 
 ## 4. Le altre, in sintesi
@@ -197,12 +197,6 @@ Le **restanti**: minori, o già decise nella sostanza e che aspettano solo l'ese
 | Safe Exam Browser e la proposta al regolamento d'istituto sui dispositivi indossabili | Pietro **e l'istituto** |
 | La specifica della modalità accessibile | Il progetto **e il progetto di accessibilità del gioco** |
 
-### Modello di livello (`modello-di-livello.md` 1)
-
-| Domanda | Chi decide |
-|---|---|
-| La tappa a mani nude in concreto: la proposta del modello (Q8), con gli esempi, va approvata o corretta | Pietro |
-
 ### Itinerari (`itinerari.md` 1)
 
 | Domanda | Chi decide |
@@ -248,6 +242,8 @@ Il conto delle voci chiuse del §1 è un'altra cosa: lo fa `conta_questioni.py` 
 | I campi `Modalità` e processi di pensiero | 07/10/2026 | Decisione di Pietro: entrano, e non si possono saltare; il *come* è una proposta da approvare (`modello-di-livello.md` Q6) | `modello-di-livello.md` §9 Q5 |
 | **I21** · prove di corte e tappe a mani nude | 07/10/2026 | Decisione di Pietro: prove di corte abolite; restano le tappe a mani nude | `modello-di-livello.md` §6, §9 Q3 e Q8 |
 | Come entrano processi di pensiero e modalità | 07/10/2026 | Decisione di Pietro: proposta approvata; 5 livelli su 30 a coppie o di gruppo per ciascuno dei sette ambiti, anche in informatica | `modello-di-livello.md` §9 Q6 |
+| **I25** · l'espediente narrativo per tornare indietro | 07/10/2026 | Decisione di Pietro: approvate le cinque proposte (paggio, dispaccio, risorsa in tavola, fascicolo, Luna di Astolfo); restano tre verifiche di fatto | `modello-di-livello.md` §9 Q7 |
+| La tappa a mani nude in concreto | 07/10/2026 | Decisione di Pietro: approvata la proposta (sfida obbligatoria dentro la tappa, conta averla fatta, due o tre minuti senza strumenti) | `modello-di-livello.md` §9 Q8 |
 | Il ripasso a distanza accanto ai test di ingresso | 07/10/2026 | Decisione di Pietro: tutti e due, con ruoli diversi; il ripasso Leitner è obbligatorio nella soglia, i test sono facoltativi | `modello-di-livello.md` §9 Q2, `gioco.md` §4.2 |
 | **I2** · la tavolozza | 03/10/2026 | Si dichiarano i colori di ogni fonte invece di ricolorare tutto: ogni colore ha la sua fonte | `dati/fonti_visive/tavolozza.json`, `fonti-visive.md` §3 |
 | **I3** · le sagome degli edifici | 03/10/2026 | Sagome da OpenStreetMap; un edificio senza altezza misurata diventa un volume neutro dichiarato, non una stima | `dati/edifici_footprint.json`, `fonti-visive.md` §3 |
@@ -267,6 +263,7 @@ Il conto delle voci chiuse del §1 è un'altra cosa: lo fa `conta_questioni.py` 
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 07/10/2026 | 0.32 | I25 chiusa e la tappa a mani nude decisa (approvazioni di Pietro del 07/10/2026); il modello di livello non ha più domande aperte e il suo blocco esce dal §4. Conto: 128 voci, 46 chiuse, 82 aperte, 3 bloccanti, 15 importanti. |
 | 07/10/2026 | 0.31 | **Decisioni di Pietro della sera del 07/10/2026.** I21 chiusa: prove di corte abolite, restano le tappe a mani nude. Approvata la proposta su processi di pensiero e modalità, con 5 livelli su 30 a coppie o di gruppo per ciascuno dei sette ambiti. I25 ha le cinque proposte di espediente narrativo, da approvare; nel §4 la proposta Q8 sulla tappa a mani nude. Conto: 128 voci, 44 chiuse, 84 aperte, 3 bloccanti, 16 importanti. |
 | 07/10/2026 | 0.30 | **Altre decisioni di Pietro del 07/10/2026.** I23 chiusa: la tappa successiva si apre con la soglia di informatica, le lingue hanno una propedeuticità loro. I24 chiusa: i sette livelli non hanno ordine e sono sparsi nell'ambiente. I campi Modalità e processi di pensiero entrano. Nuova I25: l'espediente narrativo per tornare indietro, anno per anno; nel §4 la proposta Q6 del modello da approvare. Conto: 127 voci, 42 chiuse, 85 aperte, 3 bloccanti, 17 importanti. |
 | 07/10/2026 | 0.29 | **Le decisioni di Pietro del 07/10/2026.** B1 chiusa: sette livelli per tappa, e le bloccanti passano da quattro a tre, con la catena B2 → B4. I20 (carta e premio) e I22 (testo libero) chiuse; nuove importanti I23 (che cosa apre la tappa successiva) e I24 (ordine dei sette livelli e tempo della tappa), da `lingue.md` Q10 e Q11. Il ripasso a distanza esce dal §4. Le quattro chiusure sono nella tabella del §7; la scheda di B1 com'era è in `storico.md` §1.18. Conto: 125 voci, 39 chiuse, 86 aperte. |

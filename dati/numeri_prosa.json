@@ -3596,19 +3596,19 @@
   },
   {
    "numero": null,
-   "riga": 215,
+   "riga": 209,
    "scritto": "due",
    "soggetto": "documenti"
   },
   {
    "numero": 3,
-   "riga": 226,
+   "riga": 220,
    "scritto": "tre",
    "soggetto": "bloccanti"
   },
   {
    "numero": 6,
-   "riga": 228,
+   "riga": 222,
    "scritto": "sei",
    "soggetto": "livelli"
   }
@@ -11275,134 +11275,140 @@
    "soggetto": "domini"
   },
   {
-   "numero": 5,
+   "numero": 3,
    "riga": 213,
+   "scritto": "tre",
+   "soggetto": "verifiche"
+  },
+  {
+   "numero": 5,
+   "riga": 215,
    "scritto": "cinque",
    "soggetto": "proposte"
   },
   {
    "numero": 7,
-   "riga": 231,
+   "riga": 235,
    "scritto": "sette",
    "soggetto": "livelli"
   },
   {
    "numero": 7,
-   "riga": 235,
+   "riga": 239,
    "scritto": "sette",
    "soggetto": "frecce"
   },
   {
    "numero": 3,
-   "riga": 237,
+   "riga": 241,
    "scritto": "tre",
    "soggetto": "dal"
   },
   {
    "numero": 7,
-   "riga": 239,
+   "riga": 243,
    "scritto": "sette",
    "soggetto": "gli"
   },
   {
    "numero": 6,
-   "riga": 239,
+   "riga": 243,
    "scritto": "sei",
    "soggetto": "domini"
   },
   {
    "numero": null,
-   "riga": 246,
+   "riga": 250,
    "scritto": "due",
    "soggetto": "minuti"
   },
   {
    "numero": 1,
-   "riga": 249,
+   "riga": 253,
    "scritto": "1",
    "soggetto": "KiB"
   },
   {
    "numero": 8,
-   "riga": 250,
+   "riga": 254,
    "scritto": "8",
    "soggetto": "bit"
   },
   {
    "numero": 65,
-   "riga": 250,
+   "riga": 254,
    "scritto": "65",
    "soggetto": "mila"
   },
   {
    "numero": 16,
-   "riga": 250,
+   "riga": 254,
    "scritto": "16",
    "soggetto": "milioni"
   },
   {
    "numero": null,
-   "riga": 251,
+   "riga": 255,
    "scritto": "due",
    "soggetto": "numeri"
   },
   {
    "numero": 8,
-   "riga": 251,
+   "riga": 255,
    "scritto": "8",
    "soggetto": "bit"
   },
   {
    "numero": 9,
-   "riga": 251,
+   "riga": 255,
    "scritto": "9",
    "soggetto": "cifre"
   },
   {
    "numero": 5,
-   "riga": 252,
+   "riga": 256,
    "scritto": "cinque",
    "soggetto": "secondi"
   },
   {
    "numero": 100,
-   "riga": 257,
+   "riga": 261,
    "scritto": "100",
    "soggetto": "pixel"
   },
   {
    "numero": 24,
-   "riga": 257,
+   "riga": 261,
    "scritto": "24",
    "soggetto": "bit"
   },
   {
    "numero": 3,
-   "riga": 259,
+   "riga": 263,
    "scritto": "tre",
    "soggetto": "minuti"
   },
   {
    "numero": 1000,
-   "riga": 259,
+   "riga": 263,
    "scritto": "1000",
    "soggetto": "elementi"
   },
   {
    "numero": 2,
-   "riga": 259,
+   "riga": 263,
    "scritto": "2",
    "soggetto": "alla"
   },
   {
    "numero": 1000,
-   "riga": 259,
+   "riga": 263,
    "scritto": "mille",
    "soggetto": "miliardi"
   },
   {
    "numero": 3,
-   "riga": 259,
+   "riga": 263,
    "scritto": "tre",
    "soggetto": "intervalli"
   }
@@ -13945,10 +13951,16 @@
    "soggetto": "proposte"
   },
   {
-   "numero": null,
+   "numero": 3,
    "riga": 154,
-   "scritto": "due",
-   "soggetto": "scritte"
+   "scritto": "tre",
+   "soggetto": "bloccanti"
+  },
+  {
+   "numero": 15,
+   "riga": 154,
+   "scritto": "quindici",
+   "soggetto": "importanti"
   },
   {
    "numero": 4,
