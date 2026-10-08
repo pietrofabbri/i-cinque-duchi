@@ -233,7 +233,7 @@ I7 confronta i numeri che **una** sezione dichiara con il suo file. La regola ch
 |---|---|
 | Documenti con un controllo dichiarato | **15** |
 | Documenti senza controllo | **20** |
-| Numeri in prosa contati | **2966** |
+| Numeri in prosa contati | **2970** |
 | Documenti interamente guardati | **0** |
 | Dichiarazioni senza riscontro nel codice | **0** |
 

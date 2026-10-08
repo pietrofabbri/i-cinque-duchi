@@ -3,8 +3,9 @@
 Legge `dati/lingue/immagini_oggetti.json` (i candidati), `cibi_per_tappa.json`
 (luogo e curiosità dei piatti) e `associazioni.json` (le curiosità delle altre
 lingue), e scrive `verifica/scelta-immagini.html`. Le miniature sono file a
-parte, `verifica/miniature/<LINGUA>.json` (`miniature.py`), pubblicati accanto
-alla pagina come `miniature/<LINGUA>.json`.
+parte: `miniature.py` le scarica in `verifica/miniature/`, `prepara_pubblicazione.py`
+le ricomprime in `verifica/pubblica/miniature/` (l'italiano in `IT-1` … `IT-5`),
+e si pubblicano accanto alla pagina come `miniature/<nome>.json`.
 
 La pagina salva le scelte nella collezione `scelte` dell'archivio della
 pagina: un documento per voce, con chiave `IT-<anno>-<NN>` per l'italiano e

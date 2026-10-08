@@ -7883,6 +7883,12 @@
    "soggetto": "comandi"
   },
   {
+   "numero": 429,
+   "riga": 231,
+   "scritto": "429",
+   "soggetto": "dopo"
+  },
+  {
    "numero": 1120,
    "riga": 232,
    "scritto": "1120",
@@ -11185,6 +11191,12 @@
    "soggetto": "slot"
   },
   {
+   "numero": 7,
+   "riga": 120,
+   "scritto": "sette",
+   "soggetto": "tappe"
+  },
+  {
    "numero": 5,
    "riga": 134,
    "scritto": "cinque",
@@ -14041,32 +14053,44 @@
    "soggetto": "regole"
   },
   {
-   "numero": 4,
+   "numero": 1913,
    "riga": 160,
+   "scritto": "1913",
+   "soggetto": "miniature"
+  },
+  {
+   "numero": 270,
+   "riga": 160,
+   "scritto": "270",
+   "soggetto": "voci"
+  },
+  {
+   "numero": 4,
+   "riga": 162,
    "scritto": "4",
    "soggetto": "nato"
   },
   {
    "numero": 4,
-   "riga": 162,
+   "riga": 164,
    "scritto": "4",
    "soggetto": "nato"
   },
   {
    "numero": 15,
-   "riga": 162,
+   "riga": 164,
    "scritto": "15",
    "soggetto": "livelli"
   },
   {
    "numero": 5,
-   "riga": 162,
+   "riga": 164,
    "scritto": "5",
    "soggetto": "livelli"
   },
   {
    "numero": 7,
-   "riga": 162,
+   "riga": 164,
    "scritto": "sette",
    "soggetto": "colori"
   }

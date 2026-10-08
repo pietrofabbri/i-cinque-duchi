@@ -55,6 +55,7 @@ h1{font:700 2rem/1.15 Spectral,Georgia,serif;margin:0 0 6px;text-wrap:balance}
 .azioni button[aria-pressed="true"]{background:var(--no-tenue);border-color:var(--no);color:var(--no);font-weight:600}
 .niente{font-size:.85rem;color:var(--tenue)}
 .vista{position:fixed;inset:0;background:var(--velo);z-index:10;display:flex;align-items:center;justify-content:center;padding:16px}
+[hidden]{display:none!important}
 .vista figure{margin:0;max-width:min(720px,100%);background:var(--carta);border-radius:8px;overflow:hidden;color:var(--fg)}
 .vista img{display:block;width:100%;max-height:70vh;object-fit:contain;background:#000}
 .vista figcaption{padding:10px 14px;font-size:.82rem;display:flex;flex-direction:column;gap:6px}
@@ -70,6 +71,7 @@ h1{font:700 2rem/1.15 Spectral,Georgia,serif;margin:0 0 6px;text-wrap:balance}
   <div class="stato" id="stato"><span class="punto"></span><span id="stato-testo">Collegamento all'archivio…</span></div>
   <div class="barra">
     <div class="schede" role="tablist" id="schede"></div>
+    <div class="schede anni" id="anni"></div>
     <div class="filtri">
       <label><input type="checkbox" id="f-da"> solo le voci ancora da scegliere</label>
     </div>
@@ -85,17 +87,38 @@ const ANNI = ["", "Ferrara", "la penisola", "l'Europa", "il mondo", "il mondo co
 const scelte = {};             // chiave -> {file|null, nessuna}
 const miniature = {};          // lingua -> {file: dataURI}
 const caricamento = {};
-let db = null, attiva = "IT", soloDa = false;
+let db = null, attiva = "IT", soloDa = false, anno = 1;
 try { const h = location.hash.slice(1); if (LINGUE.some(l => l[0] === h)) attiva = h; } catch (e) {}
 
 function stato(t, tipo) { const s = document.getElementById("stato"); s.className = "stato " + (tipo || ""); document.getElementById("stato-testo").textContent = t; }
 const fatta = k => scelte[k] && (scelte[k].file || scelte[k].nessuna);
 
-async function carica(lingua) {
-  if (miniature[lingua] || caricamento[lingua]) return caricamento[lingua];
-  caricamento[lingua] = fetch("miniature/" + lingua + ".json").then(r => r.ok ? r.json() : {}).catch(() => ({}))
-    .then(m => { miniature[lingua] = m; if (lingua === attiva) disegnaVoci(); });
-  return caricamento[lingua];
+// le miniature dell'italiano sono divise per anno (IT-1 … IT-5): un file intero
+// supererebbe i 16 MB, e sul telefono si carica un anno alla volta
+const pacco = v => v.lingua === "IT" ? "IT-" + v.anno : v.lingua;
+const paccoAttivo = () => attiva === "IT" ? "IT-" + anno : attiva;
+const mini = v => miniature[pacco(v)] || null;
+async function carica(nome) {
+  if (miniature[nome] || caricamento[nome]) return caricamento[nome];
+  caricamento[nome] = fetch("miniature/" + nome + ".json").then(r => r.ok ? r.json() : {}).catch(() => ({}))
+    .then(m => { miniature[nome] = m; if (nome === paccoAttivo()) disegnaVoci(); });
+  return caricamento[nome];
+}
+
+function disegnaAnni() {
+  const el = document.getElementById("anni");
+  el.hidden = attiva !== "IT";
+  if (el.hidden) return;
+  el.replaceChildren(...[1, 2, 3, 4, 5].map(a => {
+    const tutte = VOCI.filter(v => v.lingua === "IT" && v.anno === a);
+    const b = document.createElement("button");
+    b.className = "scheda"; b.setAttribute("aria-selected", a === anno);
+    const s1 = document.createElement("span"); s1.textContent = "Anno " + a;
+    const s2 = document.createElement("span"); s2.className = "conto"; s2.textContent = tutte.filter(v => fatta(v.k)).length + "/" + tutte.length;
+    b.append(s1, s2);
+    b.onclick = () => { anno = a; disegna(); window.scrollTo({ top: 0 }); };
+    return b;
+  }));
 }
 
 function disegnaSchede() {
@@ -114,7 +137,7 @@ function disegnaSchede() {
 
 function salva(k, v, dati) {
   scelte[k] = dati;
-  disegnaSchede(); aggiornaVoce(k);
+  disegnaSchede(); disegnaAnni(); aggiornaVoce(k);
   if (!db) return;
   stato("Salvataggio…");
   db.collection("scelte").doc(k).set({ ...dati, lingua: v.lingua, voce: v.voce, aggiornato: new Date().toISOString() })
@@ -129,7 +152,7 @@ function scegli(v, file) {
 
 function apriVista(v, c) {
   const vista = document.getElementById("vista");
-  const src = (miniature[v.lingua] || {})[c.file];
+  const src = (mini(v) || {})[c.file];
   vista.innerHTML = `<figure><img alt=""><figcaption><b></b><span class="meta"></span><div class="riga"><button class="scegli">Scegli questa</button><a target="_blank" rel="noopener">Apri su Commons</a><button class="chiudi">Chiudi</button></div></figcaption></figure>`;
   const img = vista.querySelector("img"); if (src) img.src = src; img.alt = c.file;
   vista.querySelector("b").textContent = v.voce + " · " + c.file.replace(/^File:/, "");
@@ -163,9 +186,9 @@ function voceEl(v) {
     const g = document.createElement("div"); g.className = "griglia";
     for (const c of v.candidati) {
       const b = document.createElement("button"); b.className = "cand"; b.dataset.file = c.file;
-      const src = (miniature[v.lingua] || {})[c.file];
+      const src = (mini(v) || {})[c.file];
       if (src) { const img = document.createElement("img"); img.src = src; img.alt = c.file.replace(/^File:/, ""); img.loading = "lazy"; b.append(img); }
-      else { const d = document.createElement("span"); d.className = "vuota"; d.textContent = miniature[v.lingua] ? "miniatura assente" : "carico…"; b.append(d); }
+      else { const d = document.createElement("span"); d.className = "vuota"; d.textContent = mini(v) ? "miniatura assente" : "carico…"; b.append(d); }
       const lic = document.createElement("span"); lic.className = "lic"; lic.textContent = c.licenza; b.append(lic);
       const lente = document.createElement("span"); lente.className = "lente"; lente.setAttribute("role", "button"); lente.setAttribute("aria-label", "Ingrandisci"); lente.textContent = "⤢";
       lente.onclick = e => { e.stopPropagation(); apriVista(v, c); };
@@ -196,17 +219,15 @@ function aggiornaVoce(k, li) {
 
 function disegnaVoci() {
   const ol = document.getElementById("voci");
-  const vs = VOCI.filter(v => v.lingua === attiva && (!soloDa || !fatta(v.k)));
-  const nodi = []; let anno = null;
-  for (const v of vs) {
-    if (v.anno && v.anno !== anno) { anno = v.anno; const h = document.createElement("li"); h.className = "anno"; h.textContent = "Anno " + anno + " · " + ANNI[anno]; nodi.push(h); }
-    nodi.push(voceEl(v));
-  }
-  if (!vs.length) { const p = document.createElement("li"); p.className = "niente"; p.textContent = "Tutte le voci di questa lingua hanno una scelta."; nodi.push(p); }
+  const vs = VOCI.filter(v => v.lingua === attiva && (attiva !== "IT" || v.anno === anno) && (!soloDa || !fatta(v.k)));
+  const nodi = [];
+  if (attiva === "IT") { const h = document.createElement("li"); h.className = "anno"; h.textContent = "Anno " + anno + " · " + ANNI[anno]; nodi.push(h); }
+  for (const v of vs) nodi.push(voceEl(v));
+  if (!vs.length) { const p = document.createElement("li"); p.className = "niente"; p.textContent = "Tutte le voci qui hanno una scelta."; nodi.push(p); }
   ol.replaceChildren(...nodi);
 }
 
-function disegna() { disegnaSchede(); disegnaVoci(); carica(attiva); }
+function disegna() { disegnaSchede(); disegnaAnni(); disegnaVoci(); carica(paccoAttivo()); }
 document.getElementById("f-da").onchange = e => { soloDa = e.target.checked; disegnaVoci(); };
 disegna();
 
@@ -216,7 +237,7 @@ disegna();
   stato("Archivio collegato", "ok");
   db.collection("scelte").onSnapshot(snap => {
     for (const d of snap.docs) { const x = d.data() || {}; scelte[d.id] = { file: x.file || null, nessuna: !!x.nessuna }; }
-    disegnaSchede();
+    disegnaSchede(); disegnaAnni();
     document.querySelectorAll(".voce").forEach(li => aggiornaVoce(li.dataset.k, li));
   }, () => stato("L'archivio si è scollegato: ricarica la pagina", "errore"));
 })();
