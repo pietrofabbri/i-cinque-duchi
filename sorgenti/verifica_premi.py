@@ -14,9 +14,11 @@ essere un'opera generata o un'immagine senza licenza.
   P5  nessun premio puo' essere generato o senza licenza: il divieto e' scritto
   P6  ogni record porta l'elemento interattivo da cui viene e l'argomento che
       `lingue.md` dà per quel livello; l'informatica non ne ha e lo dichiara;
-      ogni voce e' usata cinque volte, una per anno
-  P7  le trenta voci sono dichiarate in due file e le due dichiarazioni dicono
-      la stessa cosa
+      ogni voce e' usata cinque volte, una per anno; dall'08/10/2026 l'italiano
+      ha una voce per tappa (`cibi_per_tappa.json`), usata una volta sola
+  P7  le voci sono dichiarate in due file (`associazioni.json` o
+      `cibi_per_tappa.json`, e `immagini_oggetti.json`) e le due dichiarazioni
+      dicono la stessa cosa
   P8  nessun rimando porta a una prova che `premi.md` §3 non dichiara: le prove
       sono quattro, e un «prova 5» che gira in quattro file e' un numero vero
       che guarda il numero sbagliato
@@ -37,6 +39,7 @@ QUADRO = os.path.join(RADICE, "docs", "videogioco-5-duchi-quadro-trasversale.md"
 PREMI = os.path.join(RADICE, "dati", "premi.json")
 LINGUE_MD = os.path.join(RADICE, "docs", "videogioco-5-duchi-lingue.md")
 ASSOCIAZIONI = os.path.join(RADICE, "dati", "lingue", "associazioni.json")
+CIBI_PER_TAPPA = os.path.join(RADICE, "dati", "lingue", "cibi_per_tappa.json")
 IMMAGINI_OGGETTI = os.path.join(RADICE, "dati", "lingue",
                                 "immagini_oggetti.json")
 
@@ -334,36 +337,52 @@ def problemi_del_legame(catalogo):
         if not record["elemento_interattivo"]:
             fuori.append("P6: %s non ha l'elemento interattivo"
                          % record["chiave"])
-        k = (record["lingua"], record["elemento_numero"])
+        # l'italiano ha una voce per tappa (cibi_per_tappa.json, 08/10/2026):
+        # ogni sua voce sta in un livello solo; le altre lingue hanno trenta
+        # voci, e ognuna sta in cinque livelli, uno per anno
+        k = ((record["lingua"], anno, record["elemento_numero"])
+             if record["lingua"] == "IT" else
+             (record["lingua"], record["elemento_numero"]))
         usi[k] = usi.get(k, 0) + 1
-    if usi and sorted(set(usi.values())) != [5]:
-        fuori.append("P6: le voci sono usate %s volte: ogni voce deve stare in "
-                     "cinque livelli, uno per anno" % sorted(set(usi.values())))
-    if len(usi) != 180:
-        fuori.append("P6: gli elementi legati sono %d e non 180" % len(usi))
+    attese = {k: (1 if len(k) == 3 else 5) for k in usi}
+    if usi != attese:
+        fuori.append("P6: le voci non sono usate come devono: una volta per "
+                     "l'italiano (una per tappa), cinque volte (una per anno) "
+                     "per le altre lingue")
+    if usi and len(usi) != 300:
+        fuori.append("P6: gli elementi legati sono %d e non 300 "
+                     "(150 dell'italiano e 5 x 30)" % len(usi))
 
     with io.open(ASSOCIAZIONI, encoding="utf-8") as f:
         proposte = json.load(f)["associazioni"]
+    with io.open(CIBI_PER_TAPPA, encoding="utf-8") as f:
+        cibi = json.load(f)["tappe"]
     with io.open(IMMAGINI_OGGETTI, encoding="utf-8") as f:
         ricercate = json.load(f)["risultati"]
     dalle_ricerche = {}
     for v in ricercate:
-        dalle_ricerche[(SIGLA_DALLA_PARTE.get(v["lingua"], v["lingua"]),
-                        int(v["numero"]))] = v["voce"]
-    if len(dalle_ricerche) != 180:
-        fuori.append("P7: immagini_oggetti.json ha %d voci e non 180"
+        sigla = SIGLA_DALLA_PARTE.get(v["lingua"], v["lingua"])
+        for anno in ([int(v["anno"])] if "anno" in v else range(1, 6)):
+            dalle_ricerche[(sigla, anno, int(v["numero"]))] = v["voce"]
+    if len(dalle_ricerche) != 900:
+        fuori.append("P7: immagini_oggetti.json copre %d livelli e non 900"
                      % len(dalle_ricerche))
-    # le due dichiarazioni delle trenta voci devono dire la stessa cosa
+    # le due dichiarazioni delle voci devono dire la stessa cosa
     per_associazioni = {}
     for a in proposte:
         sigla = SIGLA_DALLA_PARTE.get(a["lingua"], a["lingua"])
-        for numero, voce in enumerate(a["voci"], 1):
-            per_associazioni[(sigla, numero)] = voce
-            if dalle_ricerche.get((sigla, numero)) != voce:
-                fuori.append("P7: la voce %s n.%d e' %r nelle associazioni e %r "
+        if sigla == "IT":
+            coppie = [((t["anno"], t["numero"]), t["piatto"]) for t in cibi]
+        else:
+            coppie = [((anno, n), voce) for n, voce in enumerate(a["voci"], 1)
+                      for anno in range(1, 6)]
+        for (anno, numero), voce in coppie:
+            per_associazioni[(sigla, anno, numero)] = voce
+            if dalle_ricerche.get((sigla, anno, numero)) != voce:
+                fuori.append("P7: la voce %s %d-%d e' %r nelle voci e %r "
                              "nelle immagini cercate"
-                             % (sigla, numero, voce,
-                                dalle_ricerche.get((sigla, numero))))
+                             % (sigla, anno, numero, voce,
+                                dalle_ricerche.get((sigla, anno, numero))))
     # **per record, non per dizionario**: un record sbagliato che condivide la
     # chiave `(lingua, numero)` con altri quattro finisce coperto da quelli, e
     # la prova lo mostrava spostando `2-14-IT` sul numero quindici senza che
@@ -371,7 +390,8 @@ def problemi_del_legame(catalogo):
     for record in catalogo:
         if not record["elemento_interattivo"]:
             continue
-        k = (record["lingua"], record["elemento_numero"])
+        k = (record["lingua"], int(record["livello"].split("-")[0]),
+             record["elemento_numero"])
         if per_associazioni.get(k) != record["elemento_interattivo"]:
             fuori.append("P7: il record %s porta l'elemento %r e le "
                          "associazioni dicono %r per la voce n.%d"

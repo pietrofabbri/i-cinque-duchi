@@ -1,10 +1,10 @@
 ---
 titolo: Videogioco "I cinque duchi" — Storico: come ci si è arrivati
 tipo: storico
-versione: 0.10
-data: 2026-10-07
+versione: 0.11
+data: 2026-10-08
 autore: Pietro Fabbri (con Claude)
-documenti collegati: videogioco-5-duchi-roadmap-documentazione.md (v0.9)
+documenti collegati: videogioco-5-duchi-roadmap-documentazione.md (v0.10)
 ---
 
 # Storico del progetto
@@ -784,6 +784,16 @@ Le tre proposte diventano quindi:
 | I17 | **Il formato del file di consegna.** (`meccaniche.md`) | `.txt` è la proposta, ed è leggibile ovunque | Il PDF è più sicuro contro le manomissioni | `.txt` con firma, e la firma è ciò che rende la consegna verificabile | Pietro |
 | I18 | **Il gioco è un modulo della piattaforma gamificata o un prodotto a sé?** (`meccaniche.md`, `curricolo.md`) | Le due scelte danno requisiti diversi su privacy, punteggio, consegna | Rimandarla non blocca niente subito | Prodotto a sé, con i requisiti della piattaforma come caso particolare | Pietro |
 
+### 1.22 La scheda di B2 com'era, chiusa l'08/10/2026
+
+*Da `audit.md` §2, chiusa l'08/10/2026 con la revisione delle voci di Pietro.*
+
+##### B2 · Le trenta voci di ogni oggetto sono confermate?
+
+`lingue.md` §7 Q2 e `lingue-immagini.md` §6.2 Q2 · **pro**: le voci esistono e sono lavorate; confermarle sblocca 1120 candidati già cercati. **contro**: per il ferrarese non sono un elenco ma **campi da rilevare**, e la fonte non è stabilita (chi raccoglie, con che metodo, con quale consenso); un proverbo scritto a tavolino è un proverbo italiano in maschera. **valutazione**: va chiusa **prima** di scegliere le immagini, altrimenti si rifà la ricerca; per le altre cinque lingue è una revisione di trenta voci, per il ferrarese è un progetto. **responsabilità**: Pietro, e per il ferrarese **anche chi raccoglierà i proverbi**. **blocca**: B4, e le tappe facoltative degli oggetti.
+
+**Decisioni di Pietro del 07/10/2026, per chiuderla.** Le voci delle cinque lingue le rivede lui su una pagina con le segnalazioni del progetto; **il ferrarese lo raccoglie il progetto** da fonti pubblicate e citate, e lui lo rivede (`lingue.md` Q2). La domanda si chiude con la revisione.
+
 ## 2. Dagli altri documenti
 
 Le sezioni che raccontavano il difetto da cui è nata una regola, o le versioni attraverso cui è passato un prototipo. Sono state tolte il 06/10/2026 (fase 1 della roadmap): nel documento d'origine resta la regola, o lo stato di oggi, al presente.
@@ -1165,6 +1175,7 @@ Le due regole che ne vengono:
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 08/10/2026 | 0.11 | §1.22: la scheda di B2 com'era, chiusa l'08/10/2026. |
 | 07/10/2026 | 0.10 | Il §1.21 accoglie le schede di B3 e B4 e le righe delle importanti chiuse la sera del 07/10/2026. |
 | 07/10/2026 | 0.9 | Il §1.20 accoglie la riga di I21 com'era. |
 | 07/10/2026 | 0.8 | Il §1.19 accoglie le righe di I23 e I24 com'erano. |

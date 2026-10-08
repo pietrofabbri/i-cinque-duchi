@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — Il modello di livello: le parti di un livello, il loro ordine, le regole e la lista di controllo
 tipo: normativo
-versione: 0.5
-data: 2026-10-07
+versione: 0.6
+data: 2026-10-08
 autore: Pietro Fabbri (con Claude)
 controllo: python3 sorgenti/verifica_modello.py (K1-K4: NEED e POOL contro il codice degli esercizi, i tipi di livello contro i dati, le parti numerate e i documenti che citano, il numero delle domande)
-documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.2), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-meccaniche.md (v0.7), videogioco-5-duchi-tappa-1-01.md (v0.6), videogioco-5-duchi-premi.md (v0.9), videogioco-5-duchi-inventario.md (v0.4), videogioco-5-duchi-ripassi.md (v0.5), videogioco-5-duchi-pedagogia.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-lingue.md (v0.7), videogioco-5-duchi-audit.md (v0.33)
+documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.2), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-meccaniche.md (v0.7), videogioco-5-duchi-tappa-1-01.md (v0.6), videogioco-5-duchi-premi.md (v0.9), videogioco-5-duchi-inventario.md (v0.4), videogioco-5-duchi-ripassi.md (v0.5), videogioco-5-duchi-pedagogia.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-lingue.md (v0.8), videogioco-5-duchi-audit.md (v0.34)
 ---
 
 # Il modello di livello
@@ -116,6 +116,8 @@ Il flusso disegnato qui è quello del **livello informatico**. La tappa intera f
 **Linguaggio** (`esercizi.md` §4): frasi corte, un'idea per frase, «tu», niente tono infantile; conferme sobrie («Sì.», «Esatto.»); «Non ancora» invece di «Sbagliato», con la soluzione giusta in verde; termini tecnici spiegati la prima volta con un esempio. **I personaggi parlano solo di sé e della propria epoca**, mai di Borso. Gli articoli della Costituzione si citano alla lettera, con il numero (`quadro-trasversale.md` §2.2).
 
 **Grafica** (`motore-e-grafica.md`): vista dall'alto in 3/4; 1 tessera = 1,25 m = 16 px; figure 16 × 24 px; ritratti 48 × 54 px nei dialoghi. Una persona ha un **ritratto autentico** se esiste un'immagine libera che la ritrae davvero, altrimenti un **emblema**: mai un volto inventato (`ritratti.md` §1). Le visioni hanno il tono seppia. Colori dei livelli del sapere nell'anno 1: dato arancio, informazione blu, conoscenza verde, saggezza viola (`esercizi.md` §5).
+
+**I personaggi citati si incontrano** (decisione di Pietro dell'08/10/2026). Quando un livello cita una persona che il giocatore non ha ancora incontrato — Cristoforo da Messisbugo nella curiosità di un piatto, Plinio in quella degli starnuti — la citazione non resta un nome: diventa una **breve scheda interattiva**, possibilmente con un'immagine (un ritratto autentico se esiste, con le regole di `ritratti.md`). Meglio ancora se la persona **si incontra di nuovo dopo**, in un'altra tappa. Il posto naturale sono i **due slot facoltativi del livello di informatica** (`gioco.md` §3.4): ogni livello ne ha due da popolare, e un personaggio citato altrove è un buon candidato. Prima di scrivere una curiosità che nomina qualcuno, si controlla se è già nei personaggi dell'anno (`dati/videogioco-5-duchi-anno<N>-personaggi.json`) o nei facoltativi. Le persone citate nelle curiosità degli oggetti e non ancora incontrate sono elencate, con una proposta di dove incontrarle, in `dati/lingue/personaggi_citati.json` (08/10/2026: sette, la prima è Messisbugo, citato in sette tappe).
 
 **Misure contro la copia** (`meccaniche.md` §2.6.2, `tappa-1-01.md` §7): selezione, copia e menu contestuale disattivati; filigrana con nome, istanza e ora; istanze diverse per studente e per tentativo; un passo visibile alla volta.
 
@@ -266,6 +268,7 @@ Le tappe a mani nude sono dieci, alla quindicesima e alla trentesima di ogni ann
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 08/10/2026 | 0.6 | §5: i personaggi citati e non ancora incontrati diventano una scheda interattiva con un'immagine, meglio se si incontrano di nuovo; i due slot facoltativi di informatica servono anche a questo (decisione di Pietro dell'08/10/2026). |
 | 07/10/2026 | 0.5 | Q7 e Q8 chiuse: Pietro ha approvato le cinque proposte di espediente narrativo e la proposta della tappa a mani nude (07/10/2026). Il modello non ha più domande aperte. |
 | 07/10/2026 | 0.4 | **Decisioni di Pietro della sera del 07/10/2026.** Q3 chiusa: le prove di corte sono abolite; i 15 livelli diventano normali, da riscrivere (§6). Q6 chiusa: la proposta su processi e modalità è approvata, con 5 livelli su 30 a coppie o di gruppo per ciascuno dei sette ambiti, anche in informatica, e il compagno anche a distanza. Q7: le cinque proposte di espediente narrativo, da approvare. Nuova Q8: la tappa a mani nude in concreto, con esempi per 1-15, 1-30 e 5-15. |
 | 07/10/2026 | 0.3 | **Decisioni di Pietro del 07/10/2026 sulla forma della tappa.** La tappa è un ambiente con sette ingressi segnati da frecce colorate, in ordine libero; la tappa successiva si apre con la soglia di informatica; ogni lingua ha la sua propedeuticità e si può tornare indietro (§2). Le chicche sono interattive, brevi, e devono intrattenere (§1). Ogni livello dice al giocatore perché lo fa (§3). Q5 chiusa: modalità e processi di pensiero entrano e non si saltano. Nuove: Q6, la proposta di come entrano, e Q7, l'espediente narrativo per tornare indietro in ogni anno. |

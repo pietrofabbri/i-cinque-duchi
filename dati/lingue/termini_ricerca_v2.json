@@ -1,0 +1,217 @@
+{
+ "nota": "termini di ricerca in più per le voci nuove senza candidati alla prima ricerca: il primo termine usato è sempre la voce senza articolo, poi questi, in ordine. Scritti l'08/10/2026.",
+ "termini": {
+  "IT-1-10": [
+   "Messisbugo Banchetti",
+   "Banchetti compositioni di vivande",
+   "fettuccine"
+  ],
+  "IT-1-14": [
+   "cappellacci",
+   "pumpkin tortelli",
+   "tortelli di zucca"
+  ],
+  "IT-1-21": [
+   "mandorlini",
+   "almond cookies"
+  ],
+  "IT-1-22": [
+   "asparagi verdi",
+   "green asparagus"
+  ],
+  "IT-1-24": [
+   "Acipenser naccarii",
+   "sturgeon"
+  ],
+  "IT-1-25": [
+   "anguria",
+   "watermelon"
+  ],
+  "IT-1-26": [
+   "pesche frutta",
+   "peaches"
+  ],
+  "IT-1-27": [
+   "risaia Delta del Po",
+   "rice paddy Italy",
+   "riso Carnaroli"
+  ],
+  "IT-1-28": [
+   "caviale",
+   "caviar"
+  ],
+  "IT-1-29": [
+   "carote",
+   "carrots"
+  ],
+  "IT-2-11": [
+   "alici",
+   "anchovies Cilento",
+   "Pisciotta"
+  ],
+  "IT-2-12": [
+   "fagioli",
+   "beans cooked"
+  ],
+  "IT-2-25": [
+   "Atherina boyeri",
+   "latterini"
+  ],
+  "IT-2-26": [
+   "pane intrecciato",
+   "braided bread"
+  ],
+  "IT-2-28": [
+   "focaccia sesamo",
+   "sesame flatbread"
+  ],
+  "IT-2-29": [
+   "gnocchi",
+   "gnocchi di patate"
+  ],
+  "IT-2-30": [
+   "cappone",
+   "capon"
+  ],
+  "IT-3-10": [
+   "mortadella",
+   "Messisbugo"
+  ],
+  "IT-3-11": [
+   "sfoglia",
+   "pasta sfoglia mattarello",
+   "rolling pasta dough"
+  ],
+  "IT-3-12": [
+   "Aachener Printen",
+   "Printen"
+  ],
+  "IT-3-15": [
+   "piselli",
+   "peas"
+  ],
+  "IT-3-17": [
+   "melagrana",
+   "pomegranate"
+  ],
+  "IT-3-18": [
+   "costrada",
+   "Alcalá de Henares pastry"
+  ],
+  "IT-3-19": [
+   "Basler Läckerli",
+   "Läckerli"
+  ],
+  "IT-3-20": [
+   "albicocche",
+   "apricots"
+  ],
+  "IT-3-22": [
+   "cipolla rossa",
+   "Certaldo"
+  ],
+  "IT-3-24": [
+   "Nürnberger Rostbratwurst",
+   "Nuremberg sausages"
+  ],
+  "IT-4-05": [
+   "petha",
+   "Agra petha"
+  ],
+  "IT-4-07": [
+   "Welfenspeise",
+   "Welf pudding"
+  ],
+  "IT-4-09": [
+   "tiguadege",
+   "peanut stew",
+   "Mali food"
+  ],
+  "IT-4-10": [
+   "brodetto",
+   "fish stew Italy"
+  ],
+  "IT-4-13": [
+   "sayadieh",
+   "sayadiyeh"
+  ],
+  "IT-4-20": [
+   "arance",
+   "oranges"
+  ],
+  "IT-4-21": [
+   "mazapán de Toledo",
+   "marzipan"
+  ],
+  "IT-4-24": [
+   "Nanchang rice noodles",
+   "rice noodles"
+  ],
+  "IT-4-25": [
+   "crab cake",
+   "Maryland crab cakes"
+  ],
+  "IT-4-30": [
+   "susine",
+   "plums"
+  ],
+  "IT-5-05": [
+   "green chile stew",
+   "Hatch chile"
+  ],
+  "IT-5-06": [
+   "samoon",
+   "Iraqi bread"
+  ],
+  "IT-5-13": [
+   "Chelsea bun",
+   "Fitzbillies"
+  ],
+  "IT-5-19": [
+   "jellied eels",
+   "jellied eel"
+  ],
+  "IT-5-20": [
+   "mele",
+   "apples Italy"
+  ],
+  "IT-5-23": [
+   "longeole",
+   "Geneva sausage"
+  ],
+  "IT-5-25": [
+   "Jersey tomato",
+   "tomatoes New Jersey"
+  ],
+  "IT-5-28": [
+   "teriyaki",
+   "chicken teriyaki"
+  ],
+  "LA-28": [
+   "defixio",
+   "Roman amulet inscription",
+   "phylactery Roman"
+  ],
+  "EN-18": [
+   "madrigal",
+   "Thomas Morley",
+   "William Byrd"
+  ],
+  "EL-10": [
+   "Maroneia",
+   "Maronia Thrace"
+  ],
+  "EL-11": [
+   "Cretan vineyard",
+   "Crete wine"
+  ],
+  "EL-15": [
+   "honey vinegar",
+   "oxymel"
+  ],
+  "EL-28": [
+   "amphorae shipwreck",
+   "Greek amphora transport"
+  ]
+ }
+}

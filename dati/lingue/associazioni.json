@@ -1,236 +1,505 @@
 {
-  "versione": 1,
-  "data": "2026-10-02",
-  "nota": "Le associazioni fra lingua e oggetto sono decisioni di Pietro del 02/10/2026. L'oggetto di interazione è FACOLTATIVO in tutti i 900 livelli: se lo si salta, il livello resta valido. Le trenta voci elencate per lingua sono PROPOSTE, non voci confermate: servono a dare un nome all'oggetto con cui il giocatore interagisce in ciascun livello, e vanno discusse una per una. Per il ferrarese la voce non è un testo ma un campo da rilevare: è un progetto di raccolta, non un elenco di proverbi da scrivere a tavolino.",
-  "fonte_voci": "proposta",
-  "associazioni": [
+ "versione": 2,
+ "data": "2026-10-08",
+ "nota": "Le associazioni fra lingua e oggetto sono decisioni di Pietro del 02/10/2026. L'oggetto di interazione è FACOLTATIVO in tutti i 900 livelli: se lo si salta, il livello resta valido. Le trenta voci elencate per lingua sono PROPOSTE, non voci confermate: servono a dare un nome all'oggetto con cui il giocatore interagisce in ciascun livello, e vanno discusse una per una. Per il ferrarese la voce non è un testo ma un campo da rilevare: è un progetto di raccolta, non un elenco di proverbi da scrivere a tavolino.",
+ "fonte_voci": "proposta, rivista da Pietro",
+ "associazioni": [
+  {
+   "lingua": "IT",
+   "nome": "italiano",
+   "oggetto": "cibi",
+   "motivo": "La cucina italiana è un enorme patrimonio linguistico oltre che gastronomico: permette di lavorare su nomi, etimologie, ricette, regionalismi e storia delle parole. Un piatto è un insieme di parole che viaggiano, si prestano, si storcono.",
+   "voci": [
+    "pizza",
+    "ragù",
+    "cacio e pepe",
+    "tiramisù",
+    "polenta",
+    "carbonara",
+    "saltimbocca",
+    "mortadella",
+    "aceto balsamico",
+    "prosciutto",
+    "focaccia",
+    "sabaion",
+    "zuppa di lenticchie",
+    "piadina",
+    "risotto",
+    "gnocco",
+    "tagliatelle",
+    "bagna cauda",
+    "panna cotta",
+    "bistecca",
+    "olive",
+    "pesto",
+    "pandoro",
+    "grana",
+    "confetto",
+    "amaretti",
+    "limoncello",
+    "lambrusco",
+    "budino",
+    "pane"
+   ],
+   "superata": "Dall'08/10/2026 le voci dell'italiano sono un piatto per tappa, in dati/lingue/cibi_per_tappa.json: questa lista resta come storia."
+  },
+  {
+   "lingua": "FE",
+   "nome": "ferrarese",
+   "oggetto": "detti popolari",
+   "motivo": "È l'abbinamento più naturale: i modi di dire conservano lessico, mentalità, ironia e memoria orale locale. Un proverbio ferrarese è una frase breve che tiene insieme una visione del mondo e la grammatica di una lingua.",
+   "voci": [
+    "i proverbi dell'agricoltura",
+    "i proverbi dei mestieri",
+    "i proverbi sul cibo",
+    "i proverbi sulla famiglia",
+    "i proverbi sulla fortuna",
+    "i proverbi sulla pigrizia",
+    "i proverbi sul denaro",
+    "i proverbi sulla fiducia",
+    "i proverbi sul tempo",
+    "i proverbi sull'andare e venire",
+    "i proverbi dei mesi",
+    "i proverbi delle stagioni",
+    "i modi di dire del corpo",
+    "i modi di dire del volto",
+    "i modi di dire della casa",
+    "i modi di dire della strada",
+    "i modi di dire del lavoro",
+    "i modi di dire dell'amore",
+    "i modi di dire del tacere",
+    "i modi di dire dell'urlare",
+    "le esclamazioni",
+    "i saluti rituali",
+    "i soprannomi dei quartieri",
+    "i nomi delle porte e delle piazze",
+    "la parlata dei mercati",
+    "la parlata delle feste",
+    "le filastrocche",
+    "la parlata degli anziani",
+    "i proverbi dei viaggiatori",
+    "i proverbi di confine"
+   ],
+   "cambiate_08_10_2026": [
     {
-      "lingua": "IT",
-      "nome": "italiano",
-      "oggetto": "cibi",
-      "motivo": "La cucina italiana è un enorme patrimonio linguistico oltre che gastronomico: permette di lavorare su nomi, etimologie, ricette, regionalismi e storia delle parole. Un piatto è un insieme di parole che viaggiano, si prestano, si storcono.",
-      "voci": [
-        "pizza",
-        "ragù",
-        "cacio e pepe",
-        "tiramisù",
-        "polenta",
-        "carbonara",
-        "saltimbocca",
-        "mortadella",
-        "aceto balsamico",
-        "prosciutto",
-        "focaccia",
-        "sabaion",
-        "zuppa di lenticchie",
-        "piadina",
-        "risotto",
-        "gnocco",
-        "tagliatelle",
-        "bagna cauda",
-        "panna cotta",
-        "bistecca",
-        "olive",
-        "pesto",
-        "pandoro",
-        "grana",
-        "confetto",
-        "amaretti",
-        "limoncello",
-        "lambrusco",
-        "budino",
-        "pane"
-      ]
-    },
-    {
-      "lingua": "FE",
-      "nome": "ferrarese",
-      "oggetto": "detti popolari",
-      "motivo": "È l'abbinamento più naturale: i modi di dire conservano lessico, mentalità, ironia e memoria orale locale. Un proverbio ferrarese è una frase breve che tiene insieme una visione del mondo e la grammatica di una lingua.",
-      "voci": [
-        "i proverbi dell'agricoltura",
-        "i proverbi dei mestieri",
-        "i proverbi sul cibo",
-        "i proverbi sulla famiglia",
-        "i proverbi sulla fortuna",
-        "i proverbi sulla pigrizia",
-        "i proverbi sul denaro",
-        "i proverbi sulla fiducia",
-        "i proverbi sul tempo",
-        "i proverbi sull'andare e venire",
-        "i proverbi dei mesi",
-        "i proverbi delle stagioni",
-        "i modi di dire del corpo",
-        "i modi di dire del volto",
-        "i modi di dire della casa",
-        "i modi di dire della strada",
-        "i modi di dire del lavoro",
-        "i modi di dire dell'amore",
-        "i modi di dire del tacere",
-        "i modi di dire dell'urlare",
-        "le esclamazioni",
-        "i saluti rituali",
-        "i soprannomi dei quartieri",
-        "i nomi delle porte e delle piazze",
-        "la parlata dei mercati",
-        "la parlata delle feste",
-        "la parlata dei bambini",
-        "la parlata degli anziani",
-        "i proverbi dei viaggiatori",
-        "i proverbi di confine"
-      ]
-    },
-    {
-      "lingua": "LA",
-      "nome": "latino",
-      "oggetto": "superstizioni",
-      "motivo": "Permette di esplorare il mondo romano attraverso auguri, presagi, divinazione, rituali e credenze, collegandoli anche alla permanenza di espressioni e credenze nella cultura europea. Il latino è la lingua in cui la superstizione ha le sue formule tecniche.",
-      "voci": [
-        "gli auspici",
-        "i presagi",
-        "il volo degli uccelli",
-        "l'ispezione delle interiora",
-        "i haruspici",
-        "i sacerdoti e i riti",
-        "il fulmine",
-        "la peste",
-        "i sogni",
-        "i numeri",
-        "il calendario e i giorni",
-        "i mesi",
-        "le feste",
-        "le processioni",
-        "i voti",
-        "i giuramenti",
-        "la maledizione",
-        "il tabù",
-        "i nomi e la sorte",
-        "il destino",
-        "i segni premonitori",
-        "i miracoli",
-        "i presagi delle nascite",
-        "i riti funebri",
-        "il fuoco sacro",
-        "gli animali divini",
-        "i luoghi sacri",
-        "le formule di protezione",
-        "la vita quotidiana",
-        "i proverbi"
-      ]
-    },
-    {
-      "lingua": "EN",
-      "nome": "inglese",
-      "oggetto": "musiche",
-      "motivo": "Offre un territorio sterminato: folk, blues, jazz, rock, pop, punk, rap fino alla musica contemporanea, lavorando insieme su lingua, pronuncia, slang e cultura. Una canzone è un testo che si può ascoltare, trascrivere e discutere.",
-      "voci": [
-        "il folk",
-        "il delta blues",
-        "il blues",
-        "il jazz",
-        "il bebop",
-        "il rock and roll",
-        "il rock",
-        "il punk",
-        "l'hip hop",
-        "il rap",
-        "il soul",
-        "il funk",
-        "il reggae",
-        "lo ska",
-        "il country",
-        "la musica classica",
-        "l'opera",
-        "la musica da camera",
-        "il minimalismo",
-        "la musica elettronica",
-        "la musica sperimentale",
-        "il canto corale",
-        "il lied",
-        "la musica da film",
-        "il musical",
-        "la musica di protesta",
-        "il canto gregoriano",
-        "la musica popolare",
-        "i testi delle canzoni",
-        "le interviste ai musicisti"
-      ]
-    },
-    {
-      "lingua": "SI",
-      "nome": "lingua dei segni italiana",
-      "oggetto": "artigianato tipico",
-      "motivo": "Qui l'associazione è meno ovvia e più interessante: il fare con le mani diventa un ponte concettuale. Si studiano il gesto, la manualità, la trasmissione delle tecniche e il rapporto fra gesto, oggetto e significato.",
-      "voci": [
-        "l'intaglio della pietra dura",
-        "la ceramica",
-        "la maiolica",
-        "la smaltatura",
-        "il vetro",
-        "il ricamo",
-        "il merletto",
-        "la tessitura a telaio",
-        "l'intreccio",
-        "la canna",
-        "l'ebanisteria",
-        "l'intaglio del legno",
-        "il tornio",
-        "il cuoio",
-        "la correggia",
-        "la calzolaio",
-        "il restauro",
-        "l'incisione",
-        "la liuteria",
-        "il clarinetto",
-        "gli occhiali",
-        "la pasta",
-        "il ricamo a punto",
-        "la lavorazione del legno d'albero",
-        "la vernice",
-        "la doratura",
-        "la filigrana",
-        "i lavori d'agro",
-        "il gesto e l'oggetto",
-        "la trasmissione della tecnica"
-      ]
-    },
-    {
-      "lingua": "EL",
-      "nome": "greco",
-      "oggetto": "bevande",
-      "motivo": "Soprattutto attraverso vino, simposio, olivo e cultura conviviale: permette di entrare nella cultura greca dal lessico, dalla ritualità, dalla mitologia e dalla vita quotidiana. Bere è un atto linguistico prima che un atto fisico.",
-      "voci": [
-        "il vino",
-        "la produzione del vino",
-        "l'oliva",
-        "l'olio d'oliva",
-        "l'acqua",
-        "il simposio",
-        "il banchetto",
-        "la coppa",
-        "il consumo rituale",
-        "il vino di Maronea",
-        "vini di Creta",
-        "il kykeon",
-        "la birra",
-        "il caffè",
-        "il tè",
-        "le coppe dipinte",
-        "gli inventari dei simposi",
-        "i nomi dei vasi",
-        "i vini dirottati",
-        "la sete",
-        "l'ospitalità",
-        "il brindisi",
-        "i precetti di temperanza",
-        "i vini del Peloponneso",
-        "i vini delle isole",
-        "il mosto",
-        "la conservazione",
-        "il trasporto delle botti",
-        "la tavola",
-        "il brindisi degli atleti"
-      ]
+     "numero": 27,
+     "prima": "la parlata dei bambini",
+     "dopo": "le filastrocche",
+     "perche": "registrare minori non si fa: le filastrocche si raccolgono da fonti pubblicate"
     }
-  ]
+   ]
+  },
+  {
+   "lingua": "LA",
+   "nome": "latino",
+   "oggetto": "superstizioni",
+   "motivo": "Permette di esplorare il mondo romano attraverso auguri, presagi, divinazione, rituali e credenze, collegandoli anche alla permanenza di espressioni e credenze nella cultura europea. Il latino è la lingua in cui la superstizione ha le sue formule tecniche.",
+   "voci": [
+    "gli auspici",
+    "i presagi",
+    "il volo degli uccelli",
+    "il fegato di Piacenza",
+    "gli aruspici",
+    "i sacerdoti e i riti",
+    "il fulmine",
+    "i prodigi",
+    "i sogni",
+    "i numeri",
+    "il calendario e i giorni",
+    "gli starnuti",
+    "le feste",
+    "le processioni",
+    "i voti",
+    "i giuramenti",
+    "la maledizione",
+    "il tabù",
+    "i nomi e la sorte",
+    "il destino",
+    "i segni premonitori",
+    "gli amuleti",
+    "i presagi delle nascite",
+    "i riti funebri",
+    "il fuoco sacro",
+    "gli animali divini",
+    "i luoghi sacri",
+    "le formule di protezione",
+    "il malocchio",
+    "il piede destro"
+   ],
+   "cambiate_08_10_2026": [
+    {
+     "numero": 4,
+     "prima": "l'ispezione delle interiora",
+     "dopo": "il fegato di Piacenza",
+     "perche": "si sovrapponeva agli aruspici: la pratica diventa il suo oggetto più famoso"
+    },
+    {
+     "numero": 5,
+     "prima": "i haruspici",
+     "dopo": "gli aruspici",
+     "perche": "refuso"
+    },
+    {
+     "numero": 8,
+     "prima": "la peste",
+     "dopo": "i prodigi",
+     "perche": "la peste è una malattia, non una superstizione"
+    },
+    {
+     "numero": 22,
+     "prima": "i miracoli",
+     "dopo": "gli amuleti",
+     "perche": "i miracoli portavano fuori dal mondo romano"
+    },
+    {
+     "numero": 29,
+     "prima": "la vita quotidiana",
+     "dopo": "il malocchio",
+     "perche": "troppo generica"
+    },
+    {
+     "numero": 30,
+     "prima": "i proverbi",
+     "dopo": "il piede destro",
+     "perche": "un proverbio non è una superstizione"
+    },
+    {
+     "numero": 12,
+     "prima": "i mesi",
+     "dopo": "gli starnuti",
+     "perche": "si sovrapponeva al calendario"
+    }
+   ],
+   "curiosita": {
+    "il fegato di Piacenza": "È un fegato di pecora in bronzo, etrusco, diviso in caselle con i nomi degli dèi: l'aruspice lo usava come mappa. Fu trovato da un contadino nel 1877 vicino a Piacenza.",
+    "i prodigi": "Livio elenca ogni anno i prodigi annunciati a Roma — piogge di pietre, buoi che parlano — e i riti per espiarli.",
+    "gli amuleti": "I bambini romani portavano al collo la bulla, una capsula con un amuleto dentro, fino all'età adulta.",
+    "il malocchio": "I Romani lo chiamavano fascinatio, e contro l'invidia appendevano amuleti a forma di fallo, il fascinum.",
+    "il piede destro": "Entrare con il piede destro: nel Satyricon di Petronio un servo sta alla porta della sala a gridare «dextro pede!» a chi entra.",
+    "gli starnuti": "Plinio il Vecchio si chiede perché si saluti chi starnutisce: la domanda è nella Naturalis historia, libro XXVIII."
+   }
+  },
+  {
+   "lingua": "EN",
+   "nome": "inglese",
+   "oggetto": "musiche",
+   "motivo": "Offre un territorio sterminato: folk, blues, jazz, rock, pop, punk, rap fino alla musica contemporanea, lavorando insieme su lingua, pronuncia, slang e cultura. Una canzone è un testo che si può ascoltare, trascrivere e discutere.",
+   "voci": [
+    "il folk",
+    "il delta blues",
+    "il gospel",
+    "il jazz",
+    "il bebop",
+    "il rock and roll",
+    "la British Invasion",
+    "il punk",
+    "l'hip hop",
+    "il grime",
+    "il soul",
+    "il funk",
+    "il reggae",
+    "lo ska",
+    "il country",
+    "le ballate tradizionali inglesi",
+    "le operette di Gilbert e Sullivan",
+    "i madrigali inglesi",
+    "il minimalismo",
+    "la musica elettronica",
+    "la musica sperimentale",
+    "il canto corale",
+    "i canti dei marinai",
+    "la musica da film",
+    "il musical",
+    "la musica di protesta",
+    "gli inni",
+    "la musica popolare",
+    "Tin Pan Alley",
+    "il music hall"
+   ],
+   "cambiate_08_10_2026": [
+    {
+     "numero": 3,
+     "prima": "il blues",
+     "dopo": "il gospel",
+     "perche": "si sovrapponeva al delta blues"
+    },
+    {
+     "numero": 7,
+     "prima": "il rock",
+     "dopo": "la British Invasion",
+     "perche": "si sovrapponeva al rock and roll"
+    },
+    {
+     "numero": 10,
+     "prima": "il rap",
+     "dopo": "il grime",
+     "perche": "si sovrapponeva all'hip hop"
+    },
+    {
+     "numero": 16,
+     "prima": "la musica classica",
+     "dopo": "le ballate tradizionali inglesi",
+     "perche": "legame debole con l'inglese"
+    },
+    {
+     "numero": 17,
+     "prima": "l'opera",
+     "dopo": "le operette di Gilbert e Sullivan",
+     "perche": "l'opera è soprattutto italiana"
+    },
+    {
+     "numero": 18,
+     "prima": "la musica da camera",
+     "dopo": "i madrigali inglesi",
+     "perche": "legame debole con l'inglese"
+    },
+    {
+     "numero": 23,
+     "prima": "il lied",
+     "dopo": "i canti dei marinai",
+     "perche": "il lied è tedesco"
+    },
+    {
+     "numero": 27,
+     "prima": "il canto gregoriano",
+     "dopo": "gli inni",
+     "perche": "il gregoriano è in latino"
+    },
+    {
+     "numero": 29,
+     "prima": "i testi delle canzoni",
+     "dopo": "Tin Pan Alley",
+     "perche": "non era un genere, e i testi moderni sono coperti da diritti"
+    },
+    {
+     "numero": 30,
+     "prima": "le interviste ai musicisti",
+     "dopo": "il music hall",
+     "perche": "non era un genere"
+    }
+   ],
+   "curiosita": {
+    "il grime": "Il grime nasce a Londra est nei primi anni Duemila, e si canta in inglese di Londra, non americano.",
+    "le ballate tradizionali inglesi": "Francis James Child raccolse nell'Ottocento 305 ballate inglesi e scozzesi: i testi sono in pubblico dominio.",
+    "i madrigali inglesi": "Il madrigale arriva dall'Italia: nel 1588 a Londra esce Musica Transalpina, madrigali italiani con le parole tradotte in inglese.",
+    "i canti dei marinai": "Le sea shanties davano il ritmo al lavoro: chi tirava la cima lo faceva sulla sillaba forte.",
+    "Tin Pan Alley": "Una via di New York piena di editori musicali: il nome viene, si racconta, dal rumore di tanti pianoforti suonati insieme. Le canzoni prima del 1929 sono in pubblico dominio negli Stati Uniti."
+   }
+  },
+  {
+   "lingua": "SI",
+   "nome": "lingua dei segni italiana",
+   "oggetto": "artigianato tipico",
+   "motivo": "Qui l'associazione è meno ovvia e più interessante: il fare con le mani diventa un ponte concettuale. Si studiano il gesto, la manualità, la trasmissione delle tecniche e il rapporto fra gesto, oggetto e significato.",
+   "voci": [
+    "l'intaglio della pietra dura",
+    "la ceramica",
+    "la maiolica",
+    "la smaltatura",
+    "il vetro",
+    "il ricamo",
+    "il merletto",
+    "la tessitura a telaio",
+    "l'intreccio",
+    "la canna",
+    "l'ebanisteria",
+    "l'intaglio del legno",
+    "il tornio",
+    "il cuoio",
+    "la correggia",
+    "la calzoleria",
+    "il restauro",
+    "l'incisione",
+    "la liuteria",
+    "la fabbricazione della carta",
+    "l'occhialeria",
+    "il ferro battuto",
+    "il mosaico",
+    "i maestri d'ascia",
+    "la scagliola",
+    "la doratura",
+    "la filigrana",
+    "la cartapesta",
+    "l'oreficeria",
+    "la stampa a caratteri mobili"
+   ],
+   "cambiate_08_10_2026": [
+    {
+     "numero": 16,
+     "prima": "la calzolaio",
+     "dopo": "la calzoleria",
+     "perche": "refuso"
+    },
+    {
+     "numero": 20,
+     "prima": "il clarinetto",
+     "dopo": "la fabbricazione della carta",
+     "perche": "uno strumento, non un mestiere"
+    },
+    {
+     "numero": 21,
+     "prima": "gli occhiali",
+     "dopo": "l'occhialeria",
+     "perche": "il mestiere, non l'oggetto"
+    },
+    {
+     "numero": 22,
+     "prima": "la pasta",
+     "dopo": "il ferro battuto",
+     "perche": "si sovrapponeva ai cibi dell'italiano"
+    },
+    {
+     "numero": 23,
+     "prima": "il ricamo a punto",
+     "dopo": "il mosaico",
+     "perche": "si sovrapponeva al ricamo"
+    },
+    {
+     "numero": 24,
+     "prima": "la lavorazione del legno d'albero",
+     "dopo": "i maestri d'ascia",
+     "perche": "si sovrapponeva all'intaglio e all'ebanisteria"
+    },
+    {
+     "numero": 28,
+     "prima": "i lavori d'agro",
+     "dopo": "la cartapesta",
+     "perche": "non era chiaro che cosa indicasse"
+    },
+    {
+     "numero": 25,
+     "prima": "la vernice",
+     "dopo": "la scagliola",
+     "perche": "troppo generica"
+    },
+    {
+     "numero": 29,
+     "prima": "il gesto e l'oggetto",
+     "dopo": "l'oreficeria",
+     "perche": "era un tema, non un mestiere"
+    },
+    {
+     "numero": 30,
+     "prima": "la trasmissione della tecnica",
+     "dopo": "la stampa a caratteri mobili",
+     "perche": "era un tema, non un mestiere"
+    }
+   ],
+   "curiosita": {
+    "la fabbricazione della carta": "Fabriano fabbrica carta dal Duecento, e lì si inventò la filigrana nella carta.",
+    "l'occhialeria": "Gli occhiali si fabbricano nel Cadore, in provincia di Belluno, dall'Ottocento.",
+    "i maestri d'ascia": "Sono i costruttori delle barche di legno: il nome viene dall'ascia, l'attrezzo con cui sagomavano il fasciame.",
+    "la cartapesta": "A Lecce la cartapesta fa statue di santi da tre secoli.",
+    "la scagliola": "Gesso e colla che imitano il marmo intarsiato: il centro è Carpi, in Emilia, dal Seicento."
+   }
+  },
+  {
+   "lingua": "EL",
+   "nome": "greco",
+   "oggetto": "bevande",
+   "motivo": "Soprattutto attraverso vino, simposio, olivo e cultura conviviale: permette di entrare nella cultura greca dal lessico, dalla ritualità, dalla mitologia e dalla vita quotidiana. Bere è un atto linguistico prima che un atto fisico.",
+   "voci": [
+    "il vino",
+    "la produzione del vino",
+    "l'oliva",
+    "l'olio d'oliva",
+    "l'acqua",
+    "il simposio",
+    "il banchetto",
+    "la coppa",
+    "le libagioni",
+    "il vino di Maronea",
+    "i vini di Creta",
+    "il kykeon",
+    "il latte",
+    "l'idromele",
+    "l'ossimele",
+    "le coppe dipinte",
+    "gli inventari dei simposi",
+    "i nomi dei vasi",
+    "il vino di Taso",
+    "la fontana",
+    "l'ospitalità",
+    "il brindisi",
+    "i precetti di temperanza",
+    "i vini del Peloponneso",
+    "i vini delle isole",
+    "il mosto",
+    "la conservazione",
+    "il trasporto nelle anfore",
+    "il cratere",
+    "il cottabo"
+   ],
+   "cambiate_08_10_2026": [
+    {
+     "numero": 14,
+     "prima": "il caffè",
+     "dopo": "l'idromele",
+     "perche": "anacronistico"
+    },
+    {
+     "numero": 15,
+     "prima": "il tè",
+     "dopo": "l'ossimele",
+     "perche": "anacronistico"
+    },
+    {
+     "numero": 13,
+     "prima": "la birra",
+     "dopo": "il latte",
+     "perche": "da precisare, e il latte ha una storia greca più forte"
+    },
+    {
+     "numero": 11,
+     "prima": "vini di Creta",
+     "dopo": "i vini di Creta",
+     "perche": "mancava l'articolo"
+    },
+    {
+     "numero": 19,
+     "prima": "i vini dirottati",
+     "dopo": "il vino di Taso",
+     "perche": "non era chiaro che cosa indicasse"
+    },
+    {
+     "numero": 30,
+     "prima": "il brindisi degli atleti",
+     "dopo": "il cottabo",
+     "perche": "si sovrapponeva al brindisi"
+    },
+    {
+     "numero": 28,
+     "prima": "il trasporto delle botti",
+     "dopo": "il trasporto nelle anfore",
+     "perche": "i Greci usavano le anfore, non le botti"
+    },
+    {
+     "numero": 9,
+     "prima": "il consumo rituale",
+     "dopo": "le libagioni",
+     "perche": "generica: il rito preciso è la libagione"
+    },
+    {
+     "numero": 29,
+     "prima": "la tavola",
+     "dopo": "il cratere",
+     "perche": "troppo generica"
+    },
+    {
+     "numero": 20,
+     "prima": "la sete",
+     "dopo": "la fontana",
+     "perche": "generica"
+    }
+   ],
+   "curiosita": {
+    "l'ossimele": "Miele e aceto: Ippocrate lo prescrive ai malati nel trattato sulla dieta nelle malattie acute.",
+    "il latte": "Nel libro IX dell'Odissea il Ciclope beve latte: per questo il vino di Marone lo stordisce.",
+    "il vino di Taso": "Le anfore di Taso portano un bollo con il nome del magistrato dell'anno: si datano come una lettera.",
+    "il cottabo": "Un gioco del simposio: si lanciava l'ultimo sorso di vino della coppa contro un bersaglio, dicendo il nome della persona amata.",
+    "il cratere": "Nel cratere si mescolava il vino con l'acqua: berlo puro era cosa da barbari."
+   }
+  }
+ ],
+ "revisione": "Revisione di Pietro dell'08/10/2026 (B2): tutte le voci su cui non ha scritto niente sono confermate; le voci che il progetto aveva segnalato (refusi, sovrapposizioni, voci fuori tema o anacronistiche) le ha lasciate da risolvere al progetto, e sono cambiate come dice `cambiate_08_10_2026` di ogni lingua. I fatti interessanti verificati sono in `curiosita`. Le voci ferraresi restano campi: i proverbi li raccoglie il progetto da fonti pubblicate."
 }

@@ -1,0 +1,223 @@
+<title>Scelta delle immagini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,500;0,700;1,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#f6f1e7; --carta:#fffcf5; --fg:#2a241c; --tenue:#6f6556; --linea:#ddd2bf;
+  --accento:#8a2f1d; --accento-tenue:#f3e2d9; --ok:#2f6b3a; --ok-tenue:#e1eedf;
+  --no:#8a2f1d; --no-tenue:#f3dfd9; --curio:#2f5a6b; --curio-fondo:#e3eef1; --velo:rgba(30,25,18,.82);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1c1915; --carta:#25211b; --fg:#ece4d6; --tenue:#a99d8a; --linea:#3d362c;
+  --accento:#e08a6c; --accento-tenue:#3f2a22; --ok:#86c58f; --ok-tenue:#22352a;
+  --no:#e08a6c; --no-tenue:#3f2a22; --curio:#8cc3d6; --curio-fondo:#1f2e33; --velo:rgba(0,0,0,.85); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1c1915; --carta:#25211b; --fg:#ece4d6; --tenue:#a99d8a; --linea:#3d362c;
+  --accento:#e08a6c; --accento-tenue:#3f2a22; --ok:#86c58f; --ok-tenue:#22352a;
+  --no:#e08a6c; --no-tenue:#3f2a22; --curio:#8cc3d6; --curio-fondo:#1f2e33; --velo:rgba(0,0,0,.85); color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 "IBM Plex Sans",system-ui,sans-serif}
+.pagina{max-width:980px;margin:0 auto;padding-inline:16px;padding-block:28px 64px}
+h1{font:700 2rem/1.15 Spectral,Georgia,serif;margin:0 0 6px;text-wrap:balance}
+.sopra{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--tenue);margin:0 0 6px}
+.intro{color:var(--tenue);max-width:65ch;margin:0 0 14px}
+.stato{font-size:.8rem;color:var(--tenue);display:flex;gap:8px;align-items:center;margin-bottom:14px}
+.stato .punto{width:8px;height:8px;border-radius:50%;background:var(--tenue);flex:none}
+.stato.ok .punto{background:var(--ok)} .stato.errore .punto{background:var(--no)}
+.barra{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:2;padding-block:8px;border-bottom:1px solid var(--linea);display:flex;flex-direction:column;gap:8px}
+.schede{display:flex;flex-wrap:wrap;gap:6px}
+.scheda{border:1px solid var(--linea);background:var(--carta);color:var(--fg);border-radius:999px;padding:6px 12px;font:inherit;font-size:.85rem;cursor:pointer;display:flex;gap:6px;align-items:baseline}
+.scheda .conto{font-size:.75rem;color:var(--tenue);font-variant-numeric:tabular-nums}
+.scheda[aria-selected="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.scheda[aria-selected="true"] .conto{color:var(--bg);opacity:.75}
+.filtri{display:flex;flex-wrap:wrap;gap:14px;font-size:.85rem;color:var(--tenue)}
+.filtri label{display:flex;gap:6px;align-items:center;cursor:pointer}
+.voci{list-style:none;margin:0;padding:0}
+.anno{font:700 1.05rem Spectral,Georgia,serif;color:var(--accento);padding:20px 0 4px}
+.voce{padding:14px 0;border-bottom:1px solid var(--linea);display:flex;flex-direction:column;gap:8px}
+.capo{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;justify-content:space-between}
+.capo .nome{font:500 1.12rem/1.3 Spectral,Georgia,serif;min-width:0}
+.capo .n{font:500 .8rem "IBM Plex Sans",sans-serif;color:var(--tenue);margin-right:6px;font-variant-numeric:tabular-nums}
+.capo .luogo{display:block;font:400 .78rem "IBM Plex Sans",sans-serif;color:var(--tenue)}
+.esito{font-size:.78rem;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--accento-tenue);color:var(--accento)}
+.esito.fatto{background:var(--ok-tenue);color:var(--ok)}
+.curio{font-size:.82rem;color:var(--curio);background:var(--curio-fondo);padding:6px 10px;border-radius:4px;max-width:75ch}
+.griglia{display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:8px}
+.cand{position:relative;border:2px solid transparent;border-radius:6px;padding:0;background:var(--carta);cursor:pointer;overflow:hidden;font:inherit;color:inherit;text-align:left}
+.cand img,.cand .vuota{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--linea)}
+.cand .vuota{display:grid;place-items:center;font-size:.72rem;color:var(--tenue)}
+.cand .lic{display:block;font-size:.68rem;color:var(--tenue);padding:3px 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cand[aria-pressed="true"]{border-color:var(--ok);box-shadow:0 0 0 2px var(--ok-tenue)}
+.cand[aria-pressed="true"]::after{content:"✓";position:absolute;top:6px;right:6px;width:24px;height:24px;border-radius:50%;background:var(--ok);color:var(--bg);display:grid;place-items:center;font-weight:700;font-size:.85rem}
+.lente{position:absolute;top:6px;left:6px;width:26px;height:26px;border-radius:50%;border:none;background:var(--velo);color:#fff;font-size:.8rem;cursor:pointer;display:grid;place-items:center}
+.azioni{display:flex;gap:8px;flex-wrap:wrap}
+.azioni button{font:inherit;font-size:.8rem;padding:5px 10px;border:1px solid var(--linea);background:var(--carta);color:var(--fg);border-radius:4px;cursor:pointer}
+.azioni button[aria-pressed="true"]{background:var(--no-tenue);border-color:var(--no);color:var(--no);font-weight:600}
+.niente{font-size:.85rem;color:var(--tenue)}
+.vista{position:fixed;inset:0;background:var(--velo);z-index:10;display:flex;align-items:center;justify-content:center;padding:16px}
+.vista figure{margin:0;max-width:min(720px,100%);background:var(--carta);border-radius:8px;overflow:hidden;color:var(--fg)}
+.vista img{display:block;width:100%;max-height:70vh;object-fit:contain;background:#000}
+.vista figcaption{padding:10px 14px;font-size:.82rem;display:flex;flex-direction:column;gap:6px}
+.vista .riga{display:flex;gap:8px;flex-wrap:wrap}
+.vista .riga button,.vista .riga a{font:inherit;font-size:.82rem;padding:6px 12px;border-radius:4px;border:1px solid var(--linea);background:var(--carta);color:var(--fg);cursor:pointer;text-decoration:none}
+.vista .riga .scegli{background:var(--ok);color:var(--bg);border-color:var(--ok);font-weight:600}
+</style>
+
+<div class="pagina">
+  <p class="sopra">I cinque duchi · scelta B4</p>
+  <h1>Un'immagine per ogni voce</h1>
+  <p class="intro">Per ogni voce tocca l'immagine che la rappresenta meglio: la scelta si salva da sola, e un secondo tocco la toglie. La lente ingrandisce e mostra autore e licenza. Se nessuna va bene, premi <b>Nessuna va bene</b>: la voce verrà disegnata. Il ferrarese non c'è, perché le sue voci sono campi di raccolta e non oggetti.</p>
+  <div class="stato" id="stato"><span class="punto"></span><span id="stato-testo">Collegamento all'archivio…</span></div>
+  <div class="barra">
+    <div class="schede" role="tablist" id="schede"></div>
+    <div class="filtri">
+      <label><input type="checkbox" id="f-da"> solo le voci ancora da scegliere</label>
+    </div>
+  </div>
+  <ol class="voci" id="voci"></ol>
+</div>
+<div class="vista" id="vista" hidden></div>
+
+<script>
+const VOCI = /*DATI*/;
+const LINGUE = [["IT","italiano"],["LA","latino"],["EN","inglese"],["SI","lingua dei segni"],["EL","greco"]];
+const ANNI = ["", "Ferrara", "la penisola", "l'Europa", "il mondo", "il mondo contemporaneo"];
+const scelte = {};             // chiave -> {file|null, nessuna}
+const miniature = {};          // lingua -> {file: dataURI}
+const caricamento = {};
+let db = null, attiva = "IT", soloDa = false;
+try { const h = location.hash.slice(1); if (LINGUE.some(l => l[0] === h)) attiva = h; } catch (e) {}
+
+function stato(t, tipo) { const s = document.getElementById("stato"); s.className = "stato " + (tipo || ""); document.getElementById("stato-testo").textContent = t; }
+const fatta = k => scelte[k] && (scelte[k].file || scelte[k].nessuna);
+
+async function carica(lingua) {
+  if (miniature[lingua] || caricamento[lingua]) return caricamento[lingua];
+  caricamento[lingua] = fetch("miniature/" + lingua + ".json").then(r => r.ok ? r.json() : {}).catch(() => ({}))
+    .then(m => { miniature[lingua] = m; if (lingua === attiva) disegnaVoci(); });
+  return caricamento[lingua];
+}
+
+function disegnaSchede() {
+  const el = document.getElementById("schede");
+  el.replaceChildren(...LINGUE.map(([sig, nome]) => {
+    const tutte = VOCI.filter(v => v.lingua === sig);
+    const b = document.createElement("button");
+    b.className = "scheda"; b.setAttribute("role", "tab"); b.setAttribute("aria-selected", sig === attiva);
+    const s1 = document.createElement("span"); s1.textContent = nome;
+    const s2 = document.createElement("span"); s2.className = "conto"; s2.textContent = tutte.filter(v => fatta(v.k)).length + "/" + tutte.length;
+    b.append(s1, s2);
+    b.onclick = () => { attiva = sig; try { history.replaceState(null, "", "#" + sig); } catch (e) {} disegna(); window.scrollTo({ top: 0 }); };
+    return b;
+  }));
+}
+
+function salva(k, v, dati) {
+  scelte[k] = dati;
+  disegnaSchede(); aggiornaVoce(k);
+  if (!db) return;
+  stato("Salvataggio…");
+  db.collection("scelte").doc(k).set({ ...dati, lingua: v.lingua, voce: v.voce, aggiornato: new Date().toISOString() })
+    .then(() => stato("Scelte salvate nell'archivio", "ok"))
+    .catch(e => stato(e && e.code === "permission_denied" ? "Non hai il permesso di salvare: le scelte restano solo in questa vista" : "Salvataggio non riuscito: riprova fra poco", "errore"));
+}
+
+function scegli(v, file) {
+  const prima = scelte[v.k] || {};
+  salva(v.k, v, prima.file === file ? { file: null, nessuna: false } : { file, nessuna: false });
+}
+
+function apriVista(v, c) {
+  const vista = document.getElementById("vista");
+  const src = (miniature[v.lingua] || {})[c.file];
+  vista.innerHTML = `<figure><img alt=""><figcaption><b></b><span class="meta"></span><div class="riga"><button class="scegli">Scegli questa</button><a target="_blank" rel="noopener">Apri su Commons</a><button class="chiudi">Chiudi</button></div></figcaption></figure>`;
+  const img = vista.querySelector("img"); if (src) img.src = src; img.alt = c.file;
+  vista.querySelector("b").textContent = v.voce + " · " + c.file.replace(/^File:/, "");
+  vista.querySelector(".meta").textContent = [c.autore, c.licenza, c.data].filter(Boolean).join(" · ");
+  vista.querySelector("a").href = c.url;
+  vista.querySelector(".scegli").textContent = (scelte[v.k]?.file === c.file) ? "Togli la scelta" : "Scegli questa";
+  vista.querySelector(".scegli").onclick = () => { scegli(v, c.file); chiudi(); };
+  const chiudi = () => { vista.hidden = true; vista.replaceChildren(); };
+  vista.querySelector(".chiudi").onclick = chiudi;
+  vista.onclick = e => { if (e.target === vista) chiudi(); };
+  vista.hidden = false;
+  vista.querySelector(".chiudi").focus();
+}
+document.addEventListener("keydown", e => { if (e.key === "Escape") { const v = document.getElementById("vista"); v.hidden = true; v.replaceChildren(); } });
+
+function voceEl(v) {
+  const li = document.createElement("li"); li.className = "voce"; li.dataset.k = v.k;
+  const capo = document.createElement("div"); capo.className = "capo";
+  const nome = document.createElement("div"); nome.className = "nome";
+  const n = document.createElement("span"); n.className = "n"; n.textContent = v.anno ? v.anno + "-" + v.numero : v.numero;
+  nome.append(n, v.voce);
+  if (v.luogo) { const l = document.createElement("span"); l.className = "luogo"; l.textContent = v.luogo; nome.append(l); }
+  const es = document.createElement("span"); es.className = "esito";
+  capo.append(nome, es); li.append(capo);
+  if (v.curiosita) { const c = document.createElement("div"); c.className = "curio"; c.textContent = v.curiosita; li.append(c); }
+  if (!v.candidati.length) {
+    const p = document.createElement("p"); p.className = "niente";
+    p.textContent = "Nessuna immagine libera trovata: la voce verrà disegnata, a meno che tu non ne conosca una.";
+    li.append(p);
+  } else {
+    const g = document.createElement("div"); g.className = "griglia";
+    for (const c of v.candidati) {
+      const b = document.createElement("button"); b.className = "cand"; b.dataset.file = c.file;
+      const src = (miniature[v.lingua] || {})[c.file];
+      if (src) { const img = document.createElement("img"); img.src = src; img.alt = c.file.replace(/^File:/, ""); img.loading = "lazy"; b.append(img); }
+      else { const d = document.createElement("span"); d.className = "vuota"; d.textContent = miniature[v.lingua] ? "miniatura assente" : "carico…"; b.append(d); }
+      const lic = document.createElement("span"); lic.className = "lic"; lic.textContent = c.licenza; b.append(lic);
+      const lente = document.createElement("span"); lente.className = "lente"; lente.setAttribute("role", "button"); lente.setAttribute("aria-label", "Ingrandisci"); lente.textContent = "⤢";
+      lente.onclick = e => { e.stopPropagation(); apriVista(v, c); };
+      b.append(lente);
+      b.onclick = () => scegli(v, c.file);
+      g.append(b);
+    }
+    li.append(g);
+  }
+  const az = document.createElement("div"); az.className = "azioni";
+  const nn = document.createElement("button"); nn.className = "nessuna"; nn.textContent = "Nessuna va bene";
+  nn.onclick = () => { const p = scelte[v.k] || {}; salva(v.k, v, p.nessuna ? { file: null, nessuna: false } : { file: null, nessuna: true }); };
+  az.append(nn); li.append(az);
+  aggiornaVoce(v.k, li);
+  return li;
+}
+
+function aggiornaVoce(k, li) {
+  li = li || document.querySelector(`.voce[data-k="${k}"]`);
+  if (!li) return;
+  const s = scelte[k] || {};
+  li.querySelectorAll(".cand").forEach(b => b.setAttribute("aria-pressed", s.file === b.dataset.file));
+  const nn = li.querySelector(".nessuna"); if (nn) nn.setAttribute("aria-pressed", !!s.nessuna);
+  const es = li.querySelector(".esito");
+  es.className = "esito" + (fatta(k) ? " fatto" : "");
+  es.textContent = s.file ? "scelta fatta" : s.nessuna ? "da disegnare" : "da scegliere";
+}
+
+function disegnaVoci() {
+  const ol = document.getElementById("voci");
+  const vs = VOCI.filter(v => v.lingua === attiva && (!soloDa || !fatta(v.k)));
+  const nodi = []; let anno = null;
+  for (const v of vs) {
+    if (v.anno && v.anno !== anno) { anno = v.anno; const h = document.createElement("li"); h.className = "anno"; h.textContent = "Anno " + anno + " · " + ANNI[anno]; nodi.push(h); }
+    nodi.push(voceEl(v));
+  }
+  if (!vs.length) { const p = document.createElement("li"); p.className = "niente"; p.textContent = "Tutte le voci di questa lingua hanno una scelta."; nodi.push(p); }
+  ol.replaceChildren(...nodi);
+}
+
+function disegna() { disegnaSchede(); disegnaVoci(); carica(attiva); }
+document.getElementById("f-da").onchange = e => { soloDa = e.target.checked; disegnaVoci(); };
+disegna();
+
+(async () => {
+  try { db = await window.claude?.use("db"); } catch (e) { db = null; }
+  if (!db) { stato("L'archivio non è raggiungibile da questa vista: le scelte restano solo qui e si perdono chiudendo la pagina", "errore"); return; }
+  stato("Archivio collegato", "ok");
+  db.collection("scelte").onSnapshot(snap => {
+    for (const d of snap.docs) { const x = d.data() || {}; scelte[d.id] = { file: x.file || null, nessuna: !!x.nessuna }; }
+    disegnaSchede();
+    document.querySelectorAll(".voce").forEach(li => aggiornaVoce(li.dataset.k, li));
+  }, () => stato("L'archivio si è scollegato: ricarica la pagina", "errore"));
+})();
+</script>

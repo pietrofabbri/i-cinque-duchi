@@ -1,0 +1,78 @@
+{
+ "versione": 1,
+ "data": "2026-10-08",
+ "regola": "Decisione di Pietro dell'08/10/2026 (modello-di-livello.md §5): una persona citata e non ancora incontrata diventa una scheda interattiva con un'immagine, meglio se si incontra di nuovo dopo; i due slot facoltativi del livello di informatica servono anche a questo.",
+ "come_si_trova": "nomi di persona nelle curiosità di cibi_per_tappa.json e associazioni.json, confrontati con i file dei personaggi degli anni e dei facoltativi. Ariosto, Savonarola, Livio e i personaggi dell'anno 5 citati sono già fra i personaggi.",
+ "personaggi": [
+  {
+   "nome": "Cristoforo da Messisbugo",
+   "chi": "scalco (maestro di banchetti) alla corte estense, autore dei Banchetti, composizioni di vivande (1549)",
+   "citato_in": [
+    "IT 1-8",
+    "IT 1-10",
+    "IT 1-16",
+    "IT 1-28",
+    "IT 2-29",
+    "IT 3-10",
+    "IT 3-11"
+   ],
+   "gia_incontrato": false,
+   "proposta": "Si incontra la prima volta come facoltativo di informatica alla tappa 1-10 (Palazzo di corte), con una scheda interattiva e il frontespizio dei Banchetti come immagine; poi torna nelle altre tappe come persona già nota."
+  },
+  {
+   "nome": "Benvenuta (Nuta) Ascoli",
+   "chi": "ebrea ferrarese, detta Nuta, che nel 1942 vendeva nel suo negozio il caviale ferrarese",
+   "citato_in": [
+    "IT 1-28"
+   ],
+   "gia_incontrato": false,
+   "proposta": "Scheda interattiva alla tappa 1-28 (MEIS); immagine da cercare."
+  },
+  {
+   "nome": "Plinio il Vecchio",
+   "chi": "naturalista romano, autore della Naturalis historia",
+   "citato_in": [
+    "LA gli starnuti"
+   ],
+   "gia_incontrato": false,
+   "proposta": "Scheda interattiva; candidato facoltativo dove il latino incontra la scienza."
+  },
+  {
+   "nome": "Petronio",
+   "chi": "autore del Satyricon",
+   "citato_in": [
+    "LA il piede destro"
+   ],
+   "gia_incontrato": false,
+   "proposta": "Scheda interattiva."
+  },
+  {
+   "nome": "Ippocrate",
+   "chi": "medico greco",
+   "citato_in": [
+    "EL l'ossimele"
+   ],
+   "gia_incontrato": false,
+   "proposta": "Scheda interattiva; da incontrare di nuovo dove il gioco parla di medicina (anno 5, facoltativi di biologia)."
+  },
+  {
+   "nome": "Francis James Child",
+   "chi": "filologo americano che raccolse le ballate inglesi e scozzesi",
+   "citato_in": [
+    "EN le ballate tradizionali inglesi"
+   ],
+   "gia_incontrato": false,
+   "proposta": "Scheda interattiva."
+  },
+  {
+   "nome": "il Ciclope (Polifemo) e Ulisse",
+   "chi": "personaggi dell'Odissea, libro IX",
+   "citato_in": [
+    "EL il latte",
+    "EL il vino di Maronea"
+   ],
+   "gia_incontrato": false,
+   "proposta": "Scheda interattiva con un vaso dipinto come immagine."
+  }
+ ]
+}

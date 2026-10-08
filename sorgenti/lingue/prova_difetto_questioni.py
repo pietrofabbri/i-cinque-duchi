@@ -234,7 +234,7 @@ def main():
 
     # 7. il numero in lettere del §2, che è un titolo e non un conteggio libero
     difetto("il §2 si intitola «cinque bloccanti» con una scheda aperta",
-            lambda t, r: (sostituisci(t, "## 2. Una bloccante",
+            lambda t, r: (sostituisci(t, "## 2. Nessuna bloccante aperta",
                                       "## 2. Le cinque bloccanti"), r),
             "cinque bloccanti")
 
@@ -252,9 +252,9 @@ def main():
     #    senza numero, e la frase che resta e' quella del §1.
     difetto("l'audit scrive «nessuna delle ventotto chiuse» in §1",
             lambda t, r: (sostituisci(t,
-                                      porzione(t, r"Una sola delle \w+ chiuse è bloccante",
+                                      porzione(t, r"Quattro delle \w+ chiuse sono bloccanti",
                                               "la frase sulle chiuse del §1"),
-                                      "Una sola delle ventotto chiuse è bloccante"), r),
+                                      "Quattro delle ventotto chiuse sono bloccanti"), r),
             "ventotto chiuse")
 
     # 10. i numeri che il README copia, che è il buco vero di questa prova.

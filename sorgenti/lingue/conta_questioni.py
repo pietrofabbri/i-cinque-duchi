@@ -163,6 +163,10 @@ def parola_numero(s):
     # «una bloccante», «una sola»: il femminile di «uno», dal 07/10/2026
     if s == "una":
         s = "uno"
+    # «nessuna bloccante aperta»: lo zero, dall'08/10/2026 quando B2 e' stata
+    # l'ultima bloccante chiusa
+    if s in ("nessuna", "nessuno", "zero"):
+        return 0
     return PAROLE.get(s)
 
 
@@ -345,7 +349,8 @@ def confronta_audit(testo, per_documento, aperte, chiuse, problemi):
     # Due forme: «nessuna delle N chiuse» e, dal 07/10/2026 quando B1 e' stata
     # la prima bloccante chiusa, «una sola delle N chiuse». Il numero in lettere
     # si confronta in tutte e due.
-    for m in re.finditer(r"(?:nessuna|una sola) delle (\w+) chiuse", senza_registro(testo), re.I):
+    # Dall'08/10/2026 anche «quattro delle N chiuse sono bloccanti».
+    for m in re.finditer(r"(?:nessuna|una sola|due|tre|quattro|cinque) delle (\w+) chiuse", senza_registro(testo), re.I):
         n = parola_numero(m.group(1))
         if n is not None and n != chiuse:
             problemi.append("l'audit scrive «nessuna delle %s chiuse», "

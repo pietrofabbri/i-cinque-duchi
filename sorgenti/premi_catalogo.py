@@ -39,6 +39,7 @@ AMBIENTI = os.path.join(RADICE, "dati", "ambienti_livelli.json")
 USCITA = os.path.join(RADICE, "dati", "premi.json")
 LINGUE_MD = os.path.join(RADICE, "docs", "videogioco-5-duchi-lingue.md")
 ASSOCIAZIONI = os.path.join(RADICE, "dati", "lingue", "associazioni.json")
+CIBI_PER_TAPPA = os.path.join(RADICE, "dati", "lingue", "cibi_per_tappa.json")
 IMMAGINI_OGGETTI = os.path.join(RADICE, "dati", "lingue",
                                 "immagini_oggetti.json")
 
@@ -181,32 +182,50 @@ def argomenti_del_livello(documento, oggetto):
 
 
 def elementi():
-    """Le trenta voci per lingua, e la verifica che i due file che le
-    dichiarano dicano la stessa cosa."""
+    """Le voci per lingua, e la verifica che i due file che le dichiarano
+    dicano la stessa cosa.
+
+    **Dall'08/10/2026 l'italiano ha una voce per tappa** (un piatto tipico del
+    luogo, `cibi_per_tappa.json`): le sue voci sono indicizzate per
+    `(anno, numero)`. Le altre lingue hanno trenta voci, e la voce n vale per
+    il livello n di tutti e cinque gli anni. `voci` e' quindi sempre un
+    dizionario `(anno, numero) -> voce`.
+    """
     with open(ASSOCIAZIONI, encoding="utf-8") as f:
         proposte = json.load(f)["associazioni"]
+    with open(CIBI_PER_TAPPA, encoding="utf-8") as f:
+        cibi = json.load(f)["tappe"]
     with open(IMMAGINI_OGGETTI, encoding="utf-8") as f:
         ricercate = json.load(f)["risultati"]
     dalle_immagini = {}
     for v in ricercate:
-        dalle_immagini[(SIGLA_DALLA_PARTE.get(v["lingua"], v["lingua"]),
-                        int(v["numero"]))] = v["voce"]
+        sigla = SIGLA_DALLA_PARTE.get(v["lingua"], v["lingua"])
+        anni = [int(v["anno"])] if "anno" in v else [1, 2, 3, 4, 5]
+        for anno in anni:
+            dalle_immagini[(sigla, anno, int(v["numero"]))] = v["voce"]
     voci = {}
     for a in proposte:
         sigla = SIGLA_DALLA_PARTE.get(a["lingua"], a["lingua"])
-        voci[sigla] = {"oggetto": a["oggetto"], "voci": list(a["voci"])}
-        for numero, voce in enumerate(a["voci"], 1):
-            altra = dalle_immagini.get((sigla, numero))
-            if altra != voce:
-                raise SystemExit("la voce %s n.%d e' %r in associazioni.json "
-                                 "e %r in immagini_oggetti.json: i due file "
-                                 "dicono cose diverse e non si sa quale e' "
-                                 "quella giusta" % (sigla, numero, voce, altra))
+        if sigla == "IT":
+            mappa = {(t["anno"], t["numero"]): t["piatto"] for t in cibi}
+            if len(mappa) != 150:
+                raise SystemExit("cibi_per_tappa.json ha %d tappe e non 150" % len(mappa))
+        else:
             if len(a["voci"]) != 30:
                 raise SystemExit("la lingua %s ha %d voci e non 30"
                                  % (sigla, len(a["voci"])))
-    if len(dalle_immagini) != 180:
-        raise SystemExit("immagini_oggetti.json ha %d voci e non 180"
+            mappa = {(anno, n): voce for n, voce in enumerate(a["voci"], 1)
+                     for anno in range(1, 6)}
+        voci[sigla] = {"oggetto": a["oggetto"], "voci": mappa}
+        for (anno, numero), voce in mappa.items():
+            altra = dalle_immagini.get((sigla, anno, numero))
+            if altra != voce:
+                raise SystemExit("la voce %s %d-%d e' %r nelle voci e %r in "
+                                 "immagini_oggetti.json: i due file dicono "
+                                 "cose diverse e non si sa quale e' quella "
+                                 "giusta" % (sigla, anno, numero, voce, altra))
+    if len(dalle_immagini) != 900:
+        raise SystemExit("immagini_oggetti.json copre %d livelli e non 900"
                          % len(dalle_immagini))
     return voci
 
@@ -291,12 +310,17 @@ def principale():
             "elemento_interattivo": (
                 None if p["lingua"] == "INFO" else
                 elementi_per_lingua[p["lingua"]]["voci"]
-                [int(p["livello"].split("-")[1]) - 1]),
+                [tuple(int(x) for x in p["livello"].split("-"))]),
             "argomento_del_livello": argomenti.get(
                 (p["lingua"], int(p["livello"].split("-")[0]),
                  int(p["livello"].split("-")[1]))),
             "elemento_da": (
                 None if p["lingua"] == "INFO" else
+                ("cibi_per_tappa.json, la tappa %s: un piatto tipico del "
+                 "luogo; l'argomento del livello e' la cella %s della tabella "
+                 "di lingue.md 6.x, la sezione trovata per l'oggetto di "
+                 "interazione" % (p["livello"], p["livello"]))
+                if p["lingua"] == "IT" else
                 "associazioni.json, voce %d delle trenta di %s; l'argomento "
                 "del livello e' la cella %s della tabella di lingue.md 6.x, "
                 "la sezione trovata per l'oggetto di interazione"
@@ -337,8 +361,8 @@ def principale():
     per_voce = {}
     for v in voci:
         if v["elemento_interattivo"]:
-            per_voce[(v["lingua"], v["elemento_numero"])] = \
-                per_voce.get((v["lingua"], v["elemento_numero"]), 0) + 1
+            k = (v["lingua"], v["elemento_interattivo"])
+            per_voce[k] = per_voce.get(k, 0) + 1
     usi = sorted(set(per_voce.values()))
 
     doc = {
@@ -363,15 +387,18 @@ def principale():
         "primaria": PRIMARIA,
         "da_escludere": DA_ESCLUDERE,
         "elementi": dict(
-            (sigla, {"oggetto": blocco["oggetto"], "voci": len(blocco["voci"]),
-                     "livelli": 5 * len(blocco["voci"])})
+            (sigla, {"oggetto": blocco["oggetto"],
+                     "voci": len(set(blocco["voci"].values())),
+                     "livelli": len(blocco["voci"])})
             for sigla, blocco in sorted(elementi_per_lingua.items())),
         "elementi_riepilogo": {
-            "voci": sum(len(b["voci"]) for b in elementi_per_lingua.values()),
-            "livelli_con_elemento": len(per_voce),
+            "voci": sum(len(set(b["voci"].values()))
+                        for b in elementi_per_lingua.values()),
+            "livelli_con_elemento": sum(per_voce.values()),
             "usi_per_voce": usi,
-            "da": "associazioni.json, confrontato voce per voce con "
-                  "immagini_oggetti.json: i due file devono dire la stessa cosa",
+            "da": "associazioni.json (cinque lingue, trenta voci) e "
+                  "cibi_per_tappa.json (italiano, una voce per tappa), "
+                  "confrontati voce per voce con immagini_oggetti.json",
             "informatica": "nessuna voce: i centocinquanta livelli informatici "
                            "non hanno un elemento fra le trenta, e non se lo "
                            "prendono in prestito",

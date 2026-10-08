@@ -1,11 +1,11 @@
 ---
 titolo: Videogioco "I cinque duchi" — audit delle questioni aperte: la lista operativa
 tipo: audit
-versione: 0.33
-data: 2026-10-07
+versione: 0.34
+data: 2026-10-08
 autore: Pietro Fabbri (con Claude)
 fonte: lettura di tutti i documenti di progetto che portano una sezione «Questioni aperte» (sedici), verificata da sorgenti/lingue/conta_questioni.py, che confronta anche i numeri che il README copia da qui
-documenti collegati: videogioco-5-duchi-lingue.md (v0.7), videogioco-5-duchi-lingue-immagini.md (v0.9), videogioco-5-duchi-percorsi.md (v0.7), videogioco-5-duchi-fonti-visive.md (v0.21), videogioco-5-duchi-furioso.md (v0.7), videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-mappe.md (v1.6), videogioco-5-duchi-anno5-mondo.md (v0.8), videogioco-5-duchi-percorsi.md (v0.7), videogioco-5-duchi-anno4-mondo.md (v0.7), videogioco-5-duchi-anno3-europa.md (v0.6), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.4), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-meccaniche.md (v0.7), AGENTS.md
+documenti collegati: videogioco-5-duchi-lingue.md (v0.8), videogioco-5-duchi-lingue-immagini.md (v0.10), videogioco-5-duchi-percorsi.md (v0.7), videogioco-5-duchi-fonti-visive.md (v0.21), videogioco-5-duchi-furioso.md (v0.7), videogioco-5-duchi-luoghi.md (v0.7), videogioco-5-duchi-mappe.md (v1.6), videogioco-5-duchi-anno5-mondo.md (v0.8), videogioco-5-duchi-percorsi.md (v0.7), videogioco-5-duchi-anno4-mondo.md (v0.7), videogioco-5-duchi-anno3-europa.md (v0.6), videogioco-5-duchi-anno2-penisola.md (v0.3), videogioco-5-duchi-anno1-ferrara.md (v0.3), videogioco-5-duchi-curricolo.md (v0.4), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-meccaniche.md (v0.7), AGENTS.md
 ---
 
 # Audit delle questioni aperte: la lista
@@ -24,9 +24,9 @@ Il documento è verificato da `sorgenti/lingue/conta_questioni.py`, che confront
 |---|---|
 | Documenti con una sezione «Questioni aperte» | **17** |
 | Voci enumerate | **128** |
-| **Chiuse** | **60** |
-| **Aperte** | **68** |
-| Di cui bloccanti | una |
+| **Chiuse** | **62** |
+| **Aperte** | **66** |
+| Di cui bloccanti | nessuna |
 | Di cui importanti (cambiano il gioco) | due |
 | Di cui minori (si possono rimandare) | le altre |
 
@@ -34,12 +34,12 @@ Il documento è verificato da `sorgenti/lingue/conta_questioni.py`, che confront
 
 **Una voce non è sempre una domanda.** In `lingue.md` Q3 ci sono due sotto-voci dentro una sola domanda. Le **128 voci non sono 128 domande**.
 
-**Una sola delle sessanta chiuse è bloccante**: **B1**, chiusa il 07/10/2026 con la decisione di Pietro sui sette livelli per tappa. Delle bloccanti di un tempo, altre due non sono mai state domande: erano lavori, e sono stati fatti — i novanta pin il 02/10/2026, la tavolozza, le sagome, il fondo di Ferrara e i colori delle carte il 03/10/2026 (§7). Le decisioni prese hanno tolto lavoro, non lo hanno aggiunto.
+**Quattro delle sessantadue chiuse sono bloccanti**: **B1**, **B3** e **B4**, chiuse da Pietro il 07/10/2026, e **B2**, chiusa con la sua revisione delle voci l'08/10/2026. Delle bloccanti di un tempo, altre due non sono mai state domande: erano lavori, e sono stati fatti — i novanta pin il 02/10/2026, la tavolozza, le sagome, il fondo di Ferrara e i colori delle carte il 03/10/2026 (§7). Le decisioni prese hanno tolto lavoro, non lo hanno aggiunto.
 
 
-## 2. Una bloccante
+## 2. Nessuna bloccante aperta
 
-È l'unica che ferma qualcosa: le tappe dell'oggetto aspettano la revisione delle voci. Ognuna delle bloccanti ha una scheda. **B1, B3 e B4** sono chiuse con decisioni di Pietro, l'ultima il 07/10/2026; **B5** era un lavoro e non una domanda. Tutte sono anche fra le chiuse (§7).
+Non c'è più niente che fermi il lavoro. Ognuna delle bloccanti ha una scheda. **B1, B3 e B4** sono chiuse con decisioni di Pietro del 07/10/2026, **B2** con la sua revisione dell'08/10/2026; **B5** era un lavoro e non una domanda. Tutte sono anche fra le chiuse (§7).
 
 ---
 
@@ -49,11 +49,9 @@ Il documento è verificato da `sorgenti/lingue/conta_questioni.py`, che confront
 
 ---
 
-### B2 · Le trenta voci di ogni oggetto sono confermate?
+### B2 · Le trenta voci di ogni oggetto sono confermate? — **chiusa l'08/10/2026**
 
-`lingue.md` §7 Q2 e `lingue-immagini.md` §6.2 Q2 · **pro**: le voci esistono e sono lavorate; confermarle sblocca 1120 candidati già cercati. **contro**: per il ferrarese non sono un elenco ma **campi da rilevare**, e la fonte non è stabilita (chi raccoglie, con che metodo, con quale consenso); un proverbo scritto a tavolino è un proverbo italiano in maschera. **valutazione**: va chiusa **prima** di scegliere le immagini, altrimenti si rifà la ricerca; per le altre cinque lingue è una revisione di trenta voci, per il ferrarese è un progetto. **responsabilità**: Pietro, e per il ferrarese **anche chi raccoglierà i proverbi**. **blocca**: B4, e le tappe facoltative degli oggetti.
-
-**Decisioni di Pietro del 07/10/2026, per chiuderla.** Le voci delle cinque lingue le rivede lui su una pagina con le segnalazioni del progetto; **il ferrarese lo raccoglie il progetto** da fonti pubblicate e citate, e lui lo rivede (`lingue.md` Q2). La domanda si chiude con la revisione.
+`lingue.md` §7 Q2 · **Revisione di Pietro**: confermato tutto ciò che non ha commentato; le 38 voci segnalate dal progetto sono state risolte dal progetto (`associazioni.json` v2); l'italiano ha un piatto per tappa (`cibi_per_tappa.json`). La ricerca delle immagini è rifatta per le voci nuove. La scheda com'era è nello storico (`storico.md` §1.22).
 
 ### B3 · La LIS nel gioco: chi insegna, e con quali materiali? — **chiusa il 07/10/2026**
 
@@ -107,7 +105,7 @@ Le **restanti**: minori, o già decise nella sostanza e che aspettano solo l'ese
 
 **Il numero di ogni intestazione è il conto delle voci aperte di quel documento meno le importanti che il §3 elenca già**, e `sorgenti/lingue/conta_questioni.py` lo confronta: il §4 si intitola «Le altre», e un numero che contasse anche le importanti sarebbe doppio. Ogni documento con voci aperte deve comparire in un'intestazione — `itinerari.md` c'era rimasto fuori fino al 04/10/2026, e la sua voce era contata ma non elencata da nessuna parte. Le cifre fuori dalle parentesi sono nomi, non conteggi: il 3 di «Anno 3» non è un numero di voci.
 
-### Sistema linguistico (`lingue.md` 6, `lingue-immagini.md` 2)
+### Sistema linguistico (`lingue.md` 5, `lingue-immagini.md` 1)
 
 | Domanda | Chi decide |
 |---|---|
@@ -219,11 +217,11 @@ Tre questioni compaiono in due documenti, e una è la stessa identica:
 
 ## 6. La sequenza che chiude tutto
 
-Resta una bloccante, e la catena si è accorciata.
+La catena è finita: non resta nessuna bloccante.
 
 **B2** (voci confermate) viene **prima** di **B4** (chi guarda le immagini): cercare le immagini prima di aver confermato le voci è lavoro da rifare. **B1**, che decideva quanti tipi di tappa esistono e quindi se B4 aveva senso, è chiusa il 07/10/2026: ogni tappa ha sei livelli linguistici, e le immagini degli oggetti servono a tutti e sei.
 
-La catena è: **B2 → la scelta delle immagini**. B4 è chiusa (le immagini le guarda Pietro, con uno strumento che il progetto prepara) e B3 anche (la LIS usa materiali online; la comunità si coinvolge dopo l'anno 1).
+La catena era: **B2 → la scelta delle immagini**. B2 è chiusa l'08/10/2026, e la scelta delle immagini si fa con lo strumento del progetto. B4 è chiusa (le immagini le guarda Pietro, con uno strumento che il progetto prepara) e B3 anche (la LIS usa materiali online; la comunità si coinvolge dopo l'anno 1).
 
 > **Mentre si decide, si costruisce quello che si può costruire.** Le tappe informatiche non aspettano le bloccanti: mappa, pin, ambienti, mezzi e luoghi si costruiscono senza le loro risposte, e molte delle chiusure del §7 erano lavori, non domande.
 
@@ -247,6 +245,7 @@ Il conto delle voci chiuse del §1 è un'altra cosa: lo fa `conta_questioni.py` 
 | **I25** · l'espediente narrativo per tornare indietro | 07/10/2026 | Decisione di Pietro: approvate le cinque proposte (paggio, dispaccio, risorsa in tavola, fascicolo, Luna di Astolfo); restano tre verifiche di fatto | `modello-di-livello.md` §9 Q7 |
 | La tappa a mani nude in concreto | 07/10/2026 | Decisione di Pietro: approvata la proposta (sfida obbligatoria dentro la tappa, conta averla fatta, due o tre minuti senza strumenti) | `modello-di-livello.md` §9 Q8 |
 | **B3** · la LIS: chi insegna, con quali materiali | 07/10/2026 | Solo materiali online; la comunità sorda si coinvolge dopo l'anno 1 | `lingue.md` Q4 |
+| **B2** · le voci degli oggetti | 08/10/2026 | Confermato ciò che Pietro non ha commentato; 38 voci segnalate risolte dal progetto; l'italiano ha un piatto per tappa | `lingue.md` Q2, `associazioni.json` v2, `cibi_per_tappa.json` |
 | **B4** · chi guarda le immagini degli oggetti | 07/10/2026 | Pietro, con uno strumento di scelta che il progetto prepara | `lingue-immagini.md` §6.2 Q1 |
 | **I1** · il percorso del duca | 07/10/2026 | Il percorso segue l'ordine delle tappe | `percorsi.md` Q1 |
 | **I5** · il testo autentico | 07/10/2026 | Un testo che esiste fuori dal gioco, con la sua fonte; mai scritto dal progetto; e sempre usato con un'azione, perché l'attenzione è rara | `lingue.md` Q3 |
@@ -280,6 +279,7 @@ Il conto delle voci chiuse del §1 è un'altra cosa: lo fa `conta_questioni.py` 
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 08/10/2026 | 0.34 | B2 chiusa l'08/10/2026: nessuna bloccante aperta; 62 chiuse e 66 aperte; la scheda di B2 va nello storico (§1.22). |
 | 07/10/2026 | 0.33 | **La fase 3 si chiude quasi tutta.** B3 e B4 chiuse; chiuse tredici importanti (I1, I5–I9, I11, I13–I18); I10 e I12 rinviate con il motivo. Resta una bloccante, B2, che si chiude con la revisione delle voci. Conto: 128 voci, 60 chiuse, 68 aperte, 1 bloccante, 2 importanti (decisioni di Pietro del 07/10/2026). |
 | 07/10/2026 | 0.32 | I25 chiusa e la tappa a mani nude decisa (approvazioni di Pietro del 07/10/2026); il modello di livello non ha più domande aperte e il suo blocco esce dal §4. Conto: 128 voci, 46 chiuse, 82 aperte, 3 bloccanti, 15 importanti. |
 | 07/10/2026 | 0.31 | **Decisioni di Pietro della sera del 07/10/2026.** I21 chiusa: prove di corte abolite, restano le tappe a mani nude. Approvata la proposta su processi di pensiero e modalità, con 5 livelli su 30 a coppie o di gruppo per ciascuno dei sette ambiti. I25 ha le cinque proposte di espediente narrativo, da approvare; nel §4 la proposta Q8 sulla tappa a mani nude. Conto: 128 voci, 44 chiuse, 84 aperte, 3 bloccanti, 16 importanti. |
