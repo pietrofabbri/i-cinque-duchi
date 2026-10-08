@@ -99,7 +99,7 @@ def main():
                 print(lingua, n, "/", len(mancano), flush=True)
                 with open(percorso, "w", encoding="utf-8") as f:
                     json.dump(fatte, f)
-            time.sleep(1.0)  # con meno di un secondo upload.wikimedia.org risponde 429
+            time.sleep(2.5)  # piu' in fretta upload.wikimedia.org risponde 429
         with open(percorso, "w", encoding="utf-8") as f:
             json.dump(fatte, f)
         print(lingua, len(fatte), "miniature su", len(titoli),
