@@ -1,0 +1,2168 @@
+{
+ "versione": 1,
+ "data": "2026-10-09",
+ "stato": "provvisorio: scelte rapide di Pietro sullo strumento di scelta (https://claude.ai/artifact/AjCHKi8HWeqPKhiHKRKT8Z), il 09/10/2026. Pietro le considera in parte discutibili: si rivedono livello per livello, quando si costruisce la tappa, e solo allora entrano in attestazione_oggetti.json con etichetta, categoria e motivo.",
+ "chiave": "IT-<anno>-<NN> per l'italiano (una voce per tappa), <LINGUA>-<NN> per le altre",
+ "scelte": [
+  {
+   "chiave": "EL-01",
+   "lingua": "EL",
+   "voce": "il vino",
+   "file": "File:Port wine.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-02",
+   "lingua": "EL",
+   "voce": "la produzione del vino",
+   "file": "File:Attrezzi per la produzione del vino, sala museo.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-03",
+   "lingua": "EL",
+   "voce": "l'oliva",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-04",
+   "lingua": "EL",
+   "voce": "l'olio d'oliva",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-05",
+   "lingua": "EL",
+   "voce": "l'acqua",
+   "file": "File:Aquamarine water pool at Bumpass Hell-8882.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-06",
+   "lingua": "EL",
+   "voce": "il simposio",
+   "file": "File:Black figure epinetron, symposion scene, AM of Corinth, 202835x.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-07",
+   "lingua": "EL",
+   "voce": "il banchetto",
+   "file": "File:Ancient Greece Marble Votive Relief of a Funerary Banquet (1).jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-08",
+   "lingua": "EL",
+   "voce": "la coppa",
+   "file": "File:Real and mythical animals, stemless kylix, Greek-Corinthian, c. 590-580 BC, terracotta - Blanton Museum of Art - Austin, Texas - DSC07661.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-09",
+   "lingua": "EL",
+   "voce": "le libagioni",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-10",
+   "lingua": "EL",
+   "voce": "il vino di Maronea",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-11",
+   "lingua": "EL",
+   "voce": "i vini di Creta",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-12",
+   "lingua": "EL",
+   "voce": "il kykeon",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-13",
+   "lingua": "EL",
+   "voce": "il latte",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-14",
+   "lingua": "EL",
+   "voce": "l'idromele",
+   "file": "File:Hidromel Tradicional Suave.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-15",
+   "lingua": "EL",
+   "voce": "l'ossimele",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-16",
+   "lingua": "EL",
+   "voce": "le coppe dipinte",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-17",
+   "lingua": "EL",
+   "voce": "gli inventari dei simposi",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-18",
+   "lingua": "EL",
+   "voce": "i nomi dei vasi",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-19",
+   "lingua": "EL",
+   "voce": "il vino di Taso",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-20",
+   "lingua": "EL",
+   "voce": "la fontana",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-21",
+   "lingua": "EL",
+   "voce": "l'ospitalità",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-22",
+   "lingua": "EL",
+   "voce": "il brindisi",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-23",
+   "lingua": "EL",
+   "voce": "i precetti di temperanza",
+   "file": "File:Temperanza Alvise Tagliapietra notte.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-24",
+   "lingua": "EL",
+   "voce": "i vini del Peloponneso",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-25",
+   "lingua": "EL",
+   "voce": "i vini delle isole",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-26",
+   "lingua": "EL",
+   "voce": "il mosto",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-27",
+   "lingua": "EL",
+   "voce": "la conservazione",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-28",
+   "lingua": "EL",
+   "voce": "il trasporto nelle anfore",
+   "file": "File:Xlandi Bay 5th century amphoras GMA.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-29",
+   "lingua": "EL",
+   "voce": "il cratere",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EL-30",
+   "lingua": "EL",
+   "voce": "il cottabo",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-01",
+   "lingua": "EN",
+   "voce": "il folk",
+   "file": "File:Man playing Brazilian folk music of Recife.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-02",
+   "lingua": "EN",
+   "voce": "il delta blues",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-03",
+   "lingua": "EN",
+   "voce": "il gospel",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-04",
+   "lingua": "EN",
+   "voce": "il jazz",
+   "file": "File:Louis Armstrong restored.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-05",
+   "lingua": "EN",
+   "voce": "il bebop",
+   "file": "File:Howard McGhee, Brick Fleagle and Miles Davis, ca September 1947 (Gottlieb).jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-06",
+   "lingua": "EN",
+   "voce": "il rock and roll",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-07",
+   "lingua": "EN",
+   "voce": "la British Invasion",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-08",
+   "lingua": "EN",
+   "voce": "il punk",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-09",
+   "lingua": "EN",
+   "voce": "l'hip hop",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-10",
+   "lingua": "EN",
+   "voce": "il grime",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-11",
+   "lingua": "EN",
+   "voce": "il soul",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-12",
+   "lingua": "EN",
+   "voce": "il funk",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-13",
+   "lingua": "EN",
+   "voce": "il reggae",
+   "file": "File:LION REGGAE.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-14",
+   "lingua": "EN",
+   "voce": "lo ska",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-15",
+   "lingua": "EN",
+   "voce": "il country",
+   "file": "File:Yulie Ruth en San Pedro Country Music Festival.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-16",
+   "lingua": "EN",
+   "voce": "le ballate tradizionali inglesi",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-17",
+   "lingua": "EN",
+   "voce": "le operette di Gilbert e Sullivan",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-18",
+   "lingua": "EN",
+   "voce": "i madrigali inglesi",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-19",
+   "lingua": "EN",
+   "voce": "il minimalismo",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-20",
+   "lingua": "EN",
+   "voce": "la musica elettronica",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-21",
+   "lingua": "EN",
+   "voce": "la musica sperimentale",
+   "file": "File:Lecture at Output.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-22",
+   "lingua": "EN",
+   "voce": "il canto corale",
+   "file": "File:(Toulouse) La Chorale - Théodule Ribot - Toulouse, musée des Augustins - Joconde05620014373.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-23",
+   "lingua": "EN",
+   "voce": "i canti dei marinai",
+   "file": "File:A sailor and his accordion onboard the Parma.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-24",
+   "lingua": "EN",
+   "voce": "la musica da film",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-25",
+   "lingua": "EN",
+   "voce": "il musical",
+   "file": "File:Lucy Diakovska beim Dinklager Musical Festival Nr.3.JPG",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-26",
+   "lingua": "EN",
+   "voce": "la musica di protesta",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-27",
+   "lingua": "EN",
+   "voce": "gli inni",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-28",
+   "lingua": "EN",
+   "voce": "la musica popolare",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-29",
+   "lingua": "EN",
+   "voce": "Tin Pan Alley",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "EN-30",
+   "lingua": "EN",
+   "voce": "il music hall",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-1-01",
+   "lingua": "IT",
+   "voce": "l'aglio di Voghiera",
+   "file": "File:Aglio di voghiera bulbi.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-02",
+   "lingua": "IT",
+   "voce": "le vongole di Goro",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-03",
+   "lingua": "IT",
+   "voce": "la coppia ferrarese",
+   "file": "File:Coppia-ferrarese.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-04",
+   "lingua": "IT",
+   "voce": "la zucca violina",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-05",
+   "lingua": "IT",
+   "voce": "la torta di riso",
+   "file": "File:Torta di riso.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-06",
+   "lingua": "IT",
+   "voce": "il pasticcio di maccheroni",
+   "file": "File:Pasticcio di maccheroni alla ferrarese.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-07",
+   "lingua": "IT",
+   "voce": "la salama da sugo",
+   "file": "File:Coppia di salame da sugo di Ferrara.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-08",
+   "lingua": "IT",
+   "voce": "i cappelletti",
+   "file": "File:01 Cappelletti in brodo.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-09",
+   "lingua": "IT",
+   "voce": "la torta di tagliatelle",
+   "file": "File:Torta di tagliatelle.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-10",
+   "lingua": "IT",
+   "voce": "i maccheroni romaneschi di Messisbugo",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-11",
+   "lingua": "IT",
+   "voce": "il salame d'oca",
+   "file": "File:IMG-20200730-WA0002.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-12",
+   "lingua": "IT",
+   "voce": "le pere",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-13",
+   "lingua": "IT",
+   "voce": "la polenta",
+   "file": "File:Polenta argentina con salsa de carne (plato gourmet).jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-14",
+   "lingua": "IT",
+   "voce": "i cappellacci di zucca",
+   "file": "File:Tortelloni.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-15",
+   "lingua": "IT",
+   "voce": "la ciambella ferrarese",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-16",
+   "lingua": "IT",
+   "voce": "il pampepato",
+   "file": "File:Panpepato-small.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-17",
+   "lingua": "IT",
+   "voce": "la rapa",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-18",
+   "lingua": "IT",
+   "voce": "la zia ferrarese",
+   "file": "File:Ferrarese snack.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-19",
+   "lingua": "IT",
+   "voce": "la torta tenerina",
+   "file": "File:Tenerina ferrarese.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-20",
+   "lingua": "IT",
+   "voce": "la zuppa inglese",
+   "file": "File:1 Zuppa inglese.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-21",
+   "lingua": "IT",
+   "voce": "i mandorlini del ponte",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-22",
+   "lingua": "IT",
+   "voce": "l'asparago verde di Mesola",
+   "file": "File:Asparagus soup (spargelsuppe).jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-23",
+   "lingua": "IT",
+   "voce": "le rane fritte",
+   "file": "File:Rane fritte.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-24",
+   "lingua": "IT",
+   "voce": "lo storione del Po",
+   "file": "File:Acipenser naccarii Wikipedia.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-25",
+   "lingua": "IT",
+   "voce": "il cocomero ferrarese",
+   "file": "File:Citrullus lanatus (Thunb.) Cucurbitaceae (7174523558).jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-26",
+   "lingua": "IT",
+   "voce": "le pesche ferraresi",
+   "file": "File:Henri de fromantiou, natura morta con frutta e bicchiere, 1670 ca. 02 pesche, cedro, uva.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-27",
+   "lingua": "IT",
+   "voce": "il riso del Delta del Po",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-28",
+   "lingua": "IT",
+   "voce": "il caviale ferrarese",
+   "file": "File:Caviar spoons.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-29",
+   "lingua": "IT",
+   "voce": "la carota del Delta",
+   "file": "File:Carote Pellerino.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-1-30",
+   "lingua": "IT",
+   "voce": "l'anguilla di Comacchio",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-01",
+   "lingua": "IT",
+   "voce": "i canederli",
+   "file": "File:Klüten.JPG",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-02",
+   "lingua": "IT",
+   "voce": "il pecorino crotonese",
+   "file": "File:Pecorino Crotonese D.O.P. A.P.O.C.C.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-03",
+   "lingua": "IT",
+   "voce": "la carbonara",
+   "file": "File:Espaguetis carbonara.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-04",
+   "lingua": "IT",
+   "voce": "il morzello catanzarese",
+   "file": "File:Czmorzello.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-05",
+   "lingua": "IT",
+   "voce": "la cacio e pepe",
+   "file": "File:Cacio e pepe.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-06",
+   "lingua": "IT",
+   "voce": "i fichi bianchi del Cilento",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-07",
+   "lingua": "IT",
+   "voce": "la porchetta di Ariccia",
+   "file": "File:Porchetta sagra del vino Marino 2006.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-08",
+   "lingua": "IT",
+   "voce": "il risotto alla milanese",
+   "file": "File:Ossobuco con risotto alla milanese.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-09",
+   "lingua": "IT",
+   "voce": "i saltimbocca alla romana",
+   "file": "File:Saltimbocca alla romana (5460547581).jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-10",
+   "lingua": "IT",
+   "voce": "i carciofi alla giudia",
+   "file": "File:Carciofi alla Giudìa.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-11",
+   "lingua": "IT",
+   "voce": "le alici di menaica",
+   "file": "File:Canned anchovies - bought in Japan - 2024 May 9.jpeg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-12",
+   "lingua": "IT",
+   "voce": "i fagioli cotti nella cenere",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-13",
+   "lingua": "IT",
+   "voce": "l'amatriciana",
+   "file": "File:Bucatini amatriciana Roma 2019.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-14",
+   "lingua": "IT",
+   "voce": "la bistecca alla fiorentina",
+   "file": "File:Bistecca alla fiorentina (400gr).jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-15",
+   "lingua": "IT",
+   "voce": "le arancine",
+   "file": "File:Arancini 002.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-16",
+   "lingua": "IT",
+   "voce": "le cozze tarantine",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-17",
+   "lingua": "IT",
+   "voce": "i supplì",
+   "file": "File:Supplì al telefono.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-18",
+   "lingua": "IT",
+   "voce": "la coda alla vaccinara",
+   "file": "File:Coda alla vaccinara-01.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-19",
+   "lingua": "IT",
+   "voce": "i pici",
+   "file": "File:Pici bulk.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-20",
+   "lingua": "IT",
+   "voce": "il maritozzo",
+   "file": "File:Italian Cream Bun 'Maritozzo' - Caffè Nero 2025-01-05.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-21",
+   "lingua": "IT",
+   "voce": "la bondiola",
+   "file": "File:Bondiola argentina.JPG",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-22",
+   "lingua": "IT",
+   "voce": "il baccalà mantecato",
+   "file": "File:Baccalà mantecato con polenta La Nuova Perla.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-23",
+   "lingua": "IT",
+   "voce": "l'abbacchio",
+   "file": "File:Abbacchio Pasquale.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-24",
+   "lingua": "IT",
+   "voce": "la ribollita",
+   "file": "File:Minestra di pane.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-25",
+   "lingua": "IT",
+   "voce": "i latterini marinati",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-26",
+   "lingua": "IT",
+   "voce": "il pane intorto",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-27",
+   "lingua": "IT",
+   "voce": "l'anatra di valle",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-28",
+   "lingua": "IT",
+   "voce": "le focaccine al sesamo della corte",
+   "file": "File:Focaccia nissena 2024 09.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-29",
+   "lingua": "IT",
+   "voce": "i gnocchi con lo zucchero",
+   "file": "File:Gnocchi di ricotta burro e salvia.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-2-30",
+   "lingua": "IT",
+   "voce": "il cappone coperto di lasagne",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-01",
+   "lingua": "IT",
+   "voce": "il ful medames",
+   "file": "File:Foul Mdammis, Tunisie.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-02",
+   "lingua": "IT",
+   "voce": "i pierogi",
+   "file": "File:Pierogi, Gniezno, Polonia3.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-03",
+   "lingua": "IT",
+   "voce": "le puntarelle",
+   "file": "File:Puntarelle stehend.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-04",
+   "lingua": "IT",
+   "voce": "la moussakà",
+   "file": "File:Meat Moussaka - Kouzina, Brighton 2023-11-24.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-05",
+   "lingua": "IT",
+   "voce": "il souvlaki",
+   "file": "File:Souvlaki in Athens.JPG",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-06",
+   "lingua": "IT",
+   "voce": "la spanakopita",
+   "file": "File:Gatimetradicionale.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-07",
+   "lingua": "IT",
+   "voce": "la piadina",
+   "file": "File:Piadina.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-08",
+   "lingua": "IT",
+   "voce": "la burrata di Andria",
+   "file": "File:Burrata di Andria IGP 1.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-09",
+   "lingua": "IT",
+   "voce": "la bougatsa",
+   "file": "File:Бугатса со ванила крем.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-10",
+   "lingua": "IT",
+   "voce": "la mortadella di Messisbugo",
+   "file": "File:Mortadella.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-11",
+   "lingua": "IT",
+   "voce": "la sfoglia sottile come la carta",
+   "file": "File:Sfoglia (2011).jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-12",
+   "lingua": "IT",
+   "voce": "i biscotti speziati di Aquisgrana",
+   "file": "File:Aachener-printen-1.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-13",
+   "lingua": "IT",
+   "voce": "la cotoletta alla milanese",
+   "file": "File:Milanesa.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-14",
+   "lingua": "IT",
+   "voce": "il lampredotto",
+   "file": "File:Lampredotto sandwich.JPG",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-15",
+   "lingua": "IT",
+   "voce": "i piselli di Savonarola",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-16",
+   "lingua": "IT",
+   "voce": "lo Spundekäs",
+   "file": "File:Spundekaes-Bachus-1.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-17",
+   "lingua": "IT",
+   "voce": "le melagrane della corte",
+   "file": "File:Pomegranate fruit - whole and piece with arils.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-18",
+   "lingua": "IT",
+   "voce": "la costrada di Alcalá",
+   "file": "File:Costrada de Alcalá de Henares (RPS 18-12-2012).png",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-19",
+   "lingua": "IT",
+   "voce": "i biscotti al miele di Basilea",
+   "file": "File:Basler Läckerli 02.jpeg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-20",
+   "lingua": "IT",
+   "voce": "le albicocche della corte",
+   "file": "File:Adriaen coorte, natura morta con cinque albicocche, 1704.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-21",
+   "lingua": "IT",
+   "voce": "il Sauerbraten",
+   "file": "File:2021-10-01 Sauerbraten beim Brückenbaron, Am Mühläcker, 97255 Sonderhofen.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-22",
+   "lingua": "IT",
+   "voce": "la cipolla di Certaldo",
+   "file": "File:La cipolla rossa di Acquaviva.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-23",
+   "lingua": "IT",
+   "voce": "la baguette",
+   "file": "File:Baguettes - stonesoup.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-24",
+   "lingua": "IT",
+   "voce": "le salsicce di Norimberga",
+   "file": "File:Nürnberger Rostbratwürste.JPG",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-25",
+   "lingua": "IT",
+   "voce": "il fegato alla veneziana",
+   "file": "File:Liver and Onions at the Rathauskeller.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-26",
+   "lingua": "IT",
+   "voce": "il fish and chips",
+   "file": "File:Fish and Chips Bath, UK.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-27",
+   "lingua": "IT",
+   "voce": "la zuppa di cipolle",
+   "file": "File:French Onion Soup - 48360705571.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-28",
+   "lingua": "IT",
+   "voce": "il vitello tonnato",
+   "file": "File:Vitello tonnato.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-29",
+   "lingua": "IT",
+   "voce": "i carciofi alla romana",
+   "file": "File:Carciofiromana.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-3-30",
+   "lingua": "IT",
+   "voce": "i tortelli di zucca",
+   "file": "File:Tortelli d'erbetta.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-08"
+  },
+  {
+   "chiave": "IT-4-01",
+   "lingua": "IT",
+   "voce": "il masgouf",
+   "file": "File:The famed masgouf - Flickr - Al Jazeera English.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-02",
+   "lingua": "IT",
+   "voce": "il koshari",
+   "file": "File:Egyptian Koshari.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-03",
+   "lingua": "IT",
+   "voce": "il roujiamo",
+   "file": "File:古城樊氏腊汁肉夹馍1.JPG",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-04",
+   "lingua": "IT",
+   "voce": "il pane del sole",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-05",
+   "lingua": "IT",
+   "voce": "il petha di Agra",
+   "file": "File:Petha-from-Agra.JPG",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-06",
+   "lingua": "IT",
+   "voce": "i buuz",
+   "file": "File:Buuza 01.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-07",
+   "lingua": "IT",
+   "voce": "la Welfenspeise",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-08",
+   "lingua": "IT",
+   "voce": "le polpette svedesi",
+   "file": "File:Köttbullar at IKEA Beijing Xihongmen Store (20200729181732).jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-09",
+   "lingua": "IT",
+   "voce": "lo stufato di arachidi del Mali",
+   "file": "File:Beef Stew with Rice with peanut butter.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-10",
+   "lingua": "IT",
+   "voce": "il brodetto di Comacchio",
+   "file": "File:Brodet.JPG",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-11",
+   "lingua": "IT",
+   "voce": "le kubba",
+   "file": "File:Kibbeh3.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-12",
+   "lingua": "IT",
+   "voce": "il jianbing",
+   "file": "File:Preparing Jianbing in Binhai, Tianjin (20191006080542).jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-13",
+   "lingua": "IT",
+   "voce": "la sayadeya",
+   "file": "File:Samak mashwi.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-14",
+   "lingua": "IT",
+   "voce": "i tamales",
+   "file": "File:Tamales norteños.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-15",
+   "lingua": "IT",
+   "voce": "il mastice di Chio",
+   "file": "File:Mastic.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-16",
+   "lingua": "IT",
+   "voce": "il litti chokha",
+   "file": "File:Litti Chokha - Kolkata.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-17",
+   "lingua": "IT",
+   "voce": "il vada pav",
+   "file": "File:Vada Pav.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-18",
+   "lingua": "IT",
+   "voce": "la baklava",
+   "file": "File:2018-04-28 Turkish baklava in Australian turkish cafe.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-19",
+   "lingua": "IT",
+   "voce": "i falafel",
+   "file": "File:Falafel.JPG",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-20",
+   "lingua": "IT",
+   "voce": "le arance della corte",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-21",
+   "lingua": "IT",
+   "voce": "il marzapane di Toledo",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-22",
+   "lingua": "IT",
+   "voce": "i datteri",
+   "file": "File:Bartolomeo bimbi, datteri su un piatto, 1720.JPG",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-23",
+   "lingua": "IT",
+   "voce": "il pastel de nata",
+   "file": "File:Portogallo - pastel de nata 1 - Artigiano in Fiera 2023.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-24",
+   "lingua": "IT",
+   "voce": "i noodle di riso di Nanchang",
+   "file": "File:Stirred rice noodles in Nanchang (20190619174747).jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-25",
+   "lingua": "IT",
+   "voce": "le crab cakes del Maryland",
+   "file": "File:(20240728) Rotterdam V11, Fish & Chips, Salmon & Crab Cakes.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-26",
+   "lingua": "IT",
+   "voce": "il pomodoro",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-27",
+   "lingua": "IT",
+   "voce": "i lokum",
+   "file": "File:Confiserie orientale berlin lokum minze.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-28",
+   "lingua": "IT",
+   "voce": "il kedgeree",
+   "file": "File:Khichuri - Bhog.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-29",
+   "lingua": "IT",
+   "voce": "il bigos",
+   "file": "File:02024 0360 Eisbein in Sauerkraut, Bigos, Baked potatoes.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-4-30",
+   "lingua": "IT",
+   "voce": "le susine della corte",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-01",
+   "lingua": "IT",
+   "voce": "la deep dish pizza",
+   "file": "File:Deep-Dish Pizza.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-02",
+   "lingua": "IT",
+   "voce": "la Sachertorte",
+   "file": "File:Half Sachertorte.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-03",
+   "lingua": "IT",
+   "voce": "il roast beef",
+   "file": "File:Roast beef dish.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-04",
+   "lingua": "IT",
+   "voce": "la Smith Island cake",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-05",
+   "lingua": "IT",
+   "voce": "il chile verde del Nuovo Messico",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-06",
+   "lingua": "IT",
+   "voce": "il pane samoon",
+   "file": "File:Iraqi Sammon Bread 03.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-07",
+   "lingua": "IT",
+   "voce": "gli scones",
+   "file": "File:Scones for 5 de Mayo 2023 - Tray out of the oven.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-08",
+   "lingua": "IT",
+   "voce": "il beshbarmak",
+   "file": "File:Бешбармак из говядины 01.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-09",
+   "lingua": "IT",
+   "voce": "il pie and mash",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-10",
+   "lingua": "IT",
+   "voce": "il gravlax",
+   "file": "File:Gravlax de saumon, auberge des Tilleuls, monts du Beaujolais (août 2019).jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-11",
+   "lingua": "IT",
+   "voce": "il pork roll",
+   "file": "File:Pork roll at Palace Diner in Biddeford ME.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-12",
+   "lingua": "IT",
+   "voce": "l'asado",
+   "file": "File:Asado de cerdo con costillas al estilo argentino.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-13",
+   "lingua": "IT",
+   "voce": "il Chelsea bun di Cambridge",
+   "file": "File:Marmalade Chelsea Bun (28422592054).jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-14",
+   "lingua": "IT",
+   "voce": "la torta di mirtilli",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-15",
+   "lingua": "IT",
+   "voce": "il bagel",
+   "file": "File:Montreal Bagel by Fairmount Bagels.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-16",
+   "lingua": "IT",
+   "voce": "il salmone del Pacifico",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-17",
+   "lingua": "IT",
+   "voce": "il French dip",
+   "file": "File:French Dip - 2442821376.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-18",
+   "lingua": "IT",
+   "voce": "il cioppino",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-19",
+   "lingua": "IT",
+   "voce": "le anguille in gelatina",
+   "file": "File:Jellied Eels Manze Tower Bridge Rd Oct08.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-20",
+   "lingua": "IT",
+   "voce": "le mele ferraresi",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-21",
+   "lingua": "IT",
+   "voce": "le aringhe",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-22",
+   "lingua": "IT",
+   "voce": "il sushi",
+   "file": "File:2007feb-sushi-odaiba-manytypes.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-23",
+   "lingua": "IT",
+   "voce": "la longeole di Ginevra",
+   "file": "File:Sausages from Switzerland.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-24",
+   "lingua": "IT",
+   "voce": "il Double Gloucester",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-25",
+   "lingua": "IT",
+   "voce": "il pomodoro del New Jersey",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-26",
+   "lingua": "IT",
+   "voce": "la clam chowder",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-27",
+   "lingua": "IT",
+   "voce": "il peameal bacon sandwich",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-28",
+   "lingua": "IT",
+   "voce": "il teriyaki di Seattle",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-29",
+   "lingua": "IT",
+   "voce": "la colazione inglese",
+   "file": "File:English breakfast London.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "IT-5-30",
+   "lingua": "IT",
+   "voce": "la frittata di cipolle",
+   "file": "File:Herb 'frittata' and boiled easter eggs.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-01",
+   "lingua": "LA",
+   "voce": "gli auspici",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-02",
+   "lingua": "LA",
+   "voce": "i presagi",
+   "file": "File:Auguryy.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-03",
+   "lingua": "LA",
+   "voce": "il volo degli uccelli",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-04",
+   "lingua": "LA",
+   "voce": "il fegato di Piacenza",
+   "file": "File:Hígado de Piacenza. MARQ.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-05",
+   "lingua": "LA",
+   "voce": "gli aruspici",
+   "file": "File:Divinatio (RDCA).gif",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-06",
+   "lingua": "LA",
+   "voce": "i sacerdoti e i riti",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-07",
+   "lingua": "LA",
+   "voce": "il fulmine",
+   "file": "File:Lightning Pritzerbe 01 (MK).jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-08",
+   "lingua": "LA",
+   "voce": "i prodigi",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-09",
+   "lingua": "LA",
+   "voce": "i sogni",
+   "file": "File:Visionart Art Dream Dream Away by Soriano.png",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-10",
+   "lingua": "LA",
+   "voce": "i numeri",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-11",
+   "lingua": "LA",
+   "voce": "il calendario e i giorni",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-12",
+   "lingua": "LA",
+   "voce": "gli starnuti",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-13",
+   "lingua": "LA",
+   "voce": "le feste",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-14",
+   "lingua": "LA",
+   "voce": "le processioni",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-15",
+   "lingua": "LA",
+   "voce": "i voti",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-16",
+   "lingua": "LA",
+   "voce": "i giuramenti",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-17",
+   "lingua": "LA",
+   "voce": "la maledizione",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-18",
+   "lingua": "LA",
+   "voce": "il tabù",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-19",
+   "lingua": "LA",
+   "voce": "i nomi e la sorte",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-20",
+   "lingua": "LA",
+   "voce": "il destino",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-21",
+   "lingua": "LA",
+   "voce": "i segni premonitori",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-22",
+   "lingua": "LA",
+   "voce": "gli amuleti",
+   "file": "File:Amuletter i brons - Hallwylska museet - 98636.tif",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-23",
+   "lingua": "LA",
+   "voce": "i presagi delle nascite",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-24",
+   "lingua": "LA",
+   "voce": "i riti funebri",
+   "file": "File:VY9iYcd.png",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-25",
+   "lingua": "LA",
+   "voce": "il fuoco sacro",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-26",
+   "lingua": "LA",
+   "voce": "gli animali divini",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-27",
+   "lingua": "LA",
+   "voce": "i luoghi sacri",
+   "file": "File:Templo de Augusto, Pula, Croacia, 2017-04-17, DD 71-73 HDR.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-28",
+   "lingua": "LA",
+   "voce": "le formule di protezione",
+   "file": "File:Curse tablet Jerusalem drawing.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-29",
+   "lingua": "LA",
+   "voce": "il malocchio",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "LA-30",
+   "lingua": "LA",
+   "voce": "il piede destro",
+   "file": "File:Frammento di piede destro con sandalo, I-II secolo dc. (terme di diocleziano).jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-01",
+   "lingua": "SI",
+   "voce": "l'intaglio della pietra dura",
+   "file": "File:Roman - Intaglio of Satyr Dancing - Walters 42108 - Impression.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-02",
+   "lingua": "SI",
+   "voce": "la ceramica",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-03",
+   "lingua": "SI",
+   "voce": "la maiolica",
+   "file": "File:Caffagiolo Dish with maiolica painter VA 1717-1855.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-04",
+   "lingua": "SI",
+   "voce": "la smaltatura",
+   "file": "File:Ordre de L Union Parfait crop.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-05",
+   "lingua": "SI",
+   "voce": "il vetro",
+   "file": "File:Sunlight on the curved honeycomb glass façade of the hotel Andaz mixed with interior lighting at sunset in Singapore.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-06",
+   "lingua": "SI",
+   "voce": "il ricamo",
+   "file": "File:Embroidery - Ricamo Intaglio * Centro Tavolo *.png",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-07",
+   "lingua": "SI",
+   "voce": "il merletto",
+   "file": "File:1911 Britannica - Lace 3.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-08",
+   "lingua": "SI",
+   "voce": "la tessitura a telaio",
+   "file": "File:Telaio tessitura Museo Civico TEMPO Canicattini Bagni Sicilia.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-09",
+   "lingua": "SI",
+   "voce": "l'intreccio",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-10",
+   "lingua": "SI",
+   "voce": "la canna",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-11",
+   "lingua": "SI",
+   "voce": "l'ebanisteria",
+   "file": "File:Luikse Commode, KBS-FRB 01.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-12",
+   "lingua": "SI",
+   "voce": "l'intaglio del legno",
+   "file": "File:Shwedagon Pagoda Wood Carving.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-13",
+   "lingua": "SI",
+   "voce": "il tornio",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-14",
+   "lingua": "SI",
+   "voce": "il cuoio",
+   "file": "File:A bunch of magenta leather.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-15",
+   "lingua": "SI",
+   "voce": "la correggia",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-16",
+   "lingua": "SI",
+   "voce": "la calzoleria",
+   "file": "File:Calzoleria Toscana shoes.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-17",
+   "lingua": "SI",
+   "voce": "il restauro",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-18",
+   "lingua": "SI",
+   "voce": "l'incisione",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-19",
+   "lingua": "SI",
+   "voce": "la liuteria",
+   "file": "File:Victor Pedemonte - Luthier 2.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-20",
+   "lingua": "SI",
+   "voce": "la fabbricazione della carta",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-21",
+   "lingua": "SI",
+   "voce": "l'occhialeria",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-22",
+   "lingua": "SI",
+   "voce": "il ferro battuto",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-23",
+   "lingua": "SI",
+   "voce": "il mosaico",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-24",
+   "lingua": "SI",
+   "voce": "i maestri d'ascia",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-25",
+   "lingua": "SI",
+   "voce": "la scagliola",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-26",
+   "lingua": "SI",
+   "voce": "la doratura",
+   "file": "File:Goldleaf.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-27",
+   "lingua": "SI",
+   "voce": "la filigrana",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-28",
+   "lingua": "SI",
+   "voce": "la cartapesta",
+   "file": "File:Mexican curious 01.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-29",
+   "lingua": "SI",
+   "voce": "l'oreficeria",
+   "file": null,
+   "nessuna": true,
+   "scelta_il": "2026-10-09"
+  },
+  {
+   "chiave": "SI-30",
+   "lingua": "SI",
+   "voce": "la stampa a caratteri mobili",
+   "file": "File:Caratteri mobili del Museo della stampa Lodovico Pavoni.jpg",
+   "nessuna": false,
+   "scelta_il": "2026-10-09"
+  }
+ ]
+}
