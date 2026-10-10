@@ -1,0 +1,2644 @@
+{
+ "versione": 1,
+ "data": "2026-10-10",
+ "stato": "scelte provvisorie di Pietro, fatte sullo strumento di scelta (sorgenti/lingue/scelta/) fra l'8 e il 10/10/2026",
+ "nota": "Pietro ha scelto un'immagine per ogni voce o ha detto che nessuna va bene. Le considera provvisorie: «ci sono scelte abbastanza discutibili ma le rivediamo quando arriviamo al livello corrispondente». Per questo non sono ancora in attestazione_oggetti.json, che vuole etichetta, categoria e un motivo di giudizio: ci entrano quando il livello si scrive e la scelta si conferma.",
+ "conti": {
+  "voci": 270,
+  "scelte": 157,
+  "nessuna": 113
+ },
+ "scelte": [
+  {
+   "chiave": "EL-01",
+   "lingua": "EL",
+   "voce": "il vino",
+   "esito": "scelta",
+   "file": "File:Port wine.jpg",
+   "quando": "2026-10-09T20:22:26.484Z",
+   "licenza": "Public domain",
+   "autore": "Jon Sullivan",
+   "url": "https://commons.wikimedia.org/wiki/File:Port_wine.jpg"
+  },
+  {
+   "chiave": "EL-02",
+   "lingua": "EL",
+   "voce": "la produzione del vino",
+   "esito": "scelta",
+   "file": "File:Attrezzi per la produzione del vino, sala museo.jpg",
+   "quando": "2026-10-09T20:22:31.496Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Federica Fraticelli",
+   "url": "https://commons.wikimedia.org/wiki/File:Attrezzi_per_la_produzione_del_vino,_sala_museo.jpg"
+  },
+  {
+   "chiave": "EL-03",
+   "lingua": "EL",
+   "voce": "l'oliva",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:22:34.667Z"
+  },
+  {
+   "chiave": "EL-04",
+   "lingua": "EL",
+   "voce": "l'olio d'oliva",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:22:42.264Z"
+  },
+  {
+   "chiave": "EL-05",
+   "lingua": "EL",
+   "voce": "l'acqua",
+   "esito": "scelta",
+   "file": "File:Aquamarine water pool at Bumpass Hell-8882.jpg",
+   "quando": "2026-10-09T20:22:48.273Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Frank Schulenburg",
+   "url": "https://commons.wikimedia.org/wiki/File:Aquamarine_water_pool_at_Bumpass_Hell-8882.jpg"
+  },
+  {
+   "chiave": "EL-06",
+   "lingua": "EL",
+   "voce": "il simposio",
+   "esito": "scelta",
+   "file": "File:Black figure epinetron, symposion scene, AM of Corinth, 202835x.jpg",
+   "quando": "2026-10-09T20:22:51.365Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Zde",
+   "url": "https://commons.wikimedia.org/wiki/File:Black_figure_epinetron,_symposion_scene,_AM_of_Corinth,_202835x.jpg"
+  },
+  {
+   "chiave": "EL-07",
+   "lingua": "EL",
+   "voce": "il banchetto",
+   "esito": "scelta",
+   "file": "File:Ancient Greece Marble Votive Relief of a Funerary Banquet (1).jpg",
+   "quando": "2026-10-09T20:22:55.258Z",
+   "licenza": "CC0",
+   "autore": "Gary Todd  from Xinzheng, China",
+   "url": "https://commons.wikimedia.org/wiki/File:Ancient_Greece_Marble_Votive_Relief_of_a_Funerary_Banquet_(1).jpg"
+  },
+  {
+   "chiave": "EL-08",
+   "lingua": "EL",
+   "voce": "la coppa",
+   "esito": "scelta",
+   "file": "File:Real and mythical animals, stemless kylix, Greek-Corinthian, c. 590-580 BC, terracotta - Blanton Museum of Art - Austin, Texas - DSC07661.jpg",
+   "quando": "2026-10-09T20:22:58.774Z",
+   "licenza": "Public domain",
+   "autore": "Daderot",
+   "url": "https://commons.wikimedia.org/wiki/File:Real_and_mythical_animals,_stemless_kylix,_Greek-Corinthian,_c._590-580_BC,_terracotta_-_Blanton_Museum_of_Art_-_Austin,_Texas_-_DSC07661.jpg"
+  },
+  {
+   "chiave": "EL-09",
+   "lingua": "EL",
+   "voce": "le libagioni",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:23:03.452Z"
+  },
+  {
+   "chiave": "EL-10",
+   "lingua": "EL",
+   "voce": "il vino di Maronea",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:23:07.371Z"
+  },
+  {
+   "chiave": "EL-11",
+   "lingua": "EL",
+   "voce": "i vini di Creta",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:23:08.879Z"
+  },
+  {
+   "chiave": "EL-12",
+   "lingua": "EL",
+   "voce": "il kykeon",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:23:13.838Z"
+  },
+  {
+   "chiave": "EL-13",
+   "lingua": "EL",
+   "voce": "il latte",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:23:16.196Z"
+  },
+  {
+   "chiave": "EL-14",
+   "lingua": "EL",
+   "voce": "l'idromele",
+   "esito": "scelta",
+   "file": "File:Hidromel Tradicional Suave.jpg",
+   "quando": "2026-10-09T20:23:20.803Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Philip Mead",
+   "url": "https://commons.wikimedia.org/wiki/File:Hidromel_Tradicional_Suave.jpg"
+  },
+  {
+   "chiave": "EL-15",
+   "lingua": "EL",
+   "voce": "l'ossimele",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:23:24.211Z"
+  },
+  {
+   "chiave": "EL-16",
+   "lingua": "EL",
+   "voce": "le coppe dipinte",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:23:29.437Z"
+  },
+  {
+   "chiave": "EL-17",
+   "lingua": "EL",
+   "voce": "gli inventari dei simposi",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:23:31.463Z"
+  },
+  {
+   "chiave": "EL-18",
+   "lingua": "EL",
+   "voce": "i nomi dei vasi",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:23:35.962Z"
+  },
+  {
+   "chiave": "EL-19",
+   "lingua": "EL",
+   "voce": "il vino di Taso",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:23:37.620Z"
+  },
+  {
+   "chiave": "EL-20",
+   "lingua": "EL",
+   "voce": "la fontana",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:23:39.185Z"
+  },
+  {
+   "chiave": "EL-21",
+   "lingua": "EL",
+   "voce": "l'ospitalità",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:24:06.756Z"
+  },
+  {
+   "chiave": "EL-22",
+   "lingua": "EL",
+   "voce": "il brindisi",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:24:09.550Z"
+  },
+  {
+   "chiave": "EL-23",
+   "lingua": "EL",
+   "voce": "i precetti di temperanza",
+   "esito": "scelta",
+   "file": "File:Temperanza Alvise Tagliapietra notte.jpg",
+   "quando": "2026-10-09T20:24:15.366Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "This Photo  was taken by    Wolfgang Moroder   .       \n \n Feel free to use my photos, but please mention me as the auth",
+   "url": "https://commons.wikimedia.org/wiki/File:Temperanza_Alvise_Tagliapietra_notte.jpg"
+  },
+  {
+   "chiave": "EL-24",
+   "lingua": "EL",
+   "voce": "i vini del Peloponneso",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:24:18.163Z"
+  },
+  {
+   "chiave": "EL-25",
+   "lingua": "EL",
+   "voce": "i vini delle isole",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:24:19.521Z"
+  },
+  {
+   "chiave": "EL-26",
+   "lingua": "EL",
+   "voce": "il mosto",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:24:22.290Z"
+  },
+  {
+   "chiave": "EL-27",
+   "lingua": "EL",
+   "voce": "la conservazione",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:24:23.591Z"
+  },
+  {
+   "chiave": "EL-28",
+   "lingua": "EL",
+   "voce": "il trasporto nelle anfore",
+   "esito": "scelta",
+   "file": "File:Xlandi Bay 5th century amphoras GMA.jpg",
+   "quando": "2026-10-09T20:24:26.491Z",
+   "licenza": "CC BY 2.5",
+   "autore": "Marie-Lan Nguyen",
+   "url": "https://commons.wikimedia.org/wiki/File:Xlandi_Bay_5th_century_amphoras_GMA.jpg"
+  },
+  {
+   "chiave": "EL-29",
+   "lingua": "EL",
+   "voce": "il cratere",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:24:31.700Z"
+  },
+  {
+   "chiave": "EL-30",
+   "lingua": "EL",
+   "voce": "il cottabo",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:24:35.983Z"
+  },
+  {
+   "chiave": "EN-01",
+   "lingua": "EN",
+   "voce": "il folk",
+   "esito": "scelta",
+   "file": "File:Man playing Brazilian folk music of Recife.jpg",
+   "quando": "2026-10-09T20:18:13.840Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Wilfredor",
+   "url": "https://commons.wikimedia.org/wiki/File:Man_playing_Brazilian_folk_music_of_Recife.jpg"
+  },
+  {
+   "chiave": "EN-02",
+   "lingua": "EN",
+   "voce": "il delta blues",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:18:16.204Z"
+  },
+  {
+   "chiave": "EN-03",
+   "lingua": "EN",
+   "voce": "il gospel",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:18:17.734Z"
+  },
+  {
+   "chiave": "EN-04",
+   "lingua": "EN",
+   "voce": "il jazz",
+   "esito": "scelta",
+   "file": "File:Louis Armstrong restored.jpg",
+   "quando": "2026-10-09T20:18:20.157Z",
+   "licenza": "Public domain",
+   "autore": "World-Telegram staff photographer",
+   "url": "https://commons.wikimedia.org/wiki/File:Louis_Armstrong_restored.jpg"
+  },
+  {
+   "chiave": "EN-05",
+   "lingua": "EN",
+   "voce": "il bebop",
+   "esito": "scelta",
+   "file": "File:Howard McGhee, Brick Fleagle and Miles Davis, ca September 1947 (Gottlieb).jpg",
+   "quando": "2026-10-09T20:18:23.890Z",
+   "licenza": "Public domain",
+   "autore": "William P. Gottlieb",
+   "url": "https://commons.wikimedia.org/wiki/File:Howard_McGhee,_Brick_Fleagle_and_Miles_Davis,_ca_September_1947_(Gottlieb).jpg"
+  },
+  {
+   "chiave": "EN-06",
+   "lingua": "EN",
+   "voce": "il rock and roll",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:18:26.923Z"
+  },
+  {
+   "chiave": "EN-07",
+   "lingua": "EN",
+   "voce": "la British Invasion",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:18:29.570Z"
+  },
+  {
+   "chiave": "EN-08",
+   "lingua": "EN",
+   "voce": "il punk",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:18:32.933Z"
+  },
+  {
+   "chiave": "EN-09",
+   "lingua": "EN",
+   "voce": "l'hip hop",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:18:37.578Z"
+  },
+  {
+   "chiave": "EN-10",
+   "lingua": "EN",
+   "voce": "il grime",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:18:42.049Z"
+  },
+  {
+   "chiave": "EN-11",
+   "lingua": "EN",
+   "voce": "il soul",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:18:47.717Z"
+  },
+  {
+   "chiave": "EN-12",
+   "lingua": "EN",
+   "voce": "il funk",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:18:50.778Z"
+  },
+  {
+   "chiave": "EN-13",
+   "lingua": "EN",
+   "voce": "il reggae",
+   "esito": "scelta",
+   "file": "File:LION REGGAE.jpg",
+   "quando": "2026-10-09T20:18:53.553Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "LionReggaeOfficial",
+   "url": "https://commons.wikimedia.org/wiki/File:LION_REGGAE.jpg"
+  },
+  {
+   "chiave": "EN-14",
+   "lingua": "EN",
+   "voce": "lo ska",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:18:55.952Z"
+  },
+  {
+   "chiave": "EN-15",
+   "lingua": "EN",
+   "voce": "il country",
+   "esito": "scelta",
+   "file": "File:Yulie Ruth en San Pedro Country Music Festival.jpg",
+   "quando": "2026-10-09T20:18:59.202Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Vane Ruth79",
+   "url": "https://commons.wikimedia.org/wiki/File:Yulie_Ruth_en_San_Pedro_Country_Music_Festival.jpg"
+  },
+  {
+   "chiave": "EN-16",
+   "lingua": "EN",
+   "voce": "le ballate tradizionali inglesi",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:19:02.812Z"
+  },
+  {
+   "chiave": "EN-17",
+   "lingua": "EN",
+   "voce": "le operette di Gilbert e Sullivan",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:19:04.810Z"
+  },
+  {
+   "chiave": "EN-18",
+   "lingua": "EN",
+   "voce": "i madrigali inglesi",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:19:07.513Z"
+  },
+  {
+   "chiave": "EN-19",
+   "lingua": "EN",
+   "voce": "il minimalismo",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:19:10.044Z"
+  },
+  {
+   "chiave": "EN-20",
+   "lingua": "EN",
+   "voce": "la musica elettronica",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:19:12.367Z"
+  },
+  {
+   "chiave": "EN-21",
+   "lingua": "EN",
+   "voce": "la musica sperimentale",
+   "esito": "scelta",
+   "file": "File:Lecture at Output.jpg",
+   "quando": "2026-10-09T20:19:16.839Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Yuri Landman Hypercustom",
+   "url": "https://commons.wikimedia.org/wiki/File:Lecture_at_Output.jpg"
+  },
+  {
+   "chiave": "EN-22",
+   "lingua": "EN",
+   "voce": "il canto corale",
+   "esito": "scelta",
+   "file": "File:(Toulouse) La Chorale - Théodule Ribot - Toulouse, musée des Augustins - Joconde05620014373.jpg",
+   "quando": "2026-10-09T20:19:23.526Z",
+   "licenza": "Public domain",
+   "autore": "Didier Descouens",
+   "url": "https://commons.wikimedia.org/wiki/File:(Toulouse)_La_Chorale_-_Th%C3%A9odule_Ribot_-_Toulouse,_mus%C3%A9e_des_Augustins_-_Joconde05620014373.jpg"
+  },
+  {
+   "chiave": "EN-23",
+   "lingua": "EN",
+   "voce": "i canti dei marinai",
+   "esito": "scelta",
+   "file": "File:A sailor and his accordion onboard the Parma.jpg",
+   "quando": "2026-10-09T20:19:27.287Z",
+   "licenza": "No restrictions",
+   "autore": "Alan Villiers",
+   "url": "https://commons.wikimedia.org/wiki/File:A_sailor_and_his_accordion_onboard_the_Parma.jpg"
+  },
+  {
+   "chiave": "EN-24",
+   "lingua": "EN",
+   "voce": "la musica da film",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:19:32.781Z"
+  },
+  {
+   "chiave": "EN-25",
+   "lingua": "EN",
+   "voce": "il musical",
+   "esito": "scelta",
+   "file": "File:Lucy Diakovska beim Dinklager Musical Festival Nr.3.JPG",
+   "quando": "2026-10-09T20:19:37.160Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "CHR!S",
+   "url": "https://commons.wikimedia.org/wiki/File:Lucy_Diakovska_beim_Dinklager_Musical_Festival_Nr.3.JPG"
+  },
+  {
+   "chiave": "EN-26",
+   "lingua": "EN",
+   "voce": "la musica di protesta",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:19:42.693Z"
+  },
+  {
+   "chiave": "EN-27",
+   "lingua": "EN",
+   "voce": "gli inni",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:19:45.811Z"
+  },
+  {
+   "chiave": "EN-28",
+   "lingua": "EN",
+   "voce": "la musica popolare",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:19:49.295Z"
+  },
+  {
+   "chiave": "EN-29",
+   "lingua": "EN",
+   "voce": "Tin Pan Alley",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:19:52.637Z"
+  },
+  {
+   "chiave": "EN-30",
+   "lingua": "EN",
+   "voce": "il music hall",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:19:54.752Z"
+  },
+  {
+   "chiave": "IT-1-01",
+   "lingua": "IT",
+   "voce": "l'aglio di Voghiera",
+   "esito": "scelta",
+   "file": "File:Aglio di voghiera bulbi.jpg",
+   "quando": "2026-10-08T17:15:00.169Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "F Ceragioli",
+   "url": "https://commons.wikimedia.org/wiki/File:Aglio_di_voghiera_bulbi.jpg"
+  },
+  {
+   "chiave": "IT-1-02",
+   "lingua": "IT",
+   "voce": "le vongole di Goro",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-08T17:15:02.568Z"
+  },
+  {
+   "chiave": "IT-1-03",
+   "lingua": "IT",
+   "voce": "la coppia ferrarese",
+   "esito": "scelta",
+   "file": "File:Coppia-ferrarese.jpg",
+   "quando": "2026-10-08T17:15:03.184Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "The original uploader was  Andycowboy  at  Italian Wikipedia .",
+   "url": "https://commons.wikimedia.org/wiki/File:Coppia-ferrarese.jpg"
+  },
+  {
+   "chiave": "IT-1-04",
+   "lingua": "IT",
+   "voce": "la zucca violina",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-08T17:15:08.060Z"
+  },
+  {
+   "chiave": "IT-1-05",
+   "lingua": "IT",
+   "voce": "la torta di riso",
+   "esito": "scelta",
+   "file": "File:Torta di riso.jpg",
+   "quando": "2026-10-08T17:15:13.613Z",
+   "licenza": "CC BY 2.0",
+   "autore": "frideryka",
+   "url": "https://commons.wikimedia.org/wiki/File:Torta_di_riso.jpg"
+  },
+  {
+   "chiave": "IT-1-06",
+   "lingua": "IT",
+   "voce": "il pasticcio di maccheroni",
+   "esito": "scelta",
+   "file": "File:Pasticcio di maccheroni alla ferrarese.jpg",
+   "quando": "2026-10-08T17:15:20.751Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "RanZag",
+   "url": "https://commons.wikimedia.org/wiki/File:Pasticcio_di_maccheroni_alla_ferrarese.jpg"
+  },
+  {
+   "chiave": "IT-1-07",
+   "lingua": "IT",
+   "voce": "la salama da sugo",
+   "esito": "scelta",
+   "file": "File:Coppia di salame da sugo di Ferrara.jpg",
+   "quando": "2026-10-08T17:15:24.617Z",
+   "licenza": "CC0",
+   "autore": "Emilio2005",
+   "url": "https://commons.wikimedia.org/wiki/File:Coppia_di_salame_da_sugo_di_Ferrara.jpg"
+  },
+  {
+   "chiave": "IT-1-08",
+   "lingua": "IT",
+   "voce": "i cappelletti",
+   "esito": "scelta",
+   "file": "File:01 Cappelletti in brodo.jpg",
+   "quando": "2026-10-08T17:15:31.342Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Lungoleno",
+   "url": "https://commons.wikimedia.org/wiki/File:01_Cappelletti_in_brodo.jpg"
+  },
+  {
+   "chiave": "IT-1-09",
+   "lingua": "IT",
+   "voce": "la torta di tagliatelle",
+   "esito": "scelta",
+   "file": "File:Torta di tagliatelle.jpg",
+   "quando": "2026-10-08T17:15:33.904Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Massimo Telò",
+   "url": "https://commons.wikimedia.org/wiki/File:Torta_di_tagliatelle.jpg"
+  },
+  {
+   "chiave": "IT-1-10",
+   "lingua": "IT",
+   "voce": "i maccheroni romaneschi di Messisbugo",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-08T17:15:43.901Z"
+  },
+  {
+   "chiave": "IT-1-11",
+   "lingua": "IT",
+   "voce": "il salame d'oca",
+   "esito": "scelta",
+   "file": "File:IMG-20200730-WA0002.jpg",
+   "quando": "2026-10-08T17:15:44.873Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Edoardotolasi",
+   "url": "https://commons.wikimedia.org/wiki/File:IMG-20200730-WA0002.jpg"
+  },
+  {
+   "chiave": "IT-1-12",
+   "lingua": "IT",
+   "voce": "le pere",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-08T17:15:49.100Z"
+  },
+  {
+   "chiave": "IT-1-13",
+   "lingua": "IT",
+   "voce": "la polenta",
+   "esito": "scelta",
+   "file": "File:Polenta argentina con salsa de carne (plato gourmet).jpg",
+   "quando": "2026-10-08T17:16:01.221Z",
+   "licenza": "CC BY 3.0",
+   "autore": "Horacio Cambeiro",
+   "url": "https://commons.wikimedia.org/wiki/File:Polenta_argentina_con_salsa_de_carne_(plato_gourmet).jpg"
+  },
+  {
+   "chiave": "IT-1-14",
+   "lingua": "IT",
+   "voce": "i cappellacci di zucca",
+   "esito": "scelta",
+   "file": "File:Tortelloni.jpg",
+   "quando": "2026-10-08T17:16:04.060Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Sfoglino Nicolas",
+   "url": "https://commons.wikimedia.org/wiki/File:Tortelloni.jpg"
+  },
+  {
+   "chiave": "IT-1-15",
+   "lingua": "IT",
+   "voce": "la ciambella ferrarese",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-08T17:16:06.972Z"
+  },
+  {
+   "chiave": "IT-1-16",
+   "lingua": "IT",
+   "voce": "il pampepato",
+   "esito": "scelta",
+   "file": "File:Panpepato-small.jpg",
+   "quando": "2026-10-08T17:16:25.659Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Judgej",
+   "url": "https://commons.wikimedia.org/wiki/File:Panpepato-small.jpg"
+  },
+  {
+   "chiave": "IT-1-17",
+   "lingua": "IT",
+   "voce": "la rapa",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-08T17:16:31.720Z"
+  },
+  {
+   "chiave": "IT-1-18",
+   "lingua": "IT",
+   "voce": "la zia ferrarese",
+   "esito": "scelta",
+   "file": "File:Ferrarese snack.jpg",
+   "quando": "2026-10-08T17:16:32.697Z",
+   "licenza": "CC BY 2.0",
+   "autore": "https://www.flickr.com/photos/lmello85/",
+   "url": "https://commons.wikimedia.org/wiki/File:Ferrarese_snack.jpg"
+  },
+  {
+   "chiave": "IT-1-19",
+   "lingua": "IT",
+   "voce": "la torta tenerina",
+   "esito": "scelta",
+   "file": "File:Tenerina ferrarese.jpg",
+   "quando": "2026-10-08T17:16:37.154Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Drafnir",
+   "url": "https://commons.wikimedia.org/wiki/File:Tenerina_ferrarese.jpg"
+  },
+  {
+   "chiave": "IT-1-20",
+   "lingua": "IT",
+   "voce": "la zuppa inglese",
+   "esito": "scelta",
+   "file": "File:1 Zuppa inglese.jpg",
+   "quando": "2026-10-08T17:16:42.129Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Lungoleno",
+   "url": "https://commons.wikimedia.org/wiki/File:1_Zuppa_inglese.jpg"
+  },
+  {
+   "chiave": "IT-1-21",
+   "lingua": "IT",
+   "voce": "i mandorlini del ponte",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-08T17:16:45.322Z"
+  },
+  {
+   "chiave": "IT-1-22",
+   "lingua": "IT",
+   "voce": "l'asparago verde di Mesola",
+   "esito": "scelta",
+   "file": "File:Asparagus soup (spargelsuppe).jpg",
+   "quando": "2026-10-08T17:16:52.520Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Petar Milošević",
+   "url": "https://commons.wikimedia.org/wiki/File:Asparagus_soup_(spargelsuppe).jpg"
+  },
+  {
+   "chiave": "IT-1-23",
+   "lingua": "IT",
+   "voce": "le rane fritte",
+   "esito": "scelta",
+   "file": "File:Rane fritte.jpg",
+   "quando": "2026-10-08T17:16:55.186Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Marica Massaro",
+   "url": "https://commons.wikimedia.org/wiki/File:Rane_fritte.jpg"
+  },
+  {
+   "chiave": "IT-1-24",
+   "lingua": "IT",
+   "voce": "lo storione del Po",
+   "esito": "scelta",
+   "file": "File:Acipenser naccarii Wikipedia.jpg",
+   "quando": "2026-10-08T17:17:02.193Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Estefania Izquierdo Gomez",
+   "url": "https://commons.wikimedia.org/wiki/File:Acipenser_naccarii_Wikipedia.jpg"
+  },
+  {
+   "chiave": "IT-1-25",
+   "lingua": "IT",
+   "voce": "il cocomero ferrarese",
+   "esito": "scelta",
+   "file": "File:Citrullus lanatus (Thunb.) Cucurbitaceae (7174523558).jpg",
+   "quando": "2026-10-08T17:17:05.641Z",
+   "licenza": "CC BY-SA 2.0",
+   "autore": "Len Worthington",
+   "url": "https://commons.wikimedia.org/wiki/File:Citrullus_lanatus_(Thunb.)_Cucurbitaceae_(7174523558).jpg"
+  },
+  {
+   "chiave": "IT-1-26",
+   "lingua": "IT",
+   "voce": "le pesche ferraresi",
+   "esito": "scelta",
+   "file": "File:Henri de fromantiou, natura morta con frutta e bicchiere, 1670 ca. 02 pesche, cedro, uva.jpg",
+   "quando": "2026-10-08T17:17:10.345Z",
+   "licenza": "CC BY 3.0",
+   "autore": "Sailko",
+   "url": "https://commons.wikimedia.org/wiki/File:Henri_de_fromantiou,_natura_morta_con_frutta_e_bicchiere,_1670_ca._02_pesche,_cedro,_uva.jpg"
+  },
+  {
+   "chiave": "IT-1-27",
+   "lingua": "IT",
+   "voce": "il riso del Delta del Po",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-08T17:17:13.650Z"
+  },
+  {
+   "chiave": "IT-1-28",
+   "lingua": "IT",
+   "voce": "il caviale ferrarese",
+   "esito": "scelta",
+   "file": "File:Caviar spoons.jpg",
+   "quando": "2026-10-08T17:17:15.979Z",
+   "licenza": "CC BY 2.0",
+   "autore": "THOR",
+   "url": "https://commons.wikimedia.org/wiki/File:Caviar_spoons.jpg"
+  },
+  {
+   "chiave": "IT-1-29",
+   "lingua": "IT",
+   "voce": "la carota del Delta",
+   "esito": "scelta",
+   "file": "File:Carote Pellerino.jpg",
+   "quando": "2026-10-08T17:17:19.562Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Giovandeste",
+   "url": "https://commons.wikimedia.org/wiki/File:Carote_Pellerino.jpg"
+  },
+  {
+   "chiave": "IT-1-30",
+   "lingua": "IT",
+   "voce": "l'anguilla di Comacchio",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-08T17:18:11.952Z"
+  },
+  {
+   "chiave": "IT-2-01",
+   "lingua": "IT",
+   "voce": "i canederli",
+   "esito": "scelta",
+   "file": "File:Klüten.JPG",
+   "quando": "2026-10-08T17:18:40.133Z",
+   "licenza": "Public domain",
+   "autore": "No machine-readable author provided.  Geoz  assumed (based on copyright claims).",
+   "url": "https://commons.wikimedia.org/wiki/File:Kl%C3%BCten.JPG"
+  },
+  {
+   "chiave": "IT-2-02",
+   "lingua": "IT",
+   "voce": "il pecorino crotonese",
+   "esito": "scelta",
+   "file": "File:Pecorino Crotonese D.O.P. A.P.O.C.C.jpg",
+   "quando": "2026-10-08T17:18:43.541Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Marcomagno89",
+   "url": "https://commons.wikimedia.org/wiki/File:Pecorino_Crotonese_D.O.P._A.P.O.C.C.jpg"
+  },
+  {
+   "chiave": "IT-2-03",
+   "lingua": "IT",
+   "voce": "la carbonara",
+   "esito": "scelta",
+   "file": "File:Espaguetis carbonara.jpg",
+   "quando": "2026-10-08T17:18:47.880Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Javier Somoza",
+   "url": "https://commons.wikimedia.org/wiki/File:Espaguetis_carbonara.jpg"
+  },
+  {
+   "chiave": "IT-2-04",
+   "lingua": "IT",
+   "voce": "il morzello catanzarese",
+   "esito": "scelta",
+   "file": "File:Czmorzello.jpg",
+   "quando": "2026-10-08T17:18:53.588Z",
+   "licenza": "Public domain",
+   "autore": "Original uploaded by  Igea  (Transfered by  Diádoco )",
+   "url": "https://commons.wikimedia.org/wiki/File:Czmorzello.jpg"
+  },
+  {
+   "chiave": "IT-2-05",
+   "lingua": "IT",
+   "voce": "la cacio e pepe",
+   "esito": "scelta",
+   "file": "File:Cacio e pepe.jpg",
+   "quando": "2026-10-08T17:19:00.359Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Popo le Chien",
+   "url": "https://commons.wikimedia.org/wiki/File:Cacio_e_pepe.jpg"
+  },
+  {
+   "chiave": "IT-2-06",
+   "lingua": "IT",
+   "voce": "i fichi bianchi del Cilento",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-08T17:19:06.173Z"
+  },
+  {
+   "chiave": "IT-2-07",
+   "lingua": "IT",
+   "voce": "la porchetta di Ariccia",
+   "esito": "scelta",
+   "file": "File:Porchetta sagra del vino Marino 2006.jpg",
+   "quando": "2026-10-08T17:19:08.157Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Alessio Damato",
+   "url": "https://commons.wikimedia.org/wiki/File:Porchetta_sagra_del_vino_Marino_2006.jpg"
+  },
+  {
+   "chiave": "IT-2-08",
+   "lingua": "IT",
+   "voce": "il risotto alla milanese",
+   "esito": "scelta",
+   "file": "File:Ossobuco con risotto alla milanese.jpg",
+   "quando": "2026-10-08T17:19:11.431Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "pier",
+   "url": "https://commons.wikimedia.org/wiki/File:Ossobuco_con_risotto_alla_milanese.jpg"
+  },
+  {
+   "chiave": "IT-2-09",
+   "lingua": "IT",
+   "voce": "i saltimbocca alla romana",
+   "esito": "scelta",
+   "file": "File:Saltimbocca alla romana (5460547581).jpg",
+   "quando": "2026-10-08T17:19:18.268Z",
+   "licenza": "CC BY-SA 2.0",
+   "autore": "Katrin Gilger",
+   "url": "https://commons.wikimedia.org/wiki/File:Saltimbocca_alla_romana_(5460547581).jpg"
+  },
+  {
+   "chiave": "IT-2-10",
+   "lingua": "IT",
+   "voce": "i carciofi alla giudia",
+   "esito": "scelta",
+   "file": "File:Carciofi alla Giudìa.jpg",
+   "quando": "2026-10-08T21:29:30.838Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Marco Iannantuoni",
+   "url": "https://commons.wikimedia.org/wiki/File:Carciofi_alla_Giud%C3%ACa.jpg"
+  },
+  {
+   "chiave": "IT-2-11",
+   "lingua": "IT",
+   "voce": "le alici di menaica",
+   "esito": "scelta",
+   "file": "File:Canned anchovies - bought in Japan - 2024 May 9.jpeg",
+   "quando": "2026-10-08T21:29:40.169Z",
+   "licenza": "CC BY 4.0",
+   "autore": "Nesnad",
+   "url": "https://commons.wikimedia.org/wiki/File:Canned_anchovies_-_bought_in_Japan_-_2024_May_9.jpeg"
+  },
+  {
+   "chiave": "IT-2-12",
+   "lingua": "IT",
+   "voce": "i fagioli cotti nella cenere",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-08T21:29:45.182Z"
+  },
+  {
+   "chiave": "IT-2-13",
+   "lingua": "IT",
+   "voce": "l'amatriciana",
+   "esito": "scelta",
+   "file": "File:Bucatini amatriciana Roma 2019.jpg",
+   "quando": "2026-10-08T21:29:51.788Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Blackcat",
+   "url": "https://commons.wikimedia.org/wiki/File:Bucatini_amatriciana_Roma_2019.jpg"
+  },
+  {
+   "chiave": "IT-2-14",
+   "lingua": "IT",
+   "voce": "la bistecca alla fiorentina",
+   "esito": "scelta",
+   "file": "File:Bistecca alla fiorentina (400gr).jpg",
+   "quando": "2026-10-08T21:29:57.300Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Number55",
+   "url": "https://commons.wikimedia.org/wiki/File:Bistecca_alla_fiorentina_(400gr).jpg"
+  },
+  {
+   "chiave": "IT-2-15",
+   "lingua": "IT",
+   "voce": "le arancine",
+   "esito": "scelta",
+   "file": "File:Arancini 002.jpg",
+   "quando": "2026-10-08T21:30:01.748Z",
+   "licenza": "Public domain",
+   "autore": "No machine-readable author provided.  Gmelfi  assumed (based on copyright claims).",
+   "url": "https://commons.wikimedia.org/wiki/File:Arancini_002.jpg"
+  },
+  {
+   "chiave": "IT-2-16",
+   "lingua": "IT",
+   "voce": "le cozze tarantine",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-08T21:30:05.486Z"
+  },
+  {
+   "chiave": "IT-2-17",
+   "lingua": "IT",
+   "voce": "i supplì",
+   "esito": "scelta",
+   "file": "File:Supplì al telefono.jpg",
+   "quando": "2026-10-08T21:30:12.832Z",
+   "licenza": "CC BY 2.0",
+   "autore": "Krista",
+   "url": "https://commons.wikimedia.org/wiki/File:Suppl%C3%AC_al_telefono.jpg"
+  },
+  {
+   "chiave": "IT-2-18",
+   "lingua": "IT",
+   "voce": "la coda alla vaccinara",
+   "esito": "scelta",
+   "file": "File:Coda alla vaccinara-01.jpg",
+   "quando": "2026-10-08T21:30:14.181Z",
+   "licenza": "CC BY-SA 2.0",
+   "autore": "shu tu",
+   "url": "https://commons.wikimedia.org/wiki/File:Coda_alla_vaccinara-01.jpg"
+  },
+  {
+   "chiave": "IT-2-19",
+   "lingua": "IT",
+   "voce": "i pici",
+   "esito": "scelta",
+   "file": "File:Pici bulk.jpg",
+   "quando": "2026-10-08T21:30:19.126Z",
+   "licenza": "CC0",
+   "autore": "Popo le Chien",
+   "url": "https://commons.wikimedia.org/wiki/File:Pici_bulk.jpg"
+  },
+  {
+   "chiave": "IT-2-20",
+   "lingua": "IT",
+   "voce": "il maritozzo",
+   "esito": "scelta",
+   "file": "File:Italian Cream Bun 'Maritozzo' - Caffè Nero 2025-01-05.jpg",
+   "quando": "2026-10-08T21:30:26.659Z",
+   "licenza": "CC0",
+   "autore": "Andy Li",
+   "url": "https://commons.wikimedia.org/wiki/File:Italian_Cream_Bun_%27Maritozzo%27_-_Caff%C3%A8_Nero_2025-01-05.jpg"
+  },
+  {
+   "chiave": "IT-2-21",
+   "lingua": "IT",
+   "voce": "la bondiola",
+   "esito": "scelta",
+   "file": "File:Bondiola argentina.JPG",
+   "quando": "2026-10-08T21:30:38.531Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Carlosdisogra",
+   "url": "https://commons.wikimedia.org/wiki/File:Bondiola_argentina.JPG"
+  },
+  {
+   "chiave": "IT-2-22",
+   "lingua": "IT",
+   "voce": "il baccalà mantecato",
+   "esito": "scelta",
+   "file": "File:Baccalà mantecato con polenta La Nuova Perla.jpg",
+   "quando": "2026-10-08T21:30:44.017Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Benreis",
+   "url": "https://commons.wikimedia.org/wiki/File:Baccal%C3%A0_mantecato_con_polenta_La_Nuova_Perla.jpg"
+  },
+  {
+   "chiave": "IT-2-23",
+   "lingua": "IT",
+   "voce": "l'abbacchio",
+   "esito": "scelta",
+   "file": "File:Abbacchio Pasquale.jpg",
+   "quando": "2026-10-08T21:30:46.586Z",
+   "licenza": "CC BY 2.0",
+   "autore": "masolino / Tommaso Passi",
+   "url": "https://commons.wikimedia.org/wiki/File:Abbacchio_Pasquale.jpg"
+  },
+  {
+   "chiave": "IT-2-24",
+   "lingua": "IT",
+   "voce": "la ribollita",
+   "esito": "scelta",
+   "file": "File:Minestra di pane.jpg",
+   "quando": "2026-10-08T21:30:56.123Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Original uploader was  LupoCapra  at  it.wikipedia",
+   "url": "https://commons.wikimedia.org/wiki/File:Minestra_di_pane.jpg"
+  },
+  {
+   "chiave": "IT-2-25",
+   "lingua": "IT",
+   "voce": "i latterini marinati",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-08T21:31:09.085Z"
+  },
+  {
+   "chiave": "IT-2-26",
+   "lingua": "IT",
+   "voce": "il pane intorto",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-08T21:31:17.136Z"
+  },
+  {
+   "chiave": "IT-2-27",
+   "lingua": "IT",
+   "voce": "l'anatra di valle",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-08T21:31:19.719Z"
+  },
+  {
+   "chiave": "IT-2-28",
+   "lingua": "IT",
+   "voce": "le focaccine al sesamo della corte",
+   "esito": "scelta",
+   "file": "File:Focaccia nissena 2024 09.jpg",
+   "quando": "2026-10-08T21:31:22.600Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "OppidumNissenae",
+   "url": "https://commons.wikimedia.org/wiki/File:Focaccia_nissena_2024_09.jpg"
+  },
+  {
+   "chiave": "IT-2-29",
+   "lingua": "IT",
+   "voce": "i gnocchi con lo zucchero",
+   "esito": "scelta",
+   "file": "File:Gnocchi di ricotta burro e salvia.jpg",
+   "quando": "2026-10-08T21:31:28.327Z",
+   "licenza": "CC BY 2.0",
+   "autore": "Paoletta S.",
+   "url": "https://commons.wikimedia.org/wiki/File:Gnocchi_di_ricotta_burro_e_salvia.jpg"
+  },
+  {
+   "chiave": "IT-2-30",
+   "lingua": "IT",
+   "voce": "il cappone coperto di lasagne",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-08T21:31:34.647Z"
+  },
+  {
+   "chiave": "IT-3-01",
+   "lingua": "IT",
+   "voce": "il ful medames",
+   "esito": "scelta",
+   "file": "File:Foul Mdammis, Tunisie.jpg",
+   "quando": "2026-10-08T21:31:49.743Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Habib M'henni",
+   "url": "https://commons.wikimedia.org/wiki/File:Foul_Mdammis,_Tunisie.jpg"
+  },
+  {
+   "chiave": "IT-3-02",
+   "lingua": "IT",
+   "voce": "i pierogi",
+   "esito": "scelta",
+   "file": "File:Pierogi, Gniezno, Polonia3.jpg",
+   "quando": "2026-10-08T21:31:58.465Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Diego Delso",
+   "url": "https://commons.wikimedia.org/wiki/File:Pierogi,_Gniezno,_Polonia3.jpg"
+  },
+  {
+   "chiave": "IT-3-03",
+   "lingua": "IT",
+   "voce": "le puntarelle",
+   "esito": "scelta",
+   "file": "File:Puntarelle stehend.jpg",
+   "quando": "2026-10-08T21:32:04.725Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Jerome Prohaska",
+   "url": "https://commons.wikimedia.org/wiki/File:Puntarelle_stehend.jpg"
+  },
+  {
+   "chiave": "IT-3-04",
+   "lingua": "IT",
+   "voce": "la moussakà",
+   "esito": "scelta",
+   "file": "File:Meat Moussaka - Kouzina, Brighton 2023-11-24.jpg",
+   "quando": "2026-10-08T21:32:08.623Z",
+   "licenza": "CC0",
+   "autore": "Andy Li",
+   "url": "https://commons.wikimedia.org/wiki/File:Meat_Moussaka_-_Kouzina,_Brighton_2023-11-24.jpg"
+  },
+  {
+   "chiave": "IT-3-05",
+   "lingua": "IT",
+   "voce": "il souvlaki",
+   "esito": "scelta",
+   "file": "File:Souvlaki in Athens.JPG",
+   "quando": "2026-10-08T21:32:14.822Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Miyagawa",
+   "url": "https://commons.wikimedia.org/wiki/File:Souvlaki_in_Athens.JPG"
+  },
+  {
+   "chiave": "IT-3-06",
+   "lingua": "IT",
+   "voce": "la spanakopita",
+   "esito": "scelta",
+   "file": "File:Gatimetradicionale.jpg",
+   "quando": "2026-10-08T21:32:18.787Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Gatimetradicionale",
+   "url": "https://commons.wikimedia.org/wiki/File:Gatimetradicionale.jpg"
+  },
+  {
+   "chiave": "IT-3-07",
+   "lingua": "IT",
+   "voce": "la piadina",
+   "esito": "scelta",
+   "file": "File:Piadina.jpg",
+   "quando": "2026-10-08T21:32:23.077Z",
+   "licenza": "CC BY-SA 2.5",
+   "autore": "Kobako",
+   "url": "https://commons.wikimedia.org/wiki/File:Piadina.jpg"
+  },
+  {
+   "chiave": "IT-3-08",
+   "lingua": "IT",
+   "voce": "la burrata di Andria",
+   "esito": "scelta",
+   "file": "File:Burrata di Andria IGP 1.jpg",
+   "quando": "2026-10-08T21:32:26.827Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "FM433",
+   "url": "https://commons.wikimedia.org/wiki/File:Burrata_di_Andria_IGP_1.jpg"
+  },
+  {
+   "chiave": "IT-3-09",
+   "lingua": "IT",
+   "voce": "la bougatsa",
+   "esito": "scelta",
+   "file": "File:Бугатса со ванила крем.jpg",
+   "quando": "2026-10-08T21:32:32.456Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Deodora333",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%91%D1%83%D0%B3%D0%B0%D1%82%D1%81%D0%B0_%D1%81%D0%BE_%D0%B2%D0%B0%D0%BD%D0%B8%D0%BB%D0%B0_%D0%BA%D1%80%D0%B5%D0%BC.jpg"
+  },
+  {
+   "chiave": "IT-3-10",
+   "lingua": "IT",
+   "voce": "la mortadella di Messisbugo",
+   "esito": "scelta",
+   "file": "File:Mortadella.jpg",
+   "quando": "2026-10-08T21:32:40.126Z",
+   "licenza": "CC BY 2.0",
+   "autore": "ehud",
+   "url": "https://commons.wikimedia.org/wiki/File:Mortadella.jpg"
+  },
+  {
+   "chiave": "IT-3-11",
+   "lingua": "IT",
+   "voce": "la sfoglia sottile come la carta",
+   "esito": "scelta",
+   "file": "File:Sfoglia (2011).jpg",
+   "quando": "2026-10-08T21:32:46.172Z",
+   "licenza": "Public domain",
+   "autore": "Sfoglinodoro  at  Italian Wikipedia",
+   "url": "https://commons.wikimedia.org/wiki/File:Sfoglia_(2011).jpg"
+  },
+  {
+   "chiave": "IT-3-12",
+   "lingua": "IT",
+   "voce": "i biscotti speziati di Aquisgrana",
+   "esito": "scelta",
+   "file": "File:Aachener-printen-1.jpg",
+   "quando": "2026-10-08T21:32:51.198Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "SKopp",
+   "url": "https://commons.wikimedia.org/wiki/File:Aachener-printen-1.jpg"
+  },
+  {
+   "chiave": "IT-3-13",
+   "lingua": "IT",
+   "voce": "la cotoletta alla milanese",
+   "esito": "scelta",
+   "file": "File:Milanesa.jpg",
+   "quando": "2026-10-08T21:32:55.288Z",
+   "licenza": "CC BY 2.0",
+   "autore": "mteson  Marcelo Teson Los Angeles, CA, USA",
+   "url": "https://commons.wikimedia.org/wiki/File:Milanesa.jpg"
+  },
+  {
+   "chiave": "IT-3-14",
+   "lingua": "IT",
+   "voce": "il lampredotto",
+   "esito": "scelta",
+   "file": "File:Lampredotto sandwich.JPG",
+   "quando": "2026-10-08T21:33:03.863Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Lucarelli",
+   "url": "https://commons.wikimedia.org/wiki/File:Lampredotto_sandwich.JPG"
+  },
+  {
+   "chiave": "IT-3-15",
+   "lingua": "IT",
+   "voce": "i piselli di Savonarola",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-08T21:33:22.653Z"
+  },
+  {
+   "chiave": "IT-3-16",
+   "lingua": "IT",
+   "voce": "lo Spundekäs",
+   "esito": "scelta",
+   "file": "File:Spundekaes-Bachus-1.jpg",
+   "quando": "2026-10-08T21:33:46.329Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "User:Kandschwar , edit by  Rainer Z   ...",
+   "url": "https://commons.wikimedia.org/wiki/File:Spundekaes-Bachus-1.jpg"
+  },
+  {
+   "chiave": "IT-3-17",
+   "lingua": "IT",
+   "voce": "le melagrane della corte",
+   "esito": "scelta",
+   "file": "File:Pomegranate fruit - whole and piece with arils.jpg",
+   "quando": "2026-10-08T21:33:30.433Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Ivar Leidus",
+   "url": "https://commons.wikimedia.org/wiki/File:Pomegranate_fruit_-_whole_and_piece_with_arils.jpg"
+  },
+  {
+   "chiave": "IT-3-18",
+   "lingua": "IT",
+   "voce": "la costrada di Alcalá",
+   "esito": "scelta",
+   "file": "File:Costrada de Alcalá de Henares (RPS 18-12-2012).png",
+   "quando": "2026-10-08T21:33:50.442Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Raimundo Pastor",
+   "url": "https://commons.wikimedia.org/wiki/File:Costrada_de_Alcal%C3%A1_de_Henares_(RPS_18-12-2012).png"
+  },
+  {
+   "chiave": "IT-3-19",
+   "lingua": "IT",
+   "voce": "i biscotti al miele di Basilea",
+   "esito": "scelta",
+   "file": "File:Basler Läckerli 02.jpeg",
+   "quando": "2026-10-08T21:33:55.542Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Manuel Schneider   (bla)   (+/-)",
+   "url": "https://commons.wikimedia.org/wiki/File:Basler_L%C3%A4ckerli_02.jpeg"
+  },
+  {
+   "chiave": "IT-3-20",
+   "lingua": "IT",
+   "voce": "le albicocche della corte",
+   "esito": "scelta",
+   "file": "File:Adriaen coorte, natura morta con cinque albicocche, 1704.jpg",
+   "quando": "2026-10-08T21:34:01.168Z",
+   "licenza": "CC BY 3.0",
+   "autore": "Sailko",
+   "url": "https://commons.wikimedia.org/wiki/File:Adriaen_coorte,_natura_morta_con_cinque_albicocche,_1704.jpg"
+  },
+  {
+   "chiave": "IT-3-21",
+   "lingua": "IT",
+   "voce": "il Sauerbraten",
+   "esito": "scelta",
+   "file": "File:2021-10-01 Sauerbraten beim Brückenbaron, Am Mühläcker, 97255 Sonderhofen.jpg",
+   "quando": "2026-10-08T21:34:08.223Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Triplec85",
+   "url": "https://commons.wikimedia.org/wiki/File:2021-10-01_Sauerbraten_beim_Br%C3%BCckenbaron,_Am_M%C3%BChl%C3%A4cker,_97255_Sonderhofen.jpg"
+  },
+  {
+   "chiave": "IT-3-22",
+   "lingua": "IT",
+   "voce": "la cipolla di Certaldo",
+   "esito": "scelta",
+   "file": "File:La cipolla rossa di Acquaviva.jpg",
+   "quando": "2026-10-08T21:34:23.189Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Massimiliano Ruggieri",
+   "url": "https://commons.wikimedia.org/wiki/File:La_cipolla_rossa_di_Acquaviva.jpg"
+  },
+  {
+   "chiave": "IT-3-23",
+   "lingua": "IT",
+   "voce": "la baguette",
+   "esito": "scelta",
+   "file": "File:Baguettes - stonesoup.jpg",
+   "quando": "2026-10-08T21:34:25.860Z",
+   "licenza": "CC BY 2.0",
+   "autore": "jules / stonesoup",
+   "url": "https://commons.wikimedia.org/wiki/File:Baguettes_-_stonesoup.jpg"
+  },
+  {
+   "chiave": "IT-3-24",
+   "lingua": "IT",
+   "voce": "le salsicce di Norimberga",
+   "esito": "scelta",
+   "file": "File:Nürnberger Rostbratwürste.JPG",
+   "quando": "2026-10-08T21:34:35.442Z",
+   "licenza": "CC BY 4.0",
+   "autore": "Schlurcher",
+   "url": "https://commons.wikimedia.org/wiki/File:N%C3%BCrnberger_Rostbratw%C3%BCrste.JPG"
+  },
+  {
+   "chiave": "IT-3-25",
+   "lingua": "IT",
+   "voce": "il fegato alla veneziana",
+   "esito": "scelta",
+   "file": "File:Liver and Onions at the Rathauskeller.jpg",
+   "quando": "2026-10-08T21:34:54.359Z",
+   "licenza": "CC BY 2.0",
+   "autore": "Much Ramblings",
+   "url": "https://commons.wikimedia.org/wiki/File:Liver_and_Onions_at_the_Rathauskeller.jpg"
+  },
+  {
+   "chiave": "IT-3-26",
+   "lingua": "IT",
+   "voce": "il fish and chips",
+   "esito": "scelta",
+   "file": "File:Fish and Chips Bath, UK.jpg",
+   "quando": "2026-10-08T21:35:00.699Z",
+   "licenza": "CC0",
+   "autore": "Gvjekoslav",
+   "url": "https://commons.wikimedia.org/wiki/File:Fish_and_Chips_Bath,_UK.jpg"
+  },
+  {
+   "chiave": "IT-3-27",
+   "lingua": "IT",
+   "voce": "la zuppa di cipolle",
+   "esito": "scelta",
+   "file": "File:French Onion Soup - 48360705571.jpg",
+   "quando": "2026-10-08T21:35:06.265Z",
+   "licenza": "CC BY 2.0",
+   "autore": "Key West Wedding Photography",
+   "url": "https://commons.wikimedia.org/wiki/File:French_Onion_Soup_-_48360705571.jpg"
+  },
+  {
+   "chiave": "IT-3-28",
+   "lingua": "IT",
+   "voce": "il vitello tonnato",
+   "esito": "scelta",
+   "file": "File:Vitello tonnato.jpg",
+   "quando": "2026-10-08T21:35:09.952Z",
+   "licenza": "CC BY 2.0",
+   "autore": "jules",
+   "url": "https://commons.wikimedia.org/wiki/File:Vitello_tonnato.jpg"
+  },
+  {
+   "chiave": "IT-3-29",
+   "lingua": "IT",
+   "voce": "i carciofi alla romana",
+   "esito": "scelta",
+   "file": "File:Carciofiromana.jpg",
+   "quando": "2026-10-08T21:35:15.636Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Popo le Chien",
+   "url": "https://commons.wikimedia.org/wiki/File:Carciofiromana.jpg"
+  },
+  {
+   "chiave": "IT-3-30",
+   "lingua": "IT",
+   "voce": "i tortelli di zucca",
+   "esito": "scelta",
+   "file": "File:Tortelli d'erbetta.jpg",
+   "quando": "2026-10-08T21:35:20.352Z",
+   "licenza": "Public domain",
+   "autore": "Clop",
+   "url": "https://commons.wikimedia.org/wiki/File:Tortelli_d%27erbetta.jpg"
+  },
+  {
+   "chiave": "IT-4-01",
+   "lingua": "IT",
+   "voce": "il masgouf",
+   "esito": "scelta",
+   "file": "File:The famed masgouf - Flickr - Al Jazeera English.jpg",
+   "quando": "2026-10-09T19:56:52.870Z",
+   "licenza": "CC BY-SA 2.0",
+   "autore": "Al Jazeera English",
+   "url": "https://commons.wikimedia.org/wiki/File:The_famed_masgouf_-_Flickr_-_Al_Jazeera_English.jpg"
+  },
+  {
+   "chiave": "IT-4-02",
+   "lingua": "IT",
+   "voce": "il koshari",
+   "esito": "scelta",
+   "file": "File:Egyptian Koshari.jpg",
+   "quando": "2026-10-09T19:56:59.794Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Basma",
+   "url": "https://commons.wikimedia.org/wiki/File:Egyptian_Koshari.jpg"
+  },
+  {
+   "chiave": "IT-4-03",
+   "lingua": "IT",
+   "voce": "il roujiamo",
+   "esito": "scelta",
+   "file": "File:古城樊氏腊汁肉夹馍1.JPG",
+   "quando": "2026-10-09T19:57:04.776Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Steetsweet",
+   "url": "https://commons.wikimedia.org/wiki/File:%E5%8F%A4%E5%9F%8E%E6%A8%8A%E6%B0%8F%E8%85%8A%E6%B1%81%E8%82%89%E5%A4%B9%E9%A6%8D1.JPG"
+  },
+  {
+   "chiave": "IT-4-04",
+   "lingua": "IT",
+   "voce": "il pane del sole",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T19:57:07.948Z"
+  },
+  {
+   "chiave": "IT-4-05",
+   "lingua": "IT",
+   "voce": "il petha di Agra",
+   "esito": "scelta",
+   "file": "File:Petha-from-Agra.JPG",
+   "quando": "2026-10-09T19:57:14.140Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Rsrikanth05",
+   "url": "https://commons.wikimedia.org/wiki/File:Petha-from-Agra.JPG"
+  },
+  {
+   "chiave": "IT-4-06",
+   "lingua": "IT",
+   "voce": "i buuz",
+   "esito": "scelta",
+   "file": "File:Buuza 01.jpg",
+   "quando": "2026-10-09T19:57:20.214Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Аркадий Зарубин",
+   "url": "https://commons.wikimedia.org/wiki/File:Buuza_01.jpg"
+  },
+  {
+   "chiave": "IT-4-07",
+   "lingua": "IT",
+   "voce": "la Welfenspeise",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:00:17.582Z"
+  },
+  {
+   "chiave": "IT-4-08",
+   "lingua": "IT",
+   "voce": "le polpette svedesi",
+   "esito": "scelta",
+   "file": "File:Köttbullar at IKEA Beijing Xihongmen Store (20200729181732).jpg",
+   "quando": "2026-10-09T19:57:25.780Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "N509FZ",
+   "url": "https://commons.wikimedia.org/wiki/File:K%C3%B6ttbullar_at_IKEA_Beijing_Xihongmen_Store_(20200729181732).jpg"
+  },
+  {
+   "chiave": "IT-4-09",
+   "lingua": "IT",
+   "voce": "lo stufato di arachidi del Mali",
+   "esito": "scelta",
+   "file": "File:Beef Stew with Rice with peanut butter.jpg",
+   "quando": "2026-10-09T19:57:32.803Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Gody Mago",
+   "url": "https://commons.wikimedia.org/wiki/File:Beef_Stew_with_Rice_with_peanut_butter.jpg"
+  },
+  {
+   "chiave": "IT-4-10",
+   "lingua": "IT",
+   "voce": "il brodetto di Comacchio",
+   "esito": "scelta",
+   "file": "File:Brodet.JPG",
+   "quando": "2026-10-09T19:57:40.080Z",
+   "licenza": "Public domain",
+   "autore": "Chiqui Teo",
+   "url": "https://commons.wikimedia.org/wiki/File:Brodet.JPG"
+  },
+  {
+   "chiave": "IT-4-11",
+   "lingua": "IT",
+   "voce": "le kubba",
+   "esito": "scelta",
+   "file": "File:Kibbeh3.jpg",
+   "quando": "2026-10-09T19:57:44.839Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Bazel",
+   "url": "https://commons.wikimedia.org/wiki/File:Kibbeh3.jpg"
+  },
+  {
+   "chiave": "IT-4-12",
+   "lingua": "IT",
+   "voce": "il jianbing",
+   "esito": "scelta",
+   "file": "File:Preparing Jianbing in Binhai, Tianjin (20191006080542).jpg",
+   "quando": "2026-10-09T19:57:52.319Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "N509FZ",
+   "url": "https://commons.wikimedia.org/wiki/File:Preparing_Jianbing_in_Binhai,_Tianjin_(20191006080542).jpg"
+  },
+  {
+   "chiave": "IT-4-13",
+   "lingua": "IT",
+   "voce": "la sayadeya",
+   "esito": "scelta",
+   "file": "File:Samak mashwi.jpg",
+   "quando": "2026-10-09T19:58:05.969Z",
+   "licenza": "CC BY 2.0",
+   "autore": "Walter G Rodriguez",
+   "url": "https://commons.wikimedia.org/wiki/File:Samak_mashwi.jpg"
+  },
+  {
+   "chiave": "IT-4-14",
+   "lingua": "IT",
+   "voce": "i tamales",
+   "esito": "scelta",
+   "file": "File:Tamales norteños.jpg",
+   "quando": "2026-10-09T19:58:09.297Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "NachtBel",
+   "url": "https://commons.wikimedia.org/wiki/File:Tamales_norte%C3%B1os.jpg"
+  },
+  {
+   "chiave": "IT-4-15",
+   "lingua": "IT",
+   "voce": "il mastice di Chio",
+   "esito": "scelta",
+   "file": "File:Mastic.jpg",
+   "quando": "2026-10-09T19:58:14.446Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "",
+   "url": "https://commons.wikimedia.org/wiki/File:Mastic.jpg"
+  },
+  {
+   "chiave": "IT-4-16",
+   "lingua": "IT",
+   "voce": "il litti chokha",
+   "esito": "scelta",
+   "file": "File:Litti Chokha - Kolkata.jpg",
+   "quando": "2026-10-09T19:58:19.015Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Sumit Surai",
+   "url": "https://commons.wikimedia.org/wiki/File:Litti_Chokha_-_Kolkata.jpg"
+  },
+  {
+   "chiave": "IT-4-17",
+   "lingua": "IT",
+   "voce": "il vada pav",
+   "esito": "scelta",
+   "file": "File:Vada Pav.jpg",
+   "quando": "2026-10-09T19:58:23.715Z",
+   "licenza": "CC BY 3.0",
+   "autore": "Deepeshmd",
+   "url": "https://commons.wikimedia.org/wiki/File:Vada_Pav.jpg"
+  },
+  {
+   "chiave": "IT-4-18",
+   "lingua": "IT",
+   "voce": "la baklava",
+   "esito": "scelta",
+   "file": "File:2018-04-28 Turkish baklava in Australian turkish cafe.jpg",
+   "quando": "2026-10-09T19:58:29.499Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Maksym Kozlenko",
+   "url": "https://commons.wikimedia.org/wiki/File:2018-04-28_Turkish_baklava_in_Australian_turkish_cafe.jpg"
+  },
+  {
+   "chiave": "IT-4-19",
+   "lingua": "IT",
+   "voce": "i falafel",
+   "esito": "scelta",
+   "file": "File:Falafel.JPG",
+   "quando": "2026-10-09T19:58:34.839Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "The original uploader was  Jerem  at  French Wikipedia .",
+   "url": "https://commons.wikimedia.org/wiki/File:Falafel.JPG"
+  },
+  {
+   "chiave": "IT-4-20",
+   "lingua": "IT",
+   "voce": "le arance della corte",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T19:58:40.962Z"
+  },
+  {
+   "chiave": "IT-4-21",
+   "lingua": "IT",
+   "voce": "il marzapane di Toledo",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T19:58:44.325Z"
+  },
+  {
+   "chiave": "IT-4-22",
+   "lingua": "IT",
+   "voce": "i datteri",
+   "esito": "scelta",
+   "file": "File:Bartolomeo bimbi, datteri su un piatto, 1720.JPG",
+   "quando": "2026-10-09T19:58:49.843Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Sailko",
+   "url": "https://commons.wikimedia.org/wiki/File:Bartolomeo_bimbi,_datteri_su_un_piatto,_1720.JPG"
+  },
+  {
+   "chiave": "IT-4-23",
+   "lingua": "IT",
+   "voce": "il pastel de nata",
+   "esito": "scelta",
+   "file": "File:Portogallo - pastel de nata 1 - Artigiano in Fiera 2023.jpg",
+   "quando": "2026-10-09T19:58:56.697Z",
+   "licenza": "CC BY 4.0",
+   "autore": "Saggittarius A",
+   "url": "https://commons.wikimedia.org/wiki/File:Portogallo_-_pastel_de_nata_1_-_Artigiano_in_Fiera_2023.jpg"
+  },
+  {
+   "chiave": "IT-4-24",
+   "lingua": "IT",
+   "voce": "i noodle di riso di Nanchang",
+   "esito": "scelta",
+   "file": "File:Stirred rice noodles in Nanchang (20190619174747).jpg",
+   "quando": "2026-10-09T19:59:00.505Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "N509FZ",
+   "url": "https://commons.wikimedia.org/wiki/File:Stirred_rice_noodles_in_Nanchang_(20190619174747).jpg"
+  },
+  {
+   "chiave": "IT-4-25",
+   "lingua": "IT",
+   "voce": "le crab cakes del Maryland",
+   "esito": "scelta",
+   "file": "File:(20240728) Rotterdam V11, Fish & Chips, Salmon & Crab Cakes.jpg",
+   "quando": "2026-10-09T19:59:10.152Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Roy Zuo",
+   "url": "https://commons.wikimedia.org/wiki/File:(20240728)_Rotterdam_V11,_Fish_%26_Chips,_Salmon_%26_Crab_Cakes.jpg"
+  },
+  {
+   "chiave": "IT-4-26",
+   "lingua": "IT",
+   "voce": "il pomodoro",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T19:59:13.536Z"
+  },
+  {
+   "chiave": "IT-4-27",
+   "lingua": "IT",
+   "voce": "i lokum",
+   "esito": "scelta",
+   "file": "File:Confiserie orientale berlin lokum minze.jpg",
+   "quando": "2026-10-09T19:59:29.605Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "c.berlin",
+   "url": "https://commons.wikimedia.org/wiki/File:Confiserie_orientale_berlin_lokum_minze.jpg"
+  },
+  {
+   "chiave": "IT-4-28",
+   "lingua": "IT",
+   "voce": "il kedgeree",
+   "esito": "scelta",
+   "file": "File:Khichuri - Bhog.jpg",
+   "quando": "2026-10-09T19:59:37.670Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Souradeep.Dasgupta",
+   "url": "https://commons.wikimedia.org/wiki/File:Khichuri_-_Bhog.jpg"
+  },
+  {
+   "chiave": "IT-4-29",
+   "lingua": "IT",
+   "voce": "il bigos",
+   "esito": "scelta",
+   "file": "File:02024 0360 Eisbein in Sauerkraut, Bigos, Baked potatoes.jpg",
+   "quando": "2026-10-09T19:59:43.886Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Silar",
+   "url": "https://commons.wikimedia.org/wiki/File:02024_0360_Eisbein_in_Sauerkraut,_Bigos,_Baked_potatoes.jpg"
+  },
+  {
+   "chiave": "IT-4-30",
+   "lingua": "IT",
+   "voce": "le susine della corte",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T19:59:55.490Z"
+  },
+  {
+   "chiave": "IT-5-01",
+   "lingua": "IT",
+   "voce": "la deep dish pizza",
+   "esito": "scelta",
+   "file": "File:Deep-Dish Pizza.jpg",
+   "quando": "2026-10-09T20:11:51.884Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Telluride",
+   "url": "https://commons.wikimedia.org/wiki/File:Deep-Dish_Pizza.jpg"
+  },
+  {
+   "chiave": "IT-5-02",
+   "lingua": "IT",
+   "voce": "la Sachertorte",
+   "esito": "scelta",
+   "file": "File:Half Sachertorte.jpg",
+   "quando": "2026-10-09T20:11:54.363Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "SWT666",
+   "url": "https://commons.wikimedia.org/wiki/File:Half_Sachertorte.jpg"
+  },
+  {
+   "chiave": "IT-5-03",
+   "lingua": "IT",
+   "voce": "il roast beef",
+   "esito": "scelta",
+   "file": "File:Roast beef dish.jpg",
+   "quando": "2026-10-09T20:11:58.347Z",
+   "licenza": "CC0",
+   "autore": "Akahito Yamabe",
+   "url": "https://commons.wikimedia.org/wiki/File:Roast_beef_dish.jpg"
+  },
+  {
+   "chiave": "IT-5-04",
+   "lingua": "IT",
+   "voce": "la Smith Island cake",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:12:03.784Z"
+  },
+  {
+   "chiave": "IT-5-05",
+   "lingua": "IT",
+   "voce": "il chile verde del Nuovo Messico",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:12:06.381Z"
+  },
+  {
+   "chiave": "IT-5-06",
+   "lingua": "IT",
+   "voce": "il pane samoon",
+   "esito": "scelta",
+   "file": "File:Iraqi Sammon Bread 03.jpg",
+   "quando": "2026-10-09T20:12:11.975Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Abdulsalam Al Dabbagh",
+   "url": "https://commons.wikimedia.org/wiki/File:Iraqi_Sammon_Bread_03.jpg"
+  },
+  {
+   "chiave": "IT-5-07",
+   "lingua": "IT",
+   "voce": "gli scones",
+   "esito": "scelta",
+   "file": "File:Scones for 5 de Mayo 2023 - Tray out of the oven.jpg",
+   "quando": "2026-10-09T20:12:20.653Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Infrogmation of New Orleans",
+   "url": "https://commons.wikimedia.org/wiki/File:Scones_for_5_de_Mayo_2023_-_Tray_out_of_the_oven.jpg"
+  },
+  {
+   "chiave": "IT-5-08",
+   "lingua": "IT",
+   "voce": "il beshbarmak",
+   "esito": "scelta",
+   "file": "File:Бешбармак из говядины 01.jpg",
+   "quando": "2026-10-09T20:12:25.921Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Pannet",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%B5%D1%88%D0%B1%D0%B0%D1%80%D0%BC%D0%B0%D0%BA_%D0%B8%D0%B7_%D0%B3%D0%BE%D0%B2%D1%8F%D0%B4%D0%B8%D0%BD%D1%8B_01.jpg"
+  },
+  {
+   "chiave": "IT-5-09",
+   "lingua": "IT",
+   "voce": "il pie and mash",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:12:32.591Z"
+  },
+  {
+   "chiave": "IT-5-10",
+   "lingua": "IT",
+   "voce": "il gravlax",
+   "esito": "scelta",
+   "file": "File:Gravlax de saumon, auberge des Tilleuls, monts du Beaujolais (août 2019).jpg",
+   "quando": "2026-10-09T20:12:43.381Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Sebleouf",
+   "url": "https://commons.wikimedia.org/wiki/File:Gravlax_de_saumon,_auberge_des_Tilleuls,_monts_du_Beaujolais_(ao%C3%BBt_2019).jpg"
+  },
+  {
+   "chiave": "IT-5-11",
+   "lingua": "IT",
+   "voce": "il pork roll",
+   "esito": "scelta",
+   "file": "File:Pork roll at Palace Diner in Biddeford ME.jpg",
+   "quando": "2026-10-09T20:12:50.505Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Bigmacthealmanac",
+   "url": "https://commons.wikimedia.org/wiki/File:Pork_roll_at_Palace_Diner_in_Biddeford_ME.jpg"
+  },
+  {
+   "chiave": "IT-5-12",
+   "lingua": "IT",
+   "voce": "l'asado",
+   "esito": "scelta",
+   "file": "File:Asado de cerdo con costillas al estilo argentino.jpg",
+   "quando": "2026-10-09T20:12:57.578Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Horacio Cambeiro",
+   "url": "https://commons.wikimedia.org/wiki/File:Asado_de_cerdo_con_costillas_al_estilo_argentino.jpg"
+  },
+  {
+   "chiave": "IT-5-13",
+   "lingua": "IT",
+   "voce": "il Chelsea bun di Cambridge",
+   "esito": "scelta",
+   "file": "File:Marmalade Chelsea Bun (28422592054).jpg",
+   "quando": "2026-10-09T20:13:09.863Z",
+   "licenza": "CC BY-SA 2.0",
+   "autore": "Amanda Slater  from Coventry, West Midlands, UK",
+   "url": "https://commons.wikimedia.org/wiki/File:Marmalade_Chelsea_Bun_(28422592054).jpg"
+  },
+  {
+   "chiave": "IT-5-14",
+   "lingua": "IT",
+   "voce": "la torta di mirtilli",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:13:07.239Z"
+  },
+  {
+   "chiave": "IT-5-15",
+   "lingua": "IT",
+   "voce": "il bagel",
+   "esito": "scelta",
+   "file": "File:Montreal Bagel by Fairmount Bagels.jpg",
+   "quando": "2026-10-09T20:13:17.102Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Gogerr",
+   "url": "https://commons.wikimedia.org/wiki/File:Montreal_Bagel_by_Fairmount_Bagels.jpg"
+  },
+  {
+   "chiave": "IT-5-16",
+   "lingua": "IT",
+   "voce": "il salmone del Pacifico",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:13:19.598Z"
+  },
+  {
+   "chiave": "IT-5-17",
+   "lingua": "IT",
+   "voce": "il French dip",
+   "esito": "scelta",
+   "file": "File:French Dip - 2442821376.jpg",
+   "quando": "2026-10-09T20:13:27.372Z",
+   "licenza": "CC BY 2.0",
+   "autore": "rick",
+   "url": "https://commons.wikimedia.org/wiki/File:French_Dip_-_2442821376.jpg"
+  },
+  {
+   "chiave": "IT-5-18",
+   "lingua": "IT",
+   "voce": "il cioppino",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:13:33.809Z"
+  },
+  {
+   "chiave": "IT-5-19",
+   "lingua": "IT",
+   "voce": "le anguille in gelatina",
+   "esito": "scelta",
+   "file": "File:Jellied Eels Manze Tower Bridge Rd Oct08.jpg",
+   "quando": "2026-10-09T20:13:37.679Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Secretlondon",
+   "url": "https://commons.wikimedia.org/wiki/File:Jellied_Eels_Manze_Tower_Bridge_Rd_Oct08.jpg"
+  },
+  {
+   "chiave": "IT-5-20",
+   "lingua": "IT",
+   "voce": "le mele ferraresi",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:13:40.819Z"
+  },
+  {
+   "chiave": "IT-5-21",
+   "lingua": "IT",
+   "voce": "le aringhe",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:13:43.463Z"
+  },
+  {
+   "chiave": "IT-5-22",
+   "lingua": "IT",
+   "voce": "il sushi",
+   "esito": "scelta",
+   "file": "File:2007feb-sushi-odaiba-manytypes.jpg",
+   "quando": "2026-10-09T20:13:50.928Z",
+   "licenza": "CC BY 2.5",
+   "autore": "Nesnad",
+   "url": "https://commons.wikimedia.org/wiki/File:2007feb-sushi-odaiba-manytypes.jpg"
+  },
+  {
+   "chiave": "IT-5-23",
+   "lingua": "IT",
+   "voce": "la longeole di Ginevra",
+   "esito": "scelta",
+   "file": "File:Sausages from Switzerland.jpg",
+   "quando": "2026-10-09T20:13:57.046Z",
+   "licenza": "CC BY 2.0",
+   "autore": "Salon Suisse des Goûts et Terroirs",
+   "url": "https://commons.wikimedia.org/wiki/File:Sausages_from_Switzerland.jpg"
+  },
+  {
+   "chiave": "IT-5-24",
+   "lingua": "IT",
+   "voce": "il Double Gloucester",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:14:03.031Z"
+  },
+  {
+   "chiave": "IT-5-25",
+   "lingua": "IT",
+   "voce": "il pomodoro del New Jersey",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:14:05.399Z"
+  },
+  {
+   "chiave": "IT-5-26",
+   "lingua": "IT",
+   "voce": "la clam chowder",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:14:14.081Z"
+  },
+  {
+   "chiave": "IT-5-27",
+   "lingua": "IT",
+   "voce": "il peameal bacon sandwich",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:14:16.747Z"
+  },
+  {
+   "chiave": "IT-5-28",
+   "lingua": "IT",
+   "voce": "il teriyaki di Seattle",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:14:22.697Z"
+  },
+  {
+   "chiave": "IT-5-29",
+   "lingua": "IT",
+   "voce": "la colazione inglese",
+   "esito": "scelta",
+   "file": "File:English breakfast London.jpg",
+   "quando": "2026-10-09T20:14:24.792Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "CristianNX",
+   "url": "https://commons.wikimedia.org/wiki/File:English_breakfast_London.jpg"
+  },
+  {
+   "chiave": "IT-5-30",
+   "lingua": "IT",
+   "voce": "la frittata di cipolle",
+   "esito": "scelta",
+   "file": "File:Herb 'frittata' and boiled easter eggs.jpg",
+   "quando": "2026-10-09T20:14:30.348Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Albarubescens",
+   "url": "https://commons.wikimedia.org/wiki/File:Herb_%27frittata%27_and_boiled_easter_eggs.jpg"
+  },
+  {
+   "chiave": "LA-01",
+   "lingua": "LA",
+   "voce": "gli auspici",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:14:44.726Z"
+  },
+  {
+   "chiave": "LA-02",
+   "lingua": "LA",
+   "voce": "i presagi",
+   "esito": "scelta",
+   "file": "File:Auguryy.jpg",
+   "quando": "2026-10-09T20:14:52.407Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Mariageorgieva0802",
+   "url": "https://commons.wikimedia.org/wiki/File:Auguryy.jpg"
+  },
+  {
+   "chiave": "LA-03",
+   "lingua": "LA",
+   "voce": "il volo degli uccelli",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:14:56.814Z"
+  },
+  {
+   "chiave": "LA-04",
+   "lingua": "LA",
+   "voce": "il fegato di Piacenza",
+   "esito": "scelta",
+   "file": "File:Hígado de Piacenza. MARQ.jpg",
+   "quando": "2026-10-09T20:15:02.624Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Dorieo",
+   "url": "https://commons.wikimedia.org/wiki/File:H%C3%ADgado_de_Piacenza._MARQ.jpg"
+  },
+  {
+   "chiave": "LA-05",
+   "lingua": "LA",
+   "voce": "gli aruspici",
+   "esito": "scelta",
+   "file": "File:Divinatio (RDCA).gif",
+   "quando": "2026-10-09T20:15:07.369Z",
+   "licenza": "Public domain",
+   "autore": "Unknown author Unknown author",
+   "url": "https://commons.wikimedia.org/wiki/File:Divinatio_(RDCA).gif"
+  },
+  {
+   "chiave": "LA-06",
+   "lingua": "LA",
+   "voce": "i sacerdoti e i riti",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:15:11.723Z"
+  },
+  {
+   "chiave": "LA-07",
+   "lingua": "LA",
+   "voce": "il fulmine",
+   "esito": "scelta",
+   "file": "File:Lightning Pritzerbe 01 (MK).jpg",
+   "quando": "2026-10-09T20:15:16.322Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Mathias Krumbholz",
+   "url": "https://commons.wikimedia.org/wiki/File:Lightning_Pritzerbe_01_(MK).jpg"
+  },
+  {
+   "chiave": "LA-08",
+   "lingua": "LA",
+   "voce": "i prodigi",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:15:20.351Z"
+  },
+  {
+   "chiave": "LA-09",
+   "lingua": "LA",
+   "voce": "i sogni",
+   "esito": "scelta",
+   "file": "File:Visionart Art Dream Dream Away by Soriano.png",
+   "quando": "2026-10-09T20:15:24.835Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "David S. Soriano",
+   "url": "https://commons.wikimedia.org/wiki/File:Visionart_Art_Dream_Dream_Away_by_Soriano.png"
+  },
+  {
+   "chiave": "LA-10",
+   "lingua": "LA",
+   "voce": "i numeri",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:15:28.951Z"
+  },
+  {
+   "chiave": "LA-11",
+   "lingua": "LA",
+   "voce": "il calendario e i giorni",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:15:36.116Z"
+  },
+  {
+   "chiave": "LA-12",
+   "lingua": "LA",
+   "voce": "gli starnuti",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:15:39.816Z"
+  },
+  {
+   "chiave": "LA-13",
+   "lingua": "LA",
+   "voce": "le feste",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:15:42.143Z"
+  },
+  {
+   "chiave": "LA-14",
+   "lingua": "LA",
+   "voce": "le processioni",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:15:46.168Z"
+  },
+  {
+   "chiave": "LA-15",
+   "lingua": "LA",
+   "voce": "i voti",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:15:48.156Z"
+  },
+  {
+   "chiave": "LA-16",
+   "lingua": "LA",
+   "voce": "i giuramenti",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:15:50.089Z"
+  },
+  {
+   "chiave": "LA-17",
+   "lingua": "LA",
+   "voce": "la maledizione",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:15:52.341Z"
+  },
+  {
+   "chiave": "LA-18",
+   "lingua": "LA",
+   "voce": "il tabù",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:15:54.009Z"
+  },
+  {
+   "chiave": "LA-19",
+   "lingua": "LA",
+   "voce": "i nomi e la sorte",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:15:59.468Z"
+  },
+  {
+   "chiave": "LA-20",
+   "lingua": "LA",
+   "voce": "il destino",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:16:07.638Z"
+  },
+  {
+   "chiave": "LA-21",
+   "lingua": "LA",
+   "voce": "i segni premonitori",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:16:12.876Z"
+  },
+  {
+   "chiave": "LA-22",
+   "lingua": "LA",
+   "voce": "gli amuleti",
+   "esito": "scelta",
+   "file": "File:Amuletter i brons - Hallwylska museet - 98636.tif",
+   "quando": "2026-10-09T20:16:15.905Z",
+   "licenza": "Public domain",
+   "autore": "Unknown author Unknown author",
+   "url": "https://commons.wikimedia.org/wiki/File:Amuletter_i_brons_-_Hallwylska_museet_-_98636.tif"
+  },
+  {
+   "chiave": "LA-23",
+   "lingua": "LA",
+   "voce": "i presagi delle nascite",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:16:20.789Z"
+  },
+  {
+   "chiave": "LA-24",
+   "lingua": "LA",
+   "voce": "i riti funebri",
+   "esito": "scelta",
+   "file": "File:VY9iYcd.png",
+   "quando": "2026-10-09T20:16:25.309Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Dubbelgamer",
+   "url": "https://commons.wikimedia.org/wiki/File:VY9iYcd.png"
+  },
+  {
+   "chiave": "LA-25",
+   "lingua": "LA",
+   "voce": "il fuoco sacro",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:16:28.975Z"
+  },
+  {
+   "chiave": "LA-26",
+   "lingua": "LA",
+   "voce": "gli animali divini",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:16:31.118Z"
+  },
+  {
+   "chiave": "LA-27",
+   "lingua": "LA",
+   "voce": "i luoghi sacri",
+   "esito": "scelta",
+   "file": "File:Templo de Augusto, Pula, Croacia, 2017-04-17, DD 71-73 HDR.jpg",
+   "quando": "2026-10-09T20:16:36.505Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Diego Delso",
+   "url": "https://commons.wikimedia.org/wiki/File:Templo_de_Augusto,_Pula,_Croacia,_2017-04-17,_DD_71-73_HDR.jpg"
+  },
+  {
+   "chiave": "LA-28",
+   "lingua": "LA",
+   "voce": "le formule di protezione",
+   "esito": "scelta",
+   "file": "File:Curse tablet Jerusalem drawing.jpg",
+   "quando": "2026-10-09T20:16:39.901Z",
+   "licenza": "CC BY-SA 2.0",
+   "autore": "Robert Walter Daniel",
+   "url": "https://commons.wikimedia.org/wiki/File:Curse_tablet_Jerusalem_drawing.jpg"
+  },
+  {
+   "chiave": "LA-29",
+   "lingua": "LA",
+   "voce": "il malocchio",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:16:45.375Z"
+  },
+  {
+   "chiave": "LA-30",
+   "lingua": "LA",
+   "voce": "il piede destro",
+   "esito": "scelta",
+   "file": "File:Frammento di piede destro con sandalo, I-II secolo dc. (terme di diocleziano).jpg",
+   "quando": "2026-10-09T20:16:49.616Z",
+   "licenza": "CC BY 3.0",
+   "autore": "Sailko",
+   "url": "https://commons.wikimedia.org/wiki/File:Frammento_di_piede_destro_con_sandalo,_I-II_secolo_dc._(terme_di_diocleziano).jpg"
+  },
+  {
+   "chiave": "SI-01",
+   "lingua": "SI",
+   "voce": "l'intaglio della pietra dura",
+   "esito": "scelta",
+   "file": "File:Roman - Intaglio of Satyr Dancing - Walters 42108 - Impression.jpg",
+   "quando": "2026-10-09T20:20:02.591Z",
+   "licenza": "Public domain",
+   "autore": "Anonymous  (  Category:Roman Empire  ) Unknown author",
+   "url": "https://commons.wikimedia.org/wiki/File:Roman_-_Intaglio_of_Satyr_Dancing_-_Walters_42108_-_Impression.jpg"
+  },
+  {
+   "chiave": "SI-02",
+   "lingua": "SI",
+   "voce": "la ceramica",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:20:04.539Z"
+  },
+  {
+   "chiave": "SI-03",
+   "lingua": "SI",
+   "voce": "la maiolica",
+   "esito": "scelta",
+   "file": "File:Caffagiolo Dish with maiolica painter VA 1717-1855.jpg",
+   "quando": "2026-10-09T20:20:11.153Z",
+   "licenza": "Public domain",
+   "autore": "Probably Maestro Jacopo",
+   "url": "https://commons.wikimedia.org/wiki/File:Caffagiolo_Dish_with_maiolica_painter_VA_1717-1855.jpg"
+  },
+  {
+   "chiave": "SI-04",
+   "lingua": "SI",
+   "voce": "la smaltatura",
+   "esito": "scelta",
+   "file": "File:Ordre de L Union Parfait crop.jpg",
+   "quando": "2026-10-09T20:20:16.585Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Robert Prummel  at  Dutch Wikipedia",
+   "url": "https://commons.wikimedia.org/wiki/File:Ordre_de_L_Union_Parfait_crop.jpg"
+  },
+  {
+   "chiave": "SI-05",
+   "lingua": "SI",
+   "voce": "il vetro",
+   "esito": "scelta",
+   "file": "File:Sunlight on the curved honeycomb glass façade of the hotel Andaz mixed with interior lighting at sunset in Singapore.jpg",
+   "quando": "2026-10-09T20:20:46.510Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Basile Morin",
+   "url": "https://commons.wikimedia.org/wiki/File:Sunlight_on_the_curved_honeycomb_glass_fa%C3%A7ade_of_the_hotel_Andaz_mixed_with_interior_lighting_at_sunset_in_Singapore.jpg"
+  },
+  {
+   "chiave": "SI-06",
+   "lingua": "SI",
+   "voce": "il ricamo",
+   "esito": "scelta",
+   "file": "File:Embroidery - Ricamo Intaglio * Centro Tavolo *.png",
+   "quando": "2026-10-09T20:20:41.385Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "DinaBenedettoFerrandina",
+   "url": "https://commons.wikimedia.org/wiki/File:Embroidery_-_Ricamo_Intaglio_*_Centro_Tavolo_*.png"
+  },
+  {
+   "chiave": "SI-07",
+   "lingua": "SI",
+   "voce": "il merletto",
+   "esito": "scelta",
+   "file": "File:1911 Britannica - Lace 3.jpg",
+   "quando": "2026-10-09T20:20:48.551Z",
+   "licenza": "Public domain",
+   "autore": "Encyclopædia Britannica, 1911",
+   "url": "https://commons.wikimedia.org/wiki/File:1911_Britannica_-_Lace_3.jpg"
+  },
+  {
+   "chiave": "SI-08",
+   "lingua": "SI",
+   "voce": "la tessitura a telaio",
+   "esito": "scelta",
+   "file": "File:Telaio tessitura Museo Civico TEMPO Canicattini Bagni Sicilia.jpg",
+   "quando": "2026-10-09T20:20:53.931Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Paolino.uccello",
+   "url": "https://commons.wikimedia.org/wiki/File:Telaio_tessitura_Museo_Civico_TEMPO_Canicattini_Bagni_Sicilia.jpg"
+  },
+  {
+   "chiave": "SI-09",
+   "lingua": "SI",
+   "voce": "l'intreccio",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:20:56.122Z"
+  },
+  {
+   "chiave": "SI-10",
+   "lingua": "SI",
+   "voce": "la canna",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:20:58.450Z"
+  },
+  {
+   "chiave": "SI-11",
+   "lingua": "SI",
+   "voce": "l'ebanisteria",
+   "esito": "scelta",
+   "file": "File:Luikse Commode, KBS-FRB 01.jpg",
+   "quando": "2026-10-09T20:21:02.496Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Unknown author Unknown author",
+   "url": "https://commons.wikimedia.org/wiki/File:Luikse_Commode,_KBS-FRB_01.jpg"
+  },
+  {
+   "chiave": "SI-12",
+   "lingua": "SI",
+   "voce": "l'intaglio del legno",
+   "esito": "scelta",
+   "file": "File:Shwedagon Pagoda Wood Carving.jpg",
+   "quando": "2026-10-09T20:21:08.039Z",
+   "licenza": "CC BY 4.0",
+   "autore": "Philip Nalangan",
+   "url": "https://commons.wikimedia.org/wiki/File:Shwedagon_Pagoda_Wood_Carving.jpg"
+  },
+  {
+   "chiave": "SI-13",
+   "lingua": "SI",
+   "voce": "il tornio",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:21:10.392Z"
+  },
+  {
+   "chiave": "SI-14",
+   "lingua": "SI",
+   "voce": "il cuoio",
+   "esito": "scelta",
+   "file": "File:A bunch of magenta leather.jpg",
+   "quando": "2026-10-09T20:21:13.294Z",
+   "licenza": "CC0",
+   "autore": "m0851",
+   "url": "https://commons.wikimedia.org/wiki/File:A_bunch_of_magenta_leather.jpg"
+  },
+  {
+   "chiave": "SI-15",
+   "lingua": "SI",
+   "voce": "la correggia",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:21:16.439Z"
+  },
+  {
+   "chiave": "SI-16",
+   "lingua": "SI",
+   "voce": "la calzoleria",
+   "esito": "scelta",
+   "file": "File:Calzoleria Toscana shoes.jpg",
+   "quando": "2026-10-09T20:21:21.678Z",
+   "licenza": "CC0",
+   "autore": "Andy Li",
+   "url": "https://commons.wikimedia.org/wiki/File:Calzoleria_Toscana_shoes.jpg"
+  },
+  {
+   "chiave": "SI-17",
+   "lingua": "SI",
+   "voce": "il restauro",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:21:25.484Z"
+  },
+  {
+   "chiave": "SI-18",
+   "lingua": "SI",
+   "voce": "l'incisione",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:21:27.653Z"
+  },
+  {
+   "chiave": "SI-19",
+   "lingua": "SI",
+   "voce": "la liuteria",
+   "esito": "scelta",
+   "file": "File:Victor Pedemonte - Luthier 2.jpg",
+   "quando": "2026-10-09T20:21:34.677Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Donsegudosombra",
+   "url": "https://commons.wikimedia.org/wiki/File:Victor_Pedemonte_-_Luthier_2.jpg"
+  },
+  {
+   "chiave": "SI-20",
+   "lingua": "SI",
+   "voce": "la fabbricazione della carta",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:21:41.036Z"
+  },
+  {
+   "chiave": "SI-21",
+   "lingua": "SI",
+   "voce": "l'occhialeria",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:21:43.350Z"
+  },
+  {
+   "chiave": "SI-22",
+   "lingua": "SI",
+   "voce": "il ferro battuto",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:21:45.381Z"
+  },
+  {
+   "chiave": "SI-23",
+   "lingua": "SI",
+   "voce": "il mosaico",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:21:50.439Z"
+  },
+  {
+   "chiave": "SI-24",
+   "lingua": "SI",
+   "voce": "i maestri d'ascia",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:21:51.998Z"
+  },
+  {
+   "chiave": "SI-25",
+   "lingua": "SI",
+   "voce": "la scagliola",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:21:53.772Z"
+  },
+  {
+   "chiave": "SI-26",
+   "lingua": "SI",
+   "voce": "la doratura",
+   "esito": "scelta",
+   "file": "File:Goldleaf.jpg",
+   "quando": "2026-10-09T20:21:56.064Z",
+   "licenza": "Public domain",
+   "autore": "Juangonzalez64  at  English Wikipedia",
+   "url": "https://commons.wikimedia.org/wiki/File:Goldleaf.jpg"
+  },
+  {
+   "chiave": "SI-27",
+   "lingua": "SI",
+   "voce": "la filigrana",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:22:00.228Z"
+  },
+  {
+   "chiave": "SI-28",
+   "lingua": "SI",
+   "voce": "la cartapesta",
+   "esito": "scelta",
+   "file": "File:Mexican curious 01.jpg",
+   "quando": "2026-10-09T20:22:10.482Z",
+   "licenza": "CC BY-SA 3.0",
+   "autore": "Tomas Castelazo",
+   "url": "https://commons.wikimedia.org/wiki/File:Mexican_curious_01.jpg"
+  },
+  {
+   "chiave": "SI-29",
+   "lingua": "SI",
+   "voce": "l'oreficeria",
+   "esito": "nessuna",
+   "file": null,
+   "quando": "2026-10-09T20:22:15.120Z"
+  },
+  {
+   "chiave": "SI-30",
+   "lingua": "SI",
+   "voce": "la stampa a caratteri mobili",
+   "esito": "scelta",
+   "file": "File:Caratteri mobili del Museo della stampa Lodovico Pavoni.jpg",
+   "quando": "2026-10-09T20:22:17.136Z",
+   "licenza": "CC BY-SA 4.0",
+   "autore": "Ensahequ",
+   "url": "https://commons.wikimedia.org/wiki/File:Caratteri_mobili_del_Museo_della_stampa_Lodovico_Pavoni.jpg"
+  }
+ ]
+}
