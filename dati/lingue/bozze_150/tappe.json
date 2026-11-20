@@ -1,0 +1,1502 @@
+[
+ {
+  "tappa": "1-1",
+  "anno": 1,
+  "numero": 1,
+  "luogo": "Po, Voghenza, Cattedrale",
+  "titolo_informatica": "Informazione, dato, messaggio",
+  "duca": "Borso",
+  "piatto_italiano": "l'aglio di Voghiera",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-2",
+  "anno": 1,
+  "numero": 2,
+  "luogo": "Pomposa",
+  "titolo_informatica": "Analogico e digitale",
+  "duca": "Borso",
+  "piatto_italiano": "le vongole di Goro",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-3",
+  "anno": 1,
+  "numero": 3,
+  "luogo": "Piazza e Palazzo comunale",
+  "titolo_informatica": "Il bit",
+  "duca": "Borso",
+  "piatto_italiano": "la coppia ferrarese",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-4",
+  "anno": 1,
+  "numero": 4,
+  "luogo": "Piazza delle Erbe",
+  "titolo_informatica": "Sistemi di numerazione posizionali",
+  "duca": "Borso",
+  "piatto_italiano": "la zucca violina",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-5",
+  "anno": 1,
+  "numero": 5,
+  "luogo": "Sant'Antonio in Polesine",
+  "titolo_informatica": "Conversioni binario ↔ decimale",
+  "duca": "Borso",
+  "piatto_italiano": "la torta tenerina",
+  "segnalazione_piatto": "Indicata da Pietro (08/10/2026) al posto della torta di riso, che non risulta ferrarese (l'elenco PAT ha solo quella reggiana)."
+ },
+ {
+  "tappa": "1-6",
+  "anno": 1,
+  "numero": 6,
+  "luogo": "Palazzo della signoria",
+  "titolo_informatica": "Ottale ed esadecimale",
+  "duca": "Borso",
+  "piatto_italiano": "il pasticcio di maccheroni",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-7",
+  "anno": 1,
+  "numero": 7,
+  "luogo": "Castello",
+  "titolo_informatica": "Unità di misura: bit, byte, prefissi SI e IEC",
+  "duca": "Borso",
+  "piatto_italiano": "la salama da sugo",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-8",
+  "anno": 1,
+  "numero": 8,
+  "luogo": "Studio (memoria a Palazzo Paradiso)",
+  "titolo_informatica": "Aritmetica binaria e overflow",
+  "duca": "Borso",
+  "piatto_italiano": "i cappelletti",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-9",
+  "anno": 1,
+  "numero": 9,
+  "luogo": "Corte e Studio",
+  "titolo_informatica": "Codifica del testo: ASCII",
+  "duca": "Borso",
+  "piatto_italiano": "la torta di tagliatelle",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-10",
+  "anno": 1,
+  "numero": 10,
+  "luogo": "Palazzo di corte",
+  "titolo_informatica": "Prova di corte: codifiche e cifrario di Cesare ★",
+  "duca": "Borso",
+  "piatto_italiano": "i maccheroni romaneschi di Messisbugo",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-11",
+  "anno": 1,
+  "numero": 11,
+  "luogo": "Ex ghetto, MEIS",
+  "titolo_informatica": "Unicode e UTF-8",
+  "duca": "Borso",
+  "piatto_italiano": "le buricche",
+  "segnalazione_piatto": "Il salame d'oca non risulta ferrarese (la IGP è di Mortara). «Buricche» è il nome della specialità, senza un equivalente italiano."
+ },
+ {
+  "tappa": "1-12",
+  "anno": 1,
+  "numero": 12,
+  "luogo": "Schifanoia",
+  "titolo_informatica": "Colori: RGB e notazione esadecimale",
+  "duca": "Borso",
+  "piatto_italiano": "le pere",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-13",
+  "anno": 1,
+  "numero": 13,
+  "luogo": "Pinacoteca, Certosa",
+  "titolo_informatica": "Immagini raster: pixel e risoluzione",
+  "duca": "Borso",
+  "piatto_italiano": "il topino d'Ognissanti",
+  "segnalazione_piatto": "PAT Emilia-Romagna 2024, n. 283; la descrizione della scheda è da controllare."
+ },
+ {
+  "tappa": "1-14",
+  "anno": 1,
+  "numero": 14,
+  "luogo": "Addizione Erculea",
+  "titolo_informatica": "Hardware e software",
+  "duca": "Borso",
+  "piatto_italiano": "i cappellacci di zucca",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-15",
+  "anno": 1,
+  "numero": 15,
+  "luogo": "Palazzo Paradiso",
+  "titolo_informatica": "La macchina di von Neumann: CPU, memoria, bus",
+  "duca": "Borso",
+  "piatto_italiano": "la ciambella ferrarese",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-16",
+  "anno": 1,
+  "numero": 16,
+  "luogo": "Castello, Corpus Domini",
+  "titolo_informatica": "Il ciclo fetch-decode-execute",
+  "duca": "Borso",
+  "piatto_italiano": "il pampepato",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-17",
+  "anno": 1,
+  "numero": 17,
+  "luogo": "Casa di Ariosto",
+  "titolo_informatica": "Memorie: RAM, dischi, SSD, gerarchia di memoria",
+  "duca": "Borso",
+  "piatto_italiano": "la rapa",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-18",
+  "anno": 1,
+  "numero": 18,
+  "luogo": "Castello",
+  "titolo_informatica": "Periferiche e bus",
+  "duca": "Borso",
+  "piatto_italiano": "la zia ferrarese",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-19",
+  "anno": 1,
+  "numero": 19,
+  "luogo": "Palazzo Paradiso",
+  "titolo_informatica": "Porte logiche e algebra di Boole ★",
+  "duca": "Borso",
+  "piatto_italiano": "il biscotto anguilla regina",
+  "segnalazione_piatto": "Biscotto ferrarese dell'elenco dei prodotti tradizionali (PAT Emilia-Romagna 2024, n. 145); legame con Palazzo Paradiso generico."
+ },
+ {
+  "tappa": "1-20",
+  "anno": 1,
+  "numero": 20,
+  "luogo": "Castello",
+  "titolo_informatica": "Prova di corte: assemblare un calcolatore (scelta dei componenti, prestazioni, consumi)",
+  "duca": "Borso",
+  "piatto_italiano": "la zuppa inglese",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-21",
+  "anno": 1,
+  "numero": 21,
+  "luogo": "Castello, Sant'Anna",
+  "titolo_informatica": "Il sistema operativo: funzioni e sistemi più comuni",
+  "duca": "Borso",
+  "piatto_italiano": "i mandorlini del ponte",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-22",
+  "anno": 1,
+  "numero": 22,
+  "luogo": "Palazzo Municipale, mura",
+  "titolo_informatica": "Processi e scheduling",
+  "duca": "Borso",
+  "piatto_italiano": "l'asparago di Mesola",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-23",
+  "anno": 1,
+  "numero": 23,
+  "luogo": "Vicolo del Chiozzino",
+  "titolo_informatica": "Gestione della memoria",
+  "duca": "Borso",
+  "piatto_italiano": "le rane fritte",
+  "segnalazione_piatto": "Validazione del 10/10/2026: nessuna fonte trovata (non è nell'elenco PAT né nelle fonti ferraresi consultate); da tenere solo con una fonte."
+ },
+ {
+  "tappa": "1-24",
+  "anno": 1,
+  "numero": 24,
+  "luogo": "Territorio del Po, Certosa",
+  "titolo_informatica": "File system: cartelle, percorsi, permessi, backup",
+  "duca": "Borso",
+  "piatto_italiano": "lo storione del Po",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-25",
+  "anno": 1,
+  "numero": 25,
+  "luogo": "Teatro Comunale",
+  "titolo_informatica": "Il documento elettronico: struttura e stili",
+  "duca": "Borso",
+  "piatto_italiano": "il cocomero ferrarese",
+  "segnalazione_piatto": "Proposta generica ferrarese, come hai chiesto: nessun legame con il teatro. Validazione del 10/10/2026: nessuna fonte per un «cocomero ferrarese» (nell'elenco PAT il cocomero è di San Matteo della Decima, provincia di Bologna)."
+ },
+ {
+  "tappa": "1-26",
+  "anno": 1,
+  "numero": 26,
+  "luogo": "Museo del Risorgimento, mura",
+  "titolo_informatica": "Foglio elettronico: celle, formule, riferimenti relativi e assoluti",
+  "duca": "Borso",
+  "piatto_italiano": "le pesche ferraresi",
+  "segnalazione_piatto": "Proposta generica ferrarese."
+ },
+ {
+  "tappa": "1-27",
+  "anno": 1,
+  "numero": 27,
+  "luogo": "Terre di bonifica, polo chimico",
+  "titolo_informatica": "Foglio elettronico: funzioni, grafici, statistica descrittiva; quantità d'informazione di un evento ★",
+  "duca": "Borso",
+  "piatto_italiano": "il riso del Delta del Po",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-28",
+  "anno": 1,
+  "numero": 28,
+  "luogo": "MEIS, cimitero di via delle Vigne, muretto del Castello",
+  "titolo_informatica": "Internet: struttura e servizi",
+  "duca": "Borso",
+  "piatto_italiano": "il caviale ferrarese",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "1-29",
+  "anno": 1,
+  "numero": 29,
+  "luogo": "Vicolo del Chiozzino, Largo Vancini",
+  "titolo_informatica": "Cercare e valutare le fonti; regole e sicurezza in rete; l'IA come fonte ★",
+  "duca": "Borso",
+  "piatto_italiano": "la carota del Delta",
+  "segnalazione_piatto": "Proposta generica ferrarese. Validazione del 10/10/2026: nessuna fonte per una «carota del Delta» come prodotto tipico; da decidere."
+ },
+ {
+  "tappa": "1-30",
+  "anno": 1,
+  "numero": 30,
+  "luogo": "Tutta la mappa, Lido di Spina, stadio",
+  "titolo_informatica": "Prova finale dell'anno: inventario (foglio elettronico, codifiche, hardware)",
+  "duca": "Borso",
+  "piatto_italiano": "l'anguilla di Comacchio",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-1",
+  "anno": 2,
+  "numero": 1,
+  "luogo": "Bolzano, Museo archeologico altoatesino",
+  "titolo_informatica": "Pensiero computazionale: scomporre un problema",
+  "duca": "Ercole I",
+  "piatto_italiano": "i canederli",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-2",
+  "anno": 2,
+  "numero": 2,
+  "luogo": "Crotone",
+  "titolo_informatica": "Che cos'è un algoritmo",
+  "duca": "Ercole I",
+  "piatto_italiano": "il pecorino crotonese",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-3",
+  "anno": 2,
+  "numero": 3,
+  "luogo": "Roma, area del Campidoglio",
+  "titolo_informatica": "Diagrammi di flusso",
+  "duca": "Ercole I",
+  "piatto_italiano": "la carbonara",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-4",
+  "anno": 2,
+  "numero": 4,
+  "luogo": "Squillace, monastero di Vivarium",
+  "titolo_informatica": "Pseudocodice",
+  "duca": "Ercole I",
+  "piatto_italiano": "il morzello catanzarese",
+  "segnalazione_piatto": "«Morzello» è la forma italiana del nome dialettale: dimmi se ti va bene."
+ },
+ {
+  "tappa": "2-5",
+  "anno": 2,
+  "numero": 5,
+  "luogo": "Roma",
+  "titolo_informatica": "Variabili, tipi, assegnazione",
+  "duca": "Ercole I",
+  "piatto_italiano": "la cacio e pepe",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-6",
+  "anno": 2,
+  "numero": 6,
+  "luogo": "Elea (Velia)",
+  "titolo_informatica": "Espressioni e operatori logici",
+  "duca": "Ercole I",
+  "piatto_italiano": "i fichi bianchi del Cilento",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-7",
+  "anno": 2,
+  "numero": 7,
+  "luogo": "Roma, Tuscolo",
+  "titolo_informatica": "Sequenza, selezione, iterazione (Böhm-Jacopini)",
+  "duca": "Ercole I",
+  "piatto_italiano": "la porchetta di Ariccia",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-8",
+  "anno": 2,
+  "numero": 8,
+  "luogo": "Milano",
+  "titolo_informatica": "Tipologie di linguaggi: livelli, compilati e interpretati, breve storia",
+  "duca": "Ercole I",
+  "piatto_italiano": "il risotto alla milanese",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-9",
+  "anno": 2,
+  "numero": 9,
+  "luogo": "Roma, Curia",
+  "titolo_informatica": "Il primo linguaggio (Python): input, output, sintassi",
+  "duca": "Ercole I",
+  "piatto_italiano": "i saltimbocca alla romana",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-10",
+  "anno": 2,
+  "numero": 10,
+  "luogo": "Roma, villa dei Gracchi",
+  "titolo_informatica": "Prova di corte: tracing di programmi",
+  "duca": "Ercole I",
+  "piatto_italiano": "i carciofi alla giudia",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-11",
+  "anno": 2,
+  "numero": 11,
+  "luogo": "Elea (Velia)",
+  "titolo_informatica": "Selezione: if, elif, else",
+  "duca": "Ercole I",
+  "piatto_italiano": "le alici di menaica",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-12",
+  "anno": 2,
+  "numero": 12,
+  "luogo": "Porta PT-CAR (Ferrara)",
+  "titolo_informatica": "Iterazione: while, contatori, accumulatori",
+  "duca": "Ercole I",
+  "piatto_italiano": "i fagioli col sacchetto di cenere",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-13",
+  "anno": 2,
+  "numero": 13,
+  "luogo": "Roma",
+  "titolo_informatica": "Iterazione: for e range",
+  "duca": "Ercole I",
+  "piatto_italiano": "l'amatriciana",
+  "segnalazione_piatto": "Amatrice è nel Lazio, non a Roma."
+ },
+ {
+  "tappa": "2-14",
+  "anno": 2,
+  "numero": 14,
+  "luogo": "Firenze",
+  "titolo_informatica": "Cicli annidati",
+  "duca": "Ercole I",
+  "piatto_italiano": "la bistecca alla fiorentina",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-15",
+  "anno": 2,
+  "numero": 15,
+  "luogo": "Palermo",
+  "titolo_informatica": "Algoritmi classici: massimo, minimo, somma, media",
+  "duca": "Ercole I",
+  "piatto_italiano": "le arancine",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-16",
+  "anno": 2,
+  "numero": 16,
+  "luogo": "Taranto",
+  "titolo_informatica": "Algoritmo di Euclide e numeri primi",
+  "duca": "Ercole I",
+  "piatto_italiano": "le cozze tarantine",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-17",
+  "anno": 2,
+  "numero": 17,
+  "luogo": "Roma",
+  "titolo_informatica": "Funzioni: definizione, parametri, valore di ritorno",
+  "duca": "Ercole I",
+  "piatto_italiano": "i supplì",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-18",
+  "anno": 2,
+  "numero": 18,
+  "luogo": "Roma",
+  "titolo_informatica": "Visibilità e scomposizione in funzioni",
+  "duca": "Ercole I",
+  "piatto_italiano": "la coda alla vaccinara",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-19",
+  "anno": 2,
+  "numero": 19,
+  "luogo": "Chiusi",
+  "titolo_informatica": "Test e debugging",
+  "duca": "Ercole I",
+  "piatto_italiano": "i pici",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-20",
+  "anno": 2,
+  "numero": 20,
+  "luogo": "Roma",
+  "titolo_informatica": "Prova di corte: problemi con funzioni",
+  "duca": "Ercole I",
+  "piatto_italiano": "il maritozzo",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-21",
+  "anno": 2,
+  "numero": 21,
+  "luogo": "Porta PT-AQU (Ferrara)",
+  "titolo_informatica": "Liste e array",
+  "duca": "Ercole I",
+  "piatto_italiano": "la bondiola",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-22",
+  "anno": 2,
+  "numero": 22,
+  "luogo": "Venezia",
+  "titolo_informatica": "Ricerca lineare",
+  "duca": "Ercole I",
+  "piatto_italiano": "il baccalà mantecato",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-23",
+  "anno": 2,
+  "numero": 23,
+  "luogo": "Roma, Curia",
+  "titolo_informatica": "Stringhe e testo",
+  "duca": "Ercole I",
+  "piatto_italiano": "l'abbacchio",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-24",
+  "anno": 2,
+  "numero": 24,
+  "luogo": "Firenze",
+  "titolo_informatica": "Cifrari di Cesare e di Vigenère in codice ★",
+  "duca": "Ercole I",
+  "piatto_italiano": "la ribollita",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-25",
+  "anno": 2,
+  "numero": 25,
+  "luogo": "Ferrara, zona dell'Addizione Erculea",
+  "titolo_informatica": "Grafica con la tartaruga",
+  "duca": "Ercole I",
+  "piatto_italiano": "le acquadelle marinate",
+  "segnalazione_piatto": "PAT Emilia-Romagna n. 397: acquadella è il nome dei latterini nelle valli di Comacchio."
+ },
+ {
+  "tappa": "2-26",
+  "anno": 2,
+  "numero": 26,
+  "luogo": "Ferrara, corte",
+  "titolo_informatica": "Il caso: dadi, frequenze, probabilità simulate ★",
+  "duca": "Ercole I",
+  "piatto_italiano": "il pane intorto",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-27",
+  "anno": 2,
+  "numero": 27,
+  "luogo": "Porta PT-CON (Ferrara)",
+  "titolo_informatica": "Foglio elettronico avanzato: SE, CERCA, tabelle pivot",
+  "duca": "Ercole I",
+  "piatto_italiano": "l'anatra di valle",
+  "segnalazione_piatto": "Validazione del 10/10/2026: plausibile (caccia e cucina dell'anatra nelle valli di Comacchio), ma senza una fonte specifica."
+ },
+ {
+  "tappa": "2-28",
+  "anno": 2,
+  "numero": 28,
+  "luogo": "Ferrara, corte",
+  "titolo_informatica": "Come è fatta Internet: indirizzi, DNS, pacchetti",
+  "duca": "Ercole I",
+  "piatto_italiano": "le focaccine al sesamo della corte",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-29",
+  "anno": 2,
+  "numero": 29,
+  "luogo": "Porta PT-COL (Ferrara)",
+  "titolo_informatica": "Collaborare in rete: cloud, posta elettronica, privacy, diritto d'autore",
+  "duca": "Ercole I",
+  "piatto_italiano": "i gnocchi con lo zucchero",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "2-30",
+  "anno": 2,
+  "numero": 30,
+  "luogo": "Ferrara, corte",
+  "titolo_informatica": "Prova finale dell'anno: generare una pianta rispettando vincoli",
+  "duca": "Ercole I",
+  "piatto_italiano": "il cappone coperto di lasagne",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-1",
+  "anno": 3,
+  "numero": 1,
+  "luogo": "Alessandria",
+  "titolo_informatica": "Interi con segno e complemento a 2",
+  "duca": "Alfonso I",
+  "piatto_italiano": "il ful medames",
+  "segnalazione_piatto": "Alessandria d'Egitto: fuori dall'Europa, ma è la tappa."
+ },
+ {
+  "tappa": "3-2",
+  "anno": 3,
+  "numero": 2,
+  "luogo": "Frombork",
+  "titolo_informatica": "Virgola mobile (IEEE 754) ed errori di rappresentazione",
+  "duca": "Alfonso I",
+  "piatto_italiano": "i pierogi",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-3",
+  "anno": 3,
+  "numero": 3,
+  "luogo": "Roma",
+  "titolo_informatica": "Array e matrici",
+  "duca": "Alfonso I",
+  "piatto_italiano": "le puntarelle",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-4",
+  "anno": 3,
+  "numero": 4,
+  "luogo": "Atene",
+  "titolo_informatica": "Ordinamento: selection sort e bubble sort",
+  "duca": "Alfonso I",
+  "piatto_italiano": "la moussakà",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-5",
+  "anno": 3,
+  "numero": 5,
+  "luogo": "Atene",
+  "titolo_informatica": "Ordinamento: insertion sort; confronti e scambi",
+  "duca": "Alfonso I",
+  "piatto_italiano": "il souvlaki",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-6",
+  "anno": 3,
+  "numero": 6,
+  "luogo": "Atene",
+  "titolo_informatica": "Ricerca binaria; logaritmi ★",
+  "duca": "Alfonso I",
+  "piatto_italiano": "la spanakopita",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-7",
+  "anno": 3,
+  "numero": 7,
+  "luogo": "Ravenna",
+  "titolo_informatica": "Contare i passi: complessità intuitiva",
+  "duca": "Alfonso I",
+  "piatto_italiano": "la piadina",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-8",
+  "anno": 3,
+  "numero": 8,
+  "luogo": "Castel del Monte",
+  "titolo_informatica": "Ricorsione",
+  "duca": "Alfonso I",
+  "piatto_italiano": "la burrata di Andria",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-9",
+  "anno": 3,
+  "numero": 9,
+  "luogo": "Pella",
+  "titolo_informatica": "Divide et impera: merge sort ★",
+  "duca": "Alfonso I",
+  "piatto_italiano": "la bougatsa",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-10",
+  "anno": 3,
+  "numero": 10,
+  "luogo": "Ferrara, fonderia",
+  "titolo_informatica": "Prova di corte: ordinare e contare i passi",
+  "duca": "Alfonso I",
+  "piatto_italiano": "la mortadella di Messisbugo",
+  "segnalazione_piatto": "Validazione del 10/10/2026: la mortadella gialla e quella di fegato nei Banchetti non sono state riscontrate sul testo; la data del Libro novo oscilla fra 1557 e 1564."
+ },
+ {
+  "tappa": "3-11",
+  "anno": 3,
+  "numero": 11,
+  "luogo": "Ferrara, corte",
+  "titolo_informatica": "Stringhe avanzate e ricerca di schemi; automi ★",
+  "duca": "Alfonso I",
+  "piatto_italiano": "la sfoglia sottile come la carta",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-12",
+  "anno": 3,
+  "numero": 12,
+  "luogo": "Aquisgrana",
+  "titolo_informatica": "File e CSV",
+  "duca": "Alfonso I",
+  "piatto_italiano": "i biscotti speziati di Aquisgrana",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-13",
+  "anno": 3,
+  "numero": 13,
+  "luogo": "Milano",
+  "titolo_informatica": "Metodologie di programmazione: top-down e modularità",
+  "duca": "Alfonso I",
+  "piatto_italiano": "la cotoletta alla milanese",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-14",
+  "anno": 3,
+  "numero": 14,
+  "luogo": "Firenze",
+  "titolo_informatica": "Documentazione, stile, controllo di versione (Git) ★",
+  "duca": "Alfonso I",
+  "piatto_italiano": "il lampredotto",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-15",
+  "anno": 3,
+  "numero": 15,
+  "luogo": "Ferrara, Camerino d'alabastro",
+  "titolo_informatica": "Formati di immagine: bitmap e vettoriale",
+  "duca": "Alfonso I",
+  "piatto_italiano": "i piselli di Savonarola",
+  "segnalazione_piatto": "Validazione del 10/10/2026: il passo sui piselli nel Libreto di Michele Savonarola non è stato riscontrato (edizione Nystedt 1988)."
+ },
+ {
+  "tappa": "3-16",
+  "anno": 3,
+  "numero": 16,
+  "luogo": "Magonza",
+  "titolo_informatica": "Compressione senza perdita: RLE e Huffman",
+  "duca": "Alfonso I",
+  "piatto_italiano": "lo Spundekäs",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-17",
+  "anno": 3,
+  "numero": 17,
+  "luogo": "Ferrara, cappella",
+  "titolo_informatica": "Audio digitale: campionamento e quantizzazione",
+  "duca": "Alfonso I",
+  "piatto_italiano": "le melagrane della corte",
+  "segnalazione_piatto": "Frutto, non piatto: lo propongo perché i piatti ferraresi distinti finiscono."
+ },
+ {
+  "tappa": "3-18",
+  "anno": 3,
+  "numero": 18,
+  "luogo": "Alcalá de Henares",
+  "titolo_informatica": "Compressione con perdita: l'idea di JPEG e MP3",
+  "duca": "Alfonso I",
+  "piatto_italiano": "la costrada di Alcalá",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-19",
+  "anno": 3,
+  "numero": 19,
+  "luogo": "Basilea",
+  "titolo_informatica": "Linguaggi di markup: il concetto, Markdown",
+  "duca": "Alfonso I",
+  "piatto_italiano": "i biscotti al miele di Basilea",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-20",
+  "anno": 3,
+  "numero": 20,
+  "luogo": "Ferrara, Camerino",
+  "titolo_informatica": "Prova di corte: formati, compressione, qualità",
+  "duca": "Alfonso I",
+  "piatto_italiano": "le albicocche della corte",
+  "segnalazione_piatto": "Frutto, non piatto: lo propongo perché i piatti ferraresi distinti finiscono."
+ },
+ {
+  "tappa": "3-21",
+  "anno": 3,
+  "numero": 21,
+  "luogo": "Aquisgrana",
+  "titolo_informatica": "Font e tipografia digitale",
+  "duca": "Alfonso I",
+  "piatto_italiano": "il Sauerbraten",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-22",
+  "anno": 3,
+  "numero": 22,
+  "luogo": "Certaldo",
+  "titolo_informatica": "XML: elementi, attributi, buona formazione",
+  "duca": "Alfonso I",
+  "piatto_italiano": "la cipolla di Certaldo",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-23",
+  "anno": 3,
+  "numero": 23,
+  "luogo": "Parigi",
+  "titolo_informatica": "HTML: struttura e semantica",
+  "duca": "Alfonso I",
+  "piatto_italiano": "la baguette",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-24",
+  "anno": 3,
+  "numero": 24,
+  "luogo": "Norimberga",
+  "titolo_informatica": "SVG: la grafica vettoriale come testo",
+  "duca": "Alfonso I",
+  "piatto_italiano": "le salsicce di Norimberga",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-25",
+  "anno": 3,
+  "numero": 25,
+  "luogo": "Venezia",
+  "titolo_informatica": "CSS: selettori, box model, colori",
+  "duca": "Alfonso I",
+  "piatto_italiano": "il fegato alla veneziana",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-26",
+  "anno": 3,
+  "numero": 26,
+  "luogo": "Westminster",
+  "titolo_informatica": "Impaginazione e design responsive",
+  "duca": "Alfonso I",
+  "piatto_italiano": "il fish and chips",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-27",
+  "anno": 3,
+  "numero": 27,
+  "luogo": "Parigi",
+  "titolo_informatica": "Progettazione web: usabilità e accessibilità",
+  "duca": "Alfonso I",
+  "piatto_italiano": "la zuppa di cipolle",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-28",
+  "anno": 3,
+  "numero": 28,
+  "luogo": "Torino",
+  "titolo_informatica": "JavaScript di base: la pagina che reagisce ★",
+  "duca": "Alfonso I",
+  "piatto_italiano": "il vitello tonnato",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-29",
+  "anno": 3,
+  "numero": 29,
+  "luogo": "Roma, Curia",
+  "titolo_informatica": "Pubblicare un sito; licenze e diritto d'autore",
+  "duca": "Alfonso I",
+  "piatto_italiano": "i carciofi alla romana",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "3-30",
+  "anno": 3,
+  "numero": 30,
+  "luogo": "Mantova",
+  "titolo_informatica": "Prova finale dell'anno: un sito completo (testi marcati, immagini ottimizzate, stile)",
+  "duca": "Alfonso I",
+  "piatto_italiano": "i tortelli di zucca",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-1",
+  "anno": 4,
+  "numero": 1,
+  "luogo": "Uruk",
+  "titolo_informatica": "Astrazione: dal problema al modello",
+  "duca": "Ercole II",
+  "piatto_italiano": "il masgouf",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-2",
+  "anno": 4,
+  "numero": 2,
+  "luogo": "Il Cairo e le carovane",
+  "titolo_informatica": "Pile e code",
+  "duca": "Ercole II",
+  "piatto_italiano": "il koshari",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-3",
+  "anno": 4,
+  "numero": 3,
+  "luogo": "Xianyang",
+  "titolo_informatica": "Classi e oggetti",
+  "duca": "Ercole II",
+  "piatto_italiano": "il roujiamo",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-4",
+  "anno": 4,
+  "numero": 4,
+  "luogo": "Tebe",
+  "titolo_informatica": "Attributi, metodi, costruttori",
+  "duca": "Ercole II",
+  "piatto_italiano": "il pane del sole",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-5",
+  "anno": 4,
+  "numero": 5,
+  "luogo": "Agra",
+  "titolo_informatica": "Incapsulamento",
+  "duca": "Ercole II",
+  "piatto_italiano": "il petha di Agra",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-6",
+  "anno": 4,
+  "numero": 6,
+  "luogo": "Karakorum",
+  "titolo_informatica": "Ereditarietà",
+  "duca": "Ercole II",
+  "piatto_italiano": "i buuz",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-7",
+  "anno": 4,
+  "numero": 7,
+  "luogo": "Hannover",
+  "titolo_informatica": "Polimorfismo e interfacce",
+  "duca": "Ercole II",
+  "piatto_italiano": "la Welfenspeise",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-8",
+  "anno": 4,
+  "numero": 8,
+  "luogo": "Uppsala",
+  "titolo_informatica": "Diagramma UML delle classi",
+  "duca": "Ercole II",
+  "piatto_italiano": "le polpette svedesi",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-9",
+  "anno": 4,
+  "numero": 9,
+  "luogo": "Il Cairo A, con Timbuctù S",
+  "titolo_informatica": "Liste collegate e riferimenti ★",
+  "duca": "Ercole II",
+  "piatto_italiano": "lo stufato di arachidi del Mali",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-10",
+  "anno": 4,
+  "numero": 10,
+  "luogo": "Ferrara, corte",
+  "titolo_informatica": "Prova di corte: modellare un sistema a oggetti",
+  "duca": "Ercole II",
+  "piatto_italiano": "il brodetto di Comacchio",
+  "segnalazione_piatto": "L'anguilla torna come ingrediente (è già al 1-30), in un piatto diverso."
+ },
+ {
+  "tappa": "4-11",
+  "anno": 4,
+  "numero": 11,
+  "luogo": "Baghdad",
+  "titolo_informatica": "Implementare un linguaggio: compilatore e interprete",
+  "duca": "Ercole II",
+  "piatto_italiano": "le kubba",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-12",
+  "anno": 4,
+  "numero": 12,
+  "luogo": "Qufu",
+  "titolo_informatica": "Analisi lessicale: i token",
+  "duca": "Ercole II",
+  "piatto_italiano": "il jianbing",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-13",
+  "anno": 4,
+  "numero": 13,
+  "luogo": "Alessandria",
+  "titolo_informatica": "Grammatiche e sintassi (BNF)",
+  "duca": "Ercole II",
+  "piatto_italiano": "la sayadeya",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-14",
+  "anno": 4,
+  "numero": 14,
+  "luogo": "Tenochtitlán",
+  "titolo_informatica": "Alberi sintattici e valutazione delle espressioni",
+  "duca": "Ercole II",
+  "piatto_italiano": "i tamales",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-15",
+  "anno": 4,
+  "numero": 15,
+  "luogo": "Chio e la Ionia",
+  "titolo_informatica": "Un mini-interprete: la calcolatrice ★",
+  "duca": "Ercole II",
+  "piatto_italiano": "il mastice di Chio",
+  "segnalazione_piatto": "Non è un piatto."
+ },
+ {
+  "tappa": "4-16",
+  "anno": 4,
+  "numero": 16,
+  "luogo": "Pataliputra",
+  "titolo_informatica": "Dato, informazione, archivio: dagli archivi ai database",
+  "duca": "Ercole II",
+  "piatto_italiano": "il litti chokha",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-17",
+  "anno": 4,
+  "numero": 17,
+  "luogo": "Bombay e Delhi",
+  "titolo_informatica": "Modello E/R: entità, attributi, relazioni",
+  "duca": "Ercole II",
+  "piatto_italiano": "il vada pav",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-18",
+  "anno": 4,
+  "numero": 18,
+  "luogo": "Costantinopoli",
+  "titolo_informatica": "Cardinalità e vincoli",
+  "duca": "Ercole II",
+  "piatto_italiano": "la baklava",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-19",
+  "anno": 4,
+  "numero": 19,
+  "luogo": "Il Cairo",
+  "titolo_informatica": "Modello relazionale: tabelle e chiavi",
+  "duca": "Ercole II",
+  "piatto_italiano": "i falafel",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-20",
+  "anno": 4,
+  "numero": 20,
+  "luogo": "Ferrara e il regno",
+  "titolo_informatica": "Prova di corte: progettare uno schema E/R",
+  "duca": "Ercole II",
+  "piatto_italiano": "le arance della corte",
+  "segnalazione_piatto": "Frutto, non piatto: lo propongo perché i piatti ferraresi distinti finiscono."
+ },
+ {
+  "tappa": "4-21",
+  "anno": 4,
+  "numero": 21,
+  "luogo": "Toledo",
+  "titolo_informatica": "Dallo schema E/R allo schema relazionale",
+  "duca": "Ercole II",
+  "piatto_italiano": "il marzapane di Toledo",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-22",
+  "anno": 4,
+  "numero": 22,
+  "luogo": "Babilonia",
+  "titolo_informatica": "Normalizzazione (fino alla 3FN) ★",
+  "duca": "Ercole II",
+  "piatto_italiano": "i datteri",
+  "segnalazione_piatto": "Un frutto più che un piatto."
+ },
+ {
+  "tappa": "4-23",
+  "anno": 4,
+  "numero": 23,
+  "luogo": "Lisbona e Calicut",
+  "titolo_informatica": "Algebra relazionale: selezione, proiezione, join",
+  "duca": "Ercole II",
+  "piatto_italiano": "il pastel de nata",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-24",
+  "anno": 4,
+  "numero": 24,
+  "luogo": "Nanchang e il mare",
+  "titolo_informatica": "SQL: creare e modificare (DDL e DML)",
+  "duca": "Ercole II",
+  "piatto_italiano": "i noodle di riso di Nanchang",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-25",
+  "anno": 4,
+  "numero": 25,
+  "luogo": "Annapolis e Baltimora",
+  "titolo_informatica": "SQL: SELECT, WHERE, ORDER BY",
+  "duca": "Ercole II",
+  "piatto_italiano": "le crab cakes del Maryland",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-26",
+  "anno": 4,
+  "numero": 26,
+  "luogo": "Spagna e Tenochtitlán",
+  "titolo_informatica": "SQL: JOIN",
+  "duca": "Ercole II",
+  "piatto_italiano": "il pomodoro",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-27",
+  "anno": 4,
+  "numero": 27,
+  "luogo": "Scutari e Costantinopoli",
+  "titolo_informatica": "SQL: aggregazioni e GROUP BY",
+  "duca": "Ercole II",
+  "piatto_italiano": "i lokum",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-28",
+  "anno": 4,
+  "numero": 28,
+  "luogo": "Motihari e Londra",
+  "titolo_informatica": "Database e programmi: SQL da Python ★",
+  "duca": "Ercole II",
+  "piatto_italiano": "il kedgeree",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-29",
+  "anno": 4,
+  "numero": 29,
+  "luogo": "Parigi e Varsavia",
+  "titolo_informatica": "Privacy, GDPR, open data",
+  "duca": "Ercole II",
+  "piatto_italiano": "il bigos",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "4-30",
+  "anno": 4,
+  "numero": 30,
+  "luogo": "Ferrara, archivio",
+  "titolo_informatica": "Prova finale dell'anno: database più applicazione a oggetti",
+  "duca": "Ercole II",
+  "piatto_italiano": "le susine della corte",
+  "segnalazione_piatto": "Frutto, non piatto: lo propongo perché i piatti ferraresi distinti finiscono."
+ },
+ {
+  "tappa": "5-1",
+  "anno": 5,
+  "numero": 1,
+  "luogo": "Chicago",
+  "titolo_informatica": "Errori numerici e approssimazione",
+  "duca": "Alfonso II",
+  "piatto_italiano": "la deep dish pizza",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-2",
+  "anno": 5,
+  "numero": 2,
+  "luogo": "Vienna",
+  "titolo_informatica": "Zeri di funzione: il metodo di bisezione",
+  "duca": "Alfonso II",
+  "piatto_italiano": "la Sachertorte",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-3",
+  "anno": 5,
+  "numero": 3,
+  "luogo": "Londra",
+  "titolo_informatica": "Il metodo di Newton ★",
+  "duca": "Alfonso II",
+  "piatto_italiano": "il roast beef",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-4",
+  "anno": 5,
+  "numero": 4,
+  "luogo": "Bethesda",
+  "titolo_informatica": "Aree sotto una curva: rettangoli e trapezi",
+  "duca": "Alfonso II",
+  "piatto_italiano": "la Smith Island cake",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-5",
+  "anno": 5,
+  "numero": 5,
+  "luogo": "Los Alamos",
+  "titolo_informatica": "Stimare π con il metodo Monte Carlo",
+  "duca": "Alfonso II",
+  "piatto_italiano": "il chile verde del Nuovo Messico",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-6",
+  "anno": 5,
+  "numero": 6,
+  "luogo": "Babilonia",
+  "titolo_informatica": "Successioni e ricorrenze: approssimare √2",
+  "duca": "Alfonso II",
+  "piatto_italiano": "il pane samoon",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-7",
+  "anno": 5,
+  "numero": 7,
+  "luogo": "Londra",
+  "titolo_informatica": "Simulazione a tempo discreto: il moto (metodo di Eulero)",
+  "duca": "Alfonso II",
+  "piatto_italiano": "gli scones",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-8",
+  "anno": 5,
+  "numero": 8,
+  "luogo": "Bajkonur",
+  "titolo_informatica": "Oscillatori e attrito",
+  "duca": "Alfonso II",
+  "piatto_italiano": "il beshbarmak",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-9",
+  "anno": 5,
+  "numero": 9,
+  "luogo": "Londra, Broad Street",
+  "titolo_informatica": "Modelli di popolazione e di epidemia",
+  "duca": "Alfonso II",
+  "piatto_italiano": "il pie and mash",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-10",
+  "anno": 5,
+  "numero": 10,
+  "luogo": "Stoccolma",
+  "titolo_informatica": "Prova di corte: simulazione di un fenomeno e confronto con le fonti",
+  "duca": "Alfonso II",
+  "piatto_italiano": "il gravlax",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-11",
+  "anno": 5,
+  "numero": 11,
+  "luogo": "Princeton",
+  "titolo_informatica": "Confrontare un modello con i dati: minimi quadrati; apprendimento supervisionato ★",
+  "duca": "Alfonso II",
+  "piatto_italiano": "il pork roll",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-12",
+  "anno": 5,
+  "numero": 12,
+  "luogo": "Buenos Aires",
+  "titolo_informatica": "Automi a stati finiti",
+  "duca": "Alfonso II",
+  "piatto_italiano": "l'asado",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-13",
+  "anno": 5,
+  "numero": 13,
+  "luogo": "Cambridge",
+  "titolo_informatica": "La macchina di Turing",
+  "duca": "Alfonso II",
+  "piatto_italiano": "il Chelsea bun",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-14",
+  "anno": 5,
+  "numero": 14,
+  "luogo": "Princeton",
+  "titolo_informatica": "Calcolabilità: il problema della fermata",
+  "duca": "Alfonso II",
+  "piatto_italiano": "la torta di mirtilli",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-15",
+  "anno": 5,
+  "numero": 15,
+  "luogo": "New York",
+  "titolo_informatica": "Complessità: P e NP in modo intuitivo",
+  "duca": "Alfonso II",
+  "piatto_italiano": "il bagel",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-16",
+  "anno": 5,
+  "numero": 16,
+  "luogo": "Seattle",
+  "titolo_informatica": "Reti: tipi, topologie, commutazione",
+  "duca": "Alfonso II",
+  "piatto_italiano": "il salmone del Pacifico",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-17",
+  "anno": 5,
+  "numero": 17,
+  "luogo": "Los Angeles",
+  "titolo_informatica": "Modelli a strati: ISO/OSI e TCP/IP",
+  "duca": "Alfonso II",
+  "piatto_italiano": "il French dip",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-18",
+  "anno": 5,
+  "numero": 18,
+  "luogo": "una sala di riunione, 1983",
+  "titolo_informatica": "Livello fisico e di collegamento: Ethernet, Wi-Fi, errori",
+  "duca": "Alfonso II",
+  "piatto_italiano": "il cioppino",
+  "segnalazione_piatto": "La tappa non ha un luogo («una sala di riunione, 1983»): propongo la baia di San Francisco."
+ },
+ {
+  "tappa": "5-19",
+  "anno": 5,
+  "numero": 19,
+  "luogo": "Londra",
+  "titolo_informatica": "Indirizzi IP e subnetting",
+  "duca": "Alfonso II",
+  "piatto_italiano": "le anguille in gelatina",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-20",
+  "anno": 5,
+  "numero": 20,
+  "luogo": "Ferrara",
+  "titolo_informatica": "Prova di corte: progettare la rete di un edificio (componenti, configurazione, prestazioni)",
+  "duca": "Alfonso II",
+  "piatto_italiano": "le mele antiche ferraresi",
+  "segnalazione_piatto": "Frutto, non piatto: lo propongo perché i piatti ferraresi distinti finiscono."
+ },
+ {
+  "tappa": "5-21",
+  "anno": 5,
+  "numero": 21,
+  "luogo": "Rotterdam",
+  "titolo_informatica": "Instradamento e grafi: l'algoritmo di Dijkstra",
+  "duca": "Alfonso II",
+  "piatto_italiano": "le aringhe",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-22",
+  "anno": 5,
+  "numero": 22,
+  "luogo": "un documento del 2008",
+  "titolo_informatica": "TCP, UDP e porte",
+  "duca": "Alfonso II",
+  "piatto_italiano": "il sushi",
+  "segnalazione_piatto": "La tappa non ha un luogo («un documento del 2008»)."
+ },
+ {
+  "tappa": "5-23",
+  "anno": 5,
+  "numero": 23,
+  "luogo": "Ginevra",
+  "titolo_informatica": "Servizi di rete: DNS, HTTP, posta elettronica",
+  "duca": "Alfonso II",
+  "piatto_italiano": "la longeole di Ginevra",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-24",
+  "anno": 5,
+  "numero": 24,
+  "luogo": "un ufficio riservato, 1970",
+  "titolo_informatica": "Sicurezza in rete: crittografia asimmetrica e HTTPS",
+  "duca": "Alfonso II",
+  "piatto_italiano": "il Double Gloucester",
+  "segnalazione_piatto": "La tappa non ha un luogo («un ufficio riservato, 1970»): propongo Cheltenham."
+ },
+ {
+  "tappa": "5-25",
+  "anno": 5,
+  "numero": 25,
+  "luogo": "Murray Hill, 1948",
+  "titolo_informatica": "Prestazioni: banda, latenza, throughput; mantenere l'efficienza",
+  "duca": "Alfonso II",
+  "piatto_italiano": "l'hot dog all'italiana di Newark",
+  "segnalazione_piatto": "Nato a Newark, a una ventina di chilometri da Murray Hill: da verificare su una fonte autorevole."
+ },
+ {
+  "tappa": "5-26",
+  "anno": 5,
+  "numero": 26,
+  "luogo": "Boston, 2018",
+  "titolo_informatica": "Intelligenza artificiale: imparare dai dati ★",
+  "duca": "Alfonso II",
+  "piatto_italiano": "la clam chowder",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-27",
+  "anno": 5,
+  "numero": 27,
+  "luogo": "Toronto, 2012",
+  "titolo_informatica": "Reti neurali in modo intuitivo ★",
+  "duca": "Alfonso II",
+  "piatto_italiano": "il peameal bacon sandwich",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-28",
+  "anno": 5,
+  "numero": 28,
+  "luogo": "Seattle, 2020",
+  "titolo_informatica": "IA generativa: limiti, etica, AI Act ★",
+  "duca": "Alfonso II",
+  "piatto_italiano": "il teriyaki di Seattle",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-29",
+  "anno": 5,
+  "numero": 29,
+  "luogo": "Londra, 2020",
+  "titolo_informatica": "L'informatica e il metodo scientifico: la nascita di nuove scienze",
+  "duca": "Alfonso II",
+  "piatto_italiano": "la colazione inglese",
+  "segnalazione_piatto": ""
+ },
+ {
+  "tappa": "5-30",
+  "anno": 5,
+  "numero": 30,
+  "luogo": "Ferrara, sala di progetto",
+  "titolo_informatica": "Prova finale dell'anno: un progetto di simulazione scientifica completo",
+  "duca": "Alfonso II",
+  "piatto_italiano": "la tirotta con la cipolla",
+  "segnalazione_piatto": ""
+ }
+]
