@@ -259,94 +259,13 @@
    "lingua": "IT",
    "anno": 1,
    "numero": 5,
-   "voce": "la torta di riso",
+   "voce": "la torta tenerina",
    "termini": [
     "torta di riso"
    ],
-   "categoria": "da_vedere",
-   "motivo": "",
-   "candidati": [
-    {
-     "file": "File:202502 沒有加任何肉的蛋包飯.jpg",
-     "termino": "torta di riso",
-     "licenza": "CC BY 4.0",
-     "autore": "Junyu-K",
-     "data": "2025-02-10 20:10:43",
-     "larghezza": 6192,
-     "altezza": 4128,
-     "url": "https://commons.wikimedia.org/wiki/File:202502_%E6%B2%92%E6%9C%89%E5%8A%A0%E4%BB%BB%E4%BD%95%E8%82%89%E7%9A%84%E8%9B%8B%E5%8C%85%E9%A3%AF.jpg"
-    },
-    {
-     "file": "File:Dolceriso del Moro.jpg",
-     "termino": "torta di riso",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Beaest",
-     "data": "2019-04-29",
-     "larghezza": 768,
-     "altezza": 760,
-     "url": "https://commons.wikimedia.org/wiki/File:Dolceriso_del_Moro.jpg"
-    },
-    {
-     "file": "File:Omurice with Demi-glace Sause in Osaka, Japan.jpg",
-     "termino": "torta di riso",
-     "licenza": "CC0",
-     "autore": "高砂の浦",
-     "data": "2022-06-05",
-     "larghezza": 1072,
-     "altezza": 720,
-     "url": "https://commons.wikimedia.org/wiki/File:Omurice_with_Demi-glace_Sause_in_Osaka,_Japan.jpg"
-    },
-    {
-     "file": "File:Seasoned juicy chicken Japanese Curry Rice with runny omelette over rice - MOGUMOGU 2025-04-16.jpg",
-     "termino": "torta di riso",
-     "licenza": "CC0",
-     "autore": "Andy Li",
-     "data": "2025-04-16 12:52:42",
-     "larghezza": 8160,
-     "altezza": 6144,
-     "url": "https://commons.wikimedia.org/wiki/File:Seasoned_juicy_chicken_Japanese_Curry_Rice_with_runny_omelette_over_rice_-_MOGUMOGU_2025-04-16.jpg"
-    },
-    {
-     "file": "File:Torta di riso.jpg",
-     "termino": "torta di riso",
-     "licenza": "CC BY 2.0",
-     "autore": "frideryka",
-     "data": "2007-12-16 13:52",
-     "larghezza": 1600,
-     "altezza": 1200,
-     "url": "https://commons.wikimedia.org/wiki/File:Torta_di_riso.jpg"
-    },
-    {
-     "file": "File:チャイニーズチキンオムライス（ラッキーピエロマリーナ末広店）20231201-P1034226.jpg",
-     "termino": "torta di riso",
-     "licenza": "CC BY 4.0",
-     "autore": "くろふね",
-     "data": "2023-12-01 12:33:10",
-     "larghezza": 1600,
-     "altezza": 1200,
-     "url": "https://commons.wikimedia.org/wiki/File:%E3%83%81%E3%83%A3%E3%82%A4%E3%83%8B%E3%83%BC%E3%82%BA%E3%83%81%E3%82%AD%E3%83%B3%E3%82%AA%E3%83%A0%E3%83%A9%E3%82%A4%E3%82%B9%EF%BC%88%E3%83%A9%E3%83%83%E3%82%AD%E3%83%BC%E3%83%94%E3%82%A8%E3%83%AD%E3%83%9E%E3%83%AA%E3%83%BC%E3%83%8A%E6%9C%AB%E5%BA%83%E5%BA%97%EF%BC%8920231201-P1034226.jpg"
-    },
-    {
-     "file": "File:三色蛋包飯：王牌咖哩豚肉、意式咖燴雞肉.jpg",
-     "termino": "torta di riso",
-     "licenza": "CC0",
-     "autore": "Andy Li",
-     "data": "2022-02-26 12:43:12",
-     "larghezza": 4032,
-     "altezza": 3024,
-     "url": "https://commons.wikimedia.org/wiki/File:%E4%B8%89%E8%89%B2%E8%9B%8B%E5%8C%85%E9%A3%AF%EF%BC%9A%E7%8E%8B%E7%89%8C%E5%92%96%E5%93%A9%E8%B1%9A%E8%82%89%E3%80%81%E6%84%8F%E5%BC%8F%E5%92%96%E7%87%B4%E9%9B%9E%E8%82%89.jpg"
-    },
-    {
-     "file": "File:卵と私オムライス.jpg",
-     "termino": "torta di riso",
-     "licenza": "CC BY 4.0",
-     "autore": "ノボホショコロトソ",
-     "data": "2022-07-09 17:53:51",
-     "larghezza": 4032,
-     "altezza": 3024,
-     "url": "https://commons.wikimedia.org/wiki/File:%E5%8D%B5%E3%81%A8%E7%A7%81%E3%82%AA%E3%83%A0%E3%83%A9%E3%82%A4%E3%82%B9.jpg"
-    }
-   ]
+   "categoria": "nessuna",
+   "motivo": "voce cambiata il 10/10/2026 dopo la validazione: da ricercare",
+   "candidati": []
   },
   {
    "lingua": "IT",
@@ -710,24 +629,13 @@
    "lingua": "IT",
    "anno": 1,
    "numero": 11,
-   "voce": "il salame d'oca",
+   "voce": "le buricche",
    "termini": [
     "salame d'oca"
    ],
-   "categoria": "da_vedere",
-   "motivo": "",
-   "candidati": [
-    {
-     "file": "File:IMG-20200730-WA0002.jpg",
-     "termino": "salame d'oca",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Edoardotolasi",
-     "data": "2020-10-23",
-     "larghezza": 1728,
-     "altezza": 1728,
-     "url": "https://commons.wikimedia.org/wiki/File:IMG-20200730-WA0002.jpg"
-    }
-   ]
+   "categoria": "nessuna",
+   "motivo": "voce cambiata il 10/10/2026 dopo la validazione: da ricercare",
+   "candidati": []
   },
   {
    "lingua": "IT",
@@ -826,94 +734,13 @@
    "lingua": "IT",
    "anno": 1,
    "numero": 13,
-   "voce": "la polenta",
+   "voce": "il topino d'Ognissanti",
    "termini": [
     "polenta"
    ],
-   "categoria": "da_vedere",
-   "motivo": "",
-   "candidati": [
-    {
-     "file": "File:Cotechino-Servito-Polenta-Lenticchie.jpg",
-     "termino": "polenta",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "J.P.Lon",
-     "data": "06/05/2007",
-     "larghezza": 1435,
-     "altezza": 1027,
-     "url": "https://commons.wikimedia.org/wiki/File:Cotechino-Servito-Polenta-Lenticchie.jpg"
-    },
-    {
-     "file": "File:Crispy Cep Polenta - Food for Friends 2026-03-09.jpg",
-     "termino": "polenta",
-     "licenza": "CC0",
-     "autore": "Andy Li",
-     "data": "2026-03-09 20:23:35",
-     "larghezza": 8160,
-     "altezza": 6144,
-     "url": "https://commons.wikimedia.org/wiki/File:Crispy_Cep_Polenta_-_Food_for_Friends_2026-03-09.jpg"
-    },
-    {
-     "file": "File:Polenta & feta ready for grilling later -food -veggie -vegetarian -homemade.jpg",
-     "termino": "polenta",
-     "licenza": "CC BY-SA 2.0",
-     "autore": "Ellie",
-     "data": "2014-10-09",
-     "larghezza": 640,
-     "altezza": 640,
-     "url": "https://commons.wikimedia.org/wiki/File:Polenta_%26_feta_ready_for_grilling_later_-food_-veggie_-vegetarian_-homemade.jpg"
-    },
-    {
-     "file": "File:Polenta argentina con salsa de carne.jpg",
-     "termino": "polenta",
-     "licenza": "CC BY 3.0",
-     "autore": "Horacio Cambeiro",
-     "data": "19 November 2025 (according to   Exif   data)",
-     "larghezza": 4000,
-     "altezza": 3000,
-     "url": "https://commons.wikimedia.org/wiki/File:Polenta_argentina_con_salsa_de_carne.jpg"
-    },
-    {
-     "file": "File:Polenta argentina con salsa de carne (plato gourmet).jpg",
-     "termino": "polenta",
-     "licenza": "CC BY 3.0",
-     "autore": "Horacio Cambeiro",
-     "data": "19 November 2025 (according to   Exif   data)",
-     "larghezza": 16320,
-     "altezza": 12240,
-     "url": "https://commons.wikimedia.org/wiki/File:Polenta_argentina_con_salsa_de_carne_(plato_gourmet).jpg"
-    },
-    {
-     "file": "File:Polenta con cinghiale 02.jpg",
-     "termino": "polenta",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "Alessio Sbarbaro  User_talk:Yoggysot",
-     "data": "2012-11-24 22:39:41",
-     "larghezza": 2894,
-     "altezza": 2172,
-     "url": "https://commons.wikimedia.org/wiki/File:Polenta_con_cinghiale_02.jpg"
-    },
-    {
-     "file": "File:Polenta in a bowl with soup broth.jpg",
-     "termino": "polenta",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Davidbena",
-     "data": "2023-05-11",
-     "larghezza": 636,
-     "altezza": 439,
-     "url": "https://commons.wikimedia.org/wiki/File:Polenta_in_a_bowl_with_soup_broth.jpg"
-    },
-    {
-     "file": "File:Polenta uncooked.jpg",
-     "termino": "polenta",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "Popo le Chien",
-     "data": "2 July 2016 (according to   Exif   data)",
-     "larghezza": 4160,
-     "altezza": 3120,
-     "url": "https://commons.wikimedia.org/wiki/File:Polenta_uncooked.jpg"
-    }
-   ]
+   "categoria": "nessuna",
+   "motivo": "voce cambiata il 10/10/2026 dopo la validazione: da ricercare",
+   "candidati": []
   },
   {
    "lingua": "IT",
@@ -1247,84 +1074,13 @@
    "lingua": "IT",
    "anno": 1,
    "numero": 19,
-   "voce": "la torta tenerina",
+   "voce": "il biscotto anguilla regina",
    "termini": [
     "torta tenerina"
    ],
-   "categoria": "da_vedere",
-   "motivo": "",
-   "candidati": [
-    {
-     "file": "File:Tenerina.jpg",
-     "termino": "torta tenerina",
-     "licenza": "Public domain",
-     "autore": "Aurora Gallan",
-     "data": "05-02-2013",
-     "larghezza": 2448,
-     "altezza": 2448,
-     "url": "https://commons.wikimedia.org/wiki/File:Tenerina.jpg"
-    },
-    {
-     "file": "File:Tenerina con mascarpone.jpg",
-     "termino": "torta tenerina",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Giacomo Alessandroni",
-     "data": "2026-01-01 00:56:59",
-     "larghezza": 4096,
-     "altezza": 3072,
-     "url": "https://commons.wikimedia.org/wiki/File:Tenerina_con_mascarpone.jpg"
-    },
-    {
-     "file": "File:Tenerina ferrarese.jpg",
-     "termino": "torta tenerina",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "Drafnir",
-     "data": "2014-02-14 13:21:43",
-     "larghezza": 2790,
-     "altezza": 2041,
-     "url": "https://commons.wikimedia.org/wiki/File:Tenerina_ferrarese.jpg"
-    },
-    {
-     "file": "File:Tenerina ferrarese 2.jpg",
-     "termino": "torta tenerina",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "Drafnir",
-     "data": "2014-02-14 12:37:00",
-     "larghezza": 2560,
-     "altezza": 1920,
-     "url": "https://commons.wikimedia.org/wiki/File:Tenerina_ferrarese_2.jpg"
-    },
-    {
-     "file": "File:Tenerina ferrarese 3.jpg",
-     "termino": "torta tenerina",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "Drafnir",
-     "data": "2014-02-14 13:23:42",
-     "larghezza": 2953,
-     "altezza": 2761,
-     "url": "https://commons.wikimedia.org/wiki/File:Tenerina_ferrarese_3.jpg"
-    },
-    {
-     "file": "File:Tenerina ferrarese 4.jpg",
-     "termino": "torta tenerina",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "Drafnir",
-     "data": "2014-02-14 13:23:27",
-     "larghezza": 2953,
-     "altezza": 2214,
-     "url": "https://commons.wikimedia.org/wiki/File:Tenerina_ferrarese_4.jpg"
-    },
-    {
-     "file": "File:Torta tenerina.jpg",
-     "termino": "torta tenerina",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Affitisciuto",
-     "data": "2022-03-21 10:01:30",
-     "larghezza": 720,
-     "altezza": 1034,
-     "url": "https://commons.wikimedia.org/wiki/File:Torta_tenerina.jpg"
-    }
-   ]
+   "categoria": "nessuna",
+   "motivo": "voce cambiata il 10/10/2026 dopo la validazione: da ricercare",
+   "candidati": []
   },
   {
    "lingua": "IT",
@@ -1458,96 +1214,15 @@
    "lingua": "IT",
    "anno": 1,
    "numero": 22,
-   "voce": "l'asparago verde di Mesola",
+   "voce": "l'asparago di Mesola",
    "termini": [
     "asparago verde di Mesola",
     "asparagi verdi",
     "green asparagus"
    ],
-   "categoria": "da_vedere",
-   "motivo": "",
-   "candidati": [
-    {
-     "file": "File:20200424 184047 Puff pastry with green asparagus and goat cheese.jpg",
-     "termino": "asparagi verdi",
-     "licenza": "CC BY 4.0",
-     "autore": "Bernard Ladenthin",
-     "data": "2020-04-24 18:40:47",
-     "larghezza": 4608,
-     "altezza": 3456,
-     "url": "https://commons.wikimedia.org/wiki/File:20200424_184047_Puff_pastry_with_green_asparagus_and_goat_cheese.jpg"
-    },
-    {
-     "file": "File:20200424 193302 Puff pastry with green asparagus and goat cheese.jpg",
-     "termino": "asparagi verdi",
-     "licenza": "CC BY 4.0",
-     "autore": "Bernard Ladenthin",
-     "data": "2020-04-24 19:33:02",
-     "larghezza": 4608,
-     "altezza": 3456,
-     "url": "https://commons.wikimedia.org/wiki/File:20200424_193302_Puff_pastry_with_green_asparagus_and_goat_cheese.jpg"
-    },
-    {
-     "file": "File:Asparagus-Bundle.jpg",
-     "termino": "asparagi verdi",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "Evan-Amos",
-     "data": "2011-12-07",
-     "larghezza": 1560,
-     "altezza": 3960,
-     "url": "https://commons.wikimedia.org/wiki/File:Asparagus-Bundle.jpg"
-    },
-    {
-     "file": "File:Asparagus soup (spargelsuppe).jpg",
-     "termino": "asparagi verdi",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Petar Milošević",
-     "data": "2021-05-10 18:59:21",
-     "larghezza": 4472,
-     "altezza": 3168,
-     "url": "https://commons.wikimedia.org/wiki/File:Asparagus_soup_(spargelsuppe).jpg"
-    },
-    {
-     "file": "File:Green asparagus in a supermarket packaging in Canada.jpg",
-     "termino": "asparagi verdi",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Marc-Lautenbacher",
-     "data": "2010-03-31 17:35:45",
-     "larghezza": 3504,
-     "altezza": 2336,
-     "url": "https://commons.wikimedia.org/wiki/File:Green_asparagus_in_a_supermarket_packaging_in_Canada.jpg"
-    },
-    {
-     "file": "File:Poached egg with green asparagus and Caviar 01.jpg",
-     "termino": "asparagi verdi",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Arild Vågen",
-     "data": "2020-05-01 14:54:29",
-     "larghezza": 2327,
-     "altezza": 1862,
-     "url": "https://commons.wikimedia.org/wiki/File:Poached_egg_with_green_asparagus_and_Caviar_01.jpg"
-    },
-    {
-     "file": "File:Poached egg with green asparagus and Caviar 02.jpg",
-     "termino": "asparagi verdi",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Arild Vågen",
-     "data": "2020-05-01 14:54:29",
-     "larghezza": 2931,
-     "altezza": 1957,
-     "url": "https://commons.wikimedia.org/wiki/File:Poached_egg_with_green_asparagus_and_Caviar_02.jpg"
-    },
-    {
-     "file": "File:Steam-boiling green asparagus.jpg",
-     "termino": "asparagi verdi",
-     "licenza": "CC0",
-     "autore": "W.carter",
-     "data": "2018-05-03 20:47:16",
-     "larghezza": 3284,
-     "altezza": 3864,
-     "url": "https://commons.wikimedia.org/wiki/File:Steam-boiling_green_asparagus.jpg"
-    }
-   ]
+   "categoria": "nessuna",
+   "motivo": "voce cambiata il 10/10/2026 dopo la validazione: da ricercare",
+   "candidati": []
   },
   {
    "lingua": "IT",
@@ -2916,96 +2591,15 @@
    "lingua": "IT",
    "anno": 2,
    "numero": 12,
-   "voce": "i fagioli cotti nella cenere",
+   "voce": "i fagioli col sacchetto di cenere",
    "termini": [
     "fagioli cotti nella cenere",
     "fagioli",
     "beans cooked"
    ],
-   "categoria": "da_vedere",
-   "motivo": "",
-   "candidati": [
-    {
-     "file": "File:Achille Fagioli daticamera.jpg",
-     "termino": "fagioli",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Unknown author Unknown author",
-     "data": "19 th  century date QS:P,+1850-00-00T00:00:00Z/7",
-     "larghezza": 365,
-     "altezza": 537,
-     "url": "https://commons.wikimedia.org/wiki/File:Achille_Fagioli_daticamera.jpg"
-    },
-    {
-     "file": "File:Luigi Fagioli, vainqueur de l'Avusrennen 1935.jpg",
-     "termino": "fagioli",
-     "licenza": "Public domain",
-     "autore": "L'Intransigeant",
-     "data": "2017-06-05",
-     "larghezza": 528,
-     "altezza": 676,
-     "url": "https://commons.wikimedia.org/wiki/File:Luigi_Fagioli,_vainqueur_de_l%27Avusrennen_1935.jpg"
-    },
-    {
-     "file": "File:Luigi Fagioli en 1934.jpg",
-     "termino": "fagioli",
-     "licenza": "Public domain",
-     "autore": "Le Petit Parisien / Havas",
-     "data": "2016-11-20",
-     "larghezza": 389,
-     "altezza": 513,
-     "url": "https://commons.wikimedia.org/wiki/File:Luigi_Fagioli_en_1934.jpg"
-    },
-    {
-     "file": "File:Luigi Fagioli en 1934 - 2.jpg",
-     "termino": "fagioli",
-     "licenza": "Public domain",
-     "autore": "Le Matin",
-     "data": "2017-06-06",
-     "larghezza": 650,
-     "altezza": 635,
-     "url": "https://commons.wikimedia.org/wiki/File:Luigi_Fagioli_en_1934_-_2.jpg"
-    },
-    {
-     "file": "File:Luigi Fagioli en 1935.jpg",
-     "termino": "fagioli",
-     "licenza": "Public domain",
-     "autore": "L'Aero",
-     "data": "2017-04-11",
-     "larghezza": 230,
-     "altezza": 333,
-     "url": "https://commons.wikimedia.org/wiki/File:Luigi_Fagioli_en_1935.jpg"
-    },
-    {
-     "file": "File:Luigi Fagioli in his Maserati at the 1932 Targa Florio (cropped).jpg",
-     "termino": "fagioli",
-     "licenza": "Public domain",
-     "autore": "Agence de presse Meurisse",
-     "data": "1932-05-08",
-     "larghezza": 2074,
-     "altezza": 2572,
-     "url": "https://commons.wikimedia.org/wiki/File:Luigi_Fagioli_in_his_Maserati_at_the_1932_Targa_Florio_(cropped).jpg"
-    },
-    {
-     "file": "File:Luigi Fagioli na Maserati 26M 8C-3000 projíždí zatáčku před Novým Lískovcem (Brno 1932).jpg",
-     "termino": "fagioli",
-     "licenza": "CC BY 4.0",
-     "autore": "neznámý (unknown)",
-     "data": "1932-09-22",
-     "larghezza": 569,
-     "altezza": 454,
-     "url": "https://commons.wikimedia.org/wiki/File:Luigi_Fagioli_na_Maserati_26M_8C-3000_proj%C3%AD%C5%BEd%C3%AD_zat%C3%A1%C4%8Dku_p%C5%99ed_Nov%C3%BDm_L%C3%ADskovcem_(Brno_1932).jpg"
-    },
-    {
-     "file": "File:Luigi Fagioli na Mercedesu projíždí Kohoutovice (Masarykův okruh 1934).jpg",
-     "termino": "fagioli",
-     "licenza": "CC BY 4.0",
-     "autore": "neznámý (unknown)",
-     "data": "1934-10-04",
-     "larghezza": 735,
-     "altezza": 490,
-     "url": "https://commons.wikimedia.org/wiki/File:Luigi_Fagioli_na_Mercedesu_proj%C3%AD%C5%BEd%C3%AD_Kohoutovice_(Masaryk%C5%AFv_okruh_1934).jpg"
-    }
-   ]
+   "categoria": "nessuna",
+   "motivo": "voce cambiata il 10/10/2026 dopo la validazione: da ricercare",
+   "candidati": []
   },
   {
    "lingua": "IT",
@@ -3077,16 +2671,6 @@
      "larghezza": 3072,
      "altezza": 2304,
      "url": "https://commons.wikimedia.org/wiki/File:Maccheroni_alla_amatriciana_(3543752494).jpg"
-    },
-    {
-     "file": "File:Preparation amatriciana.jpg",
-     "termino": "amatriciana",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "",
-     "data": "",
-     "larghezza": 2048,
-     "altezza": 1536,
-     "url": "https://commons.wikimedia.org/wiki/File:Preparation_amatriciana.jpg"
     },
     {
      "file": "File:Tortiglioni all'Amatriciana (17137142927).jpg",
@@ -3987,96 +3571,15 @@
    "lingua": "IT",
    "anno": 2,
    "numero": 25,
-   "voce": "i latterini marinati",
+   "voce": "le acquadelle marinate",
    "termini": [
     "latterini marinati",
     "Atherina boyeri",
     "latterini"
    ],
-   "categoria": "da_vedere",
-   "motivo": "",
-   "candidati": [
-    {
-     "file": "File:Atherina boyeri, Gulf of Odessa, Black Sea.jpg",
-     "termino": "Atherina boyeri",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "Yuriy Kvach",
-     "data": "2011-08-17",
-     "larghezza": 2592,
-     "altezza": 1944,
-     "url": "https://commons.wikimedia.org/wiki/File:Atherina_boyeri,_Gulf_of_Odessa,_Black_Sea.jpg"
-    },
-    {
-     "file": "File:Atherina boyeri 1.jpg",
-     "termino": "Atherina boyeri",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "Etrusko25",
-     "data": "2011-08-25",
-     "larghezza": 640,
-     "altezza": 480,
-     "url": "https://commons.wikimedia.org/wiki/File:Atherina_boyeri_1.jpg"
-    },
-    {
-     "file": "File:Atherina boyeri Antiparos.JPG",
-     "termino": "Atherina boyeri",
-     "licenza": "CC BY 3.0",
-     "autore": "Roberto Pillon",
-     "data": "2010-10-03 11:42:25",
-     "larghezza": 640,
-     "altezza": 480,
-     "url": "https://commons.wikimedia.org/wiki/File:Atherina_boyeri_Antiparos.JPG"
-    },
-    {
-     "file": "File:Atherina boyeri Cres.JPG",
-     "termino": "Atherina boyeri",
-     "licenza": "CC BY 3.0",
-     "autore": "Roberto Pillon",
-     "data": "2011-07-07 09:54:58",
-     "larghezza": 800,
-     "altezza": 600,
-     "url": "https://commons.wikimedia.org/wiki/File:Atherina_boyeri_Cres.JPG"
-    },
-    {
-     "file": "File:Atherina boyeri Sardinia.jpg",
-     "termino": "Atherina boyeri",
-     "licenza": "CC BY 3.0",
-     "autore": "Roberto Pillon",
-     "data": "2011-06-11 12:44:18",
-     "larghezza": 640,
-     "altezza": 480,
-     "url": "https://commons.wikimedia.org/wiki/File:Atherina_boyeri_Sardinia.jpg"
-    },
-    {
-     "file": "File:Atherina boyeri Sardinia (cropped).jpg",
-     "termino": "Atherina boyeri",
-     "licenza": "CC BY 3.0",
-     "autore": "Roberto Pillon",
-     "data": "2011-06-11 12:44:18",
-     "larghezza": 524,
-     "altezza": 395,
-     "url": "https://commons.wikimedia.org/wiki/File:Atherina_boyeri_Sardinia_(cropped).jpg"
-    },
-    {
-     "file": "File:Fried ćokalice (Atherina boyeri) in Skradin-bs.jpg",
-     "termino": "Atherina boyeri",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Minja Klarić",
-     "data": "2023-12-01 15:31:51",
-     "larghezza": 3000,
-     "altezza": 4000,
-     "url": "https://commons.wikimedia.org/wiki/File:Fried_%C4%87okalice_(Atherina_boyeri)_in_Skradin-bs.jpg"
-    },
-    {
-     "file": "File:Lattarino (Atherina boyeri-risso), nel Lago di Bracciano.jpg",
-     "termino": "Atherina boyeri",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Albarubescens",
-     "data": "2017-08-14 10:13:20",
-     "larghezza": 3881,
-     "altezza": 2622,
-     "url": "https://commons.wikimedia.org/wiki/File:Lattarino_(Atherina_boyeri-risso),_nel_Lago_di_Bracciano.jpg"
-    }
-   ]
+   "categoria": "nessuna",
+   "motivo": "voce cambiata il 10/10/2026 dopo la validazione: da ricercare",
+   "candidati": []
   },
   {
    "lingua": "IT",
@@ -8346,16 +7849,6 @@
      "url": "https://commons.wikimedia.org/wiki/File:Marek_Mastic_Sept06.jpg"
     },
     {
-     "file": "File:Mastic.jpg",
-     "termino": "mastice di Chio",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "",
-     "data": "",
-     "larghezza": 2048,
-     "altezza": 1536,
-     "url": "https://commons.wikimedia.org/wiki/File:Mastic.jpg"
-    },
-    {
      "file": "File:Raffi kojian-mastic-101936037.jpg",
      "termino": "mastice di Chio",
      "licenza": "CC BY 4.0",
@@ -9867,16 +9360,6 @@
      "url": "https://commons.wikimedia.org/wiki/File:Sachertorte_3.jpg"
     },
     {
-     "file": "File:Sachertorte DSC03027 retouched.jpg",
-     "termino": "Sachertorte",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "",
-     "data": "",
-     "larghezza": 1600,
-     "altezza": 1200,
-     "url": "https://commons.wikimedia.org/wiki/File:Sachertorte_DSC03027_retouched.jpg"
-    },
-    {
      "file": "File:Sachertorte cake at Café Sperl, Vienna (2026).jpg",
      "termino": "Sachertorte",
      "licenza": "CC BY-SA 4.0",
@@ -10711,16 +10194,6 @@
    "motivo": "",
    "candidati": [
     {
-     "file": "File:Argentinean asado.jpg",
-     "termino": "asado",
-     "licenza": "CC BY-SA 2.5",
-     "autore": "",
-     "data": "",
-     "larghezza": 1600,
-     "altezza": 1200,
-     "url": "https://commons.wikimedia.org/wiki/File:Argentinean_asado.jpg"
-    },
-    {
      "file": "File:Asado a.jpg",
      "termino": "asado",
      "licenza": "CC0",
@@ -10796,96 +10269,15 @@
    "lingua": "IT",
    "anno": 5,
    "numero": 13,
-   "voce": "il Chelsea bun di Cambridge",
+   "voce": "il Chelsea bun",
    "termini": [
     "Chelsea bun di Cambridge",
     "Chelsea bun",
     "Fitzbillies"
    ],
-   "categoria": "da_vedere",
-   "motivo": "",
-   "candidati": [
-    {
-     "file": "File:Chelsea Buns.jpg",
-     "termino": "Chelsea bun",
-     "licenza": "CC BY-SA 2.0",
-     "autore": "kochtopf",
-     "data": "2010-03-28 19:57",
-     "larghezza": 500,
-     "altezza": 734,
-     "url": "https://commons.wikimedia.org/wiki/File:Chelsea_Buns.jpg"
-    },
-    {
-     "file": "File:Chelsea Buns - cropped.jpg",
-     "termino": "Chelsea bun",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "cropped from  thumb  by kochtopf",
-     "data": "",
-     "larghezza": 500,
-     "altezza": 565,
-     "url": "https://commons.wikimedia.org/wiki/File:Chelsea_Buns_-_cropped.jpg"
-    },
-    {
-     "file": "File:Chelsea bun.jpg",
-     "termino": "Chelsea bun",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "Petecarney  at  English Wikipedia",
-     "data": "18 July 2007 (original upload date)",
-     "larghezza": 1200,
-     "altezza": 900,
-     "url": "https://commons.wikimedia.org/wiki/File:Chelsea_bun.jpg"
-    },
-    {
-     "file": "File:Indian wedding tradition 43.jpg",
-     "termino": "Chelsea bun",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Akashsalla14",
-     "data": "2021-08-31 15:48:53",
-     "larghezza": 3072,
-     "altezza": 4096,
-     "url": "https://commons.wikimedia.org/wiki/File:Indian_wedding_tradition_43.jpg"
-    },
-    {
-     "file": "File:Marmalade Chelsea Bun (28422592054).jpg",
-     "termino": "Chelsea bun",
-     "licenza": "CC BY-SA 2.0",
-     "autore": "Amanda Slater  from Coventry, West Midlands, UK",
-     "data": "2016-08-15 17:01",
-     "larghezza": 2796,
-     "altezza": 2539,
-     "url": "https://commons.wikimedia.org/wiki/File:Marmalade_Chelsea_Bun_(28422592054).jpg"
-    },
-    {
-     "file": "File:Orange and Chocolate Chelsea Bun (28937874572).jpg",
-     "termino": "Chelsea bun",
-     "licenza": "CC BY-SA 2.0",
-     "autore": "Amanda Slater  from Coventry, West Midlands, UK",
-     "data": "2016-08-15 17:01",
-     "larghezza": 2497,
-     "altezza": 2052,
-     "url": "https://commons.wikimedia.org/wiki/File:Orange_and_Chocolate_Chelsea_Bun_(28937874572).jpg"
-    },
-    {
-     "file": "File:Tray of Chelsea buns in Fitzbillies Cambridge.jpg",
-     "termino": "Chelsea bun",
-     "licenza": "CC BY-SA 2.0",
-     "autore": "bryan...",
-     "data": "2018-02-10 23:02",
-     "larghezza": 6720,
-     "altezza": 4480,
-     "url": "https://commons.wikimedia.org/wiki/File:Tray_of_Chelsea_buns_in_Fitzbillies_Cambridge.jpg"
-    },
-    {
-     "file": "File:Tray of Chelsea buns in Fitzbillies Cambridge (cropped).jpg",
-     "termino": "Chelsea bun",
-     "licenza": "CC BY-SA 2.0",
-     "autore": "bryan...",
-     "data": "2018-02-10 23:02",
-     "larghezza": 5091,
-     "altezza": 3646,
-     "url": "https://commons.wikimedia.org/wiki/File:Tray_of_Chelsea_buns_in_Fitzbillies_Cambridge_(cropped).jpg"
-    }
-   ]
+   "categoria": "nessuna",
+   "motivo": "voce cambiata il 10/10/2026 dopo la validazione: da ricercare",
+   "candidati": []
   },
   {
    "lingua": "IT",
@@ -11321,96 +10713,15 @@
    "lingua": "IT",
    "anno": 5,
    "numero": 20,
-   "voce": "le mele ferraresi",
+   "voce": "le mele antiche ferraresi",
    "termini": [
     "mele ferraresi",
     "mele",
     "apples Italy"
    ],
-   "categoria": "da_vedere",
-   "motivo": "",
-   "candidati": [
-    {
-     "file": "File:Acquasanta la cartiera giu 2017.jpg",
-     "termino": "mele",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Angelo G. Valle",
-     "data": "Taken on 10 June 2017",
-     "larghezza": 844,
-     "altezza": 633,
-     "url": "https://commons.wikimedia.org/wiki/File:Acquasanta_la_cartiera_giu_2017.jpg"
-    },
-    {
-     "file": "File:European badger (Meles meles taxus) Drenthe 2.jpg",
-     "termino": "mele",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Charles J. Sharp",
-     "data": "2026-04-08 22:32:29",
-     "larghezza": 6354,
-     "altezza": 4236,
-     "url": "https://commons.wikimedia.org/wiki/File:European_badger_(Meles_meles_taxus)_Drenthe_2.jpg"
-    },
-    {
-     "file": "File:Mele-macina.jpg",
-     "termino": "mele",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "Davide Papalini",
-     "data": "2010-05-23",
-     "larghezza": 3264,
-     "altezza": 2448,
-     "url": "https://commons.wikimedia.org/wiki/File:Mele-macina.jpg"
-    },
-    {
-     "file": "File:Mele-panorama.jpg",
-     "termino": "mele",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "Davide Papalini",
-     "data": "2010-05-23",
-     "larghezza": 3264,
-     "altezza": 2448,
-     "url": "https://commons.wikimedia.org/wiki/File:Mele-panorama.jpg"
-    },
-    {
-     "file": "File:Mele-targa caduti.jpg",
-     "termino": "mele",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "Davide Papalini",
-     "data": "2010-05-23",
-     "larghezza": 3264,
-     "altezza": 2448,
-     "url": "https://commons.wikimedia.org/wiki/File:Mele-targa_caduti.jpg"
-    },
-    {
-     "file": "File:Mele.JPG",
-     "termino": "mele",
-     "licenza": "CC BY-SA 2.5",
-     "autore": "Lorenzo Piccardo",
-     "data": "2 April 2007, 16:14:40 (according to   Exif   data)",
-     "larghezza": 3072,
-     "altezza": 2304,
-     "url": "https://commons.wikimedia.org/wiki/File:Mele.JPG"
-    },
-    {
-     "file": "File:Mele in Berlin 2023.jpg",
-     "termino": "mele",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Doraaa St",
-     "data": "2023-10-02",
-     "larghezza": 4672,
-     "altezza": 7008,
-     "url": "https://commons.wikimedia.org/wiki/File:Mele_in_Berlin_2023.jpg"
-    },
-    {
-     "file": "File:Mele pri Gornji Radgoni; znamenje iz prve polovice 16. stol.jpg",
-     "termino": "mele",
-     "licenza": "Public domain",
-     "autore": "Unknown author Unknown author",
-     "data": "by 1965 date QS:P,+1965-00-00T00:00:00Z/7,P1326,+1965-00-00T",
-     "larghezza": 242,
-     "altezza": 372,
-     "url": "https://commons.wikimedia.org/wiki/File:Mele_pri_Gornji_Radgoni;_znamenje_iz_prve_polovice_16._stol.jpg"
-    }
-   ]
+   "categoria": "nessuna",
+   "motivo": "voce cambiata il 10/10/2026 dopo la validazione: da ricercare",
+   "candidati": []
   },
   {
    "lingua": "IT",
@@ -11730,96 +11041,15 @@
    "lingua": "IT",
    "anno": 5,
    "numero": 25,
-   "voce": "il pomodoro del New Jersey",
+   "voce": "l'hot dog all'italiana di Newark",
    "termini": [
     "pomodoro del New Jersey",
     "Jersey tomato",
     "tomatoes New Jersey"
    ],
-   "categoria": "da_vedere",
-   "motivo": "",
-   "candidati": [
-    {
-     "file": "File:Bolgiano's \"glory\" tomato - out yields and out sells any tomato on the market by far the best tomato ever grown (1917) (20202596108).jpg",
-     "termino": "Jersey tomato",
-     "licenza": "No restrictions",
-     "autore": "Internet Archive Book Images",
-     "data": "1917",
-     "larghezza": 1408,
-     "altezza": 2392,
-     "url": "https://commons.wikimedia.org/wiki/File:Bolgiano%27s_%22glory%22_tomato_-_out_yields_and_out_sells_any_tomato_on_the_market_by_far_the_best_tomato_ever_grown_(1917)_(20202596108).jpg"
-    },
-    {
-     "file": "File:Corn and Tomato and Beer Festival 10.jpg",
-     "termino": "Jersey tomato",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "SeichanGant",
-     "data": "2023-08-12 13:13:08",
-     "larghezza": 8160,
-     "altezza": 6120,
-     "url": "https://commons.wikimedia.org/wiki/File:Corn_and_Tomato_and_Beer_Festival_10.jpg"
-    },
-    {
-     "file": "File:Corn and Tomato and Beer Festival 24.jpg",
-     "termino": "Jersey tomato",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "SeichanGant",
-     "data": "2023-08-12 13:24:33",
-     "larghezza": 8160,
-     "altezza": 6120,
-     "url": "https://commons.wikimedia.org/wiki/File:Corn_and_Tomato_and_Beer_Festival_24.jpg"
-    },
-    {
-     "file": "File:Corn and Tomato and Beer Festival 31.jpg",
-     "termino": "Jersey tomato",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "SeichanGant",
-     "data": "2023-08-12 14:16:15",
-     "larghezza": 3000,
-     "altezza": 4000,
-     "url": "https://commons.wikimedia.org/wiki/File:Corn_and_Tomato_and_Beer_Festival_31.jpg"
-    },
-    {
-     "file": "File:Corn and Tomato and Beer Festival 8.jpg",
-     "termino": "Jersey tomato",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "SeichanGant",
-     "data": "2023-08-12 13:12:59",
-     "larghezza": 8160,
-     "altezza": 6120,
-     "url": "https://commons.wikimedia.org/wiki/File:Corn_and_Tomato_and_Beer_Festival_8.jpg"
-    },
-    {
-     "file": "File:Papa's Tomato Pies sign.jpg",
-     "termino": "Jersey tomato",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Jjazz76",
-     "data": "2024-04-14",
-     "larghezza": 3264,
-     "altezza": 2448,
-     "url": "https://commons.wikimedia.org/wiki/File:Papa%27s_Tomato_Pies_sign.jpg"
-    },
-    {
-     "file": "File:Tomato's 6266.jpg",
-     "termino": "Jersey tomato",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Chris Light",
-     "data": "2021-08-14 10:21:12",
-     "larghezza": 4608,
-     "altezza": 3072,
-     "url": "https://commons.wikimedia.org/wiki/File:Tomato%27s_6266.jpg"
-    },
-    {
-     "file": "File:Tomato in New Jersey.jpg",
-     "termino": "Jersey tomato",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "Tomwsulcer",
-     "data": "2011-06-23",
-     "larghezza": 680,
-     "altezza": 591,
-     "url": "https://commons.wikimedia.org/wiki/File:Tomato_in_New_Jersey.jpg"
-    }
-   ]
+   "categoria": "nessuna",
+   "motivo": "voce cambiata il 10/10/2026 dopo la validazione: da ricercare",
+   "candidati": []
   },
   {
    "lingua": "IT",
@@ -12069,84 +11299,13 @@
    "lingua": "IT",
    "anno": 5,
    "numero": 30,
-   "voce": "la frittata di cipolle",
+   "voce": "la tirotta con la cipolla",
    "termini": [
     "frittata di cipolle"
    ],
-   "categoria": "da_vedere",
-   "motivo": "",
-   "candidati": [
-    {
-     "file": "File:Frittata - Bam's Kitchen 2024-04-02.jpg",
-     "termino": "frittata di cipolle",
-     "licenza": "CC0",
-     "autore": "Andy Li",
-     "data": "2024-04-02 13:06:21",
-     "larghezza": 4032,
-     "altezza": 3024,
-     "url": "https://commons.wikimedia.org/wiki/File:Frittata_-_Bam%27s_Kitchen_2024-04-02.jpg"
-    },
-    {
-     "file": "File:Frittata 01.jpg",
-     "termino": "frittata di cipolle",
-     "licenza": "CC BY 2.0",
-     "autore": "Key West Wedding Photography",
-     "data": "2017-10-22 09:53:18",
-     "larghezza": 3341,
-     "altezza": 2578,
-     "url": "https://commons.wikimedia.org/wiki/File:Frittata_01.jpg"
-    },
-    {
-     "file": "File:Frittata 03.jpg",
-     "termino": "frittata di cipolle",
-     "licenza": "CC BY 2.0",
-     "autore": "Key West Wedding Photography",
-     "data": "2017-10-22 10:02:10",
-     "larghezza": 3168,
-     "altezza": 2573,
-     "url": "https://commons.wikimedia.org/wiki/File:Frittata_03.jpg"
-    },
-    {
-     "file": "File:Frittata 04.jpg",
-     "termino": "frittata di cipolle",
-     "licenza": "CC BY 2.0",
-     "autore": "Key West Wedding Photography",
-     "data": "2017-10-22 10:14:37",
-     "larghezza": 3378,
-     "altezza": 2741,
-     "url": "https://commons.wikimedia.org/wiki/File:Frittata_04.jpg"
-    },
-    {
-     "file": "File:Frittata ingredients.png",
-     "termino": "frittata di cipolle",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "GeoO",
-     "data": "2023-03-08",
-     "larghezza": 1485,
-     "altezza": 1788,
-     "url": "https://commons.wikimedia.org/wiki/File:Frittata_ingredients.png"
-    },
-    {
-     "file": "File:Herb 'frittata' and boiled easter eggs.jpg",
-     "termino": "frittata di cipolle",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Albarubescens",
-     "data": "2020-04-12 13:59:17",
-     "larghezza": 3021,
-     "altezza": 3940,
-     "url": "https://commons.wikimedia.org/wiki/File:Herb_%27frittata%27_and_boiled_easter_eggs.jpg"
-    },
-    {
-     "file": "File:Tradizionale frittata Collese.jpg",
-     "termino": "frittata di cipolle",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Tremebondo89",
-     "data": "2023-04-09",
-     "larghezza": 960,
-     "altezza": 872,
-     "url": "https://commons.wikimedia.org/wiki/File:Tradizionale_frittata_Collese.jpg"
-    }
-   ]
+   "categoria": "nessuna",
+   "motivo": "voce cambiata il 10/10/2026 dopo la validazione: da ricercare",
+   "candidati": []
   },
   {
    "lingua": "FE",
@@ -21900,16 +21059,6 @@
      "larghezza": 3000,
      "altezza": 4000,
      "url": "https://commons.wikimedia.org/wiki/File:Vinaigre_estragon_%C3%A9chalote_et_vinaigre_aux_framboises.jpg"
-    },
-    {
-     "file": "File:Vinegar infused with oregano.jpg",
-     "termino": "honey vinegar",
-     "licenza": "CC BY-SA 2.0",
-     "autore": "",
-     "data": "",
-     "larghezza": 480,
-     "altezza": 640,
-     "url": "https://commons.wikimedia.org/wiki/File:Vinegar_infused_with_oregano.jpg"
     },
     {
      "file": "File:Vinegar plant.jpg",

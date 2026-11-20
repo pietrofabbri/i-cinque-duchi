@@ -1,6 +1,6 @@
 {
- "versione": "v2",
- "data": "2026-10-08",
+ "versione": "v3",
+ "data": "2026-10-10",
  "stato": "rivista da Pietro l'08/10/2026: confermate tutte le voci senza nota; questa v2 toglie le ripetizioni ferraresi fra gli anni, propone le voci che mancavano e separa le curiosità (da usare nel gioco) dalle segnalazioni (ancora aperte)",
  "regola": "Decisioni di Pietro del 07/10/2026: i cibi dell'italiano dipendono dal luogo. Ogni tappa ha un piatto tipico del suo luogo; la lista fissa di trenta voci uguali per tutti gli anni non vale più per l'italiano. Niente nomi dialettali e niente bevande (le bevande sono l'oggetto del greco).",
  "fonte_luoghi": "dati/luoghi_gioco.json (pin), dati/sequenza_tappe.json, tabella delle tappe di docs/videogioco-5-duchi-anno1-ferrara.md",
@@ -30,7 +30,7 @@
    "luogo": "Piazza e Palazzo comunale",
    "piatto": "la coppia ferrarese",
    "segnalazione": "",
-   "curiosita": "È il «pane ferrarese» IGP; nasce dal pane intorto della corte (vedi 2-26)."
+   "curiosita": "È IGP con il nome di Coppia Ferrarese; discende dal pane intorto della corte (vedi 2-26)."
   },
   {
    "tappa": "1-4",
@@ -46,8 +46,8 @@
    "anno": 1,
    "numero": 5,
    "luogo": "Sant'Antonio in Polesine",
-   "piatto": "la torta di riso",
-   "segnalazione": "",
+   "piatto": "la torta tenerina",
+   "segnalazione": "Indicata da Pietro (08/10/2026) al posto della torta di riso, che non risulta ferrarese (l'elenco PAT ha solo quella reggiana).",
    "curiosita": ""
   },
   {
@@ -75,7 +75,7 @@
    "luogo": "Studio (memoria a Palazzo Paradiso)",
    "piatto": "i cappelletti",
    "segnalazione": "",
-   "curiosita": "Messisbugo consiglia di dar loro la forma con il dorso di una grattugia: la forchetta a tavola non era ancora in uso."
+   "curiosita": "Messisbugo consiglia di dar loro la forma con il dorso di una grattugia."
   },
   {
    "tappa": "1-9",
@@ -93,16 +93,16 @@
    "luogo": "Palazzo di corte",
    "piatto": "i maccheroni romaneschi di Messisbugo",
    "segnalazione": "",
-   "curiosita": "Lo scalco della corte estense li descrive nei Banchetti (1549): sono gli antenati delle fettuccine."
+   "curiosita": "Lo scalco della corte estense li descrive nei Banchetti (1549): sono simili alle fettuccine di oggi."
   },
   {
    "tappa": "1-11",
    "anno": 1,
    "numero": 11,
    "luogo": "Ex ghetto, MEIS",
-   "piatto": "il salame d'oca",
-   "segnalazione": "",
-   "curiosita": "Della cucina ebraica ferrarese: l'oca al posto del maiale."
+   "piatto": "le buricche",
+   "segnalazione": "Il salame d'oca non risulta ferrarese (la IGP è di Mortara). «Buricche» è il nome della specialità, senza un equivalente italiano.",
+   "curiosita": "Sfogliatine ripiene della cucina ebraica ferrarese: il museo civico le ricorda come specialità della bottega di Nuta Ascoli, in via Mazzini."
   },
   {
    "tappa": "1-12",
@@ -118,9 +118,9 @@
    "anno": 1,
    "numero": 13,
    "luogo": "Pinacoteca, Certosa",
-   "piatto": "la polenta",
-   "segnalazione": "",
-   "curiosita": ""
+   "piatto": "il topino d'Ognissanti",
+   "segnalazione": "PAT Emilia-Romagna 2024, n. 283; la descrizione della scheda è da controllare.",
+   "curiosita": "Un dolce ferrarese legato alla festa dei Santi e dei Morti: la Certosa è il cimitero monumentale della città."
   },
   {
    "tappa": "1-14",
@@ -172,8 +172,8 @@
    "anno": 1,
    "numero": 19,
    "luogo": "Palazzo Paradiso",
-   "piatto": "la torta tenerina",
-   "segnalazione": "",
+   "piatto": "il biscotto anguilla regina",
+   "segnalazione": "Biscotto ferrarese dell'elenco dei prodotti tradizionali (PAT Emilia-Romagna 2024, n. 145); legame con Palazzo Paradiso generico.",
    "curiosita": ""
   },
   {
@@ -199,7 +199,7 @@
    "anno": 1,
    "numero": 22,
    "luogo": "Palazzo Municipale, mura",
-   "piatto": "l'asparago verde di Mesola",
+   "piatto": "l'asparago di Mesola",
    "segnalazione": "",
    "curiosita": ""
   },
@@ -209,7 +209,7 @@
    "numero": 23,
    "luogo": "Vicolo del Chiozzino",
    "piatto": "le rane fritte",
-   "segnalazione": "",
+   "segnalazione": "Validazione del 10/10/2026: nessuna fonte trovata (non è nell'elenco PAT né nelle fonti ferraresi consultate); da tenere solo con una fonte.",
    "curiosita": ""
   },
   {
@@ -227,7 +227,7 @@
    "numero": 25,
    "luogo": "Teatro Comunale",
    "piatto": "il cocomero ferrarese",
-   "segnalazione": "Proposta generica ferrarese, come hai chiesto: nessun legame con il teatro.",
+   "segnalazione": "Proposta generica ferrarese, come hai chiesto: nessun legame con il teatro. Validazione del 10/10/2026: nessuna fonte per un «cocomero ferrarese» (nell'elenco PAT il cocomero è di San Matteo della Decima, provincia di Bologna).",
    "curiosita": ""
   },
   {
@@ -254,8 +254,8 @@
    "numero": 28,
    "luogo": "MEIS, cimitero di via delle Vigne, muretto del Castello",
    "piatto": "il caviale ferrarese",
-   "segnalazione": "Le fonti non concordano sulla data della ricetta (1520 o 1549).",
-   "curiosita": "Un caviale cotto e sott'olio, da una ricetta attribuita a Messisbugo. Nel 1942 Benvenuta Ascoli, detta Nuta, ebrea ferrarese, lo vendeva nel suo negozio; a Ferrara si mangiò fino al 1972."
+   "segnalazione": "",
+   "curiosita": "Un caviale cotto in forno e conservato sott'olio, da una ricetta attribuita a Messisbugo. Negli anni Trenta lo vendeva Benvenuta Ascoli, detta Nuta, nella sua bottega ebraica di via Mazzini."
   },
   {
    "tappa": "1-29",
@@ -263,7 +263,7 @@
    "numero": 29,
    "luogo": "Vicolo del Chiozzino, Largo Vancini",
    "piatto": "la carota del Delta",
-   "segnalazione": "Proposta generica ferrarese.",
+   "segnalazione": "Proposta generica ferrarese. Validazione del 10/10/2026: nessuna fonte per una «carota del Delta» come prodotto tipico; da decidere.",
    "curiosita": ""
   },
   {
@@ -379,9 +379,9 @@
    "anno": 2,
    "numero": 12,
    "luogo": "Porta `PT-CAR` (Ferrara)",
-   "piatto": "i fagioli cotti nella cenere",
+   "piatto": "i fagioli col sacchetto di cenere",
    "segnalazione": "",
-   "curiosita": "Nella pentola dei fagioli si metteva un sacchetto di cenere, per farli cuocere meglio: un uso antico ferrarese."
+   "curiosita": "Nella pentola dei fagioli si metteva un sacchetto di cenere: un uso antico ferrarese, di quando l'acqua per cuocere veniva dal pozzo."
   },
   {
    "tappa": "2-13",
@@ -496,8 +496,8 @@
    "anno": 2,
    "numero": 25,
    "luogo": "Ferrara, zona dell'Addizione Erculea",
-   "piatto": "i latterini marinati",
-   "segnalazione": "",
+   "piatto": "le acquadelle marinate",
+   "segnalazione": "PAT Emilia-Romagna n. 397: acquadella è il nome dei latterini nelle valli di Comacchio.",
    "curiosita": "Pesciolini delle valli marinati, piatto tipico ferrarese."
   },
   {
@@ -515,7 +515,7 @@
    "numero": 27,
    "luogo": "Porta `PT-CON` (Ferrara)",
    "piatto": "l'anatra di valle",
-   "segnalazione": "",
+   "segnalazione": "Validazione del 10/10/2026: plausibile (caccia e cucina dell'anatra nelle valli di Comacchio), ma senza una fonte specifica.",
    "curiosita": "La caccia nelle valli di Comacchio."
   },
   {
@@ -525,7 +525,7 @@
    "luogo": "Ferrara, corte",
    "piatto": "le focaccine al sesamo della corte",
    "segnalazione": "",
-   "curiosita": "Alla corte si chiamavano sosamelli; poi il nome è diventato, in dialetto, un insulto per una persona goffa e lenta."
+   "curiosita": "Alla corte si chiamavano sosamelli; poi il nome è diventato, in dialetto, un insulto per una persona sciapa e ingombrante."
   },
   {
    "tappa": "2-29",
@@ -632,7 +632,7 @@
    "numero": 10,
    "luogo": "Ferrara, fonderia",
    "piatto": "la mortadella di Messisbugo",
-   "segnalazione": "",
+   "segnalazione": "Validazione del 10/10/2026: la mortadella gialla e quella di fegato nei Banchetti non sono state riscontrate sul testo; la data del Libro novo oscilla fra 1557 e 1564.",
    "curiosita": "Messisbugo ha scritto probabilmente la prima ricetta completa a stampa della mortadella (Libro novo, 1557), molto diversa da quella di oggi; nei Banchetti del 1549 ne dà anche una gialla e una di fegato."
   },
   {
@@ -677,7 +677,7 @@
    "numero": 15,
    "luogo": "Ferrara, Camerino d'alabastro",
    "piatto": "i piselli di Savonarola",
-   "segnalazione": "",
+   "segnalazione": "Validazione del 10/10/2026: il passo sui piselli nel Libreto di Michele Savonarola non è stato riscontrato (edizione Nystedt 1988).",
    "curiosita": "Michele Savonarola, medico alla corte e nonno del frate, in un libro dedicato a Borso scrive che i piselli sono freddi e gonfiano la pancia, e dice come cuocerli."
   },
   {
@@ -1198,7 +1198,7 @@
    "anno": 5,
    "numero": 13,
    "luogo": "Cambridge",
-   "piatto": "il Chelsea bun di Cambridge",
+   "piatto": "il Chelsea bun",
    "segnalazione": "",
    "curiosita": "La tappa è la Cambridge inglese di Turing."
   },
@@ -1261,7 +1261,7 @@
    "anno": 5,
    "numero": 20,
    "luogo": "Ferrara",
-   "piatto": "le mele ferraresi",
+   "piatto": "le mele antiche ferraresi",
    "segnalazione": "Frutto, non piatto: lo propongo perché i piatti ferraresi distinti finiscono.",
    "curiosita": ""
   },
@@ -1306,9 +1306,9 @@
    "anno": 5,
    "numero": 25,
    "luogo": "Murray Hill, 1948",
-   "piatto": "il pomodoro del New Jersey",
-   "segnalazione": "",
-   "curiosita": "Murray Hill, dove erano i Bell Labs, è nel New Jersey."
+   "piatto": "l'hot dog all'italiana di Newark",
+   "segnalazione": "Nato a Newark, a una ventina di chilometri da Murray Hill: da verificare su una fonte autorevole.",
+   "curiosita": ""
   },
   {
    "tappa": "5-26",
@@ -1351,9 +1351,9 @@
    "anno": 5,
    "numero": 30,
    "luogo": "Ferrara, sala di progetto",
-   "piatto": "la frittata di cipolle",
-   "segnalazione": "Proposta generica, poco ferrarese: aspetto la tua.",
-   "curiosita": ""
+   "piatto": "la tirotta con la cipolla",
+   "segnalazione": "",
+   "curiosita": "Una focaccia ferrarese alla cipolla, fra i prodotti tradizionali dell'Emilia-Romagna (PAT 2024, n. 282)."
   }
  ],
  "regola_ferrara": "Ferrara compare in 48 tappe. Nessun piatto si ripete: l'anno 1 usa i prodotti del territorio, gli anni dopo i piatti e i cibi della corte estense documentati (Messisbugo, Savonarola) e altri prodotti ferraresi.",
@@ -1375,5 +1375,6 @@
   "piatto": "nome italiano, mai dialettale; mai una bevanda",
   "curiosita": "un fatto vero e verificato, da usare nella tappa",
   "segnalazione": "un dubbio ancora aperto, da chiudere con Pietro"
- }
+ },
+ "validazione": "10/10/2026, su richiesta di Pietro: le 150 voci confrontate con testi e registri di cucina (elenco PAT Emilia-Romagna 2024; Guidetti, «A tavola con gli Este e col dialetto ferrarese»; proposta di legge sulla cucina ferrarese, Camera 2004; Museo di Ferrara; registri DOP/IGP). 134 confermate, 7 corrette, 9 non verificabili (restano con la segnalazione). Le conferme delle voci straniere poggiano in parte su fonti generali: vanno riviste livello per livello. Riapplicata il 20/11/2026 dopo la perdita dell'ambiente di lavoro."
 }

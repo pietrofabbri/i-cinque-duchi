@@ -1,8 +1,8 @@
 ---
 titolo: Videogioco "I cinque duchi" — il sistema linguistico: sei lingue, novecento livelli
 tipo: normativo
-versione: 0.8
-data: 2026-10-08
+versione: 0.9
+data: 2026-11-20
 autore: Pietro Fabbri (con Claude)
 fonte: indicazioni di Pietro del 02/10/2026
 documenti collegati: videogioco-5-duchi-schema-livelli.md (v1.2), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-quadro-trasversale.md (v0.2), videogioco-5-duchi-anno1-ferrara.md (v0.3), AGENTS.md
@@ -239,6 +239,8 @@ Le famiglie di esercizi, con l'esempio in italiano (cibi):
 **Le stesse regole degli esercizi informatici valgono qui.** La pool per gradino, i quattro esercizi giusti, la coerenza al 70% nell'ultimo gradino, la pausa di autoregolazione dopo due errori, il seme diverso per studente: tutto identico (`videogioco-5-duchi-esercizi.md` §1). Nessun meccanismo richiede di scrivere testo, quindi non si può incollare una risposta presa da un'IA.
 
 ### 5.4 Le trenta voci di ogni associazione
+
+**Tutte le lingue hanno una voce per tappa, legata al luogo** (decisione di Pietro del 10/10/2026). Come i cibi dell'italiano, anche detti, superstizioni, musiche, mestieri e bevande hanno **centocinquanta voci, una per tappa**, scelte sul luogo della tappa (e sulla sua epoca, quando il luogo è antico); le liste di trenta voci ripetute nei cinque anni sono superate e restano come storia. Il greco si rifà con **bevande del luogo e dell'epoca**, perché la lista di trenta era quasi tutta sul vino e Pietro l'ha giudicata «quasi tutto sbagliato e ripetitivo». **Ogni voce si orienta e si valida su testi di riferimento del suo campo** (richiesta di Pietro del 10/10/2026): per i cibi, ricettari e registri ufficiali (Messisbugo, Artusi, elenchi PAT, DOP/IGP, Presìdi Slow Food); per le altre, enciclopedie, registri, musei e fonti antiche con il passo preciso. Le bozze per lingua sono in `dati/lingue/bozze_150/`.
 
 **I cibi dell'italiano dipendono dal luogo** (decisione di Pietro del 07/10/2026). Per l'italiano la lista fissa di trenta voci uguali per tutti gli anni **non vale più**: ogni tappa ha **un piatto tipico del suo luogo**, quindi le voci italiane sono **centocinquanta, una per tappa**, in `dati/lingue/cibi_per_tappa.json`. Due vincoli, sempre di Pietro: **niente nomi dialettali** (il piatto si chiama con il suo nome italiano: «pampepato», non «pampapato»; «ciambella ferrarese», non «brazadela») e **niente bevande**, che sono l'oggetto del greco. Il file è una proposta del progetto con le segnalazioni dove il legame con il luogo è debole o il luogo non è indicato; la rivede Pietro sulla stessa pagina delle altre voci. **Revisione di Pietro dell'08/10/2026** (v2 del file): confermate tutte le voci su cui non ha scritto niente; **nessun piatto si ripete**, nemmeno a Ferrara, che compare in 48 tappe: l'anno 1 usa i prodotti del territorio ferrarese, gli anni dopo i piatti e i cibi della corte estense documentati (Messisbugo, Michele Savonarola) e altri prodotti ferraresi; le voci che mancavano le ha fatte proporre al progetto, «anche generiche ferraresi». Ogni voce ha tre campi: il **piatto** (nome italiano), la **curiosità** (un fatto vero e verificato, con le fonti nel file, da usare nella tappa: per esempio la rapa della Satira III di Ariosto al 1-17, o il caviale ferrarese di Nuta Ascoli al 1-28) e la **segnalazione** (un dubbio ancora aperto). Le altre cinque lingue restano a trenta voci.
 
@@ -698,6 +700,7 @@ python3 sorgenti/lingue/compila_titoli.py --verifica  # conta i titoli per fonte
 
 | Data | Versione | Che cosa è cambiato |
 |---|---|---|
+| 20/11/2026 | 0.9 | Tutte le lingue hanno una voce per tappa, legata al luogo (decisione di Pietro del 10/10/2026); il greco con bevande del luogo e dell'epoca; ogni voce si valida su testi di riferimento del suo campo. |
 | 08/10/2026 | 0.8 | B2 chiusa (revisione di Pietro dell'08/10/2026): confermato ciò che Pietro non ha commentato; 38 voci segnalate dal progetto risolte nelle cinque lingue non italiane (associazioni.json v2, con le curiosità verificate); liste del §5.4 aggiornate. |
 | 08/10/2026 | 0.7 | Revisione di Pietro dell'08/10/2026 dei cibi per tappa: confermate le voci senza nota, nessun piatto ripetuto (Ferrara in 48 tappe), proposte le voci mancanti, curiosità verificate separate dalle segnalazioni (dati/lingue/cibi_per_tappa.json v2). |
 | 07/10/2026 | 0.6 | I cibi dell'italiano dipendono dal luogo (decisione di Pietro del 07/10/2026): un piatto tipico per ogni tappa, centocinquanta voci in dati/lingue/cibi_per_tappa.json, senza nomi dialettali e senza bevande. La lista fissa di trenta voci italiane resta come storia. |

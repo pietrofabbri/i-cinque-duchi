@@ -1,8 +1,8 @@
 ---
 titolo: Videogioco "I cinque duchi" — Roadmap per la risistemazione della documentazione
 tipo: piano
-versione: 0.10
-data: 2026-10-08
+versione: 0.11
+data: 2026-11-20
 autore: Pietro Fabbri (con Claude)
 documenti collegati: videogioco-5-duchi-audit.md (v0.34), videogioco-5-duchi-gioco.md (v0.9), videogioco-5-duchi-esercizi.md (v0.3), videogioco-5-duchi-meccaniche.md (v0.7), videogioco-5-duchi-tappa-1-01.md (v0.6)
 ---
@@ -157,7 +157,7 @@ I quattro rossi del 06/10/2026 e che cosa erano:
 
 **Chiusa l'08/10/2026 con B2.** Pietro ha rivisto le voci: confermato ciò che non ha commentato, le segnalazioni le ha risolte il progetto, e l'italiano ha un piatto tipico per ogni tappa. Nella stessa revisione due regole nuove: i fatti interessanti si segnalano, e un personaggio citato e non ancora incontrato diventa una scheda interattiva con un'immagine (`modello-di-livello.md` §5). **La fase 3 è chiusa**, e si passa alla fase 4.
 
-**Lo strumento di scelta delle immagini è pubblicato (08/10/2026, sera)**: https://claude.ai/artifact/AjCHKi8HWeqPKhiHKRKT8Z, privato di Pietro. Ha le 1913 miniature delle 270 voci con immagine (l'italiano diviso per anno); le scelte si salvano nella collezione `scelte` della pagina. Per rifarlo: `cerca_immagini_v2.py`, `scelta/miniature.py` (o `miniature_parallelo.py` sul computer di Pietro, dove Commons non limita), `scelta/prepara_pubblicazione.py` (ricomprime e divide l'italiano per anno), `scelta/genera_pagina.py`. **Le scelte di Pietro (10/10/2026)** sono in `dati/lingue/scelte_immagini_pietro.json`: 270 voci, 157 con un'immagine e 113 «nessuna va bene» (fra queste quasi tutte quelle di latino, inglese e greco). Sono **provvisorie**: Pietro le rivede quando si scrive il livello corrispondente, e solo allora entrano in `attestazione_oggetti.json` con etichetta e motivo. Pietro ha anche chiesto perché le altre lingue non abbiano 150 voci come l'italiano (una per tappa) e ha giudicato il greco «quasi tutto sbagliato e ripetitivo»: la domanda è aperta.
+**Lo strumento di scelta delle immagini è pubblicato (08/10/2026, sera)**: https://claude.ai/artifact/AjCHKi8HWeqPKhiHKRKT8Z, privato di Pietro. Ha le 1913 miniature delle 270 voci con immagine (l'italiano diviso per anno); le scelte si salvano nella collezione `scelte` della pagina. Per rifarlo: `cerca_immagini_v2.py`, `scelta/miniature.py` (o `miniature_parallelo.py` sul computer di Pietro, dove Commons non limita), `scelta/prepara_pubblicazione.py` (ricomprime e divide l'italiano per anno), `scelta/genera_pagina.py`. **Le scelte di Pietro (10/10/2026)** sono in `dati/lingue/scelte_immagini_pietro.json`: 270 voci, 157 con un'immagine e 113 «nessuna va bene» (fra queste quasi tutte quelle di latino, inglese e greco). Sono **provvisorie**: Pietro le rivede quando si scrive il livello corrispondente, e solo allora entrano in `attestazione_oggetti.json` con etichetta e motivo. Pietro ha poi deciso (10/10/2026) che **tutte le lingue hanno 150 voci, una per tappa, legate al luogo**, e il greco bevande del luogo e dell'epoca. I cibi sono stati validati su testi di cucina (v3). **Dove si riprende**: le bozze delle cinque lingue (`dati/lingue/bozze_150/`) vanno scritte e verificate su fonti di riferimento; poi immagini, pagina di scelta, dati e verificatori. Le prime bozze del 10/10 sono andate perse con l'ambiente di lavoro prima di essere salvate: da allora ogni bozza si salva subito nel repository. **Due controlli rossi noti (20/11/2026)**, tutti e due per la rete: `verifica_tavolozza.py` (esce 2, Wikidata non raggiungibile da qui) e `lingue/verifica_metadati_mancanti.py`, che chiede una risposta di Commons per i candidati della seconda ricerca respinti per l'autore: si chiude con `--ricontrolla` da una macchina che raggiunge Commons (qui Commons risponde 429).
 
 **Lavoro per la fase 4 nato da queste decisioni**: raccogliere i proverbi ferraresi da fonti pubblicate, perché Pietro li riveda; lo strumento per scegliere le immagini, con le miniature scaricate da una macchina che raggiunge Commons; acquisire le Nuove Indicazioni 2026 e rifare la verifica di copertura; scrivere per ogni anno il senso narrativo del percorso; le facoltative del 1945 e della biologia nell'anno 5 e la scheda d'atlante sul colonialismo nell'anno 3; il modulo con Niccolò III, dopo l'anno 1.
 
@@ -177,3 +177,4 @@ I quattro rossi del 06/10/2026 e che cosa erano:
 | 07/10/2026 | 0.8 | Approvate le due proposte; restano B2, B3, B4 e le quindici importanti per chiudere la fase 3. |
 | 07/10/2026 | 0.9 | Fase 3 quasi chiusa: le decisioni della sera del 07/10/2026, resta B2; il lavoro per la fase 4. |
 | 08/10/2026 | 0.10 | Fase 3 chiusa l'08/10/2026 con B2; le due regole nuove della revisione (curiosità, personaggi citati). |
+| 20/11/2026 | 0.11 | Decisione delle 150 voci per lingua; cibi validati (v3); dove si riprende. |
