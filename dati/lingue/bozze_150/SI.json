@@ -1,0 +1,2591 @@
+{
+ "lingua": "SI",
+ "oggetto": "artigianato tipico",
+ "voci": [
+  {
+   "tappa": "1-1",
+   "voce": "le reti da pesca annodate",
+   "gesto": "annodare a mano le maglie della rete con l'ago da rete",
+   "legame": "La pesca nel Po e nel suo Delta è il mestiere del fiume; le reti si facevano a mano.",
+   "curiosita": "",
+   "segnalazione": "Legame con Voghenza e la cattedrale solo indiretto (il fiume): nessun mestiere specifico di Voghenza documentato in una fonte letta.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Museo del Delta antico, Comacchio: sezione pesca",
+    "Treccani: Po, pesca fluviale"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Po river fishing net",
+    "rete da pesca Po"
+   ]
+  },
+  {
+   "tappa": "1-2",
+   "voce": "il pavimento a intarsio marmoreo",
+   "gesto": "incastrare tessere di marmo e pietra colorata come in un puzzle",
+   "legame": "La basilica di Pomposa ha un pavimento dell'XI-XII secolo a intarsio di pietre e marmi, di tipo cosmatesco.",
+   "curiosita": "A Pomposa lavorarono anche i monaci copisti: la biblioteca era ricca di manoscritti.",
+   "segnalazione": "",
+   "fonti": [
+    "https://en.wikipedia.org/wiki/Pomposa_Abbey"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Pomposa Abbey floor",
+    "Abbazia di Pomposa pavimento"
+   ]
+  },
+  {
+   "tappa": "1-3",
+   "voce": "la scultura romanica del Duomo",
+   "gesto": "battere lo scalpello con il mazzuolo per far uscire le figure dalla pietra",
+   "legame": "La facciata della Cattedrale, che dà sulla piazza del Municipio, ha il portale scolpito di maestri romanici (Nicholaus).",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Ferrara, Cattedrale",
+    "Museo della Cattedrale di Ferrara"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ferrara Cathedral portal Nicholaus",
+    "Cattedrale di Ferrara facciata"
+   ]
+  },
+  {
+   "tappa": "1-4",
+   "voce": "gli speziali e il mortaio",
+   "gesto": "pestare le erbe nel mortaio con il pestello",
+   "legame": "Piazza delle Erbe era il mercato delle erbe: gli speziali le trasformavano in rimedi.",
+   "curiosita": "",
+   "segnalazione": "Il mercato delle erbe e l'arte degli speziali sono legame plausibile ma non letto in una fonte ferrarese; da confermare una spezieria o una corporazione in zona.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Archivio storico comunale Ferrara: arte degli speziali"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "apothecary mortar pestle",
+    "spezieria antica"
+   ]
+  },
+  {
+   "tappa": "1-5",
+   "voce": "l'affresco trecentesco delle monache",
+   "gesto": "stendere un velo di intonaco fresco e dipingervi subito",
+   "legame": "Il monastero di Sant'Antonio in Polesine conserva affreschi del Trecento di scuola giottesca/riminese.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Sant'Antonio in Polesine",
+    "Sito del monastero"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Sant'Antonio in Polesine frescoes",
+    "Ferrara monastero affreschi"
+   ]
+  },
+  {
+   "tappa": "1-6",
+   "voce": "la medaglia di Pisanello",
+   "gesto": "versare il bronzo fuso nello stampo ricavato dal modello in cera",
+   "legame": "Pisanello fu a Ferrara alla corte di Leonello d'Este e vi fece le sue prime medaglie fuse (1438-1441).",
+   "curiosita": "",
+   "segnalazione": "Date esatte (1438 concilio, gara del 1441 con Jacopo Bellini) da confermare su Treccani/Britannica.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Pisanello",
+    "Britannica: Pisanello"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Pisanello medal Leonello d'Este",
+    "Leonello d'Este medal"
+   ]
+  },
+  {
+   "tappa": "1-7",
+   "voce": "l'armaiolo estense",
+   "gesto": "battere il metallo rovente sull'incudine",
+   "legame": "A Ferrara gli Este avevano armerie e fabbri d'arme; il Castello era la loro residenza fortificata.",
+   "curiosita": "",
+   "segnalazione": "Mestiere vero ma nessuna fonte letta lo lega alle armerie del Castello: da precisare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Castello Estense: armeria e artiglierie, sito ufficiale"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Castello Estense armory",
+    "armaiolo fucina"
+   ]
+  },
+  {
+   "tappa": "1-8",
+   "voce": "il pergamenaio dello Studio",
+   "gesto": "tendere e raschiare la pelle sul telaio",
+   "legame": "L'Università (lo Studio) copiava e usava libri su pergamena.",
+   "curiosita": "",
+   "segnalazione": "Legame generico: nessuna fonte letta su pergamenai dello Studio ferrarese.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Unife: storia dello Studio ferrarese"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "parchment making",
+    "pergamena raschiatura"
+   ]
+  },
+  {
+   "tappa": "1-9",
+   "voce": "la miniatura della Bibbia di Borso",
+   "gesto": "stendere la foglia d'oro e dipingere con pennelli finissimi",
+   "legame": "La Bibbia di Borso d'Este (1455-61) fu miniata a Ferrara per il duca Borso.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Biblioteca Estense di Modena: Bibbia di Borso",
+    "Treccani: Bibbia di Borso"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Bible of Borso d'Este",
+    "Bibbia di Borso miniatura"
+   ]
+  },
+  {
+   "tappa": "1-10",
+   "voce": "gli arazzi estensi dei Karcher",
+   "gesto": "passare i fili di trama tra quelli d'ordito sul telaio",
+   "legame": "Nicola e Giovanni Karcher, tessitori fiamminghi, lavorarono a Ferrara per i duchi d'Este.",
+   "curiosita": "Nel 1550 fu firmato il contratto per otto arazzi con le storie dei santi Giorgio e Maurelio.",
+   "segnalazione": "L'arazzeria ducale è del 1536 (Ercole II), non dell'epoca di Borso: legame col luogo (corte) vero, con l'epoca no.",
+   "fonti": [
+    "https://rivista.fondazioneestense.it/en/1997/6/item/360-antiche-trame-da-salvare"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Karcher tapestry Ferrara",
+    "arazzo estense Karcher"
+   ]
+  },
+  {
+   "tappa": "1-11",
+   "voce": "la scrittura del rotolo della Torah",
+   "gesto": "tracciare le lettere ebraiche con la penna d'oca su pergamena",
+   "legame": "La comunità ebraica di Ferrara è storica; il MEIS ne racconta la storia.",
+   "curiosita": "",
+   "segnalazione": "Mestiere vero (il sofer) ma nessun scriba ferrarese citato in fonte letta.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "MEIS Ferrara: collezione",
+    "Treccani: Sefer Torah"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Sefer Torah scribe",
+    "sofer scrittura Torah"
+   ]
+  },
+  {
+   "tappa": "1-12",
+   "voce": "gli stucchi di Schifanoia",
+   "gesto": "modellare lo stucco ancora molle con spatole e stecche",
+   "legame": "Nel palazzo di Schifanoia la Sala degli Stucchi ha il soffitto in stucco della seconda metà del Quattrocento.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Musei di Arte Antica Ferrara: Schifanoia",
+    "Treccani: Schifanoia"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Palazzo Schifanoia stucchi",
+    "Sala degli Stucchi Ferrara"
+   ]
+  },
+  {
+   "tappa": "1-13",
+   "voce": "la tarsia lignea dei Canozzi",
+   "gesto": "incastrare listelli di legni di colore diverso",
+   "legame": "I fratelli Canozzi da Lendinara fecero tarsie per gli Este.",
+   "curiosita": "",
+   "segnalazione": "Una fonte aperta (scheda sul sito Bologna+Modena) colloca i Canozzi a Modena negli anni 1460 (cori del Duomo, opere ora alla Galleria Estense): il legame con Pinacoteca/Certosa di Ferrara non è confermato.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Canozzi, Cristoforo e Lorenzo",
+    "Pinacoteca Nazionale di Ferrara: tarsie"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Canozzi intarsia",
+    "tarsia lignea Canozzi Lendinara"
+   ]
+  },
+  {
+   "tappa": "1-14",
+   "voce": "il bugnato a punta di diamante",
+   "gesto": "scalpellare le facce del marmo fino a farne piramidi",
+   "legame": "La facciata del Palazzo dei Diamanti, sull'Addizione, è fatta di blocchi tagliati a punta di diamante.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Palazzo dei Diamanti",
+    "Musei di Ferrara: Palazzo dei Diamanti"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Palazzo dei Diamanti facade",
+    "bugnato a punta di diamante"
+   ]
+  },
+  {
+   "tappa": "1-15",
+   "voce": "l'inchiostro di galla",
+   "gesto": "pestare le galle di quercia e mescolarle al solfato di ferro",
+   "legame": "Era l'inchiostro dei manoscritti: nella biblioteca di Palazzo Paradiso se ne conservano di antichi.",
+   "curiosita": "",
+   "segnalazione": "Legame generico con la Biblioteca Ariostea: nessuna fonte letta su una produzione locale.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Biblioteca Ariostea: manoscritti"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "iron gall ink",
+    "inchiostro ferrogallico"
+   ]
+  },
+  {
+   "tappa": "1-16",
+   "voce": "il breviario miniato di Caterina Vigri",
+   "gesto": "disegnare e colorare le piccole figure con il pennello fine",
+   "legame": "Caterina Vigri, clarissa del Corpus Domini di Ferrara, miniò il proprio breviario.",
+   "curiosita": "Visse nel convento dal 1431 al 1456 (data da Wikipedia).",
+   "segnalazione": "",
+   "fonti": [
+    "https://en.wikipedia.org/wiki/Corpus_Domini,_Ferrara"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Caterina Vigri breviary",
+    "Corpus Domini Ferrara"
+   ]
+  },
+  {
+   "tappa": "1-17",
+   "voce": "la stampa del Furioso",
+   "gesto": "inchiostrare i caratteri e abbassare il torchio sul foglio",
+   "legame": "L'Orlando furioso fu stampato a Ferrara il 22 aprile 1516 da Mazocco dal Bondeno, come dice il colophon.",
+   "curiosita": "Il libro fu finito di stampare a Ferrara il 22 aprile 1516.",
+   "segnalazione": "Il nome di battesimo nel colophon è illeggibile nell'articolo aperto: «Giovanni» è la lettura corrente, da confermare.",
+   "fonti": [
+    "https://rivista.fondazioneestense.it/en/2006/item/21-orlando-a-ferrara"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Orlando Furioso 1516 first edition",
+    "Furioso 1516 Ferrara"
+   ]
+  },
+  {
+   "tappa": "1-18",
+   "voce": "la liuteria estense",
+   "gesto": "incurvare e incollare le fasce di un liuto",
+   "legame": "La corte estense aveva musicisti e strumenti: liutai lavoravano per i duchi.",
+   "curiosita": "",
+   "segnalazione": "Liutai estensi presenti nei documenti, ma nessuna fonte letta: da confermare con nomi.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Archivio di Stato di Modena: Camera ducale",
+    "Grove: Ferrara, strumenti"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "lute making",
+    "liuto rinascimentale"
+   ]
+  },
+  {
+   "tappa": "1-19",
+   "voce": "la scrittura dell'autografo ariostesco",
+   "gesto": "tracciare le lettere con la penna e inclinare il polso",
+   "legame": "La Biblioteca Ariostea conserva i manoscritti autografi dell'Orlando furioso.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Biblioteca Ariostea: Furioso autografo"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ariosto autograph manuscript",
+    "Orlando furioso manoscritto Ariostea"
+   ]
+  },
+  {
+   "tappa": "1-20",
+   "voce": "l'oreficeria di corte",
+   "gesto": "cesellare il metallo con martelletti e punzoni",
+   "legame": "Il Castello era la sede del tesoro e degli argenti ducali.",
+   "curiosita": "",
+   "segnalazione": "Orafi estensi ben noti, ma nessuna fonte letta: da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Castello Estense: sito ufficiale",
+    "Treccani: oreficeria ferrarese"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Renaissance goldsmith chasing",
+    "oreficeria rinascimentale"
+   ]
+  },
+  {
+   "tappa": "1-21",
+   "voce": "la stamperia ducale di Baldini",
+   "gesto": "comporre le righe con i caratteri mobili",
+   "legame": "Vittorio Baldini fu stampatore ducale a Ferrara nel periodo di Tasso.",
+   "curiosita": "",
+   "segnalazione": "Da confermare il legame con l'ospedale di Sant'Anna (Tasso) e l'edizione della Liberata a Ferrara.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Baldini, Vittorio"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Vittorio Baldini printer Ferrara",
+    "stamperia Baldini Ferrara"
+   ]
+  },
+  {
+   "tappa": "1-22",
+   "voce": "la muratura in cotto delle mura",
+   "gesto": "stendere la malta e posare i mattoni uno dopo l'altro",
+   "legame": "Le mura di Ferrara sono di mattoni cotti, posati da muratori.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Ferrara, mura"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ferrara walls brick",
+    "mura di Ferrara cotto"
+   ]
+  },
+  {
+   "tappa": "1-23",
+   "voce": "la ceramica graffita ferrarese",
+   "gesto": "incidere il disegno con la punta nello strato di ingobbio",
+   "legame": "Ferrara ebbe un'importante produzione di ceramica graffita tra Quattro e Cinquecento.",
+   "curiosita": "",
+   "segnalazione": "Nessun legame con il vicolo del Chiozzino: la voce vale per la città; da confermare un ritrovamento in zona.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Museo della Ceramica graffita ferrarese, Schifanoia",
+    "Treccani: ceramica graffita"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "sgraffito pottery Ferrara",
+    "ceramica graffita ferrarese"
+   ]
+  },
+  {
+   "tappa": "1-24",
+   "voce": "la scultura funeraria della Certosa",
+   "gesto": "levigare il marmo con raspa e abrasivi",
+   "legame": "Il cimitero monumentale della Certosa è pieno di scultura funeraria.",
+   "curiosita": "",
+   "segnalazione": "Voce vera ma legame con il Po e con epoche precedenti all'Ottocento non chiaro.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Certosa di Ferrara: sito del Comune"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Certosa di Ferrara sculpture",
+    "scultura funeraria Certosa Ferrara"
+   ]
+  },
+  {
+   "tappa": "1-25",
+   "voce": "la scenografia dipinta",
+   "gesto": "stendere il colore sulla tela del fondale con pennelli larghi",
+   "legame": "Il Teatro Comunale usa fondali dipinti a mano.",
+   "curiosita": "",
+   "segnalazione": "Legame generico con il Teatro Comunale: nessuna fonte letta.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Teatro Comunale di Ferrara: laboratori"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "theatre backdrop painting",
+    "scenografia teatro"
+   ]
+  },
+  {
+   "tappa": "1-26",
+   "voce": "la bandiera tricolore cucita",
+   "gesto": "cucire insieme i tre teli di stoffa",
+   "legame": "Il Museo del Risorgimento conserva bandiere.",
+   "curiosita": "",
+   "segnalazione": "Mestiere generico: nessuna bandiera specifica indicata.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Museo del Risorgimento Ferrara: catalogo"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Italian flag Risorgimento",
+    "bandiera tricolore Risorgimento"
+   ]
+  },
+  {
+   "tappa": "1-27",
+   "voce": "la lavorazione della canapa",
+   "gesto": "sfibrare gli steli battendoli con la gramola",
+   "legame": "Ferrara fu a lungo una grande produttrice di canapa; le bonifiche la favorirono.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: canapa",
+    "Museo della Bonifica, Argenta"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "hemp processing Ferrara",
+    "canapa ferrarese gramolatura"
+   ]
+  },
+  {
+   "tappa": "1-28",
+   "voce": "l'incisione delle lapidi ebraiche",
+   "gesto": "incidere le lettere ebraiche con lo scalpello",
+   "legame": "Il cimitero ebraico di via delle Vigne ha lapidi incise antiche.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "MEIS: cimitero ebraico"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Jewish cemetery Ferrara",
+    "cimitero ebraico Ferrara via delle Vigne"
+   ]
+  },
+  {
+   "tappa": "1-29",
+   "voce": "la lavorazione del cuoio",
+   "gesto": "tagliare e cucire il cuoio con la lesina",
+   "legame": "Mestiere diffuso nelle città estensi.",
+   "curiosita": "",
+   "segnalazione": "Voce debole: nessun legame verificato con vicolo del Chiozzino o Largo Vancini.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Archivio storico comunale Ferrara: arti"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "leather working",
+    "cuoio lavorazione"
+   ]
+  },
+  {
+   "tappa": "1-30",
+   "voce": "il lavoriero delle valli",
+   "gesto": "disporre e controllare le reti nei recinti a V",
+   "legame": "A Comacchio, vicino al Lido di Spina, il lavoriero è l'impianto di pesca tipico delle valli.",
+   "curiosita": "",
+   "segnalazione": "La fonte aperta conferma voce e legame con Comacchio; il fatto che Lido di Spina appartenga a Comacchio non è stato letto.",
+   "fonti": [
+    "https://www.ferraraterraeacqua.it/en/comacchio/discover-the-area/nature-and-environment/parks-and-natural-reserves/the-valli-di-comacchio-po-delta-park/lavoriero"
+   ],
+   "fonti_da_controllare": [
+    "Comune di Comacchio: Lido di Spina"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "lavoriero Comacchio",
+    "Valli di Comacchio fishing"
+   ]
+  },
+  {
+   "tappa": "2-1",
+   "voce": "la scheggiatura della selce",
+   "gesto": "staccare schegge dalla selce colpendola con un percussore",
+   "legame": "Ötzi portava con sé un pugnale con lama di selce, lavorata per scheggiatura.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Museo archeologico dell'Alto Adige: corredo di Ötzi"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ötzi flint dagger",
+    "scheggiatura selce"
+   ]
+  },
+  {
+   "tappa": "2-2",
+   "voce": "il conio delle monete incuse",
+   "gesto": "battere il martello sul conio posato sul tondello",
+   "legame": "Crotone batteva monete d'argento con il tripode, a rilievo da un lato e incuso dall'altro.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Crotone, monetazione",
+    "British Museum: Kroton"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Kroton coin tripod",
+    "moneta di Crotone tripode"
+   ]
+  },
+  {
+   "tappa": "2-3",
+   "voce": "la fusione della Lupa capitolina",
+   "gesto": "versare il bronzo fuso nello stampo ricavato dalla cera",
+   "legame": "La Lupa è conservata ai Musei Capitolini, sul Campidoglio.",
+   "curiosita": "",
+   "segnalazione": "Datazione (etrusca/antica o medievale) discussa: da citare con cautela.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Musei Capitolini: Lupa capitolina",
+    "Treccani: Lupa capitolina"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Capitoline Wolf",
+    "Lupa capitolina bronzo"
+   ]
+  },
+  {
+   "tappa": "2-4",
+   "voce": "la copiatura dei codici",
+   "gesto": "scrivere con il calamo riga dopo riga",
+   "legame": "A Vivarium Cassiodoro fece copiare codici ai monaci.",
+   "curiosita": "",
+   "segnalazione": "Da confermare nelle Institutiones il passo preciso sulla copiatura e il legame con Vivarium.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Cassiodoro, Institutiones I, 15 (The Latin Library)",
+    "Treccani: Cassiodoro"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Cassiodorus Vivarium scriptorium",
+    "copista monaco"
+   ]
+  },
+  {
+   "tappa": "2-5",
+   "voce": "la follatura nella fullonica",
+   "gesto": "pestare i panni nella vasca con i piedi",
+   "legame": "A Roma i fullones lavavano e ravvivavano i tessuti con acqua e sostanze alcaline.",
+   "curiosita": "",
+   "segnalazione": "Roma generica: nessun luogo preciso della città.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: fullone",
+    "Pompei, fullonica Stephani"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "fullonica Roman",
+    "fullone romano"
+   ]
+  },
+  {
+   "tappa": "2-6",
+   "voce": "la ceramica a vernice nera",
+   "gesto": "tornire l'argilla al tornio e verniciare il vaso",
+   "legame": "Elea fu colonia focea; la ceramica era in uso nel suo porto.",
+   "curiosita": "",
+   "segnalazione": "Voce da confermare: non letto nessun testo su una produzione ceramica a Elea.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Parco archeologico di Paestum e Velia",
+    "Treccani: Velia"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Velia ceramica",
+    "Elea Velia pottery"
+   ]
+  },
+  {
+   "tappa": "2-7",
+   "voce": "lo scalpellino di peperino",
+   "gesto": "squadrare il blocco con mazza e scalpello",
+   "legame": "Tuscolo è sui Colli Albani, la zona delle pietre vulcaniche usate a Roma.",
+   "curiosita": "",
+   "segnalazione": "Legame con Tuscolo solo per la zona geologica: da verificare cava e uso a Tuscolo.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: peperino",
+    "Parco archeologico del Tuscolo"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "peperino stone Rome",
+    "peperino Colli Albani"
+   ]
+  },
+  {
+   "tappa": "2-8",
+   "voce": "l'altare d'oro di Sant'Ambrogio",
+   "gesto": "sbalzare la lamina d'oro con punzoni e martelletto",
+   "legame": "A Milano, nella basilica di Sant'Ambrogio, l'altare d'oro fu fatto dall'orafo Volvinio (IX secolo).",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Sant'Ambrogio, altare di Volvinio",
+    "Basilica di Sant'Ambrogio: sito ufficiale"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Golden altar Sant'Ambrogio Milan",
+    "altare di Volvinio"
+   ]
+  },
+  {
+   "tappa": "2-9",
+   "voce": "la porpora della toga senatoria",
+   "gesto": "immergere la stoffa nella vasca del colore",
+   "legame": "I senatori romani, nella Curia, portavano la toga con la fascia di porpora.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: laticlavio",
+    "Britannica: toga"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Roman senator toga purple stripe",
+    "toga laticlavia"
+   ]
+  },
+  {
+   "tappa": "2-10",
+   "voce": "la filatura della lana",
+   "gesto": "torcere il filo con fuso e conocchia",
+   "legame": "Le matrone romane, come Cornelia madre dei Gracchi, erano onorate per l'attività domestica della lana.",
+   "curiosita": "",
+   "segnalazione": "Che Cornelia filasse non è attestato: il legame è col modello della matrona.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Plutarco, Tiberio Gracco (Perseus)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "spinning wool distaff spindle",
+    "filatura lana romana"
+   ]
+  },
+  {
+   "tappa": "2-11",
+   "voce": "la salagione del pesce",
+   "gesto": "disporre pesce e sale a strati nel recipiente",
+   "legame": "Elea era un porto di pescatori nel Mediterraneo; il pesce si conservava con il sale.",
+   "curiosita": "",
+   "segnalazione": "Nessuna fonte letta su una salagione a Elea: voce debole.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Parco archeologico di Paestum e Velia"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "salted fish ancient",
+    "salagione pesce"
+   ]
+  },
+  {
+   "tappa": "2-12",
+   "voce": "la zecca estense",
+   "gesto": "battere il martello sul conio posato sul tondello",
+   "legame": "Gli Este battevano moneta a Ferrara.",
+   "curiosita": "",
+   "segnalazione": "Cercata ma non aperta una fonte sulla zecca: ubicazione e date da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: zecca di Ferrara",
+    "Museo Civico di Modena: monetazione estense"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Este coin Ferrara",
+    "moneta estense Ferrara"
+   ]
+  },
+  {
+   "tappa": "2-13",
+   "voce": "la lucerna di terracotta",
+   "gesto": "premere l'argilla nelle due metà dello stampo",
+   "legame": "I Romani illuminavano le case con lucerne a olio in terracotta.",
+   "curiosita": "",
+   "segnalazione": "Roma generica: nessun luogo preciso.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Museo Nazionale Romano: lucerne"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Roman oil lamp terracotta",
+    "lucerna romana"
+   ]
+  },
+  {
+   "tappa": "2-14",
+   "voce": "la lavorazione della lana",
+   "gesto": "cardare la lana con i pettini a punte",
+   "legame": "L'Arte della Lana fu una delle corporazioni più potenti di Firenze.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Arte della Lana",
+    "Museo Galileo/Museo Bargello: Arte della Lana"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Arte della Lana Florence",
+    "lana cardatura"
+   ]
+  },
+  {
+   "tappa": "2-15",
+   "voce": "l'opera dei pupi siciliani",
+   "gesto": "muovere il pupo con le aste di ferro",
+   "legame": "I pupi sono un'arte tipica di Palermo, riconosciuta dall'UNESCO (2008).",
+   "curiosita": "",
+   "segnalazione": "Anno dell'iscrizione UNESCO da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "UNESCO: Opera dei pupi siciliani"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Opera dei Pupi Palermo",
+    "pupi siciliani Palermo"
+   ]
+  },
+  {
+   "tappa": "2-16",
+   "voce": "il bisso di Taranto",
+   "gesto": "pettinare le fibre del mollusco e filarle",
+   "legame": "Taranto fu famosa per il bisso, il «filo di mare» della Pinna nobilis.",
+   "curiosita": "",
+   "segnalazione": "Cercata una fonte (MArTA/Ministero della Cultura): non letta; epoca antica da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "MArTA: Porpora e bisso, Ministero della Cultura"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Taranto bisso",
+    "sea silk Pinna nobilis"
+   ]
+  },
+  {
+   "tappa": "2-17",
+   "voce": "l'intaglio delle gemme",
+   "gesto": "incidere la pietra con una punta e polvere abrasiva",
+   "legame": "A Roma i sigilli e i cammei su gemma erano lavori di pregio.",
+   "curiosita": "",
+   "segnalazione": "Roma generica: nessun laboratorio preciso.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: glittica"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Roman engraved gem",
+    "intaglio gemme romano"
+   ]
+  },
+  {
+   "tappa": "2-18",
+   "voce": "il calcestruzzo romano",
+   "gesto": "gettare malta e pezzi di pietra dentro la cassaforma",
+   "legame": "L'opus caementicium costruì il Pantheon e molti edifici di Roma.",
+   "curiosita": "",
+   "segnalazione": "Roma generica.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: opus caementicium"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "opus caementicium",
+    "calcestruzzo romano"
+   ]
+  },
+  {
+   "tappa": "2-19",
+   "voce": "il bucchero etrusco",
+   "gesto": "levigare il vaso di argilla nera",
+   "legame": "Chiusi è famosa per il bucchero, ceramica nera lucida degli Etruschi.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Museo Archeologico Nazionale di Chiusi",
+    "Treccani: bucchero"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "bucchero Chiusi",
+    "Etruscan bucchero"
+   ]
+  },
+  {
+   "tappa": "2-20",
+   "voce": "le caligae chiodate",
+   "gesto": "inchiodare i chiodi sulla suola di cuoio",
+   "legame": "I soldati romani calzavano caligae con la suola chiodata.",
+   "curiosita": "",
+   "segnalazione": "Roma generica.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: caliga"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "caliga Roman sandal",
+    "caliga romana"
+   ]
+  },
+  {
+   "tappa": "2-21",
+   "voce": "il drappo del Palio",
+   "gesto": "tendere la stoffa pregiata e cucirla",
+   "legame": "Il Palio di Ferrara si corre dal Medioevo e assegna un drappo come premio.",
+   "curiosita": "",
+   "segnalazione": "Porta PT-AQU senza legame specifico; da confermare drappo e tessitori.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Ente Palio di Ferrara: storia"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Palio di Ferrara drappo",
+    "Palio Ferrara"
+   ]
+  },
+  {
+   "tappa": "2-22",
+   "voce": "la forcola del remèr",
+   "gesto": "sagomare il noce con sgorbia e raspa",
+   "legame": "La forcola è l'appoggio del remo della gondola, fatta dai remèri veneziani.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: forcola",
+    "Gondola: Vela spa/Comune di Venezia"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "forcola Venice",
+    "forcola gondola"
+   ]
+  },
+  {
+   "tappa": "2-23",
+   "voce": "le leggi incise sul bronzo",
+   "gesto": "incidere le lettere sulla tavola con lo scalpello",
+   "legame": "A Roma le leggi si incidevano su tavole di bronzo, da esporre nei luoghi pubblici.",
+   "curiosita": "",
+   "segnalazione": "Legame con la Curia indiretto.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: tabula bronzea"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Roman bronze law tablet",
+    "tavola di bronzo romana"
+   ]
+  },
+  {
+   "tappa": "2-24",
+   "voce": "la seta fiorentina",
+   "gesto": "tessere l'ordito di seta al telaio",
+   "legame": "L'Arte di Por Santa Maria e la seta furono celebri a Firenze.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Arte della Seta"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Florentine silk weaving",
+    "seta fiorentina"
+   ]
+  },
+  {
+   "tappa": "2-25",
+   "voce": "il Bucintoro estense",
+   "gesto": "piegare e inchiodare le tavole dello scafo",
+   "legame": "Gli Este navigavano il Po con barche ducali di parata.",
+   "curiosita": "",
+   "segnalazione": "Esistenza di un Bucintoro estense non confermata: voce debole.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Bucintoro",
+    "Archivio di Stato di Modena"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Bucintoro estense",
+    "Este ducal barge Po"
+   ]
+  },
+  {
+   "tappa": "2-26",
+   "voce": "il sarto di corte",
+   "gesto": "cucire l'abito con ago e ditale",
+   "legame": "La corte aveva sarti per abiti, livree e costumi di festa.",
+   "curiosita": "",
+   "segnalazione": "Voce generica ma vera: nessun nome citato.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Archivio di Stato di Modena: Camera ducale"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Renaissance tailor",
+    "sarto di corte"
+   ]
+  },
+  {
+   "tappa": "2-27",
+   "voce": "la tintura dei panni",
+   "gesto": "immergere e girare il tessuto nel tino",
+   "legame": "I tintori colorano i panni con vegetali e minerali.",
+   "curiosita": "",
+   "segnalazione": "Legame con Porta PT-CON debole: nessuna fonte.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Archivio storico comunale Ferrara"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "dyeing cloth medieval",
+    "tintura panni"
+   ]
+  },
+  {
+   "tappa": "2-28",
+   "voce": "la rilegatura dei libri di corte",
+   "gesto": "cucire i fascicoli e incollare la copertina di cuoio",
+   "legame": "Gli Este avevano una biblioteca ducale con libri rilegati.",
+   "curiosita": "",
+   "segnalazione": "Biblioteca estense a Ferrara documentata, legatori da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Biblioteca Estense Universitaria: storia"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "bookbinding Renaissance",
+    "legatoria estense"
+   ]
+  },
+  {
+   "tappa": "2-29",
+   "voce": "l'ebanista di corte",
+   "gesto": "piallare e incastrare tavole di legno pregiato",
+   "legame": "I mobili e gli studioli estensi erano fatti da ebanisti.",
+   "curiosita": "",
+   "segnalazione": "Voce generica: nessuna fonte letta.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Castello Estense: mobili"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Renaissance cabinetmaker",
+    "ebanisteria rinascimentale"
+   ]
+  },
+  {
+   "tappa": "2-30",
+   "voce": "la pianta incisa di Ferrara",
+   "gesto": "incidere il rame con il bulino",
+   "legame": "Le piante di Ferrara furono incise su rame nel Cinquecento.",
+   "curiosita": "",
+   "segnalazione": "Autore (Zaltieri?) e anno da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Biblioteca Ariostea: piante di Ferrara",
+    "Treccani: Zaltieri"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ferrara map engraving",
+    "pianta di Ferrara incisione"
+   ]
+  },
+  {
+   "tappa": "3-1",
+   "voce": "la fabbricazione del papiro",
+   "gesto": "intrecciare e battere le strisce di papiro",
+   "legame": "Alessandria fu il centro del commercio del papiro nel mondo antico.",
+   "curiosita": "",
+   "segnalazione": "Alessandria d'Egitto è fuori dall'Europa, come la tappa.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: papiro"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "papyrus making",
+    "papiro Alessandria"
+   ]
+  },
+  {
+   "tappa": "3-2",
+   "voce": "la lavorazione dell'ambra",
+   "gesto": "levigare il pezzo con abrasivi",
+   "legame": "Frombork è sul Baltico, costa dell'ambra.",
+   "curiosita": "",
+   "segnalazione": "Legame debole: nessuna fonte letta su ambrai a Frombork.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: ambra"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Baltic amber carving",
+    "ambra baltica"
+   ]
+  },
+  {
+   "tappa": "3-3",
+   "voce": "la scultura della Pietà",
+   "gesto": "scolpire il marmo con subbia e scalpello",
+   "legame": "La Pietà di Michelangelo (1498-99) è nella basilica di San Pietro a Roma.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Pietà vaticana"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Michelangelo Pietà",
+    "Pietà San Pietro"
+   ]
+  },
+  {
+   "tappa": "3-4",
+   "voce": "la ceramica a figure nere",
+   "gesto": "dipingere la sagoma con vernice nera e incidere i dettagli",
+   "legame": "Ad Atene i vasai del Ceramico facevano vasi a figure nere.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: black-figure",
+    "Museo del Ceramico"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Attic black-figure vase",
+    "ceramica attica figure nere"
+   ]
+  },
+  {
+   "tappa": "3-5",
+   "voce": "la ceramica a figure rosse",
+   "gesto": "dipingere lo sfondo lasciando l'argilla rossa",
+   "legame": "Atene inventò la figura rossa verso il 530 a.C.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: red-figure"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Attic red-figure vase",
+    "ceramica attica figure rosse"
+   ]
+  },
+  {
+   "tappa": "3-6",
+   "voce": "il marmo del Partenone",
+   "gesto": "lisciare il marmo con raspa e pomice",
+   "legame": "Il Partenone è in marmo del Pentelico.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Partenone"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Parthenon marble Pentelic",
+    "marmo pentelico"
+   ]
+  },
+  {
+   "tappa": "3-7",
+   "voce": "il mosaico bizantino di Ravenna",
+   "gesto": "incastrare tessere di pasta di vetro nella malta",
+   "legame": "Le chiese di Ravenna hanno mosaici bizantini, patrimonio UNESCO.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "UNESCO: Early Christian Monuments of Ravenna"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ravenna mosaic San Vitale",
+    "mosaico di Ravenna"
+   ]
+  },
+  {
+   "tappa": "3-8",
+   "voce": "la lavorazione della breccia corallina",
+   "gesto": "squadrare e levigare il blocco",
+   "legame": "Il portale di Castel del Monte è in breccia corallina.",
+   "curiosita": "",
+   "segnalazione": "Legame con Castel del Monte da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Castel del Monte"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Castel del Monte portal",
+    "breccia corallina"
+   ]
+  },
+  {
+   "tappa": "3-9",
+   "voce": "il mosaico a ciottoli",
+   "gesto": "disporre i ciottoli colorati nella malta",
+   "legame": "Pella ha mosaici a ciottoli del IV secolo a.C.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "UNESCO/Museo di Pella"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Pella pebble mosaic",
+    "mosaico a ciottoli Pella"
+   ]
+  },
+  {
+   "tappa": "3-10",
+   "voce": "la fusione dei cannoni",
+   "gesto": "versare il bronzo fuso nello stampo di terra",
+   "legame": "Alfonso I d'Este ebbe a Ferrara una celebre fonderia di artiglierie.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Alfonso I d'Este"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Alfonso I d'Este cannon foundry",
+    "fonderia Alfonso I"
+   ]
+  },
+  {
+   "tappa": "3-11",
+   "voce": "la maiolica di Alfonso I",
+   "gesto": "immergere il vaso nello smalto e dipingerlo",
+   "legame": "Alfonso I fece sperimentare ceramiche di pregio in laboratorio.",
+   "curiosita": "",
+   "segnalazione": "Da confermare nelle fonti.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Alfonso I d'Este"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Alfonso I d'Este ceramics",
+    "maiolica estense Alfonso I"
+   ]
+  },
+  {
+   "tappa": "3-12",
+   "voce": "le porte di bronzo di Aquisgrana",
+   "gesto": "versare il bronzo fuso nello stampo",
+   "legame": "Le porte della Cappella Palatina sono di bronzo carolingio.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "UNESCO: Aachen Cathedral"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Aachen bronze doors",
+    "porte di bronzo Aquisgrana"
+   ]
+  },
+  {
+   "tappa": "3-13",
+   "voce": "l'armatura milanese",
+   "gesto": "battere la lamiera con il martello su una forma",
+   "legame": "Milano era capitale europea delle armature (Missaglia).",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Missaglia"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Milanese armour",
+    "armatura milanese Missaglia"
+   ]
+  },
+  {
+   "tappa": "3-14",
+   "voce": "la terracotta invetriata dei Della Robbia",
+   "gesto": "smaltare il rilievo prima della cottura",
+   "legame": "I Della Robbia, fiorentini, inventarono la terracotta invetriata.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Della Robbia"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Della Robbia glazed terracotta",
+    "terracotta invetriata Della Robbia"
+   ]
+  },
+  {
+   "tappa": "3-15",
+   "voce": "i rilievi di Antonio Lombardo",
+   "gesto": "scolpire a basso rilievo con scalpelli piccoli",
+   "legame": "Antonio Lombardo scolpì rilievi in marmo per il Camerino d'alabastro di Alfonso I.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Lombardo, Antonio"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Antonio Lombardo relief",
+    "Camerino d'alabastro"
+   ]
+  },
+  {
+   "tappa": "3-16",
+   "voce": "il punzone del carattere mobile",
+   "gesto": "incidere la lettera in rilievo su un punzone d'acciaio",
+   "legame": "Gutenberg, di Magonza, aveva formazione di orafo e creò i caratteri di metallo.",
+   "curiosita": "",
+   "segnalazione": "Formazione di orafo da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: Gutenberg"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Gutenberg punch",
+    "punzone tipografico"
+   ]
+  },
+  {
+   "tappa": "3-17",
+   "voce": "il ricamo dei paramenti sacri",
+   "gesto": "ricamare con il filo d'oro e d'argento",
+   "legame": "La cappella ducale aveva paramenti ricamati.",
+   "curiosita": "",
+   "segnalazione": "Voce debole: nessuna fonte letta.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Archivio di Stato di Modena: Camera ducale"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "goldwork embroidery",
+    "ricamo oro paramenti"
+   ]
+  },
+  {
+   "tappa": "3-18",
+   "voce": "la stampa della Bibbia Poliglotta",
+   "gesto": "comporre i caratteri e abbassare il torchio",
+   "legame": "La Poliglotta Complutense fu stampata ad Alcalá (1514-17).",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: Polyglot Bible"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Complutensian Polyglot",
+    "Biblia Políglota Complutense"
+   ]
+  },
+  {
+   "tappa": "3-19",
+   "voce": "la cartiera di Basilea",
+   "gesto": "pescare l'impasto con la forma a setaccio",
+   "legame": "Il Museo della Carta di Basilea ha un'antica cartiera.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Museo della Carta Basilea"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Basel paper mill",
+    "Basler Papiermühle"
+   ]
+  },
+  {
+   "tappa": "3-20",
+   "voce": "la macinazione dei pigmenti",
+   "gesto": "macinare i colori con la mola su lastra di pietra",
+   "legame": "Per i dipinti del Camerino si preparavano colori a olio con pigmenti macinati.",
+   "curiosita": "",
+   "segnalazione": "Voce generica.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Camerino d'alabastro"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "pigment grinding",
+    "macinazione pigmenti"
+   ]
+  },
+  {
+   "tappa": "3-21",
+   "voce": "lo scrigno di Carlo Magno",
+   "gesto": "sbalzare le lamine d'oro e d'argento",
+   "legame": "Il Karlsschrein, scrigno d'oro, è nel duomo di Aquisgrana.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: Aachen"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Karlsschrein Aachen",
+    "scrigno di Carlo Magno"
+   ]
+  },
+  {
+   "tappa": "3-22",
+   "voce": "il laterizio di Certaldo Alto",
+   "gesto": "modellare i mattoni in stampo",
+   "legame": "Il borgo di Certaldo Alto è costruito in laterizio.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Certaldo"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Certaldo Alto brick",
+    "Certaldo laterizio"
+   ]
+  },
+  {
+   "tappa": "3-23",
+   "voce": "le vetrate della Sainte-Chapelle",
+   "gesto": "tagliare il vetro e legarlo con il piombo",
+   "legame": "La Sainte-Chapelle di Parigi ha vetrate del XIII secolo.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Centre des monuments nationaux"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Sainte-Chapelle stained glass",
+    "vetrata Sainte-Chapelle"
+   ]
+  },
+  {
+   "tappa": "3-24",
+   "voce": "l'orologeria di Henlein",
+   "gesto": "regolare gli ingranaggi con pinzette",
+   "legame": "A Norimberga Peter Henlein, fabbro, costruì orologi portatili all'inizio del Cinquecento.",
+   "curiosita": "",
+   "segnalazione": "Data da confermare.",
+   "fonti": [
+    "https://britannica.com/biography/Peter-Henlein"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Peter Henlein watch",
+    "Nuremberg egg watch"
+   ]
+  },
+  {
+   "tappa": "3-25",
+   "voce": "il vetro soffiato di Murano",
+   "gesto": "soffiare nella canna e modellare con le pinze",
+   "legame": "Il vetro di Murano è celebre a Venezia.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Murano"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Murano glass blowing",
+    "vetro di Murano"
+   ]
+  },
+  {
+   "tappa": "3-26",
+   "voce": "la fusione delle campane",
+   "gesto": "versare il bronzo fuso nello stampo della campana",
+   "legame": "La campana Big Ben è nel Palazzo di Westminster.",
+   "curiosita": "",
+   "segnalazione": "Epoca successiva ad Alfonso I.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Parliament UK: Big Ben"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Big Ben bell",
+    "campana Big Ben"
+   ]
+  },
+  {
+   "tappa": "3-27",
+   "voce": "l'ebanisteria di Boulle",
+   "gesto": "incastrare ottone e tartaruga nel legno",
+   "legame": "Boulle lavorò per Luigi XIV nel Louvre.",
+   "curiosita": "",
+   "segnalazione": "Epoca successiva ad Alfonso I.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Boulle"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Boulle marquetry",
+    "Boulle Louvre"
+   ]
+  },
+  {
+   "tappa": "3-28",
+   "voce": "la carrozzeria torinese",
+   "gesto": "battere la lamiera su una sagoma",
+   "legame": "Torino è la città dell'automobile.",
+   "curiosita": "",
+   "segnalazione": "Voce generica.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Museo dell'Automobile di Torino"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Turin coachbuilding",
+    "carrozzeria Torino"
+   ]
+  },
+  {
+   "tappa": "3-29",
+   "voce": "la bolla di piombo papale",
+   "gesto": "premere le due matrici sul disco di piombo",
+   "legame": "La Curia papale sigilla gli atti con bolle di piombo.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: bolla"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "papal bulla lead seal",
+    "bolla papale piombo"
+   ]
+  },
+  {
+   "tappa": "3-30",
+   "voce": "i bronzetti dell'Antico",
+   "gesto": "ritoccare il bronzetto con il cesello",
+   "legame": "L'Antico lavorò per i Gonzaga di Mantova.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Antico"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Antico bronze Gonzaga",
+    "bronzetti Antico Mantova"
+   ]
+  },
+  {
+   "tappa": "4-1",
+   "voce": "la tavoletta d'argilla cuneiforme",
+   "gesto": "premere lo stilo sull'argilla fresca",
+   "legame": "Uruk è la città delle prime tavolette di scrittura.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: Uruk"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "cuneiform tablet Uruk",
+    "tavoletta cuneiforme"
+   ]
+  },
+  {
+   "tappa": "4-2",
+   "voce": "le tende ricamate khayamiya",
+   "gesto": "cucire a mano i pezzi di stoffa colorata",
+   "legame": "Al Cairo la via dei Tendai (Sharia al-Khayamiya) è famosa per le tende cucite a mano.",
+   "curiosita": "",
+   "segnalazione": "Legame con le carovane debole.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani/UNESCO: Cairo"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Khayamiya Cairo",
+    "khayamiya tende Cairo"
+   ]
+  },
+  {
+   "tappa": "4-3",
+   "voce": "i guerrieri di terracotta",
+   "gesto": "modellare l'argilla a mano",
+   "legame": "L'esercito di terracotta del primo imperatore Qin è a Xi'an, vicino all'antica capitale Xianyang.",
+   "curiosita": "",
+   "segnalazione": "Xianyang e Xi'an sono città diverse.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "UNESCO: Mausoleum of First Qin Emperor"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Terracotta Army",
+    "guerrieri di terracotta"
+   ]
+  },
+  {
+   "tappa": "4-4",
+   "voce": "gli artigiani di Deir el-Medina",
+   "gesto": "dipingere i geroglifici sulla parete",
+   "legame": "Gli artigiani delle tombe tebane vivevano a Deir el-Medina.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Deir el-Medina"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Deir el-Medina",
+    "Valle dei Re artigiani"
+   ]
+  },
+  {
+   "tappa": "4-5",
+   "voce": "l'intarsio di pietre dure",
+   "gesto": "incastrare pietre tagliate nel marmo",
+   "legame": "Il Taj Mahal è decorato con pietre dure incastrate (parchin kari).",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "UNESCO: Taj Mahal"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Taj Mahal pietra dura",
+    "parchin kari"
+   ]
+  },
+  {
+   "tappa": "4-6",
+   "voce": "l'albero d'argento di Karakorum",
+   "gesto": "sbalzare e saldare l'argento",
+   "legame": "Nel palazzo del Khan a Karakorum c'era un albero d'argento.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Rubruck: Itinerarium"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Karakorum silver tree",
+    "albero d'argento Karakorum"
+   ]
+  },
+  {
+   "tappa": "4-7",
+   "voce": "la calcolatrice di Leibniz",
+   "gesto": "girare la manovella e muovere i cilindri a gradini",
+   "legame": "Leibniz visse a Hannover e costruì una calcolatrice.",
+   "curiosita": "",
+   "segnalazione": "Mestiere discutibile come artigianato.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: Leibniz"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Leibniz calculator",
+    "calcolatrice di Leibniz"
+   ]
+  },
+  {
+   "tappa": "4-8",
+   "voce": "le ferriere dell'Uppland",
+   "gesto": "battere la barra rovente sotto il maglio",
+   "legame": "L'Uppland, la regione di Uppsala, ebbe grandi ferriere.",
+   "curiosita": "",
+   "segnalazione": "Legame con Uppsala da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Svezia"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Uppland ironworks",
+    "ferriere Uppland"
+   ]
+  },
+  {
+   "tappa": "4-9",
+   "voce": "i mattoni di fango di Timbuctù",
+   "gesto": "modellare l'impasto di fango e stendere l'intonaco",
+   "legame": "Le moschee di Timbuctù sono costruite in fango (banco).",
+   "curiosita": "",
+   "segnalazione": "Il Cairo A, con Timbuctù S: voce di Timbuctù.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "UNESCO: Timbuktu"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Timbuktu mud mosque",
+    "moschea Timbuctù"
+   ]
+  },
+  {
+   "tappa": "4-10",
+   "voce": "l'organaro di corte",
+   "gesto": "intonare le canne dell'organo",
+   "legame": "Gli Este avevano organi nelle cappelle.",
+   "curiosita": "",
+   "segnalazione": "Voce debole.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Archivio di Stato di Modena"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "organ builder",
+    "organaro rinascimentale"
+   ]
+  },
+  {
+   "tappa": "4-11",
+   "voce": "la carta di Baghdad",
+   "gesto": "setacciare la polpa e stendere il foglio",
+   "legame": "La prima fabbrica di carta del mondo islamico fu a Baghdad nel 794.",
+   "curiosita": "",
+   "segnalazione": "Data da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: paper"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Baghdad paper mill",
+    "carta di Baghdad"
+   ]
+  },
+  {
+   "tappa": "4-12",
+   "voce": "i bronzi rituali di Qufu",
+   "gesto": "colare il bronzo negli stampi",
+   "legame": "Nel tempio di Confucio si usavano vasi rituali.",
+   "curiosita": "",
+   "segnalazione": "Voce debole.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "UNESCO: Qufu"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Confucius Temple bronze",
+    "bronzi rituali Qufu"
+   ]
+  },
+  {
+   "tappa": "4-13",
+   "voce": "il vetro alessandrino",
+   "gesto": "avvolgere il vetro fuso intorno all'anima di argilla",
+   "legame": "Alessandria fu centro del vetro.",
+   "curiosita": "",
+   "segnalazione": "Voce generica.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: glass"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Alexandrian glass",
+    "vetro alessandrino"
+   ]
+  },
+  {
+   "tappa": "4-14",
+   "voce": "la piumeria azteca",
+   "gesto": "incollare piumino su piumino su un supporto",
+   "legame": "Gli amantecas di Tenochtitlán facevano mosaici di piume.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: Aztec"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Aztec featherwork",
+    "piumeria azteca"
+   ]
+  },
+  {
+   "tappa": "4-15",
+   "voce": "la raccolta del mastice",
+   "gesto": "incidere la corteccia con un ferro",
+   "legame": "La coltivazione del mastice a Chio è patrimonio UNESCO (2014).",
+   "curiosita": "A luglio si incide la corteccia con un ferro e si raccoglie la resina.",
+   "segnalazione": "",
+   "fonti": [
+    "https://ich.unesco.org/en/RL/mastiha-cultivation-in-chios-00993"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Chios mastic",
+    "mastice di Chio"
+   ]
+  },
+  {
+   "tappa": "4-16",
+   "voce": "la lucidatura della pietra maurya",
+   "gesto": "lisciare la pietra con sabbia fino a specchio",
+   "legame": "I pilastri di Ashoka hanno la superficie lucidata.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: Ashoka"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ashoka pillar polish",
+    "pilastro di Ashoka"
+   ]
+  },
+  {
+   "tappa": "4-17",
+   "voce": "lo zardozi",
+   "gesto": "ricamare fili d'oro su velluto con l'uncinetto",
+   "legame": "Delhi mogul ebbe ricamatori di zardozi.",
+   "curiosita": "",
+   "segnalazione": "Bombay non è considerata.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: zardozi"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "zardozi Delhi",
+    "zardozi ricamo"
+   ]
+  },
+  {
+   "tappa": "4-18",
+   "voce": "la seta bizantina",
+   "gesto": "tessere il drappo al telaio",
+   "legame": "Giustiniano portò i bachi a Costantinopoli.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: seta"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Byzantine silk",
+    "seta bizantina"
+   ]
+  },
+  {
+   "tappa": "4-19",
+   "voce": "la lampada di vetro smaltato",
+   "gesto": "dipingere lo smalto sul vetro",
+   "legame": "Il Cairo mamelucco produceva lampade di moschea.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Metropolitan Museum: Mamluk glass"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Mamluk glass lamp",
+    "lampada mamelucca"
+   ]
+  },
+  {
+   "tappa": "4-20",
+   "voce": "la tessitura della seta",
+   "gesto": "tessere il filo di seta al telaio",
+   "legame": "Ferrara ebbe tessitori di seta.",
+   "curiosita": "",
+   "segnalazione": "Voce debole.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Ferrara, economia"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "silk weaving Ferrara",
+    "tessitura seta Ferrara"
+   ]
+  },
+  {
+   "tappa": "4-21",
+   "voce": "la damaschinatura dell'acciaio",
+   "gesto": "incidere l'acciaio e batterci il filo d'oro",
+   "legame": "Toledo fu celebre per le spade damascate.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: Toledo"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Toledo damascene",
+    "damaschinatura Toledo"
+   ]
+  },
+  {
+   "tappa": "4-22",
+   "voce": "i mattoni smaltati di Babilonia",
+   "gesto": "premere l'argilla negli stampi e smaltare",
+   "legame": "La Porta di Ishtar è fatta di mattoni smaltati.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Pergamonmuseum"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ishtar Gate",
+    "porta di Ishtar"
+   ]
+  },
+  {
+   "tappa": "4-23",
+   "voce": "il calicò di Calicut",
+   "gesto": "tessere e stampare il cotone",
+   "legame": "Calicò prende il nome da Calicut.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: calico"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "calico Calicut",
+    "calicò"
+   ]
+  },
+  {
+   "tappa": "4-24",
+   "voce": "la porcellana blu e bianca",
+   "gesto": "dipingere con il cobalto prima dello smalto",
+   "legame": "Jingdezhen, nella provincia di Jiangxi di cui Nanchang è capoluogo, è la città della porcellana, esportata per mare.",
+   "curiosita": "",
+   "segnalazione": "Jingdezhen non è Nanchang: stessa provincia.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: Jingdezhen"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Jingdezhen porcelain",
+    "porcellana blu bianca"
+   ]
+  },
+  {
+   "tappa": "4-25",
+   "voce": "le trapunte di Baltimora",
+   "gesto": "cucire i ritagli di stoffa sul fondo",
+   "legame": "Le Baltimore Album Quilts furono cucite a Baltimora negli anni 1840-50.",
+   "curiosita": "",
+   "segnalazione": "Epoca successiva a quella di Ercole II.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Maryland Center for History"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Baltimore album quilt",
+    "trapunta Baltimora"
+   ]
+  },
+  {
+   "tappa": "4-26",
+   "voce": "la tintura con la cocciniglia",
+   "gesto": "schiacciare gli insetti essiccati per ottenere il rosso",
+   "legame": "La cocciniglia dal Messico andava in Spagna.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: cochineal"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "cochineal dye",
+    "cocciniglia"
+   ]
+  },
+  {
+   "tappa": "4-27",
+   "voce": "la carta marmorizzata ebru",
+   "gesto": "deporre il colore sull'acqua e adagiarvi la carta",
+   "legame": "Nell'impero ottomano l'ebru è l'arte della carta marmorizzata, UNESCO (2014).",
+   "curiosita": "",
+   "segnalazione": "Anno UNESCO e legame con Costantinopoli da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "UNESCO: Ebru"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "ebru marbling",
+    "carta marmorizzata"
+   ]
+  },
+  {
+   "tappa": "4-28",
+   "voce": "la tintura con l'indaco",
+   "gesto": "immergere la stoffa nel tino e farla ossidare all'aria",
+   "legame": "Motihari è in Champaran, regione di piantagioni di indaco.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: Champaran"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "indigo dyeing",
+    "indaco Champaran"
+   ]
+  },
+  {
+   "tappa": "4-29",
+   "voce": "i pianoforti Pleyel",
+   "gesto": "regolare martelletti e corde",
+   "legame": "Chopin, di Varsavia, suonava a Parigi i pianoforti Pleyel.",
+   "curiosita": "",
+   "segnalazione": "Legame con Varsavia solo tramite Chopin.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Chopin"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Pleyel piano Chopin",
+    "pianoforte Pleyel"
+   ]
+  },
+  {
+   "tappa": "4-30",
+   "voce": "il sigillo di cera",
+   "gesto": "premere il sigillo sulla cera fusa",
+   "legame": "Gli archivi hanno atti con sigilli di cera.",
+   "curiosita": "",
+   "segnalazione": "Archivio non specificato.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Archivio di Stato di Ferrara"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "wax seal",
+    "sigillo di cera"
+   ]
+  },
+  {
+   "tappa": "5-1",
+   "voce": "le vetrate Tiffany",
+   "gesto": "avvolgere i bordi del vetro con nastro di rame e saldare",
+   "legame": "A Chicago, il Cultural Center ha una cupola Tiffany.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Chicago Cultural Center"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Tiffany dome Chicago",
+    "vetrata Tiffany"
+   ]
+  },
+  {
+   "tappa": "5-2",
+   "voce": "il legno curvato Thonet",
+   "gesto": "piegare il legno a vapore su una forma",
+   "legame": "Michael Thonet iniziò la sua produzione a Vienna.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: Thonet"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Thonet bentwood chair",
+    "sedia Thonet"
+   ]
+  },
+  {
+   "tappa": "5-3",
+   "voce": "la molatura dei telescopi",
+   "gesto": "levigare lo specchio con polvere abrasiva",
+   "legame": "Newton presentò il suo telescopio alla Royal Society di Londra.",
+   "curiosita": "",
+   "segnalazione": "Newton lo costruì a Cambridge.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Royal Society"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Newton telescope",
+    "telescopio di Newton"
+   ]
+  },
+  {
+   "tappa": "5-4",
+   "voce": "le protesi su misura",
+   "gesto": "modellare il calco di gesso",
+   "legame": "A Bethesda sorge il Walter Reed National Military Medical Center, dove si costruiscono protesi su misura.",
+   "curiosita": "",
+   "segnalazione": "Legame plausibile ma non letto in una fonte; voce debole.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Walter Reed"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "prosthetic making",
+    "protesi artigianale"
+   ]
+  },
+  {
+   "tappa": "5-5",
+   "voce": "la ceramica nera di San Ildefonso",
+   "gesto": "lucidare il vaso con una pietra liscia",
+   "legame": "Il pueblo di San Ildefonso è vicino a Los Alamos.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Smithsonian: Maria Martinez"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "San Ildefonso black pottery",
+    "Maria Martinez"
+   ]
+  },
+  {
+   "tappa": "5-6",
+   "voce": "il sigillo cilindrico babilonese",
+   "gesto": "far rotolare il sigillo sull'argilla fresca",
+   "legame": "A Babilonia si usavano sigilli cilindrici.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "British Museum: cylinder seals"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "cylinder seal Babylon",
+    "sigillo cilindrico"
+   ]
+  },
+  {
+   "tappa": "5-7",
+   "voce": "la seta di Spitalfields",
+   "gesto": "tessere al telaio",
+   "legame": "Spitalfields a Londra ebbe tessitori ugonotti.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "V&A: Spitalfields silk"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Spitalfields silk",
+    "seta Spitalfields"
+   ]
+  },
+  {
+   "tappa": "5-8",
+   "voce": "il feltro kazako",
+   "gesto": "arrotolare e pressare la lana inumidita",
+   "legame": "In Kazakistan, il paese di Bajkonur, il feltro (kyiz) è la base di tende e tappeti tradizionali.",
+   "curiosita": "",
+   "segnalazione": "Legame con Bajkonur solo nazionale: nessun mestiere locale della città.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "UNESCO: Kazakh felt"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Kazakh felt",
+    "kyiz"
+   ]
+  },
+  {
+   "tappa": "5-9",
+   "voce": "la sartoria su misura di Soho",
+   "gesto": "tagliare il tessuto con grandi forbici",
+   "legame": "Soho, il quartiere di Broad Street dove John Snow studiò il colera, ospitava molte sartorie.",
+   "curiosita": "",
+   "segnalazione": "Presenza di sarti a Soho non letta in una fonte.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Survey of London: Soho"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Soho tailor",
+    "sartoria Soho"
+   ]
+  },
+  {
+   "tappa": "5-10",
+   "voce": "le sculture lignee del Vasa",
+   "gesto": "intagliare il legno con la sgorbia",
+   "legame": "La nave Vasa ha sculture in legno.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Vasamuseet"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Vasa ship carvings",
+    "Vasa sculture"
+   ]
+  },
+  {
+   "tappa": "5-11",
+   "voce": "la porcellana di Trenton",
+   "gesto": "colare la barbottina nello stampo",
+   "legame": "Trenton, a pochi chilometri da Princeton, fu un centro americano della porcellana.",
+   "curiosita": "",
+   "segnalazione": "Trenton non è Princeton: legame solo di vicinanza; da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Trenton"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Lenox Trenton porcelain",
+    "porcellana Trenton"
+   ]
+  },
+  {
+   "tappa": "5-12",
+   "voce": "il filete porteño",
+   "gesto": "tracciare linee ornamentali con il pennello lungo",
+   "legame": "Il filete è una tecnica di pittura ornamentale di Buenos Aires, iscritta nel 2015 nella lista UNESCO.",
+   "curiosita": "Si trova su autobus, camion, insegne dei negozi.",
+   "segnalazione": "",
+   "fonti": [
+    "https://ich.unesco.org/en/RL/filete-porteo-in-buenos-aires-a-traditional-painting-technique-01069?RL=01069"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "fileteado porteño",
+    "filete porteño Buenos Aires"
+   ]
+  },
+  {
+   "tappa": "5-13",
+   "voce": "gli strumenti scientifici di Cambridge",
+   "gesto": "limare e tornire pezzi di precisione",
+   "legame": "Cambridge ebbe la Cambridge Scientific Instrument Company.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Whipple Museum"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Cambridge Scientific Instrument Company",
+    "strumenti scientifici Cambridge"
+   ]
+  },
+  {
+   "tappa": "5-14",
+   "voce": "il vetro soffiato del New Jersey",
+   "gesto": "soffiare nella canna",
+   "legame": "Il New Jersey, lo stato di Princeton, ha una lunga tradizione vetraria (Millville, Wheaton).",
+   "curiosita": "",
+   "segnalazione": "Voce debole: nessun vetraio di Princeton noto; legame solo regionale.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Wheaton Arts"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "New Jersey glass",
+    "vetro New Jersey"
+   ]
+  },
+  {
+   "tappa": "5-15",
+   "voce": "gli operai del ferro dei grattacieli",
+   "gesto": "ribattere i rivetti rossi",
+   "legame": "Gli operai mohawk lavorarono sulle strutture d'acciaio dei grattacieli di New York.",
+   "curiosita": "",
+   "segnalazione": "Da confermare su una fonte (Smithsonian).",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Smithsonian"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Mohawk ironworkers",
+    "operai grattacieli"
+   ]
+  },
+  {
+   "tappa": "5-16",
+   "voce": "i totem della costa nord-ovest",
+   "gesto": "intagliare il cedro con l'ascia",
+   "legame": "Seattle prende il nome da Si'ahl, capo dei Duwamish e Suquamish; i totem sono la scultura dei popoli della costa nord-ovest.",
+   "curiosita": "",
+   "segnalazione": "I Coast Salish di Seattle scolpivano pali e case; i totem alti sono di Tlingit e Haida: da precisare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Burke Museum"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Salish totem",
+    "totem Seattle"
+   ]
+  },
+  {
+   "tappa": "5-17",
+   "voce": "i murales di Los Angeles",
+   "gesto": "dipingere su grande parete",
+   "legame": "Los Angeles è la città dei grandi murales, come la Great Wall of Los Angeles.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "SPARC"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Great Wall of Los Angeles",
+    "murales Los Angeles"
+   ]
+  },
+  {
+   "tappa": "5-18",
+   "voce": "i jeans con i rivetti",
+   "gesto": "cucire e fissare i rivetti",
+   "legame": "Levi Strauss fondò a San Francisco la sua azienda.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: Levi Strauss"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Levi Strauss rivets",
+    "jeans rivetti"
+   ]
+  },
+  {
+   "tappa": "5-19",
+   "voce": "gli orologiai di Clerkenwell",
+   "gesto": "regolare il bilanciere",
+   "legame": "Clerkenwell, a Londra, fu per secoli il quartiere degli orologiai.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Clockmakers' Company"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Clerkenwell clockmaker",
+    "orologiaio Clerkenwell"
+   ]
+  },
+  {
+   "tappa": "5-20",
+   "voce": "l'innesto delle mele antiche",
+   "gesto": "inserire la marza nel portainnesto",
+   "legame": "Le mele antiche ferraresi si propagano per innesto, fatto a mano.",
+   "curiosita": "",
+   "segnalazione": "Agricoltura più che artigianato: voce debole come «artigianato».",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: innesto"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "grafting apple tree",
+    "innesto melo"
+   ]
+  },
+  {
+   "tappa": "5-21",
+   "voce": "il mugnaio dei mulini a vento",
+   "gesto": "regolare le pale del mulino al vento",
+   "legame": "I mulini di Kinderdijk, nella zona di Rotterdam, sono patrimonio UNESCO; il mestiere del mugnaio è patrimonio immateriale (2017).",
+   "curiosita": "",
+   "segnalazione": "UNESCO letta (mestiere 2017 e sito Kinderdijk), ma vicinanza di Kinderdijk a Rotterdam non letta.",
+   "fonti": [
+    "https://ich.unesco.org/en/RL/craft-of-the-miller-operating-windmills-and-watermills-01265?RL=01265"
+   ],
+   "fonti_da_controllare": [
+    "UNESCO: Kinderdijk"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Kinderdijk windmill",
+    "mugnaio mulino"
+   ],
+   "f": [
+    "Comune di Rotterdam: Kinderdijk"
+   ]
+  },
+  {
+   "tappa": "5-22",
+   "voce": "la forgiatura della katana",
+   "gesto": "ripiegare e battere l'acciaio",
+   "legame": "In Giappone la katana è forgiata a mano da fabbri specializzati.",
+   "curiosita": "",
+   "segnalazione": "Il luogo è vago («un documento del 2008»): voce nazionale.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: katana"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "katana forging",
+    "katana forgiatura"
+   ]
+  },
+  {
+   "tappa": "5-23",
+   "voce": "l'orologeria ginevrina",
+   "gesto": "assemblare il movimento con pinzette e lente",
+   "legame": "Ginevra è la capitale svizzera dell'orologeria.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: Geneva"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Geneva watchmaking",
+    "orologeria Ginevra"
+   ]
+  },
+  {
+   "tappa": "5-24",
+   "voce": "i balconi in ghisa di Cheltenham",
+   "gesto": "colare la ghisa negli stampi",
+   "legame": "Cheltenham è una città Regency, nota per i balconi in ferro e ghisa.",
+   "curiosita": "",
+   "segnalazione": "Legame con l'ufficio riservato del 1970 solo per la città (GCHQ).",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Cheltenham Civic Society"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Cheltenham ironwork",
+    "balcone Cheltenham"
+   ]
+  },
+  {
+   "tappa": "5-25",
+   "voce": "la saldatura a stagno dei circuiti",
+   "gesto": "appoggiare il saldatore",
+   "legame": "Nel 1948 ai Bell Labs di Murray Hill il transistor era ancora un oggetto fatto a mano.",
+   "curiosita": "",
+   "segnalazione": "Voce generica: saldatura non legata a un testo letto.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: Bell Labs"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "soldering circuit",
+    "saldatura stagno"
+   ]
+  },
+  {
+   "tappa": "5-26",
+   "voce": "l'argenteria di Paul Revere",
+   "gesto": "battere l'argento con il martello",
+   "legame": "Paul Revere, bostoniano, fu argentiere prima che patriota.",
+   "curiosita": "",
+   "segnalazione": "Boston 2018: la voce è storica, non dell'epoca.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: Paul Revere"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Paul Revere silver",
+    "argenteria Revere"
+   ]
+  },
+  {
+   "tappa": "5-27",
+   "voce": "la canoa di corteccia di betulla",
+   "gesto": "cucire la corteccia sulle centine",
+   "legame": "Toronto sorge sul Toronto Carrying Place, portage usato dalle canoe indigene.",
+   "curiosita": "",
+   "segnalazione": "Voce debole: canoe di corteccia non attestate a Toronto in una fonte letta.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Toronto Carrying-Place"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "birchbark canoe",
+    "canoa di betulla"
+   ]
+  },
+  {
+   "tappa": "5-28",
+   "voce": "il vetro soffiato di Chihuly",
+   "gesto": "soffiare e girare la canna",
+   "legame": "Chihuly Garden and Glass a Seattle.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Chihuly Garden and Glass"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Chihuly glass",
+    "Chihuly Seattle"
+   ]
+  },
+  {
+   "tappa": "5-29",
+   "voce": "il punzone di garanzia dell'argento",
+   "gesto": "battere il punzone sull'oggetto",
+   "legame": "Il Goldsmiths' Hall di Londra ha dato il nome a «hallmark».",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Goldsmiths' Company"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "hallmark Goldsmiths' Hall",
+    "punzone argento"
+   ]
+  },
+  {
+   "tappa": "5-30",
+   "voce": "il plastico in legno",
+   "gesto": "segare e incollare",
+   "legame": "Per progettare un edificio si costruisce un plastico in legno.",
+   "curiosita": "",
+   "segnalazione": "Nessun legame con Ferrara documentato: tappa da rivedere.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "-"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "architectural model",
+    "plastico"
+   ]
+  }
+ ]
+}
