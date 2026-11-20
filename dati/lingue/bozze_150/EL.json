@@ -1,0 +1,1384 @@
+{
+ "lingua": "EL",
+ "oggetto": "bevande",
+ "voci": [
+  {
+   "tappa": "1-1",
+   "voce": "l'acqua del Po",
+   "legame": "Il Po bagna Voghenza e il suo delta; i Greci lo chiamavano Eridano.",
+   "curiosita": "Nel mito greco Fetonte, il figlio del Sole, precipita nell'Eridano.",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «Po»",
+    "Treccani, voce «Eridano»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Po river Ferrara",
+    "Voghenza cattedrale"
+   ],
+   "parola_greca": "Ἠριδανός (Eridanós)",
+   "legame_greco": "diretto: nome greco antico del Po"
+  },
+  {
+   "tappa": "1-2",
+   "voce": "il vino dei monaci benedettini",
+   "legame": "Pomposa era un'abbazia benedettina; la Regola (cap. 40) concede ai monaci una emina di vino al giorno, con raccomandazione di moderazione.",
+   "curiosita": "L'emina era una misura di circa un quarto di litro.",
+   "segnalazione": "Nessuna fonte su un vino prodotto a Pomposa: il legame è con la Regola benedettina, non con una vigna documentata. Alcol: presentare solo come storia.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Regola di san Benedetto, cap. 40 (testo)",
+    "Treccani, voce «Pomposa»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Abbazia di Pomposa",
+    "Pomposa abbey Codigoro"
+   ],
+   "parola_greca": "ἡμίνα (hemína)",
+   "legame_greco": "diretto: misura greca (da cui il latino hemina) citata dalla Regola"
+  },
+  {
+   "tappa": "1-3",
+   "voce": "il giulebbe di rose",
+   "legame": "Il giulebbe (sciroppo di zucchero e acqua di rose) è una bevanda da speziale e da corte nel Rinascimento italiano.",
+   "curiosita": "«Giulebbe» viene dal persiano gul-āb, «acqua di rose».",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «giulebbe»",
+    "Messisbugo, Banchetti (ricettario)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "gulab syrup rose water",
+    "Palazzo Municipale Ferrara"
+   ],
+   "parola_greca": "σάκχαρον (sákkharon)",
+   "legame_greco": "diretto: «zucchero», parola greca dell'antichità"
+  },
+  {
+   "tappa": "1-4",
+   "voce": "la tisana di erbe del mercato",
+   "legame": "Piazza delle Erbe era il luogo del mercato delle erbe; «tisana» viene da πτισάνη, l'orzo mondato e il suo decotto.",
+   "curiosita": "Per Ippocrate la ptisane, il decotto d'orzo, era la bevanda dei malati.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «tisana»",
+    "Ippocrate, Sul regime delle malattie acute"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "herbal tea",
+    "Piazza delle Erbe Ferrara"
+   ],
+   "parola_greca": "πτισάνη (ptisánē)",
+   "legame_greco": "diretto: l'etimo di «tisana»"
+  },
+  {
+   "tappa": "1-5",
+   "voce": "il decotto di liquirizia",
+   "legame": "Il decotto di liquirizia è tra i rimedi da infermeria dei monasteri; Sant'Antonio in Polesine era un monastero di monache benedettine.",
+   "curiosita": "«Liquirizia» viene dal greco glykýrrhiza, «radice dolce».",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «liquirizia»",
+    "Dioscoride, De materia medica III"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "liquorice root",
+    "Sant'Antonio in Polesine"
+   ],
+   "parola_greca": "γλυκύρριζα (glykýrrhiza)",
+   "legame_greco": "diretto: «radice dolce», da cui «liquirizia»"
+  },
+  {
+   "tappa": "1-6",
+   "voce": "il siero di latte",
+   "legame": "Il siero di latte, scarto della caseificazione, si beveva come bevanda salutare nei regimi di sanità quattrocenteschi.",
+   "curiosita": "",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Savonarola, Libreto de tutte le cosse che se manzano (capitolo sul latte)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "whey drink",
+    "Palazzo della Ragione Ferrara"
+   ],
+   "parola_greca": "ὀρρός (orrhós)",
+   "legame_greco": "diretto: «siero», la parte liquida del latte"
+  },
+  {
+   "tappa": "1-7",
+   "voce": "l'acqua fresca di neve",
+   "legame": "Le corti rinascimentali conservavano neve e ghiaccio per rinfrescare le bevande d'estate; il Castello estense era residenza ducale.",
+   "curiosita": "",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Da cercare: neviere o ghiacciaie del Castello.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Archivio di Stato di Modena, fondo Camera ducale (spese di corte)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Castello Estense Ferrara",
+    "snow cellar"
+   ],
+   "parola_greca": "χιών (chión)",
+   "legame_greco": "diretto: «neve»"
+  },
+  {
+   "tappa": "1-8",
+   "voce": "le bevande del Libreto di Savonarola",
+   "legame": "Michele Savonarola, medico di corte a Ferrara e docente dello Studio, scrisse per Borso il Libreto sulle cose «che se manzano» e «che se beveno»: un regime di salute.",
+   "curiosita": "Il genere dei regimina sanitatis (regimi di sanità) discende dalla medicina greca della díaita.",
+   "segnalazione": "Il titolo dell'opera promette le bevande ma non ho letto il testo: voce generica, specifica da cercare nel capitolo sul bere.",
+   "fonti": [
+    "https://movio.beniculturali.it/regemiliaromagna/saporinbiblioteca/application/mediaArchive/Pdf/_sezione_02_SANITA_AGRICOLTURA_E_ALIMENTAZIONE.pdf",
+    "https://iris.unife.it/handle/11392/2336586"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Michele Savonarola Libreto",
+    "Studio ferrarese"
+   ],
+   "parola_greca": "δίαιτα (díaita)",
+   "legame_greco": "diretto: «modo di vivere», regime di salute, da cui «dieta»"
+  },
+  {
+   "tappa": "1-9",
+   "voce": "l'acquavite di Savonarola",
+   "legame": "Savonarola scrisse un trattato sull'arte di fare l'acqua di vita (aqua vitae) per uso medico, con la descrizione di un antico apparecchio di distillazione.",
+   "curiosita": "Ne descrive tre tipi: semplice, comune e quintessenza.",
+   "segnalazione": "Alcol: presentare solo come storia della medicina e della distillazione, non come bevanda.",
+   "fonti": [
+    "https://movio.beniculturali.it/regemiliaromagna/saporinbiblioteca/application/mediaArchive/Pdf/_sezione_02_SANITA_AGRICOLTURA_E_ALIMENTAZIONE.pdf"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Libellus de arte conficiendi aquam vitae",
+    "alembic distillation"
+   ],
+   "parola_greca": "ἄμβιξ (ámbix)",
+   "legame_greco": "diretto: il recipiente, da cui «alambicco» (via l'arabo al-anbiq)"
+  },
+  {
+   "tappa": "1-10",
+   "voce": "l'acqua di cannella",
+   "legame": "La cannella è una delle spezie più usate nella cucina di corte estense; un'acqua aromatica di cannella era una bevanda e un rimedio rinascimentale.",
+   "curiosita": "",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Da cercare nei Banchetti di Messisbugo.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Messisbugo, Banchetti (ricettario)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "cinnamon water",
+    "Palazzo Ducale Ferrara"
+   ],
+   "parola_greca": "κιννάμωμον (kinnámōmon)",
+   "legame_greco": "diretto: «cannella», parola greca d'origine semitica"
+  },
+  {
+   "tappa": "1-11",
+   "voce": "il succo d'uva del kiddush",
+   "legame": "Nel kiddush, la benedizione del sabato, si può usare anche succo d'uva; il MEIS racconta la storia degli ebrei in Italia, e Ferrara ebbe una grande comunità.",
+   "curiosita": "«Glucosio» viene da gleûkos, il mosto dolce.",
+   "segnalazione": "Nessuna fonte su una bevanda specifica degli ebrei ferraresi: legame con il tema del museo, non con una fonte locale.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "MEIS, sito ufficiale",
+    "Enciclopedia Treccani, voce «kiddush»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Kiddush cup",
+    "MEIS Ferrara"
+   ],
+   "parola_greca": "γλεῦκος (gleûkos)",
+   "legame_greco": "diretto: «mosto», dolce succo d'uva"
+  },
+  {
+   "tappa": "1-12",
+   "voce": "il succo di pera",
+   "legame": "Le pere sono tra i frutti coltivati nelle terre ferraresi; Schifanoia era un palazzo di delizie, dove si consumava frutta di stagione.",
+   "curiosita": "",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «pera»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "pear juice",
+    "Palazzo Schifanoia"
+   ],
+   "parola_greca": "ἄπιον (ápion)",
+   "legame_greco": "diretto: «pera»"
+  },
+  {
+   "tappa": "1-13",
+   "voce": "l'infuso di salvia",
+   "legame": "I certosini, come tutti i monaci, coltivavano erbe medicinali negli orti dei chiostri; la Certosa di Ferrara fu fondata da Borso nel 1452.",
+   "curiosita": "",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Da verificare l'orto dei certosini di Ferrara.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Dioscoride, De materia medica III",
+    "Certosa di Ferrara (scheda museale)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "sage tea",
+    "Certosa di Ferrara chiostro"
+   ],
+   "parola_greca": "ἐλελίσφακον (elelísphakon)",
+   "legame_greco": "diretto: «salvia» in Dioscoride"
+  },
+  {
+   "tappa": "1-14",
+   "voce": "l'acqua di rose",
+   "legame": "L'acqua di rose, ottenuta per distillazione, serviva in cucina, in medicina e nei profumi della corte; l'Addizione Erculea nasce dal gusto per i giardini di corte.",
+   "curiosita": "",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Messisbugo, Banchetti (ricettario)",
+    "Treccani, voce «acqua di rose»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "rose water",
+    "Addizione Erculea"
+   ],
+   "parola_greca": "ῥόδον (rhódon)",
+   "legame_greco": "diretto: «rosa»"
+  },
+  {
+   "tappa": "1-15",
+   "voce": "lo sciroppo di viole",
+   "legame": "Lo sciroppo di viole (syrupus violarum) è uno dei sciroppi classici della farmacopea rinascimentale, trattato dal ferrarese Brasavola nel suo Examen omnium syruporum.",
+   "curiosita": "Lo iodio è chiamato così da íon: i suoi vapori sono viola.",
+   "segnalazione": "Il legame con Brasavola è plausibile ma non ho letto l'elenco degli sciroppi trattati.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Brasavola, Examen omnium syruporum (1540)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "violet syrup",
+    "Palazzo Paradiso Ferrara"
+   ],
+   "parola_greca": "ἴον (íon)",
+   "legame_greco": "diretto: «viola»"
+  },
+  {
+   "tappa": "1-16",
+   "voce": "il decotto di malva",
+   "legame": "La malva è una pianta da infermeria usata nelle farmacie e nei monasteri; il monastero del Corpus Domini fu fondato nel 1406.",
+   "curiosita": "",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Dioscoride, De materia medica II"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "mallow tea",
+    "Monastero del Corpus Domini Ferrara"
+   ],
+   "parola_greca": "μαλάχη (maláchē)",
+   "legame_greco": "diretto: «malva»"
+  },
+  {
+   "tappa": "1-17",
+   "voce": "l'acqua di fonte",
+   "legame": "Ariosto è il poeta di Ferrara; per i Greci i poeti si ispiravano bevendo alla fonte delle Muse.",
+   "curiosita": "Secondo Esiodo, la fonte nacque da un calcio del cavallo Pegaso.",
+   "segnalazione": "Il legame con la casa di Ariosto è poetico, non documentato: l'acqua di fonte è generica.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Esiodo, Teogonia, v. 1-8"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Hippocrene spring",
+    "Casa di Ariosto Ferrara"
+   ],
+   "parola_greca": "Ἱπποκρήνη (Hippokrḗnē)",
+   "legame_greco": "diretto: la «fonte del cavallo», sorgente delle Muse sul monte Elicona"
+  },
+  {
+   "tappa": "1-18",
+   "voce": "il latte di vacca",
+   "legame": "Il latte fresco è bevanda di tutte le campagne emiliane; Savonarola ne tratta nel suo Libreto.",
+   "curiosita": "«Galassia» significa «via lattea»: kýklos galaktikós.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Savonarola, Libreto (capitolo sul latte)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "fresh milk",
+    "Castello Estense"
+   ],
+   "parola_greca": "γάλα (gála)",
+   "legame_greco": "diretto: «latte», da cui «galassia»"
+  },
+  {
+   "tappa": "1-19",
+   "voce": "l'infuso di finocchio",
+   "legame": "Il finocchio selvatico è una pianta comune dei prati; l'infuso è un digestivo tradizionale.",
+   "curiosita": "La battaglia di Maratona prese il nome dal luogo, ricco di finocchi.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Dioscoride, De materia medica III",
+    "Pausania, Periegesi I,32"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "fennel tea",
+    "Palazzo Paradiso"
+   ],
+   "parola_greca": "μάραθον (márathon)",
+   "legame_greco": "diretto: «finocchio»; da qui Maratona, «campo di finocchi»"
+  },
+  {
+   "tappa": "1-20",
+   "voce": "l'acqua di cedro",
+   "legame": "Il cedro è tra gli agrumi più antichi d'Europa; era usato nei confetti e nelle bevande rinfrescanti di corte.",
+   "curiosita": "",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «cedro»",
+    "Messisbugo, Banchetti (ricettario)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "citron",
+    "Castello Estense Ferrara"
+   ],
+   "parola_greca": "κίτρον (kítron)",
+   "legame_greco": "diretto: «cedro», agrume"
+  },
+  {
+   "tappa": "1-21",
+   "voce": "il decotto dello speziale",
+   "legame": "L'ospedale di Sant'Anna aveva una sua spezieria; qui Torquato Tasso fu rinchiuso dal 1579 al 1586.",
+   "curiosita": "«Bottega» viene dal greco apothḗkē, il deposito.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Da cercare nelle carte della spezieria di Sant'Anna.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «Tasso»",
+    "Ospedale Sant'Anna di Ferrara (storia)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ospedale Sant'Anna Ferrara",
+    "apothecary jar"
+   ],
+   "parola_greca": "ἀποθήκη (apothḗkē)",
+   "legame_greco": "diretto: «magazzino, deposito», da cui «bottega» e «spezieria»"
+  },
+  {
+   "tappa": "1-22",
+   "voce": "l'infuso di tiglio",
+   "legame": "Il tiglio è una pianta d'ombra tipica dei viali e delle mura cittadine; l'infuso dei fiori è un calmante tradizionale.",
+   "curiosita": "Nel mito Filira, trasformata in tiglio, è la madre di Chirone, maestro di medicina.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Dioscoride, De materia medica I"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "linden tea",
+    "mura di Ferrara"
+   ],
+   "parola_greca": "φιλύρα (philýra)",
+   "legame_greco": "diretto: «tiglio»; Fílira è la madre del centauro Chirone"
+  },
+  {
+   "tappa": "1-23",
+   "voce": "l'acqua e aceto",
+   "legame": "Acqua e aceto era la bevanda dei lavoratori nei campi e nei cantieri, dissetante e conservabile.",
+   "curiosita": "«Ossimoro» è fatto di ὀξύς, acuto, e μωρός, stupido: «acutamente stupido».",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «posca»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "vinegar water",
+    "Vicolo del Chiozzino"
+   ],
+   "parola_greca": "ὀξύς (oxýs)",
+   "legame_greco": "diretto: «acuto, acido»; ossigeno e ossimoro"
+  },
+  {
+   "tappa": "1-24",
+   "voce": "l'infuso di salice",
+   "legame": "Salici e pioppi crescono nelle golene del Po; la corteccia, che contiene salicina, è usata da sempre contro il dolore.",
+   "curiosita": "Ippocrate consigliava già foglie e corteccia di salice contro il dolore e la febbre.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Ippocrate (tradizione), De morbis mulierum",
+    "Treccani, voce «salicina»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "willow bark tea",
+    "Po golena Ferrara"
+   ],
+   "parola_greca": "ἰτέα (itéa)",
+   "legame_greco": "diretto: «salice»"
+  },
+  {
+   "tappa": "1-25",
+   "voce": "la limonata del ridotto",
+   "legame": "Nei teatri dell'Ottocento si servivano bevande rinfrescanti nel ridotto durante gli intervalli.",
+   "curiosita": "",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Da cercare bibliografia sul Teatro Comunale (1798).",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Teatro Comunale di Ferrara, storia"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "lemonade",
+    "Teatro Comunale Ferrara"
+   ],
+   "parola_greca": "κίτρον (kítron)",
+   "legame_greco": "indiretto: «limone» viene dal persiano; il Greco antico dice κίτρον per gli agrumi"
+  },
+  {
+   "tappa": "1-26",
+   "voce": "la gazzosa",
+   "legame": "La gazzosa è la bevanda frizzante italiana per eccellenza dall'Ottocento, epoca del Risorgimento.",
+   "curiosita": "Il chimico Jan Baptist van Helmont inventò la parola «gas» dal greco chaos, nel Seicento.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «gas»",
+    "Treccani, voce «gazzosa»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "lemonade soda bottle",
+    "Museo del Risorgimento Ferrara"
+   ],
+   "parola_greca": "χάος (cháos)",
+   "legame_greco": "diretto: «gas» fu coniato dal chimico Van Helmont dal greco chaos"
+  },
+  {
+   "tappa": "1-27",
+   "voce": "l'acqua in bottiglia di plastica",
+   "legame": "A Ferrara, nel polo chimico, Giulio Natta realizzò i primi impianti industriali di polipropilene, la plastica del Moplen.",
+   "curiosita": "Natta ricevette il Nobel per la chimica nel 1963.",
+   "segnalazione": "Il legame con l'acqua è per la plastica delle bottiglie, non per un'acqua ferrarese; da verificare l'impianto di Ferrara.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Nobelprize.org, Giulio Natta",
+    "Treccani, voce «Natta»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "PET bottle",
+    "polo chimico Ferrara"
+   ],
+   "parola_greca": "πλαστικός (plastikós)",
+   "legame_greco": "diretto: «che si può modellare», da cui «plastica»"
+  },
+  {
+   "tappa": "1-28",
+   "voce": "la tisana di camomilla",
+   "legame": "La camomilla è l'infuso calmante per eccellenza; nei campi attorno alla città cresce spontanea.",
+   "curiosita": "Si chiama «mela di terra» per l'odore di mela dei fiori.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Dioscoride, De materia medica III",
+    "Treccani, voce «camomilla»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "chamomile tea",
+    "cimitero ebraico Ferrara"
+   ],
+   "parola_greca": "χαμαίμηλον (chamaímēlon)",
+   "legame_greco": "diretto: «mela di terra», da cui «camomilla»"
+  },
+  {
+   "tappa": "1-29",
+   "voce": "il succo di carota",
+   "legame": "Le carote sono tra gli ortaggi delle terre del Delta; il succo è una bevanda semplice di orto.",
+   "curiosita": "",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «carota»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "carrot juice",
+    "Ferrara orto"
+   ],
+   "parola_greca": "καρωτόν (karōtón)",
+   "legame_greco": "diretto: «carota»"
+  },
+  {
+   "tappa": "1-30",
+   "voce": "il vino delle sabbie",
+   "legame": "Il vino del Bosco Eliceo (Fortana) cresce sulle dune sabbiose dei Lidi ferraresi, come quelle di Lido di Spina.",
+   "curiosita": "Le viti crescono su sabbia, nelle terre che il mare ha lasciato.",
+   "segnalazione": "Alcol: solo come prodotto del luogo e della storia del Delta; da verificare la DOC Bosco Eliceo.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Disciplinare DOC Bosco Eliceo",
+    "Treccani, voce «Bosco Eliceo»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Bosco Eliceo vineyards",
+    "Lido di Spina sand"
+   ],
+   "parola_greca": "ἄμμος (ámmos)",
+   "legame_greco": "diretto: «sabbia», da cui «ammofila»"
+  },
+  {
+   "tappa": "2-1",
+   "voce": "l'acqua di fusione del ghiacciaio",
+   "legame": "Ötzi, l'uomo di Similaun, fu conservato per 5300 anni dal ghiaccio; il Museo archeologico di Bolzano lo espone.",
+   "curiosita": "La radice indoeuropea *wódr̥ ha dato hýdōr in greco, water in inglese e unda in latino.",
+   "segnalazione": "Nessuna fonte su cosa bevesse Ötzi: l'acqua di fusione è un'ipotesi ragionevole, non un dato.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Museo archeologico dell'Alto Adige, scheda Ötzi"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ötzi iceman",
+    "South Tyrol Museum of Archaeology"
+   ],
+   "parola_greca": "ὕδωρ (hýdōr)",
+   "legame_greco": "diretto: «acqua»; stessa radice indoeuropea dell'inglese water"
+  },
+  {
+   "tappa": "2-2",
+   "voce": "l'acqua e il miele dei pitagorici",
+   "legame": "A Crotone Pitagora fondò la sua scuola; secondo le Vite antiche i pitagorici mangiavano pane e miele e bevevano acqua.",
+   "curiosita": "",
+   "segnalazione": "Da verificare il passo preciso (Porfirio, Vita di Pitagora; Diogene Laerzio VIII).",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Porfirio, Vita di Pitagora 34",
+    "Diogene Laerzio VIII,19"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Pythagoras Croton",
+    "honey and water"
+   ],
+   "parola_greca": "ὑδρόμελι (hydrómeli)",
+   "legame_greco": "diretto: «acqua e miele», da cui «idromele»"
+  },
+  {
+   "tappa": "2-3",
+   "voce": "la posca dei legionari",
+   "legame": "La posca (acqua, aceto ed erbe) era la bevanda quotidiana dei soldati romani; il Campidoglio è il cuore di Roma.",
+   "curiosita": "Un soldato romano offrì posca a Gesù sulla croce, secondo i Vangeli.",
+   "segnalazione": "La posca è romana in generale, non specifica del Campidoglio.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «posca»",
+    "Elio Sparziano, Vita di Adriano 10"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "posca Roman soldier",
+    "Campidoglio Roma"
+   ],
+   "parola_greca": "ὄξος (óxos)",
+   "legame_greco": "diretto: «aceto»; ὀξύς «acuto»"
+  },
+  {
+   "tappa": "2-4",
+   "voce": "l'acqua del fiume Pellena",
+   "legame": "Cassiodoro, nelle Institutiones, descrive il monastero di Vivarium irrigato dal fiume Pellena, con le sue peschiere.",
+   "curiosita": "Ippopotamo significa «cavallo di fiume».",
+   "segnalazione": "Da verificare il passo preciso delle Institutiones I,29.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Cassiodoro, Institutiones I,29"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Vivarium Squillace",
+    "Squillace Cassiodorus"
+   ],
+   "parola_greca": "ποταμός (potamós)",
+   "legame_greco": "diretto: «fiume», da cui «ippopotamo» e «Mesopotamia»"
+  },
+  {
+   "tappa": "2-5",
+   "voce": "l'acqua Vergine",
+   "legame": "L'acqua Vergine, acquedotto romano del 19 a.C., alimenta ancora oggi la Fontana di Trevi.",
+   "curiosita": "Secondo Frontino il nome ricorda una fanciulla che indicò la sorgente ai soldati assetati.",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Frontino, De aquaeductu urbis Romae 10",
+    "Treccani, voce «Acqua Vergine»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Aqua Virgo Trevi",
+    "Fontana di Trevi"
+   ],
+   "parola_greca": "παρθένος (parthénos)",
+   "legame_greco": "diretto: «vergine»; Partenone e partenogenesi"
+  },
+  {
+   "tappa": "2-6",
+   "voce": "la sorgente Hyele di Elea",
+   "legame": "Secondo Strabone, la città fondata dai Focei si chiamava in origine Hyele.",
+   "curiosita": "Parmenide e Zenone, i filosofi eleati, vissero qui.",
+   "segnalazione": "Non sono certo che Ὑέλη derivi da una sorgente: Strabone VI,1,1 da controllare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Strabone, Geografia VI,1,1"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Velia Elea ruins",
+    "Parmenides Elea"
+   ],
+   "parola_greca": "κρήνη (krḗnē)",
+   "legame_greco": "indiretto: «fonte»; Ὑέλη è il nome antico di Elea"
+  },
+  {
+   "tappa": "2-7",
+   "voce": "l'acqua Crabra di Tuscolo",
+   "legame": "L'acqua Crabra scorreva presso Tuscolo, dove Cicerone ebbe la sua villa.",
+   "curiosita": "Cicerone scrisse a Tuscolo le Tusculanae disputationes.",
+   "segnalazione": "Da verificare in Cicerone (De lege agraria III,2) e Frontino.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Frontino, De aquaeductu 9",
+    "Cicerone, De lege agraria III,2,9"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Tusculum ruins",
+    "Villa Cicero Tuscolo"
+   ],
+   "parola_greca": "ὀχετός (ochetós)",
+   "legame_greco": "indiretto: «condotto d'acqua»; nessuna parola greca per l'acqua Crabra"
+  },
+  {
+   "tappa": "2-8",
+   "voce": "l'acqua dei fontanili",
+   "legame": "I fontanili sono le risorgive della pianura lombarda, che alimentano le risaie da cui viene il riso del risotto.",
+   "curiosita": "Pegaso significa «quello delle sorgenti».",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «fontanile»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "fontanile Lombardia",
+    "Milano Naviglio"
+   ],
+   "parola_greca": "πηγή (pēgḗ)",
+   "legame_greco": "diretto: «sorgente»; Pegaso nacque presso le sorgenti"
+  },
+  {
+   "tappa": "2-9",
+   "voce": "l'acqua mulsa",
+   "legame": "L'acqua mulsa era acqua con il miele, bevanda romana senza alcol, a differenza del mulsum; la Curia ospitava il Senato.",
+   "curiosita": "«Marmellata» viene da meli-mēlon, «mela di miele», cotogna.",
+   "segnalazione": "Da verificare in fonti antiche l'aqua mulsa come bevanda.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Columella, De re rustica XII,12",
+    "Plinio, Naturalis Historia XXII,108"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "honey water",
+    "Curia Iulia Roma"
+   ],
+   "parola_greca": "μέλι (méli)",
+   "legame_greco": "diretto: «miele»; marmellata viene da melimelon"
+  },
+  {
+   "tappa": "2-10",
+   "voce": "l'acqua del Tevere",
+   "legame": "I Romani delle origini bevevano l'acqua del Tevere; la villa dei Gracchi sorgeva presso il fiume.",
+   "curiosita": "",
+   "segnalazione": "Nessuna bevanda documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Il legame con la villa dei Gracchi è generico.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Plinio, Naturalis Historia III,54"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Tiber river Rome",
+    "Villa dei Gracchi"
+   ],
+   "parola_greca": "Θύβρις (Thýbris)",
+   "legame_greco": "diretto: nome greco del Tevere"
+  },
+  {
+   "tappa": "2-11",
+   "voce": "il vino mescolato del cratere di Senofane",
+   "legame": "Il filosofo Senofane di Colofone insegnò a Elea; un suo frammento descrive il simposio con il cratere e le coppe.",
+   "curiosita": "I Greci diluivano il vino con acqua, in genere tre parti d'acqua e una di vino.",
+   "segnalazione": "Alcol: solo come usanza greca; da verificare il frammento 1 di Senofane.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Senofane, DK 21 B1"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "krater Greek vase",
+    "Xenophanes"
+   ],
+   "parola_greca": "κρατήρ (kratḗr)",
+   "legame_greco": "diretto: il grande vaso per mescolare vino e acqua"
+  },
+  {
+   "tappa": "2-12",
+   "voce": "l'infuso di melissa",
+   "legame": "La melissa è l'erba amata dalle api; nei giardini di corte era una pianta comune.",
+   "curiosita": "Mélissa in greco significa «ape».",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Dioscoride, De materia medica III"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "lemon balm tea",
+    "Porta Ferrara"
+   ],
+   "parola_greca": "μέλισσα (mélissa)",
+   "legame_greco": "diretto: «ape», da cui «melissa»"
+  },
+  {
+   "tappa": "2-13",
+   "voce": "la grattachecca",
+   "legame": "La grattachecca è il ghiaccio grattato con lo sciroppo, bevanda estiva romana.",
+   "curiosita": "Per i Greci il cristallo di rocca era ghiaccio pietrificato.",
+   "segnalazione": "Da verificare l'origine romana su una fonte di riferimento.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «grattachecca»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "grattachecca Roma",
+    "ice syrup"
+   ],
+   "parola_greca": "κρύσταλλος (krýstallos)",
+   "legame_greco": "diretto: «ghiaccio», da cui «cristallo»"
+  },
+  {
+   "tappa": "2-14",
+   "voce": "l'alchermes dei Medici",
+   "legame": "L'alchermes è un liquore dolce e rosso di Firenze, aromatizzato con spezie e un tempo colorato con la cocciniglia.",
+   "curiosita": "",
+   "segnalazione": "Alcol: solo come ingrediente tradizionale; da verificare l'origine medicea.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «alchermes»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "alchermes liqueur",
+    "Firenze Santa Maria Novella"
+   ],
+   "parola_greca": "κόκκος (kókkos)",
+   "legame_greco": "diretto: kókkos è il «chicco»; il kermes, da cui il rosso, era detto kókkos baphikḗ"
+  },
+  {
+   "tappa": "2-15",
+   "voce": "l'acqua e zammù",
+   "legame": "L'acqua e zammù è la bevanda rinfrescante di Palermo, acqua gassata all'anice.",
+   "curiosita": "«Zammù» è il nome siciliano dell'anice.",
+   "segnalazione": "Da verificare su una fonte di riferimento (PAT siciliano).",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Mipaaf, prodotti agroalimentari tradizionali, Sicilia"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "acqua e zammù Palermo",
+    "anise drink"
+   ],
+   "parola_greca": "ἄνισον (ánison)",
+   "legame_greco": "diretto: «anice»"
+  },
+  {
+   "tappa": "2-16",
+   "voce": "l'acqua del Galeso",
+   "legame": "Il fiume Galeso presso Taranto è lodato da Virgilio e Orazio.",
+   "curiosita": "Orazio lo chiama «dolce fiume».",
+   "segnalazione": "Da verificare il passo di Orazio (Odi II,6) e Virgilio (Georgiche IV,126).",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Orazio, Odi II,6,10",
+    "Virgilio, Georgiche IV,126"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Galeso Taranto",
+    "Mar Piccolo sorgenti Citro"
+   ],
+   "parola_greca": "νᾶμα (nâma)",
+   "legame_greco": "diretto: «flusso, sorgente»"
+  },
+  {
+   "tappa": "2-17",
+   "voce": "il caffè dell'Antico Caffè Greco",
+   "legame": "Il Caffè Greco di Roma, in via dei Condotti, è aperto dal 1760 ed è frequentato da artisti e scrittori.",
+   "curiosita": "",
+   "segnalazione": "Da verificare la data di apertura e il nome del fondatore.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «Caffè Greco»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Antico Caffè Greco Roma",
+    "Via Condotti"
+   ],
+   "parola_greca": "καφές (kafés)",
+   "legame_greco": "indiretto: parola greca moderna presa dal turco; il nome del locale ricorda un greco"
+  },
+  {
+   "tappa": "2-18",
+   "voce": "l'acqua dei nasoni",
+   "legame": "Le fontanelle di Roma, dette nasoni, danno acqua potabile gratuita dal 1874.",
+   "curiosita": "«Polidipsia» significa «molta sete».",
+   "segnalazione": "Il legame con Testaccio e la coda alla vaccinara è generico.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Acea, I nasoni di Roma"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "nasone Roma",
+    "Testaccio fontanella"
+   ],
+   "parola_greca": "δίψα (dípsa)",
+   "legame_greco": "diretto: «sete», da cui «polidipsia»"
+  },
+  {
+   "tappa": "2-19",
+   "voce": "l'acqua di Chianciano",
+   "legame": "Chianciano è a pochi chilometri da Chiusi; le sue acque sono note fin dall'antichità e usate per le terme.",
+   "curiosita": "",
+   "segnalazione": "Chianciano non è Chiusi: la vicinanza è l'unico legame. Da verificare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «Chianciano Terme»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Chianciano Terme acqua",
+    "Museo Chiusi Etruscan"
+   ],
+   "parola_greca": "κύλιξ (kýlix)",
+   "legame_greco": "indiretto: la coppa da bere, di cui gli Etruschi di Chiusi importavano molti esemplari greci"
+  },
+  {
+   "tappa": "2-20",
+   "voce": "il tè delle Babington's",
+   "legame": "Le Babington's Tea Rooms, a piazza di Spagna, sono aperte dal 1893.",
+   "curiosita": "",
+   "segnalazione": "Da verificare data e luogo; epoca più recente delle altre tappe romane.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Babington's Tea Rooms (storia)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Babington's tea rooms",
+    "Piazza di Spagna"
+   ],
+   "parola_greca": "τσάι (tsái)",
+   "legame_greco": "indiretto: parola greca moderna presa dal cinese"
+  },
+  {
+   "tappa": "2-21",
+   "voce": "l'infuso di menta",
+   "legame": "La menta è una pianta d'orto comune; l'infuso è dissetante.",
+   "curiosita": "Nel mito Minta fu trasformata in menta da Persefone.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Ovidio, Metamorfosi X (accenni)",
+    "Strabone VIII,3,14"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "mint tea",
+    "Porta Ferrara"
+   ],
+   "parola_greca": "μίνθη (mínthē)",
+   "legame_greco": "diretto: «menta»; Minta è una ninfa trasformata in menta"
+  },
+  {
+   "tappa": "2-22",
+   "voce": "l'acqua dei pozzi di Venezia",
+   "legame": "A Venezia l'acqua dolce si raccoglieva nelle cisterne e si attingeva dalle vere da pozzo.",
+   "curiosita": "Le cisterne filtravano l'acqua piovana attraverso la sabbia.",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «vera da pozzo»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Venice well cistern",
+    "vera da pozzo"
+   ],
+   "parola_greca": "φρέαρ (phréar)",
+   "legame_greco": "diretto: «pozzo», da cui «falda freatica»"
+  },
+  {
+   "tappa": "2-23",
+   "voce": "il defrutum",
+   "legame": "Il defrutum era mosto cotto e ridotto, usato come dolcificante e bevanda diluita dai Romani; la Curia era la sede del Senato.",
+   "curiosita": "",
+   "segnalazione": "Il legame con la Curia è generico. Da verificare in Columella e Plinio.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Columella, De re rustica XII,19",
+    "Plinio, Naturalis Historia XIV,80"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "defrutum",
+    "Curia Roma"
+   ],
+   "parola_greca": "ἕψημα (hépsēma)",
+   "legame_greco": "diretto: «mosto cotto»"
+  },
+  {
+   "tappa": "2-24",
+   "voce": "la cioccolata al gelsomino dei Medici",
+   "legame": "Il granduca Cosimo III de' Medici amava la cioccolata profumata al gelsomino, ricetta del medico Francesco Redi.",
+   "curiosita": "Theobroma significa «cibo degli dèi».",
+   "segnalazione": "Da verificare la ricetta di Redi su una fonte di riferimento.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «cioccolato»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Cosimo III Medici",
+    "chocolate jasmine"
+   ],
+   "parola_greca": "θεοβρῶμα (theobróma)",
+   "legame_greco": "indiretto: nome scientifico del cacao coniato da Linneo con parole greche"
+  },
+  {
+   "tappa": "2-25",
+   "voce": "lo sciroppo di sambuco",
+   "legame": "Il sambuco cresce lungo i fossi; lo sciroppo dei fiori è una bevanda estiva.",
+   "curiosita": "",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Dioscoride, De materia medica IV"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "elderflower syrup",
+    "Addizione Erculea"
+   ],
+   "parola_greca": "ἀκτῆ (aktḗ)",
+   "legame_greco": "diretto: «sambuco» in Dioscoride"
+  },
+  {
+   "tappa": "2-26",
+   "voce": "il decotto d'orzo",
+   "legame": "L'orzo è un cereale antico dei campi padani; il decotto d'orzo era una bevanda semplice e salutare.",
+   "curiosita": "",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Savonarola, Libreto (capitolo sui cereali)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "barley water",
+    "Castello Estense"
+   ],
+   "parola_greca": "κριθή (krithḗ)",
+   "legame_greco": "diretto: «orzo»"
+  },
+  {
+   "tappa": "2-27",
+   "voce": "l'infuso di timo",
+   "legame": "Il timo è un'erba odorosa comune; l'infuso è un digestivo.",
+   "curiosita": "Thýmos in greco è anche l'anima e il coraggio.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Dioscoride, De materia medica III"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "thyme tea",
+    "Porta Ferrara"
+   ],
+   "parola_greca": "θύμος (thýmos)",
+   "legame_greco": "diretto: «timo», e anche «anima, ardore»"
+  },
+  {
+   "tappa": "2-28",
+   "voce": "il decotto di fichi secchi",
+   "legame": "I fichi secchi erano alimento e rimedio; il decotto era una bevanda della dispensa invernale.",
+   "curiosita": "«Sicofante» significava «mostratore di fichi».",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «sicofante»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "dried figs decoction",
+    "Castello Estense"
+   ],
+   "parola_greca": "σῦκον (sŷkon)",
+   "legame_greco": "diretto: «fico»; «sicofante» viene da qui"
+  },
+  {
+   "tappa": "2-29",
+   "voce": "l'acqua zuccherata",
+   "legame": "L'acqua e zucchero è una bevanda semplice di corte e di campagna; il gnocco con lo zucchero è un piatto dolce.",
+   "curiosita": "",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «glucosio»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "sugar water",
+    "Porta Ferrara"
+   ],
+   "parola_greca": "γλυκύς (glykýs)",
+   "legame_greco": "diretto: «dolce», da cui «glucosio»"
+  },
+  {
+   "tappa": "2-30",
+   "voce": "il decotto di cicoria",
+   "legame": "La cicoria cresce nei prati ferraresi; il decotto della radice tostata è una bevanda tradizionale.",
+   "curiosita": "",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Dioscoride, De materia medica II"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "chicory coffee",
+    "Castello Estense"
+   ],
+   "parola_greca": "κιχώριον (kichórion)",
+   "legame_greco": "diretto: «cicoria»"
+  },
+  {
+   "tappa": "3-1",
+   "voce": "il karkadè",
+   "legame": "Il karkadè, infuso rosso di fiori di ibisco, è la bevanda tradizionale dell'Egitto, che si serve calda o fredda.",
+   "curiosita": "",
+   "segnalazione": "Da verificare il legame con Alessandria e l'identificazione dell'ibískos antico con l'ibisco.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «karkadè»",
+    "Dioscoride, De materia medica III,163"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "karkade hibiscus tea",
+    "Alexandria Egypt"
+   ],
+   "parola_greca": "ἰβίσκος (ibískos)",
+   "legame_greco": "diretto: pianta citata da Dioscoride, da cui il genere «Hibiscus»"
+  },
+  {
+   "tappa": "3-2",
+   "voce": "il kvas di pane",
+   "legame": "Il kwas chlebowy, fermentato dal pane di segale con pochissimo alcol, è la bevanda tradizionale polacca.",
+   "curiosita": "«Enzima» significa «dentro il lievito».",
+   "segnalazione": "Nessuna fonte che leghi il kvas a Frombork: è una bevanda polacca generale.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «kvas»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "kvas drink",
+    "Frombork Copernicus"
+   ],
+   "parola_greca": "ζύμη (zýmē)",
+   "legame_greco": "diretto: «lievito», da cui «enzima»"
+  },
+  {
+   "tappa": "3-3",
+   "voce": "l'acqua di Fiuggi",
+   "legame": "L'acqua di Fiuggi, secondo la tradizione, curò i calcoli renali di papa Bonifacio VIII e di Michelangelo.",
+   "curiosita": "I calcoli renali sono «pietre nei reni»: nefrolitiasi.",
+   "segnalazione": "Da verificare il racconto su Michelangelo; Fiuggi è nel Lazio, non a Roma.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «Fiuggi»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Fiuggi acqua",
+    "Michelangelo"
+   ],
+   "parola_greca": "λίθος (líthos)",
+   "legame_greco": "diretto: «pietra», da cui «nefrolitiasi»"
+  },
+  {
+   "tappa": "3-4",
+   "voce": "il ciceone di Demetra",
+   "legame": "Nell'Inno omerico a Demetra la dea beve un ciceone di acqua, farina d'orzo e menta, durante i Misteri di Eleusi, vicino ad Atene.",
+   "curiosita": "Eraclito dice che il ciceone si separa se non lo si mescola.",
+   "segnalazione": "Da verificare i versi dell'Inno (208-210) su Perseus.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Inno omerico a Demetra 208-210",
+    "Eraclito, DK 22 B125"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "kykeon Eleusis",
+    "Demeter"
+   ],
+   "parola_greca": "κυκεών (kykeón)",
+   "legame_greco": "diretto: da κυκάω «mescolare»"
+  },
+  {
+   "tappa": "3-5",
+   "voce": "la cicuta di Socrate",
+   "legame": "A Atene Socrate fu condannato a bere la cicuta, come racconta Platone nel Fedone.",
+   "curiosita": "Phármakon significa sia «medicina» sia «veleno».",
+   "segnalazione": "Non è una bevanda tipica ma storica e drammatica; alternativa: acqua dell'Ilisso. Da valutare per i ragazzi.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Platone, Fedone 117a-118a"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Death of Socrates",
+    "hemlock Athens"
+   ],
+   "parola_greca": "φάρμακον (phármakon)",
+   "legame_greco": "diretto: «veleno» e «rimedio» insieme"
+  },
+  {
+   "tappa": "3-6",
+   "voce": "il tè di montagna greco",
+   "legame": "Il tè di montagna è l'infuso di Sideritis, pianta dei monti greci; si beve caldo in tutta la Grecia.",
+   "curiosita": "Sideritis viene da σίδηρος, ferro.",
+   "segnalazione": "Da verificare il legame con Atene su una fonte di riferimento.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Dioscoride, De materia medica IV,33"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Greek mountain tea sideritis",
+    "Atene"
+   ],
+   "parola_greca": "ὄρος (óros)",
+   "legame_greco": "diretto: «monte», da cui «orogenesi»"
+  },
+  {
+   "tappa": "3-7",
+   "voce": "l'acqua di cisterna di Ravenna",
+   "legame": "Marziale scrive che a Ravenna avrebbe preferito una cisterna a una vigna, perché il vino costava meno dell'acqua.",
+   "curiosita": "",
+   "segnalazione": "Da verificare il passo di Marziale (III,56-57).",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Marziale, Epigrammi III,56-57"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ravenna cistern",
+    "Ravenna mosaics"
+   ],
+   "parola_greca": "δεξαμενή (dexamenḗ)",
+   "legame_greco": "diretto: «cisterna»"
+  },
+  {
+   "tappa": "3-8",
+   "voce": "il latte di mandorla pugliese",
+   "legame": "Il latte di mandorla è una bevanda tipica della Puglia, terra di mandorleti.",
+   "curiosita": "Le tonsille si chiamano amigdale, «piccole mandorle».",
+   "segnalazione": "Nessun legame specifico con Castel del Monte.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Mipaaf, prodotti agroalimentari tradizionali, Puglia"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "almond milk Puglia",
+    "Castel del Monte"
+   ],
+   "parola_greca": "ἀμύγδαλον (amýgdalon)",
+   "legame_greco": "diretto: «mandorla», da cui «amigdala»"
+  },
+  {
+   "tappa": "3-9",
+   "voce": "l'ayran",
+   "legame": "L'ayran, latte fermentato con acqua e sale, è la bevanda dei Balcani e dell'Anatolia.",
+   "curiosita": "",
+   "segnalazione": "Da verificare che sia tipico della Macedonia antica; l'oxýgala è citato in autori greci.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Ateneo, Deipnosofisti"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "ayran drink",
+    "Pella Macedonia"
+   ],
+   "parola_greca": "ὀξύγαλα (oxýgala)",
+   "legame_greco": "diretto: «latte acido»"
+  },
+  {
+   "tappa": "3-10",
+   "voce": "l'acqua ferrata",
+   "legame": "L'acqua ferrata, in cui si tempera il ferro rovente, si beveva un tempo come tonico; nella fonderia estense si fondevano i cannoni.",
+   "curiosita": "",
+   "segnalazione": "Da verificare l'uso storico e il legame con la fonderia ferrarese.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Savonarola, Libreto (capitolo sull'acqua)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "iron quench water",
+    "fonderia Ferrara cannone"
+   ],
+   "parola_greca": "σίδηρος (sídēros)",
+   "legame_greco": "diretto: «ferro», da cui «siderurgia»"
+  },
+  {
+   "tappa": "3-11",
+   "voce": "l'infuso di rosa canina",
+   "legame": "La rosa canina è una pianta delle siepi; l'infuso dei frutti è una bevanda invernale.",
+   "curiosita": "",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Dioscoride, De materia medica I,123"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "rosehip tea",
+    "Castello Estense"
+   ],
+   "parola_greca": "κυνόσβατος (kynósbatos)",
+   "legame_greco": "diretto: «rovo del cane»"
+  },
+  {
+   "tappa": "3-12",
+   "voce": "l'acqua termale di Aquisgrana",
+   "legame": "Aquisgrana, la città di Carlo Magno, nasce attorno a sorgenti calde già usate dai Romani, le Aquae Granni.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «Aquisgrana»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Aachen thermal spring",
+    "Aachen Cathedral"
+   ],
+   "parola_greca": "θερμός (thermós)",
+   "legame_greco": "diretto: «caldo», da cui «termale»"
+  },
+  {
+   "tappa": "3-13",
+   "voce": "l'acqua di San Pellegrino",
+   "legame": "Leonardo da Vinci, nel 1509, sarebbe stato a bere le acque di San Pellegrino, in Lombardia.",
+   "curiosita": "",
+   "segnalazione": "Da verificare la visita di Leonardo; San Pellegrino è in provincia di Bergamo, non a Milano.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «San Pellegrino Terme»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "San Pellegrino Terme",
+    "Leonardo Milano"
+   ],
+   "parola_greca": "ἴασις (íasis)",
+   "legame_greco": "diretto: «guarigione»"
+  },
+  {
+   "tappa": "3-14",
+   "voce": "l'acqua di Montecatini",
+   "legame": "Le acque di Montecatini, a Pistoia, sono usate da secoli per la cura.",
+   "curiosita": "",
+   "segnalazione": "Montecatini non è Firenze: la vicinanza è l'unico legame. Da sostituire se si trova meglio.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «Montecatini Terme»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Montecatini Terme Tettuccio",
+    "Firenze lampredotto"
+   ],
+   "parola_greca": "ἀκρατής (akratḗs)",
+   "legame_greco": "indiretto: nessuna parola greca; «terme» da θερμός"
+  },
+  {
+   "tappa": "3-15",
+   "voce": "il nettare del Festino degli dèi",
+   "legame": "Il Festino degli dèi di Giovanni Bellini fu dipinto per il Camerino d'alabastro di Alfonso I d'Este.",
+   "curiosita": "Per i Greci il nettare e l'ambrosia davano l'immortalità agli dèi.",
+   "segnalazione": "Da verificare il dipinto e la sua collocazione; il nettare è nel mito, non nella tela.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «Bellini, Giovanni»",
+    "National Gallery of Art, Feast of the Gods"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Feast of the Gods Bellini",
+    "Camerino d'alabastro Ferrara"
+   ],
+   "parola_greca": "νέκταρ (néktar)",
+   "legame_greco": "diretto: la bevanda degli dèi; forse da *nek «morte» e *tar «vincere»"
+  }
+ ]
+}

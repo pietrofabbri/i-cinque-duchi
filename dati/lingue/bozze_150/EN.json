@@ -1,0 +1,1062 @@
+{
+ "lingua": "EN",
+ "oggetto": "musiche",
+ "voci": [
+  {
+   "tappa": "1-1",
+   "voce": "la salmodia paleocristiana",
+   "legame": "Voghenza (l'antica Vicohabentia) fu sede vescovile paleocristiana; nelle prime comunità cristiane i salmi erano il canto base della liturgia.",
+   "curiosita": "",
+   "segnalazione": "Legame generico: nessuna fonte aperta su canti specifici di Voghenza. Da sostituire se si trova qualcosa di più locale.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «salmodia»",
+    "Diocesi di Ferrara-Comacchio: storia di Voghenza"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Voghenza cattedrale",
+    "early Christian psalm singing"
+   ],
+   "aggancio_inglese": "«Psalm» viene dal greco psalmos, canto accompagnato da uno strumento a corda."
+  },
+  {
+   "tappa": "1-2",
+   "voce": "Guido d'Arezzo e il pentagramma",
+   "legame": "Guido, monaco benedettino, si formò nell'abbazia di Pomposa, dove mise a punto i principi della notazione su rigo, base della scrittura musicale moderna.",
+   "curiosita": "Lasciò Pomposa intorno al 1025 perché i confratelli resistevano alle sue novità.",
+   "segnalazione": "",
+   "fonti": [
+    "https://www.britannica.com/biography/Guido-dArezzo-Italian-musician"
+   ],
+   "fonti_da_controllare": [
+    "Grove: «Guido of Arezzo» (sillabe ut-re-mi: la pagina Britannica non le cita)"
+   ],
+   "verificata": true,
+   "termini_immagine": [
+    "Guido d'Arezzo",
+    "Abbazia di Pomposa"
+   ],
+   "aggancio_inglese": "In inglese il rigo musicale è «staff» (o «stave»): la «staff notation» di Guido."
+  },
+  {
+   "tappa": "1-3",
+   "voce": "i piffari della corte estense",
+   "legame": "La corte estense aveva piffari e trombetti stipendiati per feste e cerimonie pubbliche, anche davanti al palazzo comunale.",
+   "curiosita": "",
+   "segnalazione": "Il legame con la piazza è generico: la corte aveva musici di strumenti a fiato, ma non ho aperto un passo che li collochi al palazzo comunale.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Lockwood, «Music in Renaissance Ferrara», capitolo sull'organizzazione dei musici di corte"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Piffari rinascimentali",
+    "Ferrara Palazzo Municipale"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "1-4",
+   "voce": "Jacob Obrecht a Ferrara",
+   "legame": "Il compositore fiammingo Obrecht lavorò per Ercole I d'Este negli ultimi anni del suo patronato e morì a Ferrara, nel 1505.",
+   "curiosita": "Morì di peste a Ferrara.",
+   "segnalazione": "Nessun legame specifico con Piazza delle Erbe: è un legame con la città. Data e circostanza della morte da riconfermare.",
+   "fonti": [
+    "https://www.fulcrum.org/concern/monographs/bz60cw54g?locale=en"
+   ],
+   "fonti_da_controllare": [
+    "Grove: «Jacob Obrecht»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Jacob Obrecht",
+    "Obrecht Missa Sub tuum praesidium"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "1-5",
+   "voce": "il canto delle monache di clausura",
+   "legame": "Il monastero di Sant'Antonio in Polesine ospita monache di clausura: la loro giornata è scandita dal canto dell'Ufficio divino.",
+   "curiosita": "",
+   "segnalazione": "Legame generico con il luogo: nessuna fonte aperta. Da confermare presso il monastero.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Sito del monastero di Sant'Antonio in Polesine",
+    "Treccani: «Ufficio divino»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Sant'Antonio in Polesine",
+    "monastero Ferrara affreschi"
+   ],
+   "aggancio_inglese": "In inglese «plainchant» (o «plainsong»): il canto liturgico a una voce."
+  },
+  {
+   "tappa": "1-6",
+   "voce": "la danza di Domenico da Piacenza",
+   "legame": "Domenico da Piacenza fu maestro di ballo alla corte estense di Leonello e morì a Ferrara; scrisse il più antico trattato di danza con coreografie conservate.",
+   "curiosita": "Il trattato (c. 1450) descrive 18 balli con musica; ogni ballo unisce quattro tipi di danza (bassadanza, quaternaria, saltarello, piva).",
+   "segnalazione": "Fonte aperta non specialistica (sito divulgativo): da riconfermare su Grove o Lockwood.",
+   "fonti": [
+    "https://earlymusicmuse.com/domenico-da-piacenza/"
+   ],
+   "fonti_da_controllare": [
+    "Grove: «Domenico da Piacenza»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Domenico da Piacenza",
+    "De arte saltandi manoscritto"
+   ],
+   "aggancio_inglese": "«Ballet» viene dall'italiano «balletto», diminutivo di «ballo»."
+  },
+  {
+   "tappa": "1-7",
+   "voce": "il Concerto delle dame",
+   "legame": "Nella corte di Alfonso II, al Castello, un gruppo di cantanti professioniste (Peverara, Guarini, d'Arco, Molza) faceva parte della «musica secreta» del duca.",
+   "curiosita": "Luzzaschi, Wert e Marenzio scrissero musica per il concerto ferrarese.",
+   "segnalazione": "",
+   "fonti": [
+    "https://britannica.com/topic/concerto-delle-donne"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Concerto delle dame Ferrara",
+    "Castello Estense"
+   ],
+   "aggancio_inglese": "La parola inglese «concert» deriva dall'italiano «concerto» (da controllare su un dizionario etimologico)."
+  },
+  {
+   "tappa": "1-8",
+   "voce": "l'arcicembalo di Vicentino",
+   "legame": "Il teorico Nicola Vicentino lavorò a Ferrara per il cardinale Ippolito II d'Este e costruì uno strumento a tastiera con più suoni per ottava, ispirato ai generi della musica greca antica.",
+   "curiosita": "",
+   "segnalazione": "Legame con lo Studio (umanesimo, riscoperta dei Greci) plausibile ma non verificato; date e dettagli dello strumento da controllare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Nicola Vicentino»",
+    "Vicentino, «L'antica musica ridotta alla moderna prattica» (1555)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Nicola Vicentino",
+    "Archicembalo"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "1-9",
+   "voce": "il liuto di Pietrobono",
+   "legame": "Pietrobono dal Chitarrino fu il musicista di corte più celebre della Ferrara di Borso (e di Leonello ed Ercole I); a lui Lockwood dedica pagine nel capitolo su Borso.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [
+    "https://www.fulcrum.org/concern/monographs/bz60cw54g?locale=en"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Pietrobono dal Chitarrino",
+    "Rinascimento liuto"
+   ],
+   "aggancio_inglese": "«Lute» (liuto): vedi anche l'origine araba al-ʿūd."
+  },
+  {
+   "tappa": "1-10",
+   "voce": "la Missa Hercules Dux Ferrariae",
+   "legame": "Josquin des Prez scrisse questa messa in onore di Ercole I d'Este: Lockwood la discute nel capitolo sulle messe ferraresi.",
+   "curiosita": "Il tema della messa è ricavato dalle vocali del nome del duca (soggetto cavato, da confermare).",
+   "segnalazione": "",
+   "fonti": [
+    "https://www.fulcrum.org/concern/monographs/bz60cw54g?locale=en"
+   ],
+   "fonti_da_controllare": [
+    "Grove: «Josquin des Prez»"
+   ],
+   "verificata": true,
+   "termini_immagine": [
+    "Josquin des Prez",
+    "Missa Hercules Dux Ferrariae"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "1-11",
+   "voce": "il canto sinagogale ferrarese",
+   "legame": "La comunità ebraica ferrarese ha una lunga storia, ricordata dal MEIS; le sue sinagoghe avevano canti liturgici propri.",
+   "curiosita": "",
+   "segnalazione": "Da verificare: quali riti (italiano, ashkenazita, sefardita) avessero sinagoghe a Ferrara e se il canto sia documentato.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "MEIS, museo nazionale dell'ebraismo italiano e della Shoah",
+    "Treccani: «Ebrei a Ferrara»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Sinagoga di Ferrara",
+    "MEIS Ferrara"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "1-12",
+   "voce": "i musicisti di Schifanoia",
+   "legame": "Il Salone dei Mesi di Schifanoia, voluto da Borso, mostra scene di corte e di festa; vi compaiono suonatori.",
+   "curiosita": "",
+   "segnalazione": "Da verificare quale mese raffiguri quali strumenti: non ho aperto una fonte.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Pinacoteca / Musei di Arte Antica Ferrara: scheda del Salone dei Mesi"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Palazzo Schifanoia Salone dei Mesi",
+    "Schifanoia musicisti affresco"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "1-13",
+   "voce": "il Miserere di Josquin",
+   "legame": "Josquin compose il Salmo 51 per Ercole I a Ferrara; è un salmo penitenziale, adatto al luogo della Certosa, nata come luogo di sepoltura estense.",
+   "curiosita": "Savonarola, nato a Ferrara, scrisse una meditazione sullo stesso salmo (da confermare).",
+   "segnalazione": "Il legame con la Certosa è indiretto; data (c. 1503-1504) e legame con Savonarola da confermare.",
+   "fonti": [
+    "https://www.fulcrum.org/concern/monographs/bz60cw54g?locale=en"
+   ],
+   "fonti_da_controllare": [
+    "Grove: «Josquin des Prez»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Josquin Miserere",
+    "Certosa di Ferrara"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "1-14",
+   "voce": "i tamburini del Palio",
+   "legame": "Nel Palio di Ferrara, in Piazza Ariostea (Addizione Erculea), il corteo storico è accompagnato da tamburini e chiarine.",
+   "curiosita": "",
+   "segnalazione": "Da confermare sul sito del Palio di San Giorgio.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Sito ufficiale del Palio di Ferrara"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Palio di Ferrara tamburini",
+    "Piazza Ariostea"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "1-15",
+   "voce": "i madrigali sull'Orlando furioso",
+   "legame": "Ariosto è sepolto nella biblioteca che porta il suo nome (Palazzo Paradiso); le ottave del suo poema furono musicate molto nel Cinquecento.",
+   "curiosita": "",
+   "segnalazione": "Mancano titoli precisi: cercare un madrigale su testo del Furioso (ad esempio di Cipriano de Rore) in Grove.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Madrigal»",
+    "Biblioteca Ariostea, scheda su Ariosto"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Orlando furioso",
+    "Biblioteca Ariostea"
+   ],
+   "aggancio_inglese": "John Harington tradusse l'«Orlando furioso» in inglese nel 1591."
+  },
+  {
+   "tappa": "1-16",
+   "voce": "le musiche per le nozze di Lucrezia Borgia",
+   "legame": "Le nozze di Lucrezia Borgia con Alfonso d'Este (1502) furono accompagnate da feste, commedie e musica; Lucrezia è sepolta nel monastero del Corpus Domini.",
+   "curiosita": "",
+   "segnalazione": "Da confermare quali musiche: Lockwood si ferma al 1505, ma il capitolo su feste e teatro va controllato.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Lockwood, capitolo «Music for Festivities and Theater»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Lucrezia Borgia",
+    "Corpus Domini Ferrara"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "1-17",
+   "voce": "la musica per le commedie di Ariosto",
+   "legame": "Ariosto fece rappresentare a corte le sue commedie, a partire dalla Cassaria (1508); gli spettacoli di corte prevedevano musica.",
+   "curiosita": "",
+   "segnalazione": "Il tipo di musica negli spettacoli ariosteschi non è verificato.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: «Ariosto, Ludovico»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "La Cassaria Ariosto",
+    "Casa di Ariosto Ferrara"
+   ],
+   "aggancio_inglese": "George Gascoigne tradusse «I Suppositi» come «Supposes» (1566): fonte di una parte della «Bisbetica domata» di Shakespeare."
+  },
+  {
+   "tappa": "1-18",
+   "voce": "Ferrara sotto le stelle",
+   "legame": "Dal cortile del Castello estense (Largo Castello) si tiene ogni estate la rassegna di concerti di musica contemporanea.",
+   "curiosita": "Nel 2026 è alla trentesima edizione.",
+   "segnalazione": "",
+   "fonti": [
+    "https://emiliaromagnaturismo.it/en/events/ferrara-sotto-le-stelle"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Ferrara sotto le stelle",
+    "Castello Estense cortile"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "1-19",
+   "voce": "Antoine Brumel a Ferrara",
+   "legame": "Il compositore francese Brumel fu maestro della cappella di Alfonso I d'Este dopo Obrecht, intorno al 1505-1510.",
+   "curiosita": "",
+   "segnalazione": "Legame con Palazzo Paradiso generico. Date da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Antoine Brumel»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Antoine Brumel",
+    "Missa Et ecce terrae motus"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "1-20",
+   "voce": "i madrigali di Luzzaschi",
+   "legame": "Luzzasco Luzzaschi, organista di corte, scrisse madrigali per il concerto delle dame, cantato al Castello.",
+   "curiosita": "Pubblicò i madrigali per soprani nel 1601 (data da confermare).",
+   "segnalazione": "",
+   "fonti": [
+    "https://britannica.com/topic/concerto-delle-donne"
+   ],
+   "fonti_da_controllare": [
+    "Grove: «Luzzasco Luzzaschi»"
+   ],
+   "verificata": true,
+   "termini_immagine": [
+    "Luzzasco Luzzaschi",
+    "Madrigali per cantare et sonare"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "1-21",
+   "voce": "il Combattimento di Tancredi e Clorinda",
+   "legame": "Torquato Tasso fu rinchiuso nell'ospedale di Sant'Anna (1579-1586); Monteverdi musicò un episodio della sua «Gerusalemme liberata».",
+   "curiosita": "Il Combattimento è del 1624.",
+   "segnalazione": "Data e canto del poema da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Il combattimento di Tancredi e Clorinda»",
+    "Treccani: «Tasso, Torquato»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ospedale di Sant'Anna Ferrara",
+    "Monteverdi Combattimento"
+   ],
+   "aggancio_inglese": "Edward Fairfax tradusse la «Gerusalemme liberata» in inglese nel 1600."
+  },
+  {
+   "tappa": "1-22",
+   "voce": "il Jazz Club Ferrara",
+   "legame": "Ha sede nel Torrione San Giovanni, un bastione delle mura rinascimentali.",
+   "curiosita": "Il club nacque nel 1977 e ha ospitato Miles Davis, Ornette Coleman e la Count Basie Big Band.",
+   "segnalazione": "",
+   "fonti": [
+    "https://www.ferraraterraeacqua.it/en/ferrara/enjoy-and-relax/leisure-time/music-and-dance/jazz-club"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Jazz Club Ferrara",
+    "Torrione San Giovanni"
+   ],
+   "aggancio_inglese": "«Jazz» è una parola inglese americana."
+  },
+  {
+   "tappa": "1-23",
+   "voce": "il Ferrara Buskers Festival",
+   "legame": "Ogni anno gli artisti di strada di tutto il mondo suonano nel centro storico di Ferrara.",
+   "curiosita": "Nel 2026 è alla 39ª edizione (da confermare).",
+   "segnalazione": "Il legame con il vicolo è generico (le piazze indicate dalla fonte sono Castello e Quadrivio degli Angeli).",
+   "fonti": [
+    "https://www.ferrarabuskers.com/en/about"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": false,
+   "termini_immagine": [
+    "Ferrara Buskers Festival",
+    "busker Ferrara"
+   ],
+   "aggancio_inglese": "«Busker» è un termine inglese; «to busk» significa suonare per strada."
+  },
+  {
+   "tappa": "1-24",
+   "voce": "le toccate di Frescobaldi",
+   "legame": "Girolamo Frescobaldi nacque a Ferrara nel 1583 e fu uno dei grandi organisti del Seicento.",
+   "curiosita": "",
+   "segnalazione": "Legame con Territorio del Po e Certosa generico: è un legame con la città. Studi con Luzzaschi da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Girolamo Frescobaldi»",
+    "Treccani: «Frescobaldi, Girolamo»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Girolamo Frescobaldi",
+    "Fiori musicali"
+   ],
+   "aggancio_inglese": "«Toccata» è un termine italiano usato nei programmi inglesi di concerto."
+  },
+  {
+   "tappa": "1-25",
+   "voce": "Abbado e Ferrara Musica",
+   "legame": "Claudio Abbado creò Ferrara Musica e portò la Chamber Orchestra of Europe al Teatro Comunale (che oggi porta il suo nome).",
+   "curiosita": "I primi concerti furono nell'aprile 1989; Abbado tornò ogni anno fino al 1998 e chiuse con il «Don Giovanni» di Mozart.",
+   "segnalazione": "",
+   "fonti": [
+    "https://www.coeurope.org/?p=294",
+    "https://www.ferraraterraeacqua.it/en/ferrara/discover-the-area/art-and-culture/villas-historical-residences-and-theatres/municipal-theater"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Claudio Abbado Ferrara",
+    "Teatro Comunale di Ferrara"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "1-26",
+   "voce": "il Canto degli Italiani",
+   "legame": "L'inno di Mameli e Novaro (1847) è il canto simbolo del Risorgimento, raccontato nei musei del Risorgimento.",
+   "curiosita": "",
+   "segnalazione": "Legame generico con il museo di Ferrara.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: «Inno di Mameli»",
+    "Museo del Risorgimento e della Resistenza di Ferrara"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Canto degli Italiani",
+    "Museo del Risorgimento Ferrara"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "1-27",
+   "voce": "i canti delle mondine",
+   "legame": "Nelle terre di bonifica del Ferrarese e del Delta del Po si coltivava il riso; le mondine cantavano durante il lavoro.",
+   "curiosita": "",
+   "segnalazione": "Da confermare la presenza delle mondine nel Ferrarese.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "UNESCO / Treccani: «Mondine»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Mondine risaia",
+    "Delta del Po riso"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "1-28",
+   "voce": "la musica dei Finzi-Contini",
+   "legame": "Il film «Il giardino dei Finzi-Contini» (1970) è tratto dal romanzo di Bassani, ambientato a Ferrara: la colonna sonora è di Manuel De Sica.",
+   "curiosita": "Il film vinse l'Oscar per il film straniero.",
+   "segnalazione": "Compositore e premio da confermare. Solo titoli dal film.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Archivio del film",
+    "Treccani: «Il giardino dei Finzi-Contini»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Il giardino dei Finzi-Contini",
+    "Cimitero ebraico Ferrara"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "1-29",
+   "voce": "Gesualdo a Ferrara",
+   "legame": "Carlo Gesualdo da Venosa sposò Leonora d'Este a Ferrara (1594) e vi conobbe i madrigalisti della corte.",
+   "curiosita": "",
+   "segnalazione": "Legame con Vicolo del Chiozzino generico. Date da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Carlo Gesualdo»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Carlo Gesualdo",
+    "Gesualdo madrigali"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "1-30",
+   "voce": "le laude di Savonarola",
+   "legame": "Girolamo Savonarola, nato a Ferrara nel 1452, ispirò canti di lauda cantati dai suoi seguaci.",
+   "curiosita": "",
+   "segnalazione": "Legame con «tutta la mappa» debole; non è chiaro quali laude siano sue.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: «Savonarola, Girolamo»",
+    "Grove: «Lauda»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Savonarola",
+    "laude spirituali"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "2-1",
+   "voce": "lo jodel tirolese",
+   "legame": "Il Tirolo e l'Alto Adige hanno una tradizione di canto alpino con il jodel.",
+   "curiosita": "",
+   "segnalazione": "Legame con il museo di Ötzi assente: legame con il territorio.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Yodeling»",
+    "Treccani: «Jodel»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Jodel Tirolo",
+    "Museo archeologico dell'Alto Adige"
+   ],
+   "aggancio_inglese": "«Yodel» è una parola inglese presa dal tedesco «jodeln»."
+  },
+  {
+   "tappa": "2-2",
+   "voce": "la scala pitagorica",
+   "legame": "Pitagora si stabilì a Crotone: la tradizione gli attribuisce gli intervalli musicali legati a rapporti di numeri interi.",
+   "curiosita": "",
+   "segnalazione": "Attribuzione tradizionale, da confermare su Britannica.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Pythagoras»",
+    "Grove: «Pythagorean intonation»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Pitagora Crotone",
+    "Pythagorean tuning"
+   ],
+   "aggancio_inglese": "Nel «Mercante di Venezia» (atto V, scena 1) si parla della musica delle sfere."
+  },
+  {
+   "tappa": "2-3",
+   "voce": "il Carme secolare di Orazio",
+   "legame": "Orazio compose il carme per i Giochi secolari del 17 a.C.: un coro di giovani cantò sul Palatino e poi sul Campidoglio.",
+   "curiosita": "",
+   "segnalazione": "Dettagli del rito da confermare su Orazio e sulla iscrizione dei Ludi.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Orazio, Carmen saeculare (Perseus)",
+    "CIL VI 32323"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Carmen saeculare Orazio",
+    "Campidoglio"
+   ],
+   "aggancio_inglese": "«Secular» deriva dal latino «saeculum»."
+  },
+  {
+   "tappa": "2-4",
+   "voce": "la musica secondo Cassiodoro",
+   "legame": "Cassiodoro fondò il monastero di Vivarium a Squillace; nelle Institutiones trattò anche di musica.",
+   "curiosita": "",
+   "segnalazione": "Passo preciso da controllare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Cassiodoro, Institutiones II, 5",
+    "Cassiodoro, Variae II, 40"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Vivarium Squillace",
+    "Cassiodoro"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "2-5",
+   "voce": "il Carme degli Arvali",
+   "legame": "I Fratelli Arvali di Roma cantavano un inno rituale in latino arcaico, conservato in un'iscrizione del 218 d.C.",
+   "curiosita": "",
+   "segnalazione": "Datazione dell'iscrizione da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: «Arvali»",
+    "CIL VI 2104"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Carmen Arvale",
+    "Fratres Arvales"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "2-6",
+   "voce": "Senofane e i rapsodi",
+   "legame": "Senofane di Colofone, fondatore della scuola di Elea, recitava versi propri come i rapsodi.",
+   "curiosita": "",
+   "segnalazione": "Passo di Diogene Laerzio (IX 18) da riaprire.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Diogene Laerzio IX 18",
+    "Britannica: «Xenophanes»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Elea Velia",
+    "Senofane"
+   ],
+   "aggancio_inglese": "«Rhapsody» viene dal greco: pensa a «Rhapsody in Blue»."
+  },
+  {
+   "tappa": "2-7",
+   "voce": "i canti conviviali ricordati da Cicerone",
+   "legame": "Nelle Tusculanae Cicerone ricorda gli antichi canti ai banchetti, citando Catone; la sua villa era a Tuscolo.",
+   "curiosita": "",
+   "segnalazione": "Passo preciso (Tusc. 4.3) da riaprire.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Cicerone, Tusculanae IV, 3 (Perseus)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Tuscolo",
+    "Cicerone Tusculanae"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "2-8",
+   "voce": "il canto ambrosiano",
+   "legame": "Sant'Ambrogio, vescovo di Milano, introdusse inni cantati a cori alterni; il rito ambrosiano ha ancora un canto proprio.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Ambrosian chant»",
+    "Britannica: «Saint Ambrose»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Basilica di Sant'Ambrogio",
+    "Ambrosian chant"
+   ],
+   "aggancio_inglese": "«Hymn» è la parola inglese per «inno»."
+  },
+  {
+   "tappa": "2-9",
+   "voce": "le trombe dell'esercito romano",
+   "legame": "Roma usava tuba, cornu e buccina per i segnali militari.",
+   "curiosita": "",
+   "segnalazione": "Legame con la Curia generico.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Tuba»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Cornu romano",
+    "Curia Iulia"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "2-10",
+   "voce": "le scuole di danza di Scipione",
+   "legame": "Scipione Emiliano, nel II secolo a.C., criticò le scuole di danza per i giovani romani: epoca dei Gracchi.",
+   "curiosita": "",
+   "segnalazione": "Passo di Macrobio, Saturnalia 3.14, da riaprire.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Macrobio, Saturnalia III, 14"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Danza romana",
+    "Villa dei Gracchi"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "2-11",
+   "voce": "la zampogna del Sud Italia",
+   "legame": "Il Cilento e la Campania hanno una lunga tradizione di zampogna.",
+   "curiosita": "",
+   "segnalazione": "Legame con Elea debole: da verificare se la zampogna è documentata nel Cilento.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "UNESCO / Treccani: «Zampogna»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Zampogna",
+    "Velia Elea"
+   ],
+   "aggancio_inglese": "In inglese è «bagpipe»."
+  },
+  {
+   "tappa": "2-12",
+   "voce": "Guillaume Du Fay a Ferrara",
+   "legame": "Nel capitolo sulla Ferrara degli anni Trenta del Quattrocento Lockwood tratta di Feragut e di Du Fay, alla corte di Niccolò III.",
+   "curiosita": "",
+   "segnalazione": "Permanenza di Du Fay a Ferrara da riconfermare su Grove.",
+   "fonti": [
+    "https://www.fulcrum.org/concern/monographs/bz60cw54g?locale=en"
+   ],
+   "fonti_da_controllare": [
+    "Grove: «Guillaume Du Fay»"
+   ],
+   "verificata": true,
+   "termini_immagine": [
+    "Guillaume Du Fay",
+    "Ferrara Niccolò III"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "2-13",
+   "voce": "il sistro di Iside",
+   "legame": "A Roma il culto di Iside si diffuse con il sistro, strumento a sonagli.",
+   "curiosita": "",
+   "segnalazione": "Legame con Roma generico.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Sistrum»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Sistro egizio",
+    "Iseo Campense"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "2-14",
+   "voce": "Francesco Landini",
+   "legame": "Landini, organista cieco fiorentino del Trecento, è tra i maggiori compositori dell'Ars nova italiana.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Francesco Landini»",
+    "Britannica: «Francesco Landini»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Francesco Landini",
+    "Codice Squarcialupi"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "2-15",
+   "voce": "i musicisti della Cappella Palatina",
+   "legame": "Il soffitto ligneo della Cappella Palatina di Palermo mostra scene di corte con musicisti e un'arpista.",
+   "curiosita": "",
+   "segnalazione": "Strumenti specifici (liuto, oud) non confermati dalla fonte.",
+   "fonti": [
+    "https://smarthistory.org/cappella-palatina"
+   ],
+   "fonti_da_controllare": [
+    "Museo / Smarthistory: strumenti del soffitto"
+   ],
+   "verificata": true,
+   "termini_immagine": [
+    "Cappella Palatina soffitto",
+    "Palermo Cappella Palatina musicisti"
+   ],
+   "aggancio_inglese": "«Lute» (liuto) deriva dall'arabo «al-ʿūd»."
+  },
+  {
+   "tappa": "2-16",
+   "voce": "la tarantella",
+   "legame": "La danza si chiama come Taranto o come la tarantola.",
+   "curiosita": "",
+   "segnalazione": "Etimologia incerta.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Tarantella»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Tarantella",
+    "Taranto"
+   ],
+   "aggancio_inglese": "In inglese sono usate «tarantella» e «tarantula»."
+  },
+  {
+   "tappa": "2-17",
+   "voce": "Nerone citaredo",
+   "legame": "Nerone si esibì come cantante e citaredo; istituì i Neronia nel 60.",
+   "curiosita": "",
+   "segnalazione": "Passi di Svetonio e Tacito da riaprire.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Svetonio, Nero 20-25",
+    "Tacito, Annales XIV, 14-15"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Nerone citaredo",
+    "Cithara"
+   ],
+   "aggancio_inglese": "«Guitar» deriva dal greco «kithara»."
+  },
+  {
+   "tappa": "2-18",
+   "voce": "il Carme dei Salii",
+   "legame": "I Salii, sacerdoti di Marte, danzavano e cantavano un inno già incomprensibile ai Romani.",
+   "curiosita": "",
+   "segnalazione": "Passo di Quintiliano da riaprire.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Quintiliano I, 6, 40"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Salii Roma",
+    "Carmen Saliare"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "2-19",
+   "voce": "il doppio flauto etrusco",
+   "legame": "Gli Etruschi suonavano il doppio flauto, raffigurato nelle tombe.",
+   "curiosita": "",
+   "segnalazione": "Manca il reperto chiusino preciso.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Museo archeologico di Chiusi"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Etruscan music aulos",
+    "Tomba della Scimmia Chiusi"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "2-20",
+   "voce": "lo sciopero dei flautisti di Roma",
+   "legame": "Nel 311 a.C. i tibicines lasciarono Roma e si rifugiarono a Tivoli.",
+   "curiosita": "",
+   "segnalazione": "Passo di Livio IX, 30 da riaprire.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Livio IX, 30"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Tibicines Roma",
+    "Tibia romana"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "2-21",
+   "voce": "Tarquinia Molza",
+   "legame": "Tarquinia Molza, modenese, fu cantante e letterata del concerto delle dame di Ferrara.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [
+    "https://britannica.com/topic/concerto-delle-donne"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Tarquinia Molza",
+    "Concerto delle donne"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "2-22",
+   "voce": "Vivaldi e la Pietà",
+   "legame": "Vivaldi insegnò all'Ospedale della Pietà di Venezia.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Antonio Vivaldi»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Vivaldi Venezia",
+    "Ospedale della Pietà"
+   ],
+   "aggancio_inglese": "«The Four Seasons» è il titolo inglese delle Quattro stagioni."
+  },
+  {
+   "tappa": "2-23",
+   "voce": "il culto di Cibele",
+   "legame": "Nel 204 a.C. il Senato fece venire a Roma la Magna Mater, con timpani e cimbali.",
+   "curiosita": "",
+   "segnalazione": "Passo di Livio XXIX, 10-14 da riaprire.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Livio XXIX, 10-14"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Cibele Roma",
+    "Tympanum"
+   ],
+   "aggancio_inglese": "«Timpani» è una parola italiana usata in inglese."
+  },
+  {
+   "tappa": "2-24",
+   "voce": "l'Euridice di Peri",
+   "legame": "Nel 1600 a Firenze fu rappresentata la prima opera conservata.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Jacopo Peri»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Jacopo Peri Euridice",
+    "Camerata fiorentina"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "2-25",
+   "voce": "le musiche per i Menaechmi",
+   "legame": "Nel 1486 Ercole I fece rappresentare i Menaechmi di Plauto con musica e intermedi.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Lockwood, «Music for Festivities and Theater»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Menaechmi Plauto",
+    "Ercole I d'Este"
+   ],
+   "aggancio_inglese": "La «Commedia degli errori» di Shakespeare deriva dai «Menaechmi»."
+  },
+  {
+   "tappa": "2-26",
+   "voce": "Alfonso della Viola",
+   "legame": "Alfonso della Viola, ferrarese, musicò il «Sacrificio» di Beccari (1554).",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Alfonso della Viola»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Alfonso della Viola",
+    "Il Sacrificio Beccari"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "2-27",
+   "voce": "le musiche per Eleonora d'Aragona",
+   "legame": "Nelle nozze del 1473 con Ercole I, Eleonora fu accolta con feste e musica.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Lockwood, capitolo su Ercole I"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Eleonora d'Aragona",
+    "Ercole I d'Este"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "2-28",
+   "voce": "l'Aminta di Tasso",
+   "legame": "L'Aminta fu rappresentata a Ferrara nel 1573.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: «Aminta»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Aminta Tasso",
+    "Belvedere Ferrara"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "2-29",
+   "voce": "il Pastor fido",
+   "legame": "Il Pastor fido di Guarini, ferrarese, fu musicato in molti madrigali.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: «Il pastor fido»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Il pastor fido",
+    "Guarini"
+   ],
+   "aggancio_inglese": "Richard Fanshawe lo tradusse in inglese nel 1647."
+  },
+  {
+   "tappa": "2-30",
+   "voce": "Giaches de Wert",
+   "legame": "Wert scrisse musica per il concerto ferrarese.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [
+    "https://britannica.com/topic/concerto-delle-donne"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Giaches de Wert",
+    "Madrigali"
+   ],
+   "aggancio_inglese": ""
+  }
+ ]
+}
