@@ -746,7 +746,7 @@
   },
   {
    "tappa": "2-11",
-   "voce": "il vino mescolato del cratere di Senofane",
+   "voce": "il vino del cratere di Senofane",
    "legame": "Il filosofo Senofane di Colofone insegnò a Elea; un suo frammento descrive il simposio con il cratere e le coppe.",
    "curiosita": "I Greci diluivano il vino con acqua, in genere tre parti d'acqua e una di vino.",
    "segnalazione": "Alcol: solo come usanza greca; da verificare il frammento 1 di Senofane.",
@@ -1358,8 +1358,8 @@
     "Montecatini Terme Tettuccio",
     "Firenze lampredotto"
    ],
-   "parola_greca": "ἀκρατής (akratḗs)",
-   "legame_greco": "indiretto: nessuna parola greca; «terme» da θερμός"
+   "parola_greca": "ὑγίεια (hygíeia)",
+   "legame_greco": "diretto: «salute», da cui «igiene»; Igea è la dea della salute"
   },
   {
    "tappa": "3-15",
@@ -1379,6 +1379,1344 @@
    ],
    "parola_greca": "νέκταρ (néktar)",
    "legame_greco": "diretto: la bevanda degli dèi; forse da *nek «morte» e *tar «vincere»"
+  },
+  {
+   "tappa": "3-16",
+   "voce": "il succo d'uva del torchio",
+   "legame": "Gutenberg, a Magonza, adattò il torchio a vite dei vinai per la sua macchina da stampa.",
+   "curiosita": "Il torchio da vino diventò il torchio da stampa.",
+   "segnalazione": "Da verificare il legame fra torchio da vino e stampa su una fonte di storia della tecnica.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «Gutenberg»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "wine press Gutenberg",
+    "Mainz Gutenberg Museum"
+   ],
+   "parola_greca": "ληνός (lēnós)",
+   "legame_greco": "diretto: «tino, torchio da vino»"
+  },
+  {
+   "tappa": "3-17",
+   "voce": "il succo di melagrana",
+   "legame": "La melagrana è un frutto delle corti rinascimentali; il succo è una bevanda antica.",
+   "curiosita": "Nel mito Persefone, mangiando i chicchi di melagrana, fu costretta a tornare negli Inferi ogni anno.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Inno omerico a Demetra 371-374"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "pomegranate juice",
+    "Ferrara cappella Castello"
+   ],
+   "parola_greca": "ῥοιά (rhoiá)",
+   "legame_greco": "diretto: «melagrana»; Persefone ne mangiò i chicchi"
+  },
+  {
+   "tappa": "3-18",
+   "voce": "la horchata",
+   "legame": "La horchata è la bevanda spagnola di latte di chufa o di orzo; Alcalá fu città di studio e di Cervantes.",
+   "curiosita": "",
+   "segnalazione": "Da verificare il legame con Alcalá; la horchata è tipica di Valencia.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Real Academia Española, voce «horchata»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "horchata",
+    "Alcalá de Henares"
+   ],
+   "parola_greca": "κριθή (krithḗ)",
+   "legame_greco": "indiretto: horchata viene dal latino hordeum, «orzo»; il greco dice krithḗ"
+  },
+  {
+   "tappa": "3-19",
+   "voce": "il Rivella",
+   "legame": "Il Rivella, bibita svizzera a base di siero di latte, è nato nel 1952 a Rothrist, in Svizzera.",
+   "curiosita": "",
+   "segnalazione": "Rothrist non è Basilea: il legame è svizzero, non cittadino. Da sostituire se si trova meglio.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Rivella, storia (sito ufficiale)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Rivella bottle",
+    "Basel Münster"
+   ],
+   "parola_greca": "ὀρρός (orrhós)",
+   "legame_greco": "diretto: «siero»"
+  },
+  {
+   "tappa": "3-20",
+   "voce": "il succo d'albicocca",
+   "legame": "L'albicocca è un frutto di corte; il nome viene dal latino praecoquum, «che matura presto».",
+   "curiosita": "Albicocca arriva dal greco praikókion attraverso l'arabo al-barqūq.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «albicocca»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "apricot juice",
+    "Ferrara Camerino"
+   ],
+   "parola_greca": "πραικόκιον (praikókion)",
+   "legame_greco": "diretto: da cui «albicocca», via l'arabo"
+  },
+  {
+   "tappa": "3-21",
+   "voce": "l'Apfelschorle",
+   "legame": "L'Apfelschorle, succo di mela con acqua frizzante, è la bevanda analcolica più bevuta in Germania.",
+   "curiosita": "",
+   "segnalazione": "Nessun legame specifico con Aquisgrana.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «mela»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Apfelschorle",
+    "Aachen"
+   ],
+   "parola_greca": "μῆλον (mêlon)",
+   "legame_greco": "diretto: «mela»"
+  },
+  {
+   "tappa": "3-22",
+   "voce": "lo sciroppo di cipolla",
+   "legame": "Lo sciroppo di cipolla è un rimedio popolare per la tosse; Certaldo è la patria della cipolla.",
+   "curiosita": "Frate Cipolla è un personaggio del Decameron di Boccaccio, che morì a Certaldo.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Rimedio popolare, non citato da Boccaccio.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «Certaldo»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "onion syrup",
+    "Certaldo"
+   ],
+   "parola_greca": "κρόμμυον (krómmyon)",
+   "legame_greco": "diretto: «cipolla»"
+  },
+  {
+   "tappa": "3-23",
+   "voce": "l'acqua delle fontane Wallace",
+   "legame": "Le fontane Wallace, offerte a Parigi da Richard Wallace dal 1872, danno acqua potabile.",
+   "curiosita": "",
+   "segnalazione": "Da verificare la data e il fondatore.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Eau de Paris, storia delle fontane Wallace"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Wallace fountain Paris",
+    "fontaine Wallace"
+   ],
+   "parola_greca": "κρήνη (krḗnē)",
+   "legame_greco": "diretto: «fonte, fontana»"
+  },
+  {
+   "tappa": "3-24",
+   "voce": "il Kinderpunsch",
+   "legame": "Il Kinderpunsch è il punch analcolico che si beve al mercatino di Natale di Norimberga.",
+   "curiosita": "Punch significa «cinque», come i cinque ingredienti originali.",
+   "segnalazione": "Da verificare il Kinderpunsch al Christkindlesmarkt.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Oxford English Dictionary, voce «punch»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Kinderpunsch",
+    "Christkindlesmarkt Nürnberg"
+   ],
+   "parola_greca": "πέντε (pénte)",
+   "legame_greco": "diretto: «cinque»; punch viene dall'hindi pañc, «cinque», dalla stessa radice indoeuropea"
+  },
+  {
+   "tappa": "3-25",
+   "voce": "il caffè del Florian",
+   "legame": "Il Caffè Florian, in piazza San Marco, aperto nel 1720, è considerato uno dei caffè più antichi ancora in attività; il caffè entrò in Europa attraverso i commerci di Venezia.",
+   "curiosita": "",
+   "segnalazione": "Da verificare la data di apertura e il primato su una fonte di riferimento.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «caffè»",
+    "Caffè Florian, storia (sito ufficiale)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Caffè Florian Venezia",
+    "Piazza San Marco"
+   ],
+   "parola_greca": "καφές (kafés)",
+   "legame_greco": "indiretto: parola greca moderna presa dal turco"
+  },
+  {
+   "tappa": "3-26",
+   "voce": "la cioccolata di White's",
+   "legame": "White's Chocolate House, a St James's, fu aperta a Londra nel 1693.",
+   "curiosita": "",
+   "segnalazione": "Da verificare la data.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Oxford Dictionary of National Biography, «White's»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "White's Chocolate House",
+    "St James's Street"
+   ],
+   "parola_greca": "θεοβρῶμα (theobróma)",
+   "legame_greco": "indiretto: nome scientifico del cacao"
+  },
+  {
+   "tappa": "3-27",
+   "voce": "il caffè del Procope",
+   "legame": "Il Café Procope, aperto a Parigi nel 1686, fu frequentato da Voltaire e dagli Enciclopedisti.",
+   "curiosita": "",
+   "segnalazione": "Da verificare la data.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «Procope»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Café Procope Paris",
+    "Voltaire coffee"
+   ],
+   "parola_greca": "καφές (kafés)",
+   "legame_greco": "indiretto: parola greca moderna presa dal turco"
+  },
+  {
+   "tappa": "3-28",
+   "voce": "il bicerin",
+   "legame": "Il bicerin, caffè con cioccolata e crema, nasce a Torino nel 1763 al Caffè al Bicerin.",
+   "curiosita": "Il nome deriva da «bicchierino».",
+   "segnalazione": "Da verificare la data.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Torino Musei, storia del bicerin"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "bicerin Torino",
+    "Caffè al Bicerin"
+   ],
+   "parola_greca": "ποτήριον (potḗrion)",
+   "legame_greco": "diretto: «bicchiere»; πίνω «bere» ha la radice indoeuropea di potus"
+  },
+  {
+   "tappa": "3-29",
+   "voce": "l'acqua Marcia",
+   "legame": "Plinio il Vecchio loda l'acqua Marcia come la migliore di Roma per freschezza e salubrità.",
+   "curiosita": "",
+   "segnalazione": "Da verificare il passo in Plinio, Naturalis Historia XXXI,41.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Plinio, Naturalis Historia XXXI,41"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Aqua Marcia aqueduct",
+    "Curia Roma"
+   ],
+   "parola_greca": "ψυχρός (psychrós)",
+   "legame_greco": "diretto: «freddo», da cui «psicrometro»"
+  },
+  {
+   "tappa": "3-30",
+   "voce": "l'acqua del Mincio",
+   "legame": "Virgilio, nato presso Mantova, canta il Mincio nelle Georgiche.",
+   "curiosita": "",
+   "segnalazione": "Da verificare il passo (Georgiche III,14-15).",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Virgilio, Georgiche III,14-15"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Mincio Mantova",
+    "Virgilio Mantova"
+   ],
+   "parola_greca": "ῥεῦμα (rheûma)",
+   "legame_greco": "diretto: «corrente», da cui «reumatismo»"
+  },
+  {
+   "tappa": "4-1",
+   "voce": "la birra di Ninkasi",
+   "legame": "Un inno sumerico alla dea Ninkasi è una ricetta della birra; Uruk è una delle prime città sumere.",
+   "curiosita": "La parola greca sikera si trova nel Nuovo Testamento, per «bevanda forte».",
+   "segnalazione": "Alcol: solo come storia dell'agricoltura e della scrittura; il testo è sumerico.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Enciclopedia Britannica, «Ninkasi»",
+    "ETCSL, Hymn to Ninkasi"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ninkasi hymn tablet",
+    "Uruk ziggurat"
+   ],
+   "parola_greca": "σίκερα (síkera)",
+   "legame_greco": "diretto: prestito greco dall'accadico šikaru, «birra»"
+  },
+  {
+   "tappa": "4-2",
+   "voce": "il tamarindo del Cairo",
+   "legame": "Il tamarindo, bibita invernale del Cairo, arrivava con le carovane dall'India.",
+   "curiosita": "",
+   "segnalazione": "Da verificare il legame con le carovane del Cairo.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «tamarindo»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "tamarind drink Cairo",
+    "Cairo caravan"
+   ],
+   "parola_greca": "φοῖνιξ (phoînix)",
+   "legame_greco": "indiretto: «dattero»; tamarindo viene dall'arabo tamr hindī, «dattero indiano»"
+  },
+  {
+   "tappa": "4-3",
+   "voce": "il tè Fuzhuan di Jingyang",
+   "legame": "Il tè Fuzhuan è un tè scuro compresso in mattoni, prodotto a Jingyang, nei dintorni di Xianyang.",
+   "curiosita": "",
+   "segnalazione": "Da verificare l'origine a Jingyang.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "UNESCO, tè e tradizioni cinesi"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Fuzhuan brick tea",
+    "Xianyang"
+   ],
+   "parola_greca": "τσάι (tsái)",
+   "legame_greco": "indiretto: parola greca moderna dal cinese"
+  },
+  {
+   "tappa": "4-4",
+   "voce": "la birra egizia",
+   "legame": "Nel villaggio degli artigiani di Deir el-Medina, a Tebe, gli operai erano pagati in pane e birra.",
+   "curiosita": "Gli antichi Egizi chiamavano la birra heneqet.",
+   "segnalazione": "Alcol leggero: solo come storia del lavoro. Da verificare che «Tebe» sia quella egizia.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica, «Deir el-Medina»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Deir el-Medina",
+    "Egyptian beer"
+   ],
+   "parola_greca": "ζῦθος (zýthos)",
+   "legame_greco": "diretto: nome greco della birra d'orzo egizia"
+  },
+  {
+   "tappa": "4-5",
+   "voce": "il lassi",
+   "legame": "Il lassi, bibita di yogurt, è tipico dell'India del nord, compresa Agra.",
+   "curiosita": "",
+   "segnalazione": "Da verificare il legame con Agra su una fonte di riferimento.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «lassi»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "lassi Agra",
+    "Taj Mahal"
+   ],
+   "parola_greca": "ὀξύγαλα (oxýgala)",
+   "legame_greco": "indiretto: «latte acido»"
+  },
+  {
+   "tappa": "4-6",
+   "voce": "il kumis",
+   "legame": "Il kumis, latte di giumenta fermentato, era la bevanda dei Mongoli; Guglielmo di Rubruck lo bevve a Karakorum nel 1254.",
+   "curiosita": "Ippocrate cita gli Sciti che mungevano le giumente.",
+   "segnalazione": "Alcol leggero: solo come bevanda dei nomadi. Da verificare il passo di Rubruck.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Guglielmo di Rubruck, Itinerarium"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "kumis Mongolia",
+    "Karakorum"
+   ],
+   "parola_greca": "ἱππάκη (hippákē)",
+   "legame_greco": "diretto: «formaggio di giumenta» in Ippocrate; da ἵππος «cavallo»"
+  },
+  {
+   "tappa": "4-7",
+   "voce": "la birra Broyhan",
+   "legame": "La Broyhan è la birra bianca inventata a Hannover da Cord Broyhan nel 1526.",
+   "curiosita": "",
+   "segnalazione": "Alcol: solo come storia di Hannover. Da verificare data e luogo.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Enciclopedia Britannica, «Hannover»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Broyhan beer",
+    "Hannover Altes Rathaus"
+   ],
+   "parola_greca": "ζῦθος (zýthos)",
+   "legame_greco": "diretto: «birra»"
+  },
+  {
+   "tappa": "4-8",
+   "voce": "la cioccolata di Linneo",
+   "legame": "Carlo Linneo, a Uppsala, chiamò il cacao Theobroma, «cibo degli dèi».",
+   "curiosita": "Il nome è del 1753.",
+   "segnalazione": "Da verificare l'anno nel testo di Linneo.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Linneo, Species plantarum"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Linnaeus Uppsala",
+    "Theobroma cacao"
+   ],
+   "parola_greca": "θεοβρῶμα (theobróma)",
+   "legame_greco": "diretto: «cibo degli dèi»"
+  },
+  {
+   "tappa": "4-9",
+   "voce": "il tè dei Tuareg",
+   "legame": "I Tuareg del Sahara offrono tre bicchieri di tè verde con la menta, uno amaro, uno dolce, uno dolcissimo.",
+   "curiosita": "",
+   "segnalazione": "Da verificare il legame con Timbuctù.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica, «Tuareg»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Tuareg tea",
+    "Timbuktu"
+   ],
+   "parola_greca": "τσάι (tsái)",
+   "legame_greco": "indiretto: parola greca moderna"
+  },
+  {
+   "tappa": "4-10",
+   "voce": "gli sciroppi di Brasavola",
+   "legame": "Antonio Musa Brasavola, medico e amico di Ercole II, scrisse nel 1540 l'Examen omnium syruporum.",
+   "curiosita": "Brasavola nacque e morì a Ferrara.",
+   "segnalazione": "Non ho letto l'elenco degli sciroppi trattati: voce generica.",
+   "fonti": [
+    "https://en.wikipedia.org/wiki/Antonio_Musa_Brassavola"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Antonio Musa Brasavola",
+    "syrup apothecary"
+   ],
+   "parola_greca": "ὀξύμελι (oxýmeli)",
+   "legame_greco": "diretto: «aceto e miele», sciroppo classico"
+  },
+  {
+   "tappa": "4-11",
+   "voce": "lo sherbet",
+   "legame": "Lo sherbet, dall'arabo sharba, «bevanda», era sciroppo di frutta e fiori nelle corti abbasidi; a Baghdad si traduceva dal greco.",
+   "curiosita": "",
+   "segnalazione": "Da verificare la storia dello sherbet.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «sorbetto»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "sherbet Baghdad",
+    "House of Wisdom"
+   ],
+   "parola_greca": "ποτόν (potón)",
+   "legame_greco": "diretto: «bevanda», da πίνω «bere»"
+  },
+  {
+   "tappa": "4-12",
+   "voce": "il latte di soia",
+   "legame": "Il doujiang, latte di soia, è la bevanda della colazione cinese, anche con il jianbing.",
+   "curiosita": "",
+   "segnalazione": "Da verificare il legame con Qufu.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica, «soybean»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "doujiang soy milk",
+    "Qufu"
+   ],
+   "parola_greca": "χυλός (chylós)",
+   "legame_greco": "diretto: «succo», da cui «chilo»"
+  },
+  {
+   "tappa": "4-13",
+   "voce": "il vino di Mareotide",
+   "legame": "Ateneo loda il vino di Mareotide, nei pressi di Alessandria.",
+   "curiosita": "",
+   "segnalazione": "Alcol: solo come storia ellenistica. Da verificare Ateneo I,33.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Ateneo, Deipnosofisti I,33"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Mareotic wine",
+    "Alexandria Pharos"
+   ],
+   "parola_greca": "οἶνος (oînos)",
+   "legame_greco": "diretto: «vino»; vinum, wine hanno la stessa radice"
+  },
+  {
+   "tappa": "4-14",
+   "voce": "il xocolatl azteco",
+   "legame": "Gli Aztechi bevevano il xocolatl, cacao amaro con spezie, e usavano i semi come moneta.",
+   "curiosita": "",
+   "segnalazione": "Da verificare, ad esempio Sahagún, Historia general.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Sahagún, Historia general, libro VIII"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "xocolatl Aztec",
+    "Tenochtitlan"
+   ],
+   "parola_greca": "θεοβρῶμα (theobróma)",
+   "legame_greco": "indiretto: nome scientifico del cacao"
+  },
+  {
+   "tappa": "4-15",
+   "voce": "il mastice sciolto in acqua",
+   "legame": "In Grecia il mastice di Chio si serve come dolcetto in un bicchiere d'acqua fredda, detto ipovrichio.",
+   "curiosita": "«Masticare» viene da μαστιχάω.",
+   "segnalazione": "Da verificare l'ipovrichio con il mastice.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Associazione dei produttori di mastice di Chio"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "mastic Chios",
+    "Chios mastic tree"
+   ],
+   "parola_greca": "ὑποβρύχιον (hypobrýchion)",
+   "legame_greco": "diretto: «sommergibile»; nome greco dell'ipovrichio"
+  },
+  {
+   "tappa": "4-16",
+   "voce": "lo sharbat di sattu",
+   "legame": "Lo sharbat di sattu è una bevanda del Bihar, la regione di Pataliputra.",
+   "curiosita": "Megastene, ambasciatore greco, visse a Pataliputra.",
+   "segnalazione": "Da verificare il legame con Pataliputra e il sattu antico.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Strabone, Geografia XV"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "sattu drink",
+    "Pataliputra Megasthenes"
+   ],
+   "parola_greca": "ἄλφιτον (álphiton)",
+   "legame_greco": "diretto: «farina d'orzo»"
+  },
+  {
+   "tappa": "4-17",
+   "voce": "l'acqua di cocco",
+   "legame": "L'acqua di cocco si beve a Bombay.",
+   "curiosita": "Cosma Indicopleuste, greco di Alessandria, descrisse il cocco nel VI secolo.",
+   "segnalazione": "Da verificare il termine e il legame con Bombay.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Cosma Indicopleuste, Topografia cristiana XI"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "coconut water Mumbai",
+    "Cosmas Indicopleustes"
+   ],
+   "parola_greca": "ἀργέλλιον (argéllion)",
+   "legame_greco": "diretto: «noce di cocco» in Cosma Indicopleuste"
+  },
+  {
+   "tappa": "4-18",
+   "voce": "la boza",
+   "legame": "La boza, bevanda di miglio fermentato, si vende a Istanbul dalla Vefa Bozacısı dal 1876.",
+   "curiosita": "Costantinopoli era una città greca.",
+   "segnalazione": "Da verificare data e luogo.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «boza»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "boza Istanbul",
+    "Vefa Bozacısı"
+   ],
+   "parola_greca": "κέγχρος (kénchros)",
+   "legame_greco": "diretto: «miglio»"
+  },
+  {
+   "tappa": "4-19",
+   "voce": "il sobia",
+   "legame": "Il sobia, latte di riso e cocco, si beve in Egitto nel Ramadan.",
+   "curiosita": "",
+   "segnalazione": "Da verificare l'uso al Cairo.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «riso»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "sobia Egypt",
+    "Cairo Khan el-Khalili"
+   ],
+   "parola_greca": "ὄρυζα (órysa)",
+   "legame_greco": "diretto: «riso»"
+  },
+  {
+   "tappa": "4-20",
+   "voce": "il succo d'arancia",
+   "legame": "Le arance sono tra gli agrumi coltivati nei giardini della corte estense.",
+   "curiosita": "In greco moderno l'arancia si dice come il Portogallo, da cui arrivavano.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «arancia»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "orange juice",
+    "Ferrara corte"
+   ],
+   "parola_greca": "πορτοκάλι (portokáli)",
+   "legame_greco": "diretto: greco moderno, «arancia», dal Portogallo"
+  },
+  {
+   "tappa": "4-21",
+   "voce": "l'agua de azahar",
+   "legame": "L'agua de azahar, acqua di fiori d'arancio, è un'eredità araba della Spagna, usata anche per il marzapane di Toledo.",
+   "curiosita": "Antologia significa «raccolta di fiori».",
+   "segnalazione": "Da verificare il legame con Toledo.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Real Academia Española, voce «azahar»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "azahar water",
+    "Toledo Spain"
+   ],
+   "parola_greca": "ἄνθος (ánthos)",
+   "legame_greco": "diretto: «fiore»; azahar viene dall'arabo az-zahr, «fiore»"
+  },
+  {
+   "tappa": "4-22",
+   "voce": "lo sciroppo di datteri",
+   "legame": "Erodoto scrive che a Babilonia le palme danno pane, vino e miele.",
+   "curiosita": "",
+   "segnalazione": "Da verificare Erodoto I,193.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Erodoto, Storie I,193"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "date syrup",
+    "Babylon"
+   ],
+   "parola_greca": "φοῖνιξ (phoînix)",
+   "legame_greco": "diretto: «dattero»; Fenici"
+  },
+  {
+   "tappa": "4-23",
+   "voce": "il tè di Caterina di Braganza",
+   "legame": "Caterina di Braganza, nata a Lisbona, portò l'uso del tè in Inghilterra.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Oxford DNB, «Catherine of Braganza»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Catherine of Braganza",
+    "Lisbon"
+   ],
+   "parola_greca": "τσάι (tsái)",
+   "legame_greco": "indiretto: parola greca moderna"
+  },
+  {
+   "tappa": "4-24",
+   "voce": "il tè Yunwu del Lushan",
+   "legame": "Il Lushan Yunwu è un tè verde del Jiangxi, la provincia di Nanchang.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "UNESCO, Monte Lushan"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Lushan Yunwu tea",
+    "Nanchang"
+   ],
+   "parola_greca": "τσάι (tsái)",
+   "legame_greco": "indiretto: parola greca moderna"
+  },
+  {
+   "tappa": "4-25",
+   "voce": "il tè del Peggy Stewart",
+   "legame": "Nel 1774, ad Annapolis, la nave Peggy Stewart con il suo carico di tè fu bruciata dai coloni.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Maryland State Archives, Peggy Stewart"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Peggy Stewart Annapolis",
+    "tea"
+   ],
+   "parola_greca": "τσάι (tsái)",
+   "legame_greco": "indiretto: parola greca moderna"
+  },
+  {
+   "tappa": "4-26",
+   "voce": "l'atole",
+   "legame": "L'atole è una bevanda calda di mais, usata dagli Aztechi.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Sahagún, Historia general"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "atole",
+    "Tenochtitlan market"
+   ],
+   "parola_greca": "ἀθάρα (athára)",
+   "legame_greco": "diretto: «farinata»"
+  },
+  {
+   "tappa": "4-27",
+   "voce": "il sahlep",
+   "legame": "Il sahlep è la bevanda calda a base di bulbi di orchidea, tipica d'inverno a Istanbul.",
+   "curiosita": "L'orchidea si chiama così per la forma del bulbo.",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «salep»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "salep drink",
+    "Istanbul"
+   ],
+   "parola_greca": "ὄρχις (órchis)",
+   "legame_greco": "diretto: «testicolo», da cui «orchidea»"
+  },
+  {
+   "tappa": "4-28",
+   "voce": "il masala chai",
+   "legame": "Il masala chai è il tè indiano alle spezie; a Motihari nacque George Orwell, autore di «Una bella tazza di tè».",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Orwell, A Nice Cup of Tea (1946)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "masala chai",
+    "Motihari"
+   ],
+   "parola_greca": "τσάι (tsái)",
+   "legame_greco": "indiretto: parola greca moderna"
+  },
+  {
+   "tappa": "4-29",
+   "voce": "il kompot",
+   "legame": "Il kompot di frutta secca è la bevanda della vigilia di Natale polacca.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «Polonia»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "kompot Poland",
+    "Warsaw"
+   ],
+   "parola_greca": "ξηρός (xērós)",
+   "legame_greco": "diretto: «secco»"
+  },
+  {
+   "tappa": "4-30",
+   "voce": "il succo di susina",
+   "legame": "Le susine erano frutti della corte estense.",
+   "curiosita": "",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «susina»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "plum juice",
+    "Ferrara archivio"
+   ],
+   "parola_greca": "κοκκύμηλον (kokkýmēlon)",
+   "legame_greco": "diretto: «susina»"
+  },
+  {
+   "tappa": "5-1",
+   "voce": "il Green River",
+   "legame": "Il Green River è una bibita verde nata a Chicago nel 1919.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Chicago Tribune, storia del Green River"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Green River soda",
+    "Chicago"
+   ],
+   "parola_greca": "χλωρός (chlōrós)",
+   "legame_greco": "diretto: «verde», da cui «clorofilla»"
+  },
+  {
+   "tappa": "5-2",
+   "voce": "il Wiener Melange",
+   "legame": "La cultura dei caffè viennesi è patrimonio immateriale dell'UNESCO.",
+   "curiosita": "",
+   "segnalazione": "Da verificare sul registro UNESCO.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "UNESCO, Viennese coffee house culture"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Viennese coffee house",
+    "Wien Café"
+   ],
+   "parola_greca": "καφές (kafés)",
+   "legame_greco": "indiretto: parola greca moderna"
+  },
+  {
+   "tappa": "5-3",
+   "voce": "la ginger beer",
+   "legame": "La ginger beer è la bibita dello zenzero, nata in Inghilterra nel Settecento.",
+   "curiosita": "Zenzero viene da una parola sanscrita che significa «radice a corno».",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Oxford English Dictionary, «ginger beer»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "ginger beer",
+    "London"
+   ],
+   "parola_greca": "ζιγγίβερις (zingíberis)",
+   "legame_greco": "diretto: «zenzero»"
+  },
+  {
+   "tappa": "5-4",
+   "voce": "l'acqua della piscina di Betesda",
+   "legame": "Bethesda prende il nome dalla piscina di Betesda del Vangelo di Giovanni.",
+   "curiosita": "",
+   "segnalazione": "Il legame è il nome, non un'acqua del Maryland.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Vangelo di Giovanni 5,2"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Pool of Bethesda",
+    "Bethesda Maryland NIH"
+   ],
+   "parola_greca": "Βηθεσδά (Bēthesdá)",
+   "legame_greco": "diretto: nome greco del Nuovo Testamento"
+  },
+  {
+   "tappa": "5-5",
+   "voce": "il tè freddo",
+   "legame": "Il tè freddo è la bevanda estiva americana.",
+   "curiosita": "",
+   "segnalazione": "Nessun legame verificato con Los Alamos: da sostituire.",
+   "fonti": [],
+   "fonti_da_controllare": [],
+   "verificata": false,
+   "termini_immagine": [
+    "iced tea",
+    "Los Alamos"
+   ],
+   "parola_greca": "τσάι (tsái)",
+   "legame_greco": "indiretto: parola greca moderna"
+  },
+  {
+   "tappa": "5-6",
+   "voce": "il laban",
+   "legame": "Il laban è lo yogurt liquido iracheno.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «yogurt»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "laban drink",
+    "Babylon Iraq"
+   ],
+   "parola_greca": "ὀξύγαλα (oxýgala)",
+   "legame_greco": "indiretto: «latte acido»"
+  },
+  {
+   "tappa": "5-7",
+   "voce": "il cordiale di sambuco",
+   "legame": "Il cordiale di fiori di sambuco è una bevanda estiva inglese.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Oxford English Dictionary, «elderflower cordial»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "elderflower cordial",
+    "London"
+   ],
+   "parola_greca": "ἀκτῆ (aktḗ)",
+   "legame_greco": "diretto: «sambuco»"
+  },
+  {
+   "tappa": "5-8",
+   "voce": "lo shubat",
+   "legame": "Lo shubat è il latte di cammella fermentato del Kazakistan.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica, «Kazakhstan»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "shubat camel milk",
+    "Baikonur"
+   ],
+   "parola_greca": "κάμηλος (kámēlos)",
+   "legame_greco": "diretto: «cammello»"
+  },
+  {
+   "tappa": "5-9",
+   "voce": "l'acqua della pompa di Broad Street",
+   "legame": "Nel 1854, John Snow individuò nella pompa di Broad Street la fonte del colera di Londra.",
+   "curiosita": "Cholera viene da cholḗ, «bile».",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Wellcome Collection, John Snow"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Broad Street pump",
+    "John Snow"
+   ],
+   "parola_greca": "χολέρα (cholérā)",
+   "legame_greco": "diretto: «colera», da χολή, «bile»"
+  },
+  {
+   "tappa": "5-10",
+   "voce": "il lingonsaft",
+   "legame": "Il lingonsaft è lo sciroppo di mirtillo rosso svedese.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Nordiska museet, saft"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "lingonberry saft",
+    "Stockholm"
+   ],
+   "parola_greca": "ὀπώρα (opṓra)",
+   "legame_greco": "diretto: «frutta di fine estate»"
+  },
+  {
+   "tappa": "5-11",
+   "voce": "il sidro dolce del New Jersey",
+   "legame": "Il sidro dolce è la bevanda autunnale americana.",
+   "curiosita": "",
+   "segnalazione": "Nessun legame verificato con Princeton: da sostituire.",
+   "fonti": [],
+   "fonti_da_controllare": [],
+   "verificata": false,
+   "termini_immagine": [
+    "sweet cider",
+    "Princeton"
+   ],
+   "parola_greca": "μῆλον (mêlon)",
+   "legame_greco": "diretto: «mela»"
+  },
+  {
+   "tappa": "5-12",
+   "voce": "il mate",
+   "legame": "Il mate è la bevanda nazionale argentina, bevuta con la bombilla.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «mate»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "mate Argentina",
+    "Buenos Aires"
+   ],
+   "parola_greca": "κάλαμος (kálamos)",
+   "legame_greco": "indiretto: la cannuccia, «canna»"
+  },
+  {
+   "tappa": "5-13",
+   "voce": "il caffè della Trojan Room",
+   "legame": "Alla Trojan Room del laboratorio di informatica di Cambridge nel 1991 fu messa la prima webcam, puntata su una caffettiera.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Cambridge Computer Laboratory, Trojan Room coffee pot"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Trojan Room coffee pot",
+    "Cambridge Computer Laboratory"
+   ],
+   "parola_greca": "Τροία (Troía)",
+   "legame_greco": "diretto: Troia"
+  },
+  {
+   "tappa": "5-14",
+   "voce": "il succo di mirtillo",
+   "legame": "Il New Jersey è terra di mirtilli americani.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "USDA, blueberry history"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "blueberry juice",
+    "Princeton"
+   ],
+   "parola_greca": "μύρτον (mýrton)",
+   "legame_greco": "diretto: «mirto»"
+  },
+  {
+   "tappa": "5-15",
+   "voce": "l'egg cream",
+   "legame": "L'egg cream è la bibita di New York, senza uova né crema.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Oxford Companion to American Food"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "egg cream",
+    "New York"
+   ],
+   "parola_greca": "ᾠόν (ōión)",
+   "legame_greco": "diretto: «uovo»"
+  },
+  {
+   "tappa": "5-16",
+   "voce": "il succo di ciliegia",
+   "legame": "Lo stato di Washington è un grande produttore di ciliegie.",
+   "curiosita": "Il nome viene da Κερασοῦς, città del Mar Nero.",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Washington Tree Fruit Research Commission"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "cherry juice",
+    "Seattle"
+   ],
+   "parola_greca": "κεράσιον (kerásion)",
+   "legame_greco": "diretto: «ciliegia»"
+  },
+  {
+   "tappa": "5-17",
+   "voce": "l'agua fresca",
+   "legame": "L'agua fresca, a Los Angeles, è la bevanda dei venditori ambulanti messicani.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [],
+   "verificata": false,
+   "termini_immagine": [
+    "agua fresca",
+    "Los Angeles"
+   ],
+   "parola_greca": "ὕδωρ (hýdōr)",
+   "legame_greco": "diretto: «acqua»"
+  },
+  {
+   "tappa": "5-18",
+   "voce": "la kombucha",
+   "legame": "La kombucha è il tè fermentato, diffusa a San Francisco.",
+   "curiosita": "",
+   "segnalazione": "Nessun legame verificato con Palo Alto: da sostituire.",
+   "fonti": [],
+   "fonti_da_controllare": [],
+   "verificata": false,
+   "termini_immagine": [
+    "kombucha",
+    "San Francisco"
+   ],
+   "parola_greca": "ζύμη (zýmē)",
+   "legame_greco": "diretto: «lievito»"
+  },
+  {
+   "tappa": "5-19",
+   "voce": "il Ribena",
+   "legame": "Il Ribena è lo sciroppo di ribes nero britannico, creato nel 1938.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica, «blackcurrant»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ribena",
+    "London"
+   ],
+   "parola_greca": "μέλας (mélās)",
+   "legame_greco": "diretto: «nero», da cui «melanina»"
+  },
+  {
+   "tappa": "5-20",
+   "voce": "il succo di mela antica",
+   "legame": "Le mele antiche ferraresi sono varietà tradizionali recuperate.",
+   "curiosita": "Nel mito la mela di Eris causò la guerra di Troia.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «mela»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "apple juice",
+    "Ferrara"
+   ],
+   "parola_greca": "ἔρις (éris)",
+   "legame_greco": "diretto: «contesa»; la mela d'oro della discordia"
+  },
+  {
+   "tappa": "5-21",
+   "voce": "la karnemelk",
+   "legame": "La karnemelk è il latticello olandese.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «latticello»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "karnemelk",
+    "Rotterdam"
+   ],
+   "parola_greca": "ὀρρός (orrhós)",
+   "legame_greco": "indiretto: «siero»"
+  },
+  {
+   "tappa": "5-22",
+   "voce": "il tè verde",
+   "legame": "Il tè verde è la bevanda giapponese per eccellenza.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "UNESCO, tè giapponese"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "green tea Japan",
+    "sushi"
+   ],
+   "parola_greca": "τσάι (tsái)",
+   "legame_greco": "indiretto: parola greca moderna"
+  },
+  {
+   "tappa": "5-23",
+   "voce": "l'acqua del lago di Ginevra",
+   "legame": "Ginevra prende l'acqua potabile dal lago; Forel fondò la limnologia sul Lemano.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani, voce «limnologia»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Lake Geneva",
+    "Geneva Jet d'eau"
+   ],
+   "parola_greca": "λίμνη (límnē)",
+   "legame_greco": "diretto: «lago», da cui «limnologia»"
+  },
+  {
+   "tappa": "5-24",
+   "voce": "l'acqua termale di Cheltenham",
+   "legame": "Cheltenham è una città termale dal 1716.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica, «Cheltenham»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Cheltenham Pittville Pump Room",
+    "Cheltenham"
+   ],
+   "parola_greca": "ἅλς (háls)",
+   "legame_greco": "diretto: «sale», da cui «alogeno»"
+  },
+  {
+   "tappa": "5-25",
+   "voce": "il seltz",
+   "legame": "Il seltz è la bevanda di New York e del New Jersey.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [],
+   "verificata": false,
+   "termini_immagine": [
+    "seltzer siphon",
+    "Murray Hill"
+   ],
+   "parola_greca": "σίφων (síphōn)",
+   "legame_greco": "diretto: «tubo», da cui «sifone»"
+  },
+  {
+   "tappa": "5-26",
+   "voce": "il frappè",
+   "legame": "Il frappè è un frullato del New England.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [],
+   "verificata": false,
+   "termini_immagine": [
+    "frappe milkshake",
+    "Boston"
+   ],
+   "parola_greca": "ἀφρός (aphrós)",
+   "legame_greco": "diretto: «schiuma»; Afrodite"
+  },
+  {
+   "tappa": "5-27",
+   "voce": "l'acqua d'acero",
+   "legame": "L'acqua d'acero è la linfa dell'acero canadese.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [],
+   "verificata": false,
+   "termini_immagine": [
+    "maple water",
+    "Toronto"
+   ],
+   "parola_greca": "σφένδαμνος (sphéndamnos)",
+   "legame_greco": "diretto: «acero»"
+  },
+  {
+   "tappa": "5-28",
+   "voce": "il caffè di Seattle",
+   "legame": "Starbucks nacque a Pike Place Market nel 1971.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Starbucks Company, storia"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Pike Place Starbucks",
+    "Seattle"
+   ],
+   "parola_greca": "καφές (kafés)",
+   "legame_greco": "indiretto: parola greca moderna"
+  },
+  {
+   "tappa": "5-29",
+   "voce": "il tè English Breakfast",
+   "legame": "L'English Breakfast è la miscela di tè per la colazione inglese.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Oxford English Dictionary, «English breakfast»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "English breakfast tea",
+    "London"
+   ],
+   "parola_greca": "τσάι (tsái)",
+   "legame_greco": "indiretto: parola greca moderna"
+  },
+  {
+   "tappa": "5-30",
+   "voce": "il caffè dei torrefattori di Ferrara",
+   "legame": "A Ferrara, il Museo Penazzi della Caffettiera, in via Bongiovanni 32, conserva caffettiere e macchine da caffè dal 1900 al 1980.",
+   "curiosita": "Il museo mostra come sono cambiate le macchine da caffè.",
+   "segnalazione": "",
+   "fonti": [
+    "https://www.museionline.info/musei/museo-penazzi-della-caffettiera"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Museo Penazzi della caffettiera",
+    "Torrefazione Penazzi Ferrara"
+   ],
+   "parola_greca": "μηχανή (mēchanḗ)",
+   "legame_greco": "diretto: «macchina»"
   }
  ]
 }
