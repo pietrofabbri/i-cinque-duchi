@@ -44,7 +44,7 @@
    "voce": "i piffari della corte estense",
    "legame": "La corte estense aveva piffari e trombetti stipendiati per feste e cerimonie pubbliche, anche davanti al palazzo comunale.",
    "curiosita": "",
-   "segnalazione": "Il legame con la piazza è generico: la corte aveva musici di strumenti a fiato, ma non ho aperto un passo che li collochi al palazzo comunale.",
+   "segnalazione": "Le pagine aperte (Piffaro) non descrivono i piffari della corte ferrarese. Il legame con la piazza è generico: da confermare su Lockwood (cap. 14) o sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Lockwood, «Music in Renaissance Ferrara», capitolo sull'organizzazione dei musici di corte"
@@ -61,9 +61,10 @@
    "voce": "la musica di Jacob Obrecht",
    "legame": "Il compositore fiammingo Obrecht lavorò per Ercole I d'Este negli ultimi anni del suo patronato e morì a Ferrara, nel 1505.",
    "curiosita": "Morì di peste a Ferrara.",
-   "segnalazione": "Nessun legame specifico con Piazza delle Erbe: è un legame con la città. Data e circostanza della morte da riconfermare.",
+   "segnalazione": "Britannica (aperta) conferma: Obrecht lavorò per Ercole I d'Este (1487) e morì di peste a Ferrara nel 1505. Manca un legame con Piazza delle Erbe (la voce è un legame con la città): da sostituire con una musica legata alla piazza o alla cattedrale se si trova una fonte.",
    "fonti": [
-    "https://www.fulcrum.org/concern/monographs/bz60cw54g?locale=en"
+    "https://www.fulcrum.org/concern/monographs/bz60cw54g?locale=en",
+    "https://britannica.com/biography/Jakob-Obrecht"
    ],
    "fonti_da_controllare": [
     "Grove: «Jacob Obrecht»"
@@ -77,18 +78,18 @@
   },
   {
    "tappa": "1-5",
-   "voce": "il canto delle monache di clausura",
-   "legame": "Il monastero di Sant'Antonio in Polesine ospita monache di clausura: la loro giornata è scandita dal canto dell'Ufficio divino.",
+   "voce": "il canto gregoriano delle monache",
+   "legame": "Nel monastero benedettino di Sant'Antonio in Polesine vivono ancora oggi le monache: ai vespri cantano canto gregoriano.",
    "curiosita": "",
-   "segnalazione": "Legame generico con il luogo: nessuna fonte aperta. Da confermare presso il monastero.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Sito del monastero di Sant'Antonio in Polesine",
-    "Treccani: «Ufficio divino»"
+   "segnalazione": "",
+   "fonti": [
+    "https://www.ferraraterraeacqua.it/en/ferrara/discover-the-area/art-and-culture/abbeys-monasteries-sanctuaries/monastery-of-santantonio-in-polesine"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
     "Sant'Antonio in Polesine",
+    "canto gregoriano",
     "monastero Ferrara affreschi"
    ],
    "aggancio_inglese": "In inglese «plainchant» (o «plainsong»): il canto liturgico a una voce."
@@ -96,16 +97,15 @@
   {
    "tappa": "1-6",
    "voce": "la danza di Domenico da Piacenza",
-   "legame": "Domenico da Piacenza fu maestro di ballo alla corte estense di Leonello e morì a Ferrara; scrisse il più antico trattato di danza con coreografie conservate.",
-   "curiosita": "Il trattato (c. 1450) descrive 18 balli con musica; ogni ballo unisce quattro tipi di danza (bassadanza, quaternaria, saltarello, piva).",
-   "segnalazione": "Fonte aperta non specialistica (sito divulgativo): da riconfermare su Grove o Lockwood.",
+   "legame": "Domenico da Piacenza fu maestro di ballo alla corte estense di Ferrara, dove rimase fino alla morte; nel 1445 scrisse «De la arte di ballare et danzare», il più antico trattato di danza conservato.",
+   "curiosita": "Il suo trattato è il più antico manuale di danza giunto fino a noi; i suoi allievi Guglielmo Ebreo e Antonio Cornazano ne seguirono il modello.",
+   "segnalazione": "",
    "fonti": [
+    "https://www.encyclopedia.com/humanities/culture-magazines/domenico-da-piacenza",
     "https://earlymusicmuse.com/domenico-da-piacenza/"
    ],
-   "fonti_da_controllare": [
-    "Grove: «Domenico da Piacenza»"
-   ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
     "Domenico da Piacenza",
     "De arte saltandi manoscritto"
@@ -134,7 +134,7 @@
    "voce": "l'arcicembalo di Vicentino",
    "legame": "Il teorico Nicola Vicentino lavorò a Ferrara per il cardinale Ippolito II d'Este e costruì uno strumento a tastiera con più suoni per ottava, ispirato ai generi della musica greca antica.",
    "curiosita": "",
-   "segnalazione": "Legame con lo Studio (umanesimo, riscoperta dei Greci) plausibile ma non verificato; date e dettagli dello strumento da controllare.",
+   "segnalazione": "Wikipedia (Frescobaldi) e encyclopedia.com confermano l'archicembalo di Vicentino e che Luzzaschi, organista di Alfonso II, era fra i pochi capaci di suonarlo; ma encyclopedia.com colloca Vicentino a Ferrara fino al 1539 e il legame con Ippolito II e con lo Studio non è confermato. Resta aperta.",
    "fonti": [],
    "fonti_da_controllare": [
     "Grove: «Nicola Vicentino»",
@@ -152,7 +152,7 @@
    "voce": "il liuto di Pietrobono",
    "legame": "Pietrobono dal Chitarrino fu il musicista di corte più celebre della Ferrara di Borso (e di Leonello ed Ercole I); a lui Lockwood dedica pagine nel capitolo su Borso.",
    "curiosita": "",
-   "segnalazione": "",
+   "segnalazione": "La pagina Fulcrum è marcata «Restricted» (testo non accessibile da qui); conferma solo l'indice: cap. 10 «Pietrobono and the Improvisatory Tradition».",
    "fonti": [
     "https://www.fulcrum.org/concern/monographs/bz60cw54g?locale=en"
    ],
@@ -169,7 +169,7 @@
    "voce": "la Missa Hercules Dux Ferrariae",
    "legame": "Josquin des Prez scrisse questa messa in onore di Ercole I d'Este: Lockwood la discute nel capitolo sulle messe ferraresi.",
    "curiosita": "Il tema della messa è ricavato dalle vocali del nome del duca (soggetto cavato, da confermare).",
-   "segnalazione": "",
+   "segnalazione": "La pagina Fulcrum è marcata «Restricted» (testo non accessibile da qui); conferma solo l'indice: cap. 23 «Josquin's Missa 'Hercules Dux Ferrarie'».",
    "fonti": [
     "https://www.fulcrum.org/concern/monographs/bz60cw54g?locale=en"
    ],
@@ -188,7 +188,7 @@
    "voce": "il canto sinagogale ferrarese",
    "legame": "La comunità ebraica ferrarese ha una lunga storia, ricordata dal MEIS; le sue sinagoghe avevano canti liturgici propri.",
    "curiosita": "",
-   "segnalazione": "Da verificare: quali riti (italiano, ashkenazita, sefardita) avessero sinagoghe a Ferrara e se il canto sia documentato.",
+   "segnalazione": "MEIS (aperto): tre sinagoghe in via Mazzini (italiana, tedesca del 1603 in uso, fanese del Seicento); nessuna fonte aperta parla del loro canto liturgico. Da trovare una fonte sul canto o sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "MEIS, museo nazionale dell'ebraismo italiano e della Shoah",
@@ -206,7 +206,7 @@
    "voce": "i musicisti di Schifanoia",
    "legame": "Il Salone dei Mesi di Schifanoia, voluto da Borso, mostra scene di corte e di festa; vi compaiono suonatori.",
    "curiosita": "",
-   "segnalazione": "Da verificare quale mese raffiguri quali strumenti: non ho aperto una fonte.",
+   "segnalazione": "Regione Emilia-Romagna (aperta): la parete est del Salone dei Mesi mostra marzo, aprile e maggio; nessuna fonte aperta descrive suonatori o strumenti. Da trovare nella scheda dei Musei di Arte Antica, o sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Pinacoteca / Musei di Arte Antica Ferrara: scheda del Salone dei Mesi"
@@ -223,7 +223,7 @@
    "voce": "il Miserere di Josquin",
    "legame": "Josquin compose il Salmo 51 per Ercole I a Ferrara; è un salmo penitenziale, adatto al luogo della Certosa, nata come luogo di sepoltura estense.",
    "curiosita": "Savonarola, nato a Ferrara, scrisse una meditazione sullo stesso salmo (da confermare).",
-   "segnalazione": "Il legame con la Certosa è indiretto; data (c. 1503-1504) e legame con Savonarola da confermare.",
+   "segnalazione": "Wikipedia (orientamento): il Miserere fu scritto a Ferrara per Ercole I nel 1503-04, probabilmente sul modello dell'«Infelix ego» di Savonarola. Il legame con la Certosa resta indiretto e la fonte di riferimento (Grove, Macey, Lockwood) non è aperta.",
    "fonti": [
     "https://www.fulcrum.org/concern/monographs/bz60cw54g?locale=en"
    ],
@@ -242,7 +242,7 @@
    "voce": "i tamburini del Palio",
    "legame": "Nel Palio di Ferrara, in Piazza Ariostea (Addizione Erculea), il corteo storico è accompagnato da tamburini e chiarine.",
    "curiosita": "",
-   "segnalazione": "Da confermare sul sito del Palio di San Giorgio.",
+   "segnalazione": "Tre pagine ufficiali aperte (Ferrara Terra e Acqua, Wikipedia, programma 2025 del Palio) confermano il Palio e Piazza Ariostea, ma nessuna cita tamburini o chiarine. Da trovare una fonte sulla musica del corteo, o sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Sito ufficiale del Palio di Ferrara"
@@ -256,28 +256,30 @@
   },
   {
    "tappa": "1-15",
-   "voce": "i madrigali sull'Orlando furioso",
-   "legame": "Ariosto è sepolto nella biblioteca che porta il suo nome (Palazzo Paradiso); le ottave del suo poema furono musicate molto nel Cinquecento.",
-   "curiosita": "",
-   "segnalazione": "Mancano titoli precisi: cercare un madrigale su testo del Furioso (ad esempio di Cipriano de Rore) in Grove.",
+   "voce": "l'aria di Ruggiero",
+   "legame": "La «Ruggiero» è uno schema di basso e armonia del Cinque-Seicento nato, probabilmente, dal modo di recitare in musica le ottave dell'«Orlando furioso» di Ariosto, sepolto a Ferrara nella biblioteca che porta il suo nome (Palazzo Paradiso).",
+   "curiosita": "Molti compositori scrissero variazioni sulla «Ruggiero»: il nome viene dal cavaliere Ruggiero, personaggio del poema.",
+   "segnalazione": "Fonte aperta solo Wikipedia (orientamento: schema «probabilmente» nato dalle formule di recitazione del Furioso). Da confermare su Grove, voce «Ruggiero».",
    "fonti": [],
    "fonti_da_controllare": [
-    "Grove: «Madrigal»",
+    "Grove: «Ruggiero»",
     "Biblioteca Ariostea, scheda su Ariosto"
    ],
    "verificata": false,
    "termini_immagine": [
     "Orlando furioso",
-    "Biblioteca Ariostea"
+    "Biblioteca Ariostea",
+    "Aria di Ruggiero"
    ],
-   "aggancio_inglese": "John Harington tradusse l'«Orlando furioso» in inglese nel 1591."
+   "aggancio_inglese": "John Harington tradusse l'«Orlando furioso» in inglese nel 1591.",
+   "sostituita": "«i madrigali sull'Orlando furioso»: nessun titolo preciso di madrigale era verificabile; sostituita con una musica concreta legata al poema."
   },
   {
    "tappa": "1-16",
    "voce": "le nozze musicali di Lucrezia",
    "legame": "Le nozze di Lucrezia Borgia con Alfonso d'Este (1502) furono accompagnate da feste, commedie e musica; Lucrezia è sepolta nel monastero del Corpus Domini.",
    "curiosita": "",
-   "segnalazione": "Da confermare quali musiche: Lockwood si ferma al 1505, ma il capitolo su feste e teatro va controllato.",
+   "segnalazione": "encyclopedia.com (aperta) conferma nozze del 1502 e un carnevale di una settimana, ma non dà musiche. Cartwright (Heidelberg) non si è aperta. Da trovare una fonte sulle musiche, o sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Lockwood, capitolo «Music for Festivities and Theater»"
@@ -294,7 +296,7 @@
    "voce": "la musica delle commedie ariostesche",
    "legame": "Ariosto fece rappresentare a corte le sue commedie, a partire dalla Cassaria (1508); gli spettacoli di corte prevedevano musica.",
    "curiosita": "",
-   "segnalazione": "Il tipo di musica negli spettacoli ariosteschi non è verificato.",
+   "segnalazione": "Nessuna fonte di riferimento aperta sulla musica negli spettacoli ariosteschi (le ricerche hanno dato solo elenchi di link). Da confermare o sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Treccani: «Ariosto, Ludovico»"
@@ -328,7 +330,7 @@
    "voce": "i madrigali di Lodovico Agostini",
    "legame": "Lodovico Agostini, nato a Ferrara nel 1534, fu compositore legato alla corte di Alfonso II; Palazzo Paradiso fu sede dello Studio e della cultura cittadina.",
    "curiosita": "",
-   "segnalazione": "Nascita a Ferrara e servizio a corte da confermare su Grove; legame con Palazzo Paradiso generico.",
+   "segnalazione": "Wikipedia (orientamento): nato a Ferrara nel 1534, stipendiato da Alfonso II entro il 1578, terzo libro di madrigali (1582) forse il primo repertorio del concerto di donne. Manca una fonte di riferimento (Grove, DBI) e il legame con Palazzo Paradiso resta generico.",
    "fonti": [],
    "fonti_da_controllare": [
     "Grove: «Lodovico Agostini»"
@@ -362,15 +364,16 @@
   {
    "tappa": "1-21",
    "voce": "il Combattimento di Tancredi e Clorinda",
-   "legame": "Torquato Tasso fu rinchiuso nell'ospedale di Sant'Anna (1579-1586); Monteverdi musicò un episodio della sua «Gerusalemme liberata».",
-   "curiosita": "Il Combattimento è del 1624.",
-   "segnalazione": "Data e canto del poema da confermare.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Grove: «Il combattimento di Tancredi e Clorinda»",
-    "Treccani: «Tasso, Torquato»"
+   "legame": "Torquato Tasso fu rinchiuso nell'ospedale di Sant'Anna dal 1579 al 1586; nel 1624 Monteverdi mise in musica un episodio della sua «Gerusalemme liberata».",
+   "curiosita": "La cella di Tasso, in un'ala dell'ospedale costruita dopo il terremoto del 1570, fu demolita nel 1932-33 per aprire via Boldini.",
+   "segnalazione": "",
+   "fonti": [
+    "https://www.britannica.com/EBchecked/topic/584002/Torquato-Tasso",
+    "https://www.britannica.com:443/topic/The-Combat-of-Tancredi-and-Clorinda",
+    "https://virtualheritage.unife.it/assets/psife/pdf/LUIGI_GRASSI_Arcispedale_S.Anna_e_Tasso.pdf"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
     "Ospedale di Sant'Anna Ferrara",
     "Monteverdi Combattimento"
@@ -416,8 +419,10 @@
    "voce": "le toccate di Frescobaldi",
    "legame": "Girolamo Frescobaldi nacque a Ferrara nel 1583 e fu uno dei grandi organisti del Seicento.",
    "curiosita": "",
-   "segnalazione": "Legame con Territorio del Po e Certosa generico: è un legame con la città. Studi con Luzzaschi da confermare.",
-   "fonti": [],
+   "segnalazione": "girolamofrescobaldi.com (capitolo 1, aperto) conferma: battezzato nella cattedrale di Ferrara nel settembre 1583, casa di famiglia in via Frescobaldi, allievo di Luzzaschi. Manca un legame con il Territorio del Po e la Certosa: resta un legame con la città. Da sostituire con una musica legata al luogo se si trova.",
+   "fonti": [
+    "https://girolamofrescobaldi.com/chapter-1-ferrara/"
+   ],
    "fonti_da_controllare": [
     "Grove: «Girolamo Frescobaldi»",
     "Treccani: «Frescobaldi, Girolamo»"
@@ -470,8 +475,10 @@
    "voce": "i canti delle mondine",
    "legame": "Nelle terre di bonifica del Ferrarese e del Delta del Po si coltivava il riso; le mondine cantavano durante il lavoro.",
    "curiosita": "",
-   "segnalazione": "Da confermare la presenza delle mondine nel Ferrarese.",
-   "fonti": [],
+   "segnalazione": "Google Arts & Culture (MiPAAF, aperta): il riso si coltivava nel Delta e nel Ferrarese fino agli anni Cinquanta e la monda era a mano; la fonte non parla dei canti. Wikipedia «Mondina» non si è aperta. Da trovare una fonte sui canti nel Ferrarese.",
+   "fonti": [
+    "https://artsandculture.google.com/exhibit/gQclGGwV"
+   ],
    "fonti_da_controllare": [
     "UNESCO / Treccani: «Mondine»"
    ],
@@ -487,8 +494,10 @@
    "voce": "la musica dei Finzi-Contini",
    "legame": "Il film «Il giardino dei Finzi-Contini» (1970) è tratto dal romanzo di Bassani, ambientato a Ferrara: la colonna sonora è di Manuel De Sica.",
    "curiosita": "Il film vinse l'Oscar per il film straniero.",
-   "segnalazione": "Compositore e premio da confermare. Solo titoli dal film.",
-   "fonti": [],
+   "segnalazione": "Britannica (aperta): il film (1970, Oscar per il miglior film straniero) è ambientato a Ferrara; Wikipedia (orientamento): colonna sonora di Manuel De Sica, girato anche al Castello e alle mura. Manca una fonte di riferimento per il compositore e nessun brano preciso.",
+   "fonti": [
+    "https://www.britannica.com/topic/The-Garden-of-the-Finzi-Continis-film"
+   ],
    "fonti_da_controllare": [
     "Archivio del film",
     "Treccani: «Il giardino dei Finzi-Contini»"
@@ -505,8 +514,10 @@
    "voce": "i madrigali di Gesualdo",
    "legame": "Carlo Gesualdo da Venosa sposò Leonora d'Este a Ferrara (1594) e vi conobbe i madrigalisti della corte.",
    "curiosita": "",
-   "segnalazione": "Legame con Vicolo del Chiozzino generico. Date da confermare.",
-   "fonti": [],
+   "segnalazione": "Britannica (aperta): Gesualdo andò a Ferrara nel 1594 per le nozze con Eleonora d'Este e i suoi primi due libri di madrigali uscirono lì (stampa ducale). Il legame con Vicolo del Chiozzino/Largo Vancini resta generico (città).",
+   "fonti": [
+    "https://www.britannica.com/print/article/232163"
+   ],
    "fonti_da_controllare": [
     "Grove: «Carlo Gesualdo»"
    ],
@@ -522,8 +533,10 @@
    "voce": "le laude di Savonarola",
    "legame": "Girolamo Savonarola, nato a Ferrara nel 1452, ispirò canti di lauda cantati dai suoi seguaci.",
    "curiosita": "",
-   "segnalazione": "Legame con «tutta la mappa» debole; non è chiaro quali laude siano sue.",
-   "fonti": [],
+   "segnalazione": "Britannica (aperta): Savonarola nato a Ferrara nel 1452; la pagina non cita laude. Wikipedia rimanda a Macey, «Bonfire Songs: Savonarola's Musical Legacy» (1998), da aprire. Il legame con «tutta la mappa» resta debole.",
+   "fonti": [
+    "https://www.britannica.com:443/biography/Girolamo-Savonarola"
+   ],
    "fonti_da_controllare": [
     "Treccani: «Savonarola, Girolamo»",
     "Grove: «Lauda»"
