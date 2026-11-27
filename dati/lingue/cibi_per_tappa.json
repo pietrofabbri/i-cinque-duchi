@@ -101,7 +101,7 @@
    "numero": 11,
    "luogo": "Ex ghetto, MEIS",
    "piatto": "le buricche",
-   "segnalazione": "Il salame d'oca non risulta ferrarese (la IGP è di Mortara). «Buricche» è il nome della specialità, senza un equivalente italiano.",
+   "segnalazione": "Verificata il 27/11/2026: la scheda «Benvenuta, Nuta, Ascoli (Ferrara, 1873-1941)» su museoferrara.it (https://www.museoferrara.it/en/view/s/a62ce89230fc4014b5fadbed259c2d3b) dice che Nuta Ascoli aveva un ristorante kosher in via Mazzini ed era famosa per le buricche (pasta ripiena, origine probabilmente dagli ebrei sefarditi) e per il caviale del Po. Il dubbio sul salame d'oca è chiuso: la voce è «buricche», non il salame. Resta solo da decidere il nome, che non ha equivalente italiano. Non compare nell'elenco PAT né in Guidetti.",
    "curiosita": "Sfogliatine ripiene della cucina ebraica ferrarese: il museo civico le ricorda come specialità della bottega di Nuta Ascoli, in via Mazzini."
   },
   {
@@ -119,8 +119,8 @@
    "numero": 13,
    "luogo": "Pinacoteca, Certosa",
    "piatto": "il topino d'Ognissanti",
-   "segnalazione": "PAT Emilia-Romagna 2024, n. 283; la descrizione della scheda è da controllare.",
-   "curiosita": "Un dolce ferrarese legato alla festa dei Santi e dei Morti: la Certosa è il cimitero monumentale della città."
+   "segnalazione": "Confermato il 27/11/2026: elenco PAT Emilia-Romagna (26ª revisione, Allegato C), n. 283 «Topino d'Ognissanti», provincia FE (la scheda online dà solo nome e provincia); Ferrara Terra e Acqua (https://www.ferraraterraeacqua.it/en/flavours/typical-products/topino-dognissanti-biscuit) lo descrive: biscotto a forma di topo, fatto solo a Comacchio l'1 e 2 novembre, su ricetta di ciambella, in ricordo di una invasione di topi al nuovo cimitero di Valle Raibosola in epoca napoleonica. Attenzione: è un dolce di Comacchio, non di tutta Ferrara, e il legame con la Certosa è solo tematico (i morti): la curiosità attuale («dolce ferrarese legato alla festa dei Santi e dei Morti») va precisata. Nota: l'elenco PAT consultato è la 26ª revisione, non quella del 2024.",
+   "curiosita": "Un biscotto a forma di topo che si fa solo a Comacchio, l'1 e il 2 novembre: la festa dei Santi e dei Morti, come la Certosa, il cimitero monumentale di Ferrara."
   },
   {
    "tappa": "1-14",
@@ -173,7 +173,7 @@
    "numero": 19,
    "luogo": "Palazzo Paradiso",
    "piatto": "il biscotto anguilla regina",
-   "segnalazione": "Biscotto ferrarese dell'elenco dei prodotti tradizionali (PAT Emilia-Romagna 2024, n. 145); legame con Palazzo Paradiso generico.",
+   "segnalazione": "Esistenza confermata il 27/11/2026: elenco PAT Emilia-Romagna (26ª revisione), n. 145 «Biscotto anguilla regina», provincia FE. Non ho trovato né la descrizione della scheda né la storia del biscotto (non è su Ferrara Terra e Acqua, né in Guidetti, né nelle altre fonti aperte): il nome e la forma restano da verificare, e il legame con Palazzo Paradiso è generico.",
    "curiosita": ""
   },
   {
@@ -209,7 +209,7 @@
    "numero": 23,
    "luogo": "Vicolo del Chiozzino",
    "piatto": "le rane fritte",
-   "segnalazione": "Validazione del 10/10/2026: nessuna fonte trovata (non è nell'elenco PAT né nelle fonti ferraresi consultate); da tenere solo con una fonte.",
+   "segnalazione": "Confermata in parte il 27/11/2026: Ferrara Terra e Acqua (https://www.ferraraterraeacqua.it/en/flavours/typical-products/frog) dice che le rane sono un cibo ferrarese apprezzato, cacciate di notte dai «ranari» e preparate fritte, bollite, marinate o salate; nelle sagre del Ferrarese si servono rane in guazzetto e «rane dorate». Non sono nell'elenco PAT, e una fonte che nomini il piatto «rane fritte» non è stata trovata: se si vuole la formula esatta, «le rane» è documentata, «le rane fritte» è una delle preparazioni. Legame con il Teatro Comunale nullo.",
    "curiosita": ""
   },
   {
@@ -227,7 +227,7 @@
    "numero": 25,
    "luogo": "Teatro Comunale",
    "piatto": "il cocomero ferrarese",
-   "segnalazione": "Proposta generica ferrarese, come hai chiesto: nessun legame con il teatro. Validazione del 10/10/2026: nessuna fonte per un «cocomero ferrarese» (nell'elenco PAT il cocomero è di San Matteo della Decima, provincia di Bologna).",
+   "segnalazione": "Confermato il 27/11/2026 come prodotto ferrarese: Ferrara Terra e Acqua (https://www.ferraraterraeacqua.it/en/flavours/typical-products/ferrarese-water-melon) lo presenta come prodotto tradizionale (IGP in attesa di approvazione), coltivato a Bondeno, Berra, Jolanda, Ostellato, Argenta (Crimson Sweet) e a Codigoro, Mesola, Lagosanto, Comacchio (Sugar Baby), ed è fra le «17 perle» del Ferrarese. La sua pagina dice che fu servito ai banchetti estensi dal primo Trecento a metà Cinquecento, ma senza citare fonti: non usare l'affermazione senza un riscontro. Nell'elenco PAT il cocomero è solo quello di San Matteo della Decima (BO). Nessun legame con il teatro.",
    "curiosita": ""
   },
   {
@@ -236,7 +236,7 @@
    "numero": 26,
    "luogo": "Museo del Risorgimento, mura",
    "piatto": "le pesche ferraresi",
-   "segnalazione": "Proposta generica ferrarese.",
+   "segnalazione": "Proposta generica ferrarese. Riscontro del 27/11/2026: Ferrara Terra e Acqua (https://www.ferraraterraeacqua.it/en/flavours/the-17-pearls-of-ferrara-and-its-province) elenca fra le «17 perle» le pesche e nettarine di Romagna IGP coltivate in vari comuni attorno a Ferrara; «pesche ferraresi» non è un nome di prodotto ufficiale (non è nell'elenco PAT), la denominazione è «pesca e nettarina di Romagna IGP».",
    "curiosita": "La pesca e la nettarina di Romagna sono IGP e si coltivano anche nel Ferrarese."
   },
   {
@@ -262,8 +262,8 @@
    "anno": 1,
    "numero": 29,
    "luogo": "Vicolo del Chiozzino, Largo Vancini",
-   "piatto": "la carota del Delta",
-   "segnalazione": "Proposta generica ferrarese. Validazione del 10/10/2026: nessuna fonte per una «carota del Delta» come prodotto tipico; da decidere.",
+   "piatto": "il salame all'aglio ferrarese",
+   "segnalazione": "Sostituisce la carota del Delta (27/11/2026), per cui nessuna fonte parla del Delta. Prodotto tradizionale ferrarese (PAT Emilia-Romagna, n. 46); il legame con il luogo della tappa va scritto.",
    "curiosita": ""
   },
   {

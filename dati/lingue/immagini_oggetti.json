@@ -1677,96 +1677,15 @@
    "lingua": "IT",
    "anno": 1,
    "numero": 29,
-   "voce": "la carota del Delta",
+   "voce": "il salame all'aglio ferrarese",
    "termini": [
     "carota del Delta",
     "carote",
     "carrots"
    ],
-   "categoria": "da_vedere",
-   "motivo": "",
-   "candidati": [
-    {
-     "file": "File:Adonirrubin.png",
-     "termino": "carote",
-     "licenza": "CC0",
-     "autore": "Mephisto spa",
-     "data": "2025-07-30",
-     "larghezza": 1189,
-     "altezza": 371,
-     "url": "https://commons.wikimedia.org/wiki/File:Adonirrubin.png"
-    },
-    {
-     "file": "File:BilanciaConCarote.jpg",
-     "termino": "carote",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Eleonoram2007b",
-     "data": "2019-03-20 14:29:49",
-     "larghezza": 1536,
-     "altezza": 2560,
-     "url": "https://commons.wikimedia.org/wiki/File:BilanciaConCarote.jpg"
-    },
-    {
-     "file": "File:Carote Pellerino.jpg",
-     "termino": "carote",
-     "licenza": "CC BY-SA 3.0",
-     "autore": "Giovandeste",
-     "data": "2008-11-25",
-     "larghezza": 2592,
-     "altezza": 1944,
-     "url": "https://commons.wikimedia.org/wiki/File:Carote_Pellerino.jpg"
-    },
-    {
-     "file": "File:Carote di campionamento.jpg",
-     "termino": "carote",
-     "licenza": "Public domain",
-     "autore": "Costantino Figini",
-     "data": "2007",
-     "larghezza": 944,
-     "altezza": 708,
-     "url": "https://commons.wikimedia.org/wiki/File:Carote_di_campionamento.jpg"
-    },
-    {
-     "file": "File:Carote di pin d' mer.jpg",
-     "termino": "carote",
-     "licenza": "CC BY-SA 4.0",
-     "autore": "Lucyin",
-     "data": "2011-03-07",
-     "larghezza": 960,
-     "altezza": 1280,
-     "url": "https://commons.wikimedia.org/wiki/File:Carote_di_pin_d%27_mer.jpg"
-    },
-    {
-     "file": "File:Carote 🥕al Forno.jpg",
-     "termino": "carote",
-     "licenza": "CC0",
-     "autore": "DinaBenedettoFerrandina",
-     "data": "2025-10-26 13:18:42",
-     "larghezza": 2953,
-     "altezza": 3760,
-     "url": "https://commons.wikimedia.org/wiki/File:Carote_%F0%9F%A5%95al_Forno.jpg"
-    },
-    {
-     "file": "File:Lightmatter flamingo2.jpg",
-     "termino": "carote",
-     "licenza": "CC BY 1.0",
-     "autore": "Aaron Logan",
-     "data": "",
-     "larghezza": 720,
-     "altezza": 480,
-     "url": "https://commons.wikimedia.org/wiki/File:Lightmatter_flamingo2.jpg"
-    },
-    {
-     "file": "File:Preparing and slicing carrots.jpg",
-     "termino": "carote",
-     "licenza": "CC0",
-     "autore": "W.carter",
-     "data": "Taken on 21 March 2020, 17:48:19",
-     "larghezza": 4748,
-     "altezza": 3473,
-     "url": "https://commons.wikimedia.org/wiki/File:Preparing_and_slicing_carrots.jpg"
-    }
-   ]
+   "categoria": "nessuna",
+   "motivo": "voce cambiata il 27/11/2026 dopo la verifica dell'anno 1: da ricercare",
+   "candidati": []
   },
   {
    "lingua": "IT",
