@@ -4,31 +4,32 @@
  "voci": [
   {
    "tappa": "1-1",
-   "voce": "le reti da pesca annodate",
-   "gesto": "annodare a mano le maglie della rete con l'ago da rete",
-   "legame": "La pesca nel Po e nel suo Delta è il mestiere del fiume; le reti si facevano a mano.",
-   "curiosita": "",
-   "segnalazione": "Legame con Voghenza e la cattedrale solo indiretto (il fiume): nessun mestiere specifico di Voghenza documentato in una fonte letta.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Museo del Delta antico, Comacchio: sezione pesca",
-    "Treccani: Po, pesca fluviale"
+   "voce": "le fornaci romane di Voghenza",
+   "gesto": "impastare l'argilla del Po e modellarla a mano",
+   "legame": "Il «saltus» romano di Voghenza aveva numerose fornaci, alimentate dal legname e dall'argilla degli argini del Po.",
+   "curiosita": "Voghenza fu la prima diocesi del territorio ferrarese, poco dopo il 313 d.C.: ebbe quindici vescovi prima che Ferrara esistesse.",
+   "segnalazione": "",
+   "fonti": [
+    "https://rivista.fondazioneestense.it/en/2003/18/item/145-lantica-voghenza.html"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
-    "Po river fishing net",
-    "rete da pesca Po"
-   ]
+    "Voghenza Roman kiln",
+    "Voghenza archeologia fornace"
+   ],
+   "sostituita": "le reti da pesca annodate: nessuna fonte lega la fabbricazione di reti a Voghenza (la fonte aperta cita piscicoltura e fornaci, non reti)."
   },
   {
    "tappa": "1-2",
-   "voce": "il pavimento a intarsio marmoreo",
+   "voce": "il pavimento della basilica di Pomposa",
    "gesto": "incastrare tessere di marmo e pietra colorata come in un puzzle",
-   "legame": "La basilica di Pomposa ha un pavimento dell'XI-XII secolo a intarsio di pietre e marmi, di tipo cosmatesco.",
-   "curiosita": "A Pomposa lavorarono anche i monaci copisti: la biblioteca era ricca di manoscritti.",
-   "segnalazione": "",
+   "legame": "Nella basilica dell'abbazia di Pomposa il pavimento è lavorato a mosaico e intarsio di pietre e marmi.",
+   "curiosita": "",
+   "segnalazione": "Datazione discordante fra le fonti (Wikipedia: intarsio di tipo cosmatesco XI-XII sec.; scheda regionale IBC: mosaico attribuito a maestranze ravennati del tardo VI sec., forse reimpiego): nel gioco non indicare una data finché non è chiarita.",
    "fonti": [
-    "https://en.wikipedia.org/wiki/Pomposa_Abbey"
+    "https://en.wikipedia.org/wiki/Pomposa_Abbey",
+    "https://bbcc.regione.emilia-romagna.it/samira/api/print/card/162043"
    ],
    "fonti_da_controllare": [],
    "verificata": true,
@@ -41,15 +42,15 @@
    "tappa": "1-3",
    "voce": "la scultura romanica del Duomo",
    "gesto": "battere lo scalpello con il mazzuolo per far uscire le figure dalla pietra",
-   "legame": "La facciata della Cattedrale, che dà sulla piazza del Municipio, ha il portale scolpito di maestri romanici (Nicholaus).",
+   "legame": "La facciata del Duomo (cattedrale di San Giorgio) ha il protiro e il portale con sculture di Nicholaus, allievo forse di Wiligelmo (XII secolo): il San Giorgio e le Scene del Nuovo Testamento.",
    "curiosita": "",
    "segnalazione": "",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Treccani: Ferrara, Cattedrale",
-    "Museo della Cattedrale di Ferrara"
+   "fonti": [
+    "https://www.museionline.info/emilia-romagna-musei-monumenti/cattedrale-di-san-giorgio-ferrara",
+    "https://en.wikipedia.org/wiki/Ferrara_Cathedral"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
     "Ferrara Cathedral portal Nicholaus",
     "Cattedrale di Ferrara facciata"
@@ -61,10 +62,11 @@
    "gesto": "pestare le erbe nel mortaio con il pestello",
    "legame": "Piazza delle Erbe era il mercato delle erbe: gli speziali le trasformavano in rimedi.",
    "curiosita": "",
-   "segnalazione": "Il mercato delle erbe e l'arte degli speziali sono legame plausibile ma non letto in una fonte ferrarese; da confermare una spezieria o una corporazione in zona.",
+   "segnalazione": "Nessuna fonte lega gli speziali a Piazza delle Erbe. Speziali ferraresi sono documentati per la spezieria dell'ospedale Sant'Anna (usata in 1-21): trovare per questa tappa un altro mestiere legato al mercato o alla piazza (non emerso in 30 ricerche condivise).",
    "fonti": [],
    "fonti_da_controllare": [
-    "Archivio storico comunale Ferrara: arte degli speziali"
+    "Archivio storico comunale Ferrara: arte degli speziali",
+    "Ferrara Terra e Acqua: Piazza delle Erbe/Trento Trieste (la pagina letta parla solo della Loggia dei Merciai)"
    ],
    "verificata": false,
    "termini_immagine": [
@@ -74,35 +76,38 @@
   },
   {
    "tappa": "1-5",
-   "voce": "l'affresco trecentesco delle monache",
+   "voce": "l'affresco duecentesco del monastero",
    "gesto": "stendere un velo di intonaco fresco e dipingervi subito",
-   "legame": "Il monastero di Sant'Antonio in Polesine conserva affreschi del Trecento di scuola giottesca/riminese.",
-   "curiosita": "",
+   "legame": "Nell'abside della chiesa di Sant'Antonio in Polesine resta un ciclo di affreschi sulla vita di Cristo della fine del Duecento; il monastero fu fondato nel 1249 da Beatrice II d'Este.",
+   "curiosita": "Il drappo dipinto nell'affresco sembra una tenda islamica: lo ha interpretato così la studiosa Federica Gigante (Burlington Magazine, febbraio 2025).",
    "segnalazione": "",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Treccani: Sant'Antonio in Polesine",
-    "Sito del monastero"
+   "fonti": [
+    "https://www.finestresullarte.info/arte-antica/tende-islamiche-affresco-ferrarese-duecento-scoperta"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
     "Sant'Antonio in Polesine frescoes",
     "Ferrara monastero affreschi"
-   ]
+   ],
+   "correzione": "era «l'affresco trecentesco delle monache»: la datazione è fine Duecento, non Trecento."
   },
   {
    "tappa": "1-6",
    "voce": "la medaglia di Pisanello",
    "gesto": "versare il bronzo fuso nello stampo ricavato dal modello in cera",
-   "legame": "Pisanello fu a Ferrara alla corte di Leonello d'Este e vi fece le sue prime medaglie fuse (1438-1441).",
+   "legame": "Pisanello ritrasse Leonello d'Este, marchese di Ferrara, in una medaglia fusa (circa 1441-44).",
    "curiosita": "",
-   "segnalazione": "Date esatte (1438 concilio, gara del 1441 con Jacopo Bellini) da confermare su Treccani/Britannica.",
-   "fonti": [],
+   "segnalazione": "Il legame con il luogo è il soggetto (il signore di Ferrara): le fonti lette non dicono dove Pisanello fece la medaglia né confermano la gara con Jacopo Bellini.",
+   "fonti": [
+    "https://www.metmuseum.org/art/collection/search/460846",
+    "https://www.nga.gov/collection/art-object-page.44334.html"
+   ],
    "fonti_da_controllare": [
     "Treccani: Pisanello",
     "Britannica: Pisanello"
    ],
-   "verificata": false,
+   "verificata": true,
    "termini_immagine": [
     "Pisanello medal Leonello d'Este",
     "Leonello d'Este medal"
@@ -110,51 +115,53 @@
   },
   {
    "tappa": "1-7",
-   "voce": "l'armaiolo estense",
-   "gesto": "battere il metallo rovente sull'incudine",
-   "legame": "A Ferrara gli Este avevano armerie e fabbri d'arme; il Castello era la loro residenza fortificata.",
-   "curiosita": "",
-   "segnalazione": "Mestiere vero ma nessuna fonte letta lo lega alle armerie del Castello: da precisare.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Castello Estense: armeria e artiglierie, sito ufficiale"
+   "voce": "la fusione dei cannoni del Castello",
+   "gesto": "far colare il bronzo fuso dal crogiolo nel grande stampo di terra",
+   "legame": "Alfonso I d'Este fece costruire nel Castello un'armeria ed era esperto nel progettare e fondere i cannoni.",
+   "curiosita": "Nel 1529 Michelangelo visitò Ferrara per studiarne i bastioni: il duca gli mostrò di persona bastioni e artiglierie.",
+   "segnalazione": "L'epoca è quella di Alfonso I (1505-34), posteriore a Borso.",
+   "fonti": [
+    "https://www.castelloestense.it/en/the-castle/the-monument/the-palace/the-castle-under-alfonso-i",
+    "https://www.museoferrara.it/en/view/s/069d83c0d496447daf0cff727f99d80a"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
     "Castello Estense armory",
-    "armaiolo fucina"
-   ]
+    "Renaissance cannon casting"
+   ],
+   "sostituita": "l'armaiolo estense: l'armeria del Castello è documentata, ma nessuna fonte letta nomina armaioli o fabbri."
   },
   {
    "tappa": "1-8",
-   "voce": "il pergamenaio dello Studio",
-   "gesto": "tendere e raschiare la pelle sul telaio",
-   "legame": "L'Università (lo Studio) copiava e usava libri su pergamena.",
+   "voce": "il Teatro Anatomico dello Studio",
+   "gesto": "montare le gradinate ad anello, un gradino sopra l'altro, attorno al tavolo anatomico",
+   "legame": "Palazzo Paradiso fu sede dello Studio dal 1567; il Teatro Anatomico ottagonale vi fu costruito nel 1731-32 da Giacinto Agnelli e Francesco Muzzarelli e servì alle lezioni pubbliche di anatomia fino al 1831.",
    "curiosita": "",
-   "segnalazione": "Legame generico: nessuna fonte letta su pergamenai dello Studio ferrarese.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Unife: storia dello Studio ferrarese"
+   "segnalazione": "Il materiale del Teatro non è indicato nella fonte letta: non scrivere «in legno» finché non è confermato.",
+   "fonti": [
+    "https://www.museoferrara.it/en/view/s/a05460e04e6840acbd5f3e916c21cf4f"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
-    "parchment making",
-    "pergamena raschiatura"
-   ]
+    "Teatro Anatomico Ferrara",
+    "Palazzo Paradiso anatomical theatre"
+   ],
+   "sostituita": "il pergamenaio dello Studio: nessuna fonte su pergamenai legati allo Studio ferrarese."
   },
   {
    "tappa": "1-9",
    "voce": "la miniatura della Bibbia di Borso",
    "gesto": "stendere la foglia d'oro e dipingere con pennelli finissimi",
-   "legame": "La Bibbia di Borso d'Este (1455-61) fu miniata a Ferrara per il duca Borso.",
+   "legame": "La Bibbia di Borso d'Este fu miniata nel 1455-61 alla corte di Ferrara da Taddeo Crivelli e Franco dei Russi con la loro équipe: due volumi di pergamena, 604 fogli miniati con molto oro.",
    "curiosita": "",
    "segnalazione": "",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Biblioteca Estense di Modena: Bibbia di Borso",
-    "Treccani: Bibbia di Borso"
+   "fonti": [
+    "https://www.finestresullarte.info/en/works-and-artists/the-bible-of-borso-d-este-the-illuminated-codex-symbolizing-the-splendor-of-ferrara-in-the-15th-century"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
     "Bible of Borso d'Este",
     "Bibbia di Borso miniatura"
@@ -164,11 +171,11 @@
    "tappa": "1-10",
    "voce": "gli arazzi estensi dei Karcher",
    "gesto": "passare i fili di trama tra quelli d'ordito sul telaio",
-   "legame": "Nicola e Giovanni Karcher, tessitori fiamminghi, lavorarono a Ferrara per i duchi d'Este.",
-   "curiosita": "Nel 1550 fu firmato il contratto per otto arazzi con le storie dei santi Giorgio e Maurelio.",
-   "segnalazione": "L'arazzeria ducale è del 1536 (Ercole II), non dell'epoca di Borso: legame col luogo (corte) vero, con l'epoca no.",
+   "legame": "Nel 1536 il duca Ercole II fece venire da Bruxelles i fratelli Nicola e Giovanni Karcher e Giovanni Rost: nacque l'arazzeria ducale ferrarese; poi Giovanni Karcher la diresse per circa venticinque anni.",
+   "curiosita": "Il 15 ottobre 1550 fu firmato il contratto per otto arazzi del Duomo (storie di San Giorgio e di San Maurelio), tessuti da Giovanni Karcher tra il 1550 e il 1553 sui cartoni di Garofalo e Camillo Filippi.",
+   "segnalazione": "L'arazzeria ducale è del 1536 (Ercole II), posteriore a Borso: nel livello non attribuirla a Borso.",
    "fonti": [
-    "https://rivista.fondazioneestense.it/en/1997/6/item/360-antiche-trame-da-salvare"
+    "https://rivista.fondazioneestense.it/en/1997/6/item/360-antiche-trame-da-salvare.html"
    ],
    "fonti_da_controllare": [],
    "verificata": true,
@@ -183,11 +190,14 @@
    "gesto": "tracciare le lettere ebraiche con la penna d'oca su pergamena",
    "legame": "La comunità ebraica di Ferrara è storica; il MEIS ne racconta la storia.",
    "curiosita": "",
-   "segnalazione": "Mestiere vero (il sofer) ma nessun scriba ferrarese citato in fonte letta.",
-   "fonti": [],
+   "segnalazione": "Nessuna fonte letta su un sofer (scriba) a Ferrara. Il MEIS presenta nella sezione sulla cultura ebraica un Sefer Torah (pergamena e rulli di legno, Francia settentrionale ca. 1250, comunità di Vercelli), che non è ferrarese e non descrive la scrittura. Da trovare un mestiere documentato nell'ex ghetto (la pagina di Ferrara Terra e Acqua cita il forno delle azzime in via Vignatagliata 49, ma è un cibo).",
+   "fonti": [
+    "https://meis.museum/en/jewish-culture/objects-symbols/",
+    "https://www.ferraraterraeacqua.it/en/ferrara/discover-the-area/art-and-culture/piazzas-loggias-and-historical-routes/jewish-ghetto"
+   ],
    "fonti_da_controllare": [
     "MEIS Ferrara: collezione",
-    "Treccani: Sefer Torah"
+    "Comunità ebraica di Ferrara: scribi"
    ],
    "verificata": false,
    "termini_immagine": [
@@ -197,17 +207,16 @@
   },
   {
    "tappa": "1-12",
-   "voce": "gli stucchi di Schifanoia",
+   "voce": "il fregio in stucco di Schifanoia",
    "gesto": "modellare lo stucco ancora molle con spatole e stecche",
-   "legame": "Nel palazzo di Schifanoia la Sala degli Stucchi ha il soffitto in stucco della seconda metà del Quattrocento.",
-   "curiosita": "",
+   "legame": "Nella Sala degli Stucchi di Palazzo Schifanoia il fregio in legno e stucco (circa 1467) è opera dello scultore Domenico di Paris, poi dipinto da Buongiovanni da Geminiano.",
+   "curiosita": "Il soffitto della sala è a cassettoni: lo stucco è nel fregio.",
    "segnalazione": "",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Musei di Arte Antica Ferrara: Schifanoia",
-    "Treccani: Schifanoia"
+   "fonti": [
+    "https://www.museionline.info/emilia-romagna-musei-monumenti/museo-civico-di-arte-antica-schifanoia"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
     "Palazzo Schifanoia stucchi",
     "Sala degli Stucchi Ferrara"
@@ -215,35 +224,38 @@
   },
   {
    "tappa": "1-13",
-   "voce": "la tarsia lignea dei Canozzi",
-   "gesto": "incastrare listelli di legni di colore diverso",
-   "legame": "I fratelli Canozzi da Lendinara fecero tarsie per gli Este.",
+   "voce": "il coro ligneo della Certosa",
+   "gesto": "intagliare il legno con sgorbie e scalpelli",
+   "legame": "La chiesa di San Cristoforo alla Certosa, fatta costruire dagli Este (la Certosa è del 1461, voluta da Borso), conserva un coro ligneo intagliato.",
    "curiosita": "",
-   "segnalazione": "Una fonte aperta (scheda sul sito Bologna+Modena) colloca i Canozzi a Modena negli anni 1460 (cori del Duomo, opere ora alla Galleria Estense): il legame con Pinacoteca/Certosa di Ferrara non è confermato.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Treccani: Canozzi, Cristoforo e Lorenzo",
-    "Pinacoteca Nazionale di Ferrara: tarsie"
+   "segnalazione": "Autore e data del coro non indicati nella fonte letta: non attribuirlo a nessuno finché non è confermato.",
+   "fonti": [
+    "https://www.ferraraterraeacqua.it/en/ferrara/discover-the-area/art-and-culture/churches-baptisteries/church-of-san-cristoforo-alla-certosa",
+    "https://www.ferraraterraeacqua.it/en/ferrara/discover-the-area/art-and-culture/memorials/charterhouse"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [
+    "Chiesa di S. Cristoforo e Certosa, catalogo.beniculturali.it",
+    "Treccani: Canozzi (Enciclopedia Italiana)"
+   ],
+   "verificata": true,
    "termini_immagine": [
-    "Canozzi intarsia",
-    "tarsia lignea Canozzi Lendinara"
-   ]
+    "Certosa di Ferrara coro ligneo",
+    "San Cristoforo alla Certosa choir stalls"
+   ],
+   "sostituita": "la tarsia lignea dei Canozzi: Treccani (Enciclopedia Italiana, «Canozi») colloca Cristoforo a Modena, Pisa e Lucca (tarsie di Lucca, 1488; cori del Duomo di Modena negli anni 1460, ora alla Galleria Estense); di Lorenzo non dice dove lavorò. A Ferrara è documentato solo Bernardino, figlio di Cristoforo, che fece un grande coro per la Cattedrale. Nessuna opera di Lorenzo o Cristoforo a Ferrara. Il legame era sbagliato."
   },
   {
    "tappa": "1-14",
    "voce": "il bugnato a punta di diamante",
    "gesto": "scalpellare le facce del marmo fino a farne piramidi",
-   "legame": "La facciata del Palazzo dei Diamanti, sull'Addizione, è fatta di blocchi tagliati a punta di diamante.",
+   "legame": "La facciata del Palazzo dei Diamanti, nell'Addizione Erculea, è rivestita di oltre 8000 conci di marmo rosa e bianco tagliati a forma di piramide, da cui il nome.",
    "curiosita": "",
    "segnalazione": "",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Treccani: Palazzo dei Diamanti",
-    "Musei di Ferrara: Palazzo dei Diamanti"
+   "fonti": [
+    "https://www.ferraraterraeacqua.it/en/ferrara/discover-the-area/art-and-culture/villas-historical-residences-and-theatres/palazzo-dei-diamanti"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
     "Palazzo dei Diamanti facade",
     "bugnato a punta di diamante"
@@ -251,20 +263,21 @@
   },
   {
    "tappa": "1-15",
-   "voce": "l'inchiostro di galla",
-   "gesto": "pestare le galle di quercia e mescolarle al solfato di ferro",
-   "legame": "Era l'inchiostro dei manoscritti: nella biblioteca di Palazzo Paradiso se ne conservano di antichi.",
-   "curiosita": "",
-   "segnalazione": "Legame generico con la Biblioteca Ariostea: nessuna fonte letta su una produzione locale.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Biblioteca Ariostea: manoscritti"
+   "voce": "il monumento funebre di Ariosto",
+   "gesto": "sgrossare il blocco di marmo e poi levigarlo fino a farlo lucido",
+   "legame": "Nella sala principale della Biblioteca Ariostea (Palazzo Paradiso) sta la tomba di Ludovico Ariosto, trasferita qui nel 1801: disegnata da Giovan Battista Aleotti, fu eseguita in marmo di Verona da Alessandro Nani.",
+   "curiosita": "Le spoglie del poeta furono portate qui il 6 giugno 1801 dalla chiesa di San Benedetto.",
+   "segnalazione": "",
+   "fonti": [
+    "https://www.museoferrara.it/en/view/s/a05460e04e6840acbd5f3e916c21cf4f"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
-    "iron gall ink",
-    "inchiostro ferrogallico"
-   ]
+    "Tomba di Ariosto Ferrara",
+    "Biblioteca Ariostea Ariosto tomb"
+   ],
+   "sostituita": "l'inchiostro di galla: nessuna fonte su una produzione locale; legame solo generico con la biblioteca."
   },
   {
    "tappa": "1-16",
@@ -287,11 +300,12 @@
    "tappa": "1-17",
    "voce": "la stampa del Furioso",
    "gesto": "inchiostrare i caratteri e abbassare il torchio sul foglio",
-   "legame": "L'Orlando furioso fu stampato a Ferrara il 22 aprile 1516 da Mazocco dal Bondeno, come dice il colophon.",
+   "legame": "L'Orlando furioso fu stampato a Ferrara il 22 aprile 1516 da Giovanni Mazzocchi (Mazocco dal Bondeno), come dice il colophon: la Biblioteca Ariostea ne conserva l'editio princeps.",
    "curiosita": "Il libro fu finito di stampare a Ferrara il 22 aprile 1516.",
-   "segnalazione": "Il nome di battesimo nel colophon è illeggibile nell'articolo aperto: «Giovanni» è la lettura corrente, da confermare.",
+   "segnalazione": "",
    "fonti": [
-    "https://rivista.fondazioneestense.it/en/2006/item/21-orlando-a-ferrara"
+    "https://rivista.fondazioneestense.it/en/2006/item/21-orlando-a-ferrara",
+    "https://www.museoferrara.it/en/view/s/bc8c1079988541cfbed1bddaf0ad6930"
    ],
    "fonti_da_controllare": [],
    "verificata": true,
@@ -306,11 +320,12 @@
    "gesto": "incurvare e incollare le fasce di un liuto",
    "legame": "La corte estense aveva musicisti e strumenti: liutai lavoravano per i duchi.",
    "curiosita": "",
-   "segnalazione": "Liutai estensi presenti nei documenti, ma nessuna fonte letta: da confermare con nomi.",
+   "segnalazione": "Nei documenti di Ippolito I d'Este (Archivio di Stato di Modena, descritti nel PDF della Columbia Italian Academy) compaiono costruttori di organi, clavicembali e viole (Lorenzo Gusnasco da Pavia, Alessandro Pasi da Modena, Bastiano da Verona, Zoanpiero da Brescia), ma la fonte non dice che lavorassero a Ferrara né nomina liutai. Da confermare con Lockwood o Grove.",
    "fonti": [],
    "fonti_da_controllare": [
-    "Archivio di Stato di Modena: Camera ducale",
-    "Grove: Ferrara, strumenti"
+    "Lockwood, Music in Renaissance Ferrara (accesso aperto)",
+    "Grove: Ferrara",
+    "https://italianacademy.columbia.edu/sites/default/files/content/Ippolito I d'Este's Music Room, Reconstructing a Magnificent Lost Collection.pdf"
    ],
    "verificata": false,
    "termini_immagine": [
@@ -320,34 +335,34 @@
   },
   {
    "tappa": "1-19",
-   "voce": "la scrittura dell'autografo ariostesco",
-   "gesto": "tracciare le lettere con la penna e inclinare il polso",
-   "legame": "La Biblioteca Ariostea conserva i manoscritti autografi dell'Orlando furioso.",
+   "voce": "la poltrona di noce di Ariosto",
+   "gesto": "piallare e incastrare le assi di noce",
+   "legame": "La Biblioteca Ariostea, a Palazzo Paradiso, conserva la poltrona di noce del poeta, semplice, accanto al calamaio di bronzo.",
    "curiosita": "",
    "segnalazione": "",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Biblioteca Ariostea: Furioso autografo"
+   "fonti": [
+    "https://www.museoferrara.it/en/view/s/bc8c1079988541cfbed1bddaf0ad6930"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
-    "Ariosto autograph manuscript",
-    "Orlando furioso manoscritto Ariostea"
-   ]
+    "Ariosto armchair Biblioteca Ariostea",
+    "poltrona Ariosto Ferrara"
+   ],
+   "sostituita": "la scrittura dell'autografo ariostesco: la fonte aperta sulla Biblioteca Ariostea non cita autografi dell'Orlando furioso (i manoscritti autografi nominati sono di Bassani)."
   },
   {
    "tappa": "1-20",
-   "voce": "l'oreficeria di corte",
+   "voce": "la bottega dell'orafo del Castello",
    "gesto": "cesellare il metallo con martelletti e punzoni",
-   "legame": "Il Castello era la sede del tesoro e degli argenti ducali.",
+   "legame": "Sotto Alfonso I nel Castello Estense c'era una bottega d'orafo, accanto alla dispensa.",
    "curiosita": "",
-   "segnalazione": "Orafi estensi ben noti, ma nessuna fonte letta: da confermare.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Castello Estense: sito ufficiale",
-    "Treccani: oreficeria ferrarese"
+   "segnalazione": "L'epoca è quella di Alfonso I (1505-34), posteriore a Borso.",
+   "fonti": [
+    "https://www.castelloestense.it/en/the-castle/the-monument/the-palace/the-castle-under-alfonso-i"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
     "Renaissance goldsmith chasing",
     "oreficeria rinascimentale"
@@ -355,37 +370,41 @@
   },
   {
    "tappa": "1-21",
-   "voce": "la stamperia ducale di Baldini",
-   "gesto": "comporre le righe con i caratteri mobili",
-   "legame": "Vittorio Baldini fu stampatore ducale a Ferrara nel periodo di Tasso.",
+   "voce": "la spezieria dell'ospedale Sant'Anna",
+   "gesto": "pestare le erbe nel mortaio con il pestello",
+   "legame": "L'ospedale di Sant'Anna (permesso di costruirlo nel 1440) ebbe fin dall'inizio una spezieria, con arredi di pregio e opere di Dosso Dossi e Girolamo da Carpi.",
    "curiosita": "",
-   "segnalazione": "Da confermare il legame con l'ospedale di Sant'Anna (Tasso) e l'edizione della Liberata a Ferrara.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Treccani: Baldini, Vittorio"
+   "segnalazione": "Il riassunto letto non nomina speziali né mortai: il gesto è generico.",
+   "fonti": [
+    "https://museo.unifarco.it/it/riviste/202204-aprile-2022/la-spezieria-del-magno-spedale-s-anna-di-ferrara-di-chiara-beatrice-vicentini-lorenzo-altieri-stefano-manfredini-240"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [
+    "Vicentini, La spezieria del Magno Spedale S. Anna di Ferrara (PDF completo su iris.unife.it)"
+   ],
+   "verificata": true,
    "termini_immagine": [
-    "Vittorio Baldini printer Ferrara",
-    "stamperia Baldini Ferrara"
-   ]
+    "Ospedale Sant'Anna Ferrara spezieria",
+    "antica spezieria mortaio"
+   ],
+   "sostituita": "la stamperia ducale di Baldini: Vittorio Baldini è stampatore ducale (di musica) dal 1582 sotto Alfonso II, ma nessuna fonte letta lo lega a Sant'Anna o al Castello e il collegamento con Tasso non risulta."
   },
   {
    "tappa": "1-22",
-   "voce": "la muratura in cotto delle mura",
-   "gesto": "stendere la malta e posare i mattoni uno dopo l'altro",
-   "legame": "Le mura di Ferrara sono di mattoni cotti, posati da muratori.",
-   "curiosita": "",
-   "segnalazione": "",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Treccani: Ferrara, mura"
+   "voce": "i terrapieni dei bastioni",
+   "gesto": "ammucchiare la terra a strati e compattarla con il pestello",
+   "legame": "Alfonso I ampliò le mura con fossati e terrapieni: nel 1518 circa 1.200 uomini con i carri lavoravano ai terrapieni, mentre il Barbazza seguiva i bastioni.",
+   "curiosita": "Nel 1529 Michelangelo venne a Ferrara a studiare i bastioni orientali, su richiesta della Signoria fiorentina.",
+   "segnalazione": "L'epoca è quella di Alfonso I, posteriore a Borso.",
+   "fonti": [
+    "https://www.museoferrara.it/en/view/s/069d83c0d496447daf0cff727f99d80a"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
-    "Ferrara walls brick",
-    "mura di Ferrara cotto"
-   ]
+    "Ferrara walls bastion",
+    "mura di Ferrara baluardo"
+   ],
+   "sostituita": "la muratura in cotto delle mura: la fonte letta descrive terrapieni, fossati e cammini di ronda, non mattoni cotti."
   },
   {
    "tappa": "1-23",
@@ -393,11 +412,13 @@
    "gesto": "incidere il disegno con la punta nello strato di ingobbio",
    "legame": "Ferrara ebbe un'importante produzione di ceramica graffita tra Quattro e Cinquecento.",
    "curiosita": "",
-   "segnalazione": "Nessun legame con il vicolo del Chiozzino: la voce vale per la città; da confermare un ritrovamento in zona.",
-   "fonti": [],
+   "segnalazione": "La ceramica graffita è documentata a Ferrara (il Museo di Schifanoia ne espone frammenti), ma nessuna fonte la lega al vicolo del Chiozzino, che la fonte letta ricorda per la casa dell'ingegnere Bartolomeo Chiozzi, il «mago Chiozzino», vicino a San Domenico. Resta aperto il mestiere legato al luogo.",
+   "fonti": [
+    "https://www.ferraraterraeacqua.it/en/ferrara/discover-the-area/art-and-culture/museums-and-galleries/museum-of-ancient-art",
+    "https://emiliaromagnaturismo.it/en/itineraries/unusual-and-mysterious-ferrara"
+   ],
    "fonti_da_controllare": [
-    "Museo della Ceramica graffita ferrarese, Schifanoia",
-    "Treccani: ceramica graffita"
+    "Museo della Ceramica graffita ferrarese, Schifanoia"
    ],
    "verificata": false,
    "termini_immagine": [
@@ -409,14 +430,14 @@
    "tappa": "1-24",
    "voce": "la scultura funeraria della Certosa",
    "gesto": "levigare il marmo con raspa e abrasivi",
-   "legame": "Il cimitero monumentale della Certosa è pieno di scultura funeraria.",
+   "legame": "La Certosa, costruita da Borso d'Este nel 1461, fu trasformata in cimitero monumentale all'inizio dell'Ottocento e conserva importanti sculture.",
    "curiosita": "",
-   "segnalazione": "Voce vera ma legame con il Po e con epoche precedenti all'Ottocento non chiaro.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Certosa di Ferrara: sito del Comune"
+   "segnalazione": "Scultori e opere non nominati nella fonte letta; legame con il Po non rilevante. Le sculture funerarie sono dell'Ottocento.",
+   "fonti": [
+    "https://www.ferraraterraeacqua.it/en/ferrara/discover-the-area/art-and-culture/memorials/charterhouse"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
     "Certosa di Ferrara sculpture",
     "scultura funeraria Certosa Ferrara"
@@ -424,51 +445,52 @@
   },
   {
    "tappa": "1-25",
-   "voce": "la scenografia dipinta",
-   "gesto": "stendere il colore sulla tela del fondale con pennelli larghi",
-   "legame": "Il Teatro Comunale usa fondali dipinti a mano.",
+   "voce": "il sipario dipinto del Teatro Comunale",
+   "gesto": "stendere il colore sul grande telo con pennelli larghi",
+   "legame": "Francesco Migliari dipinse nel 1833 il sipario del Teatro Comunale, con soggetto tratto dall'Orlando furioso, e il soffitto della Sala Grande.",
    "curiosita": "",
-   "segnalazione": "Legame generico con il Teatro Comunale: nessuna fonte letta.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Teatro Comunale di Ferrara: laboratori"
+   "segnalazione": "",
+   "fonti": [
+    "https://www.teatrocomunaleferrara.it/en/?p=2695"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
-    "theatre backdrop painting",
-    "scenografia teatro"
-   ]
+    "Teatro Comunale Ferrara sipario",
+    "Migliari sipario Ferrara"
+   ],
+   "sostituita": "la scenografia dipinta: nessuna fonte su fondali dipinti a mano; la fonte letta nomina invece il sipario di Migliari (1833)."
   },
   {
    "tappa": "1-26",
-   "voce": "la bandiera tricolore cucita",
-   "gesto": "cucire insieme i tre teli di stoffa",
-   "legame": "Il Museo del Risorgimento conserva bandiere.",
+   "voce": "le bandiere dei Bersaglieri del Po",
+   "gesto": "cucire insieme le strisce di stoffa e fissare l'asta",
+   "legame": "Il Museo del Risorgimento e della Resistenza di Ferrara conserva bandiere, tra cui quelle della Repubblica Cispadana e dei Bersaglieri del Po.",
    "curiosita": "",
-   "segnalazione": "Mestiere generico: nessuna bandiera specifica indicata.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Museo del Risorgimento Ferrara: catalogo"
+   "segnalazione": "Il museo risulta chiuso al pubblico fino a nuova comunicazione (fonte letta). Il gesto è generico.",
+   "fonti": [
+    "https://www.ferraraterraeacqua.it/en/ferrara/discover-the-area/art-and-culture/museums-and-galleries/museo-del-risorgimento-e-della-resistenza"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
-    "Italian flag Risorgimento",
-    "bandiera tricolore Risorgimento"
-   ]
+    "Bersaglieri del Po bandiera",
+    "Museo del Risorgimento Ferrara bandiere"
+   ],
+   "sostituita": "la bandiera tricolore cucita: mestiere generico, nessuna bandiera specifica indicata."
   },
   {
    "tappa": "1-27",
    "voce": "la lavorazione della canapa",
    "gesto": "sfibrare gli steli battendoli con la gramola",
-   "legame": "Ferrara fu a lungo una grande produttrice di canapa; le bonifiche la favorirono.",
+   "legame": "Nel 1914 la provincia di Ferrara era la prima in Italia per la canapa (circa 30.000 ettari): gli steli si ammollavano nei maceri e la fibra si separava a mano con le gramole di legno.",
    "curiosita": "",
    "segnalazione": "",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Treccani: canapa",
-    "Museo della Bonifica, Argenta"
+   "fonti": [
+    "https://rivista.fondazioneestense.it/en/2003/18/item/149-una-pianta-della-nostra-tradizione.html"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
     "hemp processing Ferrara",
     "canapa ferrarese gramolatura"
@@ -478,14 +500,15 @@
    "tappa": "1-28",
    "voce": "l'incisione delle lapidi ebraiche",
    "gesto": "incidere le lettere ebraiche con lo scalpello",
-   "legame": "Il cimitero ebraico di via delle Vigne ha lapidi incise antiche.",
+   "legame": "Il cimitero ebraico di via delle Vigne, nell'Addizione Erculea, ha circa 800 lapidi, poco più di cento in ebraico; la più antica è del 1549.",
    "curiosita": "",
-   "segnalazione": "",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "MEIS: cimitero ebraico"
+   "segnalazione": "Le fonti lette non nominano gli scalpellini delle lapidi.",
+   "fonti": [
+    "https://www.museoferrara.it/en/view/s/49983b0e46e94e83b9ffed4a4ffc1943",
+    "https://www.museoferrara.it/en/view/s/165f1763163644aea4a7b239eae4f377"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
     "Jewish cemetery Ferrara",
     "cimitero ebraico Ferrara via delle Vigne"
@@ -497,10 +520,13 @@
    "gesto": "tagliare e cucire il cuoio con la lesina",
    "legame": "Mestiere diffuso nelle città estensi.",
    "curiosita": "",
-   "segnalazione": "Voce debole: nessun legame verificato con vicolo del Chiozzino o Largo Vancini.",
-   "fonti": [],
+   "segnalazione": "Nessuna fonte letta lega la lavorazione del cuoio al vicolo del Chiozzino o a Largo Vancini (la fonte letta ricorda il vicolo per la casa dell'ingegnere Bartolomeo Chiozzi, vicino a San Domenico; nessuna pagina su Largo Vancini). Voce da sostituire con un mestiere documentato.",
+   "fonti": [
+    "https://emiliaromagnaturismo.it/en/itineraries/unusual-and-mysterious-ferrara"
+   ],
    "fonti_da_controllare": [
-    "Archivio storico comunale Ferrara: arti"
+    "Archivio storico comunale Ferrara: arti",
+    "Ferrara Terra e Acqua: Largo Vancini"
    ],
    "verificata": false,
    "termini_immagine": [
@@ -514,14 +540,14 @@
    "gesto": "disporre e controllare le reti nei recinti a V",
    "legame": "A Comacchio, vicino al Lido di Spina, il lavoriero è l'impianto di pesca tipico delle valli.",
    "curiosita": "",
-   "segnalazione": "La fonte aperta conferma voce e legame con Comacchio; il fatto che Lido di Spina appartenga a Comacchio non è stato letto.",
+   "segnalazione": "Che Lido di Spina sia parte di Comacchio non è stato riletto in questa verifica.",
    "fonti": [
     "https://www.ferraraterraeacqua.it/en/comacchio/discover-the-area/nature-and-environment/parks-and-natural-reserves/the-valli-di-comacchio-po-delta-park/lavoriero"
    ],
    "fonti_da_controllare": [
     "Comune di Comacchio: Lido di Spina"
    ],
-   "verificata": false,
+   "verificata": true,
    "termini_immagine": [
     "lavoriero Comacchio",
     "Valli di Comacchio fishing"
