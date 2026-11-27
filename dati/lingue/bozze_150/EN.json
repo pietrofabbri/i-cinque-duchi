@@ -22,7 +22,7 @@
   },
   {
    "tappa": "1-2",
-   "voce": "Guido d'Arezzo e il pentagramma",
+   "voce": "il pentagramma di Guido d'Arezzo",
    "legame": "Guido, monaco benedettino, si formò nell'abbazia di Pomposa, dove mise a punto i principi della notazione su rigo, base della scrittura musicale moderna.",
    "curiosita": "Lasciò Pomposa intorno al 1025 perché i confratelli resistevano alle sue novità.",
    "segnalazione": "",
@@ -58,7 +58,7 @@
   },
   {
    "tappa": "1-4",
-   "voce": "Jacob Obrecht a Ferrara",
+   "voce": "la musica di Jacob Obrecht",
    "legame": "Il compositore fiammingo Obrecht lavorò per Ercole I d'Este negli ultimi anni del suo patronato e morì a Ferrara, nel 1505.",
    "curiosita": "Morì di peste a Ferrara.",
    "segnalazione": "Nessun legame specifico con Piazza delle Erbe: è un legame con la città. Data e circostanza della morte da riconfermare.",
@@ -274,7 +274,7 @@
   },
   {
    "tappa": "1-16",
-   "voce": "le musiche per le nozze di Lucrezia Borgia",
+   "voce": "le nozze musicali di Lucrezia",
    "legame": "Le nozze di Lucrezia Borgia con Alfonso d'Este (1502) furono accompagnate da feste, commedie e musica; Lucrezia è sepolta nel monastero del Corpus Domini.",
    "curiosita": "",
    "segnalazione": "Da confermare quali musiche: Lockwood si ferma al 1505, ma il capitolo su feste e teatro va controllato.",
@@ -291,7 +291,7 @@
   },
   {
    "tappa": "1-17",
-   "voce": "la musica per le commedie di Ariosto",
+   "voce": "la musica delle commedie ariostesche",
    "legame": "Ariosto fece rappresentare a corte le sue commedie, a partire dalla Cassaria (1508); gli spettacoli di corte prevedevano musica.",
    "curiosita": "",
    "segnalazione": "Il tipo di musica negli spettacoli ariosteschi non è verificato.",
@@ -308,7 +308,7 @@
   },
   {
    "tappa": "1-18",
-   "voce": "Ferrara sotto le stelle",
+   "voce": "la rassegna Ferrara sotto le stelle",
    "legame": "Dal cortile del Castello estense (Largo Castello) si tiene ogni estate la rassegna di concerti di musica contemporanea.",
    "curiosita": "Nel 2026 è alla trentesima edizione.",
    "segnalazione": "",
@@ -325,18 +325,18 @@
   },
   {
    "tappa": "1-19",
-   "voce": "Antoine Brumel a Ferrara",
-   "legame": "Il compositore francese Brumel fu maestro della cappella di Alfonso I d'Este dopo Obrecht, intorno al 1505-1510.",
+   "voce": "i madrigali di Lodovico Agostini",
+   "legame": "Lodovico Agostini, nato a Ferrara nel 1534, fu compositore legato alla corte di Alfonso II; Palazzo Paradiso fu sede dello Studio e della cultura cittadina.",
    "curiosita": "",
-   "segnalazione": "Legame con Palazzo Paradiso generico. Date da confermare.",
+   "segnalazione": "Nascita a Ferrara e servizio a corte da confermare su Grove; legame con Palazzo Paradiso generico.",
    "fonti": [],
    "fonti_da_controllare": [
-    "Grove: «Antoine Brumel»"
+    "Grove: «Lodovico Agostini»"
    ],
    "verificata": false,
    "termini_immagine": [
-    "Antoine Brumel",
-    "Missa Et ecce terrae motus"
+    "Lodovico Agostini",
+    "madrigale Ferrara"
    ],
    "aggancio_inglese": ""
   },
@@ -431,7 +431,7 @@
   },
   {
    "tappa": "1-25",
-   "voce": "Abbado e Ferrara Musica",
+   "voce": "il progetto Ferrara Musica di Abbado",
    "legame": "Claudio Abbado creò Ferrara Musica e portò la Chamber Orchestra of Europe al Teatro Comunale (che oggi porta il suo nome).",
    "curiosita": "I primi concerti furono nell'aprile 1989; Abbado tornò ogni anno fino al 1998 e chiuse con il «Don Giovanni» di Mozart.",
    "segnalazione": "",
@@ -502,7 +502,7 @@
   },
   {
    "tappa": "1-29",
-   "voce": "Gesualdo a Ferrara",
+   "voce": "i madrigali di Gesualdo",
    "legame": "Carlo Gesualdo da Venosa sposò Leonora d'Este a Ferrara (1594) e vi conobbe i madrigalisti della corte.",
    "curiosita": "",
    "segnalazione": "Legame con Vicolo del Chiozzino generico. Date da confermare.",
@@ -556,15 +556,17 @@
   {
    "tappa": "2-2",
    "voce": "la scala pitagorica",
-   "legame": "Pitagora si stabilì a Crotone: la tradizione gli attribuisce gli intervalli musicali legati a rapporti di numeri interi.",
+   "legame": "Pitagora si trasferì a Crotone intorno al 530 a.C.; la tradizione tarda gli attribuisce i rapporti numerici degli intervalli (ottava 2:1, quinta 3:2, quarta 4:3).",
    "curiosita": "",
-   "segnalazione": "Attribuzione tradizionale, da confermare su Britannica.",
-   "fonti": [],
+   "segnalazione": "L'attribuzione a Pitagora è una tradizione tarda (Stanford Encyclopedia): presentarla come tradizione, non come fatto. La storia dei martelli del fabbro è falsa.",
+   "fonti": [
+    "https://plato.stanford.edu/ENTRIES/pythagoras/"
+   ],
    "fonti_da_controllare": [
     "Britannica: «Pythagoras»",
     "Grove: «Pythagorean intonation»"
    ],
-   "verificata": false,
+   "verificata": true,
    "termini_immagine": [
     "Pitagora Crotone",
     "Pythagorean tuning"
@@ -627,7 +629,7 @@
   },
   {
    "tappa": "2-6",
-   "voce": "Senofane e i rapsodi",
+   "voce": "i versi recitati da Senofane",
    "legame": "Senofane di Colofone, fondatore della scuola di Elea, recitava versi propri come i rapsodi.",
    "curiosita": "",
    "segnalazione": "Passo di Diogene Laerzio (IX 18) da riaprire.",
@@ -665,7 +667,7 @@
    "voce": "il canto ambrosiano",
    "legame": "Sant'Ambrogio, vescovo di Milano, introdusse inni cantati a cori alterni; il rito ambrosiano ha ancora un canto proprio.",
    "curiosita": "",
-   "segnalazione": "",
+   "segnalazione": "Da confermare su una fonte di riferimento.",
    "fonti": [],
    "fonti_da_controllare": [
     "Grove: «Ambrosian chant»",
@@ -731,7 +733,7 @@
   },
   {
    "tappa": "2-12",
-   "voce": "Guillaume Du Fay a Ferrara",
+   "voce": "la musica di Guillaume Du Fay",
    "legame": "Nel capitolo sulla Ferrara degli anni Trenta del Quattrocento Lockwood tratta di Feragut e di Du Fay, alla corte di Niccolò III.",
    "curiosita": "",
    "segnalazione": "Permanenza di Du Fay a Ferrara da riconfermare su Grove.",
@@ -767,10 +769,10 @@
   },
   {
    "tappa": "2-14",
-   "voce": "Francesco Landini",
+   "voce": "la musica di Francesco Landini",
    "legame": "Landini, organista cieco fiorentino del Trecento, è tra i maggiori compositori dell'Ars nova italiana.",
    "curiosita": "",
-   "segnalazione": "",
+   "segnalazione": "Da confermare su una fonte di riferimento.",
    "fonti": [],
    "fonti_da_controllare": [
     "Grove: «Francesco Landini»",
@@ -821,7 +823,7 @@
   },
   {
    "tappa": "2-17",
-   "voce": "Nerone citaredo",
+   "voce": "la cetra di Nerone",
    "legame": "Nerone si esibì come cantante e citaredo; istituì i Neronia nel 60.",
    "curiosita": "",
    "segnalazione": "Passi di Svetonio e Tacito da riaprire.",
@@ -890,8 +892,8 @@
   },
   {
    "tappa": "2-21",
-   "voce": "Tarquinia Molza",
-   "legame": "Tarquinia Molza, modenese, fu cantante e letterata del concerto delle dame di Ferrara.",
+   "voce": "la voce di Tarquinia Molza",
+   "legame": "Tarquinia Molza, modenese, fu una delle cantanti del concerto delle dame di Ferrara.",
    "curiosita": "",
    "segnalazione": "",
    "fonti": [
@@ -907,10 +909,10 @@
   },
   {
    "tappa": "2-22",
-   "voce": "Vivaldi e la Pietà",
+   "voce": "le fanciulle della Pietà",
    "legame": "Vivaldi insegnò all'Ospedale della Pietà di Venezia.",
    "curiosita": "",
-   "segnalazione": "",
+   "segnalazione": "Da confermare su una fonte di riferimento.",
    "fonti": [],
    "fonti_da_controllare": [
     "Britannica: «Antonio Vivaldi»"
@@ -944,7 +946,7 @@
    "voce": "l'Euridice di Peri",
    "legame": "Nel 1600 a Firenze fu rappresentata la prima opera conservata.",
    "curiosita": "",
-   "segnalazione": "",
+   "segnalazione": "Da confermare su una fonte di riferimento.",
    "fonti": [],
    "fonti_da_controllare": [
     "Britannica: «Jacopo Peri»"
@@ -975,7 +977,7 @@
   },
   {
    "tappa": "2-26",
-   "voce": "Alfonso della Viola",
+   "voce": "la musica di Alfonso della Viola",
    "legame": "Alfonso della Viola, ferrarese, musicò il «Sacrificio» di Beccari (1554).",
    "curiosita": "",
    "segnalazione": "Da confermare.",
@@ -1043,8 +1045,8 @@
   },
   {
    "tappa": "2-30",
-   "voce": "Giaches de Wert",
-   "legame": "Wert scrisse musica per il concerto ferrarese.",
+   "voce": "i madrigali di Giaches de Wert",
+   "legame": "Giaches de Wert fu uno dei compositori che scrissero per il concerto delle dame, ospitato nella corte di Alfonso II.",
    "curiosita": "",
    "segnalazione": "",
    "fonti": [
@@ -1055,6 +1057,1552 @@
    "termini_immagine": [
     "Giaches de Wert",
     "Madrigali"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "3-1",
+   "voce": "l'organo idraulico di Ctesibio",
+   "legame": "Ad Alessandria d'Egitto, nel III secolo a.C., l'ingegnere Ctesibio ideò l'hydraulis, antenato dell'organo.",
+   "curiosita": "",
+   "segnalazione": "Attribuzione e data da confermare su Britannica o Grove.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Hydraulis»",
+    "Grove: «Hydraulis»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Hydraulis",
+    "Ctesibius Alexandria"
+   ],
+   "aggancio_inglese": "«Organ» e «hydraulic» sono parole inglesi di origine greca."
+  },
+  {
+   "tappa": "3-2",
+   "voce": "il festival d'organo di Frombork",
+   "legame": "Nella cattedrale di Frombork, dove lavorò Copernico, si tiene un festival internazionale di musica d'organo.",
+   "curiosita": "",
+   "segnalazione": "Da confermare sul sito del festival e sulla sede.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Sito del festival di Frombork"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Frombork cathedral organ",
+    "Festiwal Muzyki Organowej Frombork"
+   ],
+   "aggancio_inglese": "«Organ» è la parola inglese per organo."
+  },
+  {
+   "tappa": "3-3",
+   "voce": "la Missa Papae Marcelli",
+   "legame": "A Roma Palestrina fu maestro di cappella (Cappella Giulia, San Pietro) e scrisse qui la messa a sei voci dedicata a papa Marcello II.",
+   "curiosita": "La leggenda della messa che avrebbe salvato la polifonia a Trento è considerata dubbia (da confermare).",
+   "segnalazione": "La leggenda secondo cui questa messa salvò la polifonia al Concilio di Trento è dubbia: non presentarla come fatto.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Giovanni Pierluigi da Palestrina»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Palestrina",
+    "Missa Papae Marcelli"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "3-4",
+   "voce": "le gare musicali delle Panatenee",
+   "legame": "Ad Atene Pericle fece costruire l'Odeon e le feste Panatenee comprendevano gare musicali.",
+   "curiosita": "",
+   "segnalazione": "Passo di Plutarco, Pericle 13: da riaprire.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Plutarco, Pericle 13 (Perseus)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Odeon di Pericle",
+    "Panatenee"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "3-5",
+   "voce": "l'aulo rifiutato da Alcibiade",
+   "legame": "Plutarco racconta che il giovane ateniese Alcibiade rifiutò di imparare l'aulo perché gli deformava il viso.",
+   "curiosita": "",
+   "segnalazione": "Passo di Plutarco, Alcibiade 2: da riaprire.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Plutarco, Alcibiade 2 (Perseus)"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Aulos greco",
+    "Alcibiade"
+   ],
+   "aggancio_inglese": "Thomas North tradusse le «Vite» di Plutarco in inglese (1579) e Shakespeare le lesse."
+  },
+  {
+   "tappa": "3-6",
+   "voce": "gli Inni delfici ad Apollo",
+   "legame": "Gli inni, composti da musicisti ateniesi, furono incisi con la notazione sul Tesoro degli Ateniesi a Delfi (II secolo a.C.).",
+   "curiosita": "",
+   "segnalazione": "Autori e data da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Delphic Hymns»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Inni delfici",
+    "Delfi Tesoro degli Ateniesi"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "3-7",
+   "voce": "il Ravenna Festival",
+   "legame": "Il Ravenna Festival, nato nel 1990, porta concerti nei monumenti bizantini e medievali della città.",
+   "curiosita": "",
+   "segnalazione": "Anno di nascita e direzione artistica da confermare sul sito del festival.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Sito del Ravenna Festival"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ravenna Festival",
+    "San Vitale"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "3-8",
+   "voce": "le canzoni della Scuola siciliana",
+   "legame": "Alla corte di Federico II, il sovrano di Castel del Monte, nacque la Scuola poetica siciliana, i cui testi erano pensati per essere cantati.",
+   "curiosita": "",
+   "segnalazione": "Legame con Castel del Monte indiretto (è la corte, non il castello). La musica di quella poesia è quasi tutta perduta: da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: «Scuola siciliana»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Federico II",
+    "Scuola poetica siciliana"
+   ],
+   "aggancio_inglese": "Il «sonnet» nacque con Giacomo da Lentini alla corte di Federico II."
+  },
+  {
+   "tappa": "3-9",
+   "voce": "il flautista Timoteo e Alessandro",
+   "legame": "Pella fu la capitale macedone di Filippo II e di Alessandro; una storia antica racconta che il flautista Timoteo, con il modo ortio, spingesse Alessandro a impugnare le armi.",
+   "curiosita": "",
+   "segnalazione": "Il racconto è di Dione Crisostomo (Or. 1): da riaprire il passo. Il legame con Pella è per la corte macedone, non per il sito.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Dione Crisostomo, Orazione 1"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Alessandro Magno",
+    "Pella"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "3-10",
+   "voce": "la musica di Antoine Brumel",
+   "legame": "Brumel fu maestro della cappella di Alfonso I d'Este negli anni del suo regno (c. 1505-1510).",
+   "curiosita": "",
+   "segnalazione": "Legame con la fonderia generico (è la corte di Alfonso I). Date da confermare su Grove.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Antoine Brumel»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Antoine Brumel",
+    "Alfonso I d'Este"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "3-11",
+   "voce": "la musica di Adrian Willaert",
+   "legame": "Willaert, giovane fiammingo, servì il cardinale Ippolito I d'Este a Ferrara prima di diventare maestro a San Marco a Venezia.",
+   "curiosita": "",
+   "segnalazione": "Date del servizio estense da confermare su Grove.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Adrian Willaert»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Adrian Willaert",
+    "Ippolito I d'Este"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "3-12",
+   "voce": "il canto gregoriano di Carlo Magno",
+   "legame": "Carlo Magno, che fece di Aquisgrana la sua capitale, favorì la diffusione del canto romano (poi detto gregoriano) nel suo regno.",
+   "curiosita": "",
+   "segnalazione": "Passo preciso (Admonitio generalis, 789) da riaprire.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Gregorian chant»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Carlo Magno",
+    "Cappella palatina Aquisgrana"
+   ],
+   "aggancio_inglese": "«Gregorian chant» è il termine inglese."
+  },
+  {
+   "tappa": "3-13",
+   "voce": "il coro «Va, pensiero» alla Scala",
+   "legame": "Il Nabucco di Verdi fu rappresentato alla Scala di Milano nel 1842; il coro «Va, pensiero» ne è il brano più noto.",
+   "curiosita": "",
+   "segnalazione": "Solo il titolo del coro, mai il testo.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: «Nabucco»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Teatro alla Scala",
+    "Nabucco Verdi"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "3-14",
+   "voce": "il pianoforte di Cristofori",
+   "legame": "Bartolomeo Cristofori, al servizio dei Medici a Firenze, inventò il pianoforte: un inventario del 1700 lo descrive come strumento «nuovamente inventato».",
+   "curiosita": "Il nome «gravicembalo col piano e forte» compare nel 1711, in uno scritto di Scipione Maffei.",
+   "segnalazione": "",
+   "fonti": [
+    "https://www.metmuseum.org/essays/the-piano-the-pianofortes-of-bartolomeo-cristofori-1655-1731"
+   ],
+   "fonti_da_controllare": [
+    "Britannica: «Bartolomeo Cristofori»"
+   ],
+   "verificata": true,
+   "termini_immagine": [
+    "Bartolomeo Cristofori",
+    "Pianoforte Cristofori"
+   ],
+   "aggancio_inglese": "«Piano» è l'abbreviazione inglese di «pianoforte»."
+  },
+  {
+   "tappa": "3-15",
+   "voce": "il canone del Baccanale di Tiziano",
+   "legame": "Il Baccanale degli Andrii fu dipinto per il Camerino d'alabastro di Alfonso I; sul dipinto è scritto un canone.",
+   "curiosita": "",
+   "segnalazione": "Attribuzione del canone a Willaert non confermata dalle fonti aperte.",
+   "fonti": [
+    "https://www.museodelprado.es/en/easy-to-read/the-andrians-titian/f58c436b-f905-3dff-8db0-2803fa217302",
+    "https://www.cambridge.org/core/journals/renaissance-news/article/canon-in-titians-bacchanal/CCD0F3AA7A423792BC9CDCDB2E725748"
+   ],
+   "fonti_da_controllare": [
+    "Studi su Willaert"
+   ],
+   "verificata": true,
+   "termini_immagine": [
+    "Bacchanal of the Andrians",
+    "Titian canon score"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "3-16",
+   "voce": "gli editori musicali Schott",
+   "legame": "A Magonza fu fondata nel 1770 la casa editrice musicale Schott, che pubblicò tra l'altro musica di Beethoven.",
+   "curiosita": "",
+   "segnalazione": "Anno e opere da confermare sul sito della casa editrice.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Sito della Schott"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Schott Mainz",
+    "Beethoven Nona"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "3-17",
+   "voce": "la cappella ducale estense",
+   "legame": "La corte estense ebbe una cappella stabile di cantori: Lockwood ne descrive dimensioni, struttura e funzioni.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [
+    "https://www.fulcrum.org/concern/monographs/bz60cw54g?locale=en"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Cappella estense",
+    "Ferrara"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "3-18",
+   "voce": "il musical «Man of La Mancha»",
+   "legame": "Cervantes nacque ad Alcalá de Henares; dal suo Don Chisciotte è tratto il musical «Man of La Mancha» (1965).",
+   "curiosita": "",
+   "segnalazione": "Solo titoli. Legame con la città tramite la nascita dell'autore.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: «Cervantes»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Cervantes Alcalá",
+    "Man of La Mancha"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "3-19",
+   "voce": "i pifferi e tamburi basilesi",
+   "legame": "Il Carnevale di Basilea è patrimonio UNESCO dal 2017 e comincia con il Morgestraich.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [
+    "https://www.bak.admin.ch/bak/en/home/cultural-heritage/immaterielles-kulturerbe-unesco-lebendige-traditionen/immaterielles-kulturerbe-unesco-in-der-schweiz/repraesentative-liste-des-immateriellen-kulturerbes/basler-fasnacht-.html"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Basler Fasnacht",
+    "Morgestraich"
+   ],
+   "aggancio_inglese": "«Fife» e «piccolo» sono parole inglesi per due flauti."
+  },
+  {
+   "tappa": "3-20",
+   "voce": "il tamburello di Bacco e Arianna",
+   "legame": "Il «Bacco e Arianna» di Tiziano fu dipinto per il Camerino di Alfonso I e ha figure con cimbali e tamburello.",
+   "curiosita": "",
+   "segnalazione": "Strumenti da confermare sul dipinto (National Gallery); il tema mitologico del vino va presentato con cautela.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "National Gallery"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Bacchus and Ariadne",
+    "Titian"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "3-21",
+   "voce": "la giovinezza musicale di Karajan",
+   "legame": "Herbert von Karajan, giovanissimo, fu direttore musicale ad Aquisgrana negli anni Trenta.",
+   "curiosita": "",
+   "segnalazione": "Anni e titolo esatto da confermare su Britannica.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Herbert von Karajan»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Karajan",
+    "Aachen"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "3-22",
+   "voce": "le canzoni del Decameron",
+   "legame": "Boccaccio, nato a Certaldo, chiude ogni giornata del Decameron con una canzone cantata dai giovani.",
+   "curiosita": "",
+   "segnalazione": "Da riaprire un testo di riferimento per il conteggio e la forma delle canzoni.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Treccani: «Decameron»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Boccaccio Certaldo",
+    "Decameron"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "3-23",
+   "voce": "l'organum di Notre-Dame",
+   "legame": "A Notre-Dame di Parigi, con Léonin e Pérotin, nacque nel XII-XIII secolo la polifonia a più voci chiamata organum.",
+   "curiosita": "",
+   "segnalazione": "Date e attribuzioni da confermare su Grove.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Notre Dame school»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Notre-Dame Paris",
+    "Pérotin"
+   ],
+   "aggancio_inglese": "«Organum» è il termine usato anche in inglese per la polifonia medievale."
+  },
+  {
+   "tappa": "3-24",
+   "voce": "il Canone di Pachelbel",
+   "legame": "Johann Pachelbel nacque a Norimberga nel 1653 e vi tornò a lavorare; il suo Canone in re è celebre.",
+   "curiosita": "",
+   "segnalazione": "Da confermare su Grove.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Johann Pachelbel»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Pachelbel",
+    "Norimberga"
+   ],
+   "aggancio_inglese": "Il «Canon in D» è usato in molti brani pop in lingua inglese (solo titolo)."
+  },
+  {
+   "tappa": "3-25",
+   "voce": "i cori spezzati di San Marco",
+   "legame": "A San Marco, a Venezia, Giovanni Gabrieli scrisse musica per cori e strumenti disposti in luoghi diversi della basilica.",
+   "curiosita": "",
+   "segnalazione": "Da confermare su Grove.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Giovanni Gabrieli»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Giovanni Gabrieli",
+    "San Marco"
+   ],
+   "aggancio_inglese": "I termini «piano» e «forte» per le dinamiche sono italiani; la «Sonata pian' e forte» di Gabrieli è citata come esempio (da confermare)."
+  },
+  {
+   "tappa": "3-26",
+   "voce": "l'inno «Zadok the Priest» di Handel",
+   "legame": "Handel scrisse «Zadok the Priest» per l'incoronazione di Giorgio II (1727) nell'abbazia di Westminster.",
+   "curiosita": "Ha ispirato l'inno della Champions League (da confermare).",
+   "segnalazione": "Solo titolo.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Zadok the Priest»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Zadok the Priest",
+    "Westminster Abbey"
+   ],
+   "aggancio_inglese": "Il titolo è inglese."
+  },
+  {
+   "tappa": "3-27",
+   "voce": "La sagra della primavera",
+   "legame": "La sagra della primavera di Stravinsky ebbe la prima a Parigi nel 1913, al Théâtre des Champs-Élysées.",
+   "curiosita": "",
+   "segnalazione": "Da confermare su Britannica.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «The Rite of Spring»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Rite of Spring",
+    "Théâtre des Champs-Élysées"
+   ],
+   "aggancio_inglese": "Il titolo inglese è «The Rite of Spring»."
+  },
+  {
+   "tappa": "3-28",
+   "voce": "La bohème di Puccini",
+   "legame": "La bohème di Puccini fu rappresentata la prima volta a Torino, al Teatro Regio, nel 1896.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «La bohème»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Teatro Regio Torino",
+    "La bohème"
+   ],
+   "aggancio_inglese": "Il musical «Rent» (1996) è ispirato alla «Bohème»."
+  },
+  {
+   "tappa": "3-29",
+   "voce": "il coro della Cappella Sistina",
+   "legame": "Il coro della Cappella Sistina è il coro del papa, a Roma, nel cuore della Curia.",
+   "curiosita": "Il Miserere di Allegri è uno dei brani che vi si cantavano (da confermare).",
+   "segnalazione": "Il Miserere di Allegri e la trascrizione di Burney a Londra (1771) vanno confermati.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Sistine Chapel Choir»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Cappella Sistina coro",
+    "Allegri Miserere"
+   ],
+   "aggancio_inglese": "Charles Burney pubblicò il Miserere a Londra (da confermare)."
+  },
+  {
+   "tappa": "3-30",
+   "voce": "L'Orfeo di Monteverdi",
+   "legame": "L'Orfeo di Monteverdi fu rappresentato nel 1607 alla corte dei Gonzaga a Mantova.",
+   "curiosita": "",
+   "segnalazione": "Da confermare su Britannica.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «L'Orfeo»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Monteverdi Orfeo",
+    "Palazzo Ducale Mantova"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-1",
+   "voce": "la lira sumerica",
+   "legame": "Le lire ritrovate a Ur, nella stessa regione sumerica di Uruk, sono tra gli strumenti più antichi conservati.",
+   "curiosita": "",
+   "segnalazione": "Le lire sono di Ur, non di Uruk: stessa regione ma altra città.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "British Museum: «Lyres of Ur»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Lira di Ur",
+    "Uruk"
+   ],
+   "aggancio_inglese": "«Lyre» è la parola inglese."
+  },
+  {
+   "tappa": "4-2",
+   "voce": "il canto dei cammellieri",
+   "legame": "Il canto dei cammellieri (ḥudāʾ) accompagnava le carovane arabe ed è considerato all'origine del canto arabo.",
+   "curiosita": "",
+   "segnalazione": "Da confermare su Grove o Britannica.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Arab music»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Carovana Cairo",
+    "Camel caravan"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-3",
+   "voce": "il guzheng dei Qin",
+   "legame": "Xianyang fu capitale del regno dei Qin, a cui la tradizione attribuisce la nascita della cetra guzheng.",
+   "curiosita": "",
+   "segnalazione": "Origine tradizionale, da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Zheng»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Guzheng",
+    "Xianyang"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-4",
+   "voce": "le musiciste della tomba di Nakht",
+   "legame": "Nella tomba di Nakht, a Tebe, un banchetto è animato da musiciste con strumenti diversi.",
+   "curiosita": "",
+   "segnalazione": "Numero della tomba (TT52) e strumenti da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Metropolitan Museum"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Tomba di Nakht",
+    "Tebe musiciste"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-5",
+   "voce": "il cantore Tansen di Akbar",
+   "legame": "Tansen fu musicista alla corte di Akbar, il cui impero aveva Agra come capitale.",
+   "curiosita": "",
+   "segnalazione": "Da confermare su Britannica.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Tansen»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Tansen",
+    "Akbar Agra"
+   ],
+   "aggancio_inglese": "George Harrison usò il sitar in «Norwegian Wood»."
+  },
+  {
+   "tappa": "4-6",
+   "voce": "la morin khuur mongola",
+   "legame": "La morin khuur, violino a due corde con testa di cavallo, è patrimonio UNESCO dal 2008; Karakorum fu capitale dell'impero mongolo.",
+   "curiosita": "",
+   "segnalazione": "Legame per il Paese e la tradizione mongola, non per il sito di Karakorum.",
+   "fonti": [
+    "https://ich.unesco.org/en/RL/traditional-music-of-the-morin-khuur-00068"
+   ],
+   "fonti_da_controllare": [
+    "UNESCO ICH: Morin khuur"
+   ],
+   "verificata": true,
+   "termini_immagine": [
+    "Morin khuur",
+    "Karakorum"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-7",
+   "voce": "gli Scorpions",
+   "legame": "Gli Scorpions, band hard rock, nacquero a Hannover nel 1965.",
+   "curiosita": "",
+   "segnalazione": "Solo titoli.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Scorpions»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Scorpions band",
+    "Hannover"
+   ],
+   "aggancio_inglese": "Gli Scorpions cantano in inglese (solo titoli)."
+  },
+  {
+   "tappa": "4-8",
+   "voce": "la collezione Düben di Uppsala",
+   "legame": "La biblioteca dell'università di Uppsala conserva la collezione Düben di musica del Seicento.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Biblioteca di Uppsala: Düben"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Düben Collection",
+    "Uppsala"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-9",
+   "voce": "il disco «Talking Timbuktu»",
+   "legame": "Il disco «Talking Timbuktu» (1994) di Ali Farka Touré e Ry Cooder porta Timbuctù nel titolo; Touré veniva dalla regione.",
+   "curiosita": "",
+   "segnalazione": "Solo titolo. Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Ali Farka Touré»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ali Farka Touré",
+    "Timbuktu"
+   ],
+   "aggancio_inglese": "Il blues, nato negli USA, ha radici nella musica dell'Africa occidentale."
+  },
+  {
+   "tappa": "4-10",
+   "voce": "i salmi di Clément Marot",
+   "legame": "Il poeta Clément Marot fu a Ferrara presso Renata di Francia nel 1535; tradusse in francese salmi poi cantati nel Salterio ginevrino.",
+   "curiosita": "",
+   "segnalazione": "Data e legame da confermare su Britannica.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Clément Marot»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Clément Marot",
+    "Renata di Francia"
+   ],
+   "aggancio_inglese": "La melodia «Old Hundredth» viene dal Salterio ginevrino."
+  },
+  {
+   "tappa": "4-11",
+   "voce": "il trattato musicale di Al-Kindi",
+   "legame": "Al-Kindi lavorò a Baghdad e scrisse trattati di musica.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «al-Kindi»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Al-Kindi",
+    "Baghdad"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-12",
+   "voce": "la musica rituale confuciana",
+   "legame": "Il tempio di Confucio a Qufu conserva la tradizione dei riti con musica; Confucio parla di musica negli Analecta.",
+   "curiosita": "",
+   "segnalazione": "Passo degli Analecta da riaprire.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Analecta 7.14"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Tempio di Confucio",
+    "Qufu"
+   ],
+   "aggancio_inglese": "James Legge tradusse gli Analecta in inglese."
+  },
+  {
+   "tappa": "4-13",
+   "voce": "la musica di Sayyid Darwish",
+   "legame": "Sayyid Darwish nacque ad Alessandria d'Egitto nel 1892 e fu un riformatore della musica egiziana.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Sayyid Darwish»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Sayyid Darwish",
+    "Alessandria"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-14",
+   "voce": "il teponaztli e l'huehuetl",
+   "legame": "Nella Tenochtitlán azteca si suonavano il tamburo verticale huehuetl e il teponaztli, tamburo a fessura.",
+   "curiosita": "",
+   "segnalazione": "Da confermare su una fonte (Codice fiorentino).",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Codice fiorentino"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Huehuetl",
+    "Tenochtitlán"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-15",
+   "voce": "il modo ionico",
+   "legame": "Il modo ionico prende il nome dalla Ionia; nella teoria occidentale corrisponde alla scala maggiore.",
+   "curiosita": "",
+   "segnalazione": "Da confermare su Grove.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Mode»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Modo ionico",
+    "Ionia"
+   ],
+   "aggancio_inglese": "In inglese «Ionian mode» indica la scala maggiore."
+  },
+  {
+   "tappa": "4-16",
+   "voce": "la vina di Samudragupta",
+   "legame": "Samudragupta, imperatore dei Gupta, appare su monete mentre suona la vina; Pataliputra era la sua capitale.",
+   "curiosita": "",
+   "segnalazione": "Da confermare sul museo.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "British Museum"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Samudragupta vina",
+    "Pataliputra"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-17",
+   "voce": "il playback di Bollywood",
+   "legame": "Il cinema di Bombay è un'industria musicale: le canzoni sono cantate da cantanti di playback.",
+   "curiosita": "",
+   "segnalazione": "Solo titolo.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Bollywood»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Bollywood",
+    "Bombay"
+   ],
+   "aggancio_inglese": "«Jai Ho» (A. R. Rahman) vinse l'Oscar nel 2009 (solo titolo)."
+  },
+  {
+   "tappa": "4-18",
+   "voce": "il canto bizantino di Santa Sofia",
+   "legame": "Il canto bizantino accompagnava la liturgia nella cattedrale di Santa Sofia a Costantinopoli.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Byzantine chant»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Santa Sofia",
+    "Canto bizantino"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-19",
+   "voce": "la voce di Umm Kulthum",
+   "legame": "La cantante Umm Kulthum fu la grande voce del Cairo del Novecento.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Umm Kulthum»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Umm Kulthum",
+    "Cairo"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-20",
+   "voce": "la musica di Cipriano de Rore",
+   "legame": "Cipriano de Rore, fiammingo, fu maestro di cappella di Ercole II a Ferrara.",
+   "curiosita": "",
+   "segnalazione": "Date da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Cipriano de Rore»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Cipriano de Rore",
+    "Ercole II d'Este"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-21",
+   "voce": "il canto mozarabico",
+   "legame": "Il rito mozarabico si celebra ancora nella cattedrale di Toledo, con un canto proprio.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Mozarabic chant»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Rito mozarabico",
+    "Toledo"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-22",
+   "voce": "la canzone «Rivers of Babylon»",
+   "legame": "Il Salmo 137 («Presso i fiumi di Babilonia») ha ispirato canzoni moderne.",
+   "curiosita": "",
+   "segnalazione": "Solo titolo.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Salmo 137"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Rivers of Babylon",
+    "Babilonia"
+   ],
+   "aggancio_inglese": "La canzone è dei The Melodians e poi dei Boney M. (solo titolo)."
+  },
+  {
+   "tappa": "4-23",
+   "voce": "il fado",
+   "legame": "Il fado, canto di Lisbona, è patrimonio UNESCO dal 2011.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [
+    "https://ich.unesco.org/en/RL/fado-urban-popular-song-of-portugal-00563/"
+   ],
+   "fonti_da_controllare": [
+    "UNESCO ICH: Fado"
+   ],
+   "verificata": true,
+   "termini_immagine": [
+    "Fado Lisbona",
+    "Amália Rodrigues"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-24",
+   "voce": "lo Shenqi mipu di Zhu Quan",
+   "legame": "Zhu Quan, principe di Ning, ebbe la sua sede a Nanchang; il Shenqi mipu è la più antica raccolta conservata di melodie per qin.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [
+    "https://www.silkqin.com/02qnpu/07sqmp/07zqbio.htm"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Shenqi mipu",
+    "Zhu Quan"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-25",
+   "voce": "l'inno «The Star-Spangled Banner»",
+   "legame": "Francis Scott Key scrisse il testo dell'inno americano a Baltimora nel 1814.",
+   "curiosita": "",
+   "segnalazione": "Solo titolo.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Smithsonian"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Star-Spangled Banner",
+    "Fort McHenry"
+   ],
+   "aggancio_inglese": "Il testo è in inglese."
+  },
+  {
+   "tappa": "4-26",
+   "voce": "la ciaccona",
+   "legame": "La ciaccona, danza e forma musicale, arrivò in Spagna dalle Americhe.",
+   "curiosita": "",
+   "segnalazione": "Da confermare su Grove.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Chaconne»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ciaccona",
+    "Tenochtitlán"
+   ],
+   "aggancio_inglese": "«Chaconne» è la forma usata anche nella musica inglese (da confermare)."
+  },
+  {
+   "tappa": "4-27",
+   "voce": "la banda mehter",
+   "legame": "La banda mehter dei giannizzeri ottomani accompagnava l'esercito del sultano.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Mehter»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Mehter",
+    "Istanbul"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-28",
+   "voce": "la filastrocca «Oranges and Lemons»",
+   "legame": "Orwell, nato a Motihari, cita nel romanzo «1984» la filastrocca londinese delle chiese.",
+   "curiosita": "",
+   "segnalazione": "Solo titolo.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Orwell, Nineteen Eighty-Four"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Oranges and Lemons",
+    "Orwell Motihari"
+   ],
+   "aggancio_inglese": "È una filastrocca inglese."
+  },
+  {
+   "tappa": "4-29",
+   "voce": "la musica di Fryderyk Chopin",
+   "legame": "Chopin nacque presso Varsavia e visse a Parigi, dove si affermò come pianista e compositore.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Frédéric Chopin»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Chopin",
+    "Varsavia"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "4-30",
+   "voce": "i madrigali di Luca Marenzio",
+   "legame": "Luca Marenzio fu uno dei compositori che scrissero per il concerto ferrarese; la fonte non lo lega all'archivio.",
+   "curiosita": "",
+   "segnalazione": "Legame con l'archivio generico.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: concerto delle donne; Grove: «Luca Marenzio»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Luca Marenzio",
+    "Madrigali"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "5-1",
+   "voce": "il blues di Chicago",
+   "legame": "Il blues elettrico di Chicago nacque con musicisti come Muddy Waters.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Chicago blues»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Chicago blues",
+    "Muddy Waters"
+   ],
+   "aggancio_inglese": "«Blues» è parola inglese."
+  },
+  {
+   "tappa": "5-2",
+   "voce": "il valzer viennese",
+   "legame": "Johann Strauss figlio rese Vienna capitale del valzer.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Waltz»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Johann Strauss",
+    "Vienna"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "5-3",
+   "voce": "la Water Music di Handel",
+   "legame": "Handel compose a Londra la Water Music per il re Giorgio I, eseguita sul Tamigi (1717).",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Water Music»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Water Music",
+    "Handel"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "5-4",
+   "voce": "la musicoterapia dell'NIH",
+   "legame": "L'NIH, con sede a Bethesda, ha un programma di ricerca su musica e salute (Sound Health).",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "NIH Sound Health"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "NIH Bethesda",
+    "Sound Health"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "5-5",
+   "voce": "l'opera «Doctor Atomic» di Adams",
+   "legame": "L'opera «Doctor Atomic» di John Adams racconta il test nucleare del progetto di Los Alamos.",
+   "curiosita": "",
+   "segnalazione": "Solo titolo.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «John Adams»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Doctor Atomic",
+    "Los Alamos"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "5-6",
+   "voce": "l'orchestra di Nabucodonosor",
+   "legame": "Il libro di Daniele elenca gli strumenti dell'orchestra del re Nabucodonosor di Babilonia.",
+   "curiosita": "",
+   "segnalazione": "Passo di Daniele 3 da riaprire.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Daniele 3"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Nabucodonosor",
+    "Babilonia"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "5-7",
+   "voce": "i Beatles ad Abbey Road",
+   "legame": "Gli Abbey Road Studios di Londra furono lo studio dei Beatles.",
+   "curiosita": "",
+   "segnalazione": "Solo titoli.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Abbey Road Studios"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Abbey Road",
+    "Beatles"
+   ],
+   "aggancio_inglese": "Le canzoni dei Beatles sono in inglese (solo titoli)."
+  },
+  {
+   "tappa": "5-8",
+   "voce": "la dombra kazaka",
+   "legame": "Baikonur è in Kazakistan, dove la dombra (liuto a due corde) è patrimonio UNESCO dal 2014.",
+   "curiosita": "",
+   "segnalazione": "Legame per il Paese, non per il sito del cosmodromo.",
+   "fonti": [
+    "https://ich.unesco.org/en/RL/kazakh-traditional-art-of-dombra-kuy-00996"
+   ],
+   "fonti_da_controllare": [
+    "UNESCO ICH: Dombra"
+   ],
+   "verificata": true,
+   "termini_immagine": [
+    "Dombra",
+    "Baikonur"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "5-9",
+   "voce": "il jazz club Ronnie Scott's",
+   "legame": "Il Ronnie Scott's, storico jazz club, è a Soho, il quartiere di Broad Street.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Sito di Ronnie Scott's"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Ronnie Scott's",
+    "Soho"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "5-10",
+   "voce": "gli ABBA",
+   "legame": "Gli ABBA sono un gruppo di Stoccolma.",
+   "curiosita": "",
+   "segnalazione": "Solo titoli.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «ABBA»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "ABBA",
+    "Stoccolma"
+   ],
+   "aggancio_inglese": "Gli ABBA cantano in inglese (solo titoli)."
+  },
+  {
+   "tappa": "5-11",
+   "voce": "il violino di Einstein",
+   "legame": "Einstein visse a Princeton e suonava il violino.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Princeton"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Einstein violin",
+    "Princeton"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "5-12",
+   "voce": "il tango",
+   "legame": "Il tango, patrimonio UNESCO dal 2009, nacque nelle comunità urbane di Buenos Aires e Montevideo.",
+   "curiosita": "",
+   "segnalazione": "",
+   "fonti": [
+    "https://ich.unesco.org/en/RL/00258"
+   ],
+   "fonti_da_controllare": [
+    "UNESCO ICH: Tango"
+   ],
+   "verificata": true,
+   "termini_immagine": [
+    "Tango",
+    "Buenos Aires"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "5-13",
+   "voce": "il King's College Choir",
+   "legame": "Il coro del King's College di Cambridge è celebre per il Festival of Nine Lessons and Carols.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "King's College"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "King's College Choir",
+    "Cambridge"
+   ],
+   "aggancio_inglese": "I «carols» natalizi cantati dal coro sono in inglese."
+  },
+  {
+   "tappa": "5-14",
+   "voce": "la musica di Milton Babbitt",
+   "legame": "Il compositore Milton Babbitt insegnò a Princeton e lavorò con la musica elettronica.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Milton Babbitt»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Milton Babbitt",
+    "Princeton"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "5-15",
+   "voce": "l'hip hop",
+   "legame": "L'hip hop nacque nel Bronx, a New York, negli anni Settanta.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Hip-hop»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Hip hop",
+    "Bronx"
+   ],
+   "aggancio_inglese": "«Rap» e «hip hop» sono termini inglesi."
+  },
+  {
+   "tappa": "5-16",
+   "voce": "il grunge di Seattle",
+   "legame": "Seattle fu la città del grunge, con Nirvana e Pearl Jam.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Grunge»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Grunge",
+    "Seattle"
+   ],
+   "aggancio_inglese": "I testi del grunge sono in inglese."
+  },
+  {
+   "tappa": "5-17",
+   "voce": "l'Hollywood Bowl",
+   "legame": "L'Hollywood Bowl è l'anfiteatro dei concerti estivi di Los Angeles.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Hollywood Bowl"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Hollywood Bowl",
+    "Los Angeles"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "5-18",
+   "voce": "i Grateful Dead",
+   "legame": "I Grateful Dead nacquero a Palo Alto, nella baia di San Francisco.",
+   "curiosita": "",
+   "segnalazione": "Luogo proposto per il livello 5-18. Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Grateful Dead»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Grateful Dead",
+    "Palo Alto"
+   ],
+   "aggancio_inglese": "I testi sono in inglese."
+  },
+  {
+   "tappa": "5-19",
+   "voce": "il punk londinese",
+   "legame": "Il punk britannico nacque a Londra, con i Sex Pistols.",
+   "curiosita": "",
+   "segnalazione": "Solo titoli.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Punk rock»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Sex Pistols",
+    "Londra punk"
+   ],
+   "aggancio_inglese": "«Punk» è parola inglese."
+  },
+  {
+   "tappa": "5-20",
+   "voce": "il liuto di Alessandro Piccinini",
+   "legame": "Alessandro Piccinini fu liutista alla corte di Alfonso II a Ferrara.",
+   "curiosita": "",
+   "segnalazione": "Servizio a Ferrara da confermare su Grove.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Grove: «Alessandro Piccinini»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Alessandro Piccinini",
+    "Arciliuto"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "5-21",
+   "voce": "il North Sea Jazz Festival",
+   "legame": "Il North Sea Jazz Festival si tiene a Rotterdam dal 2006.",
+   "curiosita": "",
+   "segnalazione": "Da confermare sul sito del festival.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Sito del festival"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "North Sea Jazz",
+    "Rotterdam"
+   ],
+   "aggancio_inglese": "«Jazz» è una parola inglese."
+  },
+  {
+   "tappa": "5-22",
+   "voce": "la cantante virtuale Hatsune Miku",
+   "legame": "Hatsune Miku è la cantante virtuale giapponese, nata nel 2007.",
+   "curiosita": "",
+   "segnalazione": "Luogo proposto (Giappone). Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Crypton"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Hatsune Miku",
+    "Giappone"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "5-23",
+   "voce": "l'opera «Le devin du village»",
+   "legame": "Jean-Jacques Rousseau, nato a Ginevra, scrisse l'opera «Le devin du village».",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Rousseau»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Rousseau",
+    "Ginevra"
+   ],
+   "aggancio_inglese": "Charles Burney tradusse «Le devin du village» in inglese come «The Cunning Man» (1766, da confermare)."
+  },
+  {
+   "tappa": "5-24",
+   "voce": "I pianeti di Holst",
+   "legame": "Gustav Holst nacque a Cheltenham il 21 settembre 1874; «I pianeti» (1918) è la sua opera più nota.",
+   "curiosita": "",
+   "segnalazione": "Luogo proposto per la tappa 5-24 (Cheltenham).",
+   "fonti": [
+    "https://www.britannica.com/biography/Gustav-Theodore-Holst"
+   ],
+   "fonti_da_controllare": [
+    "Britannica: «Gustav Holst»"
+   ],
+   "verificata": true,
+   "termini_immagine": [
+    "Holst",
+    "Cheltenham"
+   ],
+   "aggancio_inglese": "Il titolo originale è «The Planets»."
+  },
+  {
+   "tappa": "5-25",
+   "voce": "il canto «Daisy Bell» del computer",
+   "legame": "Nel 1961, ai Bell Labs di Murray Hill, un IBM 7090 cantò «Daisy Bell».",
+   "curiosita": "Arthur C. Clarke lo vide e lo usò nel romanzo e nel film «2001».",
+   "segnalazione": "",
+   "fonti": [
+    "https://historyofinformation.com/detail.php?entryid=4445"
+   ],
+   "fonti_da_controllare": [],
+   "verificata": true,
+   "termini_immagine": [
+    "Bell Labs Murray Hill",
+    "Daisy Bell computer"
+   ],
+   "aggancio_inglese": "«Daisy Bell» è una canzone inglese del 1892."
+  },
+  {
+   "tappa": "5-26",
+   "voce": "la Berklee College of Music",
+   "legame": "La Berklee College of Music, a Boston, è una famosa scuola di musica moderna.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Sito Berklee"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Berklee",
+    "Boston"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "5-27",
+   "voce": "il pianoforte di Glenn Gould",
+   "legame": "Il pianista Glenn Gould nacque a Toronto.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Glenn Gould»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Glenn Gould",
+    "Toronto"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "5-28",
+   "voce": "la chitarra di Jimi Hendrix",
+   "legame": "Jimi Hendrix nacque a Seattle nel 1942.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Britannica: «Jimi Hendrix»"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Jimi Hendrix",
+    "Seattle"
+   ],
+   "aggancio_inglese": ""
+  },
+  {
+   "tappa": "5-29",
+   "voce": "i Proms",
+   "legame": "I Proms sono la stagione estiva di concerti della BBC alla Royal Albert Hall di Londra.",
+   "curiosita": "",
+   "segnalazione": "Da confermare.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "BBC Proms"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "BBC Proms",
+    "Royal Albert Hall"
+   ],
+   "aggancio_inglese": "Nei Proms si cantano inni in inglese come «Jerusalem» (solo titolo)."
+  },
+  {
+   "tappa": "5-30",
+   "voce": "il Conservatorio Frescobaldi",
+   "legame": "Il Conservatorio di Ferrara porta il nome di Girolamo Frescobaldi.",
+   "curiosita": "",
+   "segnalazione": "Da confermare sul sito.",
+   "fonti": [],
+   "fonti_da_controllare": [
+    "Sito del conservatorio"
+   ],
+   "verificata": false,
+   "termini_immagine": [
+    "Conservatorio Ferrara",
+    "Frescobaldi"
    ],
    "aggancio_inglese": ""
   }
