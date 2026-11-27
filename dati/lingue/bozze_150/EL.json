@@ -5,15 +5,18 @@
   {
    "tappa": "1-1",
    "voce": "l'acqua del Po",
-   "legame": "Il Po bagna Voghenza e il suo delta; i Greci lo chiamavano Eridano.",
+   "legame": "Il Po, con il suo ramo ferrarese, è il fiume dell'acqua di Ferrara; il Po di Ferrara lambisce la città. Gli autori greci lo identificarono con l'Eridano, il fiume del mito di Fetonte.",
    "curiosita": "Nel mito greco Fetonte, il figlio del Sole, precipita nell'Eridano.",
    "segnalazione": "",
-   "fonti": [],
+   "fonti": [
+    "https://atlas.perseus.tufts.edu/dictionaries/entry/urn:cite2:scaife-viewer:dictionary-entries.atlas_v1:middle-liddell.perseus-eng2-n14847",
+    "https://www.ferraraterraeacqua.it/en/renaissance/on-the-waters-edge...-the-economy"
+   ],
    "fonti_da_controllare": [
     "Treccani, voce «Po»",
     "Treccani, voce «Eridano»"
    ],
-   "verificata": false,
+   "verificata": true,
    "termini_immagine": [
     "Po river Ferrara",
     "Voghenza cattedrale"
@@ -24,15 +27,18 @@
   {
    "tappa": "1-2",
    "voce": "il vino dei monaci benedettini",
-   "legame": "Pomposa era un'abbazia benedettina; la Regola (cap. 40) concede ai monaci una emina di vino al giorno, con raccomandazione di moderazione.",
+   "legame": "Pomposa è un monastero benedettino; la Regola di san Benedetto (cap. 40) concede ai monaci una emina di vino al giorno, con l'ammonimento a non eccedere.",
    "curiosita": "L'emina era una misura di circa un quarto di litro.",
-   "segnalazione": "Nessuna fonte su un vino prodotto a Pomposa: il legame è con la Regola benedettina, non con una vigna documentata. Alcol: presentare solo come storia.",
-   "fonti": [],
+   "segnalazione": "Nessuna fonte su un vino prodotto a Pomposa: il legame è con la Regola benedettina. Da presentare come misura (emina) e moderazione, non come vino attraente.",
+   "fonti": [
+    "https://pressbooks.palni.org/ruleofbenedict/?p=163",
+    "https://musei.emiliaromagna.beniculturali.it/en/our-museums/abbazia-di-pomposa"
+   ],
    "fonti_da_controllare": [
     "Regola di san Benedetto, cap. 40 (testo)",
     "Treccani, voce «Pomposa»"
    ],
-   "verificata": false,
+   "verificata": true,
    "termini_immagine": [
     "Abbazia di Pomposa",
     "Pomposa abbey Codigoro"
@@ -42,103 +48,119 @@
   },
   {
    "tappa": "1-3",
-   "voce": "il giulebbe di rose",
-   "legame": "Il giulebbe (sciroppo di zucchero e acqua di rose) è una bevanda da speziale e da corte nel Rinascimento italiano.",
-   "curiosita": "«Giulebbe» viene dal persiano gul-āb, «acqua di rose».",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
-   "fonti": [],
+   "voce": "il giulebbe dello speziale",
+   "legame": "Il giulebbe (sciroppo di zucchero) figura tra i preparati della spezieria dell'Arcispedale S. Anna di Ferrara nel 1801 (giulebbe pettorale, anodino, diuretico).",
+   "curiosita": "La parola giulebbe viene dal persiano e dall'arabo, e indicava l'acqua di rose zuccherata.",
+   "segnalazione": "Il legame è con la città (spezieria di S. Anna), non con la piazza in sé.",
+   "fonti": [
+    "https://iris.unife.it/retrieve/0ba23763-12c7-4660-bfa6-1e3d294a628e/rivfarm_dic_2021_vicentini_giusto.pdf"
+   ],
    "fonti_da_controllare": [
     "Treccani, voce «giulebbe»",
     "Messisbugo, Banchetti (ricettario)"
    ],
-   "verificata": false,
+   "verificata": true,
    "termini_immagine": [
-    "gulab syrup rose water",
-    "Palazzo Municipale Ferrara"
+    "Giulebbe pharmacy jar",
+    "Albarello Ferrara spezieria"
    ],
    "parola_greca": "σάκχαρον (sákkharon)",
-   "legame_greco": "diretto: «zucchero», parola greca dell'antichità"
+   "legame_greco": "diretto: «zucchero», parola greca dell'antichità",
+   "sostituita": "il giulebbe di rose: giulebbe di rose non documentato a Ferrara; documentato il giulebbe in generale"
   },
   {
    "tappa": "1-4",
-   "voce": "la tisana di erbe del mercato",
-   "legame": "Piazza delle Erbe era il luogo del mercato delle erbe; «tisana» viene da πτισάνη, l'orzo mondato e il suo decotto.",
-   "curiosita": "Per Ippocrate la ptisane, il decotto d'orzo, era la bevanda dei malati.",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
-   "fonti": [],
+   "voce": "la tisana bianca",
+   "legame": "La «Tisana Bianca» è tra le tisane preparate dalla spezieria dell'Arcispedale S. Anna di Ferrara nel 1801; il termine tisana viene dal greco ptisánē, l'orzo mondato.",
+   "curiosita": "Ptisánē è l'orzo senza buccia: i medici greci davano l'acqua d'orzo ai malati.",
+   "segnalazione": "Il legame è con la città (spezieria di S. Anna), non con Piazza delle Erbe.",
+   "fonti": [
+    "https://iris.unife.it/retrieve/0ba23763-12c7-4660-bfa6-1e3d294a628e/rivfarm_dic_2021_vicentini_giusto.pdf"
+   ],
    "fonti_da_controllare": [
     "Treccani, voce «tisana»",
     "Ippocrate, Sul regime delle malattie acute"
    ],
-   "verificata": false,
+   "verificata": true,
    "termini_immagine": [
-    "herbal tea",
+    "Barley water",
     "Piazza delle Erbe Ferrara"
    ],
    "parola_greca": "πτισάνη (ptisánē)",
-   "legame_greco": "diretto: l'etimo di «tisana»"
+   "legame_greco": "diretto: l'etimo di «tisana»",
+   "sostituita": "la tisana di erbe del mercato: voce generica, non documentata a Ferrara"
   },
   {
    "tappa": "1-5",
-   "voce": "il decotto di liquirizia",
-   "legame": "Il decotto di liquirizia è tra i rimedi da infermeria dei monasteri; Sant'Antonio in Polesine era un monastero di monache benedettine.",
-   "curiosita": "«Liquirizia» viene dal greco glykýrrhiza, «radice dolce».",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
-   "fonti": [],
+   "voce": "la tisana d'orzo e liquirizia",
+   "legame": "La «Tisana d'orzo e liquirizia» è nell'elenco della spezieria dell'Arcispedale S. Anna di Ferrara del 1801.",
+   "curiosita": "Il nome greco della liquirizia, glykýrrhiza, vuol dire «radice dolce».",
+   "segnalazione": "Il legame è con la città (spezieria di S. Anna), non con il monastero di Sant'Antonio in Polesine.",
+   "fonti": [
+    "https://iris.unife.it/retrieve/0ba23763-12c7-4660-bfa6-1e3d294a628e/rivfarm_dic_2021_vicentini_giusto.pdf"
+   ],
    "fonti_da_controllare": [
     "Treccani, voce «liquirizia»",
     "Dioscoride, De materia medica III"
    ],
-   "verificata": false,
+   "verificata": true,
    "termini_immagine": [
-    "liquorice root",
-    "Sant'Antonio in Polesine"
+    "Liquorice root",
+    "Sant'Antonio in Polesine Ferrara"
    ],
    "parola_greca": "γλυκύρριζα (glykýrrhiza)",
-   "legame_greco": "diretto: «radice dolce», da cui «liquirizia»"
+   "legame_greco": "diretto: «radice dolce», da cui «liquirizia»",
+   "sostituita": "il decotto di liquirizia: generico; il decotto di liquirizia in sé non è documentato a Sant'Antonio in Polesine"
   },
   {
    "tappa": "1-6",
-   "voce": "il siero di latte",
-   "legame": "Il siero di latte, scarto della caseificazione, si beveva come bevanda salutare nei regimi di sanità quattrocenteschi.",
-   "curiosita": "",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
-   "fonti": [],
+   "voce": "la limonata di tamarindi",
+   "legame": "La «Limonata di tamarindi» è tra le bevande medicinali della spezieria dell'Arcispedale S. Anna di Ferrara nel 1801.",
+   "curiosita": "Nell'Ottocento «limonata» indicava ogni bevanda acidula e rinfrescante data ai malati, anche senza limoni.",
+   "segnalazione": "Il legame è con la città (spezieria di S. Anna), non con il Palazzo della signoria. Parola greca moderna.",
+   "fonti": [
+    "https://iris.unife.it/retrieve/0ba23763-12c7-4660-bfa6-1e3d294a628e/rivfarm_dic_2021_vicentini_giusto.pdf"
+   ],
    "fonti_da_controllare": [
     "Savonarola, Libreto de tutte le cosse che se manzano (capitolo sul latte)"
    ],
-   "verificata": false,
+   "verificata": true,
    "termini_immagine": [
-    "whey drink",
-    "Palazzo della Ragione Ferrara"
+    "Tamarind pods",
+    "Lemonade historic"
    ],
-   "parola_greca": "ὀρρός (orrhós)",
-   "legame_greco": "diretto: «siero», la parte liquida del latte"
+   "parola_greca": "λεμονάδα (lemonáda)",
+   "legame_greco": "indiretto, parola del greco moderno per «limonata»; il tamarindo non ha nome greco antico",
+   "sostituita": "il siero di latte: generico, non documentato a Ferrara"
   },
   {
    "tappa": "1-7",
-   "voce": "l'acqua fresca di neve",
-   "legame": "Le corti rinascimentali conservavano neve e ghiaccio per rinfrescare le bevande d'estate; il Castello estense era residenza ducale.",
-   "curiosita": "",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Da cercare: neviere o ghiacciaie del Castello.",
-   "fonti": [],
+   "voce": "l'acqua di fior d'arancio",
+   "legame": "Nel Ferrarese ottocentesco l'acqua stillata di fior d'arancio serviva a profumare sciroppi (Farmacopea ferrarese di Antonio Campana); l'«acqua di arancio» è nell'elenco della spezieria di S. Anna del 1801.",
+   "curiosita": "L'acqua di fior d'arancio si ottiene distillando i fiori: è uno dei profumi più antichi della farmacia.",
+   "segnalazione": "Il legame è con la città (farmacopea e spezieria di Ferrara), non con il Castello. Parola greca moderna.",
+   "fonti": [
+    "https://movio.beniculturali.it/regemiliaromagna/saporinbiblioteca/application/mediaArchive/Pdf/_sezione_02_SANITA_AGRICOLTURA_E_ALIMENTAZIONE.pdf",
+    "https://iris.unife.it/retrieve/0ba23763-12c7-4660-bfa6-1e3d294a628e/rivfarm_dic_2021_vicentini_giusto.pdf"
+   ],
    "fonti_da_controllare": [
     "Archivio di Stato di Modena, fondo Camera ducale (spese di corte)"
    ],
-   "verificata": false,
+   "verificata": true,
    "termini_immagine": [
-    "Castello Estense Ferrara",
-    "snow cellar"
+    "Orange blossom water",
+    "Castello Estense Ferrara"
    ],
-   "parola_greca": "χιών (chión)",
-   "legame_greco": "diretto: «neve»"
+   "parola_greca": "νεράντζι (nerántzi)",
+   "legame_greco": "indiretto, parola greca (moderna) per «arancio amaro», dal persiano; nel mondo greco l'agrume era il kítron",
+   "sostituita": "l'acqua fresca di neve: pratica generica delle corti, non documentata per il Castello"
   },
   {
    "tappa": "1-8",
    "voce": "le bevande del Libreto di Savonarola",
-   "legame": "Michele Savonarola, medico di corte a Ferrara e docente dello Studio, scrisse per Borso il Libreto sulle cose «che se manzano» e «che se beveno»: un regime di salute.",
-   "curiosita": "Il genere dei regimina sanitatis (regimi di sanità) discende dalla medicina greca della díaita.",
-   "segnalazione": "Il titolo dell'opera promette le bevande ma non ho letto il testo: voce generica, specifica da cercare nel capitolo sul bere.",
+   "legame": "Michele Savonarola, medico di corte a Ferrara e docente dello Studio, scrisse per Borso il Libreto sulle cose «che se manzano» e «che se beveno»: un regime di salute che tratta anche i vini (rosso sottile, bianco giovane) e le acque.",
+   "curiosita": "Savonarola scriveva in volgare, non in latino, perché il suo libro fosse capito anche fuori dall'università.",
+   "segnalazione": "Letta solo la sintesi nel catalogo regionale (Saperi in biblioteca), non il testo del Libreto: nessun capitolo su acqua o latte confermato.",
    "fonti": [
     "https://movio.beniculturali.it/regemiliaromagna/saporinbiblioteca/application/mediaArchive/Pdf/_sezione_02_SANITA_AGRICOLTURA_E_ALIMENTAZIONE.pdf",
     "https://iris.unife.it/handle/11392/2336586"
@@ -156,7 +178,7 @@
    "tappa": "1-9",
    "voce": "l'acquavite di Savonarola",
    "legame": "Savonarola scrisse un trattato sull'arte di fare l'acqua di vita (aqua vitae) per uso medico, con la descrizione di un antico apparecchio di distillazione.",
-   "curiosita": "Ne descrive tre tipi: semplice, comune e quintessenza.",
+   "curiosita": "Nel Quattrocento l'acquavite era una medicina da distillare con l'alambicco; Savonarola ne distingue tre tipi: semplice, comune e quintessenza.",
    "segnalazione": "Alcol: presentare solo come storia della medicina e della distillazione, non come bevanda.",
    "fonti": [
     "https://movio.beniculturali.it/regemiliaromagna/saporinbiblioteca/application/mediaArchive/Pdf/_sezione_02_SANITA_AGRICOLTURA_E_ALIMENTAZIONE.pdf"
@@ -173,27 +195,30 @@
   {
    "tappa": "1-10",
    "voce": "l'acqua di cannella",
-   "legame": "La cannella è una delle spezie più usate nella cucina di corte estense; un'acqua aromatica di cannella era una bevanda e un rimedio rinascimentale.",
-   "curiosita": "",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Da cercare nei Banchetti di Messisbugo.",
-   "fonti": [],
+   "legame": "Nella Farmacopea ferrarese di Antonio Campana gli sciroppi si preparano anche con acqua stillata di cannella.",
+   "curiosita": "L'acqua stillata si ottiene facendo condensare il vapore dell'acqua in cui sono state messe a bagno le spezie.",
+   "segnalazione": "Il legame è con la città (Farmacopea ferrarese), non con il Palazzo di corte; la Farmacopea di Campana è ottocentesca.",
+   "fonti": [
+    "https://movio.beniculturali.it/regemiliaromagna/saporinbiblioteca/application/mediaArchive/Pdf/_sezione_02_SANITA_AGRICOLTURA_E_ALIMENTAZIONE.pdf"
+   ],
    "fonti_da_controllare": [
     "Messisbugo, Banchetti (ricettario)"
    ],
-   "verificata": false,
+   "verificata": true,
    "termini_immagine": [
     "cinnamon water",
     "Palazzo Ducale Ferrara"
    ],
    "parola_greca": "κιννάμωμον (kinnámōmon)",
-   "legame_greco": "diretto: «cannella», parola greca d'origine semitica"
+   "legame_greco": "diretto: «cannella», parola greca d'origine semitica",
+   "sostituita": "l'acqua di cannella: voce mantenuta, ma il legame «cucina di corte estense» non confermato; sostituito con la fonte della Farmacopea ferrarese"
   },
   {
    "tappa": "1-11",
    "voce": "il succo d'uva del kiddush",
    "legame": "Nel kiddush, la benedizione del sabato, si può usare anche succo d'uva; il MEIS racconta la storia degli ebrei in Italia, e Ferrara ebbe una grande comunità.",
    "curiosita": "«Glucosio» viene da gleûkos, il mosto dolce.",
-   "segnalazione": "Nessuna fonte su una bevanda specifica degli ebrei ferraresi: legame con il tema del museo, non con una fonte locale.",
+   "segnalazione": "Nessuna fonte su una bevanda specifica degli ebrei ferraresi: legame con il tema del museo, non con una fonte locale. Verifica 27/11: né il podcast della Comunità ebraica né altre fonti aperte documentano una bevanda ebraica ferrarese specifica; manca una fonte (cucina ebraica ferrarese).",
    "fonti": [],
    "fonti_da_controllare": [
     "MEIS, sito ufficiale",
@@ -212,7 +237,7 @@
    "voce": "il succo di pera",
    "legame": "Le pere sono tra i frutti coltivati nelle terre ferraresi; Schifanoia era un palazzo di delizie, dove si consumava frutta di stagione.",
    "curiosita": "",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Verifica 27/11: nessuna fonte aperta; cercate invano cioccolata, caffè storici, gazzosa e latte a Ferrara.",
    "fonti": [],
    "fonti_da_controllare": [
     "Treccani, voce «pera»"
@@ -230,7 +255,7 @@
    "voce": "l'infuso di salvia",
    "legame": "I certosini, come tutti i monaci, coltivavano erbe medicinali negli orti dei chiostri; la Certosa di Ferrara fu fondata da Borso nel 1452.",
    "curiosita": "",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Da verificare l'orto dei certosini di Ferrara.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Da verificare l'orto dei certosini di Ferrara. Verifica 27/11: nessuna fonte aperta; cercate invano cioccolata, caffè storici, gazzosa e latte a Ferrara.",
    "fonti": [],
    "fonti_da_controllare": [
     "Dioscoride, De materia medica III",
@@ -249,7 +274,7 @@
    "voce": "l'acqua di rose",
    "legame": "L'acqua di rose, ottenuta per distillazione, serviva in cucina, in medicina e nei profumi della corte; l'Addizione Erculea nasce dal gusto per i giardini di corte.",
    "curiosita": "",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Verifica 27/11: nessuna fonte aperta; cercate invano cioccolata, caffè storici, gazzosa e latte a Ferrara.",
    "fonti": [],
    "fonti_da_controllare": [
     "Messisbugo, Banchetti (ricettario)",
@@ -266,14 +291,17 @@
   {
    "tappa": "1-15",
    "voce": "lo sciroppo di viole",
-   "legame": "Lo sciroppo di viole (syrupus violarum) è uno dei sciroppi classici della farmacopea rinascimentale, trattato dal ferrarese Brasavola nel suo Examen omnium syruporum.",
+   "legame": "Il ferrarese Antonio Musa Brasavola, docente dello Studio, scrisse l'Examen omnium syruporum (1538); la Farmacopea ferrarese di Antonio Campana ha la ricetta dello sciroppo di viole mammole con acqua piovana.",
    "curiosita": "Lo iodio è chiamato così da íon: i suoi vapori sono viola.",
-   "segnalazione": "Il legame con Brasavola è plausibile ma non ho letto l'elenco degli sciroppi trattati.",
-   "fonti": [],
+   "segnalazione": "Verificati il trattato di Brasavola sugli sciroppi e la ricetta di Campana; non letto in Brasavola il capitolo specifico sulle viole.",
+   "fonti": [
+    "https://storianaturale.comune.ferrara.it/modules/core/lib/d.php?c=istxN",
+    "https://movio.beniculturali.it/regemiliaromagna/saporinbiblioteca/application/mediaArchive/Pdf/_sezione_02_SANITA_AGRICOLTURA_E_ALIMENTAZIONE.pdf"
+   ],
    "fonti_da_controllare": [
     "Brasavola, Examen omnium syruporum (1540)"
    ],
-   "verificata": false,
+   "verificata": true,
    "termini_immagine": [
     "violet syrup",
     "Palazzo Paradiso Ferrara"
@@ -286,7 +314,7 @@
    "voce": "il decotto di malva",
    "legame": "La malva è una pianta da infermeria usata nelle farmacie e nei monasteri; il monastero del Corpus Domini fu fondato nel 1406.",
    "curiosita": "",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Verifica 27/11: nessuna fonte aperta; cercate invano cioccolata, caffè storici, gazzosa e latte a Ferrara.",
    "fonti": [],
    "fonti_da_controllare": [
     "Dioscoride, De materia medica II"
@@ -304,7 +332,7 @@
    "voce": "l'acqua di fonte",
    "legame": "Ariosto è il poeta di Ferrara; per i Greci i poeti si ispiravano bevendo alla fonte delle Muse.",
    "curiosita": "Secondo Esiodo, la fonte nacque da un calcio del cavallo Pegaso.",
-   "segnalazione": "Il legame con la casa di Ariosto è poetico, non documentato: l'acqua di fonte è generica.",
+   "segnalazione": "Il legame con la casa di Ariosto è poetico, non documentato: l'acqua di fonte è generica. Verifica 27/11: nessuna fonte aperta; cercate invano cioccolata, caffè storici, gazzosa e latte a Ferrara.",
    "fonti": [],
    "fonti_da_controllare": [
     "Esiodo, Teogonia, v. 1-8"
@@ -322,7 +350,7 @@
    "voce": "il latte di vacca",
    "legame": "Il latte fresco è bevanda di tutte le campagne emiliane; Savonarola ne tratta nel suo Libreto.",
    "curiosita": "«Galassia» significa «via lattea»: kýklos galaktikós.",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Verifica 27/11: nessuna fonte aperta; cercate invano cioccolata, caffè storici, gazzosa e latte a Ferrara.",
    "fonti": [],
    "fonti_da_controllare": [
     "Savonarola, Libreto (capitolo sul latte)"
@@ -340,7 +368,7 @@
    "voce": "l'infuso di finocchio",
    "legame": "Il finocchio selvatico è una pianta comune dei prati; l'infuso è un digestivo tradizionale.",
    "curiosita": "La battaglia di Maratona prese il nome dal luogo, ricco di finocchi.",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Verifica 27/11: nessuna fonte aperta; cercate invano cioccolata, caffè storici, gazzosa e latte a Ferrara.",
    "fonti": [],
    "fonti_da_controllare": [
     "Dioscoride, De materia medica III",
@@ -359,7 +387,7 @@
    "voce": "l'acqua di cedro",
    "legame": "Il cedro è tra gli agrumi più antichi d'Europa; era usato nei confetti e nelle bevande rinfrescanti di corte.",
    "curiosita": "",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Verifica 27/11: nessuna fonte aperta; cercate invano cioccolata, caffè storici, gazzosa e latte a Ferrara.",
    "fonti": [],
    "fonti_da_controllare": [
     "Treccani, voce «cedro»",
@@ -375,29 +403,32 @@
   },
   {
    "tappa": "1-21",
-   "voce": "il decotto dello speziale",
-   "legame": "L'ospedale di Sant'Anna aveva una sua spezieria; qui Torquato Tasso fu rinchiuso dal 1579 al 1586.",
-   "curiosita": "«Bottega» viene dal greco apothḗkē, il deposito.",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Da cercare nelle carte della spezieria di Sant'Anna.",
-   "fonti": [],
+   "voce": "l'ossimiele dello speziale",
+   "legame": "L'ossimiele (aceto e miele, anche «scillitico») è nell'elenco dei medicamenti della spezieria dell'Arcispedale S. Anna, dove fu ricoverato Tasso.",
+   "curiosita": "Ossimiele vuol dire «acido-dolce»: i medici greci lo usavano già duemila anni fa.",
+   "segnalazione": "",
+   "fonti": [
+    "https://iris.unife.it/retrieve/0ba23763-12c7-4660-bfa6-1e3d294a628e/rivfarm_dic_2021_vicentini_giusto.pdf"
+   ],
    "fonti_da_controllare": [
     "Treccani, voce «Tasso»",
     "Ospedale Sant'Anna di Ferrara (storia)"
    ],
-   "verificata": false,
+   "verificata": true,
    "termini_immagine": [
-    "Ospedale Sant'Anna Ferrara",
-    "apothecary jar"
+    "Oxymel",
+    "Ospedale Sant'Anna Ferrara spezieria"
    ],
-   "parola_greca": "ἀποθήκη (apothḗkē)",
-   "legame_greco": "diretto: «magazzino, deposito», da cui «bottega» e «spezieria»"
+   "parola_greca": "ὀξύμελι (oxýmeli)",
+   "legame_greco": "diretto: «aceto e miele», parola greca da cui «ossimiele»",
+   "sostituita": "il decotto dello speziale: generico"
   },
   {
    "tappa": "1-22",
    "voce": "l'infuso di tiglio",
    "legame": "Il tiglio è una pianta d'ombra tipica dei viali e delle mura cittadine; l'infuso dei fiori è un calmante tradizionale.",
    "curiosita": "Nel mito Filira, trasformata in tiglio, è la madre di Chirone, maestro di medicina.",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Verifica 27/11: nessuna fonte aperta; cercate invano cioccolata, caffè storici, gazzosa e latte a Ferrara.",
    "fonti": [],
    "fonti_da_controllare": [
     "Dioscoride, De materia medica I"
@@ -415,7 +446,7 @@
    "voce": "l'acqua e aceto",
    "legame": "Acqua e aceto era la bevanda dei lavoratori nei campi e nei cantieri, dissetante e conservabile.",
    "curiosita": "«Ossimoro» è fatto di ὀξύς, acuto, e μωρός, stupido: «acutamente stupido».",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Verifica 27/11: nessuna fonte aperta; cercate invano cioccolata, caffè storici, gazzosa e latte a Ferrara.",
    "fonti": [],
    "fonti_da_controllare": [
     "Treccani, voce «posca»"
@@ -433,7 +464,7 @@
    "voce": "l'infuso di salice",
    "legame": "Salici e pioppi crescono nelle golene del Po; la corteccia, che contiene salicina, è usata da sempre contro il dolore.",
    "curiosita": "Ippocrate consigliava già foglie e corteccia di salice contro il dolore e la febbre.",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Verifica 27/11: nessuna fonte aperta; cercate invano cioccolata, caffè storici, gazzosa e latte a Ferrara.",
    "fonti": [],
    "fonti_da_controllare": [
     "Ippocrate (tradizione), De morbis mulierum",
@@ -452,7 +483,7 @@
    "voce": "la limonata del ridotto",
    "legame": "Nei teatri dell'Ottocento si servivano bevande rinfrescanti nel ridotto durante gli intervalli.",
    "curiosita": "",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Da cercare bibliografia sul Teatro Comunale (1798).",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Da cercare bibliografia sul Teatro Comunale (1798). Verifica 27/11: nessuna fonte aperta; cercate invano cioccolata, caffè storici, gazzosa e latte a Ferrara.",
    "fonti": [],
    "fonti_da_controllare": [
     "Teatro Comunale di Ferrara, storia"
@@ -470,7 +501,7 @@
    "voce": "la gazzosa",
    "legame": "La gazzosa è la bevanda frizzante italiana per eccellenza dall'Ottocento, epoca del Risorgimento.",
    "curiosita": "Il chimico Jan Baptist van Helmont inventò la parola «gas» dal greco chaos, nel Seicento.",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Verifica 27/11: nessuna fonte aperta su gazzosa a Ferrara; cercare produttori storici ferraresi.",
    "fonti": [],
    "fonti_da_controllare": [
     "Treccani, voce «gas»",
@@ -489,7 +520,7 @@
    "voce": "l'acqua in bottiglia di plastica",
    "legame": "A Ferrara, nel polo chimico, Giulio Natta realizzò i primi impianti industriali di polipropilene, la plastica del Moplen.",
    "curiosita": "Natta ricevette il Nobel per la chimica nel 1963.",
-   "segnalazione": "Il legame con l'acqua è per la plastica delle bottiglie, non per un'acqua ferrarese; da verificare l'impianto di Ferrara.",
+   "segnalazione": "Il legame con l'acqua è per la plastica delle bottiglie, non per un'acqua ferrarese; da verificare l'impianto di Ferrara. Verifica 27/11: nessuna fonte su un'acqua specifica; da sostituire con bevanda documentata della bonifica (es. acqua dei pozzi o dei canali) quando c'è fonte.",
    "fonti": [],
    "fonti_da_controllare": [
     "Nobelprize.org, Giulio Natta",
@@ -505,29 +536,32 @@
   },
   {
    "tappa": "1-28",
-   "voce": "la tisana di camomilla",
-   "legame": "La camomilla è l'infuso calmante per eccellenza; nei campi attorno alla città cresce spontanea.",
-   "curiosita": "Si chiama «mela di terra» per l'odore di mela dei fiori.",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
-   "fonti": [],
+   "voce": "le acque minerali della Farmacia Navarra",
+   "legame": "La Farmacia Navarra di Ferrara (attiva dal 1738) dava «acque minerali di tutte le fonti»; compare nel film La lunga notte del '43, tratto da Bassani.",
+   "curiosita": "Gli arredi settecenteschi della Farmacia Navarra sono oggi esposti nel Sistema museale dell'Università di Ferrara.",
+   "segnalazione": "Il legame con Bassani è per il film; nessun legame diretto con il muretto del Castello o con il cimitero.",
+   "fonti": [
+    "https://www.unife.it/sma/it/le-collezioni/arredi-storici-della-farmacia-navarra/Scarica%20il%20Pieghevole.pdf/at_download/file"
+   ],
    "fonti_da_controllare": [
     "Dioscoride, De materia medica III",
     "Treccani, voce «camomilla»"
    ],
-   "verificata": false,
+   "verificata": true,
    "termini_immagine": [
-    "chamomile tea",
-    "cimitero ebraico Ferrara"
+    "Farmacia Navarra Ferrara",
+    "Mineral water bottles antique"
    ],
-   "parola_greca": "χαμαίμηλον (chamaímēlon)",
-   "legame_greco": "diretto: «mela di terra», da cui «camomilla»"
+   "parola_greca": "ὕδωρ (hýdōr)",
+   "legame_greco": "diretto: «acqua», da cui «idro-»; qui nel senso dell'acqua minerale",
+   "sostituita": "la tisana di camomilla: generica; la camomilla ha un nome greco, ma il legame con MEIS/cimitero/muretto non è documentato"
   },
   {
    "tappa": "1-29",
    "voce": "il succo di carota",
    "legame": "Le carote sono tra gli ortaggi delle terre del Delta; il succo è una bevanda semplice di orto.",
    "curiosita": "",
-   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera.",
+   "segnalazione": "Nessuna bevanda ferrarese documentata trovata per questa tappa: voce generica d'epoca, non legata a una fonte ferrarese; da sostituire se se ne trova una vera. Verifica 27/11: nessuna fonte aperta; cercate invano cioccolata, caffè storici, gazzosa e latte a Ferrara.",
    "fonti": [],
    "fonti_da_controllare": [
     "Treccani, voce «carota»"
@@ -543,15 +577,17 @@
   {
    "tappa": "1-30",
    "voce": "il vino delle sabbie",
-   "legame": "Il vino del Bosco Eliceo (Fortana) cresce sulle dune sabbiose dei Lidi ferraresi, come quelle di Lido di Spina.",
-   "curiosita": "Le viti crescono su sabbia, nelle terre che il mare ha lasciato.",
-   "segnalazione": "Alcol: solo come prodotto del luogo e della storia del Delta; da verificare la DOC Bosco Eliceo.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Disciplinare DOC Bosco Eliceo",
-    "Treccani, voce «Bosco Eliceo»"
+   "legame": "Il vino del Bosco Eliceo (Fortana, DOC) cresce sulle dune sabbiose del Delta, vicino ai Lidi ferraresi.",
+   "curiosita": "Il Fortana, un vino rosso frizzante, è detto «vino delle sabbie» perché le viti crescono in terra sabbiosa; secondo la tradizione fu amato da Giuseppe Verdi.",
+   "segnalazione": "Alcol: solo come prodotto del luogo. Letta la sintesi turistica, non il disciplinare DOC (agricoltura.regione.emilia-romagna.it).",
+   "fonti": [
+    "https://www.ferraraterraeacqua.it/en/flavours/typical-products/bosco-eliceo-wines-doc",
+    "https://atlasobscura.com/articles/ferrara-italy-renaissance-food"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [
+    "https://agricoltura.regione.emilia-romagna.it/dop-igp/temi/vini-dop-e-igp-emilia-romagna/disciplinari-produzione-vini-dop-e-igp/doc-bosco-eliceo"
+   ],
+   "verificata": true,
    "termini_immagine": [
     "Bosco Eliceo vineyards",
     "Lido di Spina sand"
