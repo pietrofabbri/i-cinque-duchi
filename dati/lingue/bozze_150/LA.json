@@ -4,16 +4,19 @@
  "voci": [
   {
    "tappa": "1-1",
-   "voce": "L'ambra contro il gozzo",
+   "voce": "L'ambra contro il male di gola",
    "latino": "sucinum",
-   "legame": "Il Po è il fiume dell'ambra (Eridano) e Plinio il Vecchio riferisce che le donne di là dal Po portavano collane d'ambra come rimedio e amuleto per il collo.",
-   "curiosita": "Plinio non crede alla favola greca per cui l'ambra nascerebbe dalle lacrime delle Eliadi, le sorelle di Fetonte cadute nel Po.",
-   "segnalazione": "Passo esatto (NH 37.44) da riaprire.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Plinio, Naturalis Historia 37.31-32 e 37.44 (LacusCurtius o Perseus)"
+   "legame": "L'Eridano, il fiume dell'ambra del mito, è identificato con il Po; Plinio il Vecchio riferisce che le contadine della Gallia Transpadana portavano pezzi d'ambra al collo come ornamento e come rimedio contro le malattie della gola.",
+   "curiosita": "Nel mito le sorelle di Fetonte, le Eliadi, piangendo il fratello caduto nell'Eridano si trasformarono in pioppi e le loro lacrime divennero ambra (Ovidio, Metamorfosi).",
+   "segnalazione": "Il Getty cita il passo di Plinio come NH 37.11: il numero di paragrafo (la bozza diceva 37.44) va riscontrato nel testo latino. La bozza parlava di gozzo: la fonte parla di affezioni della gola.",
+   "fonti": [
+    "https://www.getty.edu/publications/ambers/intro/13/",
+    "https://www.getty.edu/publications/ambers/intro/9/"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [
+    "Plinio, Naturalis Historia 37 (LacusCurtius o Perseus), per il numero di paragrafo"
+   ],
+   "verificata": true,
    "termini_immagine": [
     "Po river Ferrara",
     "Roman amber necklace"
@@ -25,10 +28,12 @@
    "latino": "animalia minuta",
    "legame": "Pomposa sorgeva fra le paludi del delta: Varrone spiega le febbri delle zone palustri con minuscoli animali invisibili che entrano nel corpo con l'aria.",
    "curiosita": "Il nome «malaria» viene da «mala aria», l'aria cattiva; l'idea di Varrone anticipa di duemila anni i microbi.",
-   "segnalazione": "",
-   "fonti": [],
+   "segnalazione": "Confermato il passo di Varrone (Rerum rusticarum 1.12, in traduzione inglese: «swamps breed certain animalculae which cannot be seen with the eyes and which we breathe through the nose and mouth into the body where they cause grave maladies»). Manca una fonte aperta sul legame di Pomposa con le paludi.",
+   "fonti": [
+    "https://www.gutenberg.org/cache/epub/12140/pg12140.html"
+   ],
    "fonti_da_controllare": [
-    "Varrone, Rerum rusticarum 1.12.2 (The Latin Library)"
+    "Collocazione di Pomposa fra le paludi del delta (Ferrara Terra e Acqua, scheda dell'abbazia)"
    ],
    "verificata": false,
    "termini_immagine": [
@@ -40,14 +45,16 @@
    "tappa": "1-3",
    "voce": "Il liocorno di Borso",
    "latino": "monoceros",
-   "legame": "Il liocorno che purifica l'acqua col corno è un'impresa di Borso d'Este (compare nella sua Bibbia miniata); si credeva che il corno neutralizzasse i veleni.",
-   "curiosita": "Plinio descrive il monoceros come un animale con un solo corno nero in mezzo alla fronte (NH 8.76).",
-   "segnalazione": "Il legame con la piazza e il palazzo comunale è solo di emblema ducale: da confermare dove l'impresa compare lì.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Plinio, NH 8.76; Bibbia di Borso d'Este (Biblioteca Estense), scheda del museo"
+   "legame": "Il liocorno che purifica l'acqua con il corno compare nella Bibbia di Borso d'Este (1455-61, Biblioteca Estense) ed è un simbolo estense; sul portale di Schifanoia (1470) c'è un liocorno; si credeva che il corno rendesse innocui i veleni (Ctesia, Eliano).",
+   "curiosita": "Eliano scrisse che chi beve da questo corno non può essere ucciso dal veleno.",
+   "segnalazione": "Il legame con la piazza e il palazzo comunale passa solo da Borso, signore che vi risiedeva: non è documentato un liocorno proprio lì.",
+   "fonti": [
+    "https://www.finestresullarte.info/en/works-and-artists/the-unicorn-in-renaissance-art-from-the-este-family-to-raphael-and-beyond"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [
+    "Plinio, NH 8.76 (descrizione del monoceros)"
+   ],
+   "verificata": true,
    "termini_immagine": [
     "Bibbia di Borso d'Este unicorno",
     "unicorn Borso d'Este impresa"
@@ -59,7 +66,7 @@
    "latino": "fuga daemonum",
    "legame": "L'iperico, venduto fra le erbe di mercato, si coglieva nella notte di San Giovanni contro streghe e demoni; il suo nome medievale latino è «fuga daemonum».",
    "curiosita": "",
-   "segnalazione": "Legame con Piazza delle Erbe generico (mercato delle erbe): cercare una fonte ferrarese.",
+   "segnalazione": "Fonte non aperta: iperico/«fuga daemonum» non confermato (Treccani non raggiungibile) e nessun legame ferrarese con Piazza delle Erbe trovato.",
    "fonti": [],
    "fonti_da_controllare": [
     "Treccani, voce «iperico»; erbari medievali"
@@ -76,7 +83,7 @@
    "latino": "ignis sacer",
    "legame": "Il monastero è dedicato a sant'Antonio abate, invocato contro l'ergotismo, la malattia che i Latini chiamavano ignis sacer, «fuoco sacro».",
    "curiosita": "L'ergotismo nasceva dalla segale cornuta, un fungo del grano, ed era scambiato per castigo divino.",
-   "segnalazione": "Dedica del monastero e uso del termine ignis sacer da confermare.",
+   "segnalazione": "Non confermati con fonte aperta né la dedica del monastero a sant'Antonio abate (Terra e Acqua non la dice) né il legame con l'ergotismo.",
    "fonti": [],
    "fonti_da_controllare": [
     "Treccani, «ergotismo»; scheda del monastero di Sant'Antonio in Polesine"
@@ -89,20 +96,25 @@
   },
   {
    "tappa": "1-6",
-   "voce": "L'astrologo di corte di Borso",
-   "latino": "mathematicus",
-   "legame": "Alla corte estense lavoravano astrologi, fra cui Pietro Bono Avogario; i Romani li chiamavano mathematici.",
-   "curiosita": "Svetonio racconta che l'astrologo Teogene predisse a Ottaviano un grande destino (Aug. 94).",
-   "segnalazione": "Ruolo di Avogario alla corte di Borso da confermare su una scheda biografica (Treccani/DBI).",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Svetonio, Augustus 94; Dizionario biografico degli Italiani, «Avogaro, Pietro Bono»"
+   "voce": "L'astrologo Pellegrino Prisciani",
+   "latino": "astrologia",
+   "legame": "Pellegrino Prisciani (1435-1518), astrologo, archivista e storico al servizio di Leonello e Borso d'Este, è indicato come ispiratore del ciclo astrologico del Salone dei Mesi in una lettera del pittore Francesco del Cossa a Borso (1470); scrisse in latino gli «Historiae Ferrarienses».",
+   "curiosita": "Il ciclo del Salone dei Mesi è stato definito «un monumentale oroscopo illustrato», pensato per Borso.",
+   "segnalazione": "",
+   "fonti": [
+    "https://iris.unito.it/retrieve/f1763aa6-cdf7-4b8d-a28e-7ec847d02008/Casolari_Panero%20%281%29.pdf",
+    "https://iris.unife.it/retrieve/94391c48-03cb-4ba9-af5b-0816121289d2/2021schifanoia.pdf",
+    "https://en.wikipedia.org/wiki/Pellegrino_Prisciani"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [
+    "Treccani, Dizionario Biografico, «Prisciani, Pellegrino» (non raggiungibile)"
+   ],
+   "verificata": true,
    "termini_immagine": [
     "Palazzo Ducale Ferrara",
-    "astrologer Renaissance court"
-   ]
+    "Pellegrino Prisciani medal"
+   ],
+   "sostituita": "Vecchia voce: «L'astrologo di corte di Borso» (mathematicus, Pietro Bono Avogario). Sostituita perché il ruolo di Avogario alla corte di Borso non ha trovato conferma in nessuna fonte aperta; Prisciani, invece, è documentato."
   },
   {
    "tappa": "1-7",
@@ -110,8 +122,10 @@
    "latino": "lemures",
    "legame": "Nel Castello Ugo e Parisina furono decapitati nel 1425 e la tradizione vi colloca il loro spirito; i Romani chiamavano lemures le anime inquiete dei morti.",
    "curiosita": "Ovidio racconta che a maggio il padre di famiglia scacciava i lemures gettando fave nere dietro di sé (Fasti 5.429-444).",
-   "segnalazione": "L'esecuzione del 1425 è storica; il fantasma è leggenda moderna, da attribuire a una fonte.",
-   "fonti": [],
+   "segnalazione": "Confermata l'esecuzione del 1425 e le celle del Castello; la tradizione del fantasma non si trova nella scheda di Ferrara Terra e Acqua né in altre fonti aperte: serve una fonte per la leggenda, altrimenti sostituire.",
+   "fonti": [
+    "https://www.ferraraterraeacqua.it/en/ferrara/discover-the-area/art-and-culture/castles-towers-bell-towers/estense-castle/prisons-of-ugo-and-parisina"
+   ],
    "fonti_da_controllare": [
     "Ovidio, Fasti 5.419-444"
    ],
@@ -127,7 +141,7 @@
    "latino": "sortes Vergilianae",
    "legame": "Nello Studio ferrarese si leggevano i classici; aprire a caso l'Eneide per trarne un presagio era un uso antico, attestato per Adriano.",
    "curiosita": "Da giovane Adriano trasse dall'Eneide un verso su Numa e lo prese come annuncio dell'impero (Historia Augusta, Hadr. 2.8).",
-   "segnalazione": "Legame diretto con lo Studio ferrarese da cercare.",
+   "segnalazione": "Nessuna fonte per le sorti virgiliane a Ferrara: legame solo di analogia; da sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Historia Augusta, Hadrianus 2.8 (LacusCurtius)"
@@ -142,14 +156,17 @@
    "tappa": "1-9",
    "voce": "La fisiognomica di Savonarola",
    "latino": "physiognomia",
-   "legame": "Michele Savonarola, medico di corte a Ferrara, scrisse in latino uno «Speculum physionomiae»: dal volto si credeva di leggere il carattere.",
-   "curiosita": "Era il nonno di Girolamo Savonarola, il frate di Firenze.",
-   "segnalazione": "Titolo e datazione dell'opera da confermare.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Treccani/DBI, «Savonarola, Michele»; Gellio, Noctes Atticae 1.9"
+   "legame": "Michele Savonarola, medico di Niccolò III e poi di Leonello d'Este a Ferrara dal 1440, scrisse in latino lo «Speculum physionomiae» (1442), dedicato a Leonello: dal volto e dal corpo si credeva di leggere il carattere, per scegliere consiglieri fidati.",
+   "curiosita": "Era il nonno del frate Girolamo Savonarola.",
+   "segnalazione": "",
+   "fonti": [
+    "https://aro-isig.fbk.eu/issues/2020/1/michele-savonarola-medico-humano-manuela-bragagnolo/pdf/",
+    "https://en.wikipedia.org/wiki/Michele_Savonarola"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [
+    "Treccani, Dizionario Biografico, «Savonarola, Michele» (non raggiungibile)"
+   ],
+   "verificata": true,
    "termini_immagine": [
     "Michele Savonarola",
     "Ferrara court physician"
@@ -161,7 +178,7 @@
    "latino": "praegustator",
    "legame": "A corte il cibo del principe si faceva provare prima; i Romani avevano il praegustator, e Tacito nomina quello di Claudio, Aloto, complice dell'avvelenamento (Ann. 12.66).",
    "curiosita": "",
-   "segnalazione": "Uso della credenza e dell'assaggio alla corte estense da confermare (Messisbugo, Banchetti).",
+   "segnalazione": "Fonti (Tacito Ann. 12.66; Messisbugo) non aperte: l'uso della credenza alla corte estense non è confermato.",
    "fonti": [],
    "fonti_da_controllare": [
     "Tacito, Annales 12.66; Messisbugo, Banchetti (1549)"
@@ -178,7 +195,7 @@
    "latino": "superstitio",
    "legame": "Nel Museo dell'ebraismo si vede come i Romani guardavano gli Ebrei: Cicerone (Pro Flacco 28.67) chiama la loro religione «barbara superstitio», un pregiudizio antico.",
    "curiosita": "Per Cicerone i «superstitiosi» erano quelli che pregavano tutto il giorno perché i figli restassero in vita (superstites): De natura deorum 2.72.",
-   "segnalazione": "Voce delicata: presentarla come pregiudizio romano, non come giudizio.",
+   "segnalazione": "Legame per analogia (Cicerone non riguarda Ferrara e il MEIS): da sostituire con una voce documentata sugli ebrei di Ferrara.",
    "fonti": [],
    "fonti_da_controllare": [
     "Cicerone, Pro Flacco 28.67 e De natura deorum 2.72 (The Latin Library)"
@@ -193,14 +210,16 @@
    "tappa": "1-12",
    "voce": "I decani del Salone dei Mesi",
    "latino": "decani",
-   "legame": "Nel Salone dei Mesi di Schifanoia ogni mese ha il suo segno e tre decani, figure astrologiche di origine egizia che il pittore ricava dai testi di Manilio e di Abu Ma'shar.",
-   "curiosita": "",
-   "segnalazione": "Fonti iconografiche (Manilio, Astronomica 4; Abu Ma'shar) da confermare su scheda del museo.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Museo Schifanoia, schede del Salone dei Mesi; Manilio, Astronomica 4"
+   "legame": "Nel Salone dei Mesi di Schifanoia ogni mese ha il suo segno zodiacale e tre decani (36 in tutto), figure astrologiche di origine egizia; il programma deriva soprattutto dall'«Introductorium» di Abu Ma'shar e da Manilio, e lo si collega a Borso e a Prisciani.",
+   "curiosita": "I decani, scrive uno studio, sono «enigmatiche e spesso spaventose figure»; Aby Warburg li studiò nel 1912.",
+   "segnalazione": "",
+   "fonti": [
+    "https://iris.unife.it/retrieve/94391c48-03cb-4ba9-af5b-0816121289d2/2021schifanoia.pdf",
+    "https://iris.unito.it/retrieve/f1763aa6-cdf7-4b8d-a28e-7ec847d02008/Casolari_Panero%20%281%29.pdf",
+    "https://smarthistory.org/?p=70214"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [],
+   "verificata": true,
    "termini_immagine": [
     "Salone dei Mesi Schifanoia",
     "Schifanoia decans"
@@ -212,7 +231,7 @@
    "latino": "sit tibi terra levis",
    "legame": "Nelle lapidi romane si leggeva S.T.T.L., «sit tibi terra levis», augurio rivolto al morto: lo stesso desiderio che si porta alla Certosa.",
    "curiosita": "Marziale lo gira in poesia per la piccola Erotion: «nec illi terra gravis fueris» (5.34).",
-   "segnalazione": "Legame di luogo generico (cimitero).",
+   "segnalazione": "Legame di luogo generico (cimitero). Verifica 27/11/2026: nessuna fonte aperta; legame per analogia, da sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Marziale 5.34; Giovenale 7.207"
@@ -229,7 +248,7 @@
    "latino": "pomerium",
    "legame": "L'Addizione Erculea è l'ampliamento della città: i Romani, per fondare o ampliare le mura, tracciavano un solco sacro con l'aratro, il pomerium.",
    "curiosita": "Il solco si faceva con un toro e una giovenca bianchi; dove si sollevava l'aratro nascevano le porte (Varrone, De lingua Latina 5.143).",
-   "segnalazione": "Legame di sola analogia: nessun rito simile è documentato a Ferrara.",
+   "segnalazione": "Legame di sola analogia: nessun rito simile è documentato a Ferrara. Verifica 27/11/2026: nessuna fonte aperta; legame per analogia, da sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Varrone, De lingua Latina 5.143; Tacito, Annales 12.23-24"
@@ -246,7 +265,7 @@
    "latino": "anathema sit",
    "legame": "Negli antichi manoscritti si scriveva una maledizione contro chi rubava il libro; per i libri antichi della Biblioteca Ariostea vale lo stesso uso.",
    "curiosita": "Le formule erano come «qui hunc librum furaverit, anathema sit».",
-   "segnalazione": "Legame con la Biblioteca Ariostea generico: cercare una formula in un codice ferrarese.",
+   "segnalazione": "Legame con la Biblioteca Ariostea generico: cercare una formula in un codice ferrarese. Verifica 27/11/2026: nessuna fonte aperta; legame per analogia, da sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Repertori delle formule imprecatorie nei codici (Biblioteca Ariostea)"
@@ -259,20 +278,25 @@
   },
   {
    "tappa": "1-16",
-   "voce": "Hocus pocus e il Corpus Domini",
-   "latino": "hoc est corpus",
-   "legame": "Il monastero del Corpus Domini porta il nome della festa dell'Eucaristia; la formula di consacrazione «hoc est corpus meum» sarebbe all'origine di «hocus pocus».",
-   "curiosita": "L'ipotesi fu proposta dall'arcivescovo Tillotson nel 1694.",
-   "segnalazione": "Etimologia solo ipotetica.",
-   "fonti": [],
-   "fonti_da_controllare": [
-    "Oxford English Dictionary, «hocus-pocus»"
+   "voce": "Le stimmate di Lucia da Narni",
+   "latino": "stigmata",
+   "legame": "La beata Lucia da Narni, domenicana con le stimmate, fu chiamata a Ferrara dal duca Ercole I d'Este, che la volle come consigliera spirituale e come fondatrice di un nuovo convento (accolta nel 1499): per alcuni era una santa, per altri una impostora.",
+   "curiosita": "Dopo la morte di Ercole I (1505) le stimmate svanirono e lei visse isolata fino al 1544.",
+   "segnalazione": "Il legame col luogo passa dal duca Ercole I (Castello): il convento fondato da Lucia non è il Corpus Domini. Vulgata, Gal 6,17 «stigmata Iesu in corpore meo porto» da riaprire.",
+   "fonti": [
+    "https://encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/lucia-narni-1476-1544",
+    "https://en.wikipedia.org/wiki/Lucy_Brocadelli"
    ],
-   "verificata": false,
+   "fonti_da_controllare": [
+    "Vulgata, Lettera ai Galati 6,17",
+    "Treccani, «Lucia da Narni» (non raggiungibile)"
+   ],
+   "verificata": true,
    "termini_immagine": [
-    "Monastero del Corpus Domini Ferrara",
-    "hocus pocus"
-   ]
+    "Lucia da Narni",
+    "Castello Estense Ferrara"
+   ],
+   "sostituita": "Vecchia voce: «Hocus pocus e il Corpus Domini» (hoc est corpus). Sostituita perché l'etimologia di «hocus pocus» è solo un'ipotesi e il legame con il monastero è di sola assonanza col nome."
   },
   {
    "tappa": "1-17",
@@ -280,7 +304,7 @@
    "latino": "necromantia",
    "legame": "Ariosto scrisse la commedia «Il negromante», sull'imbroglione che si finge mago; Isidoro spiega la necromantia come evocazione dei morti.",
    "curiosita": "",
-   "segnalazione": "Isidoro, Etym. 8.9.11 da riaprire.",
+   "segnalazione": "Confermata la commedia di Ariosto (testo del 1535: il «fisico negromante»), ma il testo non dice che sia stata recitata a Ferrara; Isidoro, Etym. 8.9, e la casa di Ariosto da aprire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Isidoro di Siviglia, Etymologiae 8.9; Treccani, «Ariosto, Ludovico»"
@@ -297,7 +321,7 @@
    "latino": "sacramentum",
    "legame": "Nel Castello si prestava giuramento al signore; per i Romani il giuramento (sacramentum) impegnava gli dèi, e lo spergiuro era punito.",
    "curiosita": "",
-   "segnalazione": "Legame di luogo generico: cercare un giuramento di vassalli estensi.",
+   "segnalazione": "Legame di luogo generico: cercare un giuramento di vassalli estensi. Verifica 27/11/2026: nessuna fonte aperta; legame per analogia, da sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Cicerone, De officiis 3.104; Livio 21.1"
@@ -314,7 +338,7 @@
    "latino": "bubo",
    "legame": "Il gufo che canta sul tetto annuncia sventura: Virgilio lo dice «feralis», di morte; Plinio il Vecchio lo ritiene il peggior presagio.",
    "curiosita": "",
-   "segnalazione": "Legame con Palazzo Paradiso debole: da rivedere.",
+   "segnalazione": "Legame con Palazzo Paradiso debole: da rivedere. Verifica 27/11/2026: nessuna fonte aperta; legame per analogia, da sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Virgilio, Eneide 4.462; Plinio, NH 10.34"
@@ -331,7 +355,7 @@
    "latino": "fulgura frango",
    "legame": "Le campane delle torri si suonavano per allontanare i temporali; l'iscrizione tradizionale dice «fulgura frango», spezzo i fulmini.",
    "curiosita": "L'iscrizione intera è «vivos voco, mortuos plango, fulgura frango».",
-   "segnalazione": "Legame con una torre del Castello da confermare.",
+   "segnalazione": "Legame con una torre del Castello da confermare. Verifica 27/11/2026: nessuna fonte aperta; legame per analogia, da sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Repertori di iscrizioni campanarie"
@@ -348,7 +372,7 @@
    "latino": "genius",
    "legame": "Nell'ospedale di Sant'Anna Tasso fu rinchiuso dal 1579: credeva di conversare con uno spirito e ne scrisse nel dialogo «Il Messaggiero».",
    "curiosita": "I Romani credevano che ogni uomo avesse un genius protettore dalla nascita (Censorino 3).",
-   "segnalazione": "Dettagli sul «folletto» da verificare.",
+   "segnalazione": "Nessuna fonte aperta su Tasso e lo spirito (Treccani e articoli non raggiungibili).",
    "fonti": [],
    "fonti_da_controllare": [
     "Treccani, «Tasso, Torquato»; Censorino, De die natali 3"
@@ -365,7 +389,7 @@
    "latino": "porta scelerata",
    "legame": "Una porta può portare male: i Romani ricordavano la porta Carmentale, dove nel 477 a.C. uscirono i Fabi poi sterminati.",
    "curiosita": "Ne uscirono 306 Fabi, tutti uccisi al Cremera (Livio 2.49).",
-   "segnalazione": "Legame con le mura di Ferrara solo per analogia.",
+   "segnalazione": "Legame con le mura di Ferrara solo per analogia. Verifica 27/11/2026: nessuna fonte aperta; legame per analogia, da sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Livio 2.49.8; Festo"
@@ -382,7 +406,7 @@
    "latino": "compitum",
    "legame": "Nei vicoli ai crocicchi i Romani avevano piccoli altari (compita) ai Lari: i vicoli avevano un loro nume.",
    "curiosita": "Si festeggiavano i Compitalia con sacrifici (Ovidio, Fasti 1.669-672).",
-   "segnalazione": "Legame con il vicolo solo di analogia.",
+   "segnalazione": "Legame con il vicolo solo di analogia. Verifica 27/11/2026: nessuna fonte aperta; legame per analogia, da sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Ovidio, Fasti 1.669-672"
@@ -416,7 +440,7 @@
    "latino": "favete linguis",
    "legame": "I Romani imponevano il silenzio prima del rito per evitare parole di cattivo augurio; a teatro si dice «in bocca al lupo», non «buona fortuna».",
    "curiosita": "",
-   "segnalazione": "Legame con il teatro di costume, non storico.",
+   "segnalazione": "Legame con il teatro di costume, non storico. Verifica 27/11/2026: nessuna fonte aperta; legame per analogia, da sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Orazio, Odi 3.1.2; Cicerone, De divinatione 1.102"
@@ -433,7 +457,7 @@
    "latino": "fascinum",
    "legame": "Nell'Ottocento si diceva che Pio IX portasse il malocchio; i Latini lo chiamavano fascinum.",
    "curiosita": "Virgilio, Ecl. 3.103: «nescio quis teneros oculus mihi fascinat agnos».",
-   "segnalazione": "Fonte per la fama di iettatore da trovare.",
+   "segnalazione": "Fonte per la fama di iettatore da trovare. Verifica 27/11/2026: nessuna fonte aperta; legame per analogia, da sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Virgilio, Ecl. 3.103"
@@ -450,7 +474,7 @@
    "latino": "lapis philosophorum",
    "legame": "L'alchimia è l'antenata della chimica: il polo chimico ne è l'erede; i trattati sull'oro erano in latino.",
    "curiosita": "",
-   "segnalazione": "Legame di sola evoluzione storica.",
+   "segnalazione": "Legame di sola evoluzione storica. Verifica 27/11/2026: nessuna fonte aperta; legame per analogia, da sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Treccani, «alchimia»"
@@ -467,7 +491,7 @@
    "latino": "Dis Manibus",
    "legame": "Sulle tombe romane D.M. significa «agli dèi Mani», gli spiriti dei morti: un modo di proteggere il sepolcro.",
    "curiosita": "",
-   "segnalazione": "Legame con il cimitero ebraico solo di confronto.",
+   "segnalazione": "Legame con il cimitero ebraico solo di confronto. Verifica 27/11/2026: nessuna fonte aperta; legame per analogia, da sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Corpus Inscriptionum Latinarum"
@@ -484,7 +508,7 @@
    "latino": "sternumentum",
    "legame": "I Romani si auguravano salute dopo uno starnuto; Plinio si chiede perché (NH 28.22-23).",
    "curiosita": "",
-   "segnalazione": "Legame con i vicoli generico.",
+   "segnalazione": "Legame con i vicoli generico. Verifica 27/11/2026: nessuna fonte aperta; legame per analogia, da sostituire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Plinio, NH 28.22-23; Petronio 98"
@@ -501,7 +525,7 @@
    "latino": "Etrusca disciplina",
    "legame": "Spina fu città etrusca presso Comacchio; gli Etruschi avevano la disciplina per leggere fulmini e interiora.",
    "curiosita": "",
-   "segnalazione": "Spina non coincide con il Lido di Spina.",
+   "segnalazione": "Confermata Spina etrusca (Museo archeologico nazionale di Ferrara: necropoli, culti e miti), ma non la pratica della disciplina etrusca a Spina; Cicerone, De div. 1.72 da aprire.",
    "fonti": [],
    "fonti_da_controllare": [
     "Cicerone, De divinatione 1.72"
